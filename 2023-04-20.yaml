@@ -1,0 +1,691 @@
+data:
+    - id: CVE-2023-1900
+      description: "A vulnerability within the Avira network protection feature allowed an attacker with local execution rights to cause an overflow. This could corrupt the data on the heap and lead to a denial-of-service situation. \nIssue was fixed with Endpointprotection.exe version 1.0.2303.633"
+      published: 2023-04-19T19:15:07.190
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://support.norton.com/sp/static/external/tools/security-advisories.html
+    - id: CVE-2023-25619
+      description: "A CWE-754: Improper Check for Unusual or Exceptional Conditions vulnerability exists that\ncould cause denial of service of the controller when communicating over the Modbus TCP\nprotocol. "
+      published: 2023-04-19T08:15:07.997
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2023-101-05&p_enDocType=Security+and+Safety+Notice&p_File_Name=SEVD-2023-101-05.pdf
+    - id: CVE-2021-43819
+      description: Stargate-Bukkit is a mod for the minecraft video game which adds a portal focused environment. In affected versions Minecarts with chests will drop their items when teleporting through a portal; when they reappear, they will still have their items impacting the integrity of the game world. The teleport code has since been rewritten and is available in release `0.11.5.1`. Users are advised to upgrade. There are no known workarounds for this issue.
+      published: 2023-04-19T18:15:07.073
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/stargate-bukkit/Stargate-Bukkit/security/advisories/GHSA-64r2-hfr9-849j
+    - id: CVE-2023-30614
+      description: Pay is a payments engine for Ruby on Rails 6.0 and higher. In versions prior to 6.3.2 a payments info page of Pay is susceptible to reflected Cross-site scripting. An attacker could create a working URL that renders a javascript link to a user on a Rails application that integrates Pay. This URL could be distributed via email to specifically target certain individuals. If the targeted application contains a functionality to submit user-generated content (such as comments) the attacker could even distribute the URL using that functionality. This has been patched in version 6.3.2 and above. Users are advised to upgrade. There are no known workarounds for this vulnerability.
+      published: 2023-04-19T18:15:07.637
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/pay-rails/pay/commit/5d6283a24062bd272a524ec48415f536a67ad57f
+        - https://github.com/pay-rails/pay/security/advisories/GHSA-cqf3-vpx7-rxhw
+    - id: CVE-2023-22645
+      description: 'An Improper Privilege Management vulnerability in SUSE kubewarden allows attackers to read arbitrary secrets if they get access to the ServiceAccount kubewarden-controller This issue affects: SUSE kubewarden kubewarden-controller versions prior to 1.6.0.'
+      published: 2023-04-19T12:15:07.960
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://bugzilla.suse.com/show_bug.cgi?id=1210218
+    - id: CVE-2023-30797
+      description: Netflix Lemur before version 1.3.2 used insufficiently random values when generating default credentials. The insufficiently random values may allow an attacker to guess the credentials and gain access to resources managed by Lemur.
+      published: 2023-04-19T20:15:12.377
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/Netflix/lemur/commit/666d853212174ee7f4e6f8b3b4b389ede1872238
+        - https://github.com/Netflix/lemur/security/advisories/GHSA-5fqv-mpj8-h7gm
+        - https://github.com/Netflix/security-bulletins/blob/master/advisories/nflx-2023-001.md
+        - https://vulncheck.com/advisories/netflix-lemur-weak-rng
+    - id: CVE-2023-2169
+      description: The TaxoPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Related Posts functionality in versions up to, and including, 3.6.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers with Editor+ permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+      published: 2023-04-19T10:15:07.710
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://plugins.trac.wordpress.org/browser/simple-tags/trunk/inc/related-posts-functions.php?rev=2674563#L156
+        - https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2868795%40simple-tags%2Ftrunk&old=2774153%40simple-tags%2Ftrunk&sfp_email=&sfph_mail=
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/52574d99-1ffe-4152-bf13-9cdd11d7300a?source=cve
+    - id: CVE-2023-1585
+      description: 'Avast and AVG Antivirus for Windows were susceptible to a Time-of-check/Time-of-use (TOCTOU)  vulnerability in the Quarantine process, leading to arbitrary file/directory deletion. The issue was fixed with Avast and AVG Antivirus version 22.11 and virus definitions from 14 February 2023 or later.  '
+      published: 2023-04-19T19:15:06.630
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://support.norton.com/sp/static/external/tools/security-advisories.html
+    - id: CVE-2023-1587
+      description: Avast and AVG Antivirus for Windows were susceptible to a NULL pointer dereference issue via RPC-interface. The issue was fixed with Avast and AVG Antivirus version 22.11
+      published: 2023-04-19T19:15:07.030
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://support.norton.com/sp/static/external/tools/security-advisories.html
+    - id: CVE-2023-30610
+      description: aws-sigv4 is a rust library for low level request signing in the aws cloud platform. The `aws_sigv4::SigningParams` struct had a derived `Debug` implementation. When debug-formatted, it would include a user's AWS access key, AWS secret key, and security token in plaintext. When TRACE-level logging is enabled for an SDK, `SigningParams` is printed, thereby revealing those credentials to anyone with access to logs. All users of the AWS SDK for Rust who enabled TRACE-level logging, either globally (e.g. `RUST_LOG=trace`), or for the `aws-sigv4` crate specifically are affected. This issue has been addressed in a set of new releases. Users are advised to upgrade. Users unable to upgrade should disable TRACE-level logging for AWS Rust SDK crates.
+      published: 2023-04-19T18:15:07.417
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/awslabs/aws-sdk-rust/security/advisories/GHSA-mjv9-vp6w-3rc9
+    - id: CVE-2023-30611
+      description: Discourse-reactions is a plugin that allows user to add their reactions to the post in the Discourse messaging platform. In affected versions data about what reactions were performed on a post in a private topic could be leaked. This issue has been addressed in version 0.3. Users are advised to upgrade. Users unable to upgrade should disable the discourse-reactions plugin to fully mitigate the issue.
+      published: 2023-04-19T18:15:07.490
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/discourse/discourse-reactions/commit/01aca15b2774c088f3673118e92e9469f37d2fb6
+        - https://github.com/discourse/discourse-reactions/security/advisories/GHSA-4cgc-c7vh-94g6
+    - id: CVE-2014-125099
+      description: A vulnerability has been found in I Recommend This Plugin up to 3.7.2 on WordPress and classified as critical. Affected by this vulnerability is an unknown functionality of the file dot-irecommendthis.php. The manipulation leads to sql injection. The attack can be launched remotely. Upgrading to version 3.7.3 is able to address this issue. The name of the patch is 058b3ef5c7577bf557557904a53ecc8599b13649. It is recommended to upgrade the affected component. The identifier VDB-226309 was assigned to this vulnerability.
+      published: 2023-04-20T06:15:06.867
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/wp-plugins/i-recommend-this/commit/058b3ef5c7577bf557557904a53ecc8599b13649
+        - https://github.com/wp-plugins/i-recommend-this/releases/tag/3.7.3
+        - https://vuldb.com/?ctiid.226309
+        - https://vuldb.com/?id.226309
+    - id: CVE-2023-25620
+      description: "A CWE-754: Improper Check for Unusual or Exceptional Conditions vulnerability exists that\ncould cause denial of service of the controller when a malicious project file is loaded onto the\ncontroller by an authenticated user. \n\n "
+      published: 2023-04-19T09:15:07.457
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2023-101-05&p_enDocType=Security+and+Safety+Notice&p_File_Name=SEVD-2023-101-05.pdf
+    - id: CVE-2022-2084
+      description: Sensitive data could be exposed in world readable logs of cloud-init before version 22.3 when schema failures are reported. This leak could include hashed passwords.
+      published: 2023-04-19T22:15:10.207
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/canonical/cloud-init/commit/4d467b14363d800b2185b89790d57871f11ea88c
+        - https://ubuntu.com/security/notices/USN-5496-1
+    - id: CVE-2021-3429
+      description: When instructing cloud-init to set a random password for a new user account, versions before 21.2 would write that password to the world-readable log file /var/log/cloud-init-output.log. This could allow a local user to log in as another user.
+      published: 2023-04-19T22:15:10.137
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/canonical/cloud-init/commit/b794d426b9ab43ea9d6371477466070d86e10668
+    - id: CVE-2023-1586
+      description: Avast and AVG Antivirus for Windows were susceptible to a Time-of-check/Time-of-use (TOCTOU)  vulnerability in the restore process leading to arbitrary file creation. The issue was fixed with Avast and AVG Antivirus version 22.11
+      published: 2023-04-19T19:15:06.837
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://support.norton.com/sp/static/external/tools/security-advisories.html
+    - id: CVE-2023-0317
+      description: Unprotected Alternate Channel vulnerability in debug console of  GateManager allows system administrator to obtain sensitive information.
+      published: 2023-04-19T12:15:07.900
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.secomea.com/support/cybersecurity-advisory/
+    - id: CVE-2023-30612
+      description: Cloud hypervisor is a Virtual Machine Monitor for Cloud workloads. This vulnerability allows users to close arbitrary open file descriptors in the Cloud Hypervisor process via sending malicious HTTP request through the HTTP API socket. As a result, the Cloud Hypervisor process can be easily crashed, causing Deny-of-Service (DoS). This can also be a potential Use-After-Free (UAF) vulnerability. Users require to have the write access to the API socket file to trigger this vulnerability.  Impacted versions of Cloud Hypervisor include upstream main branch, v31.0, and v30.0. The vulnerability was initially detected by our `http_api_fuzzer` via oss-fuzz. This issue has been addressed in versions 30.1 and 31.1. Users unable to upgrade may mitigate this issue by ensuring the write access to the API socket file is granted to trusted users only.
+      published: 2023-04-19T18:15:07.553
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/cloud-hypervisor/cloud-hypervisor/pull/5350
+        - https://github.com/cloud-hypervisor/cloud-hypervisor/pull/5373
+        - https://github.com/cloud-hypervisor/cloud-hypervisor/security/advisories/GHSA-g6mw-f26h-4jgp
+        - https://oss-fuzz.com/testcase-detail/5260873569796096
+        - https://oss-fuzz.com/testcase-detail/5426283514560512
+    - id: CVE-2022-4308
+      description: Plaintext Storage of a Password vulnerability in Secomea GateManager (USB wizard) allows Authentication abuse on SiteManager, if the generated file is leaked.
+      published: 2023-04-19T12:15:07.833
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://www.secomea.com/support/cybersecurity-advisory/
+    - id: CVE-2023-2170
+      description: The TaxoPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Related Posts functionality in versions up to, and including, 3.6.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers with Editor+ permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+      published: 2023-04-19T10:15:07.773
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://plugins.trac.wordpress.org/browser/simple-tags/trunk/inc/related-posts-functions.php?rev=2674563#L155
+        - https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2868795%40simple-tags%2Ftrunk&old=2774153%40simple-tags%2Ftrunk&sfp_email=&sfph_mail=
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/e98ed932-4e4c-4127-ae72-500e2a34f371?source=cve
+    - id: CVE-2023-2168
+      description: The TaxoPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Suggest Terms Title field in versions up to, and including, 3.6.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers with Editor+ permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+      published: 2023-04-19T10:15:07.640
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://plugins.trac.wordpress.org/browser/simple-tags/trunk/inc/suggestterms-functions.php?rev=2743620#L151
+        - https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2868795%40simple-tags%2Ftrunk&old=2774153%40simple-tags%2Ftrunk&sfp_email=&sfph_mail=
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/1c051bfd-2754-4faf-8062-91752555166c?source=cve
+    - id: CVE-2023-2191
+      description: Cross-site Scripting (XSS) - Stored in GitHub repository azuracast/azuracast prior to 0.18.
+      published: 2023-04-20T02:15:06.757
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/azuracast/azuracast/commit/24276cb4166b2057de73569ec33046a80a8bb437
+        - https://huntr.dev/bounties/0814f5f9-8b58-40e5-b08c-7c488947cf31
+    - id: CVE-2022-38125
+      description: Improper Restriction of Communication Channel to Intended Endpoints vulnerability in Secomea SiteManager (FTP Agent modules) allows Exploiting Trust in Client.
+      published: 2023-04-19T12:15:07.610
+      severity: LOW
+      privileges: NONE
+      references:
+        - https://www.secomea.com/support/cybersecurity-advisory/
+    - id: CVE-2022-4942
+      description: A vulnerability was found in mportuga eslint-detailed-reporter up to 0.9.0 and classified as problematic. Affected by this issue is the function renderIssue in the library lib/template-generator.js. The manipulation of the argument message leads to cross site scripting. The attack may be launched remotely. The name of the patch is 505c190efd4905990db6207863bdcbd9b1d7e1bd. It is recommended to apply a patch to fix this issue. VDB-226310 is the identifier assigned to this vulnerability.
+      published: 2023-04-20T06:15:07.440
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/mportuga/eslint-detailed-reporter/commit/505c190efd4905990db6207863bdcbd9b1d7e1bd
+        - https://github.com/mportuga/eslint-detailed-reporter/pull/46
+        - https://vuldb.com/?ctiid.226310
+        - https://vuldb.com/?id.226310
+    - id: CVE-2022-2507
+      description: In affected versions of Octopus Deploy it is possible to render user supplied input into the webpage
+      published: 2023-04-19T08:15:07.903
+      severity: ""
+      privileges: ""
+      references:
+        - https://advisories.octopus.com/post/2023/sa2023-06/
+    - id: CVE-2023-22894
+      description: Strapi through 4.5.5 allows attackers (with access to the admin panel) to discover sensitive user details by exploiting the query filter. The attacker can filter users by columns that contain sensitive information and infer a value from API responses. If the attacker has super admin access, then this can be exploited to discover the password hash and password reset token of all users. If the attacker has admin panel access to an account with permission to access the username and email of API users with a lower privileged role (e.g., Editor or Author), then this can be exploited to discover sensitive information for all API users but not other admin accounts.
+      published: 2023-04-19T16:15:07.303
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/strapi/strapi/releases
+        - https://strapi.io/blog/security-disclosure-of-vulnerabilities-cve
+        - https://www.ghostccamm.com/blog/multi_strapi_vulns/
+    - id: CVE-2023-22893
+      description: Strapi through 4.5.5 does not verify the access or ID tokens issued during the OAuth flow when the AWS Cognito login provider is used for authentication. A remote attacker could forge an ID token that is signed using the 'None' type algorithm to bypass authentication and impersonate any user that use AWS Cognito for authentication.
+      published: 2023-04-19T16:15:07.253
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/strapi/strapi/releases
+        - https://strapi.io/blog/security-disclosure-of-vulnerabilities-cve
+        - https://www.ghostccamm.com/blog/multi_strapi_vulns/
+    - id: CVE-2023-22621
+      description: Strapi through 4.5.5 allows authenticated Server-Side Template Injection (SSTI) that can be exploited to execute arbitrary code on the server. A remote attacker with access to the Strapi admin panel can inject a crafted payload that executes code on the server into an email template that bypasses the validation checks that should prevent code execution.
+      published: 2023-04-19T16:15:07.213
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/strapi/strapi/releases
+        - https://strapi.io/blog/security-disclosure-of-vulnerabilities-cve
+        - https://www.ghostccamm.com/blog/multi_strapi_vulns/
+    - id: CVE-2023-29586
+      description: Code Sector TeraCopy 3.9.7 does not perform proper access validation on the source folder during a copy operation. This leads to Arbitrary File Read by allowing any user to copy any directory in the system to a directory they control.
+      published: 2023-04-19T15:15:06.857
+      severity: ""
+      privileges: ""
+      references:
+        - https://cwe.mitre.org/data/definitions/285.html
+        - https://securityandstuff.com/posts/teracopy_arbitrary_read/
+    - id: CVE-2023-29923
+      description: PowerJob V4.3.1 is vulnerable to Insecure Permissions. via the list job interface.
+      published: 2023-04-19T14:15:07.197
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/PowerJob/PowerJob/issues/587
+    - id: CVE-2023-27777
+      description: Cross-site scripting (XSS) vulnerability was discovered in Online Jewelry Shop v1.0 that allows attackers to execute arbitrary script via a crafted URL.
+      published: 2023-04-19T13:15:07.220
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/lohyt/Privilege-escalation-in-online-jewelry-website
+    - id: CVE-2023-29922
+      description: PowerJob V4.3.1 is vulnerable to Incorrect Access Control via the create user/save interface.
+      published: 2023-04-19T19:15:07.373
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/PowerJob/PowerJob/issues/585
+    - id: CVE-2021-0872
+      description: 'In PVRSRVBridgeRGXKickVRDM of the PowerVR kernel driver, a missing size check means there is a possible integer overflow that could allow out-of-bounds heap access. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android SoCAndroid ID: A-270401229'
+      published: 2023-04-19T20:15:10.270
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2021-0873
+      description: 'In PVRSRVBridgeRGXKickRS of the PowerVR kernel driver, a missing size check means there is a possible integer overflow that could allow out-of-bounds heap access. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android SoCAndroid ID: A-270392711'
+      published: 2023-04-19T20:15:10.323
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2021-0874
+      description: 'In PVRSRVBridgeDevicememHistorySparseChange of the PowerVR kernel driver, a missing size check means there is a possible integer overflow that could allow out-of-bounds heap access. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android SoCAndroid ID: A-270399633'
+      published: 2023-04-19T20:15:10.370
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2021-0875
+      description: 'In PVRSRVBridgeChangeSparseMem of the PowerVR kernel driver, a missing size check means there is a possible integer overflow that could allow out-of-bounds heap access. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android SoCAndroid ID: A-270400061'
+      published: 2023-04-19T20:15:10.413
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2021-0876
+      description: 'In PVRSRVBridgePhysmemNewRamBackedLockedPMR of the PowerVR kernel driver, a missing size check means there is a possible integer overflow that could allow out-of-bounds heap access. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android SoCAndroid ID: A-270400229'
+      published: 2023-04-19T20:15:10.453
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2021-0878
+      description: 'In PVRSRVBridgeServerSyncGetStatus of the PowerVR kernel driver, a missing size check means there is a possible integer overflow that could allow out-of-bounds heap access. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android SoCAndroid ID: A-270399153'
+      published: 2023-04-19T20:15:10.500
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2021-0879
+      description: 'In PVRSRVBridgeRGXTDMSubmitTransfer of the PowerVR kernel driver, a missing size check means there is a possible integer overflow that could allow out-of-bounds heap access. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android SoCAndroid ID: A-270397970'
+      published: 2023-04-19T20:15:10.550
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2021-0880
+      description: 'In PVRSRVBridgeRGXKickTA3D of the PowerVR kernel driver, a missing size check means there is a possible integer overflow that could allow out-of-bounds heap access. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android SoCAndroid ID: A-270396792'
+      published: 2023-04-19T20:15:10.597
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2021-0881
+      description: 'In PVRSRVBridgeRGXKickCDM of the PowerVR kernel driver, a missing size check means there is a possible integer overflow that could allow out-of-bounds heap access. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android SoCAndroid ID: A-270396350'
+      published: 2023-04-19T20:15:10.643
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2021-0882
+      description: 'In PVRSRVBridgeRGXKickSync of the PowerVR kernel driver, a missing size check means there is a possible integer overflow that could allow out-of-bounds heap access. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android SoCAndroid ID: A-270395803'
+      published: 2023-04-19T20:15:10.697
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2021-0883
+      description: 'In PVRSRVBridgeCacheOpQueue of the PowerVR kernel driver, a missing size check means there is a possible integer overflow that could allow out-of-bounds heap access. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android SoCAndroid ID: A-270395013'
+      published: 2023-04-19T20:15:10.743
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2021-0884
+      description: 'In PVRSRVBridgePhysmemImportSparseDmaBuf of the PowerVR kernel driver, a missing size check means there is a possible integer overflow that could allow out-of-bounds heap access. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android SoCAndroid ID: A-270393454'
+      published: 2023-04-19T20:15:10.790
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2021-0885
+      description: 'In PVRSRVBridgeSyncPrimOpTake of the PowerVR kernel driver, a missing size check means there is a possible integer overflow that could allow out-of-bounds heap access. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android SoCAndroid ID: A-270401914'
+      published: 2023-04-19T20:15:10.833
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-20862
+      description: In Spring Security, versions 5.7.x prior to 5.7.8, versions 5.8.x prior to 5.8.3, and versions 6.0.x prior to 6.0.3, the logout support does not properly clean the security context if using serialized versions. Additionally, it is not possible to explicitly save an empty security context to the HttpSessionSecurityContextRepository. This vulnerability can keep users authenticated even after they performed logout. Users of affected versions should apply the following mitigation. 5.7.x users should upgrade to 5.7.8. 5.8.x users should upgrade to 5.8.3. 6.0.x users should upgrade to 6.0.3.
+      published: 2023-04-19T20:15:10.910
+      severity: ""
+      privileges: ""
+      references:
+        - https://spring.io/security/cve-2023-20862
+    - id: CVE-2023-20909
+      description: 'In multiple functions of RunningTasks.java, there is a possible privilege escalation due to a missing privilege check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-243130512'
+      published: 2023-04-19T20:15:10.953
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-20935
+      description: 'In deserialize of multiple files, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-256589724'
+      published: 2023-04-19T20:15:10.993
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-20941
+      description: 'In acc_ctrlrequest_composite of f_accessory.c, there is a possible out of bounds write due to a missing bounds check. This could lead to physical escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-264029575References: Upstream kernel'
+      published: 2023-04-19T20:15:11.033
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-20950
+      description: 'In AlarmManagerActivity of AlarmManagerActivity.java, there is a possible way to bypass background activity launch restrictions via a pendingIntent. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12LAndroid ID: A-195756028'
+      published: 2023-04-19T20:15:11.077
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-20967
+      description: 'In avdt_scb_hdl_pkt_no_frag of avdt_scb_act.cc, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-225879503'
+      published: 2023-04-19T20:15:11.120
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21080
+      description: 'In register_notification_rsp of btif_rc.cc, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-245916076'
+      published: 2023-04-19T20:15:11.157
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21081
+      description: 'In multiple functions of PackageInstallerService.java and related files, there is a possible way to bypass background activity launch restrictions due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-230492955'
+      published: 2023-04-19T20:15:11.213
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21082
+      description: 'In getNumberFromCallIntent of NewOutgoingCallIntentBroadcaster.java, there is a possible way to enumerate other user''s contact phone number due to a confused deputy. This could lead to local information disclosure with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-257030107'
+      published: 2023-04-19T20:15:11.260
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21083
+      description: 'In onNullBinding of CallScreeningServiceHelper.java, there is a possible way to record audio without showing a privacy indicator due to a permissions bypass. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-252762941'
+      published: 2023-04-19T20:15:11.303
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21084
+      description: 'In buildPropFile of filesystem.go, there is a possible insecure hash due to an improperly used crypto. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-262892300'
+      published: 2023-04-19T20:15:11.347
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21085
+      description: 'In nci_snd_set_routing_cmd of nci_hmsgs.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-264879662'
+      published: 2023-04-19T20:15:11.393
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21086
+      description: 'In isToggleable of SecureNfcEnabler.java and SecureNfcPreferenceController.java, there is a possible way to enable NFC from a secondary account due to a permissions bypass. This could lead to local escalation of privilege from the Guest account with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-238298970'
+      published: 2023-04-19T20:15:11.443
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21087
+      description: 'In PreferencesHelper.java, an uncaught exception may cause the device to get stuck in a boot loop. This could lead to local persistent denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-261723753'
+      published: 2023-04-19T20:15:11.490
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21088
+      description: 'In deliverOnFlushComplete of LocationProviderManager.java, there is a possible way to bypass background activity launch restrictions due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-12 Android-12L Android-13Android ID: A-235823542'
+      published: 2023-04-19T20:15:11.533
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21089
+      description: 'In startInstrumentation of ActivityManagerService.java, there is a possible way to keep the foreground service alive while the app is in the background. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-237766679'
+      published: 2023-04-19T20:15:11.583
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21090
+      description: 'In parseUsesPermission of ParsingPackageUtils.java, there is a possible boot loop due to resource exhaustion. This could lead to local denial of service with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-259942609'
+      published: 2023-04-19T20:15:11.630
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21091
+      description: 'In canDisplayLocalUi of AppLocalePickerActivity.java, there is a possible way to change system app locales due to a missing permission check. This could lead to local denial of service across user boundaries with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-13Android ID: A-257954050'
+      published: 2023-04-19T20:15:11.680
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21092
+      description: 'In retrieveServiceLocked of ActiveServices.java, there is a possible way to dynamically register a BroadcastReceiver using permissions of System App due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-242040055'
+      published: 2023-04-19T20:15:11.727
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21093
+      description: 'In extractRelativePath of FileUtils.java, there is a possible way to access files in a directory belonging to other applications due to a path traversal error. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-228450832'
+      published: 2023-04-19T20:15:11.770
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21094
+      description: 'In sanitize of LayerState.cpp, there is a possible way to take over the screen display and swap the display content due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-248031255'
+      published: 2023-04-19T20:15:11.807
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21096
+      description: 'In OnWakelockReleased of attribution_processor.cc, there is a use after free that could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-12 Android-12L Android-13Android ID: A-254774758'
+      published: 2023-04-19T20:15:11.850
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21097
+      description: 'In toUriInner of Intent.java, there is a possible way to launch an arbitrary activity due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-261858325'
+      published: 2023-04-19T20:15:11.890
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21098
+      description: 'In multiple functions of AccountManagerService.java, there is a possible loading of arbitrary code into the System Settings app due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-260567867'
+      published: 2023-04-19T20:15:11.933
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21099
+      description: 'In multiple methods of PackageInstallerSession.java, there is a possible way to start foreground services from the background due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-11 Android-12 Android-12L Android-13Android ID: A-243377226'
+      published: 2023-04-19T20:15:11.980
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-21100
+      description: 'In inflate of inflate.c, there is a possible out of bounds write due to a heap buffer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-12 Android-12L Android-13Android ID: A-242544249'
+      published: 2023-04-19T20:15:12.023
+      severity: ""
+      privileges: ""
+      references:
+        - https://source.android.com/security/bulletin/2023-04-01
+    - id: CVE-2023-28122
+      description: A local privilege escalation (LPE) vulnerability in UI Desktop for Windows (Version 0.59.1.71 and earlier) allows a malicious actor with local access to a Windows device running said application to submit arbitrary commands as SYSTEM.This vulnerability is fixed in Version 0.62.3 and later.
+      published: 2023-04-19T20:15:12.143
+      severity: ""
+      privileges: ""
+      references:
+        - https://community.ui.com/releases/Security-Advisory-Bulletin-029-029/a47c68f2-1f3a-47c3-b577-eb70599644e4
+    - id: CVE-2023-28123
+      description: A permission misconfiguration in UI Desktop for Windows (Version 0.59.1.71 and earlier) could allow an user to hijack VPN credentials while UID VPN is starting.This vulnerability is fixed in Version 0.62.3 and later.
+      published: 2023-04-19T20:15:12.193
+      severity: ""
+      privileges: ""
+      references:
+        - https://community.ui.com/releases/Security-Advisory-Bulletin-029-029/a47c68f2-1f3a-47c3-b577-eb70599644e4
+    - id: CVE-2023-28124
+      description: Improper usage of symmetric encryption in UI Desktop for Windows (Version 0.59.1.71 and earlier) could allow users with access to UI Desktop configuration files to decrypt their content.This vulnerability is fixed in Version 0.62.3 and later.
+      published: 2023-04-19T20:15:12.247
+      severity: ""
+      privileges: ""
+      references:
+        - https://community.ui.com/releases/Security-Advisory-Bulletin-029-029/a47c68f2-1f3a-47c3-b577-eb70599644e4
+    - id: CVE-2023-2162
+      description: A use-after-free vulnerability was found in iscsi_sw_tcp_session_create in drivers/scsi/iscsi_tcp.c in SCSI sub-component in the Linux Kernel. In this flaw an attacker could leak kernel internal information.
+      published: 2023-04-19T20:15:12.307
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.spinics.net/lists/linux-scsi/msg181542.html
+    - id: CVE-2023-30463
+      description: Altran picoTCP through 1.7.0 allows memory corruption (and subsequent denial of service) because of an integer overflow in pico_ipv6_alloc when processing large ICMPv6 packets. This affects installations with Ethernet support in which a packet size greater than 65495 may occur.
+      published: 2023-04-19T12:15:08.343
+      severity: ""
+      privileges: ""
+      references:
+        - https://georgyg.com/home/picotcp-denial-of-service-cve-2023-30463/
+        - https://github.com/tass-belgium/picotcp/releases
+    - id: CVE-2021-33972
+      description: Buffer Overflow vulnerability in Qihoo 360 Safe Browser v13.0.2170.0 allows attacker to escalate priveleges.
+      published: 2023-04-19T21:15:06.647
+      severity: ""
+      privileges: ""
+      references:
+        - https://MemoryCorruptor.blogspot.com/p/vulnerabilities-disclosures.html
+        - https://pastebin.com/qDedtZf3
+        - https://www.youtube.com/channel/UCLJ6fZxUqbmPe4jiwC6o4hg/
+    - id: CVE-2021-33973
+      description: Buffer Overflow vulnerability in Qihoo 360 Safe guard v12.1.0.1004, v12.1.0.1005, v13.1.0.1001 allows attacker to escalate priveleges.
+      published: 2023-04-19T21:15:06.693
+      severity: ""
+      privileges: ""
+      references:
+        - https://MemoryCorruptor.blogspot.com/p/vulnerabilities-disclosures.html
+        - https://pastebin.com/fsLDebg5
+        - https://www.youtube.com/channel/UCLJ6fZxUqbmPe4jiwC6o4hg/
+    - id: CVE-2021-33974
+      description: 'Qihoo 360 (https://www.360.cn/) Qihoo 360 Safeguard (https://www.360.cn/) Qihoo 360 Chrome (https://browser.360.cn/ee/) is affected by: Buffer Overflow. The impact is: execute arbitrary code (remote). The component is: This is a set of vulnerabilities affecting popular software, and the installation packages correspond to versions "360 Safeguard(12.1.0.1004,12.1.0.1005,13.1.0.1001)" , "360 Total Security(10.8.0.1060,10.8.0.1213)", "360 Safe Browser & 360 Chrome(12. The attack vector is: On the browser vulnerability, just open a link to complete the vulnerability exploitation remotely; on the client software, you need to locally execute the vulnerability exploitation program, which of course can be achieved with the full chain of browser vulnerability. ¶¶ This is a set of the most serious vulnerabilities that exist on Qihoo 360''s PC client multiple popular software, remote vulnerabilities can be accomplished by opening a link to arbitrary code execution on both security browsers, in conjunction with the exploitation of local vulnerabilities that allow spyware to persist without being scanned to permanently reside on the target PC computer (because local vulnerabilities target Qihoo 360 company''s antivirus software kernel flaws); this set of remote and local vulnerabilities in perfect coordination, to achieve an information security fallacy, on Qihoo 360''s antivirus software vulnerability, not only can not be scanned out of the virus, but will help the virus persistently control the target computer, while Qihoo 360 claims to be a secure browser, which exists in the kernel vulnerability but help the composition of the remote vulnerability.(Security expert "Memory Corruptor" have reported this set of vulnerabilities to the corresponding vendor, all vulnerabilities have been fixed and the vendor rewarded thousands of dollars to this security expert)'
+      published: 2023-04-19T21:15:06.740
+      severity: ""
+      privileges: ""
+      references:
+        - https://MemoryCorruptor.blogspot.com/p/vulnerabilities-disclosures.html
+        - https://pastebin.com/ms1ivjYe
+    - id: CVE-2021-33975
+      description: Buffer Overflow vulnerability in Qihoo 360 Total Security v10.8.0.1060 and v10.8.0.1213 allows attacker to escalate privileges.
+      published: 2023-04-19T21:15:06.783
+      severity: ""
+      privileges: ""
+      references:
+        - https://MemoryCorruptor.blogspot.com/p/vulnerabilities-disclosures.html
+        - https://pastebin.com/ivNL7s0n
+        - https://www.youtube.com/channel/UCLJ6fZxUqbmPe4jiwC6o4hg/
+    - id: CVE-2021-33970
+      description: Buffer Overflow vulnerability in Qihoo 360 Chrome v13.0.2170.0 allows attacker to escalate priveleges.
+      published: 2023-04-19T22:15:10.023
+      severity: ""
+      privileges: ""
+      references:
+        - https://MemoryCorruptor.blogspot.com/p/vulnerabilities-disclosures.html
+        - https://pastebin.com/Qug7tquW
+        - https://www.youtube.com/channel/UCLJ6fZxUqbmPe4jiwC6o4hg/
+    - id: CVE-2021-33971
+      description: 'Qihoo 360 (https://www.360.cn/) Qihoo 360 Safeguard (https://www.360.cn/) Qihoo 360 Total Security (http://www.360totalsecurity.com/) is affected by: Buffer Overflow. The impact is: execute arbitrary code (local). The component is: This is a set of vulnerabilities affecting popular software, "360 Safeguard(12.1.0.1004,12.1.0.1005,13.1.0.1001)" , "360 Total Security(10.8.0.1060,10.8.0.1213)", "360 Safe Browser & 360 Chrome(13.0.2170.0)". The attack vector is: On the browser vulnerability, just open a link to complete the vulnerability exploitation remotely; on the client software, you need to locally execute the vulnerability exploitation program, which of course can be achieved with the full chain of browser vulnerability. ¶¶ This is a set of the most serious vulnerabilities that exist on Qihoo 360''s PC client a variety of popular software, remote vulnerabilities can be completed by opening a link to arbitrary code execution on both security browsers, with the use of local vulnerabilities, not only help the vulnerability code constitutes an escalation of privileges, er can make the spyware persistent without being scanned permanently resides on the target PC computer (because local vulnerability against Qihoo 360 company''s antivirus kernel flaws); this group of remote and local vulnerability of the perfect match, to achieve an information security fallacy, in Qihoo 360''s antivirus vulnerability, not only can not be scanned out of the virus, but will help the virus persistently control the target computer, while Qihoo 360 claims to be a safe browser, which exists in the kernel vulnerability but helped the composition of the remote vulnerability. (Security expert "Memory Corruptor" have reported this set of vulnerabilities to the corresponding vendor, all vulnerabilities have been fixed and the vendor rewarded thousands of dollars to the security experts)'
+      published: 2023-04-19T22:15:10.077
+      severity: ""
+      privileges: ""
+      references:
+        - https://MemoryCorruptor.blogspot.com/p/vulnerabilities-disclosures.html
+        - https://pastebin.com/31v5JMcG
+        - https://www.youtube.com/channel/UCLJ6fZxUqbmPe4jiwC6o4hg/
+    - id: CVE-2023-29921
+      description: PowerJob V4.3.1 is vulnerable to Incorrect Access Control via the create app interface.
+      published: 2023-04-19T12:15:08.293
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/PowerJob/PowerJob/issues/586
+    - id: CVE-2023-27776
+      description: A stored cross-site scripting (XSS) vulnerability in /index.php?page=category_list of Online Jewelry Shop v1.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Category Name parameter.
+      published: 2023-04-19T12:15:08.247
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/lohyt/Persistent-Cross-Site-Scripting-found-in-Online-Jewellery-Store-from-Sourcecodester-website.
+        - https://github.com/lohyt/Persistent-Cross-Site-Scripting-found-in-Online-Jewellery-Store-from-Sourcecodester-website./blob/main/README.md
+    - id: CVE-2023-1382
+      description: A data race flaw was found in the Linux kernel, between where con is allocated and con->sock is set. This issue leads to a NULL pointer dereference when accessing con->sock->sk in net/tipc/topsrv.c in the tipc protocol in the Linux kernel.
+      published: 2023-04-19T23:15:06.903
+      severity: ""
+      privileges: ""
+      references:
+        - https://lore.kernel.org/netdev/bc7bd3183f1c275c820690fc65b708238fe9e38e.1668807842.git.lucien.xin@gmail.com/T/#u
+    - id: CVE-2023-23451
+      description: The Flexi Classic and Flexi Soft Gateways SICK UE410-EN3 FLEXI ETHERNET GATEW., SICK UE410-EN1 FLEXI ETHERNET GATEW., SICK UE410-EN3S04 FLEXI ETHERNET GATEW., SICK UE410-EN4 FLEXI ETHERNET GATEW., SICK FX0-GENT00000 FLEXISOFT EIP GATEW., SICK FX0-GMOD00000 FLEXISOFT MOD GATEW., SICK FX0-GPNT00000 FLEXISOFT PNET GATEW., SICK FX0-GENT00030 FLEXISOFT EIP GATEW.V2, SICK FX0-GPNT00030 FLEXISOFT PNET GATEW.V2 and SICK FX0-GMOD00010 FLEXISOFT MOD GW. have Telnet enabled by factory default. No password is set in the default configuration. Gateways with a serial number >2311xxxx have the Telnet interface disabled by factory default.
+      published: 2023-04-19T23:15:06.970
+      severity: ""
+      privileges: ""
+      references:
+        - https://sick.com/psirt
+    - id: CVE-2023-28327
+      description: A NULL pointer dereference flaw was found in the UNIX protocol in net/unix/diag.c In unix_diag_get_exact in the Linux Kernel. The newly allocated skb does not have sk, leading to a NULL pointer. This flaw allows a local user to crash or potentially cause a denial of service.
+      published: 2023-04-19T23:15:07.027
+      severity: ""
+      privileges: ""
+      references:
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2177382
+    - id: CVE-2023-28328
+      description: A NULL pointer dereference flaw was found in the az6027 driver in drivers/media/usb/dev-usb/az6027.c in the Linux Kernel. The message from user space is not checked properly before transferring into the device. This flaw allows a local user to crash the system or potentially cause a denial of service.
+      published: 2023-04-19T23:15:07.163
+      severity: ""
+      privileges: ""
+      references:
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2177389
+    - id: CVE-2023-2166
+      description: A null pointer dereference issue was found in can protocol in net/can/af_can.c in the Linux before Linux. ml_priv may not be initialized in the receive path of CAN frames. A local user could use this flaw to crash the system or potentially cause a denial of service.
+      published: 2023-04-19T23:15:07.230
+      severity: ""
+      privileges: ""
+      references:
+        - https://lore.kernel.org/lkml/CAO4mrfcV_07hbj8NUuZrA8FH-kaRsrFy-2metecpTuE5kKHn5w@mail.gmail.com/
+    - id: CVE-2023-26599
+      description: XSS vulnerability in TripleSign in Tripleplay Platform releases prior to Caveman 3.4.0 allows attackers to inject client-side code to run as an authenticated user via a crafted link.
+      published: 2023-04-19T12:15:08.127
+      severity: ""
+      privileges: ""
+      references:
+        - https://tripleplay.tv
+        - https://tripleplay.tv/wp-content/uploads/2023/03/CVE-2023-26599-Summary.pdf
+    - id: CVE-2023-25760
+      description: Incorrect Access Control in Tripleplay Platform releases prior to Caveman 3.4.0 allows authenticated user to modify other users passwords via a crafted request payload
+      published: 2023-04-19T12:15:08.083
+      severity: ""
+      privileges: ""
+      references:
+        - https://tripleplay.tv
+        - https://tripleplay.tv/wp-content/uploads/2023/03/CVE-2023-25760-Summary.pdf
+    - id: CVE-2023-25759
+      description: OS Command Injection in TripleData Reporting Engine in Tripleplay Platform releases prior to Caveman 3.4.0 allows authenticated users to run unprivileged OS level commands via a crafted request payload.
+      published: 2023-04-19T12:15:08.040
+      severity: ""
+      privileges: ""
+      references:
+        - https://tripleplay.tv
+        - https://tripleplay.tv/wp-content/uploads/2023/03/CVE-2023-25759-Summary.pdf
