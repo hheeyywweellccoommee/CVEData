@@ -1,0 +1,827 @@
+data:
+    - id: CVE-2023-24819
+      description: RIOT-OS, an operating system that supports Internet of Things devices, contains a network stack with the ability to process 6LoWPAN frames. Prior to version 2022.10, an attacker can send a crafted frame to the device resulting in an out of bounds write in the packet buffer. The overflow can be used to corrupt other packets and the allocator metadata. Corrupting a pointer will easily lead to denial of service. While carefully manipulating the allocator metadata gives an attacker the possibility to write data to arbitrary locations and thus execute arbitrary code. Version 2022.10 fixes this issue. As a workaround, disable support for fragmented IP datagrams or apply the patches manually.
+      published: 2023-04-24T15:15:07.907
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://github.com/RIOT-OS/RIOT/pull/18817/commits/73615161c01fcfbbc7216cf502cabb12c1598ee4
+        - https://github.com/RIOT-OS/RIOT/pull/18820/commits/da63e45ee94c03a2e08625b04ea618653eab4a9f
+        - https://github.com/RIOT-OS/RIOT/security/advisories/GHSA-fv97-2448-gcf6
+    - id: CVE-2023-22577
+      description: Within White Rabbit Switch it's possible as an unauthenticated user to retrieve sensitive information such as password hashes and the SNMP community strings.
+      published: 2023-04-24T09:15:09.410
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://csirt.divd.nl/CVE-2023-22577/
+        - https://csirt.divd.nl/DIVD-2022-00068/
+    - id: CVE-2023-22581
+      description: White Rabbit Switch contains a vulnerability which makes it possible for an attacker to perform system commands under the context of the web application (the default installation makes the webserver run as the root user).
+      published: 2023-04-24T09:15:09.663
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://csirt.divd.nl/CVE-2023-22581/
+        - https://csirt.divd.nl/DIVD-2022-00068/
+    - id: CVE-2023-25131
+      description: Use of default password vulnerability in PowerPanel Business Local/Remote for Windows v4.8.6 and earlier, PowerPanel Business Management for Windows v4.8.6 and earlier, PowerPanel Business Local/Remote for Linux 32bit v4.8.6 and earlier, PowerPanel Business Local/Remote for Linux 64bit v4.8.6 and earlier, PowerPanel Business Management for Linux 32bit v4.8.6 and earlier, PowerPanel Business Management for Linux 64bit v4.8.6 and earlier, PowerPanel Business Local/Remote for MacOS v4.8.6 and earlier, and PowerPanel Business Management for MacOS v4.8.6 and earlier allows remote attackers to log in to the server directly to perform administrative functions. Upon installation or upon first login, the application does not ask the user to change the 'admin' password.
+      published: 2023-04-24T10:15:07.173
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.cyberpower.com/global/en/product/sku/powerpanel_business_for_linux#downloads
+        - https://www.cyberpower.com/global/en/product/sku/powerpanel_business_for_mac#downloads
+        - https://www.cyberpower.com/global/en/product/sku/powerpanel_business_for_virtual_machine#downloads
+        - https://www.cyberpower.com/global/en/product/sku/powerpanel_business_for_windows#downloads
+        - https://zuso.ai/Advisory/
+    - id: CVE-2023-24823
+      description: RIOT-OS, an operating system that supports Internet of Things devices, contains a network stack with the ability to process 6LoWPAN frames. Prior to version 2022.10, an attacker can send a crafted frame to the device resulting in a type confusion between IPv6 extension headers and a UDP header. This occurs while encoding a 6LoWPAN IPHC header. The type confusion manifests in an out of bounds write in the packet buffer. The overflow can be used to corrupt other packets and the allocator metadata. Corrupting a pointer will easily lead to denial of service. While carefully manipulating the allocator metadata gives an attacker the possibility to write data to arbitrary locations and thus execute arbitrary code. Version 2022.10 fixes this issue. As a workaround, apply the patches manually.
+      published: 2023-04-24T16:15:07.767
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://github.com/RIOT-OS/RIOT/pull/18817/commits/4a081f86616cb5c9dd0b5d7b286da03285d1652a
+        - https://github.com/RIOT-OS/RIOT/pull/18820/commits/dafc397fdc3655aeb5c7b9963a43f1604c6a2062
+        - https://github.com/RIOT-OS/RIOT/security/advisories/GHSA-jwmv-47p2-hgq2
+    - id: CVE-2023-30627
+      description: jellyfin-web is the web client for Jellyfin, a free-software media system. Starting in version 10.1.0 and prior to version 10.8.10, a stored cross-site scripting vulnerability in device.js can be used to make arbitrary calls to the `REST` endpoints with admin privileges. When combined with CVE-2023-30626, this results in remote code execution on the Jellyfin instance in the context of the user who's running it. This issue is patched in version 10.8.10. There are no known workarounds.
+      published: 2023-04-24T21:15:09.760
+      severity: CRITICAL
+      privileges: LOW
+      references:
+        - https://github.com/jellyfin/jellyfin-web/commit/b88a5951e1a517ff4c820e693d9c0da981cf68ee
+        - https://github.com/jellyfin/jellyfin-web/releases/tag/v10.8.10
+        - https://github.com/jellyfin/jellyfin-web/security/advisories/GHSA-89hp-h43h-r5pq
+        - https://github.com/jellyfin/jellyfin/security/advisories/GHSA-9p5f-5x8v-x65m
+    - id: CVE-2023-2259
+      description: Improper Neutralization of Special Elements Used in a Template Engine in GitHub repository alfio-event/alf.io prior to 2.0-M4-2304.
+      published: 2023-04-24T21:15:09.547
+      severity: CRITICAL
+      privileges: HIGH
+      references:
+        - https://github.com/alfio-event/alf.io/commit/94e2923a317452e337393789c9f3192dfc1ddac2
+        - https://huntr.dev/bounties/e753bce0-ce82-463b-b344-2f67b39b60ff
+    - id: CVE-2023-25132
+      description: Unrestricted upload of file with dangerous type vulnerability in default.cmd file in PowerPanel Business Local/Remote for Windows v4.8.6 and earlier, PowerPanel Business Management for Windows v4.8.6 and earlier, PowerPanel Business Local/Remote for Linux 32bit v4.8.6 and earlier, PowerPanel Business Local/Remote for Linux 64bit v4.8.6 and earlier, PowerPanel Business Management for Linux 32bit v4.8.6 and earlier, PowerPanel Business Management for Linux 64bit v4.8.6 and earlier, PowerPanel Business Local/Remote for MacOS v4.8.6 and earlier, and PowerPanel Business Management for MacOS v4.8.6 and earlier allows remote attackers to execute operation system commands via unspecified vectors.
+      published: 2023-04-24T10:15:07.237
+      severity: CRITICAL
+      privileges: HIGH
+      references:
+        - https://www.cyberpower.com/global/en/product/sku/powerpanel_business_for_linux#downloads
+        - https://www.cyberpower.com/global/en/product/sku/powerpanel_business_for_mac#downloads
+        - https://www.cyberpower.com/global/en/product/sku/powerpanel_business_for_virtual_machine#downloads
+        - https://www.cyberpower.com/global/en/product/sku/powerpanel_business_for_windows#downloads
+        - https://zuso.ai/Advisory/
+    - id: CVE-2023-25133
+      description: Improper privilege management vulnerability in default.cmd file in PowerPanel Business Local/Remote for Windows v4.8.6 and earlier, PowerPanel Business Management for Windows v4.8.6 and earlier, PowerPanel Business Local/Remote for Linux 32bit v4.8.6 and earlier, PowerPanel Business Local/Remote for Linux 64bit v4.8.6 and earlier, PowerPanel Business Management for Linux 32bit v4.8.6 and earlier, PowerPanel Business Management for Linux 64bit v4.8.6 and earlier, PowerPanel Business Local/Remote for MacOS v4.8.6 and earlier, and PowerPanel Business Management for MacOS v4.8.6 and earlier allows remote attackers to execute operation system commands via unspecified vectors.
+      published: 2023-04-24T11:15:07.097
+      severity: CRITICAL
+      privileges: HIGH
+      references:
+        - https://www.cyberpower.com/global/en/product/sku/powerpanel_business_for_linux#downloads
+        - https://www.cyberpower.com/global/en/product/sku/powerpanel_business_for_mac#downloads
+        - https://www.cyberpower.com/global/en/product/sku/powerpanel_business_for_virtual_machine#downloads
+        - https://www.cyberpower.com/global/en/product/sku/powerpanel_business_for_windows#downloads
+        - https://zuso.ai/Advisory/
+    - id: CVE-2023-27524
+      description: Session Validation attacks in Apache Superset versions up to and including 2.0.1. Installations that have not altered the default configured SECRET_KEY according to installation instructions allow for an attacker to authenticate and access unauthorized resources. This does not affect Superset administrators who have changed the default value for SECRET_KEY config.
+      published: 2023-04-24T16:15:07.843
+      severity: HIGH
+      privileges: NONE
+      references:
+        - http://www.openwall.com/lists/oss-security/2023/04/24/2
+        - https://lists.apache.org/thread/n0ftx60sllf527j7g11kmt24wvof8xyk
+    - id: CVE-2023-22917
+      description: A buffer overflow vulnerability in the “sdwan_iface_ipc” binary of Zyxel ATP series firmware versions 5.10 through 5.32, USG FLEX series firmware versions 5.00 through 5.32, USG FLEX 50(W) firmware versions 5.10 through 5.32, USG20(W)-VPN firmware versions 5.10 through 5.32, and VPN series firmware versions 5.00 through 5.35, which could allow a remote unauthenticated attacker to cause a core dump with a request error message on a vulnerable device by uploading a crafted configuration file.
+      published: 2023-04-24T17:15:09.833
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-multiple-vulnerabilities-of-firewalls-and-aps
+    - id: CVE-2023-22916
+      description: The configuration parser of Zyxel ATP series firmware versions 5.10 through 5.35, USG FLEX series firmware versions 5.00 through 5.35, USG FLEX 50(W) firmware versions 5.10 through 5.35, USG20(W)-VPN firmware versions 5.10 through 5.35, and VPN series firmware versions 5.00 through 5.35, which fails to properly sanitize user input. A remote unauthenticated attacker could leverage the vulnerability to modify device configuration data, resulting in DoS conditions on an affected device if the attacker could trick an authorized administrator to switch the management mode to the cloud mode.
+      published: 2023-04-24T17:15:09.767
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-multiple-vulnerabilities-of-firewalls-and-aps
+    - id: CVE-2023-24820
+      description: RIOT-OS, an operating system that supports Internet of Things devices, contains a network stack with the ability to process 6LoWPAN frames. An attacker can send a crafted frame to the device resulting in a large out of bounds write beyond the packet buffer. The write will create a hard fault exception after reaching the last page of RAM. The hard fault is not handled and the system will be stuck until reset. Thus the impact is denial of service. Version 2022.10 fixes this issue. As a workaround, apply the patch manually.
+      published: 2023-04-24T15:15:07.987
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/RIOT-OS/RIOT/pull/18817/commits/2709fbd827b688fe62df2c77c316914f4a3a6d4a
+        - https://github.com/RIOT-OS/RIOT/pull/18820/commits/d052e2ee166e55bbdfe4c455e65dbd7e3479ebe3
+        - https://github.com/RIOT-OS/RIOT/security/advisories/GHSA-vpx8-h94p-9vrj
+    - id: CVE-2022-48476
+      description: In JetBrains Ktor before 2.3.0 path traversal in the `resolveResource` method was possible
+      published: 2023-04-24T13:15:07.100
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.jetbrains.com/privacy-security/issues-fixed/
+    - id: CVE-2023-24822
+      description: RIOT-OS, an operating system that supports Internet of Things devices, contains a network stack with the ability to process 6LoWPAN frames. Prior to version 2022.10, an attacker can send a crafted frame to the device resulting in a NULL pointer dereference while encoding a 6LoWPAN IPHC header. The NULL pointer dereference causes a hard fault exception, leading to denial of service. Version 2022.10 fixes this issue. As a workaround, apply the patches manually.
+      published: 2023-04-24T16:15:07.690
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/RIOT-OS/RIOT/pull/18817/commits/639c04325de4ceb9d444955f4927bfae95843a39
+        - https://github.com/RIOT-OS/RIOT/pull/18820/commits/7253e261556f252816f4a3b7c4f96fc10d642485
+        - https://github.com/RIOT-OS/RIOT/security/advisories/GHSA-8x69-5fhj-72wh
+    - id: CVE-2023-24821
+      description: RIOT-OS, an operating system that supports Internet of Things devices, contains a network stack with the ability to process 6LoWPAN frames. Prior to version 2022.10, an attacker can send a crafted frame to the device resulting in a large out of bounds write beyond the packet buffer. The write will create a hard fault exception after reaching the last page of RAM. The hard fault is not handled and the system will be stuck until reset, thus the impact is denial of service. Version 2022.10 fixes this issue. As a workaround, disable support for fragmented IP datagrams or apply the patches manually.
+      published: 2023-04-24T16:15:07.623
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/RIOT-OS/RIOT/pull/18817/commits/9728f727e75d7d78dbfb5918e0de1b938b7b6d2c
+        - https://github.com/RIOT-OS/RIOT/pull/18820/commits/bd31010231f5340e21410595dd95afc86bbfd341
+        - https://github.com/RIOT-OS/RIOT/security/advisories/GHSA-2fpr-82xr-p887
+    - id: CVE-2023-22915
+      description: A buffer overflow vulnerability in the “fbwifi_forward.cgi” CGI program of Zyxel USG FLEX series firmware versions 4.50 through 5.35, USG FLEX 50(W) firmware versions 4.30 through 5.35, USG20(W)-VPN firmware versions 4.30 through 5.35, and VPN series firmware versions 4.30 through 5.35, which could allow a remote unauthenticated attacker to cause DoS conditions by sending a crafted HTTP request if the Facebook WiFi function were enabled on an affected device.
+      published: 2023-04-24T17:15:09.690
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-multiple-vulnerabilities-of-firewalls-and-aps
+    - id: CVE-2023-2258
+      description: Improper Neutralization of Formula Elements in a CSV File in GitHub repository alfio-event/alf.io prior to 2.0-M4-2304.
+      published: 2023-04-24T21:15:09.477
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/alfio-event/alf.io/commit/94e2923a317452e337393789c9f3192dfc1ddac2
+        - https://huntr.dev/bounties/31eaf0fe-4d91-4022-aa9b-802bc6eafb8f
+    - id: CVE-2023-29530
+      description: Laminas Diactoros provides PSR HTTP Message implementations. In versions 2.18.0 and prior, 2.19.0, 2.20.0, 2.21.0, 2.22.0, 2.23.0, 2.24.0, and 2.25.0, users who create HTTP requests or responses using laminas/laminas-diactoros, when providing a newline at the start or end of a header key or value, can cause an invalid message. This can lead to denial of service vectors or application errors. The problem has been patched in following versions 2.18.1, 2.19.1, 2.20.1, 2.21.1, 2.22.1, 2.23.1, 2.24.1, and 2.25.1. As a workaround, validate HTTP header keys and/or values, and if using user-supplied values, filter them to strip off leading or trailing newline characters before calling `withHeader()`.
+      published: 2023-04-24T20:15:08.823
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/advisories/GHSA-wxmh-65f7-jcvw
+        - https://github.com/laminas/laminas-diactoros/security/advisories/GHSA-xv3h-4844-9h36
+    - id: CVE-2022-45084
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Softaculous Loginizer plugin <= 1.7.5 versions.
+      published: 2023-04-24T15:15:07.627
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/loginizer/wordpress-loginizer-plugin-1-7-5-unauth-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-2251
+      description: Uncaught Exception in GitHub repository eemeli/yaml prior to 2.2.2.
+      published: 2023-04-24T15:15:08.897
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/eemeli/yaml/commit/984f5781ffd807e58cad3b5c8da1f940dab75fba
+        - https://huntr.dev/bounties/4b494e99-5a3e-40d9-8678-277f3060e96c
+    - id: CVE-2023-26097
+      description: An issue was discovered in Telindus Apsal 3.14.2022.235 b. Unauthorized actions that could modify the application behaviour may not be blocked.
+      published: 2023-04-24T18:15:09.143
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://excellium-services.com/cert-xlm-advisory/CVE-2023-26097
+        - https://www.telindus.lu/fr/produits/apsal
+    - id: CVE-2023-24818
+      description: RIOT-OS, an operating system that supports Internet of Things devices, contains a network stack with the ability to process 6LoWPAN frames. Prior to version 2022.10, an attacker can send a crafted frame to the device resulting in a NULL pointer dereference. During forwarding of a fragment an uninitialized entry in the reassembly buffer is used. The NULL pointer dereference triggers a hard fault exception resulting in denial of service. Version 2022.10 fixes this issue. As a workaround, disable support for fragmented IP datagrams or apply the patches manually.
+      published: 2023-04-24T15:15:07.840
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/RIOT-OS/RIOT/pull/18817/commits/0bec3e245ed3815ad6c8cae54673f0021777768b
+        - https://github.com/RIOT-OS/RIOT/pull/18817/commits/17c70f7ee0b1445f2941f516f264ed4a096e82b7
+        - https://github.com/RIOT-OS/RIOT/pull/18817/commits/aa27ed71fa3e5d48dee1748dcf27b6323ec98a33
+        - https://github.com/RIOT-OS/RIOT/pull/18820/commits/4b23d93868a28edd8ebf2ff4ebe94540f2475008
+        - https://github.com/RIOT-OS/RIOT/pull/18820/commits/f4df5b4c4f841ccb460930894cf68ab10b55b971
+        - https://github.com/RIOT-OS/RIOT/pull/18820/commits/f4fb746d1acaacc962daeed3aa71aadfe307d20e
+        - https://github.com/RIOT-OS/RIOT/security/advisories/GHSA-69h9-vj5r-xcg6
+    - id: CVE-2023-30629
+      description: Vyper is a Pythonic Smart Contract Language for the ethereum virtual machine. In versions 0.3.1 through 0.3.7, the Vyper compiler generates the wrong bytecode. Any contract that uses the `raw_call` with `revert_on_failure=False` and `max_outsize=0` receives the wrong response from `raw_call`. Depending on the memory garbage, the result can be either `True` or `False`. A patch is available and, as of time of publication, anticipated to be part of Vyper 0.3.8. As a workaround, one may always put  `max_outsize>0`.
+      published: 2023-04-24T22:15:10.030
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://docs.vyperlang.org/en/v0.3.7/built-in-functions.html#raw_call
+        - https://github.com/lidofinance/gate-seals/blob/051593e74df01a4131c485b4fda52e691cd4b7d8/contracts/GateSeal.vy#L164
+        - https://github.com/lidofinance/gate-seals/pull/5/files
+        - https://github.com/vyperlang/vyper/commit/851f7a1b3aa2a36fd041e3d0ed38f9355a58c8ae
+        - https://github.com/vyperlang/vyper/security/advisories/GHSA-w9g2-3w7p-72g9
+    - id: CVE-2023-30626
+      description: Jellyfin is a free-software media system. Versions starting with 10.8.0 and prior to 10.8.10 and prior have a directory traversal vulnerability inside the `ClientLogController`, specifically `/ClientLog/Document`. When combined with a cross-site scripting vulnerability (CVE-2023-30627), this can result in file write and arbitrary code execution. Version 10.8.10 has a patch for this issue. There are no known workarounds.
+      published: 2023-04-24T21:15:09.687
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/jellyfin/jellyfin-web/security/advisories/GHSA-89hp-h43h-r5pq
+        - https://github.com/jellyfin/jellyfin/blob/22d880662283980dec994cd7d35fe269613bfce3/Jellyfin.Api/Controllers/ClientLogController.cs#L44
+        - https://github.com/jellyfin/jellyfin/commit/82ad2633fdfb1c37a158057c7935f83e1129eda7
+        - https://github.com/jellyfin/jellyfin/pull/5918
+        - https://github.com/jellyfin/jellyfin/releases/tag/v10.8.10
+        - https://github.com/jellyfin/jellyfin/security/advisories/GHSA-9p5f-5x8v-x65m
+    - id: CVE-2023-30613
+      description: |-
+        Kiwi TCMS, an open source test management system, allows users to upload attachments to test plans, test cases, etc. In versions of Kiwi TCMS prior to 12.2, there is no control over what kinds of files can be uploaded. Thus, a malicious actor may upload an `.exe` file or a file containing embedded JavaScript and trick others into clicking on these files, causing vulnerable browsers to execute malicious code on another computer.
+
+        Kiwi TCMS v12.2 comes with functionality that allows administrators to configure additional upload validator functions which give them more control over what file types are accepted for upload. By default `.exe` are denied. Other files containing the `<script>` tag, regardless of their type are also denied b/c they are a path to XSS attacks. There are no known workarounds aside from upgrading.
+      published: 2023-04-24T17:15:10.863
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/kiwitcms/Kiwi/security/advisories/GHSA-fwcf-753v-fgcj
+        - https://huntr.dev/bounties/c30d3503-600d-4d00-9571-98826a51f12c
+        - https://kiwitcms.org/blog/kiwi-tcms-team/2023/04/23/kiwi-tcms-122/
+    - id: CVE-2023-30628
+      description: |-
+        Kiwi TCMS is an open source test management system. In kiwitcms/Kiwi v12.2 and prior and kiwitcms/enterprise v12.2 and prior,
+        the `changelog.yml` workflow is vulnerable to command injection attacks because of using an untrusted `github.head_ref` field. The `github.head_ref` value is an attacker-controlled value. Assigning the value to `zzz";echo${IFS}"hello";#` can lead to command injection. Since the permission is not restricted, the attacker has a write-access to the repository. Commit 834c86dfd1b2492ccad7ebbfd6304bfec895fed2 of the kiwitcms/Kiwi repository and commit e39f7e156fdaf6fec09a15ea6f4e8fec8cdbf751 of the kiwitcms/enterprise repository contain a fix for this issue.
+      published: 2023-04-24T22:15:09.953
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/kiwitcms/Kiwi/blob/37bfb87696093ce0393160e2725949185cc0651d/.github/workflows/changelog.yml#L18
+        - https://github.com/kiwitcms/Kiwi/commit/834c86dfd1b2492ccad7ebbfd6304bfec895fed2
+        - https://github.com/kiwitcms/Kiwi/security/advisories/GHSA-cw6r-6ccx-5hwx
+        - https://github.com/kiwitcms/enterprise/commit/e39f7e156fdaf6fec09a15ea6f4e8fec8cdbf751
+        - https://securitylab.github.com/research/github-actions-untrusted-input/
+    - id: CVE-2023-30623
+      description: '`embano1/wip` is a GitHub Action written in Bash. Prior to version 2, the  `embano1/wip` action uses the `github.event.pull_request.title` parameter in an insecure way. The title parameter is used in a run statement - resulting in a command injection vulnerability due to string interpolation. This vulnerability can be triggered by any user on GitHub. They just need to create a pull request with a commit message containing an exploit. (Note that first-time PR requests will not be run - but the attacker can submit a valid PR before submitting an invalid PR). The commit can be genuine, but the commit message can be malicious. This can be used to execute code on the GitHub runners and can be used to exfiltrate any secrets used in the CI pipeline, including repository tokens. Version 2 has a fix for this issue.'
+      published: 2023-04-24T22:15:09.870
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/embano1/wip/commit/c25450f77ed02c20d00b76ee3b33ff43838739a2
+        - https://github.com/embano1/wip/security/advisories/GHSA-rg3q-prf8-qxmp
+        - https://securitylab.github.com/research/github-actions-untrusted-input/
+    - id: CVE-2023-22913
+      description: A post-authentication command injection vulnerability in the “account_operator.cgi” CGI program of Zyxel USG FLEX series firmware versions 4.50 through 5.35, and VPN series firmware versions 4.30 through 5.35, which could allow a remote authenticated attacker to modify device configuration data, resulting in denial-of-service (DoS) conditions on an affected device.
+      published: 2023-04-24T17:15:09.550
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-multiple-vulnerabilities-of-firewalls-and-aps
+    - id: CVE-2023-2260
+      description: Improper Authorization of Index Containing Sensitive Information in GitHub repository alfio-event/alf.io prior to 2.0-M4-2304.
+      published: 2023-04-24T21:15:09.613
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/alfio-event/alf.io/commit/c9a16ab93d42b2beb06d529b57890121f85be6ef
+        - https://huntr.dev/bounties/649badc8-c935-4a84-8aa8-d3269ac54377
+    - id: CVE-2023-27991
+      description: The post-authentication command injection vulnerability in the CLI command of Zyxel ATP series firmware versions 4.32 through 5.35, USG FLEX series firmware versions 4.50 through 5.35, USG FLEX 50(W) firmware versions 4.16 through 5.35, USG20(W)-VPN firmware versions 4.16 through 5.35, and VPN series firmware versions 4.30 through 5.35, which could allow an authenticated attacker to execute some OS commands remotely.
+      published: 2023-04-24T18:15:09.497
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-xss-vulnerability-and-post-authentication-command-injection-vulnerability-in-firewalls
+    - id: CVE-2023-22914
+      description: A path traversal vulnerability in the “account_print.cgi” CGI program of Zyxel USG FLEX series firmware versions 4.50 through 5.35, and VPN series firmware versions 4.30 through 5.35, which could allow a remote authenticated attacker with administrator privileges to execute unauthorized OS commands in the “tmp” directory by uploading a crafted file if the hotspot function were enabled.
+      published: 2023-04-24T17:15:09.627
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-multiple-vulnerabilities-of-firewalls-and-aps
+    - id: CVE-2023-1731
+      description: In LTOS versions prior to V7.06.013, the configuration file upload function would not correctly validate the input, which would allow an remote authenticated attacker with high privileges to execute arbitrary commands.
+      published: 2023-04-24T14:15:07.640
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.meinbergglobal.com/english/news/meinberg-security-advisory-mbgsa-2023-02-lantime-firmware-v7-06-013.htm
+    - id: CVE-2023-26494
+      description: lorawan-stack is an open source LoRaWAN network server. Prior to version 3.24.1, an open redirect exists on the login page of the lorawan stack server, allowing an attacker to supply a user controlled redirect upon sign in. This issue may allows malicious actors to phish users, as users assume they were redirected to the homepage on login. Version 3.24.1 contains a fix.
+      published: 2023-04-24T17:15:10.693
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/TheThingsNetwork/lorawan-stack/blob/ecdef730f176c02f7c9afce98b0457ae64de5bfc/pkg/webui/account/views/login/index.js#L90-L90
+        - https://github.com/TheThingsNetwork/lorawan-stack/blob/ecdef730f176c02f7c9afce98b0457ae64de5bfc/pkg/webui/account/views/token-login/index.js#L74-L74
+        - https://github.com/TheThingsNetwork/lorawan-stack/commit/f06776028bdb3994847fc6067613dc61a2b3559e
+        - https://github.com/TheThingsNetwork/lorawan-stack/releases/tag/v3.24.1
+        - https://securitylab.github.com/advisories/GHSL-2022-138_lorawan-stack/
+    - id: CVE-2023-23892
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in Jamie Poitra M Chart plugin <= 1.9.4 versions.
+      published: 2023-04-24T14:15:07.723
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/m-chart/wordpress-m-chart-plugin-1-9-4-auth-stored-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-26061
+      description: An issue was discovered in Nokia NetAct before 22 FP2211. On the Scheduled Search tab under the Alarm Reports Dashboard page, users can create a script to inject XSS. Input validation was missing during creation of a scheduled task. For an external attacker, it is very difficult to exploit this, because a few dynamically created parameters such as Jsession-id, a CSRF token, and an Nxsrf token would be needed. The attack can realistically only be performed by an internal user.
+      published: 2023-04-24T17:15:10.627
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://nokia.com
+        - https://www.ptsecurity.com/ww-en/analytics/threatscape/pt-2022-05/
+    - id: CVE-2023-26060
+      description: An issue was discovered in Nokia NetAct before 22 FP2211. On the Working Set Manager page, users can create a Working Set with a name that has a client-side template injection payload. Input validation is missing during creation of the working set. For an external attacker, it is very difficult to exploit this, because a few dynamically created parameters such as Jsession-id, a CSRF token, and an Nxsrf token would be needed. The attack can realistically only be performed by an internal user.
+      published: 2023-04-24T17:15:10.560
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://nokia.com
+        - https://www.ptsecurity.com/ww-en/analytics/threatscape/pt-2022-04/
+    - id: CVE-2023-26099
+      description: An issue was discovered in Telindus Apsal 3.14.2022.235 b. The consultation permission is insecure.
+      published: 2023-04-24T18:15:09.200
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://excellium-services.com/cert-xlm-advisory/CVE-2023-26099
+        - https://www.telindus.lu/fr/produits/apsal
+    - id: CVE-2023-22918
+      description: A post-authentication information exposure vulnerability in the CGI program of Zyxel ATP series firmware versions 4.32 through 5.35, USG FLEX series firmware versions 4.50 through 5.35, USG FLEX 50(W) firmware versions 4.16 through 5.35, USG20(W)-VPN firmware versions 4.16 through 5.35, VPN series firmware versions 4.30 through 5.35, NWA110AX firmware version 6.50(ABTG.2) and earlier versions, WAC500 firmware version 6.50(ABVS.0) and earlier versions, and WAX510D firmware version 6.50(ABTF.2) and earlier versions, which could allow a remote authenticated attacker to retrieve encrypted information of the administrator on an affected device.
+      published: 2023-04-24T18:15:09.027
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-multiple-vulnerabilities-of-firewalls-and-aps
+    - id: CVE-2023-26059
+      description: An issue was discovered in Nokia NetAct before 22 SP1037. On the Site Configuration Tool tab, attackers can upload a ZIP file which, when processed, exploits Stored XSS. The upload option of the Site Configuration tool does not validate the file contents. The application is in a demilitarised zone behind a perimeter firewall and without exposure to the internet. The attack can only be performed by an internal user.
+      published: 2023-04-24T18:15:09.090
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://nokia.com
+        - https://www.ptsecurity.com/ww-en/analytics/threatscape/pt-2022-03/
+    - id: CVE-2023-30622
+      description: Clusternet is a general-purpose system for controlling Kubernetes clusters across different environments. An issue in clusternet prior to version 0.15.2 can be leveraged to lead to a cluster-level privilege escalation. The clusternet has a deployment called `cluster-hub` inside the `clusternet-system` Kubernetes namespace, which runs on worker nodes randomly. The deployment has a service account called `clusternet-hub`, which has a cluster role called `clusternet:hub` via cluster role binding. The `clusternet:hub` cluster role has `"*" verbs of "*.*"` resources. Thus, if a malicious user can access the worker node which runs the clusternet, they can leverage the service account to do malicious actions to critical system resources. For example, the malicious user can leverage the service account to get ALL secrets in the entire cluster, resulting in cluster-level privilege escalation. Version 0.15.2 contains a fix for this issue.
+      published: 2023-04-24T16:15:07.917
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/clusternet/clusternet/releases/tag/v0.15.2
+        - https://github.com/clusternet/clusternet/security/advisories/GHSA-833c-xh79-p429
+    - id: CVE-2023-30776
+      description: An authenticated user with specific data permissions could access database connections stored passwords by requesting a specific REST API. This issue affects Apache Superset version 1.3.0 up to 2.0.1.
+      published: 2023-04-24T16:15:08.000
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - http://www.openwall.com/lists/oss-security/2023/04/24/3
+        - https://lists.apache.org/thread/s9w9w10mt2sngk3solwnmq5k7md53tsz
+    - id: CVE-2022-41612
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Shareaholic Similar Posts plugin <= 3.1.6 versions.
+      published: 2023-04-24T17:15:09.463
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/similar-posts/wordpress-similar-posts-plugin-3-1-6-auth-stored-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2022-47158
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Pakpobox alfred24 Click & Collect plugin <= 1.1.7 versions.
+      published: 2023-04-24T15:15:07.700
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/alfred-click-collect/wordpress-alfred24-click-collect-plugin-1-1-7-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2022-47598
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in WP Plugins Pro WP Super Popup plugin <= 1.1.2 versions.
+      published: 2023-04-24T15:15:07.773
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/wp-super-popup/wordpress-wp-super-popup-plugin-1-1-2-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2022-48477
+      description: In JetBrains Hub before 2023.1.15725 SSRF protection in Auth Module integration was missing
+      published: 2023-04-24T13:15:07.173
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.jetbrains.com/privacy-security/issues-fixed/
+    - id: CVE-2023-30544
+      description: Kiwi TCMS is an open source test management system. In versions of Kiwi TCMS prior to 12.2, users were able to update their email addresses via the `My profile` admin page. This page allowed them to change the email address registered with their account without the ownership verification performed during account registration. Operators of Kiwi TCMS should upgrade to v12.2 or later to receive a patch. No known workarounds exist.
+      published: 2023-04-24T17:15:10.777
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/kiwitcms/Kiwi/security/advisories/GHSA-7x6q-3v3m-cwjg
+        - https://huntr.dev/bounties/1714df73-e639-4d64-ab25-ced82dad9f85/
+        - https://kiwitcms.org/blog/kiwi-tcms-team/2023/04/23/kiwi-tcms-122/
+    - id: CVE-2012-10014
+      description: A vulnerability classified as problematic has been found in Kau-Boy Backend Localization Plugin 2.0 on WordPress. Affected is the function backend_localization_admin_settings/backend_localization_save_setting/backend_localization_login_form/localize_backend of the file backend_localization.php. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. Upgrading to version 2.0.1 is able to address this issue. The name of the patch is 36f457ee16dd114e510fd91a3ea9fbb3c1f87184. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-227232.
+      published: 2023-04-24T18:15:08.867
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/wp-plugins/kau-boys-backend-localization/commit/36f457ee16dd114e510fd91a3ea9fbb3c1f87184
+        - https://github.com/wp-plugins/kau-boys-backend-localization/releases/tag/2.0.1
+        - https://vuldb.com/?ctiid.227232
+        - https://vuldb.com/?id.227232
+    - id: CVE-2012-10013
+      description: A vulnerability was found in Kau-Boy Backend Localization Plugin up to 1.6.1 on WordPress. It has been rated as problematic. This issue affects some unknown processing of the file backend_localization.php. The manipulation leads to cross site scripting. The attack may be initiated remotely. Upgrading to version 2.0 is able to address this issue. The name of the patch is 43dc96defd7944da12ff116476a6890acd7dd24b. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-227231.
+      published: 2023-04-24T18:15:08.783
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/wp-plugins/kau-boys-backend-localization/commit/43dc96defd7944da12ff116476a6890acd7dd24b
+        - https://github.com/wp-plugins/kau-boys-backend-localization/releases/tag/2.0
+        - https://vuldb.com/?ctiid.227231
+        - https://vuldb.com/?id.227231
+    - id: CVE-2023-27990
+      description: The XSS vulnerability in Zyxel ATP series firmware versions 4.32 through 5.35, USG FLEX series firmware versions 4.50 through 5.35, USG FLEX 50(W) firmware versions 4.16 through 5.35, USG20(W)-VPN firmware versions 4.16 through 5.35, and VPN series firmware versions 4.30 through 5.35, which could allow an authenticated attacker with administrator privileges to store malicious scripts in a vulnerable device. A successful XSS attack could then result in the stored malicious scripts being executed when the user visits the Logs page of the GUI on the device.
+      published: 2023-04-24T18:15:09.440
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-xss-vulnerability-and-post-authentication-command-injection-vulnerability-in-firewalls
+    - id: CVE-2023-29479
+      description: Ribose RNP before 0.16.3 may hang when the input is malformed.
+      published: 2023-04-24T15:15:08.727
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.rnpgp.org/blog/2023-04-13-rnp-release-0-16-3/
+    - id: CVE-2023-1420
+      description: The Ajax Search Lite WordPress plugin before 4.11.1, Ajax Search Pro WordPress plugin before 4.26.2 does not sanitise and escape a parameter before outputting it back in a response of an AJAX action, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin
+      published: 2023-04-24T19:15:09.487
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/a9a54ee5-2b80-4f55-894c-1047030eea7f
+    - id: CVE-2023-30376
+      description: In Tenda AC15 V15.03.05.19, the function "henan_pppoe_user" contains a stack-based buffer overflow vulnerability.
+      published: 2023-04-24T15:15:09.180
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/2205794866/Tenda/blob/main/AC15/9.md
+    - id: CVE-2023-30375
+      description: In Tenda AC15 V15.03.05.19, the function "getIfIp" contains a stack-based buffer overflow vulnerability.
+      published: 2023-04-24T15:15:09.137
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/2205794866/Tenda/blob/main/AC15/1.md
+    - id: CVE-2023-30373
+      description: In Tenda AC15 V15.03.05.19, the function "xian_pppoe_user" contains a stack-based buffer overflow vulnerability.
+      published: 2023-04-24T15:15:09.097
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/2205794866/Tenda/blob/main/AC15/8.md
+    - id: CVE-2023-30372
+      description: In Tenda AC15 V15.03.05.19, The function "xkjs_ver32" contains a stack-based buffer overflow vulnerability.
+      published: 2023-04-24T15:15:09.053
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/2205794866/Tenda/blob/main/AC15/10.md
+    - id: CVE-2023-30371
+      description: In Tenda AC15 V15.03.05.19, the function "sub_ED14" contains a stack-based buffer overflow vulnerability.
+      published: 2023-04-24T15:15:09.010
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/2205794866/Tenda/blob/main/AC15/4.md
+    - id: CVE-2023-30370
+      description: In Tenda AC15 V15.03.05.19, the function GetValue contains a stack-based buffer overflow vulnerability.
+      published: 2023-04-24T15:15:08.967
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/2205794866/Tenda/blob/main/AC15/7.md
+    - id: CVE-2023-29849
+      description: Bang Resto 1.0 was discovered to contain multiple SQL injection vulnerabilities via the btnMenuItemID, itemID, itemPrice, menuID, staffID, or itemqty parameter.
+      published: 2023-04-24T15:15:08.853
+      severity: ""
+      privileges: ""
+      references:
+        - http://packetstormsecurity.com/files/171900/Bang-Resto-1.0-SQL-Injection.html
+        - https://github.com/mesinkasir/bangresto/issues/3
+    - id: CVE-2023-29848
+      description: Bang Resto 1.0 was discovered to contain a stored cross-site scripting (XSS) vulnerability via the itemName parameter in the admin/menu.php Add New Menu function.
+      published: 2023-04-24T15:15:08.813
+      severity: ""
+      privileges: ""
+      references:
+        - http://packetstormsecurity.com/files/171899/Bang-Resto-1.0-Cross-Site-Scripting.html
+        - https://github.com/mesinkasir/bangresto/issues/2
+    - id: CVE-2023-26865
+      description: SQL injection vulnerability found in PrestaShop bdroppy v.2.2.12 and before allowing a remote attacker to gain privileges via the BdroppyCronModuleFrontController::importProducts component.
+      published: 2023-04-24T18:15:09.253
+      severity: ""
+      privileges: ""
+      references:
+        - https://bdroppy.com/dropshipping-apps-integrations-bdroppy/
+        - https://friends-of-presta.github.io/security-advisories/modules/2023/04/20/bdroppy.html
+    - id: CVE-2023-27848
+      description: broccoli-compass v0.2.4 was discovered to contain a remote code execution (RCE) vulnerability via the child_process function.
+      published: 2023-04-24T18:15:09.357
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/omnitaint/Vulnerability-Reports/blob/9d65add2bca71ed6d6b2e281ee6790a12504ff8e/reports/broccoli-compass/report.md
+        - https://www.npmjs.com/package/broccoli-compass
+    - id: CVE-2023-27849
+      description: rails-routes-to-json v1.0.0 was discovered to contain a remote code execution (RCE) vulnerability via the child_process function.
+      published: 2023-04-24T18:15:09.400
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/omnitaint/Vulnerability-Reports/blob/2211ea4712f24d20b7f223fb737910fdfb041edb/reports/rails-routes-to-json/report.md
+        - https://www.npmjs.com/package/rails-routes-to-json
+    - id: CVE-2023-29480
+      description: Ribose RNP before 0.16.3 sometimes lets secret keys remain unlocked after use.
+      published: 2023-04-24T15:15:08.770
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.rnpgp.org/blog/2023-04-13-rnp-release-0-16-3/
+    - id: CVE-2023-30458
+      description: A username enumeration issue was discovered in Medicine Tracker System 1.0. The login functionality allows a malicious user to guess a valid username due to a different response time from invalid usernames. When one enters a valid username, the response time increases depending on the length of the supplied password.
+      published: 2023-04-24T08:15:07.107
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/d34dun1c02n/CVE-2023-30458
+        - https://www.sourcecodester.com/download-code?nid=16308&title=Medicine+Tracker+System+in+PHP+%28OOP%29+and+MySQL+DB+Source+Code+Free+Download
+        - https://www.sourcecodester.com/php/16308/medicine-tracker-system-php-oop-and-mysql-db-source-code-free-download.html
+    - id: CVE-2023-29566
+      description: huedawn-tesseract 0.3.3 and dawnsparks-node-tesseract 0.4.0 to 0.4.1 was discovered to contain a remote code execution (RCE) vulnerability via the child_process function.
+      published: 2023-04-24T18:15:09.550
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/omnitaint/Vulnerability-Reports/blob/ec3645003c7f8996459b5b24c722474adc2d599f/reports/dawnsparks-node-tesseract/report.md
+        - https://github.com/rona-dinihari/dawnsparks-node-tesseract
+        - https://github.com/rona-dinihari/dawnsparks-node-tesseract/commit/81d1664f0b9fe521534acfae1d5b9c40127b36c1
+        - https://www.npmjs.com/package/dawnsparks-node-tesseract
+    - id: CVE-2023-0276
+      description: The Weaver Xtreme Theme Support WordPress plugin before 6.2.7 does not validate and escape some of its shortcode attributes before outputting them back in a page/post where the shortcode is embed, which could allow users with the contributor role and above to perform Stored Cross-Site Scripting attacks.
+      published: 2023-04-24T19:15:08.653
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/d00824a3-7df5-4b52-a31b-5fdfb19c970f
+    - id: CVE-2023-0388
+      description: The Random Text WordPress plugin through 0.3.0 does not properly sanitize and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by any authenticated users, such as subscribers.
+      published: 2023-04-24T19:15:08.723
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/77861a2e-879a-4bd0-b4c0-cd19481ace5d
+    - id: CVE-2023-0418
+      description: The Video Central for WordPress plugin through 1.3.0 does not validate and escape some of its shortcode attributes before outputting them back in a page/post where the shortcode is embed, which could allow users with the contributor role and above to perform Stored Cross-Site Scripting attacks
+      published: 2023-04-24T19:15:08.803
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/821751bb-feaf-45b8-91a9-e173cb0c05fc
+    - id: CVE-2023-0420
+      description: The Custom Post Type and Taxonomy GUI Manager WordPress plugin through 1.1 does not have CSRF, and is lacking sanitising as well as escaping in some parameters, allowing attackers to make a logged in admin put Stored Cross-Site Scripting payloads via CSRF
+      published: 2023-04-24T19:15:08.870
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/266e417f-ece7-4ff5-a724-4d9c8e2f3faa
+    - id: CVE-2023-0424
+      description: The MS-Reviews WordPress plugin through 1.5 does not sanitise and escape reviews, which could allow users any authenticated users, such as Subscribers to perform Stored Cross-Site Scripting attacks
+      published: 2023-04-24T19:15:08.953
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/b0f8713f-54b2-4ab2-a475-60a1692a50e9
+    - id: CVE-2023-0899
+      description: The Steveas WP Live Chat Shoutbox WordPress plugin through 1.4.2 does not sanitise and escape a parameter before outputting it back in the Shoutbox, leading to Stored Cross-Site Scripting which could be used against high privilege users such as admins.
+      published: 2023-04-24T19:15:09.033
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/e95f925f-118e-4fa1-8e8f-9dc1bc698f12
+    - id: CVE-2023-1020
+      description: The Steveas WP Live Chat Shoutbox WordPress plugin through 1.4.2 does not sanitise and escape a parameter before using it in a SQL statement via an AJAX action available to unauthenticated users, leading to a SQL injection.
+      published: 2023-04-24T19:15:09.103
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/4e5aa9a3-65a0-47d6-bc26-a2fb6cb073ff
+    - id: CVE-2023-1126
+      description: The WP FEvents Book WordPress plugin through 0.46 does not sanitise and escape some parameters, which could allow any authenticated users, such as subscriber to perform Cross-Site Scripting attacks
+      published: 2023-04-24T19:15:09.180
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/87ce3c59-b234-47bf-abca-e690b53bbe82
+    - id: CVE-2023-1129
+      description: The WP FEvents Book WordPress plugin through 0.46 does not ensures that bookings to be updated belong to the user making the request, allowing any authenticated user to book, add notes, or cancel booking on behalf of other users.
+      published: 2023-04-24T19:15:09.267
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/d40479de-fb04-41b8-9fb0-41b9eefbd8af
+    - id: CVE-2023-1324
+      description: The Easy Forms for Mailchimp WordPress plugin before 6.8.8 does not sanitise and escape some parameters before outputting them back in the response, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin
+      published: 2023-04-24T19:15:09.343
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/8f510b8c-b97a-44c9-a36d-2d775a4f7b81
+    - id: CVE-2023-1414
+      description: The WP VR WordPress plugin before 8.3.0 does not have authorisation and CSRF checks in various AJAX actions, one in particular could allow any authenticated users, such as subscriber to update arbitrary tours
+      published: 2023-04-24T19:15:09.410
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/d61d4be7-9251-4c62-8fb7-8a456aa6969e
+    - id: CVE-2023-30378
+      description: In Tenda AC15 V15.03.05.19, the function "sub_8EE8" contains a stack-based buffer overflow vulnerability.
+      published: 2023-04-24T15:15:09.223
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/2205794866/Tenda/blob/main/AC15/5.md
+    - id: CVE-2023-1435
+      description: The Ajax Search Pro WordPress plugin before 4.26.2 does not sanitise and escape various parameters before outputting them back in pages, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin
+      published: 2023-04-24T19:15:09.560
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/0ca62908-4ef5-41e0-9223-f77ad2c333d7
+    - id: CVE-2023-1623
+      description: The Custom Post Type UI WordPress plugin before 1.13.5 does not properly check for CSRF when sending the debug information to a user supplied email, which could allow attackers to make a logged in admin send such information to an arbitrary email address via a CSRF attack.
+      published: 2023-04-24T19:15:09.627
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/a04d3808-f4fc-4d77-a1bd-be623cd7053e
+    - id: CVE-2023-1624
+      description: The WPCode WordPress plugin before 2.0.9 has a flawed CSRF when deleting log, and does not ensure that the file to be deleted is inside the expected folder. This could allow attackers to make users with the wpcode_activate_snippets capability delete arbitrary log files on the server, including outside of the blog folders
+      published: 2023-04-24T19:15:09.693
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/132b70e5-4368-43b4-81f6-2d01bc09dc8f
+    - id: CVE-2023-29780
+      description: Third Reality Smart Blind 1.00.54 contains a denial-of-service vulnerability, which allows a remote attacker to send malicious Zigbee messages to a vulnerable device and cause crashes.
+      published: 2023-04-24T19:15:09.767
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/iot-sec23/IoT-CVE/blob/main/Third%20Reality%20Smart%20Blind%20Vulnerability%20Report.pdf
+        - https://www.3reality.com/
+    - id: CVE-2023-2257
+      description: "Authentication Bypass in Hub Business integration in Devolutions Workspace Desktop 2023.1.1.3 and earlier on Windows and macOS allows an attacker with access to the user interface to unlock a Hub \nBusiness space without being prompted to enter the password via an \nunimplemented \"Force Login\" security feature.\n\nThis vulnerability occurs only if \"Force Login\" feature is enabled on the Hub Business instance and that an attacker has access to a locked Workspace desktop application configured with a Hub Business space."
+      published: 2023-04-24T19:15:09.820
+      severity: ""
+      privileges: ""
+      references:
+        - https://devolutions.net/security/advisories/DEVO-2023-0011
+    - id: CVE-2023-30369
+      description: Tenda AC15 V15.03.05.19 is vulnerable to Buffer Overflow.
+      published: 2023-04-24T14:15:07.903
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/2205794866/Tenda/blob/main/AC15/3.md
+    - id: CVE-2022-28354
+      description: In the Active Threads Plugin 1.3.0 for MyBB, the activethreads.php date parameter is vulnerable to XSS when setting a time period.
+      published: 2023-04-24T21:15:09.110
+      severity: ""
+      privileges: ""
+      references:
+        - http://packetstormsecurity.com/files/171402/MyBB-Active-Threads-1.3.0-Cross-Site-Scripting.html
+        - https://community.mybb.com/mods.php?action=view&pid=1336
+    - id: CVE-2023-28484
+      description: In libxml2 before 2.10.4, parsing of certain invalid XSD schemas can lead to a NULL pointer dereference and subsequently a segfault. This occurs in xmlSchemaFixupComplexType in xmlschemas.c.
+      published: 2023-04-24T21:15:09.180
+      severity: ""
+      privileges: ""
+      references:
+        - https://gitlab.gnome.org/GNOME/libxml2/-/issues/491
+        - https://gitlab.gnome.org/GNOME/libxml2/-/releases/v2.10.4
+    - id: CVE-2023-29469
+      description: An issue was discovered in libxml2 before 2.10.4. When hashing empty dict strings in a crafted XML document, xmlDictComputeFastKey in dict.c can produce non-deterministic values, leading to various logic and memory errors, such as a double free. This behavior occurs because there is an attempt to use the first byte of an empty string, and any value is possible (not solely the '\0' value).
+      published: 2023-04-24T21:15:09.230
+      severity: ""
+      privileges: ""
+      references:
+        - https://gitlab.gnome.org/GNOME/libxml2/-/issues/510
+        - https://gitlab.gnome.org/GNOME/libxml2/-/releases/v2.10.4
+    - id: CVE-2023-2006
+      description: A race condition was found in the Linux kernel's RxRPC network protocol, within the processing of RxRPC bundles. This issue results from the lack of proper locking when performing operations on an object. This may allow an attacker to escalate privileges and execute arbitrary code in the context of the kernel.
+      published: 2023-04-24T21:15:09.283
+      severity: ""
+      privileges: ""
+      references:
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2189112
+        - https://github.com/torvalds/linux/commit/3bcd6c7eaa53
+        - https://www.zerodayinitiative.com/advisories/ZDI-23-439/
+    - id: CVE-2023-2019
+      description: A flaw was found in the Linux kernel's netdevsim device driver, within the scheduling of events. This issue results from the improper management of a reference count. This may allow an attacker to create a denial of service condition on the system.
+      published: 2023-04-24T21:15:09.347
+      severity: ""
+      privileges: ""
+      references:
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2189137
+        - https://github.com/torvalds/linux/commit/180a6a3ee60a
+        - https://www.zerodayinitiative.com/advisories/ZDI-CAN-17811/
+    - id: CVE-2023-2250
+      description: A flaw was found in the Open Cluster Management (OCM) when a user have access to the worker nodes which has the cluster-manager-registration-controller or cluster-manager deployments. A malicious user can take advantage of this and bind the cluster-admin to any service account or using the service account to list all secrets for all kubernetes namespaces, leading into a cluster-level privilege escalation.
+      published: 2023-04-24T21:15:09.410
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/open-cluster-management-io/registration-operator/pull/344
+    - id: CVE-2023-30368
+      description: Tenda AC5 V15.03.06.28 is vulnerable to Buffer Overflow via the initWebs function.
+      published: 2023-04-24T14:15:07.860
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/2205794866/Tenda/blob/main/AC5/1.md
+    - id: CVE-2023-29570
+      description: Cesanta MJS v2.20.0 was discovered to contain a SEGV vulnerability via mjs_ffi_cb_free at src/mjs_ffi.c. This vulnerability can lead to a Denial of Service (DoS).
+      published: 2023-04-24T14:15:07.800
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/cesanta/mjs/issues/240
+        - https://github.com/z1r00/fuzz_vuln/blob/main/mjs/SEGV/mjs_fii2/readme.md
+    - id: CVE-2023-29583
+      description: yasm 1.3.0.55.g101bc was discovered to contain a stack overflow via the function parse_expr5 at /nasm/nasm-parse.c.
+      published: 2023-04-24T13:15:07.523
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/yasm/yasm/issues/218
+        - https://github.com/z1r00/fuzz_vuln/blob/main/yasm/stack-overflow/parse_expr5/readme.md
+    - id: CVE-2023-29582
+      description: yasm 1.3.0.55.g101bc was discovered to contain a stack overflow via the function parse_expr1 at /nasm/nasm-parse.c.
+      published: 2023-04-24T13:15:07.483
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/yasm/yasm/issues/217
+        - https://github.com/z1r00/fuzz_vuln/blob/main/yasm/stack-overflow/parse_expr1/readme.md
+    - id: CVE-2023-29579
+      description: yasm 1.3.0.55.g101bc was discovered to contain a stack overflow via the component yasm/yasm+0x43b466 in vsprintf.
+      published: 2023-04-24T13:15:07.440
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/yasm/yasm/issues/214
+        - https://github.com/z1r00/fuzz_vuln/blob/main/yasm/stack-buffer-overflow/yasm/readmd.md
+    - id: CVE-2023-30406
+      description: Jerryscript commit 1a2c047 was discovered to contain a segmentation violation via the component ecma_find_named_property at /base/ecma-helpers.c.
+      published: 2023-04-24T22:15:09.627
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/jerryscript-project/jerryscript/issues/5058
+    - id: CVE-2023-30408
+      description: Jerryscript commit 1a2c047 was discovered to contain a segmentation violation via the component build/bin/jerry.
+      published: 2023-04-24T22:15:09.677
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/jerryscript-project/jerryscript/issues/5057
+    - id: CVE-2023-30410
+      description: Jerryscript commit 1a2c047 was discovered to contain a stack overflow via the component ecma_op_function_construct at /operations/ecma-function-object.c.
+      published: 2023-04-24T22:15:09.743
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/jerryscript-project/jerryscript/issues/5052
+    - id: CVE-2023-30414
+      description: Jerryscript commit 1a2c047 was discovered to contain a stack overflow via the component vm_loop at /jerry-core/vm/vm.c.
+      published: 2023-04-24T22:15:09.807
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/jerryscript-project/jerryscript/issues/5051
+    - id: CVE-2023-29578
+      description: mp4v2 v2.0.0 was discovered to contain a heap buffer overflow via the mp4v2::impl::MP4StringProperty::~MP4StringProperty() function at src/mp4property.cpp.
+      published: 2023-04-24T13:15:07.397
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/TechSmith/mp4v2/issues/74
+        - https://github.com/z1r00/fuzz_vuln/blob/main/mp4v2/heap-buffer-overflow/mp4property.cpp/readme.md
+    - id: CVE-2023-31045
+      description: '** DISPUTED ** A stored Cross-site scripting (XSS) issue in Text Editors and Formats in Backdrop CMS before 1.24.2 allows remote attackers to inject arbitrary web script or HTML via the name parameter. When a user is editing any content type (e.g., page, post, or card) as an admin, the stored XSS payload is executed upon selecting a malicious text formatting option. NOTE: the vendor disputes the security relevance of this finding because "any administrator that can configure a text format could easily allow Full HTML anywhere."'
+      published: 2023-04-24T08:15:07.257
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/backdrop/backdrop-issues/issues/6065
+        - https://github.com/backdrop/backdrop/releases/tag/1.24.2
+    - id: CVE-2023-30533
+      description: SheetJS Community Edition before 0.19.3 allows Prototype Pollution via a crafted file.
+      published: 2023-04-24T08:15:07.217
+      severity: ""
+      privileges: ""
+      references:
+        - https://cdn.sheetjs.com/advisories/CVE-2023-30533
+        - https://git.sheetjs.com/sheetjs/sheetjs/src/branch/master/CHANGELOG.md
+    - id: CVE-2023-2007
+      description: The specific flaw exists within the DPT I2O Controller driver. The issue results from the lack of proper locking when performing operations on an object. An attacker can leverage this in conjunction with other vulnerabilities to escalate privileges and execute arbitrary code in the context of the kernel.
+      published: 2023-04-24T23:15:18.877
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/torvalds/linux/commit/b04e75a4a8a81887386a0d2dbf605a48e779d2a0
