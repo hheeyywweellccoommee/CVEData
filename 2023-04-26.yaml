@@ -1,0 +1,783 @@
+data:
+    - id: CVE-2012-5872
+      description: ARC (aka ARC2) through 2011-12-01 allows blind SQL Injection in getTriplePatternSQL in ARC2_StoreSelectQueryHandler.php via comments in a SPARQL WHERE clause.
+      published: 2023-04-26T00:15:08.857
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.ush.it/2012/11/22/arc-v2011-12-01-multiple-vulnerabilities/
+    - id: CVE-2023-28771
+      description: Improper error message handling in Zyxel ZyWALL/USG series firmware versions 4.60 through 4.73, VPN series firmware versions 4.60 through 5.35, USG FLEX series firmware versions 4.60 through 5.35, and ATP series firmware versions 4.60 through 5.35, which could allow an unauthenticated attacker to execute some OS commands remotely by sending crafted packets to an affected device.
+      published: 2023-04-25T02:15:08.743
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-remote-command-injection-vulnerability-of-firewalls
+    - id: CVE-2023-30842
+      description: AVideo is an open-source video platform. Prior to version 12.4, AVideo is vulnerable to remote code execution when an attacker embeds a malicious video link. This issue is fixed in version 12.4.
+      published: 2023-04-25T22:15:09.507
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://github.com/WWBN/AVideo/commit/236228f15a9a31be5a0e60f05dac043682e49a5e
+        - https://github.com/WWBN/AVideo/security/advisories/GHSA-pgvh-p3g4-86jw
+    - id: CVE-2023-30839
+      description: PrestaShop is an Open Source e-commerce web application. Versions prior to 8.0.4 and 1.7.8.9 contain a SQL filtering vulnerability. A BO user can write, update, and delete in the database, even without having specific rights. PrestaShop 8.0.4 and 1.7.8.9 contain a patch for this issue. There are no known workarounds.
+      published: 2023-04-25T19:15:11.247
+      severity: CRITICAL
+      privileges: LOW
+      references:
+        - https://github.com/PrestaShop/PrestaShop/commit/0f2a9b7fdd42d1dd3b21d4fad586a849642f3c30
+        - https://github.com/PrestaShop/PrestaShop/commit/d1d27dc371599713c912b71bc2a455cacd7f2149
+        - https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-p379-cxqh-q822
+    - id: CVE-2023-25652
+      description: Git is a revision control system. Prior to versions 2.30.9, 2.31.8, 2.32.7, 2.33.8, 2.34.8, 2.35.8, 2.36.6, 2.37.7, 2.38.5, 2.39.3, and 2.40.1, by feeding specially crafted input to `git apply --reject`, a path outside the working tree can be overwritten with partially controlled contents (corresponding to the rejected hunk(s) from the given patch). A fix is available in versions 2.30.9, 2.31.8, 2.32.7, 2.33.8, 2.34.8, 2.35.8, 2.36.6, 2.37.7, 2.38.5, 2.39.3, and 2.40.1. As a workaround, avoid using `git apply` with `--reject` when applying patches from an untrusted source. Use `git apply --stat` to inspect a patch before applying; avoid applying one that create a conflict where a link corresponding to the `*.rej` file exists.
+      published: 2023-04-25T20:15:09.933
+      severity: HIGH
+      privileges: NONE
+      references:
+        - http://www.openwall.com/lists/oss-security/2023/04/25/2
+        - https://github.com/git/git/commit/18e2b1cfc80990719275d7b08e6e50f3e8cbc902
+        - https://github.com/git/git/commit/668f2d53613ac8fd373926ebe219f2c29112d93e
+        - https://github.com/git/git/security/advisories/GHSA-2hvf-7c8p-28fx
+    - id: CVE-2021-44460
+      description: Improper access control in Odoo Community 13.0 and earlier and Odoo Enterprise 13.0 and earlier allows users with deactivated accounts to access the system with the deactivated account and any permission it still holds, via crafted RPC requests.
+      published: 2023-04-25T19:15:09.600
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/odoo/odoo/issues/107685
+    - id: CVE-2021-23178
+      description: Improper access control in Odoo Community 15.0 and earlier and Odoo Enterprise 15.0 and earlier allows attackers to validate online payments with a tokenized payment method that belongs to another user, causing the victim's payment method to be charged instead.
+      published: 2023-04-25T19:15:09.283
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/odoo/odoo/issues/107690
+    - id: CVE-2021-23203
+      description: Improper access control in reporting engine of Odoo Community 14.0 through 15.0, and Odoo Enterprise 14.0 through 15.0, allows remote attackers to download PDF reports for arbitrary documents, via crafted requests.
+      published: 2023-04-25T19:15:09.403
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/odoo/odoo/issues/107695
+    - id: CVE-2021-26263
+      description: Cross-site scripting (XSS) issue in Discuss app of Odoo Community 14.0 through 15.0, and Odoo Enterprise 14.0 through 15.0, allows remote attackers to inject arbitrary web script in the browser of a victim, by posting crafted contents.
+      published: 2023-04-25T19:15:09.470
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/odoo/odoo/issues/107693
+    - id: CVE-2023-29007
+      description: Git is a revision control system. Prior to versions 2.30.9, 2.31.8, 2.32.7, 2.33.8, 2.34.8, 2.35.8, 2.36.6, 2.37.7, 2.38.5, 2.39.3, and 2.40.1, a specially crafted `.gitmodules` file with submodule URLs that are longer than 1024 characters can used to exploit a bug in `config.c::git_config_copy_or_rename_section_in_file()`. This bug can be used to inject arbitrary configuration into a user's `$GIT_DIR/config` when attempting to remove the configuration section associated with that submodule. When the attacker injects configuration values which specify executables to run (such as `core.pager`, `core.editor`, `core.sshCommand`, etc.) this can lead to a remote code execution. A fix A fix is available in versions 2.30.9, 2.31.8, 2.32.7, 2.33.8, 2.34.8, 2.35.8, 2.36.6, 2.37.7, 2.38.5, 2.39.3, and 2.40.1. As a workaround, avoid running `git submodule deinit` on untrusted repositories or without prior inspection of any submodule sections in `$GIT_DIR/config`.
+      published: 2023-04-25T21:15:10.403
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/git/git/blob/9ce9dea4e1c2419cca126d29fa7730baa078a11b/Documentation/RelNotes/2.30.9.txt
+        - https://github.com/git/git/commit/528290f8c61222433a8cf02fb7cfffa8438432b4
+        - https://github.com/git/git/security/advisories/GHSA-v48j-4xgg-4844
+    - id: CVE-2023-30549
+      description: |-
+        Apptainer is an open source container platform for Linux. There is an ext4 use-after-free flaw that is exploitable through versions of Apptainer < 1.1.0, installations that include apptainer-suid < 1.1.8, and all versions of Singularity in their default configurations on older operating systems where that CVE has not been patched. That includes Red Hat Enterprise Linux 7, Debian 10 buster (unless the linux-5.10 package is installed), Ubuntu 18.04 bionic and Ubuntu 20.04 focal. Use-after-free flaws in the kernel can be used to attack the kernel for denial of service and potentially for privilege escalation.
+
+        Apptainer 1.1.8 includes a patch that by default disables mounting of extfs filesystem types in setuid-root mode, while continuing to allow mounting of extfs filesystems in non-setuid "rootless" mode using fuse2fs.
+
+        Some workarounds are possible. Either do not install apptainer-suid (for versions 1.1.0 through 1.1.7) or set `allow setuid = no` in apptainer.conf (or singularity.conf for singularity versions).  This requires having unprivileged user namespaces enabled and except for apptainer 1.1.x versions will disallow mounting of sif files, extfs files, and squashfs files in addition to other, less significant impacts.  (Encrypted sif files are also not supported unprivileged in apptainer 1.1.x.). Alternatively, use the `limit containers` options in apptainer.conf/singularity.conf to limit sif files to trusted users, groups, and/or paths, and set `allow container extfs = no` to disallow mounting of extfs overlay files.  The latter option by itself does not disallow mounting of extfs overlay partitions inside SIF files, so that's why the former options are also needed.
+      published: 2023-04-25T21:15:10.767
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://access.redhat.com/security/cve/cve-2022-1184
+        - https://github.com/apptainer/apptainer/commit/5a4964f5ba9c8d89a0e353b97f51fd607670a9f7
+        - https://github.com/apptainer/apptainer/releases/tag/v1.1.8
+        - https://github.com/apptainer/apptainer/security/advisories/GHSA-j4rf-7357-f4cg
+        - https://security-tracker.debian.org/tracker/CVE-2022-1184
+        - https://ubuntu.com/security/CVE-2022-1184
+        - https://www.suse.com/security/cve/CVE-2022-1184.html
+    - id: CVE-2022-45837
+      description: Reflected Cross-Site Scripting (XSS) vulnerability in Denis ???????? plugin <= 6.0.1 versions.
+      published: 2023-04-25T12:15:09.127
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/weixin-robot-advanced/wordpress-plugin-6-0-1-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-29011
+      description: Git for Windows, the Windows port of Git, ships with an executable called `connect.exe`, which implements a SOCKS5 proxy that can be used to connect e.g. to SSH servers via proxies when certain ports are blocked for outgoing connections. The location of `connect.exe`'s config file is hard-coded as `/etc/connectrc` which will typically be interpreted as `C:\etc\connectrc`. Since `C:\etc` can be created by any authenticated user, this makes `connect.exe` susceptible to malicious files being placed there by other users on the same multi-user machine. The problem has been patched in Git for Windows v2.40.1. As a workaround, create the folder `etc` on all drives where Git commands are run, and remove read/write access from those folders. Alternatively, watch out for malicious `<drive>:\etc\connectrc` files on multi-user machines.
+      published: 2023-04-25T21:15:10.480
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/git-for-windows/git/releases/tag/v2.40.1.windows.1
+        - https://github.com/git-for-windows/git/security/advisories/GHSA-g4fv-xjqw-q7jm
+    - id: CVE-2021-44476
+      description: A sandboxing issue in Odoo Community 15.0 and earlier and Odoo Enterprise 15.0 and earlier allows authenticated administrators to read local files on the server, including sensitive configuration files.
+      published: 2023-04-25T19:15:09.783
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/odoo/odoo/issues/107684
+    - id: CVE-2023-30838
+      description: PrestaShop is an Open Source e-commerce web application. Prior to versions 8.0.4 and 1.7.8.9, the `ValidateCore::isCleanHTML()` method of Prestashop misses hijackable events which can lead to cross-site scripting (XSS) injection, allowed by the presence of pre-setup `@keyframes` methods. This XSS, which hijacks HTML attributes, can be triggered without any interaction by the visitor/administrator, which makes it as dangerous as a trivial XSS attack. Contrary to other attacks which target HTML attributes and are triggered without user interaction (such as onload / onerror which suffer from a very limited scope), this one can hijack every HTML element, which increases the danger due to a complete HTML elements scope. Versions 8.0.4 and 1.7.8.9 contain a fix for this issue.
+      published: 2023-04-25T19:15:11.160
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/PrestaShop/PrestaShop/commit/46408ae4b02f3b8b1bb6e9dc63af5bcd858abd9c
+        - https://github.com/PrestaShop/PrestaShop/commit/dc682192df0e4b0d656a8e645b29ca1b9dbe3693
+        - https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-fh7r-996q-gvcp
+    - id: CVE-2021-45111
+      description: Improper access control in Odoo Community 15.0 and earlier and Odoo Enterprise 15.0 and earlier allows remote authenticated users to trigger the creation of demonstration data, including user accounts with known credentials.
+      published: 2023-04-25T19:15:10.020
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/odoo/odoo/issues/107683
+    - id: CVE-2023-30545
+      description: PrestaShop is an Open Source e-commerce web application. Prior to versions 8.0.4 and 1.7.8.9, it is possible for a user with access to the SQL Manager (Advanced Options -> Database) to arbitrarily read any file on the operating system when using SQL function `LOAD_FILE` in a `SELECT` request. This gives the user access to critical information. A patch is available in PrestaShop 8.0.4 and PS 1.7.8.9
+      published: 2023-04-25T18:15:09.677
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/PrestaShop/PrestaShop/commit/cddac4198a47c602878a787280d813f60c6c0630
+        - https://github.com/PrestaShop/PrestaShop/commit/d900806e1841a31f26ff0a1843a6888fc1bb7f81
+        - https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-8r4m-5p6p-52rp
+    - id: CVE-2023-31223
+      description: Dradis before 4.8.0 allows persistent XSS by authenticated author users, related to avatars.
+      published: 2023-04-25T23:15:09.090
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://dradisframework.com/ce/security_reports.html#fixed-4.8.0
+    - id: CVE-2023-24512
+      description: 'On affected platforms running Arista EOS, an authorized attacker with permissions to perform gNMI requests could craft a request allowing it to update arbitrary configurations in the switch. This situation occurs only when the Streaming Telemetry Agent (referred to as the TerminAttr agent) is enabled and gNMI access is configured on the agent. Note: This gNMI over the Streaming Telemetry Agent scenario is mostly commonly used when streaming to a 3rd party system and is not used by default when streaming to CloudVision'
+      published: 2023-04-25T21:15:10.190
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.arista.com/en/support/advisories-notices/security-advisory/17250-security-advisory-0086
+    - id: CVE-2022-40725
+      description: PingID Desktop prior to the latest released version 1.7.4 contains a vulnerability that can be exploited to bypass the maximum PIN attempts permitted before the time-based lockout is activated.
+      published: 2023-04-25T19:15:10.447
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://docs.pingidentity.com/r/en-us/pingid/desktop_app_1.7.4
+    - id: CVE-2023-26098
+      description: An issue was discovered in the Open Document feature in Telindus Apsal 3.14.2022.235 b. An attacker may upload a crafted file to execute arbitrary code.
+      published: 2023-04-25T12:15:09.427
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://excellium-services.com/cert-xlm-advisory/CVE-2023-26098
+        - https://www.telindus.lu/fr/produits/apsal
+    - id: CVE-2021-23166
+      description: A sandboxing issue in Odoo Community 15.0 and earlier and Odoo Enterprise 15.0 and earlier allows authenticated administrators to read and write local files on the server.
+      published: 2023-04-25T19:15:09.140
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://github.com/odoo/odoo/issues/107687
+    - id: CVE-2023-29012
+      description: Git for Windows is the Windows port of Git. Prior to version 2.40.1, any user of Git CMD who starts the command in an untrusted directory is impacted by an Uncontrolles Search Path Element vulnerability. Maliciously-placed `doskey.exe` would be executed silently upon running Git CMD. The problem has been patched in Git for Windows v2.40.1. As a workaround, avoid using Git CMD or, if using Git CMD, avoid starting it in an untrusted directory.
+      published: 2023-04-25T21:15:10.557
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://github.com/git-for-windows/git/releases/tag/v2.40.1.windows.1
+        - https://github.com/git-for-windows/git/security/advisories/GHSA-gq5x-v87v-8f7g
+    - id: CVE-2021-23186
+      description: A sandboxing issue in Odoo Community 15.0 and earlier and Odoo Enterprise 15.0 and earlier allows authenticated administrators to access and modify database contents of other tenants, in a multi-tenant system.
+      published: 2023-04-25T19:15:09.340
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://github.com/odoo/odoo/issues/107688
+    - id: CVE-2021-44547
+      description: A sandboxing issue in Odoo Community 15.0 and Odoo Enterprise 15.0 allows authenticated administrators to executed arbitrary code, leading to privilege escalation.
+      published: 2023-04-25T19:15:09.843
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://github.com/odoo/odoo/issues/107696
+    - id: CVE-2022-40722
+      description: A misconfiguration of RSA padding implemented in the PingID Adapter for PingFederate to support Offline MFA with PingID mobile authenticators is vulnerable to pre-computed dictionary attacks, leading to a bypass of offline MFA.
+      published: 2023-04-25T19:15:10.240
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://docs.pingidentity.com/r/en-us/pingid/pingid_adapter_configuring_offline_mfa
+        - https://docs.pingidentity.com/r/en-us/pingid/pingid_integration_kit_2_20_rn
+    - id: CVE-2021-44465
+      description: Improper access control in Odoo Community 13.0 and earlier and Odoo Enterprise 13.0 and earlier allows authenticated attackers to subscribe to receive future notifications and comments related to arbitrary business records in the system, via crafted RPC requests.
+      published: 2023-04-25T19:15:09.727
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/odoo/odoo/issues/107692
+    - id: CVE-2021-26947
+      description: Cross-site scripting (XSS) issue Odoo Community 15.0 and earlier and Odoo Enterprise 15.0 and earlier, allows remote attackers to inject arbitrary web script in the browser of a victim, via a crafted link.
+      published: 2023-04-25T19:15:09.530
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/odoo/odoo/issues/107694
+    - id: CVE-2022-40724
+      description: The PingFederate Local Identity Profiles '/pf/idprofile.ping' endpoint is vulnerable to Cross-Site Request Forgery (CSRF) through crafted GET requests.
+      published: 2023-04-25T19:15:10.383
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://docs.pingidentity.com/r/en-us/pingfederate-110/fll1675188537050
+    - id: CVE-2012-5873
+      description: ARC (aka ARC2) through 2011-12-01 allows reflected XSS via the end_point.php query parameter in an output=htmltab action.
+      published: 2023-04-26T00:15:08.913
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://www.ush.it/2012/11/22/arc-v2011-12-01-multiple-vulnerabilities/
+    - id: CVE-2023-23837
+      description: No exception handling vulnerability which revealed sensitive or excessive information to users.
+      published: 2023-04-25T18:15:09.300
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://documentation.solarwinds.com/en/success_center/dpa/content/release_notes/dpa_2023-2_release_notes.htm
+        - https://www.solarwinds.com/trust-center/security-advisories/cve-2023-23837
+    - id: CVE-2021-44461
+      description: Cross-site scripting (XSS) issue in Accounting app of Odoo Enterprise 13.0 through 15.0, allows remote attackers who are able to control the contents of accounting journal entries to inject arbitrary web script in the browser of a victim.
+      published: 2023-04-25T19:15:09.670
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/odoo/odoo/issues/107686
+    - id: CVE-2021-45071
+      description: Cross-site scripting (XSS) issue Odoo Community 15.0 and earlier and Odoo Enterprise 15.0 and earlier, allows remote attackers to inject arbitrary web script in the browser of a victim, via crafted uploaded file names.
+      published: 2023-04-25T19:15:09.963
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/odoo/odoo/issues/107697
+    - id: CVE-2021-44775
+      description: Cross-site scripting (XSS) issue in Website app of Odoo Community 15.0 and earlier and Odoo Enterprise 15.0 and earlier, allows remote attackers to inject arbitrary web script in the browser of a victim, by posting crafted contents.
+      published: 2023-04-25T19:15:09.903
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/odoo/odoo/issues/107691
+    - id: CVE-2023-30609
+      description: matrix-react-sdk is a react-based SDK for inserting a Matrix chat/VoIP client into a web page. Prior to version 3.71.0, plain text messages containing HTML tags are rendered as HTML in the search results. To exploit this, an attacker needs to trick a user into searching for a specific message containing an HTML injection payload. No cross-site scripting attack is possible due to the hardcoded content security policy. Version 3.71.0 of the SDK patches over the issue. As a workaround, restarting the client will clear the HTML injection.
+      published: 2023-04-25T21:15:10.843
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/matrix-org/matrix-react-sdk/commit/bf182bc94556849d7acdfa0e5fdea2aa129ea826
+        - https://github.com/matrix-org/matrix-react-sdk/releases/tag/v3.71.0
+        - https://github.com/matrix-org/matrix-react-sdk/security/advisories/GHSA-xv83-x443-7rmw
+    - id: CVE-2022-40723
+      description: The PingID RADIUS PCV adapter for PingFederate, which supports RADIUS authentication with PingID MFA, is vulnerable to MFA bypass under certain configurations.
+      published: 2023-04-25T19:15:10.310
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://docs.pingidentity.com/r/en-us/pingid/pingid_integration_kit_2_19_rn
+    - id: CVE-2021-23176
+      description: Improper access control in reporting engine of l10n_fr_fec module in Odoo Community 15.0 and earlier and Odoo Enterprise 15.0 and earlier allows remote authenticated users to extract accounting information via crafted RPC packets.
+      published: 2023-04-25T19:15:09.220
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/odoo/odoo/issues/107682
+    - id: CVE-2023-29200
+      description: Contao is an open source content management system. Prior to versions 4.9.40, 4.13.21, and 5.1.4, logged in users can list arbitrary system files in the file manager by manipulating the Ajax request. However, it is not possible to read the contents of these files. Users should update to Contao 4.9.40, 4.13.21 or 5.1.4 to receive a patch. There are no known workarounds.
+      published: 2023-04-25T18:15:09.510
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://contao.org/en/security-advisories/directory-traversal-in-the-file-manager
+        - https://github.com/contao/contao/commit/6f3e705f4ff23f4419563d09d8485793569f31df
+        - https://github.com/contao/contao/security/advisories/GHSA-fp7q-xhhw-6rj3
+    - id: CVE-2023-23866
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in Carlos Moreira Interactive Geo Maps plugin <= 1.5.8 versions.
+      published: 2023-04-25T20:15:09.647
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/interactive-geo-maps/wordpress-interactive-geo-maps-plugin-1-5-8-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-23889
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in Fullworks Quick Paypal Payments plugin <= 5.7.25 versions.
+      published: 2023-04-25T20:15:09.703
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/quick-paypal-payments/wordpress-quick-paypal-payments-plugin-5-7-25-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-27619
+      description: Auth (subscriber+) Reflected Cross-Site Scripting (XSS) vulnerability in Macho Themes Regina Lite theme <= 2.0.7 versions.
+      published: 2023-04-25T12:15:09.480
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/regina-lite/wordpress-regina-lite-theme-2-0-7-reflected-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-0045
+      description: |-
+        The current implementation of the prctl syscall does not issue an IBPB immediately during the syscall. The ib_prctl_set  function updates the Thread Information Flags (TIFs) for the task and updates the SPEC_CTRL MSR on the function __speculation_ctrl_update, but the IBPB is only issued on the next schedule, when the TIF bits are checked. This leaves the victim vulnerable to values already injected on the BTB, prior to the prctl syscall.  The patch that added the support for the conditional mitigation via prctl (ib_prctl_set) dates back to the kernel 4.9.176.
+
+        We recommend upgrading past commit a664ec9158eeddd75121d39c9a0758016097fa96
+      published: 2023-04-25T23:15:09.013
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://git.kernel.org/tip/a664ec9158eeddd75121d39c9a0758016097fa96
+    - id: CVE-2023-26057
+      description: An XXE issue was discovered in Nokia NetAct before 22 FP2211 via an XML document to the Configuration Dashboard page. Input validation and a proper XML parser configuration are missing. For an external attacker, it is very difficult to exploit this, because a few dynamically created parameters such as Jsession-id, a CSRF token, and an Nxsrf token would be needed. The attack can realistically only be performed by an internal user.
+      published: 2023-04-25T13:15:09.847
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://nokia.com
+        - https://www.ptsecurity.com/ww-en/analytics/threatscape/pt-2022-01/
+    - id: CVE-2023-26058
+      description: An XXE issue was discovered in Nokia NetAct before 22 FP2211 via an XML document to a Performance Manager page. Input validation and a proper XML parser configuration are missing. For an external attacker, it is very difficult to exploit this, because a few dynamically created parameters such as Jsession-id, a CSRF token, and an Nxsrf token would be needed. The attack can realistically only be performed by an internal user.
+      published: 2023-04-25T13:15:09.900
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://nokia.com
+        - https://www.ptsecurity.com/ww-en/analytics/threatscape/pt-2022-02/
+    - id: CVE-2023-23839
+      description: The SolarWinds Platform was susceptible to the Exposure of Sensitive Information Vulnerability. This vulnerability allows users to access Orion.WebCommunityStrings SWIS schema object and obtain sensitive information.
+      published: 2023-04-25T21:15:10.117
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://documentation.solarwinds.com/en/success_center/orionplatform/content/release_notes/solarwinds_platform_2023-2_release_notes.htm
+        - https://www.solarwinds.com/trust-center/security-advisories/CVE-2023-23839
+    - id: CVE-2023-24005
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Winwar Media Inline Tweet Sharer – Twitter Sharing Plugin plugin <= 2.5.3 versions.
+      published: 2023-04-25T20:15:09.817
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/inline-tweet-sharer/wordpress-inline-tweet-sharer-twitter-sharing-plugin-plugin-2-5-3-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-25793
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in George Pattihis Link Juice Keeper plugin <= 2.0.2 versions.
+      published: 2023-04-25T19:15:10.680
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/link-juice-keeper/wordpress-link-juice-keeper-plugin-2-0-2-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-25479
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Podlove Podlove Subscribe button plugin <= 1.3.7 versions.
+      published: 2023-04-25T12:15:09.253
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/podlove-subscribe-button/wordpress-podlove-subscribe-button-plugin-1-3-7-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-25461
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in namithjawahar Wp-Insert plugin <= 2.5.0 versions.
+      published: 2023-04-25T20:15:09.877
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/wp-insert/wordpress-wp-insert-plugin-2-5-0-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-25710
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in DIGITALBLUE Click to Call or Chat Buttons plugin <= 1.4.0 versions.
+      published: 2023-04-25T12:15:09.367
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/click-to-call-or-chat-buttons/wordpress-click-to-call-or-chat-buttons-plugin-1-4-0-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-23710
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in miniOrange WordPress Social Login and Register (Discord, Google, Twitter, LinkedIn) plugin <= 7.5.14 versions.
+      published: 2023-04-25T20:15:09.587
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/miniorange-login-openid/wordpress-wordpress-social-login-and-register-discord-google-twitter-linkedin-plugin-7-5-14-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-23995
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Tim Reeves & David Stöckl TinyMCE Custom Styles plugin <= 1.1.2 versions.
+      published: 2023-04-25T20:15:09.757
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/tinymce-custom-styles/wordpress-tinymce-custom-styles-plugin-1-1-2-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-25490
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Eric Teubert Archivist – Custom Archive Templates plugin <= 1.7.4 versions.
+      published: 2023-04-25T12:15:09.313
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/archivist-custom-archive-templates/wordpress-archivist-custom-archive-templates-plugin-1-7-4-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-23838
+      description: Directory traversal and file enumeration vulnerability which allowed users to enumerate to different folders of the server.
+      published: 2023-04-25T18:15:09.370
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://documentation.solarwinds.com/en/success_center/dpa/content/release_notes/dpa_2023-2_release_notes.htm
+        - https://www.solarwinds.com/trust-center/security-advisories/cve-2023-23838
+    - id: CVE-2022-47608
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Fullworks Quick Contact Form plugin <= 8.0.3.1 versions.
+      published: 2023-04-25T17:15:08.827
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/quick-contact-form/wordpress-quick-contact-form-plugin-8-0-3-1-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-25484
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Oliver Schlöbe Simple Yearly Archive plugin <= 2.1.8 versions.
+      published: 2023-04-25T17:15:08.900
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/simple-yearly-archive/wordpress-simple-yearly-archive-plugin-2-1-8-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-25485
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Bernhard Kux JSON Content Importer plugin <= 1.3.15 versions.
+      published: 2023-04-25T19:15:10.587
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/json-content-importer/wordpress-json-content-importer-plugin-1-3-15-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-28847
+      description: Nextcloud Server is the file server software for Nextcloud, a self-hosted productivity platform. In Nextcloud Server 24.0.0 prior to 24.0.11 and 25.0.0 prior to 25.0.5; as well as Nextcloud Server Enterprise 23.0.0 prior to 23.0.12.6, 24.0.0 prior to 24.0.11, and 25.0.0 prior to 25.0.5; an attacker is not restricted in verifying passwords of share links so they can just start brute forcing the password. Nextcloud Server 24.0.11 and 25.0.5 and Nextcloud Enterprise Server 23.0.12.6, 24.0.11, and 25.0.5 contain a fix for this issue. No known workarounds are available.
+      published: 2023-04-25T17:15:08.963
+      severity: LOW
+      privileges: NONE
+      references:
+        - https://github.com/nextcloud/security-advisories/security/advisories/GHSA-r5wf-xj97-3w7w
+        - https://github.com/nextcloud/server/pull/35057
+        - https://hackerone.com/reports/1894653
+    - id: CVE-2023-25815
+      description: |-
+        In Git for Windows, the Windows port of Git, no localized messages are shipped with the installer. As a consequence, Git is expected not to localize messages at all, and skips the gettext initialization. However, due to a change in MINGW-packages, the `gettext()` function's implicit initialization no longer uses the runtime prefix but uses the hard-coded path `C:\mingw64\share\locale` to look for localized messages. And since any authenticated user has the permission to create folders in `C:\` (and since `C:\mingw64` does not typically exist), it is possible for low-privilege users to place fake messages in that location where `git.exe` will pick them up in version 2.40.1.
+
+        This vulnerability is relatively hard to exploit and requires social engineering. For example, a legitimate message at the end of a clone could be maliciously modified to ask the user to direct their web browser to a malicious website, and the user might think that the message comes from Git and is legitimate. It does require local write access by the attacker, though, which makes this attack vector less likely. Version 2.40.1 contains a patch for this issue. Some workarounds are available. Do not work on a Windows machine with shared accounts, or alternatively create a `C:\mingw64` folder and leave it empty. Users who have administrative rights may remove the permission to create folders in `C:\`.
+      published: 2023-04-25T20:15:09.997
+      severity: LOW
+      privileges: LOW
+      references:
+        - http://www.openwall.com/lists/oss-security/2023/04/25/2
+        - https://axcheron.github.io/exploit-101-format-strings/#writing-to-the-stack
+        - https://github.com/git-for-windows/git/releases/tag/v2.40.1.windows.1
+        - https://github.com/git-for-windows/git/security/advisories/GHSA-9w66-8mq8-5vm8
+        - https://github.com/msys2/MINGW-packages/pull/10461
+        - https://pubs.opengroup.org/onlinepubs/9699919799/functions/printf.html
+    - id: CVE-2022-23721
+      description: PingID integration for Windows login prior to 2.9 does not handle duplicate usernames, which can lead to a username collision when two people with the same username are provisioned onto the same machine at different times.
+      published: 2023-04-25T19:15:10.087
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://docs.pingidentity.com/r/en-us/pingid/davinci_pingid_windows_login_relnotes_2.9
+    - id: CVE-2023-2281
+      description: When archiving a team, Mattermost fails to sanitize the related Websocket event sent to currently connected clients. This allows the clients to see the name, display name, description, and other data about the archived team.
+      published: 2023-04-25T14:15:09.423
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://mattermost.com/security-updates/
+    - id: CVE-2023-2293
+      description: A vulnerability was found in SourceCodester Purchase Order Management System 1.0. It has been classified as problematic. This affects an unknown part of the file classes/Master.php?f=save_item. The manipulation of the argument description with the input <script>alert(document.cookie)</script> leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-227463.
+      published: 2023-04-25T21:15:10.693
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/biantaibao/bug_report/blob/main/XSS-1.md
+        - https://vuldb.com/?ctiid.227463
+        - https://vuldb.com/?id.227463
+    - id: CVE-2023-29552
+      description: The Service Location Protocol (SLP, RFC 2608) allows an unauthenticated, remote attacker to register arbitrary services. This could allow the attacker to use spoofed UDP traffic to conduct a denial-of-service attack with a significant amplification factor.
+      published: 2023-04-25T16:15:09.537
+      severity: ""
+      privileges: ""
+      references:
+        - https://blogs.vmware.com/security/2023/04/vmware-response-to-cve-2023-29552-reflective-denial-of-service-dos-amplification-vulnerability-in-slp.html
+        - https://datatracker.ietf.org/doc/html/rfc2608
+        - https://www.bitsight.com/blog/new-high-severity-vulnerability-cve-2023-29552-discovered-service-location-protocol-slp
+        - https://www.cisa.gov/news-events/alerts/2023/04/25/abuse-service-location-protocol-may-lead-dos-attacks
+        - https://www.suse.com/support/kb/doc/?id=000021051
+    - id: CVE-2023-28090
+      description: An HPE OneView appliance dump may expose SNMPv3 read credentials
+      published: 2023-04-25T19:15:10.980
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=hpesbgn04469en_us
+    - id: CVE-2023-2282
+      description: Improper access control in the Web Login listener in Devolutions Remote Desktop Manager 2023.1.22 and earlier on Windows allows an authenticated user to bypass administrator-enforced Web Login restrictions and gain access to entries via an unexpected vector.
+      published: 2023-04-25T19:15:11.100
+      severity: ""
+      privileges: ""
+      references:
+        - https://devolutions.net/security/advisories/DEVO-2023-0012
+    - id: CVE-2023-28089
+      description: An HPE OneView appliance dump may expose FTP credentials for c7000 Interconnect Modules
+      published: 2023-04-25T19:15:10.927
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=hpesbgn04469en_us
+    - id: CVE-2023-28088
+      description: An HPE OneView appliance dump may expose SAN switch administrative credentials
+      published: 2023-04-25T19:15:10.873
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=hpesbgn04469en_us
+    - id: CVE-2023-28087
+      description: An HPE OneView appliance dump may expose OneView user accounts
+      published: 2023-04-25T19:15:10.817
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=hpesbgn04469en_us
+    - id: CVE-2023-28086
+      description: An HPE OneView appliance dump may expose proxy credential settings
+      published: 2023-04-25T19:15:10.753
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=hpesbgn04469en_us
+    - id: CVE-2022-45291
+      description: PWS Personal Weather Station Dashboard (PWS_Dashboard) LTS December 2020 (2012_lts) allows remote code execution by injecting PHP code into settings.php. Attacks can use the PWS_printfile.php, PWS_frame_text.php, PWS_listfile.php, PWS_winter.php, and PWS_easyweathersetup.php endpoints. A contributing factor is a hardcoded login password of support, which is not documented. (This is not the same as the documented setup password, which is 12345.) The issue was fixed in late 2022.
+      published: 2023-04-25T19:15:10.520
+      severity: ""
+      privileges: ""
+      references:
+        - https://cavefxa.com/posts/cve-2022-45291/
+        - https://pwsdashboard.com/
+    - id: CVE-2022-40482
+      description: The authentication method in Laravel 8.x through 9.x before 9.32.0 was discovered to be vulnerable to user enumeration via timeless timing attacks with HTTP/2 multiplexing. This is caused by the early return inside the hasValidCredentials method in the Illuminate\Auth\SessionGuard class when a user is found to not exist.
+      published: 2023-04-25T19:15:10.180
+      severity: ""
+      privileges: ""
+      references:
+        - https://ephort.dk/blog/laravel-timing-attack-vulnerability/
+        - https://github.com/ephort/laravel-user-enumeration-demo
+        - https://github.com/laravel/framework/pull/44069
+        - https://github.com/laravel/framework/releases/tag/v9.32.0
+    - id: CVE-2023-30177
+      description: CraftCMS 3.7.59 is vulnerable Cross Site Scripting (XSS). An attacker can inject javascript code into Volume Name.
+      published: 2023-04-25T18:15:09.627
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/craftcms/cms/commit/00fb253d5318e10204433e5d93934108e574005e
+    - id: CVE-2023-30402
+      description: YASM v1.3.0 was discovered to contain a heap overflow via the function handle_dot_label at /nasm/nasm-token.re.
+      published: 2023-04-25T16:15:09.590
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/yasm/yasm/issues/206
+    - id: CVE-2023-25314
+      description: Cross Site Scripting (XSS) vulnerability in World Wide Broadcast Network AVideo before 12.4, allows attackers to gain sensitive information via the success parameter to /user.
+      published: 2023-04-25T16:15:09.490
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/WWBN/AVideo/commit/2b44dee815b208da85e1dcafa9839391c3de2655
+    - id: CVE-2023-25313
+      description: OS injection vulnerability in World Wide Broadcast Network AVideo version before 12.4, allows attackers to execute arbitrary code via the video link field to the Embed a video link feature.
+      published: 2023-04-25T16:15:09.417
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/WWBN/AVideo/security/advisories/GHSA-pgvh-p3g4-86jw
+    - id: CVE-2023-28084
+      description: HPE OneView and HPE OneView Global Dashboard appliance dumps may expose authentication tokens
+      published: 2023-04-25T20:15:10.067
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=hpesbgn04468en_us
+        - https://support.hpe.com/hpesc/public/docDisplay?docLocale=en_US&docId=hpesbgn04469en_us
+    - id: CVE-2023-20871
+      description: VMware Fusion contains a local privilege escalation vulnerability. A malicious actor with read/write access to the host operating system can elevate privileges to gain root access to the host operating system.
+      published: 2023-04-25T21:15:10.023
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.vmware.com/security/advisories/VMSA-2023-0008.html
+    - id: CVE-2023-20872
+      description: VMware Workstation and Fusion contain an out-of-bounds read/write vulnerability in SCSI CD/DVD device emulation.
+      published: 2023-04-25T21:15:10.073
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.vmware.com/security/advisories/VMSA-2023-0008.html
+    - id: CVE-2022-31244
+      description: Nokia OneNDS 17r2 has Insecure Permissions vulnerability that allows for privilege escalation.
+      published: 2023-04-25T16:15:08.990
+      severity: ""
+      privileges: ""
+      references:
+        - https://packetstormsecurity.com/files/171970/Nokia-OneNDS-17-Insecure-Permissions-Privilege-Escalation.html
+        - https://www.nokia.com/networks/products/one-nds/
+    - id: CVE-2023-27105
+      description: A vulnerability in the Wi-Fi file transfer module of Shanling M5S Portable Music Player with Shanling MTouch OS v4.3 and Shanling M2X Portable Music Player with Shanling MTouch OS v3.3 allows attackers to arbitrarily read, delete, or modify any critical system files via directory traversal.
+      published: 2023-04-25T15:15:08.783
+      severity: ""
+      privileges: ""
+      references:
+        - https://en.shanling.com/
+        - https://hexavector.github.io/4bf46f12/
+    - id: CVE-2023-29779
+      description: Sengled Dimmer Switch V0.0.9 contains a denial of service (DOS) vulnerability, which allows a remote attacker to send malicious Zigbee messages to a vulnerable device and cause crashes. After receiving the malicious command, the device will keep reporting its status and finally drain its battery after receiving the 'Set_short_poll_interval' command.
+      published: 2023-04-25T14:15:09.383
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/iot-sec23/IoT-CVE/blob/main/Sengled%20Dimmer%20Switch%20Vulnerability%20Report.pdf
+        - https://us.sengled.com/
+    - id: CVE-2023-30417
+      description: A cross-site scripting (XSS) vulnerability in Pear-Admin-Boot up to v2.0.2 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Title of a private message.
+      published: 2023-04-25T13:15:10.103
+      severity: ""
+      privileges: ""
+      references:
+        - https://gitee.com/pear-admin/Pear-Admin-Boot/issues/I6SXHX
+    - id: CVE-2023-26843
+      description: A stored Cross-site scripting (XSS) vulnerability in ChurchCRM 4.5.3 allows remote attackers to inject arbitrary web script or HTML via the NoteEditor.php.
+      published: 2023-04-25T13:15:10.063
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/10splayaSec/CVE-Disclosures/tree/main/ChurchCRM/CVE-2023-26843
+        - https://github.com/ChurchCRM/CRM
+    - id: CVE-2023-2269
+      description: A denial of service problem was found, due to a possible recursive locking scenario, resulting in a deadlock in table_clear in drivers/md/dm-ioctl.c in the Linux Kernel Device Mapper-Multipathing sub-component.
+      published: 2023-04-25T21:15:10.627
+      severity: ""
+      privileges: ""
+      references:
+        - https://lore.kernel.org/lkml/ZD1xyZxb3rHot8PV@redhat.com/t/
+    - id: CVE-2023-26841
+      description: A cross-site request forgery (CSRF) vulnerability in ChurchCRM v4.5.3 allows attackers to change any user's password except for the user that is currently logged in.
+      published: 2023-04-25T13:15:10.027
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/10splayaSec/CVE-Disclosures/tree/main/ChurchCRM/CVE-2023-26841
+        - https://github.com/ChurchCRM/CRM
+    - id: CVE-2023-26840
+      description: A cross-site request forgery (CSRF) vulnerability in ChurchCRM v4.5.3 allows attackers to set a person to a user and set that user to be an Administrator.
+      published: 2023-04-25T13:15:09.987
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/10splayaSec/CVE-Disclosures/tree/main/ChurchCRM/CVE-2023-26840
+        - https://github.com/ChurchCRM/CRM
+    - id: CVE-2023-26839
+      description: A cross-site request forgery (CSRF) vulnerability in ChurchCRM v4.5.3 allows attackers to edit information for existing people on the site.
+      published: 2023-04-25T13:15:09.947
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/10splayaSec/CVE-Disclosures/tree/main/ChurchCRM/CVE-2023-26839
+        - https://github.com/ChurchCRM/CRM
+    - id: CVE-2023-20869
+      description: VMware Workstation (17.x) and VMware Fusion (13.x) contain a stack-based buffer-overflow vulnerability that exists in the functionality for sharing host Bluetooth devices with the virtual machine.
+      published: 2023-04-25T22:15:09.420
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.vmware.com/security/advisories/VMSA-2023-0008.html
+    - id: CVE-2023-20870
+      description: VMware Workstation and Fusion contain an out-of-bounds read vulnerability that exists in the functionality for sharing host Bluetooth devices with the virtual machine.
+      published: 2023-04-25T22:15:09.463
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.vmware.com/security/advisories/VMSA-2023-0008.html
+    - id: CVE-2023-25348
+      description: ChurchCRM 4.5.3 was discovered to contain a CSV injection vulnerability via the Last Name and First Name input fields when creating a new person. These vulnerabilities allow attackers to execute arbitrary code via a crafted excel file.
+      published: 2023-04-25T13:15:09.800
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/10splayaSec/CVE-Disclosures/tree/main/ChurchCRM/CVE-2023-25348
+        - https://github.com/ChurchCRM/CRM
+    - id: CVE-2023-25347
+      description: A stored cross-site scripting (XSS) vulnerability in ChurchCRM 4.5.3, allows remote attackers to inject arbitrary web script or HTML via input fields. These input fields are located in the "Title" Input Field in EventEditor.php.
+      published: 2023-04-25T13:15:09.753
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/10splayaSec/CVE-Disclosures/tree/main/ChurchCRM/CVE-2023-25347
+        - https://github.com/ChurchCRM/CRM
+    - id: CVE-2023-25346
+      description: A reflected cross-site scripting (XSS) vulnerability in ChurchCRM 4.5.3 allows remote attackers to inject arbitrary web script or HTML via the id parameter of /churchcrm/v2/family/not-found.
+      published: 2023-04-25T13:15:09.710
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/10splayaSec/CVE-Disclosures/tree/main/ChurchCRM/CVE-2023-25346
+        - https://github.com/ChurchCRM/CRM
+    - id: CVE-2022-42335
+      description: x86 shadow paging arbitrary pointer dereference In environments where host assisted address translation is necessary but Hardware Assisted Paging (HAP) is unavailable, Xen will run guests in so called shadow mode. Due to too lax a check in one of the hypervisor routines used for shadow page handling it is possible for a guest with a PCI device passed through to cause the hypervisor to access an arbitrary pointer partially under guest control.
+      published: 2023-04-25T13:15:09.643
+      severity: ""
+      privileges: ""
+      references:
+        - http://www.openwall.com/lists/oss-security/2023/04/25/1
+        - http://xenbits.xen.org/xsa/advisory-430.html
+        - https://xenbits.xenproject.org/xsa/advisory-430.txt
+    - id: CVE-2023-22665
+      description: There is insufficient checking of user queries in Apache Jena versions 4.7.0 and earlier, when invoking custom scripts. It allows a remote user to execute arbitrary javascript via a SPARQL query.
+      published: 2023-04-25T07:15:08.137
+      severity: ""
+      privileges: ""
+      references:
+        - https://lists.apache.org/thread/s0dmpsxcwqs57l4qfs415klkgmhdxq7s
+    - id: CVE-2023-26560
+      description: Northern.tech CFEngine Enterprise before 3.21.1 allows a subset of authenticated users to leverage the Scheduled Reports feature to read arbitrary files and potentially discover credentials.
+      published: 2023-04-26T00:15:09.187
+      severity: ""
+      privileges: ""
+      references:
+        - https://cfengine.com/blog/2023/cve-2023-26560/
+        - https://northern.tech
+    - id: CVE-2023-26735
+      description: blackbox_exporter v0.23.0 was discovered to contain an access control issue in its probe interface. This vulnerability allows attackers to detect intranet ports and services, as well as download resources.
+      published: 2023-04-26T00:15:09.227
+      severity: ""
+      privileges: ""
+      references:
+        - http://blackboxexporter.com
+        - http://prometheus.com
+        - https://github.com/prometheus/blackbox_exporter/issues/1024
+        - https://github.com/prometheus/blackbox_exporter/issues/1025
+        - https://github.com/prometheus/blackbox_exporter/issues/1026
+    - id: CVE-2023-27843
+      description: SQL injection vulnerability found in PrestaShop askforaquote v.5.4.2 and before allow a remote attacker to gain privileges via the QuotesProduct::deleteProduct component.
+      published: 2023-04-26T00:15:09.267
+      severity: ""
+      privileges: ""
+      references:
+        - https://addons.prestashop.com/en/quotes/3725-ask-for-a-quote-convert-to-order-messaging-system.html
+        - https://friends-of-presta.github.io/security-advisories/modules/2023/04/25/askforaquote.html
+    - id: CVE-2023-30106
+      description: Sourcecodester Medicine Tracker System in PHP 1.0.0 is vulnerable to Cross Site Scripting (XSS) via page=about.
+      published: 2023-04-26T00:15:09.310
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Rajeshwar40/CVE/blob/main/2023-30106
+        - https://www.sourcecodester.com
+        - https://www.sourcecodester.com/sites/default/files/download/oretnom23/php-mts_0.zip
+    - id: CVE-2023-30111
+      description: Medicine Tracker System in PHP 1.0.0 is vulnerable to Cross Site Scripting (XSS).
+      published: 2023-04-26T00:15:09.347
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Rajeshwar40/CVE/blob/main/2023-30111
+        - https://www.sourcecodester.com/sites/default/files/download/oretnom23/php-mts_0.zip
+    - id: CVE-2023-30404
+      description: Aigital Wireless-N Repeater Mini_Router v0.131229 was discovered to contain a remote code execution (RCE) vulnerability via the sysCmd parameter in the formSysCmd function. This vulnerability is exploited via a crafted HTTP request.
+      published: 2023-04-26T00:15:09.387
+      severity: ""
+      privileges: ""
+      references:
+        - http://aigital.com
+        - https://mandomat.github.io/2023-04-13-testing-a-cheap-wifi-repeater/
