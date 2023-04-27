@@ -1,0 +1,483 @@
+data:
+    - id: CVE-2023-2297
+      description: The Profile Builder – User Profile & User Registration Forms plugin for WordPress is vulnerable to unauthorized password resets  in versions up to, and including 3.9.0. This is due to the plugin using native password reset functionality, with insufficient validation on the password reset function (wppb_front_end_password_recovery). The function uses the plaintext value of a password reset key instead of a hashed value which means it can easily be retrieved and subsequently used. An attacker can leverage CVE-2023-0814, or another vulnerability like SQL Injection in another plugin or theme installed on the site to successfully exploit this vulnerability.
+      published: 2023-04-27T00:15:08.923
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://lana.codes/lanavdb/512e7307-04a5-4d8b-8f79-f75f37784a9f/
+        - https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2864329%40profile-builder&new=2864329%40profile-builder&sfp_email=&sfph_mail=
+        - https://www.wordfence.com/blog/2023/03/vulnerability-patched-in-cozmolabs-profile-builder-plugin-information-disclosure-leads-to-account-takeover/
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/e731292a-4f95-46eb-889e-b00d58f3444e?source=cve
+    - id: CVE-2023-29268
+      description: 'The Splus Server component of TIBCO Software Inc.''s TIBCO Spotfire Statistics Services contains a vulnerability that allows an unauthenticated remote attacker to upload or modify arbitrary files within the web server directory on the affected system. Affected releases are TIBCO Software Inc.''s TIBCO Spotfire Statistics Services: versions 11.4.10 and below, versions 11.5.0, 11.6.0, 11.6.1, 11.6.2, 11.7.0, 11.8.0, 11.8.1, 12.0.0, 12.0.1, and 12.0.2, versions 12.1.0 and 12.2.0.'
+      published: 2023-04-26T18:15:09.160
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.tibco.com/services/support/advisories
+    - id: CVE-2023-30546
+      description: 'Contiki-NG is an operating system for Internet of Things devices. An off-by-one error can be triggered in the Antelope database management system in the Contiki-NG operating system in versions 4.8 and prior. The problem exists in the Contiki File System (CFS) backend for the storage of data (file os/storage/antelope/storage-cfs.c). In the functions `storage_get_index` and `storage_put_index`, a buffer for merging two strings is allocated with one byte less than the maximum size of the merged strings, causing subsequent function calls to the cfs_open function to read from memory beyond the buffer size. The vulnerability has been patched in the "develop" branch of Contiki-NG, and is expected to be included in the next release. As a workaround, the problem can be fixed by applying the patch in Contiki-NG pull request #2425.'
+      published: 2023-04-26T19:15:09.070
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://github.com/contiki-ng/contiki-ng/pull/2425
+        - https://github.com/contiki-ng/contiki-ng/security/advisories/GHSA-257g-w39m-5jj4
+    - id: CVE-2023-30846
+      description: 'typed-rest-client is a library for Node Rest and Http Clients with typings for use with TypeScript. Users of the typed-rest-client library version 1.7.3 or lower are vulnerable to leak authentication data to 3rd parties. The flow of the vulnerability is as follows: First, send any request with `BasicCredentialHandler`, `BearerCredentialHandler` or `PersonalAccessTokenCredentialHandler`. Second, the target host may return a redirection (3xx), with a link to a second host. Third, the next request will use the credentials to authenticate with the second host, by setting the `Authorization` header. The expected behavior is that the next request will *NOT* set the `Authorization` header. The problem was fixed in version 1.8.0. There are no known workarounds.'
+      published: 2023-04-26T21:15:09.380
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://github.com/microsoft/typed-rest-client/commit/f9ff755631b982ee1303dfc3e3c823d0d31233e8
+        - https://github.com/microsoft/typed-rest-client/security/advisories/GHSA-558p-m34m-vpmq
+    - id: CVE-2023-30843
+      description: Payload is a free and open source headless content management system. In versions prior to 1.7.0, if a user has access to documents that contain hidden fields or fields they do not have access to, the user could reverse-engineer those values via brute force. Version 1.7.0 contains a patch. As a workaround, write a `beforeOperation` hook to remove `where` queries that attempt to access hidden field data.
+      published: 2023-04-26T21:15:09.177
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/payloadcms/payload/releases/tag/v1.7.0
+        - https://github.com/payloadcms/payload/security/advisories/GHSA-35jj-vqcf-f2jf
+    - id: CVE-2022-41739
+      description: 'IBM Spectrum Scale (IBM Spectrum Scale Container Native Storage Access 5.1.2.1 through 5.1.6.0) could allow programs running inside the container to overcome isolation mechanism and gain additional capabilities or access sensitive information on the host. IBM X-Force ID: 237815.'
+      published: 2023-04-26T03:15:08.767
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/237815
+        - https://www.ibm.com/support/pages/node/6964568
+    - id: CVE-2023-30845
+      description: |-
+        ESPv2 is a service proxy that provides API management capabilities using Google Service Infrastructure. ESPv2 2.20.0 through 2.42.0 contains an authentication bypass vulnerability. API clients can craft a malicious `X-HTTP-Method-Override` header value to bypass JWT authentication in specific cases.
+
+        ESPv2 allows malicious requests to bypass authentication if both the conditions are true: The requested HTTP method is **not** in the API service definition (OpenAPI spec or gRPC `google.api.http` proto annotations, and the specified `X-HTTP-Method-Override` is a valid HTTP method in the API service definition. ESPv2 will forward the request to your backend without checking the JWT. Attackers can craft requests with a malicious `X-HTTP-Method-Override` value that allows them to bypass specifying JWTs. Restricting API access with API keys works as intended and is not affected by this vulnerability.
+
+        Upgrade deployments to release v2.43.0 or higher to receive a patch. This release ensures that JWT authentication occurs, even when the caller specifies `x-http-method-override`. `x-http-method-override` is still supported by v2.43.0+. API clients can continue sending this header to ESPv2.
+      published: 2023-04-26T21:15:09.277
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/GoogleCloudPlatform/esp-v2/commit/0bcdfc024ce96b34db4e1b4f2211b509d9be93cd
+        - https://github.com/GoogleCloudPlatform/esp-v2/commit/e95670146f5e96bb5565b0a9c1e153886b3e04ce
+        - https://github.com/GoogleCloudPlatform/esp-v2/commit/e98061ee4527a564506ba4e814c0ecf324dc2c6f
+        - https://github.com/GoogleCloudPlatform/esp-v2/security/advisories/GHSA-6qmp-9p95-fc5f
+    - id: CVE-2023-26286
+      description: 'IBM AIX 7.1, 7.2, 7.3, and VIOS 3.1 could allow a non-privileged local user to exploit a vulnerability in the AIX runtime services library to execute arbitrary commands.  IBM X-Force ID:  248421.'
+      published: 2023-04-26T12:15:09.803
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/248421
+        - https://https://www.ibm.com/support/pages/node/6983236
+    - id: CVE-2023-28008
+      description: HCL Workload Automation 9.4, 9.5, and 10.1 are vulnerable to an XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources.
+      published: 2023-04-26T20:15:10.000
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0104371
+    - id: CVE-2023-29257
+      description: 'IBM Db2 for Linux, UNIX and Windows (includes Db2 Connect Server) 10.5, 11.1, and 11.5 is vulnerable to remote code execution as a database administrator of one database may execute code or read/write files from another database within the same instance.  IBM X-Force ID:  252011.'
+      published: 2023-04-26T13:15:08.853
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/252011
+        - https://www.ibm.com/support/pages/node/6985691
+    - id: CVE-2022-36769
+      description: 'IBM Cloud Pak for Data 4.5 and 4.6 could allow a privileged user to upload malicious files of dangerous types that can be automatically processed within the product''s environment. IBM X-Force ID: 232034.'
+      published: 2023-04-26T03:15:08.663
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/232034
+        - https://www.ibm.com/support/pages/node/6980959
+    - id: CVE-2023-2273
+      description: Rapid7 Insight Agent token handler versions 3.2.6 and below, suffer from a Directory Traversal vulnerability whereby unsanitized input from a CLI argument flows into io.ioutil.WriteFile, where it is used as a path. This can result in a Path Traversal vulnerability and allow an attacker to write arbitrary files. This issue is remediated in version 3.3.0 via safe guards that reject inputs that attempt to do path traversal.
+      published: 2023-04-26T09:15:09.117
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://docs.rapid7.com/release-notes/insightagent/20230425/
+    - id: CVE-2023-2307
+      description: Cross-Site Request Forgery (CSRF) in GitHub repository builderio/qwik prior to 0.104.0.
+      published: 2023-04-26T17:15:11.217
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/builderio/qwik/commit/09190b70027354baf7ad3d208df9c05a87f75f57
+        - https://huntr.dev/bounties/204ea12e-9e5c-4166-bf0e-fd49c8836917
+    - id: CVE-2023-22729
+      description: Silverstripe Framework is the Model-View-Controller framework that powers the Silverstripe content management system. Prior to version 4.12.15, an attacker can display a link to a third party website on a login screen by convincing a legitimate content author to follow a specially crafted link. Users should upgrade to Silverstripe Framework 4.12.15 or above to address the issue.
+      published: 2023-04-26T15:15:08.887
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/silverstripe/silverstripe-framework/commit/1a5bb4cbece1721203977910b8ecd8b79c18dc77
+        - https://github.com/silverstripe/silverstripe-framework/security/advisories/GHSA-fw84-xgm8-9jmv
+    - id: CVE-2023-28009
+      description: HCL Workload Automation is vulnerable to an XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources.
+      published: 2023-04-26T20:15:10.080
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0104371
+    - id: CVE-2023-22728
+      description: Silverstripe Framework is the Model-View-Controller framework that powers the Silverstripe content management system. Prior to version 4.12.15, the GridField print view incorrectly validates the permission of DataObjects potentially allowing a content author to view records they are not authorised to access. Users should upgrade to Silverstripe Framework 4.12.15 or above to address the issue.
+      published: 2023-04-26T14:15:09.490
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/silverstripe/silverstripe-framework/commit/fd5d8217e83768d7bf841e94b2d4d82642d5bc58
+        - https://github.com/silverstripe/silverstripe-framework/security/advisories/GHSA-jh3w-6jp2-vqqm
+    - id: CVE-2023-27559
+      description: 'IBM Db2 for Linux, UNIX and Windows (includes Db2 Connect Server) 10.5, 11.1, and 11.5 is vulnerable to a denial of service as the server may crash when using a specially crafted subquery.  IBM X-Force ID:  249196.'
+      published: 2023-04-26T20:15:09.900
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/249196
+        - https://https://www.ibm.com/support/pages/node/6985667
+    - id: CVE-2023-0458
+      description: A speculative pointer dereference problem exists in the Linux Kernel on the do_prlimit() function. The resource argument value is controlled and is used in pointer arithmetic for the 'rlim' variable and can be used to leak the contents. We recommend upgrading past version 6.1.8 or commit 739790605705ddcf18f21782b9c99ad7d53a8c11
+      published: 2023-04-26T19:15:08.720
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/diff/kernel/sys.c?id=v6.1.8&id2=v6.1.7
+        - https://github.com/torvalds/linux/commit/739790605705ddcf18f21782b9c99ad7d53a8c11
+    - id: CVE-2023-1786
+      description: Sensitive data could be exposed in logs of cloud-init before version 23.1.2. An attacker could use this information to find hashed passwords and possibly escalate their privilege.
+      published: 2023-04-26T23:15:08.690
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://bugs.launchpad.net/cloud-init/+bug/2013967
+        - https://github.com/canonical/cloud-init/commit/a378b7e4f47375458651c0972e7cd813f6fe0a6b
+        - https://ubuntu.com/security/notices/USN-6042-1
+    - id: CVE-2023-30841
+      description: Baremetal Operator (BMO) is a bare metal host provisioning integration for Kubernetes. Prior to version 0.3.0, ironic and ironic-inspector deployed within Baremetal Operator using the included `deploy.sh` store their `.htpasswd` files as ConfigMaps instead of Secrets. This causes the plain-text username and hashed password to be readable by anyone having a cluster-wide read-access to the management cluster, or access to the management cluster's Etcd storage. This issue is patched in baremetal-operator PR#1241, and is included in BMO release 0.3.0 onwards. As a workaround, users may modify the kustomizations and redeploy the BMO, or recreate the required ConfigMaps as Secrets per instructions in baremetal-operator PR#1241.
+      published: 2023-04-26T19:15:09.140
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/metal3-io/baremetal-operator/pull/1241
+        - https://github.com/metal3-io/baremetal-operator/security/advisories/GHSA-9wh7-397j-722m
+    - id: CVE-2023-1387
+      description: "Grafana is an open-source platform for monitoring and observability. \n\nStarting with the 9.1 branch, Grafana introduced the ability to search for a JWT in the URL query parameter auth_token and use it as the authentication token. \n\nBy enabling the \"url_login\" configuration option (disabled by default), a JWT might be sent to data sources. If an attacker has access to the data source, the leaked token could be used to authenticate to Grafana."
+      published: 2023-04-26T14:15:09.430
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/grafana/bugbounty/security/advisories/GHSA-5585-m9r5-p86j
+        - https://grafana.com/security/security-advisories/cve-2023-1387/
+    - id: CVE-2022-45456
+      description: 'Denial of service due to unauthenticated API endpoint. The following products are affected: Acronis Agent (Windows, macOS, Linux) before build 30161.'
+      published: 2023-04-26T20:15:09.760
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://security-advisory.acronis.com/advisories/SEC-4149
+    - id: CVE-2023-2294
+      description: A vulnerability was found in UCMS 1.6.0. It has been classified as problematic. This affects an unknown part of the file saddpost.php of the component Column Configuration. The manipulation of the argument strorder leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-227481 was assigned to this vulnerability.
+      published: 2023-04-26T06:15:09.283
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/yztale/UCMS1.6/blob/main/README.md
+        - https://vuldb.com/?ctiid.227481
+        - https://vuldb.com/?id.227481
+    - id: CVE-2023-30266
+      description: CLTPHP <=6.0 is vulnerable to Unrestricted Upload of File with Dangerous Type.
+      published: 2023-04-26T14:15:09.737
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/HuBenLab/HuBenVulList/blob/main/CLTPHP6.0%20Unrestricted%20Upload%20of%20File%20with%20Dangerous%20Type%201.md
+    - id: CVE-2023-30269
+      description: CLTPHP <=6.0 is vulnerable to Improper Input Validation via application/admin/controller/Template.php.
+      published: 2023-04-26T14:15:09.813
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/HuBenLab/HuBenVulList/blob/main/CLTPHP6.0%20Improper%20Input%20Validation%201.md
+    - id: CVE-2023-30211
+      description: OURPHP <= 7.2.0 is vulnerable to SQL Injection.
+      published: 2023-04-26T16:15:10.067
+      severity: ""
+      privileges: ""
+      references:
+        - https://wanheiqiyihu.top/2023/03/27/OURPHP-v7-2-0-Background-SQL-injection/
+    - id: CVE-2022-27979
+      description: A cross-site scripting (XSS) vulnerability in ToolJet v1.6.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Comment Body component.
+      published: 2023-04-26T16:15:09.453
+      severity: ""
+      privileges: ""
+      references:
+        - http://tooljet.com
+        - https://github.com/fourcube/security-advisories/blob/main/security-advisories/20220321-tooljet-xss.md
+    - id: CVE-2023-30212
+      description: OURPHP <= 7.2.0 is vulnerale to Cross Site Scripting (XSS) via /client/manage/ourphp_out.php.
+      published: 2023-04-26T17:15:11.297
+      severity: ""
+      privileges: ""
+      references:
+        - https://wanheiqiyihu.top/2023/03/27/OURPHP-v7-2-0-ourphp-out-php-Reflection-xss/
+    - id: CVE-2022-27978
+      description: Tooljet v1.6 does not properly handle missing values in the API, allowing attackers to arbitrarily reset passwords via a crafted HTTP request.
+      published: 2023-04-26T16:15:09.260
+      severity: ""
+      privileges: ""
+      references:
+        - http://tooljet.com
+        - https://github.com/fourcube/security-advisories/blob/main/security-advisories/20220320-tooljet.md
+    - id: CVE-2022-44232
+      description: libming 0.4.8 0.4.8 is vulnerable to Buffer Overflow. In getInt() in decompile.c unknown type may lead to denial of service. This is a different vulnerability than CVE-2018-9132 and CVE-2018-20427.
+      published: 2023-04-26T19:15:08.613
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/huanglei3/libming_crashes.git
+    - id: CVE-2022-25278
+      description: Under certain circumstances, the Drupal core form API evaluates form element access incorrectly. This may lead to a user being able to alter data they should not have access to. No forms provided by Drupal core are known to be vulnerable. However, forms added through contributed or custom modules or themes may be affected.
+      published: 2023-04-26T15:15:08.747
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.drupal.org/sa-core-2022-013
+    - id: CVE-2023-26930
+      description: Buffer Overflow vulnerability found in XPDF v.4.04 allows an attacker to cause a Denial of Service via the PDFDoc malloc in the pdftotext.cc function.
+      published: 2023-04-26T19:15:08.783
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/huanglei3/10e2a9bd07a109995b20ade306612a34
+        - https://github.com/huanglei3/xpdf_aborted
+    - id: CVE-2023-26931
+      description: Buffer Overflow vulnerability found in XPDF v.4.04 allows an attacker to cause a Denial of Service via the TextOutputDev.cc function.
+      published: 2023-04-26T19:15:08.820
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/huanglei3/10e2a9bd07a109995b20ade306612a34
+        - https://note.youdao.com/s/7Nkhj01p
+    - id: CVE-2023-26934
+      description: An issue found in XPDF v.4.04 allows an attacker to cause a denial of service via a crafted pdf file in the object.cc parameter.
+      published: 2023-04-26T19:15:08.857
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/huanglei3/10e2a9bd07a109995b20ade306612a34
+        - https://github.com/huanglei3/xpdf_Stack-backtracking/blob/main/object_copy
+    - id: CVE-2023-26935
+      description: Buffer Overflow vulnerability found in XPDF v.4.04 allows an attacker to cause a Denial of Service via SharedFile::readBlock at /xpdf/Stream.cc.
+      published: 2023-04-26T19:15:08.893
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/huanglei3/10e2a9bd07a109995b20ade306612a34
+        - https://github.com/huanglei3/xpdf_heapoverflow
+    - id: CVE-2023-26936
+      description: Buffer Overflow vulnerability found in XPDF v.4.04 allows an attacker to cause a Denial of Service via gmalloc in gmem.cc
+      published: 2023-04-26T19:15:08.930
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/huanglei3/10e2a9bd07a109995b20ade306612a34
+        - https://github.com/huanglei3/xpdf_Stack-backtracking/blob/main/gmem_copyString
+    - id: CVE-2023-26937
+      description: Buffer Overflow vulnerability found in XPDF v.4.04 allows an attacker to cause a Denial of Service via GString::resize located in goo/GString.cc
+      published: 2023-04-26T19:15:08.963
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/huanglei3/10e2a9bd07a109995b20ade306612a34
+        - https://github.com/huanglei3/xpdf_Stack-backtracking/blob/main/Stack_backtracking_gstring
+    - id: CVE-2023-26938
+      description: Buffer Overflow vulnerability found in XPDF v.4.04 allows an attacker to cause a Denial of Service viaSharedFile::readBlock located in goo/gfile.cc.
+      published: 2023-04-26T19:15:09.000
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/huanglei3/10e2a9bd07a109995b20ade306612a34
+        - https://github.com/huanglei3/xpdf_heapoverflow/edit/main/Stack_backtracking_readblock
+    - id: CVE-2022-25277
+      description: 'Drupal core sanitizes filenames with dangerous extensions upon upload (reference: SA-CORE-2020-012) and strips leading and trailing dots from filenames to prevent uploading server configuration files (reference: SA-CORE-2019-010). However, the protections for these two vulnerabilities previously did not work correctly together. As a result, if the site were configured to allow the upload of files with an htaccess extension, these files'' filenames would not be properly sanitized. This could allow bypassing the protections provided by Drupal core''s default .htaccess files and possible remote code execution on Apache web servers. This issue is mitigated by the fact that it requires a field administrator to explicitly configure a file field to allow htaccess as an extension (a restricted permission), or a contributed module or custom code that overrides allowed file uploads.'
+      published: 2023-04-26T15:15:08.710
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.drupal.org/sa-core-2022-014
+    - id: CVE-2022-25276
+      description: The Media oEmbed iframe route does not properly validate the iframe domain setting, which allows embeds to be displayed in the context of the primary domain. Under certain circumstances, this could lead to cross-site scripting, leaked cookies, or other vulnerabilities.
+      published: 2023-04-26T15:15:08.663
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.drupal.org/sa-core-2022-015
+    - id: CVE-2023-31250
+      description: The file download facility doesn't sufficiently sanitize file paths in certain situations. This may result in users gaining access to private files that they should not have access to. Some sites may require configuration changes following this security release. Review the release notes for your Drupal version if you have issues accessing private files after updating.
+      published: 2023-04-26T19:15:09.197
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.drupal.org/sa-core-2023-005
+    - id: CVE-2020-36070
+      description: Insecure Permission vulnerability found in Yoyager v.1.4 and before allows a remote attacker to execute arbitrary code via a crafted .php file to the media component.
+      published: 2023-04-26T20:15:09.533
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/the-control-group/voyager/
+    - id: CVE-2023-30210
+      description: OURPHP <= 7.2.0 is vulnerable to Cross Site Scripting (XSS) via ourphp_tz.php.
+      published: 2023-04-26T16:15:10.023
+      severity: ""
+      privileges: ""
+      references:
+        - https://wanheiqiyihu.top/2023/03/27/OURPHP-v7-2-0-ourphp-tz-php-Reflection-xss/
+    - id: CVE-2023-26567
+      description: Sangoma FreePBX 1805 through 2302 (when obtained as a ,.ISO file) places AMPDBUSER, AMPDBPASS, AMPMGRUSER, and AMPMGRPASS in the list of global variables. This exposes cleartext authentication credentials for the Asterisk Database (MariaDB/MySQL) and Asterisk Manager Interface. For example, an attacker can make a /ari/asterisk/variable?variable=AMPDBPASS API call.
+      published: 2023-04-26T20:15:09.860
+      severity: ""
+      privileges: ""
+      references:
+        - https://qsecure.com.cy/resources/advisories/sangoma-freepbx-linux-insecure-permissions
+        - https://www.freepbx.org
+        - https://www.sangoma.com/products/open-source/
+    - id: CVE-2023-30267
+      description: CLTPHP <=6.0 is vulnerable to Cross Site Scripting (XSS) via application/home/controller/Changyan.php.
+      published: 2023-04-26T14:15:09.777
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/HuBenLab/HuBenVulList/blob/main/CLTPHP6.0%20Reflected%20cross-site%20scripting(XSS).md
+    - id: CVE-2023-30265
+      description: CLTPHP <=6.0 is vulnerable to Directory Traversal.
+      published: 2023-04-26T14:15:09.697
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/HuBenLab/HuBenVulList/blob/main/CLTPHP6.0%20Path%20Traversal.md
+    - id: CVE-2023-30112
+      description: Medicine Tracker System in PHP 1.0.0 is vulnerable to SQL Injection.
+      published: 2023-04-26T14:15:09.660
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Rajeshwar40/CVE/blob/main/CVE-2023-30112
+        - https://www.sourcecodester.com/sites/default/files/download/oretnom23/php-mts_0.zip
+    - id: CVE-2023-29596
+      description: Buffer Overflow vulnerability found in ByronKnoll Cmix v.19 allows an attacker to execute arbitrary code and cause a denial of service via the paq8 function.
+      published: 2023-04-26T20:15:10.170
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/byronknoll/cmix/issues/54
+    - id: CVE-2023-29835
+      description: Insecure Permission vulnerability found in Wondershare Dr.Fone v.12.9.6 allows a remote attacker to escalate privileges via the service permission function.
+      published: 2023-04-26T20:15:10.210
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/IthacaLabs/Wondershare/tree/main/Dr.Fone
+    - id: CVE-2023-29836
+      description: Cross Site Scripting vulnerability found in Exelysis Unified Communication Solutions (EUCS) v.1.0 allows a remote attacker to execute arbitrary code via the Username parameter of the eucsAdmin login form.
+      published: 2023-04-26T20:15:10.257
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/IthacaLabs/Exelysis
+        - https://github.com/IthacaLabs/Exelysis/blob/main/EUCS%20Admin%20Login%20XSS.txt
+    - id: CVE-2023-30280
+      description: Buffer Overflow vulnerability found in Netgear R6900 v.1.0.2.26, R6700v3 v.1.0.4.128, R6700 v.1.0.0.26 allows a remote attacker to execute arbitrary code and cause a denial ofservice via the getInputData parameter of the fwSchedule.cgi page.
+      published: 2023-04-26T20:15:10.310
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/
+        - https://www.netgear.com/about/security/
+    - id: CVE-2023-29442
+      description: Zoho ManageEngine Applications Manager through 16390 allows DOM XSS.
+      published: 2023-04-26T21:15:08.890
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.manageengine.com/products/applications_manager/security-updates/security-updates-cve-2023-29442.html
+    - id: CVE-2023-29443
+      description: Zoho ManageEngine ServiceDesk Plus through 14104 allows admin users to conduct an XXE attack.
+      published: 2023-04-26T21:15:08.957
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.manageengine.com/products/service-desk/CVE-2023-29443.html
+    - id: CVE-2023-2291
+      description: Static credentials exist in the PostgreSQL data used in ManageEngine Access Manager Plus (AMP) build 4309, ManageEngine Password Manager Pro, and ManageEngine PAM360. These credentials could allow a malicious actor to modify configuration data that would escalate their permissions from that of a low-privileged user to an Administrative user.
+      published: 2023-04-26T21:15:09.037
+      severity: ""
+      privileges: ""
+      references:
+        - https://tenable.com/security/research/tra-2023-16
+    - id: CVE-2023-30363
+      description: vConsole v3.15.0 was discovered to contain a prototype pollution due to incorrect key and value resolution in setOptions in core.ts.
+      published: 2023-04-26T21:15:09.103
+      severity: ""
+      privileges: ""
+      references:
+        - https://cwe.mitre.org/data/definitions/1321.html
+        - https://github.com/Tencent/vConsole/issues/616
+    - id: CVE-2022-39989
+      description: An issue was discovered in Fighting Cock Information System 1.0, which uses default credentials, but does not force nor prompt the administrators to change the credentials.
+      published: 2023-04-26T14:15:09.387
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/0xHop/43c4da65e0d101328a46b1bd5a11b262
+        - https://gist.github.com/0xHop/6ed962a1978edb1bd620c9c487400403
+        - https://www.sourcecodester.com/php/12824/fighting-cock-information-system.html
+    - id: CVE-2022-25275
+      description: In some situations, the Image module does not correctly check access to image files not stored in the standard public files directory when generating derivative images using the image styles system. Access to a non-public file is checked only if it is stored in the "private" file system. However, some contributed modules provide additional file systems, or schemes, which may lead to this vulnerability. This vulnerability is mitigated by the fact that it only applies when the site sets (Drupal 9) $config['image.settings']['allow_insecure_derivatives'] or (Drupal 7) $conf['image_allow_insecure_derivatives'] to TRUE. The recommended and default setting is FALSE, and Drupal core does not provide a way to change that in the admin UI. Some sites may require configuration changes following this security release. Review the release notes for your Drupal version if you have issues accessing files or image styles after updating.
+      published: 2023-04-26T14:15:09.347
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.drupal.org/sa-core-2022-012
+    - id: CVE-2022-25274
+      description: Drupal 9.3 implemented a generic entity access API for entity revisions. However, this API was not completely integrated with existing permissions, resulting in some possible access bypass for users who have access to use revisions of content generally, but who do not have access to individual items of node and media content. This vulnerability only affects sites using Drupal's revision system.
+      published: 2023-04-26T14:15:09.300
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.drupal.org/sa-core-2022-009
+    - id: CVE-2022-45876
+      description: Versions of VISAM VBASE Automation Base prior to 11.7.5 may disclose information if a valid user opens a specially crafted file.
+      published: 2023-04-26T22:15:08.737
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-080-05
+        - https://www.vbase.net/en/download.php
+        - https://www.visam.com/kontakt.php
+    - id: CVE-2023-27107
+      description: Incorrect access control in the runReport function of MyQ Solution Print Server before 8.2 Patch 32 and Central Server before 8.2 Patch 22 allows users who do not have appropriate access rights to generate internal reports using a direct URL.
+      published: 2023-04-26T22:15:09.443
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/smidtbx10/f8ff1c4977b7f54886c6a52e9ef4e816
+    - id: CVE-2022-25273
+      description: Drupal core's form API has a vulnerability where certain contributed or custom modules' forms may be vulnerable to improper input validation. This could allow an attacker to inject disallowed values or overwrite data. Affected forms are uncommon, but in certain cases an attacker could alter critical or sensitive data.
+      published: 2023-04-26T14:15:09.203
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.drupal.org/sa-core-2022-008
+    - id: CVE-2023-24796
+      description: Password vulnerability found in Vinga WR-AC1200 81.102.1.4370 and before allows a remote attacker to execute arbitrary code via the password parameter at the /goform/sysTools and /adm/systools.asp endpoints.
+      published: 2023-04-26T13:15:08.807
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/yinfei6/3664387cb5b66b68c7eff4bfdb51b2d6
