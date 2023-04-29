@@ -1,0 +1,933 @@
+data:
+    - id: CVE-2023-30466
+      description: |-
+        This vulnerability exists in Milesight 4K/H.265 Series NVR models (MS-Nxxxx-xxG, MS-Nxxxx-xxE, MS-Nxxxx-xxT, MS-Nxxxx-xxH and MS-Nxxxx-xxC), due to a weak password reset mechanism at the Milesight NVR web-based management interface. A remote attacker could exploit this vulnerability by sending a specially crafted http requests on the targeted device.
+
+        Successful exploitation of this vulnerability could allow remote attacker to account takeover on the targeted device.
+      published: 2023-04-28T11:15:08.987
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2023-0121
+    - id: CVE-2023-1968
+      description: 'Instruments with Illumina Universal Copy Service v2.x are vulnerable due to binding to an unrestricted IP address. An unauthenticated malicious actor could use UCS to listen on all IP addresses, including those capable of accepting remote communications. '
+      published: 2023-04-28T19:15:16.647
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://support.illumina.com/downloads/illumina-universal-copy-service-1-0.html
+        - https://www.cisa.gov/news-events/ics-medical-advisories/icsma-23-117-01
+    - id: CVE-2023-30856
+      description: eDEX-UI is a science fiction terminal emulator. Versions 2.2.8 and prior are vulnerable to cross-site websocket hijacking. When running eDEX-UI and browsing the web, a malicious website can connect to eDEX's internal terminal control websocket, and send arbitrary commands to the shell. The project has been archived since 2021, and as of time of publication there are no plans to patch this issue and release a new version. Some workarounds are available, including shutting down eDEX-UI when browsing the web and ensuring the eDEX terminal runs with lowest possible privileges.
+      published: 2023-04-28T16:15:10.260
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://christian-schneider.net/CrossSiteWebSocketHijacking.html
+        - https://github.com/GitSquared/edex-ui/blob/04a00c4079908788b371c6ecdefff96d0d9950f8/src/classes/terminal.class.js#L458
+        - https://github.com/GitSquared/edex-ui/security/advisories/GHSA-q8xc-f2wf-ffh9
+    - id: CVE-2023-30467
+      description: |-
+        This vulnerability exists in Milesight 4K/H.265 Series NVR models (MS-Nxxxx-xxG, MS-Nxxxx-xxE, MS-Nxxxx-xxT, MS-Nxxxx-xxH and MS-Nxxxx-xxC), due to improper authorization at the Milesight NVR web-based management interface. A remote attacker could exploit this vulnerability by sending a specially crafted http requests on the targeted device.
+
+        Successful exploitation of this vulnerability could allow remote attacker to perform unauthorized activities on the targeted device.
+      published: 2023-04-28T11:15:09.040
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES01&VLCODE=CIVN-2023-0121
+    - id: CVE-2023-26021
+      description: 'IBM Db2 for Linux, UNIX and Windows (includes Db2 Connect Server) 11.1 and 11.5 is vulnerable to a denial of service as the server may crash when compiling a specially crafted SQL query using a LIMIT clause.  IBM X-Force ID:  247864.'
+      published: 2023-04-28T19:15:16.713
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/247864
+        - https://www.ibm.com/support/pages/node/6985681
+    - id: CVE-2023-28528
+      description: 'IBM AIX 7.1, 7.2, 7.3, and VIOS 3.1 could allow a non-privileged local user to exploit a vulnerability in the invscout command to execute arbitrary commands.  IBM X-Force ID:  251207.'
+      published: 2023-04-28T03:15:08.453
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/251207
+        - https://www.ibm.com/support/pages/node/6983232
+    - id: CVE-2023-2379
+      description: A vulnerability classified as critical has been found in Ubiquiti EdgeRouter X up to 2.0.9-hotfix.6. This affects an unknown part of the component Web Service. The manipulation leads to denial of service. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-227655.
+      published: 2023-04-28T17:15:43.067
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/leetsun/IoT/tree/main/EdgeRouterX/DoS
+        - https://vuldb.com/?ctiid.227655
+        - https://vuldb.com/?id.227655
+    - id: CVE-2023-1966
+      description: |-
+        Instruments with Illumina Universal Copy Service v1.x and
+        v2.x contain an unnecessary privileges vulnerability. An unauthenticated
+        malicious actor could upload and execute code remotely at the operating system
+        level, which could allow an attacker to change settings, configurations,
+        software, or access sensitive data on the affected product.
+      published: 2023-04-28T19:15:16.573
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://support.illumina.com/downloads/illumina-universal-copy-service-1-0.html
+        - https://www.cisa.gov/news-events/ics-medical-advisories/icsma-23-117-01
+    - id: CVE-2023-30853
+      description: "Gradle Build Action allows users to execute a Gradle Build in their GitHub Actions workflow. A vulnerability impacts GitHub workflows using the Gradle Build Action prior to version 2.4.2 that have executed the Gradle Build Tool with the configuration cache enabled, potentially exposing secrets configured for the repository.\n\nSecrets configured for GitHub Actions are normally passed to the Gradle Build Tool via environment variables. Due to the way that the Gradle Build Tool records these environment variables, they may be persisted into an entry in the GitHub Actions cache. This data stored in the GitHub Actions cache can be read by a GitHub Actions workflow running in an untrusted context, such as that running for a Pull Request submitted by a developer via a repository fork.\n\nThis vulnerability was discovered internally through code review, and we have not seen any evidence of it being exploited in the wild. However, in addition to upgrading the Gradle Build Action, affected users should delete any potentially vulnerable cache entries and may choose to rotate any potentially affected secrets.\n\nGradle Build Action v2.4.2 and newer no longer saves this sensitive data for later use, preventing ongoing leakage of secrets via the GitHub Actions Cache.\n\nWhile upgrading to the latest version of the Gradle Build Action will prevent leakage of secrets going forward, additional actions may be required due to current or previous GitHub Actions Cache entries containing this information.\n\nCurrent cache entries will remain vulnerable until they are forcibly deleted or they expire naturally after 7 days of not being used. Potentially vulnerable entries can be easily identified in the GitHub UI by searching for a cache entry with key matching `configuration-cache-*`. The maintainers recommend that users of the Gradle Build Action inspect their list of cache entries and manually delete any that match this pattern.\n\nWhile maintainers have not seen any evidence of this vulnerability being exploited, they recommend cycling any repository secrets if you cannot be certain that these have not been compromised. Compromise could occur if a user runs a GitHub Actions workflow for a pull request attempting to exploit this data. \nWarning signs to look for in a pull request include:\n- Making changes to GitHub Actions workflow files in a way that may attempt to read/extract data from the Gradle User Home or `<project-root>/.gradle` directories.\n- Making changes to Gradle build files or other executable files that may be invoked by a GitHub Actions workflow, in a way that may attempt to read/extract information from these locations.\n\nSome workarounds to limit the impact of this vulnerability are available:\n- If the Gradle project does not opt-in to using the configuration cache, then it is not vulnerable. \n- If the Gradle project does opt-in to using the configuration-cache by default, then the `--no-configuration-cache` command-line argument can be used to disable this feature in a GitHub Actions workflow.\n\nIn any case, we recommend that users carefully inspect any pull request before approving the execution of GitHub Actions workflows. It may be prudent to require approval for all PRs from external contributors."
+      published: 2023-04-28T16:15:10.127
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/gradle/gradle-build-action/releases/tag/v2.4.2
+        - https://github.com/gradle/gradle-build-action/security/advisories/GHSA-h3qr-39j9-4r5v
+    - id: CVE-2023-30854
+      description: AVideo is an open source video platform. Prior to version 12.4, an OS Command Injection vulnerability in an authenticated endpoint `/plugin/CloneSite/cloneClient.json.php` allows attackers to achieve Remote Code Execution. This issue is fixed in version 12.4.
+      published: 2023-04-28T16:15:10.200
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/WWBN/AVideo/security/advisories/GHSA-6vrj-ph27-qfp3
+    - id: CVE-2023-29057
+      description: A valid XCC user's local account permissions overrides their active directory permissions under specific configurations. This could lead to a privilege escalation. To be vulnerable, LDAP must be configured for authentication/authorization and logins configured as “Local First, then LDAP”.
+      published: 2023-04-28T21:15:08.673
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://support.lenovo.com/us/en/product_security/LEN-118321
+    - id: CVE-2023-25496
+      description: A privilege escalation vulnerability was reported in Lenovo Drivers Management Lenovo Driver Manager that could allow a local user to execute code with elevated privileges.
+      published: 2023-04-28T22:15:09.013
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://iknow.lenovo.com.cn/detail/dc_415202.html
+    - id: CVE-2023-0834
+      description: 'Incorrect Permission Assignment for Critical Resource vulnerability in HYPR Workforce Access on MacOS allows Privilege Escalation.This issue affects Workforce Access: from 6.12 before 8.1.'
+      published: 2023-04-28T15:15:10.573
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.hypr.com/security-advisories
+    - id: CVE-2023-1477
+      description: 'Improper Authentication vulnerability in HYPR Keycloak Authenticator Extension allows Authentication Abuse.This issue affects HYPR Keycloak Authenticator Extension: before 7.10.2, before 8.0.3.'
+      published: 2023-04-28T15:15:10.633
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.hypr.com/security-advisories
+    - id: CVE-2023-25930
+      description: 'IBM Db2 for Linux, UNIX and Windows (includes Db2 Connect Server) 10.1, 11.1, and 11.5 is vulnerable to a denial of service.  Under rare conditions, setting a special register may cause the Db2 server to terminate abnormally.  IBM X-Force ID:  247862.'
+      published: 2023-04-28T18:15:26.163
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/247862
+        - https://https://www.ibm.com/support/pages/node/6985677
+    - id: CVE-2023-2364
+      description: A vulnerability, which was classified as problematic, was found in SourceCodester Resort Reservation System 1.0. Affected is an unknown function of the file registration.php. The manipulation of the argument fullname leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-227640.
+      published: 2023-04-28T11:15:08.923
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/navaidzansari/CVE_Demo/blob/main/2023/Resort_Reservation_System-Stored-Cross-Site-Scripting-1.md
+        - https://vuldb.com/?ctiid.227640
+        - https://vuldb.com/?id.227640
+    - id: CVE-2023-27555
+      description: 'IBM Db2 for Linux, UNIX and Windows (includes DB2 Connect Server) 11.5 is vulnerable to a denial of service when attempting to use ACR client affinity for unfenced DRDA federation wrappers.  IBM X-Force ID:  249187.'
+      published: 2023-04-28T18:15:26.250
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/249187
+        - https://www.ibm.com/support/pages/node/6985683
+    - id: CVE-2023-29334
+      description: Microsoft Edge (Chromium-based) Spoofing Vulnerability
+      published: 2023-04-28T18:15:26.390
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-29334
+    - id: CVE-2023-27557
+      description: 'IBM Counter Fraud Management for Safer Payments 6.1.0.00 through 6.1.1.02, 6.2.0.00 through 6.2.2.02, 6.3.0.00 through 6.3.1.02, 6.4.0.00 through 6.4.2.01, and 6.5.0.00 uses weaker than expected cryptographic algorithms that could allow an attacker to decrypt highly sensitive information.  IBM X-Force ID:  249192.'
+      published: 2023-04-28T02:15:08.910
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/249192
+        - https://www.ibm.com/support/pages/node/6985603
+    - id: CVE-2023-26022
+      description: 'IBM Db2 for Linux, UNIX and Windows (includes Db2 Connect Server) is vulnerable to a denial of service as the server may crash when an Out of Memory occurs using the DBMS_OUTPUT module.  IBM X-Force ID:  247868.'
+      published: 2023-04-28T19:15:16.787
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/247868
+        - https://www.ibm.com/support/pages/node/6985669
+    - id: CVE-2023-28821
+      description: Concrete CMS (previously concrete5) before 9.1 did not have a rate limit for password resets.
+      published: 2023-04-28T14:15:10.753
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/concretecms/concretecms/releases
+        - https://www.concretecms.org/about/project-news/security/concrete-cms-security-advisory-2023-04-20
+    - id: CVE-2023-30858
+      description: The Denosaurs emoji package provides emojis for dinosaurs. Starting in version 0.1.0 and prior to version 0.3.0, the reTrimSpace regex has 2nd degree polynomial inefficiency, leading to a delayed response given a big payload. The issue has been patched in 0.3.0. As a workaround, avoid using the `replace`, `unemojify`, or `strip` functions.
+      published: 2023-04-28T21:15:09.187
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/denosaurs/emoji/pull/11
+        - https://github.com/denosaurs/emoji/security/advisories/GHSA-w2xx-hjhp-gx5v
+        - https://huntr.dev/bounties/444f2255-5085-466f-ba0e-5549fa8846a3/
+    - id: CVE-2023-27556
+      description: 'IBM Counter Fraud Management for Safer Payments 6.1.0.00, 6.2.0.00, 6.3.0.00 through 6.3.1.03, 6.4.0.00 through 6.4.2.02 and 6.5.0.00 does not properly allocate resources without limits or throttling which could allow a remote attacker to cause a denial of service.  IBM X-Force ID:  249190.'
+      published: 2023-04-28T01:15:06.967
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/249190
+        - https://https://www.ibm.com/support/pages/node/6985601
+    - id: CVE-2023-2396
+      description: 'A vulnerability classified as problematic was found in Netgear SRX5308 up to 4.3.5-3. This vulnerability affects unknown code of the component Web Management Interface. The manipulation of the argument USERDBUsers.Password leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-227674 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-04-28T22:15:09.190
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Netgear-SRX5308/16
+        - https://vuldb.com/?ctiid.227674
+        - https://vuldb.com/?id.227674
+    - id: CVE-2023-2395
+      description: 'A vulnerability classified as problematic has been found in Netgear SRX5308 up to 4.3.5-3. This affects an unknown part of the component Web Management Interface. The manipulation of the argument Login.userAgent leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-227673 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-04-28T22:15:09.130
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Netgear-SRX5308/15
+        - https://vuldb.com/?ctiid.227673
+        - https://vuldb.com/?id.227673
+    - id: CVE-2023-29056
+      description: A valid LDAP user, under specific conditions, will default to read-only permissions when authenticating into XCC. To be vulnerable, XCC must be configured to use an LDAP server for Authentication/Authorization and have the login permission attribute not defined.
+      published: 2023-04-28T22:15:09.073
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://support.lenovo.com/us/en/product_security/LEN-118321
+    - id: CVE-2023-2408
+      description: A vulnerability, which was classified as critical, has been found in SourceCodester AC Repair and Services System 1.0. Affected by this issue is some unknown functionality of the file services/view.php. The manipulation of the argument id leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-227702 is the identifier assigned to this vulnerability.
+      published: 2023-04-28T23:15:08.267
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/Yp1oneer/cve_hub/blob/main/AC%20Repair%20and%20Services%20System/SQL-Injection-1.pdf
+        - https://vuldb.com/?ctiid.227702
+        - https://vuldb.com/?id.227702
+    - id: CVE-2023-2375
+      description: A vulnerability was found in Ubiquiti EdgeRouter X up to 2.0.9-hotfix.6 and classified as critical. This issue affects some unknown processing of the component Web Management Interface. The manipulation of the argument src leads to command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-227651.
+      published: 2023-04-28T15:15:10.903
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/leetsun/IoT/tree/main/EdgeRouterX/CI/7
+        - https://vuldb.com/?ctiid.227651
+        - https://vuldb.com/?id.227651
+    - id: CVE-2023-2411
+      description: A vulnerability was found in SourceCodester AC Repair and Services System 1.0 and classified as critical. This issue affects some unknown processing of the file /admin/inquiries/view_inquiry.php. The manipulation of the argument id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-227705 was assigned to this vulnerability.
+      published: 2023-04-28T23:15:08.460
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/Yp1oneer/cve_hub/blob/main/AC%20Repair%20and%20Services%20System/SQL-Injection-4.pdf
+        - https://vuldb.com/?ctiid.227705
+        - https://vuldb.com/?id.227705
+    - id: CVE-2023-2410
+      description: A vulnerability has been found in SourceCodester AC Repair and Services System 1.0 and classified as critical. This vulnerability affects unknown code of the file /admin/bookings/view_booking.php. The manipulation of the argument id leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-227704.
+      published: 2023-04-28T23:15:08.397
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/Yp1oneer/cve_hub/blob/main/AC%20Repair%20and%20Services%20System/SQL-Injection-3.pdf
+        - https://vuldb.com/?ctiid.227704
+        - https://vuldb.com/?id.227704
+    - id: CVE-2023-2378
+      description: A vulnerability was found in Ubiquiti EdgeRouter X up to 2.0.9-hotfix.6. It has been rated as critical. Affected by this issue is some unknown functionality of the component Web Management Interface. The manipulation of the argument suffix-rate-up leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-227654 is the identifier assigned to this vulnerability.
+      published: 2023-04-28T16:15:10.063
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/leetsun/IoT/tree/main/EdgeRouterX/CI/4
+        - https://vuldb.com/?ctiid.227654
+        - https://vuldb.com/?id.227654
+    - id: CVE-2020-4729
+      description: 'IBM Counter Fraud Management for Safer Payments 5.7.0.00 through 5.7.0.10, 6.0.0.00 through 6.0.0.07, 6.1.0.00 through 6.1.0.05, and 6.2.0.00 through 6.2.1.00 could allow an authenticated attacker under special circumstances to send multiple specially crafted API requests that could cause the application to crash.  IBM X-Force ID:  188052.'
+      published: 2023-04-28T02:15:08.697
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/188052
+        - https://www.ibm.com/support/pages/node/6985595
+    - id: CVE-2023-2413
+      description: A vulnerability was found in SourceCodester AC Repair and Services System 1.0. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file /admin/bookings/manage_booking.php. The manipulation of the argument id leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-227707.
+      published: 2023-04-29T00:15:08.937
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/Yp1oneer/cve_hub/blob/main/AC%20Repair%20and%20Services%20System/SQL-Injection-6.pdf
+        - https://vuldb.com/?ctiid.227707
+        - https://vuldb.com/?id.227707
+    - id: CVE-2023-2377
+      description: A vulnerability was found in Ubiquiti EdgeRouter X up to 2.0.9-hotfix.6. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the component Web Management Interface. The manipulation of the argument name leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-227653 was assigned to this vulnerability.
+      published: 2023-04-28T16:15:10.003
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/leetsun/IoT/tree/main/EdgeRouterX/CI/9
+        - https://vuldb.com/?ctiid.227653
+        - https://vuldb.com/?id.227653
+    - id: CVE-2023-2370
+      description: A vulnerability classified as critical has been found in SourceCodester Online DJ Management System 1.0. Affected is an unknown function of the file admin/events/manage_event.php of the component GET Parameter Handler. The manipulation of the argument id leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-227646 is the identifier assigned to this vulnerability.
+      published: 2023-04-28T14:15:10.807
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/aieouZZ/bug_report/blob/main/SQLi-1.md
+        - https://vuldb.com/?ctiid.227646
+        - https://vuldb.com/?id.227646
+    - id: CVE-2023-2371
+      description: A vulnerability classified as critical was found in SourceCodester Online DJ Management System 1.0. Affected by this vulnerability is an unknown functionality of the file admin/inquiries/view_details.php of the component GET Parameter Handler. The manipulation of the argument id leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-227647.
+      published: 2023-04-28T14:15:10.863
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/yoyoyoyoyohane/bug_report/blob/main/SQLi-1.md
+        - https://vuldb.com/?ctiid.227647
+        - https://vuldb.com/?id.227647
+    - id: CVE-2023-2412
+      description: A vulnerability was found in SourceCodester AC Repair and Services System 1.0. It has been classified as critical. Affected is an unknown function of the file /admin/user/manage_user.php. The manipulation of the argument id leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-227706 is the identifier assigned to this vulnerability.
+      published: 2023-04-29T00:15:08.857
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/Yp1oneer/cve_hub/blob/main/AC%20Repair%20and%20Services%20System/SQL-Injection-5.pdf
+        - https://vuldb.com/?ctiid.227706
+        - https://vuldb.com/?id.227706
+    - id: CVE-2023-2373
+      description: A vulnerability, which was classified as critical, was found in Ubiquiti EdgeRouter X up to 2.0.9-hotfix.6. This affects an unknown part of the component Web Management Interface. The manipulation of the argument ecn-up leads to command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-227649 was assigned to this vulnerability.
+      published: 2023-04-28T14:15:10.977
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/leetsun/IoT/tree/main/EdgeRouterX/CI/5
+        - https://vuldb.com/?ctiid.227649
+        - https://vuldb.com/?id.227649
+    - id: CVE-2023-2376
+      description: A vulnerability was found in Ubiquiti EdgeRouter X up to 2.0.9-hotfix.6. It has been classified as critical. Affected is an unknown function of the component Web Management Interface. The manipulation of the argument dpi leads to command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-227652.
+      published: 2023-04-28T16:15:09.933
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/leetsun/IoT/tree/main/EdgeRouterX/CI/8
+        - https://vuldb.com/?ctiid.227652
+        - https://vuldb.com/?id.227652
+    - id: CVE-2023-2361
+      description: Cross-site Scripting (XSS) - Stored in GitHub repository pimcore/pimcore prior to 10.5.21.
+      published: 2023-04-28T08:15:09.340
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/pimcore/pimcore/commit/6970649f5d3790a1db9ef4324bece0d4cb95366a
+        - https://huntr.dev/bounties/24d91b83-c3df-48f5-a713-9def733f2de7
+    - id: CVE-2022-48481
+      description: In JetBrains Toolbox App before 1.28 a DYLIB injection on macOS was possible
+      published: 2023-04-28T10:15:09.130
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.jetbrains.com/privacy-security/issues-fixed/
+    - id: CVE-2023-27864
+      description: 'IBM Maximo Asset Management 7.6.1.2 and 7.6.1.3 is vulnerable to HTML injection. A remote attacker could inject malicious HTML code, which when viewed, would be executed in the victim''s Web browser within the security context of the hosting site.  IBM X-Force ID:  249327.'
+      published: 2023-04-28T18:15:26.323
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/249327
+        - https://www.ibm.com/support/pages/node/6983460
+    - id: CVE-2023-2363
+      description: A vulnerability, which was classified as critical, has been found in SourceCodester Resort Reservation System 1.0. This issue affects some unknown processing of the file view_room.php. The manipulation of the argument id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-227639.
+      published: 2023-04-28T11:15:08.847
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/navaidzansari/CVE_Demo/blob/main/2023/Resort_Reservation_System-SQL-Injection-1.md
+        - https://vuldb.com/?ctiid.227639
+        - https://vuldb.com/?id.227639
+    - id: CVE-2023-2380
+      description: 'A vulnerability, which was classified as problematic, was found in Netgear SRX5308 up to 4.3.5-3. Affected is an unknown function. The manipulation leads to denial of service. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-227658 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-04-28T17:15:43.130
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Netgear-SRX5308/17
+        - https://vuldb.com/?ctiid.227658
+        - https://vuldb.com/?id.227658
+    - id: CVE-2023-2374
+      description: A vulnerability has been found in Ubiquiti EdgeRouter X up to 2.0.9-hotfix.6 and classified as critical. This vulnerability affects unknown code of the component Web Management Interface. The manipulation of the argument ecn-down leads to command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-227650 is the identifier assigned to this vulnerability.
+      published: 2023-04-28T15:15:10.847
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/leetsun/IoT/tree/main/EdgeRouterX/CI/6
+        - https://vuldb.com/?ctiid.227650
+        - https://vuldb.com/?id.227650
+    - id: CVE-2023-2366
+      description: A vulnerability was found in SourceCodester Faculty Evaluation System 1.0 and classified as critical. Affected by this issue is some unknown functionality of the file ajax.php?action=delete_class. The manipulation of the argument id leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-227642 is the identifier assigned to this vulnerability.
+      published: 2023-04-28T12:15:09.937
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/oV201/cve_report/blob/main/vendors/oretnom23/faculty-evaluation-system/SQLi-2.md
+        - https://vuldb.com/?ctiid.227642
+        - https://vuldb.com/?id.227642
+    - id: CVE-2023-2365
+      description: A vulnerability has been found in SourceCodester Faculty Evaluation System 1.0 and classified as critical. Affected by this vulnerability is an unknown functionality of the file ajax.php?action=delete_subject. The manipulation of the argument id leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-227641 was assigned to this vulnerability.
+      published: 2023-04-28T12:15:09.877
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/oV201/cve_report/blob/main/vendors/oretnom23/faculty-evaluation-system/SQLi-1.md
+        - https://vuldb.com/?ctiid.227641
+        - https://vuldb.com/?id.227641
+    - id: CVE-2023-2409
+      description: A vulnerability, which was classified as critical, was found in SourceCodester AC Repair and Services System 1.0. This affects an unknown part of the file /admin/services/view_service.php. The manipulation of the argument id leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-227703.
+      published: 2023-04-28T23:15:08.337
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/Yp1oneer/cve_hub/blob/main/AC%20Repair%20and%20Services%20System/SQL-Injection-2.pdf
+        - https://vuldb.com/?ctiid.227703
+        - https://vuldb.com/?id.227703
+    - id: CVE-2023-29058
+      description: A valid, authenticated XCC user with read-only permissions can modify custom user roles on other user accounts and the user trespass message through the XCC CLI. There is no exposure if SSH is disabled or if there are no users assigned optional read-only permissions.
+      published: 2023-04-28T21:15:08.750
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://support.lenovo.com/us/en/product_security/LEN-118321
+    - id: CVE-2023-25495
+      description: A valid, authenticated administrative user can query a web interface API to reveal the configured LDAP client password used by XCC to authenticate to an external LDAP server in certain configurations.  There is no exposure where no LDAP client password is configured
+      published: 2023-04-28T22:15:08.950
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://support.lenovo.com/us/en/product_security/LEN-99936
+    - id: CVE-2023-2367
+      description: A vulnerability was found in SourceCodester Faculty Evaluation System 1.0. It has been classified as critical. This affects an unknown part of the file /admin/manage_academic.php. The manipulation of the argument id leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-227643.
+      published: 2023-04-28T13:15:13.697
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/f0llow/bug_report/blob/main/vendors/oretnom23/faculty-evaluation-system/SQLi-1.md
+        - https://vuldb.com/?ctiid.227643
+        - https://vuldb.com/?id.227643
+    - id: CVE-2023-28477
+      description: Concrete CMS (previously concrete5) before 9.2 is vulnerable to stored XSS on API Integrations via the name parameter.
+      published: 2023-04-28T14:15:10.597
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://concretecms.com
+        - https://www.concretecms.org/about/project-news/security/concrete-cms-security-advisory-2023-04-20
+    - id: CVE-2023-2368
+      description: A vulnerability was found in SourceCodester Faculty Evaluation System 1.0. It has been declared as critical. This vulnerability affects unknown code of the file index.php?page=manage_questionnaire. The manipulation of the argument id leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-227644.
+      published: 2023-04-28T13:15:13.797
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/f0llow/bug_report/blob/main/vendors/oretnom23/faculty-evaluation-system/SQLi-2.md
+        - https://vuldb.com/?ctiid.227644
+        - https://vuldb.com/?id.227644
+    - id: CVE-2023-2369
+      description: A vulnerability was found in SourceCodester Faculty Evaluation System 1.0. It has been rated as critical. This issue affects some unknown processing of the file admin/manage_restriction.php. The manipulation of the argument id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-227645 was assigned to this vulnerability.
+      published: 2023-04-28T13:15:13.863
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/f0llow/bug_report/blob/main/vendors/oretnom23/faculty-evaluation-system/SQLi-3.md
+        - https://vuldb.com/?ctiid.227645
+        - https://vuldb.com/?id.227645
+    - id: CVE-2023-30857
+      description: '@aedart/support is the support package for Ion, a monorepo for JavaScript/TypeScript packages. Prior to version `0.6.1`, there is a possible prototype pollution issue for the `MetadataRecord`, when merged with a base class'' metadata object, in `meta` decorator from the `@aedart/support` package. The likelihood of exploitation is questionable, given that a class''s metadata can only be set or altered when the class is decorated via `meta()`. Furthermore, object(s) of sensitive nature would have to be stored as metadata, before this can lead to a security impact. The issue has been patched in version `0.6.1`.'
+      published: 2023-04-28T21:15:09.127
+      severity: LOW
+      privileges: NONE
+      references:
+        - https://github.com/aedart/ion/commit/c3e2ee08710d4164d796ecb66ed291335dae9291
+        - https://github.com/aedart/ion/security/advisories/GHSA-wwxh-74fx-33c6
+    - id: CVE-2023-2360
+      description: 'Sensitive information disclosure due to CORS misconfiguration. The following products are affected: Acronis Cyber Infrastructure (ACI) before build 5.2.0-135.'
+      published: 2023-04-28T12:15:09.820
+      severity: LOW
+      privileges: NONE
+      references:
+        - https://security-advisory.acronis.com/advisories/SEC-4215
+    - id: CVE-2023-2397
+      description: A vulnerability, which was classified as problematic, has been found in SourceCodester Simple Mobile Comparison Website 1.0. This issue affects some unknown processing of the file classes/Master.php?f=save_field. The manipulation of the argument Field Name leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-227675.
+      published: 2023-04-28T22:15:09.247
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/sunyucheng0405/bug_report/blob/main/XSS-1.md
+        - https://vuldb.com/?ctiid.227675
+        - https://vuldb.com/?id.227675
+    - id: CVE-2023-2392
+      description: 'A vulnerability was found in Netgear SRX5308 up to 4.3.5-3. It has been classified as problematic. Affected is an unknown function of the file scgi-bin/platform.cgi?page=time_zone.htm of the component Web Management Interface. The manipulation of the argument ManualDate.minutes leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-227670 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-04-28T21:15:08.900
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Netgear-SRX5308/12
+        - https://vuldb.com/?ctiid.227670
+        - https://vuldb.com/?id.227670
+    - id: CVE-2023-2383
+      description: 'A vulnerability was found in Netgear SRX5308 up to 4.3.5-3. It has been classified as problematic. This affects an unknown part of the file scgi-bin/platform.cgi?page=firewall_logs_email.htm of the component Web Management Interface. The manipulation of the argument smtpServer.fromAddr leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-227661 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-04-28T18:15:26.457
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Netgear-SRX5308/2
+        - https://vuldb.com/?ctiid.227661
+        - https://vuldb.com/?id.227661
+    - id: CVE-2023-2384
+      description: 'A vulnerability was found in Netgear SRX5308 up to 4.3.5-3. It has been declared as problematic. This vulnerability affects unknown code of the file scgi-bin/platform.cgi?page=dmz_setup.htm of the component Web Management Interface. The manipulation of the argument dhcp.SecDnsIPByte2 leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-227662 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-04-28T18:15:26.530
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Netgear-SRX5308/3
+        - https://vuldb.com/?ctiid.227662
+        - https://vuldb.com/?id.227662
+    - id: CVE-2023-2382
+      description: 'A vulnerability was found in Netgear SRX5308 up to 4.3.5-3 and classified as problematic. Affected by this issue is some unknown functionality of the file scgi-bin/platform.cgi?page=firewall_logs_email.htm of the component Web Management Interface. The manipulation of the argument sysLogInfo.serverName leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-227660. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-04-28T17:15:43.240
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Netgear-SRX5308/1
+        - https://vuldb.com/?ctiid.227660
+        - https://vuldb.com/?id.227660
+    - id: CVE-2023-2389
+      description: 'A vulnerability, which was classified as problematic, was found in Netgear SRX5308 up to 4.3.5-3. This affects an unknown part of the file scgi-bin/platform.cgi?page=firewall_logs_email.htm of the component Web Management Interface. The manipulation of the argument smtpServer.emailServer leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-227667. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-04-28T20:15:14.090
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Netgear-SRX5308/9
+        - https://vuldb.com/?ctiid.227667
+        - https://vuldb.com/?id.227667
+    - id: CVE-2023-2387
+      description: 'A vulnerability classified as problematic was found in Netgear SRX5308 up to 4.3.5-3. Affected by this vulnerability is an unknown functionality of the file scgi-bin/platform.cgi?page=dmz_setup.htm of the component Web Management Interface. The manipulation of the argument winsServer1 leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-227665 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-04-28T19:15:16.923
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Netgear-SRX5308/4
+        - https://vuldb.com/?ctiid.227665
+        - https://vuldb.com/?id.227665
+    - id: CVE-2023-2390
+      description: 'A vulnerability has been found in Netgear SRX5308 up to 4.3.5-3 and classified as problematic. This vulnerability affects unknown code of the file scgi-bin/platform.cgi?page=time_zone.htm of the component Web Management Interface. The manipulation of the argument ntp.server1 leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-227668. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-04-28T20:15:14.167
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Netgear-SRX5308/10
+        - https://vuldb.com/?ctiid.227668
+        - https://vuldb.com/?id.227668
+    - id: CVE-2023-2386
+      description: 'A vulnerability classified as problematic has been found in Netgear SRX5308 up to 4.3.5-3. Affected is an unknown function of the file scgi-bin/platform.cgi?page=firewall_logs_email.htm of the component Web Management Interface. The manipulation of the argument smtpServer.toAddr leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-227664. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-04-28T19:15:16.863
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Netgear-SRX5308/7
+        - https://vuldb.com/?ctiid.227664
+        - https://vuldb.com/?id.227664
+    - id: CVE-2023-2391
+      description: 'A vulnerability was found in Netgear SRX5308 up to 4.3.5-3 and classified as problematic. This issue affects some unknown processing of the file scgi-bin/platform.cgi?page=time_zone.htm of the component Web Management Interface. The manipulation of the argument ntp.server2 leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-227669 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-04-28T21:15:08.827
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Netgear-SRX5308/11
+        - https://vuldb.com/?ctiid.227669
+        - https://vuldb.com/?id.227669
+    - id: CVE-2023-2381
+      description: 'A vulnerability has been found in Netgear SRX5308 up to 4.3.5-3 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file scgi-bin/platform.cgi?page=bandwidth_profile.htm of the component Web Management Interface. The manipulation of the argument BandWidthProfile.ProfileName leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-227659. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-04-28T17:15:43.187
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Netgear-SRX5308/6
+        - https://vuldb.com/?ctiid.227659
+        - https://vuldb.com/?id.227659
+    - id: CVE-2023-2385
+      description: 'A vulnerability was found in Netgear SRX5308 up to 4.3.5-3. It has been rated as problematic. This issue affects some unknown processing of the file scgi-bin/platform.cgi?page=ike_policies.htm of the component Web Management Interface. The manipulation of the argument IpsecIKEPolicy.IKEPolicyName leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-227663. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-04-28T18:15:26.607
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Netgear-SRX5308/5
+        - https://vuldb.com/?ctiid.227663
+        - https://vuldb.com/?id.227663
+    - id: CVE-2023-2388
+      description: 'A vulnerability, which was classified as problematic, has been found in Netgear SRX5308 up to 4.3.5-3. Affected by this issue is some unknown functionality of the file scgi-bin/platform.cgi?page=firewall_logs_email.htm of the component Web Management Interface. The manipulation of the argument smtpServer.fromAddr leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-227666 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-04-28T20:15:14.020
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Netgear-SRX5308/8
+        - https://vuldb.com/?ctiid.227666
+        - https://vuldb.com/?id.227666
+    - id: CVE-2023-2394
+      description: 'A vulnerability was found in Netgear SRX5308 up to 4.3.5-3. It has been rated as problematic. Affected by this issue is some unknown functionality of the component Web Management Interface. The manipulation of the argument wanName leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-227672. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-04-28T21:15:09.020
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Netgear-SRX5308/14
+        - https://vuldb.com/?ctiid.227672
+        - https://vuldb.com/?id.227672
+    - id: CVE-2023-2372
+      description: A vulnerability, which was classified as problematic, has been found in SourceCodester Online DJ Management System 1.0. Affected by this issue is some unknown functionality of the file classes/Master.php?f=save_event. The manipulation of the argument name leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-227648.
+      published: 2023-04-28T14:15:10.917
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/yoyoyoyoyohane/bug_report/blob/main/XSS-1.md
+        - https://vuldb.com/?ctiid.227648
+        - https://vuldb.com/?id.227648
+    - id: CVE-2023-28820
+      description: Concrete CMS (previously concrete5) before 9.1 is vulnerable to stored XSS in RSS Displayer via the href attribute because the link element input was not sanitized.
+      published: 2023-04-28T14:15:10.703
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/concretecms/concretecms/releases
+        - https://www.concretecms.org/about/project-news/security/concrete-cms-security-advisory-2023-04-20
+    - id: CVE-2023-28819
+      description: Concrete CMS (previously concrete5) before 9.1 is vulnerable to Stored XSS in uploaded file and folder names.
+      published: 2023-04-28T14:15:10.657
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/concretecms/concretecms/releases
+        - https://www.concretecms.org/about/project-news/security/concrete-cms-security-advisory-2023-04-20
+    - id: CVE-2023-2393
+      description: 'A vulnerability was found in Netgear SRX5308 up to 4.3.5-3. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the file scgi-bin/platform.cgi?page=dmz_setup.htm of the component Web Management Interface. The manipulation of the argument ConfigPort.LogicalIfName leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-227671. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-04-28T21:15:08.963
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Netgear-SRX5308/13
+        - https://vuldb.com/?ctiid.227671
+        - https://vuldb.com/?id.227671
+    - id: CVE-2023-28475
+      description: Concrete CMS (previously concrete5) before 9.2 is vulnerable to Reflected XSS on the Reply form because msgID was not sanitized.
+      published: 2023-04-28T14:15:10.523
+      severity: ""
+      privileges: ""
+      references:
+        - https://concretecms.com
+        - https://www.concretecms.org/about/project-news/security/concrete-cms-security-advisory-2023-04-20
+    - id: CVE-2023-30454
+      description: An issue was discovered in ebankIT before 7. Document Object Model based XSS exists within the /Security/Transactions/Transactions.aspx endpoint. Users can supply their own JavaScript within the ctl100$ctl00MainContent$TransactionMainContent$accControl$hdnAccountsArray POST parameter that will be passed to an eval() function and executed upon pressing the continue button.
+      published: 2023-04-28T19:15:16.993
+      severity: ""
+      privileges: ""
+      references:
+        - https://blog.ebankit.com/blog-press
+        - https://packetstormsecurity.com/files/172063/ebankIT-6-Cross-Site-Scripting.html
+    - id: CVE-2020-21643
+      description: Cross Site Scripting (XSS) vulnerability in HongCMS 3.0 allows attackers to run arbitrary code via the callback parameter to /ajax/myshop.
+      published: 2023-04-28T20:15:13.267
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Neeke/HongCMS/issues/15
+    - id: CVE-2020-23647
+      description: Cross Site Scripting (XSS) vulnerability in BoxBilling 4.19, 4.19.1, 4.20, and 4.21 allows remote attackers to run arbitrary code via the message field on the submit new ticket form.
+      published: 2023-04-28T20:15:13.320
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/boxbilling/boxbilling/issues/596
+    - id: CVE-2023-26781
+      description: SQL injection vulnerability in mccms 2.6 allows remote attackers to run arbitrary SQL commands via Author Center ->Reader Comments ->Search.
+      published: 2023-04-28T20:15:13.827
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/chshcms/mccms/issues/1
+    - id: CVE-2023-26782
+      description: An issue discovered in mccms 2.6.1 allows remote attackers to cause a denial of service via Backend management interface ->System Configuration->Cache Configuration->Cache security characters.
+      published: 2023-04-28T20:15:13.883
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/chshcms/mccms/issues/2
+    - id: CVE-2023-26812
+      description: Command execution vulnerability in the ActionEnter Class ins jfinal CMS version 5.1.0 allows attackers to execute arbitrary code via a created json file to the ueditor route.
+      published: 2023-04-28T20:15:13.930
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/jflyfox/jfinal_cms/issues/54
+    - id: CVE-2023-26813
+      description: SQL injection vulnerability in com.xnx3.wangmarket.plugin.dataDictionary.controller.DataDictionaryPluginController.java in wangmarket CMS 4.10 allows remote attackers to run arbitrary SQL commands via the TableName parameter to /plugin/dataDictionary/tableView.do.
+      published: 2023-04-28T20:15:13.970
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/xnx3/wangmarket/issues/7
+    - id: CVE-2023-30455
+      description: An issue was discovered in ebankIT before 7. A Denial-of-Service attack is possible through the GET parameter EStatementsIds located on the /Controls/Generic/EBMK/Handlers/EStatements/DownloadEStatement.ashx endpoint. The GET parameter accepts over 100 comma-separated e-statement IDs without throwing an error. When this many IDs are supplied, the server takes around 60 seconds to respond and successfully generate the expected ZIP archive (during this time period, no other pages load). A threat actor could issue a request to this endpoint with 100+ statement IDs every 30 seconds, potentially resulting in an overload of the server for all users.
+      published: 2023-04-28T18:15:26.680
+      severity: ""
+      privileges: ""
+      references:
+        - https://blog.ebankit.com/blog-press
+        - https://packetstormsecurity.com/files/172064/ebankIT-6-Denial-Of-Service.html
+    - id: CVE-2023-27973
+      description: Certain HP LaserJet Pro print products are potentially vulnerable to Heap Overflow and/or Remote Code Execution.
+      published: 2023-04-28T17:15:43.023
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.hp.com/us-en/document/ish_7920137-7920161-16/hpsbpi03841
+    - id: CVE-2023-1526
+      description: Certain DesignJet and PageWide XL TAA compliant models may have risk of potential information disclosure if the hard disk drive is physically removed from the printer.
+      published: 2023-04-28T17:15:42.973
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.hp.com/us-en/document/ish_7869666-7869691-16/hpsbpi03837
+    - id: CVE-2023-27972
+      description: Certain HP LaserJet Pro print products are potentially vulnerable to Buffer Overflow and/or Remote Code Execution.
+      published: 2023-04-28T16:15:09.890
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.hp.com/us-en/document/ish_7920078-7920104-16/hpsbpi03840
+    - id: CVE-2023-27971
+      description: Certain HP LaserJet Pro print products are potentially vulnerable to Buffer Overflow and/or Elevation of Privilege.
+      published: 2023-04-28T16:15:09.840
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.hp.com/us-en/document/ish_7919962-7920003-16/hpsbpi03839
+    - id: CVE-2022-31643
+      description: A potential security vulnerability has been identified in the system BIOS for certain HP PC products which may allow loss of integrity. HP is releasing firmware updates to mitigate the potential vulnerability.
+      published: 2023-04-28T16:15:09.640
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.hp.com/us-en/document/ish_7013183-7013209-16/hpsbhf03812
+    - id: CVE-2023-29815
+      description: mccms v2.6.3 is vulnerable to Cross Site Request Forgery (CSRF).
+      published: 2023-04-28T15:15:10.737
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/chshcms/mccms/issues/3
+    - id: CVE-2023-30183
+      description: Wangmarket CMS v4.10 was discovered to contain a SQL injection vulnerability via the component /plugin/dataDictionary/tableView.do?tableName=.
+      published: 2023-04-28T14:15:11.117
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/xnx3/wangmarket/issues/7
+    - id: CVE-2023-30125
+      description: EyouCms V1.6.1-UTF8-sp1 is vulnerable to Cross Site Scripting (XSS).
+      published: 2023-04-28T14:15:11.083
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/weng-xianhu/eyoucms/issues/40
+    - id: CVE-2023-30405
+      description: A cross-site scripting (XSS) vulnerability in Aigital Wireless-N Repeater Mini_Router v0.131229 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the wl_ssid parameter at /boafrm/formHomeWlanSetup.
+      published: 2023-04-28T21:15:09.083
+      severity: ""
+      privileges: ""
+      references:
+        - https://packetstormsecurity.com/files/172057/Aigital-Wireless-N-Repeater-Mini_Router.0.131229-Cross-Site-Scripting.html
+    - id: CVE-2023-30123
+      description: wuzhicms v4.1.0 is vulnerable to Cross Site Scripting (XSS) in the Member Center, Account Settings.
+      published: 2023-04-28T14:15:11.047
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/wuzhicms/wuzhicms/issues/205#issue-1635153937
+    - id: CVE-2023-28476
+      description: Concrete CMS (previously concrete5) before 9.2 is vulnerable to Stored XSS on Tags on uploaded files.
+      published: 2023-04-28T14:15:10.557
+      severity: ""
+      privileges: ""
+      references:
+        - https://concretecms.com
+        - https://www.concretecms.org/about/project-news/security/concrete-cms-security-advisory-2023-04-20
+    - id: CVE-2023-31444
+      description: In Talend Studio before 7.3.1-R2022-10 and 8.x before 8.0.1-R2022-09, microservices allow unauthenticated access to the Jolokia endpoint of the microservice. This allows for remote access to the JVM via the Jolokia JMX-HTTP bridge.
+      published: 2023-04-28T21:15:09.257
+      severity: ""
+      privileges: ""
+      references:
+        - https://talend.com
+        - https://www.talend.com/security/incident-response/#CVE-2023-31444
+    - id: CVE-2023-31470
+      description: SmartDNS through 41 before 56d0332 allows an out-of-bounds write because of a stack-based buffer overflow in the _dns_encode_domain function in the dns.c file, via a crafted DNS request.
+      published: 2023-04-28T21:15:09.307
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/pymumu/smartdns/commit/56d0332bf91104cfc877635f6c82e9348587df04
+        - https://github.com/pymumu/smartdns/issues/1378
+    - id: CVE-2023-24269
+      description: An arbitrary file upload vulnerability in the plugin upload function of Textpattern v4.8.8 allows attackers to execute arbitrary code via a crafted Zip file.
+      published: 2023-04-28T22:15:08.887
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/s4n-h4xor/CVE-Publications/blob/main/CVE-2023-24269/CVE-2023-24269.md
+    - id: CVE-2023-28474
+      description: Concrete CMS (previously concrete5) before 9.2 is vulnerable to Stored XSS on Saved Presets on search.
+      published: 2023-04-28T14:15:10.487
+      severity: ""
+      privileges: ""
+      references:
+        - https://concretecms.com
+        - https://www.concretecms.org/about/project-news/security/concrete-cms-security-advisory-2023-04-20
+    - id: CVE-2023-28473
+      description: Concrete CMS (previously concrete5) before 9.2 is vulnerable to possible Auth bypass in the jobs section.
+      published: 2023-04-28T14:15:10.447
+      severity: ""
+      privileges: ""
+      references:
+        - https://concretecms.com
+        - https://www.concretecms.org/about/project-news/security/concrete-cms-security-advisory-2023-04-20
+    - id: CVE-2023-28472
+      description: Concrete CMS (previously concrete5) before 9.2 does not have Secure and HTTP only attributes set for ccmPoll cookies.
+      published: 2023-04-28T14:15:10.407
+      severity: ""
+      privileges: ""
+      references:
+        - https://concretecms.com
+        - https://www.concretecms.org/about/project-news/security/concrete-cms-security-advisory-2023-04-20
+    - id: CVE-2023-28471
+      description: Concrete CMS (previously concrete5) before 9.2 is vulnerable to Stored XSS via a container name.
+      published: 2023-04-28T14:15:10.307
+      severity: ""
+      privileges: ""
+      references:
+        - https://concretecms.com
+        - https://www.concretecms.org/about/project-news/security/concrete-cms-security-advisory-2023-04-20
+    - id: CVE-2023-30024
+      description: Insecure Permissions vulnerability found in MagicJack A921 USB Phone Jack Rev 3.0 v.1.4 allows a physically proximate attacker to escalate privileges and gain access to sensitive information via the NAND flash memory.
+      published: 2023-04-28T13:15:13.920
+      severity: ""
+      privileges: ""
+      references:
+        - https://drive.google.com/drive/folders/1cKd8hksThK610GPtBQ3du8DEkwKywlAi?usp=sharing
+        - https://pastebin.com/raw/irWcawp8
+        - https://samuraisecurity.co.uk/red-teaming-0x01-click-rce-via-voip-usb/
+        - https://www.magicjack.com/
+    - id: CVE-2022-41400
+      description: Sage 300 through 2022 uses a hard-coded 40-byte blowfish key to encrypt and decrypt user passwords and SQL connection strings stored in ISAM database files in the shared data directory. This issue could allow attackers to decrypt user passwords and SQL connection strings.
+      published: 2023-04-28T13:15:13.560
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.sage.com/en-ca/products/sage-300/
+    - id: CVE-2022-41399
+      description: The optional Web Screens feature for Sage 300 through version 2022 uses a hard-coded 40-byte blowfish key ("PASS_KEY") to encrypt and decrypt the database connection string for the PORTAL database found in the "dbconfig.xml". This issue could allow attackers to obtain access to the SQL database.
+      published: 2023-04-28T13:15:13.510
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.sage.com/en-ca/products/sage-300/
+    - id: CVE-2022-41398
+      description: The optional Global Search feature for Sage 300 through version 2022 uses a set of hard-coded credentials for the accompanying Apache Solr instance. This issue could allow attackers to login to the Solr dashboard with admin privileges and access sensitive information.
+      published: 2023-04-28T13:15:13.460
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.sage.com/en-ca/products/sage-300/
+    - id: CVE-2022-41397
+      description: The optional Web Screens and Global Search features for Sage 300 through version 2022 use a hard-coded 40-byte blowfish key ("LandlordPassKey") to encrypt and decrypt secrets stored in configuration files and in database tables.
+      published: 2023-04-28T13:15:13.417
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.sage.com/en-ca/products/sage-300/
+    - id: CVE-2022-38583
+      description: On versions of Sage 300 2017 - 2022 (6.4.x - 6.9.x) which are setup in a "Windows Peer-to-Peer Network" or "Client Server Network" configuration, a low-privileged Sage 300 workstation user could abuse their access to the "SharedData" folder on the connected Sage 300 server to view and/or modify the credentials associated with Sage 300 users and SQL accounts to impersonate users and/or access the SQL database as a system administrator. With system administrator-level access to the Sage 300 MS SQL database it would be possible to create, update, and delete all records associated with the program and, depending on the configuration, execute code on the underlying database server.
+      published: 2023-04-28T13:15:13.313
+      severity: ""
+      privileges: ""
+      references:
+        - http://sage.com
+        - https://www.controlgap.com/blog/sage-300-case-study
+    - id: CVE-2023-31483
+      description: tar/TarFileReader.cpp in Cauldron cbang before bastet-v8.1.17 has a directory traversal during extraction that allows the attacker to create or write to files outside the current directory via a crafted tar archive.
+      published: 2023-04-28T23:15:08.520
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/CauldronDevelopmentLLC/cbang/compare/bastet-v8.1.16...bastet-v8.1.17
+        - https://github.com/CauldronDevelopmentLLC/cbang/issues/115
+    - id: CVE-2023-28882
+      description: Trustwave ModSecurity 3.0.5 through 3.0.8 before 3.0.9 allows a denial of service (worker crash and unresponsiveness) because some inputs cause a segfault in the Transaction class for some configurations.
+      published: 2023-04-28T04:15:38.017
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.trustwave.com/en-us/resources/security-resources/software-updates/announcing-modsecurity-version-309/
+    - id: CVE-2023-31436
+      description: qfq_change_class in net/sched/sch_qfq.c in the Linux kernel before 6.2.13 allows an out-of-bounds write because lmax can exceed QFQ_MIN_LMAX.
+      published: 2023-04-28T02:15:09.007
+      severity: ""
+      privileges: ""
+      references:
+        - https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.2.13
+        - https://github.com/torvalds/linux/commit/3037933448f60f9acb705997eae62013ecb81e0d
+        - https://www.spinics.net/lists/stable-commits/msg294885.html
+    - id: CVE-2023-31484
+      description: CPAN.pm before 2.35 does not verify TLS certificates when downloading distributions over HTTPS.
+      published: 2023-04-29T00:15:09.000
+      severity: ""
+      privileges: ""
+      references:
+        - https://blog.hackeriet.no/perl-http-tiny-insecure-tls-default-affects-cpan-modules/
+        - https://github.com/andk/cpanpm/pull/175
+        - https://metacpan.org/dist/CPAN/changes
+        - https://www.openwall.com/lists/oss-security/2023/04/18/14
+    - id: CVE-2023-31485
+      description: GitLab::API::v4 through 0.26 does not verify TLS certificates when connecting to a GitLab server, enabling machine-in-the-middle attacks.
+      published: 2023-04-29T00:15:09.043
+      severity: ""
+      privileges: ""
+      references:
+        - https://blog.hackeriet.no/perl-http-tiny-insecure-tls-default-affects-cpan-modules/
+        - https://github.com/bluefeet/GitLab-API-v4/pull/57
+        - https://github.com/chansen/p5-http-tiny/pull/151
+        - https://www.openwall.com/lists/oss-security/2023/04/18/14
+    - id: CVE-2023-31486
+      description: HTTP::Tiny 0.082, a Perl core module since 5.13.9 and available standalone on CPAN, has an insecure default TLS configuration where users must opt in to verify certificates.
+      published: 2023-04-29T00:15:09.083
+      severity: ""
+      privileges: ""
+      references:
+        - https://blog.hackeriet.no/perl-http-tiny-insecure-tls-default-affects-cpan-modules/
+        - https://hackeriet.github.io/cpan-http-tiny-overview/
+        - https://www.openwall.com/lists/oss-security/2023/04/18/14
+        - https://www.reddit.com/r/perl/comments/111tadi/psa_httptiny_disabled_ssl_verification_by_default/
