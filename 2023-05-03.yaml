@@ -1,0 +1,631 @@
+data:
+    - id: CVE-2023-2479
+      description: OS Command Injection in GitHub repository appium/appium-desktop prior to v1.22.3-4.
+      published: 2023-05-02T15:15:23.760
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://github.com/appium/appium-desktop/commit/12a988aa08b9822e97056a09486c9bebb3aad8fe
+        - https://huntr.dev/bounties/fbdeec3c-d197-4a68-a547-7f93fb9594b4
+    - id: CVE-2023-30869
+      description: 'Improper Authentication vulnerability in Easy Digital Downloads plugin allows unauth. Privilege Escalation. This issue affects Easy Digital Downloads: from 3.1 through 3.1.1.4.1.'
+      published: 2023-05-02T10:15:09.357
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://patchstack.com/articles/critical-easy-digital-downloads-vulnerability?_s_id=cve
+        - https://patchstack.com/database/vulnerability/easy-digital-downloads/wordpress-easy-digital-downloads-plugin-3-1-1-4-1-unauthenticated-privilege-escalation-vulnerability?_s_id=cve
+    - id: CVE-2023-21665
+      description: Memory corruption in Graphics while importing a file.
+      published: 2023-05-02T06:15:10.433
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/may-2023-bulletin
+    - id: CVE-2023-21642
+      description: Memory corruption in HAB Memory management due to broad system privileges via physical address.
+      published: 2023-05-02T06:15:10.347
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/may-2023-bulletin
+    - id: CVE-2022-40504
+      description: Transient DOS due to reachable assertion in Modem when UE received Downlink Data Indication message from the network.
+      published: 2023-05-02T08:15:09.437
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/may-2023-bulletin
+    - id: CVE-2023-30861
+      description: |-
+        Flask is a lightweight WSGI web application framework. When all of the following conditions are met, a response containing data intended for one client may be cached and subsequently sent by the proxy to other clients. If the proxy also caches `Set-Cookie` headers, it may send one client's `session` cookie to other clients. The severity depends on the application's use of the session and the proxy's behavior regarding cookies. The risk depends on all these conditions being met.
+
+        1. The application must be hosted behind a caching proxy that does not strip cookies or ignore responses with cookies.
+        2. The application sets `session.permanent = True`
+        3. The application does not access or modify the session at any point during a request.
+        4. `SESSION_REFRESH_EACH_REQUEST` enabled (the default).
+        5. The application does not set a `Cache-Control` header to indicate that a page is private or should not be cached.
+
+        This happens because vulnerable versions of Flask only set the `Vary: Cookie` header when the session is accessed or modified, not when it is refreshed (re-sent to update the expiration) without being accessed or modified. This issue has been fixed in versions 2.3.2 and 2.2.5.
+      published: 2023-05-02T18:15:52.373
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/pallets/flask/commit/70f906c51ce49c485f1d355703e9cc3386b1cc2b
+        - https://github.com/pallets/flask/commit/afd63b16170b7c047f5758eb910c416511e9c965
+        - https://github.com/pallets/flask/releases/tag/2.2.5
+        - https://github.com/pallets/flask/releases/tag/2.3.2
+        - https://github.com/pallets/flask/security/advisories/GHSA-m2qf-hxjv-5gpq
+    - id: CVE-2022-33304
+      description: Transient DOS due to NULL pointer dereference in Modem while performing pullup for received TCP/UDP packet.
+      published: 2023-05-02T06:15:09.910
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/may-2023-bulletin
+    - id: CVE-2022-33305
+      description: Transient DOS due to NULL pointer dereference in Modem while sending invalid messages in DCCH.
+      published: 2023-05-02T06:15:09.997
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/may-2023-bulletin
+    - id: CVE-2022-34144
+      description: Transient DOS due to reachable assertion in Modem during OSI decode scheduling.
+      published: 2023-05-02T06:15:10.077
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/may-2023-bulletin
+    - id: CVE-2022-40505
+      description: Information disclosure due to buffer over-read in Modem while parsing DNS hostname.
+      published: 2023-05-02T06:15:10.173
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/may-2023-bulletin
+    - id: CVE-2022-40508
+      description: Transient DOS due to reachable assertion in Modem while processing config related to cross carrier scheduling, which is not supported.
+      published: 2023-05-02T06:15:10.263
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/may-2023-bulletin
+    - id: CVE-2023-21666
+      description: Memory Corruption in Graphics while accessing a buffer allocated through the graphics pool.
+      published: 2023-05-02T06:15:10.510
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/may-2023-bulletin
+    - id: CVE-2022-25713
+      description: Memory corruption in Automotive due to Improper Restriction of Operations within the Bounds of a Memory Buffer while exporting a shared key.
+      published: 2023-05-02T06:15:08.500
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/may-2023-bulletin
+    - id: CVE-2022-33292
+      description: Memory corruption in Qualcomm IPC due to use after free while receiving the incoming packet and reposting it.
+      published: 2023-05-02T06:15:09.757
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/may-2023-bulletin
+    - id: CVE-2022-33273
+      description: Information disclosure due to buffer over-read in Trusted Execution Environment while QRKS report generation.
+      published: 2023-05-02T08:15:08.763
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/may-2023-bulletin
+    - id: CVE-2023-2474
+      description: A vulnerability has been found in Rebuild 3.2 and classified as problematic. This vulnerability affects unknown code. The manipulation leads to cross-site request forgery. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. It is recommended to change the configuration settings. VDB-227866 is the identifier assigned to this vulnerability.
+      published: 2023-05-02T13:15:25.197
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://gitee.com/getrebuild/rebuild/issues/I6W4M2
+        - https://vuldb.com/?ctiid.227866
+        - https://vuldb.com/?id.227866
+    - id: CVE-2023-2000
+      description: Mattermost Desktop App fails to validate a mattermost server redirection and navigates to an arbitrary website
+      published: 2023-05-02T09:15:10.013
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://mattermost.com/security-updates
+    - id: CVE-2023-26268
+      description: |-
+        Design documents with matching document IDs, from databases on the same cluster, may share a mutable Javascript environment when using these design document functions:
+          *  validate_doc_update
+
+          *  list
+
+          *  filter
+
+          *  filter views (using view functions as filters)
+
+          *  rewrite
+
+          *  update
+
+
+
+        This doesn't affect map/reduce or search (Dreyfus) index functions.
+
+        Users are recommended to upgrade to a version that is no longer affected by this issue (Apache CouchDB 3.3.2 or 3.2.3).
+
+        Workaround: Avoid using design documents from untrusted sources which may attempt to cache or store data in the Javascript environment.
+      published: 2023-05-02T21:15:09.233
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://docs.couchdb.org/en/stable/cve/2023-26268.html
+        - https://lists.apache.org/thread/ldkqs0nhpmho26bdxf4fon7w75hsq5gl
+        - https://lists.apache.org/thread/r2wvjfysg3d92lhhjd1qh3wfr8mlp0pp
+    - id: CVE-2023-2473
+      description: A vulnerability was found in Dreamer CMS up to 4.1.3. It has been declared as problematic. This vulnerability affects the function updatePwd of the file UserController.java of the component Password Hash Calculation. The manipulation leads to inefficient algorithmic complexity. The attack can be initiated remotely. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-227860.
+      published: 2023-05-02T13:15:25.090
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://gitee.com/isoftforce/dreamer_cms/issues/I6WHO7
+        - https://vuldb.com/?ctiid.227860
+        - https://vuldb.com/?id.227860
+    - id: CVE-2023-23723
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Winwar Media WP Email Capture plugin <= 3.9.3 versions.
+      published: 2023-05-02T12:15:22.430
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/wp-email-capture/wordpress-wordpress-email-marketing-plugin-wp-email-capture-plugin-3-9-3-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-31207
+      description: Transmission of credentials within query parameters in Checkmk <= 2.1.0p26, <= 2.0.0p35, and <= 2.2.0b6 (beta) may cause the automation user's secret to be written to the site Apache access log.
+      published: 2023-05-02T09:15:10.120
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://checkmk.com/werk/15189
+    - id: CVE-2022-33281
+      description: Memory corruption due to improper validation of array index in computer vision while testing EVA kernel without sending any frames.
+      published: 2023-05-02T06:15:09.507
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/may-2023-bulletin
+    - id: CVE-2023-2475
+      description: A vulnerability was found in Dromara J2eeFAST up to 2.6.0 and classified as problematic. This issue affects some unknown processing of the component System Message Handler. The manipulation of the argument ?? leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The name of the patch is 7a9e1a00e3329fdc0ae05f7a8257cce77037134d. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-227867.
+      published: 2023-05-02T13:15:25.287
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://gitee.com/dromara/J2EEFAST/commit/7a9e1a00e3329fdc0ae05f7a8257cce77037134d
+        - https://gitee.com/dromara/J2EEFAST/issues/I6W390
+        - https://vuldb.com/?ctiid.227867
+        - https://vuldb.com/?id.227867
+    - id: CVE-2023-2476
+      description: A vulnerability was found in Dromara J2eeFAST up to 2.6.0. It has been classified as problematic. Affected is an unknown function of the component Announcement Handler. The manipulation of the argument ????/???? leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The name of the patch is 7a9e1a00e3329fdc0ae05f7a8257cce77037134d. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-227868.
+      published: 2023-05-02T14:15:09.273
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://gitee.com/dromara/J2EEFAST/commit/7a9e1a00e3329fdc0ae05f7a8257cce77037134d
+        - https://gitee.com/dromara/J2EEFAST/issues/I6W380
+        - https://vuldb.com/?ctiid.227868
+        - https://vuldb.com/?id.227868
+    - id: CVE-2023-2477
+      description: A vulnerability was found in Funadmin up to 3.2.3. It has been declared as problematic. Affected by this vulnerability is the function tagLoad of the file Cx.php. The manipulation of the argument file leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-227869 was assigned to this vulnerability.
+      published: 2023-05-02T14:15:09.353
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://gitee.com/funadmin/funadmin/issues/I6W2YL
+        - https://vuldb.com/?ctiid.227869
+        - https://vuldb.com/?id.227869
+    - id: CVE-2023-27892
+      description: Insufficient length checks in the ShapeShift KeepKey hardware wallet firmware before 7.7.0 allow a global buffer overflow via crafted messages. Flaws in cf_confirmExecTx() in ethereum_contracts.c can be used to reveal arbitrary microcontroller memory on the device screen or crash the device. With physical access to a PIN-unlocked device, attackers can extract the BIP39 mnemonic secret from the hardware wallet.
+      published: 2023-05-02T21:15:09.337
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://blog.inhq.net/posts/keepkey-CVE-2023-27892/
+        - https://github.com/keepkey/keepkey-firmware/pull/337
+    - id: CVE-2023-1090
+      description: The SMTP Mailing Queue WordPress plugin before 2.0.1 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)
+      published: 2023-05-02T08:15:09.753
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/youki992/youki992.github.io/blob/master/others/apply.md
+        - https://wpscan.com/vulnerability/d470dd6c-dcac-4a3e-b42a-2489a31aca45
+    - id: CVE-2022-47874
+      description: Improper Access Control in /tc/rpc in Jedox GmbH Jedox 2020.2.5 allows remote authenticated users to view details of database connections via class 'com.jedox.etl.mngr.Connections' and method 'getGlobalConnection'.
+      published: 2023-05-02T20:15:10.423
+      severity: ""
+      privileges: ""
+      references:
+        - https://docs.syslifters.com/assets/vulnerability-disclosure/Vulnerability-Disclosure-Jedox-Jedox-04-2023.pdf
+    - id: CVE-2023-1805
+      description: The Product Catalog Feed by PixelYourSite WordPress plugin before 2.1.1 does not sanitise and escape the page parameter before outputting it back in an attribute, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin
+      published: 2023-05-02T08:15:10.393
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/46b4582f-7651-4b74-a00b-1788587ecfa8
+    - id: CVE-2023-1809
+      description: The Download Manager WordPress plugin before 6.3.0 leaks master key information without the need for a password, allowing attackers to download arbitrary password-protected package files.
+      published: 2023-05-02T08:15:10.453
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/57f0a078-fbeb-4b05-8892-e6d99edb82c1
+    - id: CVE-2023-1861
+      description: The Limit Login Attempts WordPress plugin through 1.7.2 does not sanitize and escape usernames when outputting them back in the logs dashboard, which could allow any authenticated users, such as subscriber to perform Stored Cross-Site Scripting attacks
+      published: 2023-05-02T08:15:10.517
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/461cbcca-aed7-4c92-ba35-ebabf4fcd810
+    - id: CVE-2023-1911
+      description: The Blocksy Companion WordPress plugin before 1.8.82 does not ensure that posts to be accessed via a shortcode are already public and can be viewed, allowing any authenticated users, such as subscriber to access draft posts for example
+      published: 2023-05-02T08:15:10.570
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/e7c52af0-b210-4e7d-a5e0-ee0645ddc08c
+    - id: CVE-2023-1196
+      description: The Advanced Custom Fields (ACF) Free and Pro WordPress plugins 6.x before 6.1.0 and 5.x before 5.12.5 unserialize user controllable data, which could allow users with a role of Contributor and above to perform PHP Object Injection when a suitable gadget is present.
+      published: 2023-05-02T09:15:09.280
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/8e5ec88e-0e66-44e4-bbf2-74155d849ede
+        - https://wpscan.com/vulnerability/cf376ca2-92f6-44ff-929a-ace809460a33
+    - id: CVE-2023-1730
+      description: The SupportCandy WordPress plugin before 3.1.5 does not validate and escape user input before using it in an SQL statement, which could allow unauthenticated attackers to perform SQL injection attacks
+      published: 2023-05-02T08:15:10.267
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/44b51a56-ff05-4d50-9327-fc9bab74d4b7
+    - id: CVE-2023-1669
+      description: The SEOPress WordPress plugin before 6.5.0.3 unserializes user input provided via the settings, which could allow high-privilege users such as admin to perform PHP Object Injection when a suitable gadget is present.
+      published: 2023-05-02T08:15:10.180
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/fb8791f5-2879-431e-9afc-06d5839e4b9d
+    - id: CVE-2023-32007
+      description: |-
+        ** UNSUPPORTED WHEN ASSIGNED ** The Apache Spark UI offers the possibility to enable ACLs via the configuration option spark.acls.enable. With an authentication filter, this checks whether a user has access permissions to view or modify the application. If ACLs are enabled, a code path in HttpSecurityFilter can allow someone to perform impersonation by providing an arbitrary user name. A malicious user might then be able to reach a permission check function that will ultimately build a Unix shell command based on their input, and execute it. This will result in arbitrary shell command execution as the user Spark is currently running as. This issue was disclosed earlier as CVE-2022-33891, but incorrectly claimed version 3.1.3 (which has since gone EOL) would not be affected.
+
+        NOTE: This vulnerability only affects products that are no longer supported by the maintainer.
+
+        Users are recommended to upgrade to a supported version of Apache Spark, such as version 3.4.0.
+      published: 2023-05-02T09:15:10.207
+      severity: ""
+      privileges: ""
+      references:
+        - http://www.openwall.com/lists/oss-security/2023/05/02/1
+        - https://lists.apache.org/thread/poxgnxhhnzz735kr1wos366l5vdbb0nv
+        - https://spark.apache.org/security.html
+        - https://www.cve.org/CVERecord?id=CVE-2022-33891
+    - id: CVE-2023-1614
+      description: The WP Custom Author URL WordPress plugin before 1.0.5 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup).
+      published: 2023-05-02T08:15:10.097
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/56abd1e2-0ea9-47f7-9a1b-2093ac15d39c
+    - id: CVE-2023-1554
+      description: The Quick Paypal Payments WordPress plugin before 5.7.26.4 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)
+      published: 2023-05-02T08:15:10.023
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/0d247a3d-154e-4da7-a147-c1c7e1b5e87e
+    - id: CVE-2023-29772
+      description: A Cross-site scripting (XSS) vulnerability in the System Log/General Log page of the administrator web UI in ASUS RT-AC51U wireless router firmware version up to and including 3.0.0.4.380.8591 allows remote attackers to inject arbitrary web script or HTML via a malicious network request.
+      published: 2023-05-02T13:15:24.957
+      severity: ""
+      privileges: ""
+      references:
+        - https://gitlab.com/donnm/cves/-/blob/master/xss_rtac51u_syslog.md
+    - id: CVE-2023-1546
+      description: The MyCryptoCheckout WordPress plugin before 2.124 does not escape some URLs before outputting them in attributes, leading to Reflected Cross-Site Scripting
+      published: 2023-05-02T08:15:09.957
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/bb065397-370f-4ee1-a2c8-20e4dc4415a0
+    - id: CVE-2023-1525
+      description: The Site Reviews WordPress plugin before 6.7.1 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup).
+      published: 2023-05-02T08:15:09.893
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/4ae6bf90-b100-4bb5-bdd7-8acdbd950596
+    - id: CVE-2023-1125
+      description: The Ruby Help Desk WordPress plugin before 1.3.4 does not ensure that the ticket being modified belongs to the user making the request, allowing an attacker to close and/or add files and replies to tickets other than their own.
+      published: 2023-05-02T08:15:09.823
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/e8a4b6ab-47f8-495d-a22c-dcf914dfb58c
+    - id: CVE-2023-2445
+      description: Improper access control in Subscriptions Folder path filter in Devolutions Server 2023.1.1 and earlier allows attackers with administrator privileges to retrieve usage information on folders in user vaults via a specific folder name.
+      published: 2023-05-02T14:15:09.207
+      severity: ""
+      privileges: ""
+      references:
+        - https://devolutions.net/security/advisories/DEVO-2023-0013/
+    - id: CVE-2022-48482
+      description: 3CX before 18 Update 2 Security Hotfix build 18.0.2.315 on Windows allows unauthenticated remote attackers to read certain files via /Electron/download directory traversal. Files may have credentials, full backups, call recordings, and chat logs.
+      published: 2023-05-02T05:15:27.407
+      severity: ""
+      privileges: ""
+      references:
+        - https://medium.com/@frycos/pwning-3cx-phone-management-backends-from-the-internet-d0096339dd88
+        - https://www.3cx.com/blog/change-log/phone-system-change-log/
+    - id: CVE-2023-1021
+      description: The amr ical events lists WordPress plugin through 6.6 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)
+      published: 2023-05-02T08:15:09.693
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/91d04f96-11b2-46dc-860c-dc6c26360bf3
+    - id: CVE-2023-29856
+      description: '** UNSUPPORTED WHEN ASSIGNED ** D-Link DIR-868L Hardware version A1, firmware version 1.12 is vulnerable to Buffer Overflow. The vulnerability is in scandir.sgi binary.'
+      published: 2023-05-02T15:15:23.697
+      severity: ""
+      privileges: ""
+      references:
+        - https://supportannouncement.us.dlink.com/announcement/publication.aspx?name=SAP10325
+        - https://www.dlink.com/en/security-bulletin/
+    - id: CVE-2023-0924
+      description: The ZYREX POPUP WordPress plugin through 1.0 does not validate the type of files uploaded when creating a popup, allowing a high privileged user (such as an Administrator) to upload arbitrary files, even when modifying the file system is disallowed, such as in a multisite install.
+      published: 2023-05-02T08:15:09.620
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/0fd0d7a5-9263-43b6-9244-7880c3d3e6f4
+    - id: CVE-2023-29867
+      description: Zammad 5.3.x (Fixed 5.4.0) is vulnerable to Incorrect Access Control. An authenticated attacker could gain information about linked accounts of users involved in their tickets using the Zammad API.
+      published: 2023-05-02T16:15:08.923
+      severity: ""
+      privileges: ""
+      references:
+        - https://zammad.com/en/advisories/zaa-2023-02
+    - id: CVE-2023-29868
+      description: Zammad 5.3.x (Fixed in 5.4.0) is vulnerable to Incorrect Access Control. An authenticated attacker with agent and customer roles could perform unauthorized changes on articles where they only have customer permissions.
+      published: 2023-05-02T16:15:08.977
+      severity: ""
+      privileges: ""
+      references:
+        - https://zammad.com/en/advisories/zaa-2023-01
+    - id: CVE-2023-29918
+      description: RosarioSIS 10.8.4 is vulnerable to CSV injection via the Periods Module.
+      published: 2023-05-02T16:15:09.027
+      severity: ""
+      privileges: ""
+      references:
+        - https://docs.google.com/document/d/1JAhJOlfKKD5Y5zEKo0_8a3A-nQ7Dz_GIMmlXmOvXV48/edit?usp=sharing
+    - id: CVE-2023-0891
+      description: The StagTools WordPress plugin before 2.3.7 does not validate and escape some of its shortcode attributes before outputting them back in a page/post where the shortcode is embed, which could allow users with the contributor role and above to perform Stored Cross-Site Scripting attacks.
+      published: 2023-05-02T08:15:09.513
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/72397fee-9768-462b-933c-400181a5487c
+    - id: CVE-2023-1804
+      description: The Product Catalog Feed by PixelYourSite WordPress plugin before 2.1.1 does not sanitise and escape the edit parameter before outputting it back in an attribute, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin
+      published: 2023-05-02T08:15:10.337
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/55b28fa6-a54f-4365-9d59-f9e331c1e11b
+    - id: CVE-2022-47875
+      description: A Directory Traversal vulnerability in /be/erpc.php in Jedox GmbH Jedox 2020.2.5 allows remote authenticated users to execute arbitrary code.
+      published: 2023-05-02T20:15:10.483
+      severity: ""
+      privileges: ""
+      references:
+        - https://docs.syslifters.com/assets/vulnerability-disclosure/Vulnerability-Disclosure-Jedox-Jedox-04-2023.pdf
+    - id: CVE-2022-47876
+      description: The integrator in Jedox GmbH Jedox 2020.2.5 allows remote authenticated users to create Jobs to execute arbitrary code via Groovy-scripts.
+      published: 2023-05-02T20:15:10.537
+      severity: ""
+      privileges: ""
+      references:
+        - https://docs.syslifters.com/assets/vulnerability-disclosure/Vulnerability-Disclosure-Jedox-Jedox-04-2023.pdf
+    - id: CVE-2022-47877
+      description: A Stored cross-site scripting vulnerability in Jedox 2020.2.5 allows remote, authenticated users to inject arbitrary web script or HTML in the Logs page via the log module 'log'.
+      published: 2023-05-02T20:15:10.590
+      severity: ""
+      privileges: ""
+      references:
+        - https://docs.syslifters.com/assets/vulnerability-disclosure/Vulnerability-Disclosure-Jedox-Jedox-04-2023.pdf
+    - id: CVE-2022-47878
+      description: Incorrect input validation for the default-storage-path in the settings page in Jedox 2020.2.5 allows remote, authenticated users to specify the location as Webroot directory. Consecutive file uploads can lead to the execution of arbitrary code.
+      published: 2023-05-02T20:15:10.647
+      severity: ""
+      privileges: ""
+      references:
+        - https://docs.syslifters.com/assets/vulnerability-disclosure/Vulnerability-Disclosure-Jedox-Jedox-04-2023.pdf
+    - id: CVE-2023-26089
+      description: European Chemicals Agency IUCLID 6.x before 6.27.6 allows authentication bypass because a weak hard-coded secret is used for JWT signing. The affected versions are 5.15.0 through 6.27.5.
+      published: 2023-05-02T20:15:10.707
+      severity: ""
+      privileges: ""
+      references:
+        - https://iuclid6.echa.europa.eu
+        - https://iuclid6.echa.europa.eu/documents/1387205/1809530/note_v6.27.6.pdf/76545a65-e6be-6486-280a-7d7c3d2ad455?t=1677577170669
+        - https://iuclid6.echa.europa.eu/download
+    - id: CVE-2023-26546
+      description: European Chemicals Agency IUCLID before 6.27.6 allows remote authenticated users to execute arbitrary code via Server Side Template Injection (SSTI) with a crafted template file. The attacker must have template manager permission.
+      published: 2023-05-02T20:15:10.757
+      severity: ""
+      privileges: ""
+      references:
+        - https://iuclid6.echa.europa.eu
+        - https://iuclid6.echa.europa.eu/documents/1387205/1809530/note_v6.27.6.pdf/76545a65-e6be-6486-280a-7d7c3d2ad455?t=1677577170669
+        - https://iuclid6.echa.europa.eu/download
+    - id: CVE-2023-29778
+      description: GL.iNET MT3000 4.1.0 Release 2 is vulnerable to OS Command Injection via /usr/lib/oui-httpd/rpc/logread.
+      published: 2023-05-02T20:15:10.813
+      severity: ""
+      privileges: ""
+      references:
+        - http://glinet.com
+        - https://github.com/OlivierLaflamme/cve/blob/main/GL.iNET/MT3000/get_nginx_log_RCE.md
+    - id: CVE-2023-30403
+      description: An issue in the time-based authentication mechanism of Aigital Aigital Wireless-N Repeater Mini_Router v0.131229 allows attackers to bypass login by connecting to the web app after a successful attempt by a legitimate user.
+      published: 2023-05-02T20:15:10.880
+      severity: ""
+      privileges: ""
+      references:
+        - https://dl.packetstormsecurity.net/2305-exploits/aigitalwnr-bypass.txt
+        - https://mandomat.github.io/2023-04-13-testing-a-cheap-wifi-repeater/
+    - id: CVE-2023-30943
+      description: The vulnerability was found Moodle which exists because the application allows a user to control path of the older to create in TinyMCE loaders. A remote user can send a specially crafted HTTP request and create arbitrary folders on the system.
+      published: 2023-05-02T20:15:10.943
+      severity: ""
+      privileges: ""
+      references:
+        - http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-77718
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2188605
+        - https://moodle.org/mod/forum/discuss.php?d=446285
+    - id: CVE-2023-30944
+      description: The vulnerability was found Moodle which exists due to insufficient sanitization of user-supplied data in external Wiki method for listing pages. A remote attacker can send a specially crafted request to the affected application and execute limited SQL commands within the application database.
+      published: 2023-05-02T20:15:11.013
+      severity: ""
+      privileges: ""
+      references:
+        - http://git.moodle.org/gw?p=moodle.git&a=search&h=HEAD&st=commit&s=MDL-77187
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2188606
+        - https://moodle.org/mod/forum/discuss.php?d=446286
+    - id: CVE-2023-31433
+      description: A SQL injection issue in Logbuch in evasys before 8.2 Build 2286 and 9.x before 9.0 Build 2401 allows authenticated attackers to execute SQL statements via the welche parameter.
+      published: 2023-05-02T20:15:11.080
+      severity: ""
+      privileges: ""
+      references:
+        - https://cves.at/posts/cve-2023-31433/writeup/
+    - id: CVE-2023-31434
+      description: The parameters nutzer_titel, nutzer_vn, and nutzer_nn in the user profile, and langID and ONLINEID in direct links, in evasys before 8.2 Build 2286 and 9.x before 9.0 Build 2401 do not validate input, which allows authenticated attackers to inject HTML Code and XSS payloads in multiple locations.
+      published: 2023-05-02T20:15:11.133
+      severity: ""
+      privileges: ""
+      references:
+        - https://cves.at/posts/cve-2023-31434/writeup/
+    - id: CVE-2023-31435
+      description: Multiple components (such as Onlinetemplate-Verwaltung, Liste aller Teilbereiche, Umfragen anzeigen, and questionnaire previews) in evasys before 8.2 Build 2286 and 9.x before 9.0 Build 2401 allow authenticated attackers to read and write to unauthorized data by accessing functions directly.
+      published: 2023-05-02T20:15:11.187
+      severity: ""
+      privileges: ""
+      references:
+        - https://cves.at/posts/cve-2023-31435/writeup/
+    - id: CVE-2022-30759
+      description: In Nokia One-NDS (aka Network Directory Server) through 20.9, some Sudo permissions can be exploited by some users to escalate to root privileges and execute arbitrary commands.
+      published: 2023-05-02T21:15:09.147
+      severity: ""
+      privileges: ""
+      references:
+        - https://packetstormsecurity.com/files/171971/Nokia-OneNDS-20.9-Insecure-Permissions-Privilege-Escalation.html
+        - https://www.nokia.com/networks/products/one-nds/
+    - id: CVE-2023-2247
+      description: In affected versions of Octopus Deploy it is possible to unmask variable secrets using the variable preview function
+      published: 2023-05-02T05:15:28.113
+      severity: ""
+      privileges: ""
+      references:
+        - https://advisories.octopus.com/post/2023/sa2023-07/
+    - id: CVE-2022-48483
+      description: '3CX before 18 Hotfix 1 build 18.0.3.461 on Windows allows unauthenticated remote attackers to read %WINDIR%\system32 files via /Electron/download directory traversal in conjunction with a path component that has a drive letter and uses backslash characters. NOTE: this issue exists because of an incomplete fix for CVE-2022-28005.'
+      published: 2023-05-02T05:15:28.057
+      severity: ""
+      privileges: ""
+      references:
+        - https://medium.com/@frycos/pwning-3cx-phone-management-backends-from-the-internet-d0096339dd88
+        - https://www.3cx.com/blog/change-log/phone-system-change-log/
+    - id: CVE-2023-2459
+      description: 'Inappropriate implementation in Prompts in Google Chrome prior to 113.0.5672.63 allowed a remote attacker to bypass permission restrictions via a crafted HTML page. (Chromium security severity: Medium)'
+      published: 2023-05-03T00:15:08.803
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop.html
+        - https://crbug.com/1423304
+    - id: CVE-2023-2460
+      description: 'Insufficient validation of untrusted input in Extensions in Google Chrome prior to 113.0.5672.63 allowed an attacker who convinced a user to install a malicious extension to bypass file access checks via a crafted HTML page. (Chromium security severity: Medium)'
+      published: 2023-05-03T00:15:09.327
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop.html
+        - https://crbug.com/1419732
+    - id: CVE-2023-2461
+      description: 'Use after free in OS Inputs in Google Chrome on ChromeOS prior to 113.0.5672.63 allowed a remote attacker who convinced a user to enage in specific UI interaction to potentially exploit heap corruption via crafted UI interaction. (Chromium security severity: Medium)'
+      published: 2023-05-03T00:15:09.387
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop.html
+        - https://crbug.com/1350561
+    - id: CVE-2023-2462
+      description: 'Inappropriate implementation in Prompts in Google Chrome prior to 113.0.5672.63 allowed a remote attacker to obfuscate main origin data via a crafted HTML page. (Chromium security severity: Medium)'
+      published: 2023-05-03T00:15:09.443
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop.html
+        - https://crbug.com/1375133
+    - id: CVE-2023-2463
+      description: 'Inappropriate implementation in Full Screen Mode in Google Chrome on Android prior to 113.0.5672.63 allowed a remote attacker to hide the contents of the Omnibox (URL bar) via a crafted HTML page. (Chromium security severity: Medium)'
+      published: 2023-05-03T00:15:09.497
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop.html
+        - https://crbug.com/1406120
+    - id: CVE-2023-2464
+      description: 'Inappropriate implementation in PictureInPicture in Google Chrome prior to 113.0.5672.63 allowed an attacker who convinced a user to install a malicious extension to perform an origin spoof in the security UI via a crafted HTML page. (Chromium security severity: Medium)'
+      published: 2023-05-03T00:15:09.550
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop.html
+        - https://crbug.com/1418549
+    - id: CVE-2023-2465
+      description: 'Inappropriate implementation in CORS in Google Chrome prior to 113.0.5672.63 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)'
+      published: 2023-05-03T00:15:09.597
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop.html
+        - https://crbug.com/1399862
+    - id: CVE-2023-2466
+      description: 'Inappropriate implementation in Prompts in Google Chrome prior to 113.0.5672.63 allowed a remote attacker to spoof the contents of the security UI via a crafted HTML page. (Chromium security severity: Low)'
+      published: 2023-05-03T00:15:09.647
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop.html
+        - https://crbug.com/1385714
+    - id: CVE-2023-2467
+      description: 'Inappropriate implementation in Prompts in Google Chrome on Android prior to 113.0.5672.63 allowed a remote attacker to bypass permissions restrictions via a crafted HTML page. (Chromium security severity: Low)'
+      published: 2023-05-03T00:15:09.697
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop.html
+        - https://crbug.com/1413586
+    - id: CVE-2023-2468
+      description: 'Inappropriate implementation in PictureInPicture in Google Chrome prior to 113.0.5672.63 allowed a remote attacker who had compromised the renderer process to obfuscate the security UI via a crafted HTML page. (Chromium security severity: Low)'
+      published: 2023-05-03T00:15:09.747
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop.html
+        - https://crbug.com/1416380
