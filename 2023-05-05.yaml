@@ -1,0 +1,618 @@
+data:
+    - id: CVE-2023-20126
+      description: A vulnerability in the web-based management interface of Cisco SPA112 2-Port Phone Adapters could allow an unauthenticated, remote attacker to execute arbitrary code on an affected device. This vulnerability is due to a missing authentication process within the firmware upgrade function. An attacker could exploit this vulnerability by upgrading an affected device to a crafted version of firmware. A successful exploit could allow the attacker to execute arbitrary code on the affected device with full privileges. Cisco has not released firmware updates to address this vulnerability.
+      published: 2023-05-04T20:15:09.633
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-spa-unauth-upgrade-UqhyTWW
+    - id: CVE-2023-22651
+      description: "Improper Privilege Management vulnerability in SUSE Rancher allows Privilege Escalation. A failure in the update logic of Rancher's admission Webhook may lead to\n the misconfiguration of the Webhook. This component enforces validation\n rules and security checks before resources are admitted into the \nKubernetes cluster.\nThe issue only affects users that upgrade from 2.6.x or 2.7.x to 2.7.2. Users that did a fresh install of 2.7.2 (and did not follow an upgrade path) are not affected."
+      published: 2023-05-04T08:15:22.893
+      severity: CRITICAL
+      privileges: LOW
+      references:
+        - https://bugzilla.suse.com/show_bug.cgi?id=CVE-2023-22651
+        - https://github.com/rancher/rancher/security/advisories/GHSA-6m9f-pj6w-w87g
+    - id: CVE-2023-21491
+      description: Improper access control vulnerability in ThemeManager prior to SMR May-2023 Release 1 allows local attackers to write arbitrary files with system privilege.
+      published: 2023-05-04T21:15:10.007
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-21489
+      description: Heap out-of-bounds write vulnerability in bootloader prior to SMR May-2023 Release 1 allows a physical attacker to execute arbitrary code.
+      published: 2023-05-04T21:15:09.883
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2022-47449
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in RexTheme Cart Lift – Abandoned Cart Recovery for WooCommerce and EDD plugin <= 3.1.5 versions.
+      published: 2023-05-04T21:15:09.387
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/cart-lift/wordpress-cart-lift-abandoned-cart-recovery-for-woocommerce-and-edd-plugin-3-1-5-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-25961
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Catch Themes Darcie theme <= 1.1.5 versions.
+      published: 2023-05-04T20:15:09.897
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/darcie/wordpress-darcie-theme-1-1-5-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2017-20184
+      description: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Carlo Gavazzi Powersoft up to version 2.1.1.1 allows an unauthenticated, remote attacker to download any file from the affected device.
+      published: 2023-05-04T10:15:10.540
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.exploit-db.com/exploits/42705
+    - id: CVE-2023-2523
+      description: 'A vulnerability was found in Weaver E-Office 9.5. It has been rated as critical. Affected by this issue is some unknown functionality of the file App/Ajax/ajax.php?action=mobile_upload_save. The manipulation of the argument upload_quwan leads to unrestricted upload. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-228014 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-04T18:15:10.063
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/RCEraser/cve/blob/main/Weaver.md
+        - https://vuldb.com/?ctiid.228014
+        - https://vuldb.com/?id.228014
+    - id: CVE-2023-2519
+      description: 'A vulnerability has been found in Caton CTP Relay Server 1.2.9 and classified as critical. This vulnerability affects unknown code of the file /server/api/v1/login of the component API. The manipulation of the argument username/password leads to sql injection. The attack can be initiated remotely. VDB-228010 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-04T17:15:13.753
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://vuldb.com/?ctiid.228010
+        - https://vuldb.com/?id.228010
+    - id: CVE-2023-24958
+      description: 'A vulnerability in the IBM TS7700 Management Interface 8.51.2.12, 8.52.200.111, 8.52.102.13, and 8.53.0.63 could allow an authenticated user to submit a specially crafted URL leading to privilege escalation and remote code execution.  IBM X-Force ID:  246320.'
+      published: 2023-05-04T14:15:10.173
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/246320
+        - https://www.ibm.com/support/pages/node/6980845
+    - id: CVE-2022-4259
+      description: Due to improper input validation in the Alerts controller, a SQL injection vulnerability in Nozomi Networks Guardian and CMC allows an authenticated attacker to execute arbitrary SQL queries on the DBMS used by the web application.
+      published: 2023-05-04T11:15:08.930
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://security.nozominetworks.com/NN-2023:1-01
+    - id: CVE-2023-2520
+      description: 'A vulnerability was found in Caton Prime 2.1.2.51.e8d7225049(202303031001) and classified as critical. This issue affects some unknown processing of the file cgi-bin/tools_ping.cgi?action=Command of the component Ping Handler. The manipulation of the argument Destination leads to command injection. The attack may be initiated remotely. The associated identifier of this vulnerability is VDB-228011. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-04T17:15:13.843
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://vuldb.com/?ctiid.228011
+        - https://vuldb.com/?id.228011
+        - https://www.youtube.com/watch?v=H1y7CXjJDmU
+    - id: CVE-2023-21501
+      description: Improper input validation vulnerability in mPOS fiserve trustlet prior to SMR May-2023 Release 1 allows local attackers to execute arbitrary code.
+      published: 2023-05-04T21:15:10.663
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-21499
+      description: Out-of-bounds write vulnerability in TA_Communication_mpos_encrypt_pin in mPOS TUI trustlet prior to SMR May-2023 Release 1 allows local attackers to execute arbitrary code.
+      published: 2023-05-04T21:15:10.540
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-21504
+      description: Potential buffer overflow vulnerability in mm_Plmncoordination.c in Shannon baseband prior to SMR May-2023 Release 1 allows remote attackers to cause invalid memory access.
+      published: 2023-05-04T21:15:10.853
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-21493
+      description: Improper access control vulnerability in SemShareFileProvider prior to SMR May-2023 Release 1 allows local attackers to access protected data.
+      published: 2023-05-04T21:15:10.137
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-21488
+      description: Improper access control vulnerablility in Tips prior to SMR May-2023 Release 1 allows local attackers to launch arbitrary activity in Tips.
+      published: 2023-05-04T21:15:09.817
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-21505
+      description: Improper access control in Samsung Core Service prior to version 2.1.00.36 allows attacker to write arbitrary file in sandbox.
+      published: 2023-05-04T21:15:10.917
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://security.samsungmobile.com/serviceWeb.smsb?year=2023&month=05
+    - id: CVE-2023-21503
+      description: Potential buffer overflow vulnerability in mm_LteInterRatManagement.c in Shannon baseband prior to SMR May-2023 Release 1 allows remote attackers to cause invalid memory access.
+      published: 2023-05-04T21:15:10.790
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-21502
+      description: Improper input validation vulnerability in FactoryTest application prior to SMR May-2023 Release 1 allows local attackers to get privilege escalation via debugging commands.
+      published: 2023-05-04T21:15:10.727
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-21496
+      description: Active Debug Code vulnerability in ActivityManagerService prior to SMR May-2023 Release 1 allows attacker to use debug function via setting debug level.
+      published: 2023-05-04T21:15:10.333
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-21495
+      description: Improper access control vulnerability in Knox Enrollment Service prior to SMR May-2023 Release 1 allow attacker install KSP app when device admin is set.
+      published: 2023-05-04T21:15:10.267
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-21486
+      description: Improper export of android application components vulnerability in ImagePreviewActivity in Call Settings to SMR May-2023 Release 1 allows physical attackers to access some media data stored in sandbox.
+      published: 2023-05-04T21:15:09.697
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-25934
+      description: DELL ECS prior to 3.8.0.2 contains an improper verification of cryptographic signature vulnerability. A network attacker with an ability to intercept the request could potentially exploit this vulnerability to modify the body data of the request.
+      published: 2023-05-04T07:15:22.510
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://www.dell.com/support/kbdoc/en-us/000212970/dsa-2023-109-dell-ecs-security-update-for-multiple-vulnerabilities
+    - id: CVE-2023-26125
+      description: "Versions of the package github.com/gin-gonic/gin before 1.9.0 are vulnerable to Improper Input Validation by allowing an attacker to use a specially crafted request via the X-Forwarded-Prefix header, potentially leading to cache poisoning.\r\r**Note:** Although this issue does not pose a significant threat on its own it can serve as an input vector for other more impactful vulnerabilities. However, successful exploitation may depend on the server configuration and whether the header is used in the application logic."
+      published: 2023-05-04T05:15:09.163
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/gin-gonic/gin/pull/3500
+        - https://github.com/gin-gonic/gin/pull/3503
+        - https://github.com/gin-gonic/gin/releases/tag/v1.9.0
+        - https://github.com/t0rchwo0d/gin/commit/fd9f98e70fb4107ee68c783482d231d35e60507b
+        - https://security.snyk.io/vuln/SNYK-GOLANG-GITHUBCOMGINGONICGIN-3324285
+    - id: CVE-2023-21494
+      description: Potential buffer overflow vulnerability in auth api in mm_Authentication.c in Shannon baseband prior to SMR May-2023 Release 1 allows remote attackers to cause invalid memory access.
+      published: 2023-05-04T21:15:10.200
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-21485
+      description: Improper export of android application components vulnerability in VideoPreviewActivity in Call Settings to SMR May-2023 Release 1 allows physical attackers to access some media data stored in sandbox.
+      published: 2023-05-04T21:15:09.627
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-21487
+      description: Improper access control vulnerability in Telephony framework prior to SMR May-2023 Release 1 allows local attackers to change a call setting.
+      published: 2023-05-04T21:15:09.760
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-21484
+      description: Improper access control vulnerability in AppLock prior to SMR May-2023 Release 1 allows local attackers without proper permission to execute a privileged operation.
+      published: 2023-05-04T21:15:09.547
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2022-45818
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in WP OnlineSupport, Essential Plugin Hero Banner Ultimate plugin <= 1.3.4 versions.
+      published: 2023-05-04T13:15:13.580
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/hero-banner-ultimate/wordpress-hero-banner-ultimate-plugin-1-3-4-auth-stored-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-2524
+      description: 'A vulnerability classified as critical has been found in Control iD RHiD 23.3.19.0. This affects an unknown part of the file /v2/#/. The manipulation leads to direct request. It is possible to initiate the attack remotely. The associated identifier of this vulnerability is VDB-228015. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-04T19:15:09.123
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://vuldb.com/?ctiid.228015
+        - https://vuldb.com/?id.228015
+    - id: CVE-2023-21490
+      description: Improper access control in GearManagerStub prior to SMR May-2023 Release 1 allows a local attacker to delete applications installed by watchmanager.
+      published: 2023-05-04T21:15:09.943
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-25982
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in Eirudo Simple YouTube Responsive plugin <= 2.5 versions.
+      published: 2023-05-04T20:15:10.060
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/simple-youtube-responsive/wordpress-simple-youtube-responsive-plugin-2-5-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-30619
+      description: Tuleap Open ALM is a Libre and Open Source tool for end to end traceability of application and system developments. The title of an artifact is not properly escaped in the tooltip. A malicious user with the capability to create an artifact or to edit a field title could force victim to execute uncontrolled code. This issue has been patched in version 14.7.99.143.
+      published: 2023-05-04T14:15:11.663
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/Enalean/tuleap/commit/fdc93a736cbccad05de16ff0cc7cc3ef18dc93df
+        - https://github.com/Enalean/tuleap/security/advisories/GHSA-7fm3-cr3g-5922
+        - https://tuleap.net/plugins/git/tuleap/tuleap/stable?a=commit&h=fdc93a736cbccad05de16ff0cc7cc3ef18dc93df
+        - https://tuleap.net/plugins/tracker/?aid=31586
+    - id: CVE-2023-25458
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in GMO Internet Group, Inc. TypeSquare Webfonts for ConoHa plugin <= 2.0.3 versions.
+      published: 2023-05-04T20:15:09.797
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/ts-webfonts-for-conoha/wordpress-typesquare-webfonts-for-conoha-plugin-2-0-3-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-21497
+      description: Use of externally-controlled format string vulnerability in mPOS TUI trustlet prior to SMR May-2023 Release 1 allows local attackers to access the memory address.
+      published: 2023-05-04T21:15:10.403
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-21511
+      description: Out-of-bounds Read vulnerability while processing CMD_COLDWALLET_BTC_SET_PRV_UTXO in bc_core trustlet from Samsung Blockchain Keystore prior to version 1.3.12.1 allows local attacker to read arbitrary memory.
+      published: 2023-05-04T21:15:11.387
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://security.samsungmobile.com/serviceWeb.smsb?year=2023&month=05
+    - id: CVE-2023-21510
+      description: Out-of-bounds Read vulnerability while processing BC_TUI_CMD_UPDATE_SCREEN in bc_tui trustlet from Samsung Blockchain Keystore prior to version 1.3.12.1 allows local attacker to read arbitrary memory.
+      published: 2023-05-04T21:15:11.327
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://security.samsungmobile.com/serviceWeb.smsb?year=2023&month=05
+    - id: CVE-2023-25977
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in 9seeds.Com CPT – Speakers plugin <= 1.1 versions.
+      published: 2023-05-04T20:15:09.977
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/cpt-speakers/wordpress-cpt-speakers-plugin-1-1-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-21509
+      description: Out-of-bounds Write vulnerability while processing BC_TUI_CMD_UPDATE_SCREEN in bc_tui trustlet from Samsung Blockchain Keystore prior to version 1.3.12.1 allows local attacker to execute arbitrary code.
+      published: 2023-05-04T21:15:11.270
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://security.samsungmobile.com/serviceWeb.smsb?year=2023&month=05
+    - id: CVE-2023-21508
+      description: Out-of-bounds Write vulnerability while processing BC_TUI_CMD_SEND_RESOURCE_DATA command in bc_tui trustlet from Samsung Blockchain Keystore prior to version 1.3.12.1 allows local attacker to execute arbitrary code.
+      published: 2023-05-04T21:15:11.207
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://security.samsungmobile.com/serviceWeb.smsb?year=2023&month=05
+    - id: CVE-2023-21507
+      description: Out-of-bounds Read vulnerability while processing BC_TUI_CMD_SEND_RESOURCE_DATA_ARRAY command in bc_tui trustlet from Samsung Blockchain Keystore prior to version 1.3.12.1 allows local attacker to read arbitrary memory.
+      published: 2023-05-04T21:15:11.150
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://security.samsungmobile.com/serviceWeb.smsb?year=2023&month=05
+    - id: CVE-2022-47434
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in PB SEO Friendly Images plugin <= 4.0.5 versions.
+      published: 2023-05-04T21:15:09.313
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/pb-seo-friendly-images/wordpress-pb-seo-friendly-images-plugin-4-0-5-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-21506
+      description: Out-of-bounds Write vulnerability while processing BC_TUI_CMD_SEND_RESOURCE_DATA_ARRAY command in bc_tui trustlet from Samsung Blockchain Keystore prior to version 1.3.12.1 allows local attacker to execute arbitrary code.
+      published: 2023-05-04T21:15:11.080
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://security.samsungmobile.com/serviceWeb.smsb?year=2023&month=05
+    - id: CVE-2023-26010
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in WPMobile.App plugin <= 11.18 versions.
+      published: 2023-05-04T14:15:10.593
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/wpappninja/wordpress-wpmobile-app-android-and-ios-mobile-application-plugin-11-18-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-25962
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Biplob Adhikari Accordion – Multiple Accordion or FAQs Builder plugin <= 2.3.0 versions.
+      published: 2023-05-04T13:15:18.060
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/accordions-or-faqs/wordpress-accordions-multiple-accordions-or-faqs-builder-plugin-2-3-0-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-2522
+      description: 'A vulnerability was found in Chengdu VEC40G 3.0. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file /send_order.cgi?parameter=access_detect of the component Network Detection. The manipulation of the argument COUNT with the input 3 | netstat -an leads to os command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-228013 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-04T18:15:09.763
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/eckert-lcc/cve/blob/main/Flying%20fish%20star.md
+        - https://vuldb.com/?ctiid.228013
+        - https://vuldb.com/?id.228013
+    - id: CVE-2023-30550
+      description: MeterSphere is an open source continuous testing platform, covering functions such as test tracking, interface testing, UI testing, and performance testing. This IDOR vulnerability allows the administrator of a project to modify other projects under the workspace. An attacker can obtain some operating permissions. The issue has been fixed in version 2.9.0.
+      published: 2023-05-04T18:15:10.150
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/metersphere/metersphere/releases/tag/v2.9.0
+        - https://github.com/metersphere/metersphere/security/advisories/GHSA-j5cq-cpw2-gp2q
+    - id: CVE-2023-21500
+      description: Double free validation vulnerability in setPinPadImages in mPOS TUI trustlet prior to SMR May-2023 Release 1 allows local attackers to access the trustlet memory.
+      published: 2023-05-04T21:15:10.600
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-26012
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Denzel Chia | Phire Design Custom Login Page plugin <= 2.0 versions.
+      published: 2023-05-04T14:15:11.090
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/wp-custom-login-page/wordpress-custom-login-page-plugin-2-0-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-21498
+      description: Improper input validation vulnerability in setPartnerTAInfo in mPOS TUI trustlet prior to SMR May-2023 Release 1 allows local attackers to overwrite the trustlet memory.
+      published: 2023-05-04T21:15:10.477
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-23470
+      description: 'IBM i 7.2, 7.3, 7.4, and 7.5 could allow an authenticated privileged administrator to gain elevated privileges in non-default configurations, as a result of improper SQL processing. By using a specially crafted SQL operation, the administrator could exploit the vulnerability to perform additional administrator operations.  IBM X-Force ID:  244510.'
+      published: 2023-05-04T14:15:08.847
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/244510
+        - https://www.ibm.com/support/pages/node/6987767
+    - id: CVE-2023-21492
+      description: Kernel pointers are printed in the log file prior to SMR May-2023 Release 1 allows a privileged local attacker to bypass ASLR.
+      published: 2023-05-04T21:15:10.070
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://security.samsungmobile.com/securityUpdate.smsb?year=2023&month=05
+    - id: CVE-2023-26016
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Tauhidul Alam Simple Portfolio Gallery plugin <= 0.1 versions.
+      published: 2023-05-04T13:15:18.633
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/simple-portfolio-gallery/wordpress-simple-portfolio-gallery-plugin-0-1-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-2521
+      description: 'A vulnerability was found in NEXTU NEXT-7004N 3.0.1. It has been classified as problematic. Affected is an unknown function of the file /boafrm/formFilter of the component POST Request Handler. The manipulation of the argument url with the input <svg onload=alert(1337)> leads to cross site scripting. It is possible to launch the attack remotely. The identifier of this vulnerability is VDB-228012. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-04T17:15:13.917
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://vuldb.com/?ctiid.228012
+        - https://vuldb.com/?id.228012
+    - id: CVE-2023-30268
+      description: CLTPHP <=6.0 is vulnerable to Improper Input Validation.
+      published: 2023-05-04T20:15:10.567
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/HuBenLab/16dc2f87f91a6f8c60eefce5abf18c08
+        - https://github.com/HuBenLab/HuBenVulList/blob/main/CLTPHP6.0%20Improper%20Input%20Validation%202.md
+    - id: CVE-2023-1894
+      description: A Regular Expression Denial of Service (ReDoS) issue was discovered in Puppet Server 7.9.2 certificate validation. An issue related to specifically crafted certificate names significantly slowed down server operations.
+      published: 2023-05-04T23:15:08.763
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.puppet.com/security/cve/cve-2023-1894-puppet-server-redos
+    - id: CVE-2023-31284
+      description: illumos illumos-gate before 676abcb has a stack buffer overflow in /dev/net, leading to privilege escalation via a stat on a long file name in /dev/net.
+      published: 2023-05-04T20:15:10.717
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/illumos/illumos-gate/tree/16b76d3cb933ff92018a2a75594449010192eacb
+        - https://illumos.topicbox.com/groups/developer/T13ef186a53edeb5c-M821cc18b5884e04e16daa8fd/cve-2023-31284-buffer-overflow-in-dev-net
+    - id: CVE-2023-30203
+      description: Judging Management System v1.0 was discovered to contain a SQL injection vulnerability via the event_id parameter at /php-jms/result_sheet.php.
+      published: 2023-05-04T17:15:14.093
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/debug601/bug_report/blob/main/vendors/oretnom23/judging-management-system/SQLi-2.md
+    - id: CVE-2023-30331
+      description: An issue in the render function of beetl v3.15.0 allows attackers to execute server-side template injection (SSTI) via a crafted payload.
+      published: 2023-05-04T03:15:21.267
+      severity: ""
+      privileges: ""
+      references:
+        - https://gitee.com/xiandafu/beetl/issues/I6RUIP
+        - https://github.com/luelueking/Beetl-3.15.0-vuln-poc
+    - id: CVE-2023-30097
+      description: A stored cross-site scripting (XSS) vulnerability in TotalJS messenger commit b6cf1c9 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the private task field.
+      published: 2023-05-04T20:15:10.320
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/totaljs/messenger/issues/9
+        - https://www.edoardoottavianelli.it/CVE-2023-30097/
+        - https://www.youtube.com/watch?v=qX_wuVQsj1I
+    - id: CVE-2023-29842
+      description: ChirchCRm 4.5.4 endpoint /EditEventTypes.php is vulnerable to Blind SQL Injection (Time-based) via the EN_tyid POST parameter.
+      published: 2023-05-04T03:15:09.600
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/ChurchCRM/CRM
+        - https://github.com/arvandy/CVE/blob/main/CVE-2023-29842/CVE-2023-29842.md
+        - https://github.com/arvandy/CVE/blob/main/CVE-2023-29842/CVE-2023-29842.py
+    - id: CVE-2023-29996
+      description: In NanoMQ v0.15.0-0, segment fault with Null Pointer Dereference occurs in the process of decoding subinfo_decode and unsubinfo_decode.
+      published: 2023-05-04T17:15:13.690
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/emqx/nanomq/issues/1038
+    - id: CVE-2023-29995
+      description: In NanoMQ v0.15.0-0, a Heap overflow occurs in copyn_utf8_str function of mqtt_parser.c
+      published: 2023-05-04T17:15:13.643
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/emqx/nanomq/issues/1043
+    - id: CVE-2023-23059
+      description: An issue was discovered in GeoVision GV-Edge Recording Manager 2.2.3.0 for windows, which contains improper permissions within the default installation and allows attackers to execute arbitrary code and gain escalated privileges.
+      published: 2023-05-04T20:15:09.737
+      severity: ""
+      privileges: ""
+      references:
+        - http://geovision.com
+        - http://gv-edge.com
+        - https://packetstormsecurity.com/files/172141/GV-Edge-Recording-Manager-2.2.3.0-Privilege-Escalation.html
+    - id: CVE-2023-29994
+      description: In NanoMQ v0.15.0-0, Heap overflow occurs in read_byte function of mqtt_code.c.
+      published: 2023-05-04T17:15:13.577
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/emqx/nanomq/issues/1042
+    - id: CVE-2023-29827
+      description: ejs v3.1.9 is vulnerable to server-side template injection. If the ejs file is controllable, template injection can be implemented through the configuration settings of the closeDelimiter parameter.
+      published: 2023-05-04T14:15:11.363
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/mde/ejs/issues/720
+    - id: CVE-2023-30094
+      description: A stored cross-site scripting (XSS) vulnerability in TotalJS Flow v10 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the platform name field in the settings module.
+      published: 2023-05-04T20:15:10.153
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/totaljs/flow/issues/100
+        - https://www.edoardoottavianelli.it/CVE-2023-30094/
+        - https://www.youtube.com/watch?v=8VbTm2sIdBE
+    - id: CVE-2023-30077
+      description: Judging Management System v1.0 by oretnom23 was discovered to vulnerable to SQL injection via /php-jms/review_result.php?mainevent_id=, mainevent_id.
+      published: 2023-05-04T03:15:20.930
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Dzero57/cve_report/blob/main/judging-management-system/SQLi-1.md
+        - https://www.github.com
+    - id: CVE-2023-31413
+      description: Filebeat versions through 7.17.9 and 8.6.2 have a flaw in httpjson input that allows the http request Authorization or Proxy-Authorization header contents to be leaked in the logs when debug logging is enabled.
+      published: 2023-05-04T21:15:11.640
+      severity: ""
+      privileges: ""
+      references:
+        - https://discuss.elastic.co/t/elastic-stack-8-7-0-7-17-10-security-updates/332327
+        - https://www.elastic.co/community/security/
+    - id: CVE-2023-30096
+      description: A stored cross-site scripting (XSS) vulnerability in TotalJS messenger commit b6cf1c9 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the user information field.
+      published: 2023-05-04T20:15:10.267
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/totaljs/messenger/issues/10
+        - https://www.edoardoottavianelli.it/CVE-2023-30096/
+        - https://www.youtube.com/watch?v=1SMQKRiibHw
+    - id: CVE-2023-30095
+      description: A stored cross-site scripting (XSS) vulnerability in TotalJS messenger commit b6cf1c9 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the channel description field.
+      published: 2023-05-04T20:15:10.213
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/totaljs/messenger/issues/11
+        - https://www.edoardoottavianelli.it/CVE-2023-30095/
+        - https://www.youtube.com/watch?v=nzhIKn999Mk
+    - id: CVE-2023-25289
+      description: Directory Traversal vulnerability in virtualreception Digital Receptie version win7sp1_rtm.101119-1850 6.1.7601.1.0.65792 in embedded web server, allows attacker to gain sensitive information via a crafted GET request.
+      published: 2023-05-04T21:15:11.447
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.exploit-db.com/exploits/51142
+    - id: CVE-2023-30216
+      description: Insecure permissions in the updateUserInfo function of newbee-mall before commit 1f2c2dfy allows attackers to obtain user account information.
+      published: 2023-05-04T21:15:11.493
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/newbee-ltd/newbee-mall/issues/76
+    - id: CVE-2023-30328
+      description: An issue in the helper tool of Mailbutler GmbH Shimo VPN Client for macOS v5.0.4 allows attackers to bypass authentication via PID re-use.
+      published: 2023-05-04T21:15:11.540
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/rand0mIdas/randomideas/blob/main/ShimoVPN.md
+        - https://raw.githubusercontent.com/rand0mIdas/randomideas/main/ShimoVPN.md?token=GHSAT0AAAAAACA3WX4SPH2YYOCWGV6LLVSGZBIEKEQ
+    - id: CVE-2023-30399
+      description: Insecure permissions in the settings page of GARO Wallbox GLB/GTB/GTC before v189 allows attackers to redirect users to a crafted update package link via a man-in-the-middle attack.
+      published: 2023-05-04T21:15:11.593
+      severity: ""
+      privileges: ""
+      references:
+        - http://garocharging.com/glb-wallbox/
+        - https://github.com/Yof3ng/IoT/blob/master/Garo/CVE-2023-30399.md
+        - https://www.garo.se/
+    - id: CVE-2023-30264
+      description: CLTPHP <=6.0 is vulnerable to Unrestricted Upload of File with Dangerous Type via application/admin/controller/Template.php:update.
+      published: 2023-05-04T20:15:10.377
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/HuBenLab/8498761dc3eaaed724a134197f092c47
+        - https://github.com/HuBenLab/HuBenVulList/blob/main/CLTPHP6.0%20Unrestricted%20Upload%20of%20File%20with%20Dangerous%20Type%202.md
+    - id: CVE-2023-31414
+      description: Kibana versions 8.0.0 through 8.7.0 contain an arbitrary code execution flaw. An attacker with write access to Kibana yaml or env configuration could add a specific payload that will attempt to execute JavaScript code. This could lead to the attacker executing arbitrary commands on the host system with permissions of the Kibana process.
+      published: 2023-05-04T21:15:11.703
+      severity: ""
+      privileges: ""
+      references:
+        - https://discuss.elastic.co/t/kibana-8-7-1-security-updates/332330
+        - https://www.elastic.co/community/security/
+    - id: CVE-2023-31415
+      description: Kibana version 8.7.0 contains an arbitrary code execution flaw. An attacker with All privileges to the Uptime/Synthetics feature could send a request that will attempt to execute JavaScript code. This could lead to the attacker executing arbitrary commands on the host system with permissions of the Kibana process.
+      published: 2023-05-04T21:15:11.760
+      severity: ""
+      privileges: ""
+      references:
+        - https://discuss.elastic.co/t/kibana-8-7-1-security-updates/332330
+        - https://www.elastic.co/community/security/
+    - id: CVE-2023-30093
+      description: An arbitrary file upload vulnerability in Open Networking Foundation ONOS from version 1.9.0 until 2.7.0 allows attackers to execute arbitrary code via uploading a crafted YAML file.
+      published: 2023-05-04T22:15:09.120
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.edoardoottavianelli.it/CVE-2023-30093/
+    - id: CVE-2023-30282
+      description: PrestaShop scexportcustomers <= 3.6.1 is vulnerable to Incorrect Access Control. Due to a lack of permissions' control, a guest can access exports from the module which can lead to leak of personal information from customer table.
+      published: 2023-05-04T22:15:09.177
+      severity: ""
+      privileges: ""
+      references:
+        - https://friends-of-presta.github.io/security-advisories/modules/2023/05/02/scexportcustomers.html
+    - id: CVE-2023-30184
+      description: A stored cross-site scripting (XSS) vulnerability in Typecho v1.2.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the url parameter at /index.php/archives/1/comment.
+      published: 2023-05-04T17:15:14.047
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/typecho/typecho/issues/1546
