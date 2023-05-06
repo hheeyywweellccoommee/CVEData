@@ -1,0 +1,268 @@
+data:
+    - id: CVE-2023-2550
+      description: Cross-site Scripting (XSS) - Stored in GitHub repository thorsten/phpmyfaq prior to 3.1.13.
+      published: 2023-05-05T20:15:10.557
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/thorsten/phpmyfaq/commit/20ac51594db11604a4518aacc28a51f67d4f11bf
+        - https://huntr.dev/bounties/840c8d91-c97e-4116-a9f8-4ab1a38d239b
+    - id: CVE-2023-29350
+      description: Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability
+      published: 2023-05-05T23:15:09.253
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-29350
+    - id: CVE-2023-2552
+      description: Cross-Site Request Forgery (CSRF) in GitHub repository unilogies/bumsys prior to 2.1.1.
+      published: 2023-05-05T20:15:10.713
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/unilogies/bumsys/commit/86e29dd23df348ec6075f0c0de8e06b8d9fb0a9a
+        - https://huntr.dev/bounties/ab0b4655-f57a-4113-849b-2237eeb75b32
+    - id: CVE-2023-2554
+      description: External Control of File Name or Path in GitHub repository unilogies/bumsys prior to 2.2.0.
+      published: 2023-05-05T20:15:10.877
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://github.com/unilogies/bumsys/commit/1b426f58a513194206d0ea8ab58baf1461e54978
+        - https://huntr.dev/bounties/396785a0-7bb6-4db4-b4cb-607b0fd4ab4b
+    - id: CVE-2023-2551
+      description: PHP Remote File Inclusion in GitHub repository unilogies/bumsys prior to 2.1.1.
+      published: 2023-05-05T20:15:10.627
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://github.com/unilogies/bumsys/commit/86e29dd23df348ec6075f0c0de8e06b8d9fb0a9a
+        - https://huntr.dev/bounties/5723613c-55c6-4f18-9ed3-61ad44f5de9c
+    - id: CVE-2023-22874
+      description: 'IBM MQ Clients 9.2 CD, 9.3 CD, and 9.3 LTS are vulnerable to a denial of service attack when processing configuration files.  IBM X-Force ID:  244216.'
+      published: 2023-05-05T15:15:09.567
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/244216
+        - https://www.ibm.com/support/pages/node/6985901
+    - id: CVE-2022-38707
+      description: 'IBM Cognos Command Center 10.2.4.1 could allow a local attacker to obtain sensitive information due to insufficient session expiration.  IBM X-Force ID:  234179.'
+      published: 2023-05-05T14:15:09.057
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/234179
+        - https://www.ibm.com/support/pages/node/6983274
+    - id: CVE-2023-29354
+      description: Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability
+      published: 2023-05-05T23:15:09.333
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-29354
+    - id: CVE-2023-2516
+      description: Cross-site Scripting (XSS) - Stored in GitHub repository nilsteampassnet/teampass prior to 3.0.7.
+      published: 2023-05-05T19:15:15.763
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/nilsteampassnet/teampass/commit/39b774cba118ca5383b0a51a71b1e7dea2761927
+        - https://huntr.dev/bounties/19470f0b-7094-4339-8d4a-4b5570b54716
+    - id: CVE-2023-2427
+      description: Cross-site Scripting (XSS) - Reflected in GitHub repository thorsten/phpmyfaq prior to 3.1.13.
+      published: 2023-05-05T19:15:15.687
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/thorsten/phpmyfaq/commit/514f4df2ad918e69575028d58b2e33aaf536e59b
+        - https://huntr.dev/bounties/89005a6d-d019-4cb7-ae88-486d2d44190d
+    - id: CVE-2023-26285
+      description: 'IBM MQ 9.2 CD, 9.2 LTS, 9.3 CD, and 9.3 LTS could allow a remote attacker to cause a denial of service due to an error processing invalid data.  IBM X-Force ID:  248418.'
+      published: 2023-05-05T16:15:09.300
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/248418
+        - https://www.ibm.com/support/pages/node/6986563
+    - id: CVE-2023-30434
+      description: 'IBM Storage Scale (IBM Spectrum Scale 5.1.0.0 through 5.1.2.9, 5.1.3.0 through 5.1.6.1 and IBM Elastic Storage Systems 6.1.0.0 through 6.1.2.5, 6.1.3.0 through 6.1.6.0) could allow a local user to cause a kernel panic.  IBM X-Force  ID:  252187.'
+      published: 2023-05-05T15:15:10.117
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/252187
+        - https://www.ibm.com/support/pages/node/6988363
+        - https://www.ibm.com/support/pages/node/6988365
+    - id: CVE-2023-2553
+      description: Cross-site Scripting (XSS) - Stored in GitHub repository unilogies/bumsys prior to 2.2.0.
+      published: 2023-05-05T20:15:10.803
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/unilogies/bumsys/commit/1b426f58a513194206d0ea8ab58baf1461e54978
+        - https://huntr.dev/bounties/4e1f5b56-e846-40d8-a83c-533efd56aacf
+    - id: CVE-2022-43919
+      description: 'IBM MQ 9.2 CD, 9.2 LTS, 9.3 CD, and 9.3 LTS could allow an authenticated attacker with authorization to craft messages to cause a denial of service.  IBM X-Force ID:  241354.'
+      published: 2023-05-05T15:15:09.480
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/241354
+        - https://www.ibm.com/support/pages/node/6986559
+    - id: CVE-2022-43866
+      description: 'IBM Maximo Asset Management 7.6.1.2 and 7.6.1.3 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session.  IBM X-Force ID:  239436.'
+      published: 2023-05-05T19:15:15.157
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/239436
+        - https://https://www.ibm.com/support/pages/node/6983534
+    - id: CVE-2020-4914
+      description: 'IBM Cloud Pak System Suite 2.3.3.0 through 2.3.3.5 does not invalidate session after logout which could allow a local user to impersonate another user on the system.  IBM X-Force ID:  191290.'
+      published: 2023-05-05T19:15:15.027
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/191290
+        - https://www.ibm.com/support/pages/node/6967181
+    - id: CVE-2023-2537
+      description: '** REJECT ** This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.'
+      published: 2023-05-05T09:15:12.007
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-2536
+      description: '** REJECT ** This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.'
+      published: 2023-05-05T09:15:11.917
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-30054
+      description: TOTOLINK A7100RU V7.4cu.2313_B20191024 has a Command Injection vulnerability. An attacker can obtain a stable root shell through a specially constructed payload.
+      published: 2023-05-05T15:15:10.070
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Am1ngl/ttt/tree/main/161
+    - id: CVE-2023-29933
+      description: llvm-project commit bd456297 was discovered to contain a segmentation fault via the component mlir::Block::getArgument.
+      published: 2023-05-05T15:15:09.683
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/llvm/llvm-project/issues/59442
+    - id: CVE-2023-29932
+      description: llvm-project commit fdbc55a5 was discovered to contain a segmentation fault via the component mlir::IROperand<mlir::OpOperand.
+      published: 2023-05-05T15:15:09.633
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/llvm/llvm-project/issues/58745
+    - id: CVE-2023-29659
+      description: A Segmentation fault caused by a floating point exception exists in libheif 1.15.1 using crafted heif images via the heif::Fraction::round() function in box.cc, which causes a denial of service.
+      published: 2023-05-05T16:15:09.387
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/strukturag/libheif/issues/794
+    - id: CVE-2023-29963
+      description: S-CMS v5.0 was discovered to contain an authenticated remote code execution (RCE) vulnerability via the component /admin/ajax.php.
+      published: 2023-05-05T23:15:09.397
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/superjock1988/debug/blob/main/s-cms_rce.md
+    - id: CVE-2023-29935
+      description: llvm-project commit a0138390 was discovered to contain an assertion failure at !replacements.count(op) && "operation was already replaced.
+      published: 2023-05-05T15:15:09.783
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/llvm/llvm-project/issues/59182
+    - id: CVE-2023-29942
+      description: llvm-project commit a0138390 was discovered to contain a segmentation fault via the component mlir::Type::isa<mlir::LLVM::LLVMVoidType.
+      published: 2023-05-05T15:15:09.970
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/llvm/llvm-project/issues/59990
+    - id: CVE-2023-30053
+      description: TOTOLINK A7100RU V7.4cu.2313_B20191024 is vulnerable to Command Injection.
+      published: 2023-05-05T15:15:10.020
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Am1ngl/ttt/tree/main/160
+    - id: CVE-2023-29941
+      description: llvm-project commit a0138390 was discovered to contain a segmentation fault via the component matchAndRewriteSortOp<mlir::sparse_tensor::SortOp>(mlir::sparse_tensor::SortOp.
+      published: 2023-05-05T15:15:09.917
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/llvm/llvm-project/issues/59988
+    - id: CVE-2023-30013
+      description: TOTOLINK X5000R V9.1.0u.6118_B20201102 and V9.1.0u.6369_B20230113 contain a command insertion vulnerability in setting/setTracerouteCfg. This vulnerability allows an attacker to execute arbitrary commands through the "command" parameter.
+      published: 2023-05-05T14:15:09.147
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Kazamayc/vuln/tree/main/TOTOLINK/X5000R/2
+    - id: CVE-2023-30242
+      description: NS-ASG v6.3 was discovered to contain a SQL injection vulnerability via the component /admin/add_ikev2.php.
+      published: 2023-05-05T12:15:09.093
+      severity: ""
+      privileges: ""
+      references:
+        - http://ns-asg.com
+        - https://gist.github.com/nsvizp/ccbc51253a47d79d2bc1ea72e01bdaf6
+        - https://www.netentsec.com/
+    - id: CVE-2023-2540
+      description: '** REJECT ** This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.'
+      published: 2023-05-05T09:15:12.107
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-29934
+      description: llvm-project commit 6c01b5c was discovered to contain a segmentation fault via the component mlir::Type::getDialect().
+      published: 2023-05-05T15:15:09.733
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/llvm/llvm-project/issues/59136
+    - id: CVE-2023-2539
+      description: '** REJECT ** This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.'
+      published: 2023-05-05T09:15:12.057
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-30065
+      description: MitraStar GPT-2741GNAC-N2 with firmware BR_g5.9_1.11(WVK.0)b32 was discovered to contain a remote code execution (RCE) vulnerability in the ping function.
+      published: 2023-05-05T22:15:09.183
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Sigmw/mitrastar-code-execution/blob/main/README.md
+    - id: CVE-2023-29939
+      description: llvm-project commit a0138390 was discovered to contain a segmentation fault via the component mlir::spirv::TargetEnv::TargetEnv(mlir::spirv::TargetEnvAttr).
+      published: 2023-05-05T15:15:09.850
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/llvm/llvm-project/issues/59983
+    - id: CVE-2023-30243
+      description: Beijing Netcon NS-ASG Application Security Gateway v6.3 is vulnerable to SQL Injection via TunnelId that allows access to sensitive information.
+      published: 2023-05-05T14:15:09.190
+      severity: ""
+      privileges: ""
+      references:
+        - http://ns-asg.com
+        - https://www.netentsec.com/
+    - id: CVE-2023-32269
+      description: An issue was discovered in the Linux kernel before 6.1.11. In net/netrom/af_netrom.c, there is a use-after-free because accept is also allowed for a successfully connected AF_NETROM socket. However, in order for an attacker to exploit this, the system must have netrom routing configured or the attacker must have the CAP_NET_ADMIN capability.
+      published: 2023-05-05T17:15:09.623
+      severity: ""
+      privileges: ""
+      references:
+        - https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1.11
+        - https://github.com/torvalds/linux/commit/611792920925fb088ddccbe2783c7f92fdfb6b64
