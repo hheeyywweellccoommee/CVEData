@@ -1,0 +1,72 @@
+data:
+    - id: CVE-2016-15031
+      description: A vulnerability was found in PHP-Login 1.0. It has been declared as critical. This vulnerability affects the function checkLogin of the file login/scripts/class.loginscript.php of the component POST Parameter Handler. The manipulation of the argument myusername leads to sql injection. The attack can be initiated remotely. Upgrading to version 2.0 is able to address this issue. The name of the patch is 0083ec652786ddbb81335ea20da590df40035679. It is recommended to upgrade the affected component. VDB-228022 is the identifier assigned to this vulnerability.
+      published: 2023-05-06T01:15:08.827
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/ipoelnet/php-login/commit/0083ec652786ddbb81335ea20da590df40035679
+        - https://github.com/ipoelnet/php-login/releases/tag/v2.0
+        - https://vuldb.com/?ctiid.228022
+        - https://vuldb.com/?id.228022
+    - id: CVE-2022-43877
+      description: 'IBM UrbanCode Deploy (UCD) versions up to 7.3.0.1 could disclose sensitive password information during a manual edit of the agentrelay.properties file.  IBM X-Force ID:  240148.'
+      published: 2023-05-06T03:15:08.950
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/240148
+        - https://www.ibm.com/support/pages/node/6967351
+    - id: CVE-2023-24957
+      description: 'IBM Business Automation Workflow 18.0.0.0, 18.0.0.1, 18.0.0.2, 19.0.0.1, 19.0.0.2, 19.0.0.3, 20.0.0.1, 20.0.0.2, 21.0.2, 21.0.3, 22.0.1, and 22.0.2 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session.  IBM X-Force ID:  246115.'
+      published: 2023-05-06T03:15:09.027
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/246115
+        - https://www.ibm.com/support/pages/node/6965776
+    - id: CVE-2023-24400
+      description: Auth. (contributor+) Cross-Site Scripting (XSS) vulnerability in Hu-manity.Co Cookie Notice & Compliance for GDPR / CCPA plugin <= 2.4.6 versions.
+      published: 2023-05-07T00:15:09.023
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/cookie-notice/wordpress-cookie-notice-compliance-for-gdpr-ccpa-plugin-2-4-6-cross-site-scripting-xss-vulnerability
+    - id: CVE-2022-22313
+      description: 'IBM QRadar Data Synchronization App 1.0 through 3.0.1 uses weaker than expected cryptographic algorithms that could allow an attacker to decrypt highly sensitive information.  IBM X-Force ID:  217370.'
+      published: 2023-05-06T02:15:12.490
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/217370
+        - https://www.ibm.com/support/pages/node/6980797
+    - id: CVE-2023-26517
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Jeff Starr Dashboard Widgets Suite plugin <= 3.2.1 versions.
+      published: 2023-05-06T07:15:43.443
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/dashboard-widgets-suite/wordpress-dashboard-widgets-suite-plugin-3-2-1-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-26519
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Alex Benfica Publish to Schedule plugin <= 4.5.4 versions.
+      published: 2023-05-06T07:15:43.640
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/publish-to-schedule/wordpress-publish-to-schedule-plugin-4-5-4-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-25491
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Samuel Marshall JCH Optimize plugin <= 3.2.2 versions.
+      published: 2023-05-06T23:15:09.230
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/jch-optimize/wordpress-jch-optimize-plugin-3-2-2-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-2560
+      description: A vulnerability was found in jja8 NewBingGoGo up to 2023.5.5.2. It has been rated as problematic. This issue affects some unknown processing. The manipulation leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-228167.
+      published: 2023-05-06T11:15:08.853
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://gitee.com/jja8/NewBingGoGo/issues/I6WH2E
+        - https://vuldb.com/?ctiid.228167
+        - https://vuldb.com/?id.228167
