@@ -1,0 +1,36 @@
+data:
+    - id: CVE-2023-2564
+      description: OS Command Injection in GitHub repository sbs20/scanservjs prior to v2.27.0.
+      published: 2023-05-07T14:15:42.343
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://github.com/sbs20/scanservjs/commit/d51fd52c1569813990b8f74e64ae6979c665dca1
+        - https://huntr.dev/bounties/d13113ad-a107-416b-acc1-01e4c16ec461
+    - id: CVE-2023-2565
+      description: A vulnerability has been found in SourceCodester Multi Language Hotel Management Software 1.0 and classified as problematic. This vulnerability affects unknown code of the file ajax.php of the component POST Parameter Handler. The manipulation of the argument complaint_type with the input <script>alert(document.cookie)</script> leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-228172.
+      published: 2023-05-07T15:15:08.813
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/admin-passwd/bug_report/blob/main/XSS-1.md
+        - https://vuldb.com/?ctiid.228172
+        - https://vuldb.com/?id.228172
+    - id: CVE-2023-31047
+      description: In Django 3.2 before 3.2.19, 4.x before 4.1.9, and 4.2 before 4.2.1, it was possible to bypass validation when using one form field to upload multiple files. This multiple upload has never been supported by forms.FileField or forms.ImageField (only the last uploaded file was validated). However, Django's "Uploading multiple files" documentation suggested otherwise.
+      published: 2023-05-07T02:15:08.917
+      severity: ""
+      privileges: ""
+      references:
+        - https://docs.djangoproject.com/en/4.2/releases/security/
+        - https://groups.google.com/forum/#!forum/django-announce
+        - https://www.djangoproject.com/weblog/2023/may/03/security-releases/
+    - id: CVE-2023-32290
+      description: The myMail app through 14.30 for iOS sends cleartext credentials in a situation where STARTTLS is expected by a server.
+      published: 2023-05-07T02:15:09.360
+      severity: ""
+      privileges: ""
+      references:
+        - https://apps.apple.com/fm/app/mymail-email-app-for-gmail/id722120997
+        - https://mailbox.org/en/post/mailbox-org-discovers-unencrypted-password-transmission-in-mymail
+        - https://news.ycombinator.com/item?id=35845308
