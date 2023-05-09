@@ -1,0 +1,2302 @@
+data:
+    - id: CVE-2023-22781
+      description: There are buffer overflow vulnerabilities in multiple underlying services that could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's access point management protocol) UDP port (8211). Successful exploitation of these vulnerabilities result in the ability to execute arbitrary code as a privileged user on the underlying operating system.
+      published: 2023-05-08T15:15:09.943
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2023-006.txt
+    - id: CVE-2023-22786
+      description: There are buffer overflow vulnerabilities in multiple underlying services that could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's access point management protocol) UDP port (8211). Successful exploitation of these vulnerabilities result in the ability to execute arbitrary code as a privileged user on the underlying operating system.
+      published: 2023-05-08T15:15:10.303
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2023-006.txt
+    - id: CVE-2023-22785
+      description: There are buffer overflow vulnerabilities in multiple underlying services that could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's access point management protocol) UDP port (8211). Successful exploitation of these vulnerabilities result in the ability to execute arbitrary code as a privileged user on the underlying operating system.
+      published: 2023-05-08T15:15:10.233
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2023-006.txt
+    - id: CVE-2023-22784
+      description: There are buffer overflow vulnerabilities in multiple underlying services that could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's access point management protocol) UDP port (8211). Successful exploitation of these vulnerabilities result in the ability to execute arbitrary code as a privileged user on the underlying operating system.
+      published: 2023-05-08T15:15:10.167
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2023-006.txt
+    - id: CVE-2023-22783
+      description: There are buffer overflow vulnerabilities in multiple underlying services that could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's access point management protocol) UDP port (8211). Successful exploitation of these vulnerabilities result in the ability to execute arbitrary code as a privileged user on the underlying operating system.
+      published: 2023-05-08T15:15:10.100
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2023-006.txt
+    - id: CVE-2023-22782
+      description: There are buffer overflow vulnerabilities in multiple underlying services that could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's access point management protocol) UDP port (8211). Successful exploitation of these vulnerabilities result in the ability to execute arbitrary code as a privileged user on the underlying operating system.
+      published: 2023-05-08T15:15:10.010
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2023-006.txt
+    - id: CVE-2023-22780
+      description: There are buffer overflow vulnerabilities in multiple underlying services that could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's access point management protocol) UDP port (8211). Successful exploitation of these vulnerabilities result in the ability to execute arbitrary code as a privileged user on the underlying operating system.
+      published: 2023-05-08T15:15:09.880
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2023-006.txt
+    - id: CVE-2023-22779
+      description: There are buffer overflow vulnerabilities in multiple underlying services that could lead to unauthenticated remote code execution by sending specially crafted packets destined to the PAPI (Aruba's access point management protocol) UDP port (8211). Successful exploitation of these vulnerabilities result in the ability to execute arbitrary code as a privileged user on the underlying operating system.
+      published: 2023-05-08T15:15:09.817
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2023-006.txt
+    - id: CVE-2023-2583
+      description: Code Injection in GitHub repository jsreport/jsreport prior to 3.11.3.
+      published: 2023-05-08T17:15:11.927
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://github.com/jsreport/jsreport/commit/afaff3804b34b38e959f5ae65f9e672088de13d7
+        - https://huntr.dev/bounties/397ea68d-1e28-44ff-b830-c8883d067d96
+    - id: CVE-2023-31123
+      description: '`effectindex/tripreporter` is a community-powered, universal platform for submitting and analyzing trip reports. Prior to commit bd80ba833b9023d39ca22e29874296c8729dd53b, any user with an account on an instance of `effectindex/tripreporter`, e.g. `subjective.report`, may be affected by an improper password verification vulnerability. The vulnerability allows any user with a password matching the password requirements to log in as any user. This allows access to accounts / data loss of the user. This issue is patched in commit bd80ba833b9023d39ca22e29874296c8729dd53b. No action necessary for users of `subjective.report`, and anyone running their own instance should update to this commit or newer as soon as possible. As a workaround, someone running their own instance may apply the patch manually.'
+      published: 2023-05-08T21:15:11.263
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://github.com/effectindex/tripreporter/commit/bd80ba833b9023d39ca22e29874296c8729dd53b
+        - https://github.com/effectindex/tripreporter/security/advisories/GHSA-356r-rwp8-h6m6
+    - id: CVE-2023-2478
+      description: An issue has been discovered in GitLab CE/EE affecting all versions starting from 15.4 before 15.9.7, all versions starting from 15.10 before 15.10.6, all versions starting from 15.11 before 15.11.2. Under certain conditions, a malicious unauthorized GitLab user may use a GraphQL endpoint to attach a malicious runner to any project.
+      published: 2023-05-08T21:15:10.997
+      severity: CRITICAL
+      privileges: LOW
+      references:
+        - https://gitlab.com/gitlab-org/cves/-/blob/master/2023/CVE-2023-2478.json
+        - https://gitlab.com/gitlab-org/gitlab/-/issues/409470
+        - https://hackerone.com/reports/1969599
+    - id: CVE-2023-31127
+      description: |-
+        libspdm is a sample implementation that follows the DMTF SPDM specifications. A vulnerability has been identified in SPDM session establishment in libspdm prior to version 2.3.1. If a device supports both DHE session and PSK session with mutual
+        authentication, the attacker may be able to establish the session with `KEY_EXCHANGE` and `PSK_FINISH` to bypass the mutual authentication. This is most likely to happen when the Requester begins a session using one method (DHE, for example) and then uses the other method's finish (PSK_FINISH in this example) to establish the session. The session hashes would be expected to fail in this case, but the condition was not detected.
+
+        This issue only impacts the SPDM responder, which supports `KEY_EX_CAP=1 and `PSK_CAP=10b` at same time with mutual authentication requirement. The SPDM requester is not impacted. The SPDM responder is not impacted if `KEY_EX_CAP=0` or `PSK_CAP=0` or `PSK_CAP=01b`. The SPDM responder is not impacted if mutual authentication is not required.
+
+        libspdm 1.0, 2.0, 2.1, 2.2, 2.3 are all impacted. Older branches are not maintained, but users of the 2.3 branch may receive a patch in version 2.3.2. The SPDM specification (DSP0274) does not contain this vulnerability.
+      published: 2023-05-08T21:15:11.427
+      severity: CRITICAL
+      privileges: LOW
+      references:
+        - https://github.com/DMTF/libspdm/pull/2006
+        - https://github.com/DMTF/libspdm/pull/2007
+        - https://github.com/DMTF/libspdm/security/advisories/GHSA-qw76-4v8p-xq9f
+    - id: CVE-2023-28762
+      description: SAP BusinessObjects Business Intelligence Platform - versions 420, 430, allows an authenticated attacker with administrator privileges to get the login token of any logged-in BI user over the network without any user interaction. The attacker can impersonate any user on the platform resulting into accessing and modifying data. The attacker can also make the system partially or entirely unavailable.
+      published: 2023-05-09T01:15:08.777
+      severity: CRITICAL
+      privileges: HIGH
+      references:
+        - https://launchpad.support.sap.com/#/notes/3307833
+        - https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html
+    - id: CVE-2023-30837
+      description: Vyper is a pythonic smart contract language for the EVM. The storage allocator does not guard against allocation overflows in versions prior to 0.3.8. An attacker can overwrite the owner variable. This issue was fixed in version 0.3.8.
+      published: 2023-05-08T17:15:12.007
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/vyperlang/vyper/commit/0bb7203b584e771b23536ba065a6efda457161bb
+        - https://github.com/vyperlang/vyper/security/advisories/GHSA-mgv8-gggw-mrg6
+    - id: CVE-2023-30551
+      description: Rekor is an open source software supply chain transparency log. Rekor prior to version 1.1.1 may crash due to out of memory (OOM) conditions caused by reading archive metadata files into memory without checking their sizes first. Verification of a JAR file submitted to Rekor can cause an out of memory crash if files within the META-INF directory of the JAR are sufficiently large. Parsing of an APK file submitted to Rekor can cause an out of memory crash if the .SIGN or .PKGINFO files within the APK are sufficiently large. The OOM crash has been patched in Rekor version 1.1.1. There are no known workarounds.
+      published: 2023-05-08T16:15:09.453
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/sigstore/rekor/commit/cf42ace82667025fe128f7a50cf6b4cdff51cc48
+        - https://github.com/sigstore/rekor/releases/tag/v1.1.1
+        - https://github.com/sigstore/rekor/security/advisories/GHSA-2h5h-59f5-c5x9
+    - id: CVE-2022-46799
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in I Thirteen Web Solution Easy Testimonial Slider and Form plugin <= 1.0.15 versions.
+      published: 2023-05-08T12:15:09.313
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/easy-testimonial-rotator/wordpress-easy-testimonial-slider-and-form-plugin-1-0-15-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-31129
+      description: |-
+        The Contiki-NG operating system versions 4.8 and prior can be triggered to dereference a NULL pointer in the message handling code for IPv6 router solicitiations. Contiki-NG contains an implementation of IPv6 Neighbor Discovery (ND) in the module `os/net/ipv6/uip-nd6.c`. The ND protocol includes a message type called Router Solicitation (RS), which is used to locate routers and update their address information via the SLLAO (Source Link-Layer Address Option). If the indicated source address changes, a given neighbor entry is set to the STALE state.
+
+        The message handler does not check for RS messages with an SLLAO that indicates a link-layer address change that a neighbor entry can actually be created for the indicated address. The resulting pointer is used without a check, leading to the dereference of a NULL pointer of type `uip_ds6_nbr_t`.
+
+        The problem has been patched in the `develop` branch of Contiki-NG, and will be included in the upcoming 4.9 release. As a workaround, users can apply Contiki-NG pull request #2271 to patch the problem directly.
+      published: 2023-05-08T21:15:11.513
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/contiki-ng/contiki-ng/pull/2271
+        - https://github.com/contiki-ng/contiki-ng/security/advisories/GHSA-x29r-5qjg-75mq
+    - id: CVE-2023-31133
+      description: |-
+        Ghost is an app for new-media creators with tools to build a website, publish content, send newsletters, and offer paid subscriptions to members. Prior to version 5.46.1, due to a lack of validation when filtering on the public API endpoints, it is possible to reveal private fields via a brute force attack.
+
+        Ghost(Pro) has already been patched. Maintainers can find no evidence that the issue was exploited on Ghost(Pro) prior to the patch being added. Self-hosters are impacted if running Ghost a version below v5.46.1. v5.46.1 contains a fix for this issue. As a workaround, add a block for requests to `/ghost/api/content/*` where the `filter` query parameter contains `password` or `email`.
+      published: 2023-05-08T21:15:11.600
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/TryGhost/Ghost/commit/b3caf16005289cc9909488391b4a26f3f4a66a90
+        - https://github.com/TryGhost/Ghost/releases/tag/v5.46.1
+        - https://github.com/TryGhost/Ghost/security/advisories/GHSA-r97q-ghch-82j9
+    - id: CVE-2023-30744
+      description: In SAP AS NetWeaver JAVA - versions SERVERCORE 7.50, J2EE-FRMW 7.50, CORE-TOOLS 7.50, an unauthenticated attacker can attach to an open interface and make use of an open naming and directory API to instantiate an object which has methods which can be called without further authorization and authentication.  A subsequent call to one of these methods can read or change the state of existing services without any effect on availability.
+      published: 2023-05-09T02:15:12.460
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://launchpad.support.sap.com/#/notes/3317453
+        - https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html
+    - id: CVE-2023-30743
+      description: Due to improper neutralization of input in SAPUI5 - versions SAP_UI 750, SAP_UI 754, SAP_UI 755, SAP_UI 756, SAP_UI 757, UI_700 200, sap.m.FormattedText SAPUI5 control allows injection of untrusted CSS. This blocks user’s interaction with the application. Further, in the absence of URL validation by the application, the vulnerability could lead to the attacker reading or modifying user’s information through phishing attack.
+      published: 2023-05-09T02:15:12.397
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://launchpad.support.sap.com/#/notes/3326210
+        - https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html
+    - id: CVE-2023-24506
+      description: "Milesight NCR/camera version 71.8.0.6-r5 exposes credentials through an unspecified request. \n\n "
+      published: 2023-05-08T21:15:10.867
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.gov.il/en/Departments/faq/cve_advisories
+    - id: CVE-2022-45065
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Squirrly SEO Plugin by Squirrly SEO plugin <= 12.1.20 versions.
+      published: 2023-05-08T15:15:09.580
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/squirrly-seo/wordpress-squirrly-seo-peaks-plugin-12-1-20-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-31181
+      description: 'WJJ Software - InnoKB Server, InnoKB/Console 2.2.1 - CWE-22: Path Traversal'
+      published: 2023-05-08T21:15:12.080
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.gov.il/en/Departments/faq/cve_advisories
+    - id: CVE-2022-47439
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Rocket Apps Open Graphite plugin <= 1.6.0 versions.
+      published: 2023-05-08T15:15:09.723
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/open-graphite/wordpress-open-graphite-plugin-1-5-1-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-22787
+      description: An unauthenticated Denial of Service (DoS) vulnerability exists in a service accessed via the PAPI protocol provided by Aruba InstantOS and ArubaOS 10. Successful exploitation of this vulnerability results in the ability to interrupt the normal operation of the affected access point.
+      published: 2023-05-08T15:15:10.367
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2023-006.txt
+    - id: CVE-2023-32111
+      description: In SAP PowerDesigner (Proxy) - version 16.7, an attacker can send a crafted request from a remote host to the proxy machine and crash the proxy server, due to faulty implementation of memory management causing a memory corruption. This leads to a high impact on availability of the application.
+      published: 2023-05-09T02:15:12.733
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://launchpad.support.sap.com/#/notes/3300624
+        - https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html
+    - id: CVE-2023-22710
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in chilidevs Return and Warranty Management System for WooCommerce plugin <= 1.2.3 versions.
+      published: 2023-05-08T23:15:09.820
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/wc-return-warrranty/wordpress-return-and-warranty-management-system-for-woocommerce-plugin-1-2-3-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-32113
+      description: SAP GUI for Windows - version 7.70, 8.0, allows an unauthorized attacker to gain NTLM authentication information of a victim by tricking it into clicking a prepared shortcut file. Depending on the authorizations of the victim, the attacker can read and modify potentially sensitive information after successful exploitation.
+      published: 2023-05-09T02:15:12.873
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://launchpad.support.sap.com/#/notes/3320467
+        - https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html
+    - id: CVE-2023-31178
+      description: AgilePoint NX v8.0 SU2.2 & SU2.3 – Arbitrary File Delete Vulnerability allows arbitrary file deletion, by an unspecified request.
+      published: 2023-05-08T21:15:11.873
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.gov.il/en/Departments/faq/cve_advisories
+    - id: CVE-2023-24507
+      description: AgilePoint NX v8.0 SU2.2 & SU2.3 – Insecure File Upload - Vulnerability allows insecure file upload, by an unspecified request.
+      published: 2023-05-08T21:15:10.937
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.gov.il/en/Departments/faq/cve_advisories
+    - id: CVE-2023-2573
+      description: Advantech EKI-1524, EKI-1522, EKI-1521 devices through 1.21 are affected by an command injection vulnerability in the NTP server input field, which can be triggered by authenticated users via a crafted POST request.
+      published: 2023-05-08T13:15:09.710
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.advantech.com/en/support/details/firmware?id=1-1J9BEBL
+        - https://www.advantech.com/en/support/details/firmware?id=1-1J9BECT
+        - https://www.advantech.com/en/support/details/firmware?id=1-1J9BED3
+    - id: CVE-2023-2574
+      description: Advantech EKI-1524, EKI-1522, EKI-1521 devices through 1.21 are affected by an command injection vulnerability in the device name input field, which can be triggered by authenticated users via a crafted POST request.
+      published: 2023-05-08T13:15:09.790
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.advantech.com/en/support/details/firmware?id=1-1J9BEBL
+        - https://www.advantech.com/en/support/details/firmware?id=1-1J9BECT
+        - https://www.advantech.com/en/support/details/firmware?id=1-1J9BED3
+    - id: CVE-2023-31182
+      description: ' EasyTor Applications – Authorization Bypass - EasyTor Applications may allow authorization bypass via unspecified method.'
+      published: 2023-05-08T21:15:12.150
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.gov.il/en/Departments/faq/cve_advisories
+    - id: CVE-2023-2534
+      description: |-
+        Improper Authorization vulnerability in OTRS AG OTRS 8 (Websocket API backend) allows any as Agent authenticated attacker to track user behaviour and to gain live insight into overall system usage. User IDs can easily be correlated with real names e. g. via
+        ticket histories by any user. (Fuzzing for garnering other adjacent user/sensitive data). Subscribing to all possible push events could also lead to performance implications on the server side, depending on the size of the installation
+        and the number of active users. (Flooding)This issue affects OTRS: from 8.0.X before 8.0.32.
+      published: 2023-05-08T08:15:43.673
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://otrs.com/release-notes/otrs-security-advisory-2023-03/
+    - id: CVE-2023-30860
+      description: WWBN AVideo is an open source video platform. In AVideo prior to version 12.4, a normal user can make a Meeting Schedule where the user can invite another user in that Meeting, but it does not properly sanitize the malicious characters when creating a Meeting Room. This allows attacker to insert malicious scripts. Since any USER including the ADMIN can see the meeting room that was created by the attacker this can lead to cookie hijacking and takeover of any accounts. Version 12.4 contains a patch for this issue.
+      published: 2023-05-08T19:15:12.310
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/WWBN/AVideo/security/advisories/GHSA-xr9h-p2rc-rpqm
+        - https://youtu.be/Nke0Bmv5F-o
+    - id: CVE-2023-2575
+      description: Advantech EKI-1524, EKI-1522, EKI-1521 devices through 1.21 are affected by a Stack-based Buffer Overflow vulnerability, which can be triggered by authenticated users via a crafted POST request.
+      published: 2023-05-08T13:15:09.847
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.advantech.com/en/support/details/firmware?id=1-1J9BEBL
+        - https://www.advantech.com/en/support/details/firmware?id=1-1J9BECT
+        - https://www.advantech.com/en/support/details/firmware?id=1-1J9BED3
+    - id: CVE-2023-22789
+      description: Multiple authenticated command injection vulnerabilities exist in the Aruba InstantOS and ArubaOS 10 command line interface. Successful exploitation of these vulnerabilities result in the ability to execute arbitrary commands as a privileged user on the underlying operating system.
+      published: 2023-05-08T15:15:10.503
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2023-006.txt
+    - id: CVE-2023-22788
+      description: Multiple authenticated command injection vulnerabilities exist in the Aruba InstantOS and ArubaOS 10 command line interface. Successful exploitation of these vulnerabilities result in the ability to execute arbitrary commands as a privileged user on the underlying operating system.
+      published: 2023-05-08T15:15:10.440
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2023-006.txt
+    - id: CVE-2023-22790
+      description: Multiple authenticated command injection vulnerabilities exist in the Aruba InstantOS and ArubaOS 10 command line interface. Successful exploitation of these vulnerabilities result in the ability to execute arbitrary commands as a privileged user on the underlying operating system.
+      published: 2023-05-08T15:15:10.573
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2023-006.txt
+    - id: CVE-2023-2566
+      description: Cross-site Scripting (XSS) - Stored in GitHub repository openemr/openemr prior to 7.0.1.
+      published: 2023-05-08T05:15:09.860
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://github.com/openemr/openemr/commit/a2adac7320dfc631b1da688c3b04f54b8240fc7b
+        - https://huntr.dev/bounties/47d6fc2a-989a-44eb-9cb7-ab4f8bd44496
+    - id: CVE-2023-31183
+      description: ' Cybonet PineApp Mail Secure A reflected cross-site scripting (XSS) vulnerability was identified in the product, using an unspecified endpoint.'
+      published: 2023-05-08T21:15:12.227
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://www.gov.il/en/Departments/faq/cve_advisories
+    - id: CVE-2023-30741
+      description: Due to insufficient input validation, SAP BusinessObjects Business Intelligence Platform - versions 420, 430, allows an unauthenticated attacker to redirect users to untrusted site using a malicious link. On successful exploitation, an attacker can view or modify information causing a limited impact on confidentiality and integrity of the application.
+      published: 2023-05-09T02:15:12.260
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://launchpad.support.sap.com/#/notes/3309935
+        - https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html
+    - id: CVE-2023-31180
+      description: WJJ Software - InnoKB Server, InnoKB/Console 2.2.1 - Reflected cross-site scripting (RXSS) through an unspecified request.
+      published: 2023-05-08T21:15:12.013
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://www.gov.il/en/Departments/faq/cve_advisories
+    - id: CVE-2023-30742
+      description: SAP CRM (WebClient UI) - versions S4FND 102, S4FND 103, S4FND 104, S4FND 105, S4FND 106, S4FND 107, WEBCUIF 700, WEBCUIF 701, WEBCUIF 731, WEBCUIF 746, WEBCUIF 747, WEBCUIF 748, WEBCUIF 800, WEBCUIF 801, does not sufficiently encode user-controlled inputs, resulting in a stored Cross-Site Scripting (XSS) vulnerability.An attacker could store a malicious URL and lure the victim to click, causing the script supplied by the attacker to execute in the victim user's session. The information from the victim's session could then be modified or read by the attacker.
+      published: 2023-05-09T02:15:12.333
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://launchpad.support.sap.com/#/notes/3315971
+        - https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html
+    - id: CVE-2023-24505
+      description: 'Milesight NCR/camera version 71.8.0.6-r5 discloses sensitive information through an unspecified request. '
+      published: 2023-05-08T21:15:10.797
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://www.gov.il/en/Departments/faq/cve_advisories
+    - id: CVE-2023-31406
+      description: Due to insufficient input validation, SAP BusinessObjects Business Intelligence Platform - versions 420, 430, allows an unauthenticated attacker to redirect users to untrusted site using a malicious link. On successful exploitation, an attacker can view or modify information causing a limited impact on confidentiality and integrity of the application.
+      published: 2023-05-09T02:15:12.603
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://launchpad.support.sap.com/#/notes/3319400
+        - https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html
+    - id: CVE-2022-45812
+      description: Auth. (subscriber+) Stored Cross-Site Scripting (XSS) vulnerability in Martin Lees Exxp plugin <= 2.6.8 versions.
+      published: 2023-05-08T13:15:09.443
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/exxp-wp/wordpress-exxp-plugin-2-6-8-auth-stored-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-31140
+      description: OpenProject is open source project management software. Starting with version 7.4.0 and prior to version 12.5.4, when a user registers and confirms their first two-factor authentication (2FA) device for an account, existing logged in sessions for that user account are not terminated. Likewise, if an administrators creates a mobile phone 2FA device on behalf of a user, their existing sessions are not terminated. The issue has been resolved in OpenProject version 12.5.4 by actively terminating sessions of user accounts having registered and confirmed a 2FA device. As a workaround, users who register the first 2FA device on their account can manually log out to terminate all other active sessions. This is the default behavior of OpenProject but might be disabled through a configuration option. Double check that this option is not overridden if one plans to employ the workaround.
+      published: 2023-05-08T21:15:11.693
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://community.openproject.org/wp/48035
+        - https://github.com/opf/openproject/pull/12508
+        - https://github.com/opf/openproject/security/advisories/GHSA-xfp9-qqfj-x28q
+        - https://www.openproject.org/docs/release-notes/12-5-4/
+    - id: CVE-2023-31125
+      description: Engine.IO is the implementation of transport-based cross-browser/cross-device bi-directional communication layer for Socket.IO. An uncaught exception vulnerability was introduced in version 5.1.0 and included in version 4.1.0 of the `socket.io` parent package. Older versions are not impacted. A specially crafted HTTP request can trigger an uncaught exception on the Engine.IO server, thus killing the Node.js process. This impacts all the users of the `engine.io` package, including those who use depending packages like `socket.io`. This issue was fixed in version 6.4.2 of Engine.IO. There is no known workaround except upgrading to a safe version.
+      published: 2023-05-08T21:15:11.347
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/socketio/engine.io/commit/fc480b4f305e16fe5972cf337d055e598372dc44
+        - https://github.com/socketio/engine.io/releases/tag/6.4.2
+        - https://github.com/socketio/engine.io/security/advisories/GHSA-q9mw-68c2-j6m5
+    - id: CVE-2023-28493
+      description: Auth (subscriber+) Reflected Cross-Site Scripting (XSS) vulnerability in Macho Themes NewsMag theme <= 2.4.4 versions.
+      published: 2023-05-08T15:15:10.910
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/newsmag/wordpress-newsmag-theme-2-4-4-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-30855
+      description: Pimcore is an open source data and experience management platform. Versions of Pimcore prior to 10.5.18 are vulnerable to path traversal. The impact of this path traversal and arbitrary extension is limited to creation of arbitrary files and appending data to existing files. When combined with the SQL Injection, the exported data `RESTRICTED DIFFUSION 9 / 9` can be controlled and a webshell can be uploaded. Attackers can use that to execute arbitrary PHP code on the server with the permissions of the webserver. Users may upgrade to version 10.5.18 to receive a patch or, as a workaround, apply the patch manually.
+      published: 2023-05-08T18:15:14.370
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/pimcore/pimcore/commit/f1d904094700b513c4756904fa2b1e19d08d890e.patch
+        - https://github.com/pimcore/pimcore/pull/14498
+        - https://github.com/pimcore/pimcore/security/advisories/GHSA-g2mc-fqqc-hxg3
+    - id: CVE-2023-24408
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in Ecwid Ecommerce Ecwid Ecommerce Shopping Cart plugin <= 6.11.4 versions.
+      published: 2023-05-08T15:15:10.730
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/ecwid-shopping-cart/wordpress-ecwid-ecommerce-shopping-cart-plugin-6-11-5-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-22791
+      description: A vulnerability exists in Aruba InstantOS and ArubaOS 10 where an edge-case combination of network configuration, a specific WLAN environment and an attacker already possessing valid user credentials on that WLAN can lead to sensitive information being disclosed via the WLAN. The scenarios in which this disclosure of potentially sensitive information can occur are complex and depend on factors that are beyond the control of the attacker.
+      published: 2023-05-08T15:15:10.647
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.arubanetworks.com/assets/alert/ARUBA-PSA-2023-006.txt
+    - id: CVE-2023-23668
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in GiveWP plugin <= 2.25.1 versions.
+      published: 2023-05-08T12:15:09.440
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/give/wordpress-givewp-plugin-2-25-1-contributor-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-31141
+      description: OpenSearch is open-source software suite for search, analytics, and observability applications. Prior to versions 1.3.10 and 2.7.0, there is an issue with the implementation of fine-grained access control rules (document-level security, field-level security and field masking) where they are not correctly applied to the queries during extremely rare race conditions potentially leading to incorrect access authorization. For this issue to be triggered, two concurrent requests need to land on the same instance exactly when query cache eviction happens, once every four hours. OpenSearch 1.3.10 and 2.7.0 contain a fix for this issue.
+      published: 2023-05-08T21:15:11.783
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/opensearch-project/security/security/advisories/GHSA-g8xc-6mf7-h28h
+    - id: CVE-2023-31179
+      description: AgilePoint NX v8.0 SU2.2 & SU2.3 - Path traversal - Vulnerability allows path traversal and downloading files from the server, by an unspecified request.
+      published: 2023-05-08T21:15:11.937
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.gov.il/en/Departments/faq/cve_advisories
+    - id: CVE-2023-31404
+      description: Under certain conditions, SAP BusinessObjects Business Intelligence Platform (Central Management Service) - versions 420, 430, allows an attacker to access information which would otherwise be restricted. Some users with specific privileges could have access to credentials of other users. It could let them access data sources which would otherwise be restricted.
+      published: 2023-05-09T02:15:12.537
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://launchpad.support.sap.com/#/notes/3038911
+        - https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html
+    - id: CVE-2023-23894
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in Surbma Surbma | GDPR Proof Cookie Consent & Notice Bar plugin <= 17.5.3 versions.
+      published: 2023-05-08T22:15:09.163
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/surbma-gdpr-proof-google-analytics/wordpress-surbma-gdpr-proof-cookie-consent-notice-bar-plugin-17-5-3-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-31407
+      description: SAP Business Planning and Consolidation - versions 740, 750, allows an authorized attacker to upload a malicious file, resulting in Cross-Site Scripting vulnerability. After successful exploitation, an attacker can cause limited impact on confidentiality and integrity of the application.
+      published: 2023-05-09T02:15:12.667
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://launchpad.support.sap.com/#/notes/3312892
+        - https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html
+    - id: CVE-2023-30740
+      description: SAP BusinessObjects Business Intelligence Platform - versions 420, 430, allows an authenticated attacker to access sensitive information which is otherwise restricted. On successful exploitation, there could be a high impact on confidentiality, limited impact on integrity and availability of the application.
+      published: 2023-05-09T02:15:12.190
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://launchpad.support.sap.com/#/notes/3313484
+        - https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html
+    - id: CVE-2023-29188
+      description: SAP CRM WebClient UI - versions SAPSCORE 129, S4FND 102, S4FND 103, S4FND 104, S4FND 105, S4FND 106, S4FND 107, WEBCUIF 701, WEBCUIF 731, WEBCUIF 746, WEBCUIF 747, WEBCUIF 748, WEBCUIF 800, WEBCUIF 801, does not sufficiently encode user-controlled inputs, resulting in Cross-Site Scripting (XSS) vulnerability. After successful exploitation, an attacker with user level access can read and modify some sensitive information but cannot delete the data.
+      published: 2023-05-09T01:15:08.943
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://i7p.wdf.sap.corp/sap/support/notes/3315979
+        - https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html
+    - id: CVE-2023-24376
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Nico Graff WP Simple Events plugin <= 1.0 versions.
+      published: 2023-05-08T22:15:09.240
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/wp-simple-events/wordpress-wp-simple-events-plugin-1-0-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-25021
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in FareHarbor FareHarbor for WordPress plugin <= 3.6.6 versions.
+      published: 2023-05-08T12:15:09.527
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/fareharbor/wordpress-fareharbor-for-wordpress-plugin-3-6-6-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-28169
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in CoreFortress Easy Event calendar plugin <= 1.0 versions.
+      published: 2023-05-08T13:15:09.650
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/easy-event-calendar/wordpress-easy-event-calendar-plugin-1-0-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-25052
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Teplitsa Yandex.News Feed by Teplitsa plugin <= 1.12.5 versions.
+      published: 2023-05-08T13:15:09.537
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/yandexnews-feed-by-teplitsa/wordpress-yandex-news-feed-by-teplitsa-plugin-1-12-5-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2022-47437
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Branko Borilovic WSB Brands plugin <= 1.1.8 versions.
+      published: 2023-05-08T15:15:09.650
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/wsb-brands/wordpress-wsb-brands-plugin-1-1-8-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-30840
+      description: |-
+        Fluid is an open source Kubernetes-native distributed dataset orchestrator and accelerator for data-intensive applications. Starting in version 0.7.0 and prior to version 0.8.6, if a malicious user gains control of a Kubernetes node running fluid csi pod (controlled by the `csi-nodeplugin-fluid` node-daemonset), they can leverage the fluid-csi service account to modify specs of all the nodes in the cluster. However, since this service account lacks `list node` permissions, the attacker may need to use other techniques to identify vulnerable nodes.
+
+        Once the attacker identifies and modifies the node specs, they can manipulate system-level-privileged components to access all secrets in the cluster or execute pods on other nodes. This allows them to elevate privileges beyond the compromised node and potentially gain full privileged access to the whole cluster.
+
+        To exploit this vulnerability, the attacker can make all other nodes unschedulable (for example, patch node with taints) and wait for system-critical components with high privilege to appear on the compromised node. However, this attack requires two prerequisites: a compromised node and identifying all vulnerable nodes through other means.
+
+        Version 0.8.6 contains a patch for this issue. As a workaround, delete the `csi-nodeplugin-fluid` daemonset in `fluid-system` namespace and avoid using CSI mode to mount FUSE file systems. Alternatively, using sidecar mode to mount FUSE file systems is recommended.
+      published: 2023-05-08T18:15:14.187
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/fluid-cloudnative/fluid/commit/77c8110a3d1ec077ae2bce6bd88d296505db1550
+        - https://github.com/fluid-cloudnative/fluid/commit/91c05c32db131997b5ca065e869c9918a125c149
+        - https://github.com/fluid-cloudnative/fluid/releases/tag/v0.8.6
+        - https://github.com/fluid-cloudnative/fluid/security/advisories/GHSA-93xx-cvmc-9w3v
+    - id: CVE-2023-25452
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Michael Pretty (prettyboymp) CMS Press plugin <= 0.2.3 versions.
+      published: 2023-05-08T13:15:09.593
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/cms-press/wordpress-cms-press-plugin-0-2-3-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-1979
+      description: 'The Web Stories for WordPress plugin supports the WordPress built-in functionality of protecting content with a password. The content is then only accessible to website visitors after entering the password. In WordPress, users with the "Author" role can create stories, but don''t have the ability to edit password protected stories. The vulnerability allowed users with said role to bypass this permission check when trying to duplicate the protected story in the plugin''s own dashboard, giving them access to the seemingly protected content. We recommend upgrading to version 1.32 or beyond commit  ad49781c2a35c5c92ef704d4b621ab4e5cb77d68 https://github.com/GoogleForCreators/web-stories-wp/commit/ad49781c2a35c5c92ef704d4b621ab4e5cb77d68 '
+      published: 2023-05-08T17:15:11.843
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/GoogleForCreators/web-stories-wp/commit/ad49781c2a35c5c92ef704d4b621ab4e5cb77d68
+        - https://github.com/GoogleForCreators/web-stories-wp/releases/tag/v1.32.0
+    - id: CVE-2023-22813
+      description: 'A device API endpoint was missing access controls on Western Digital My Cloud OS 5 Mobile App on Android, iOS, Western Digital My Cloud Home Mobile App on iOS, Android, SanDIsk ibi Mobile App on Android, iOS, Western Digital WD Cloud Mobile App on Android, iOS, Western Digital My Cloud OS 5 Web App, Western Digital My Cloud Home Web App, SanDisk ibi Web App and the Western Digital WD Web App. Due to a permissive CORS policy and missing authentication requirement for private IPs, a remote attacker on the same network as the device could obtain device information by convincing a victim user to visit an attacker-controlled server and issue a cross-site request.This issue affects My Cloud OS 5 Mobile App: through 4.21.0; My Cloud Home Mobile App: through 4.21.0; ibi Mobile App: through 4.21.0; WD Cloud Mobile App: through 4.21.0; My Cloud OS 5 Web App: through 4.26.0-6126; My Cloud Home Web App: through 4.26.0-6126; ibi Web App: through 4.26.0-6126; WD Web App: through 4.26.0-6126.'
+      published: 2023-05-08T23:15:09.897
+      severity: LOW
+      privileges: NONE
+      references:
+        - https://www.westerndigital.com/support/product-security/wdc-23004-western-digital-my-cloud-os-5-my-cloud-home-sandisk-ibi-and-wd-cloud-mobile-and-web-app-update
+    - id: CVE-2023-28764
+      description: SAP BusinessObjects Platform - versions 420, 430, Information design tool transmits sensitive information as cleartext in the binaries over the network. This could allow an unauthenticated attacker with deep knowledge to gain sensitive information such as user credentials and domain names, which may have a low impact on confidentiality and no impact on the integrity and availability of the system.
+      published: 2023-05-09T01:15:08.863
+      severity: LOW
+      privileges: NONE
+      references:
+        - https://i7p.wdf.sap.corp/sap/support/notes/3302595
+        - https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html
+    - id: CVE-2023-32112
+      description: Vendor Master Hierarchy - versions SAP_APPL 500, SAP_APPL 600, SAP_APPL 602, SAP_APPL 603, SAP_APPL 604, SAP_APPL 605, SAP_APPL 606, SAP_APPL 616, SAP_APPL 617, SAP_APPL 618, S4CORE 100, does not perform necessary authorization checks for an authenticated user to access some of its function. This could lead to modification of data impacting the integrity of the system.
+      published: 2023-05-09T02:15:12.800
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://launchpad.support.sap.com/#/notes/2335198
+        - https://www.sap.com/documents/2022/02/fa865ea4-167e-0010-bca6-c68f7e60039b.html
+    - id: CVE-2023-29092
+      description: An issue was discovered in Exynos Mobile Processor and Modem for Exynos Modem 5123, Exynos Modem 5300, Exynos 980, and Exynos 1080. Binding of a wrong resource can occur due to improper handling of parameters while binding a network interface.
+      published: 2023-05-09T02:15:12.127
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://semiconductor.samsung.com/support/quality-support/product-security-updates/
+    - id: CVE-2023-30844
+      description: Mutagen provides real-time file synchronization and flexible network forwarding for developers. Prior to versions 0.16.6 and 0.17.1 in `mutagen` and prior to version 0.17.1 in `mutagen-compose`, Mutagen `list` and `monitor` commands are susceptible to control characters that could be provided by remote endpoints.  This could cause terminal corruption, either intentional or unintentional, if these characters were present in error messages or file paths/names. This could be used as an attack vector if synchronizing with an untrusted remote endpoint, synchronizing files not under control of the user, or forwarding to/from an untrusted remote endpoint.  On very old systems with terminals susceptible to issues such as CVE-2003-0069, the issue could theoretically cause code execution. The problem has been patched in Mutagen v0.16.6 and v0.17.1.  Earlier versions of Mutagen are no longer supported and will not be patched.  Versions of Mutagen after v0.18.0 will also have the patch merged. As a workaround, avoiding synchronization of untrusted files or interaction with untrusted remote endpoints should mitigate any risk.
+      published: 2023-05-08T18:15:14.280
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/mutagen-io/mutagen/releases/tag/v0.16.6
+        - https://github.com/mutagen-io/mutagen/releases/tag/v0.17.1
+        - https://github.com/mutagen-io/mutagen/security/advisories/GHSA-jmp2-wc4p-wfh2
+    - id: CVE-2023-27936
+      description: An out-of-bounds write issue was addressed with improved input validation. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4, iOS 15.7.4 and iPadOS 15.7.4, macOS Big Sur 11.7.5. An app may be able to cause unexpected system termination or write kernel memory
+      published: 2023-05-08T20:15:17.493
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213673
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213677
+    - id: CVE-2023-28200
+      description: A validation issue was addressed with improved input sanitization. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4, iOS 15.7.4 and iPadOS 15.7.4, macOS Big Sur 11.7.5. An app may be able to disclose kernel memory
+      published: 2023-05-08T20:15:19.687
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213673
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213677
+    - id: CVE-2023-30092
+      description: SourceCodester Online Pizza Ordering System v1.0 is vulnerable to SQL Injection via the QTY parameter.
+      published: 2023-05-08T15:15:11.137
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/nawed20002/CVE-2023-30092
+        - https://www.sourcecodester.com/php/16166/online-pizza-ordering-system-php-free-source-code.html
+    - id: CVE-2023-29696
+      description: H3C GR-1200W MiniGRW1A0V100R006 was discovered to contain a stack overflow via the function version_set.
+      published: 2023-05-08T15:15:11.033
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Stevenbaga/fengsha/blob/main/H3C/GR-1200W/aVersionSet.md
+    - id: CVE-2023-29693
+      description: H3C GR-1200W MiniGRW1A0V100R006 was discovered to contain a stack overflow via the function set_tftp_upgrad.
+      published: 2023-05-08T15:15:10.983
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Stevenbaga/fengsha/blob/main/H3C/GR-1200W/SetTftpUpgrad.md
+    - id: CVE-2023-2114
+      description: The NEX-Forms WordPress plugin before 8.4 does not properly escape the `table` parameter, which is populated with user input, before concatenating it to an SQL query.
+      published: 2023-05-08T14:15:13.507
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/SchmidAlex/nex-forms_SQL-Injection
+        - https://wpscan.com/vulnerability/3d8ab3a5-1bf8-4216-91fa-e89541e5c43d
+    - id: CVE-2023-1905
+      description: The WP Popups WordPress plugin before 2.1.5.1 does not properly escape the href attribute of its spu-facebook-page shortcode before outputting it back in a page/post where the shortcode is embed, which could allow users with the contributor role and above to perform Stored Cross-Site Scripting attacks. This is due to an insufficient fix of CVE-2023-24003
+      published: 2023-05-08T14:15:13.417
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/b6ac3e15-6f39-4514-a50d-cca7b9457736
+    - id: CVE-2023-1806
+      description: The WP Inventory Manager WordPress plugin before 2.1.0.12 does not sanitise and escape the message parameter before outputting it back in the page, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as administrators.
+      published: 2023-05-08T14:15:13.310
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/38d99c7d-2d10-4910-b95a-1cb545b813c4
+    - id: CVE-2023-1660
+      description: The AI ChatBot WordPress plugin before 4.4.9 does not have authorisation and CSRF in a function hooked to init, allowing unauthenticated users to update some settings, leading to Stored XSS due to the lack of escaping when outputting them in the admin dashboard
+      published: 2023-05-08T14:15:13.173
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/1a5cbcfc-fa55-433a-a76b-3881b6c4bea2
+    - id: CVE-2023-1651
+      description: The AI ChatBot WordPress plugin before 4.4.9 does not have authorisation and CSRF in the AJAX action responsible to update the OpenAI settings, allowing any authenticated users, such as subscriber to update them. Furthermore, due to the lack of escaping of the settings, this could also lead to Stored XSS
+      published: 2023-05-08T14:15:12.867
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/c88b22ba-4fc2-49ad-a457-224157521bad
+    - id: CVE-2023-1650
+      description: The AI ChatBot WordPress plugin before 4.4.7 unserializes user input from cookies via an AJAX action available to unauthenticated users, which could allow them to perform PHP Object Injection when a suitable gadget is present on the blog
+      published: 2023-05-08T14:15:12.747
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/7d7fe498-0aa3-4fa7-b560-610b42b2abed
+    - id: CVE-2022-22645
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:13.900
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-22649
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:13.943
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-26689
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:13.997
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-26692
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.050
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-26705
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.097
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-26729
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.147
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-26732
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.187
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-26733
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.233
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-26734
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.280
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-26735
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.330
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32779
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.383
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32791
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.427
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32804
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.473
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32806
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.517
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32808
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.563
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32809
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.613
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32822
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.660
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32850
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.707
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32856
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.753
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32873
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.803
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32874
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.850
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32878
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.897
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32884
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:14.950
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32885
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:15.003
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32901
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:15.053
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32921
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:15.103
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32930
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:15.150
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-42794
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:15.213
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-42802
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:15.257
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-42804
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:15.303
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-42822
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:15.353
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-42835
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:15.400
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-42857
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:15.450
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-46707
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:15.563
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-46708
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:15.617
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-46719
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:15.727
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-46720
+      description: An integer overflow was addressed with improved input validation. This issue is fixed in iOS 16.2 and iPadOS 16.2, macOS Ventura 13.1. An app may be able to break out of its sandbox
+      published: 2023-05-08T20:15:15.787
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213530
+        - https://support.apple.com/en-us/HT213532
+    - id: CVE-2022-46727
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:15.840
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-46728
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-08T20:15:15.887
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-1031
+      description: MonicaHQ version 4.0.0 allows an authenticated remote attacker to execute malicious code in the application via CSTI in the `settings` endpoint and first_name parameter.
+      published: 2023-05-08T20:15:15.943
+      severity: ""
+      privileges: ""
+      references:
+        - https://fluidattacks.com/advisories/napoli
+        - https://www.monicahq.com/
+    - id: CVE-2023-1094
+      description: MonicaHQ version 4.0.0 allows an authenticated remote attacker to execute malicious code in the application via CSTI in the `people:id/food` endpoint and food parameter.
+      published: 2023-05-08T20:15:16.007
+      severity: ""
+      privileges: ""
+      references:
+        - https://fluidattacks.com/advisories/napoli
+        - https://www.monicahq.com/
+    - id: CVE-2023-23494
+      description: A buffer overflow was addressed with improved bounds checking. This issue is fixed in iOS 16.4 and iPadOS 16.4. A user in a privileged network position may be able to cause a denial-of-service
+      published: 2023-05-08T20:15:16.063
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213676
+    - id: CVE-2023-23523
+      description: A logic issue was addressed with improved restrictions. This issue is fixed in macOS Ventura 13.3, iOS 16.4 and iPadOS 16.4. Photos belonging to the Hidden Photos Album could be viewed without authentication through Visual Lookup
+      published: 2023-05-08T20:15:16.117
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213676
+    - id: CVE-2023-23525
+      description: This issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.3, iOS 16.4 and iPadOS 16.4. An app may be able to gain root privileges
+      published: 2023-05-08T20:15:16.170
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213676
+    - id: CVE-2023-23526
+      description: This was addressed with additional checks by Gatekeeper on files downloaded from an iCloud shared-by-me folder. This issue is fixed in macOS Ventura 13.3, iOS 16.4 and iPadOS 16.4. A file from an iCloud shared-by-me folder may be able to bypass Gatekeeper
+      published: 2023-05-08T20:15:16.220
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213676
+    - id: CVE-2023-23527
+      description: The issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.3, macOS Big Sur 11.7.5, macOS Monterey 12.6.4, watchOS 9.4, tvOS 16.4, iOS 16.4 and iPadOS 16.4. A user may gain access to protected parts of the file system
+      published: 2023-05-08T20:15:16.277
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213674
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213677
+        - https://support.apple.com/en-us/HT213678
+    - id: CVE-2023-23528
+      description: An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in tvOS 16.4, iOS 16.4 and iPadOS 16.4. Processing a maliciously crafted Bluetooth packet may result in disclosure of process memory
+      published: 2023-05-08T20:15:16.343
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213674
+        - https://support.apple.com/en-us/HT213676
+    - id: CVE-2023-23532
+      description: This issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.3, iOS 16.4 and iPadOS 16.4. An app may be able to break out of its sandbox
+      published: 2023-05-08T20:15:16.403
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213676
+    - id: CVE-2023-23533
+      description: A logic issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4. An app may be able to modify protected parts of the file system
+      published: 2023-05-08T20:15:16.457
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213677
+    - id: CVE-2023-23534
+      description: The issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.3, macOS Big Sur 11.7.5. Processing a maliciously crafted image may result in disclosure of process memory
+      published: 2023-05-08T20:15:16.507
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213675
+    - id: CVE-2023-23535
+      description: The issue was addressed with improved memory handling. This issue is fixed in macOS Ventura 13.3, macOS Big Sur 11.7.5, watchOS 9.4, tvOS 16.4, iOS 15.7.4 and iPadOS 15.7.4, iOS 16.4 and iPadOS 16.4. Processing a maliciously crafted image may result in disclosure of process memory
+      published: 2023-05-08T20:15:16.567
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213673
+        - https://support.apple.com/en-us/HT213674
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213678
+    - id: CVE-2023-23536
+      description: The issue was addressed with improved bounds checks. This issue is fixed in macOS Ventura 13.3, iOS 15.7.4 and iPadOS 15.7.4, iOS 16.4 and iPadOS 16.4. An app may be able to execute arbitrary code with kernel privileges
+      published: 2023-05-08T20:15:16.630
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213673
+        - https://support.apple.com/en-us/HT213676
+    - id: CVE-2023-23537
+      description: A privacy issue was addressed with improved private data redaction for log entries. This issue is fixed in macOS Ventura 13.3, macOS Big Sur 11.7.5, watchOS 9.4, iOS 15.7.4 and iPadOS 15.7.4, iOS 16.4 and iPadOS 16.4. An app may be able to read sensitive location information
+      published: 2023-05-08T20:15:16.687
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213673
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213678
+    - id: CVE-2023-23538
+      description: A logic issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4. An app may be able to modify protected parts of the file system
+      published: 2023-05-08T20:15:16.747
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213677
+    - id: CVE-2023-23540
+      description: The issue was addressed with improved memory handling. This issue is fixed in macOS Monterey 12.6.4, macOS Big Sur 11.7.5, iOS 16.4 and iPadOS 16.4. An app may be able to execute arbitrary code with kernel privileges
+      published: 2023-05-08T20:15:16.797
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213677
+    - id: CVE-2023-23541
+      description: A privacy issue was addressed with improved private data redaction for log entries. This issue is fixed in iOS 15.7.4 and iPadOS 15.7.4, iOS 16.4 and iPadOS 16.4. An app may be able to access information about a user’s contacts
+      published: 2023-05-08T20:15:16.860
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213673
+        - https://support.apple.com/en-us/HT213676
+    - id: CVE-2023-23542
+      description: A privacy issue was addressed with improved private data redaction for log entries. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4, macOS Big Sur 11.7.5. An app may be able to access user-sensitive data
+      published: 2023-05-08T20:15:16.923
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213677
+    - id: CVE-2023-23543
+      description: The issue was addressed with additional restrictions on the observability of app states. This issue is fixed in macOS Ventura 13.3, iOS 15.7.4 and iPadOS 15.7.4, iOS 16.4 and iPadOS 16.4. A sandboxed app may be able to determine which app is currently using the camera
+      published: 2023-05-08T20:15:17.003
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213673
+        - https://support.apple.com/en-us/HT213676
+    - id: CVE-2023-27928
+      description: A privacy issue was addressed with improved private data redaction for log entries. This issue is fixed in macOS Ventura 13.3, macOS Big Sur 11.7.5, watchOS 9.4, tvOS 16.4, iOS 15.7.4 and iPadOS 15.7.4, iOS 16.4 and iPadOS 16.4. An app may be able to access information about a user’s contacts
+      published: 2023-05-08T20:15:17.063
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213673
+        - https://support.apple.com/en-us/HT213674
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213678
+    - id: CVE-2023-27929
+      description: An out-of-bounds read was addressed with improved input validation. This issue is fixed in macOS Ventura 13.3, tvOS 16.4, watchOS 9.4, iOS 16.4 and iPadOS 16.4. Processing a maliciously crafted image may result in disclosure of process memory
+      published: 2023-05-08T20:15:17.130
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213674
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213678
+    - id: CVE-2023-27931
+      description: This issue was addressed by removing the vulnerable code. This issue is fixed in macOS Ventura 13.3, tvOS 16.4, watchOS 9.4, iOS 16.4 and iPadOS 16.4. An app may be able to access user-sensitive data
+      published: 2023-05-08T20:15:17.197
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213674
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213678
+    - id: CVE-2023-27932
+      description: This issue was addressed with improved state management. This issue is fixed in macOS Ventura 13.3, watchOS 9.4, tvOS 16.4, Safari 16.4, iOS 16.4 and iPadOS 16.4. Processing maliciously crafted web content may bypass Same Origin Policy
+      published: 2023-05-08T20:15:17.247
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213671
+        - https://support.apple.com/en-us/HT213674
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213678
+    - id: CVE-2023-27933
+      description: The issue was addressed with improved memory handling. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4, watchOS 9.4, tvOS 16.4, iOS 16.4 and iPadOS 16.4. An app with root privileges may be able to execute arbitrary code with kernel privileges
+      published: 2023-05-08T20:15:17.310
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213674
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213677
+        - https://support.apple.com/en-us/HT213678
+    - id: CVE-2023-27934
+      description: A memory initialization issue was addressed. This issue is fixed in macOS Ventura 13.3. A remote user may be able to cause unexpected app termination or arbitrary code execution
+      published: 2023-05-08T20:15:17.367
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+    - id: CVE-2023-27935
+      description: The issue was addressed with improved bounds checks. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4, macOS Big Sur 11.7.5. A remote user may be able to cause unexpected app termination or arbitrary code execution
+      published: 2023-05-08T20:15:17.423
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213677
+    - id: CVE-2023-1649
+      description: The AI ChatBot WordPress plugin before 4.5.1 does not sanitise and escape numerous of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)
+      published: 2023-05-08T14:15:12.670
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/ea806115-14ab-4bc4-a272-2141cb14454a
+    - id: CVE-2023-27937
+      description: An integer overflow was addressed with improved input validation. This issue is fixed in macOS Ventura 13.3, macOS Big Sur 11.7.5, macOS Monterey 12.6.4, watchOS 9.4, tvOS 16.4, iOS 16.4 and iPadOS 16.4. Parsing a maliciously crafted plist may lead to an unexpected app termination or arbitrary code execution
+      published: 2023-05-08T20:15:17.550
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213674
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213677
+        - https://support.apple.com/en-us/HT213678
+    - id: CVE-2023-27938
+      description: An out-of-bounds read issue was addressed with improved input validation. This issue is fixed in GarageBand for macOS 10.4.8. Parsing a maliciously crafted MIDI file may lead to an unexpected application termination or arbitrary code execution
+      published: 2023-05-08T20:15:17.610
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213650
+    - id: CVE-2023-27941
+      description: A validation issue was addressed with improved input sanitization. This issue is fixed in macOS Ventura 13.3, iOS 15.7.4 and iPadOS 15.7.4. An app may be able to disclose kernel memory
+      published: 2023-05-08T20:15:17.670
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213673
+    - id: CVE-2023-27942
+      description: The issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4, watchOS 9.4, tvOS 16.4, iOS 16.4 and iPadOS 16.4. An app may be able to access user-sensitive data
+      published: 2023-05-08T20:15:17.733
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213674
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213677
+        - https://support.apple.com/en-us/HT213678
+    - id: CVE-2023-27943
+      description: This issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.3, iOS 16.4 and iPadOS 16.4. Files downloaded from the internet may not have the quarantine flag applied
+      published: 2023-05-08T20:15:17.790
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213676
+    - id: CVE-2023-27944
+      description: This issue was addressed with a new entitlement. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4, macOS Big Sur 11.7.5. An app may be able to break out of its sandbox
+      published: 2023-05-08T20:15:17.857
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213677
+    - id: CVE-2023-27945
+      description: This issue was addressed with improved entitlements. This issue is fixed in Xcode 14.3. A sandboxed app may be able to collect system logs
+      published: 2023-05-08T20:15:17.930
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213679
+    - id: CVE-2023-27946
+      description: An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4, iOS 15.7.4 and iPadOS 15.7.4, macOS Big Sur 11.7.5. Processing a maliciously crafted file may lead to unexpected app termination or arbitrary code execution
+      published: 2023-05-08T20:15:17.990
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213673
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213677
+    - id: CVE-2023-27949
+      description: An out-of-bounds read was addressed with improved input validation. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4, iOS 15.7.4 and iPadOS 15.7.4. Processing a maliciously crafted file may lead to unexpected app termination or arbitrary code execution
+      published: 2023-05-08T20:15:18.043
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213673
+        - https://support.apple.com/en-us/HT213677
+    - id: CVE-2023-27951
+      description: The issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4, macOS Big Sur 11.7.5. An archive may be able to bypass Gatekeeper
+      published: 2023-05-08T20:15:18.100
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213677
+    - id: CVE-2023-27952
+      description: A race condition was addressed with improved locking. This issue is fixed in macOS Ventura 13.3. An app may bypass Gatekeeper checks
+      published: 2023-05-08T20:15:18.157
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+    - id: CVE-2023-27953
+      description: The issue was addressed with improved memory handling. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4, macOS Big Sur 11.7.5. A remote user may be able to cause unexpected system termination or corrupt kernel memory
+      published: 2023-05-08T20:15:18.207
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213677
+    - id: CVE-2023-27954
+      description: The issue was addressed by removing origin information. This issue is fixed in macOS Ventura 13.3, watchOS 9.4, tvOS 16.4, iOS 15.7.4 and iPadOS 15.7.4, Safari 16.4, iOS 16.4 and iPadOS 16.4. A website may be able to track sensitive user information
+      published: 2023-05-08T20:15:18.267
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213671
+        - https://support.apple.com/en-us/HT213673
+        - https://support.apple.com/en-us/HT213674
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213678
+    - id: CVE-2023-27955
+      description: The issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4, macOS Big Sur 11.7.5, iOS 16.4 and iPadOS 16.4. An app may be able to read arbitrary files
+      published: 2023-05-08T20:15:18.317
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213677
+    - id: CVE-2023-27956
+      description: The issue was addressed with improved memory handling. This issue is fixed in macOS Ventura 13.3, watchOS 9.4, tvOS 16.4, iOS 15.7.4 and iPadOS 15.7.4, iOS 16.4 and iPadOS 16.4. Processing a maliciously crafted image may result in disclosure of process memory
+      published: 2023-05-08T20:15:18.383
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213673
+        - https://support.apple.com/en-us/HT213674
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213678
+    - id: CVE-2023-27957
+      description: A buffer overflow issue was addressed with improved memory handling. This issue is fixed in macOS Ventura 13.3. Processing a maliciously crafted file may lead to unexpected app termination or arbitrary code execution
+      published: 2023-05-08T20:15:18.433
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+    - id: CVE-2023-27958
+      description: The issue was addressed with improved memory handling. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4, macOS Big Sur 11.7.5. A remote user may be able to cause unexpected system termination or corrupt kernel memory
+      published: 2023-05-08T20:15:18.493
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213677
+    - id: CVE-2023-27959
+      description: The issue was addressed with improved memory handling. This issue is fixed in iOS 16.4 and iPadOS 16.4. An app may be able to execute arbitrary code with kernel privileges
+      published: 2023-05-08T20:15:18.547
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213676
+    - id: CVE-2023-27960
+      description: This issue was addressed by removing the vulnerable code. This issue is fixed in GarageBand for macOS 10.4.8. An app may be able to gain elevated privileges during the installation of GarageBand
+      published: 2023-05-08T20:15:18.603
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213650
+    - id: CVE-2023-27961
+      description: Multiple validation issues were addressed with improved input sanitization. This issue is fixed in macOS Ventura 13.3, macOS Big Sur 11.7.5, macOS Monterey 12.6.4, watchOS 9.4, iOS 15.7.4 and iPadOS 15.7.4, iOS 16.4 and iPadOS 16.4. Importing a maliciously crafted calendar invitation may exfiltrate user information
+      published: 2023-05-08T20:15:18.663
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213673
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213677
+        - https://support.apple.com/en-us/HT213678
+    - id: CVE-2023-27962
+      description: A logic issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4, macOS Big Sur 11.7.5. An app may be able to modify protected parts of the file system
+      published: 2023-05-08T20:15:18.717
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213677
+    - id: CVE-2023-27963
+      description: The issue was addressed with additional permissions checks. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4, watchOS 9.4, iOS 15.7.4 and iPadOS 15.7.4, iOS 16.4 and iPadOS 16.4. A shortcut may be able to use sensitive data with certain actions without prompting the user
+      published: 2023-05-08T20:15:18.773
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213673
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213677
+        - https://support.apple.com/en-us/HT213678
+    - id: CVE-2023-27965
+      description: A memory corruption issue was addressed with improved state management. This issue is fixed in macOS Ventura 13.3, Studio Display Firmware Update 16.4. An app may be able to execute arbitrary code with kernel privileges
+      published: 2023-05-08T20:15:18.833
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213672
+    - id: CVE-2023-27966
+      description: The issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.3. An app may be able to break out of its sandbox
+      published: 2023-05-08T20:15:18.890
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+    - id: CVE-2023-27967
+      description: The issue was addressed with improved memory handling. This issue is fixed in Xcode 14.3. An app may be able to execute arbitrary code out of its sandbox or with certain elevated privileges
+      published: 2023-05-08T20:15:18.937
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213679
+    - id: CVE-2023-27968
+      description: A buffer overflow issue was addressed with improved memory handling. This issue is fixed in macOS Ventura 13.3. An app may be able to cause unexpected system termination or write kernel memory
+      published: 2023-05-08T20:15:19.000
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+    - id: CVE-2023-27969
+      description: A use after free issue was addressed with improved memory management. This issue is fixed in macOS Ventura 13.3, watchOS 9.4, tvOS 16.4, iOS 15.7.4 and iPadOS 15.7.4, iOS 16.4 and iPadOS 16.4. An app may be able to execute arbitrary code with kernel privileges
+      published: 2023-05-08T20:15:19.053
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213673
+        - https://support.apple.com/en-us/HT213674
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213678
+    - id: CVE-2023-27970
+      description: An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 16.4 and iPadOS 16.4. An app may be able to execute arbitrary code with kernel privileges
+      published: 2023-05-08T20:15:19.110
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213676
+    - id: CVE-2023-28178
+      description: A logic issue was addressed with improved validation. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4, iOS 16.4 and iPadOS 16.4. An app may be able to bypass Privacy preferences
+      published: 2023-05-08T20:15:19.163
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213677
+    - id: CVE-2023-28180
+      description: A denial-of-service issue was addressed with improved memory handling. This issue is fixed in macOS Ventura 13.3. A user in a privileged network position may be able to cause a denial-of-service
+      published: 2023-05-08T20:15:19.220
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+    - id: CVE-2023-28181
+      description: The issue was addressed with improved memory handling. This issue is fixed in macOS Ventura 13.3, tvOS 16.4, watchOS 9.4, iOS 16.4 and iPadOS 16.4. An app may be able to execute arbitrary code with kernel privileges
+      published: 2023-05-08T20:15:19.273
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213674
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213678
+    - id: CVE-2023-28182
+      description: The issue was addressed with improved authentication. This issue is fixed in macOS Ventura 13.3, macOS Big Sur 11.7.5, macOS Monterey 12.6.4, iOS 15.7.4 and iPadOS 15.7.4, iOS 16.4 and iPadOS 16.4. A user in a privileged network position may be able to spoof a VPN server that is configured with EAP-only authentication on a device
+      published: 2023-05-08T20:15:19.330
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213673
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213676
+        - https://support.apple.com/en-us/HT213677
+    - id: CVE-2023-28189
+      description: The issue was addressed with improved checks. This issue is fixed in macOS Ventura 13.3. An app may be able to view sensitive information
+      published: 2023-05-08T20:15:19.417
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+    - id: CVE-2023-28190
+      description: A privacy issue was addressed by moving sensitive data to a more secure location. This issue is fixed in macOS Ventura 13.3. An app may be able to access user-sensitive data
+      published: 2023-05-08T20:15:19.493
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+    - id: CVE-2023-28192
+      description: A permissions issue was addressed with improved validation. This issue is fixed in macOS Ventura 13.3, macOS Monterey 12.6.4, macOS Big Sur 11.7.5. An app may be able to read sensitive location information
+      published: 2023-05-08T20:15:19.577
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213675
+        - https://support.apple.com/en-us/HT213677
+    - id: CVE-2023-28194
+      description: The issue was addressed with improved checks. This issue is fixed in iOS 16.4 and iPadOS 16.4. An app may be able to unexpectedly create a bookmark on the Home Screen
+      published: 2023-05-08T20:15:19.633
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213676
+    - id: CVE-2023-30019
+      description: imgproxy <=3.14.0 is vulnerable to Server-Side Request Forgery (SSRF) due to a lack of sanitization of the imageURL parameter.
+      published: 2023-05-08T15:15:11.087
+      severity: ""
+      privileges: ""
+      references:
+        - https://breakandpray.com/cve-2023-30019-ssrf-in-imgproxy/
+        - https://github.com/imgproxy/imgproxy
+    - id: CVE-2023-28201
+      description: This issue was addressed with improved state management. This issue is fixed in macOS Ventura 13.3, iOS 15.7.4 and iPadOS 15.7.4, Safari 16.4, iOS 16.4 and iPadOS 16.4. A remote user may be able to cause unexpected app termination or arbitrary code execution
+      published: 2023-05-08T20:15:19.747
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.apple.com/en-us/HT213670
+        - https://support.apple.com/en-us/HT213671
+        - https://support.apple.com/en-us/HT213673
+        - https://support.apple.com/en-us/HT213676
+    - id: CVE-2023-30787
+      description: MonicaHQ version 4.0.0 allows an authenticated remote attacker to execute malicious code in the application via CSTI in the `people:id/introductions` endpoint and first_met_additional_info parameter.
+      published: 2023-05-08T20:15:20.030
+      severity: ""
+      privileges: ""
+      references:
+        - https://fluidattacks.com/advisories/napoli
+        - https://www.monicahq.com/
+    - id: CVE-2023-30788
+      description: MonicaHQ version 4.0.0 allows an authenticated remote attacker to execute malicious code in the application via CSTI in the `people/add` endpoint and nickName, description, lastName, middleName and firstName parameter.
+      published: 2023-05-08T20:15:20.087
+      severity: ""
+      privileges: ""
+      references:
+        - https://fluidattacks.com/advisories/napoli
+        - https://www.monicahq.com/
+    - id: CVE-2023-30789
+      description: MonicaHQ version 4.0.0 allows an authenticated remote attacker to execute malicious code in the application via CSTI in the `people:id/work` endpoint and job and company parameter.
+      published: 2023-05-08T20:15:20.150
+      severity: ""
+      privileges: ""
+      references:
+        - https://fluidattacks.com/advisories/napoli
+        - https://www.monicahq.com/
+    - id: CVE-2023-30790
+      description: MonicaHQ version 4.0.0 allows an authenticated remote attacker to execute malicious code in the application via CSTI in the `people:id/relationships` endpoint and first_name and last_name parameter.
+      published: 2023-05-08T20:15:20.207
+      severity: ""
+      privileges: ""
+      references:
+        - https://fluidattacks.com/advisories/napoli
+        - https://www.monicahq.com/
+    - id: CVE-2023-32233
+      description: In the Linux kernel through 6.3.1, a use-after-free in Netfilter nf_tables when processing batch requests can be abused to perform arbitrary read and write operations on kernel memory. Unprivileged local users can obtain root privileges. This occurs because anonymous sets are mishandled.
+      published: 2023-05-08T20:15:20.267
+      severity: ""
+      privileges: ""
+      references:
+        - https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=c1592a89942e9678f7d9c8030efa777c0d57edab
+        - https://github.com/torvalds/linux/commit/c1592a89942e9678f7d9c8030efa777c0d57edab
+        - https://www.openwall.com/lists/oss-security/2023/05/08/4
+    - id: CVE-2023-21404
+      description: AXIS OS 11.0.X - 11.3.x use a static RSA key in legacy LUA-components to protect Axis-specific source code. The static RSA key is not used in any other secure communication nor can it be used to compromise the device or any customer data.
+      published: 2023-05-08T21:15:10.727
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.axis.com/dam/public/07/0a/20/cve-2023-21404-en-US-398426.pdf
+    - id: CVE-2023-1408
+      description: The Video List Manager WordPress plugin through 1.7 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by high privilege users such as admin
+      published: 2023-05-08T14:15:12.577
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/baf7ef4d-b2ba-48e0-9c17-74fa27e0c15b
+    - id: CVE-2023-1347
+      description: The Customizer Export/Import WordPress plugin before 0.9.6 unserializes user input provided via the settings, which could allow high privilege users such as admin to perform PHP Object Injection when a suitable gadget is present
+      published: 2023-05-08T14:15:12.457
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/356a5977-c90c-4fc6-98ed-032d5b27f272
+    - id: CVE-2023-1011
+      description: The AI ChatBot WordPress plugin before 4.4.5 does not escape most of its settings before outputting them back in the dashboard, and does not have a proper CSRF check, allowing attackers to make a logged in admin set XSS payloads in them.
+      published: 2023-05-08T14:15:12.367
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/d1784446-b3da-4175-9dac-20b030f19984
+    - id: CVE-2023-0948
+      description: The Japanized For WooCommerce WordPress plugin before 2.5.8 does not escape generated URLs before outputting them in attributes, leading to Reflected Cross-Site Scripting
+      published: 2023-05-08T14:15:12.277
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/a78d75b2-85a0-41eb-9720-c726ca2e8718
+    - id: CVE-2023-2513
+      description: A use-after-free vulnerability was found in the Linux kernel's ext4 filesystem in the way it handled the extra inode size for extended attributes. This flaw could allow a privileged local user to cause a system crash or other undefined behaviors.
+      published: 2023-05-08T21:15:11.077
+      severity: ""
+      privileges: ""
+      references:
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2193097
+        - https://github.com/torvalds/linux/commit/67d7d8ad99be
+        - https://lore.kernel.org/all/20220616021358.2504451-1-libaokun1@huawei.com/
+    - id: CVE-2023-2582
+      description: A prototype pollution vulnerability exists in Strikingly CMS which can result in reflected cross-site scripting (XSS) in affected applications and sites built with Strikingly. The vulnerability exists because of Strikingly JavaScript library parsing the URL fragment allows access to the __proto__ or constructor properties and the Object prototype. By leveraging an embedded gadget like jQuery, an attacker who convinces a victim to visit a specially crafted link could achieve arbitrary javascript execution in the context of the user's browser.
+      published: 2023-05-08T21:15:11.150
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.tenable.com/security/research/tra-2023-18
+    - id: CVE-2023-30334
+      description: AsmBB v2.9.1 was discovered to contain multiple cross-site scripting (XSS) vulnerabilities via the MiniMag.asm and bbcode.asm libraries.
+      published: 2023-05-08T21:15:11.207
+      severity: ""
+      privileges: ""
+      references:
+        - https://asm32.info/fossil/asmbb/info/7dfa4f56b473f76c
+        - https://board.asm32.info/thanks-to-the-hxp-ctf-challenge-several-serious-vulnerabilities-has-been-fixed.394/
+        - https://ctf.zeyu2001.com/2023/hxp-ctf/true_web_assembly
+        - https://fresh.flatassembler.net/fossil/repo/fresh/info/a3caaf7ad8503348
+        - https://gist.github.com/zeyu2001/1985d03ff919d08a9ea79bdeb5a16949
+    - id: CVE-2023-0894
+      description: The Pickup | Delivery | Dine-in date time WordPress plugin through 1.0.9 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)
+      published: 2023-05-08T14:15:12.157
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/d42eff41-096f-401d-bbfb-dcd6e08faca5
+    - id: CVE-2023-0768
+      description: The Avirato hotels online booking engine WordPress plugin through 5.0.5 does not validate and escape some of its shortcode attributes before using them in SQL statement/s, which could allow any authenticated users, such as subscriber to perform SQL Injection attacks.
+      published: 2023-05-08T14:15:12.067
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/03d061b4-1b71-44f5-b3dc-f82a5fcd92eb
+    - id: CVE-2023-0603
+      description: The Sloth Logo Customizer WordPress plugin through 2.0.2 does not have CSRF check when updating its settings, and is missing sanitisation as well as escaping, which could allow attackers to make logged in admin add Stored XSS payloads via a CSRF attack
+      published: 2023-05-08T14:15:11.967
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/1c93ea8f-4e68-4da1-994e-35a5873278ba
+    - id: CVE-2023-0544
+      description: The WP Login Box WordPress plugin through 2.0.2 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)
+      published: 2023-05-08T14:15:11.887
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/8ef9585f-67d7-4651-977a-fcad113882bd
+    - id: CVE-2023-0542
+      description: The Custom Post Type List Shortcode WordPress plugin through 1.4.4 does not validate and escape some of its shortcode attributes before outputting them back in a page/post where the shortcode is embed, which could allow users with the contributor role and above to perform Stored Cross-Site Scripting attacks.
+      published: 2023-05-08T14:15:11.777
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/17de2f77-3e6c-4c22-9196-6e5577ee7fcf
+    - id: CVE-2023-0537
+      description: The Product Slider For WooCommerce Lite WordPress plugin through 1.1.7 does not validate and escape some of its shortcode attributes before outputting them back in a page/post where the shortcode is embed, which could allow users with the contributor role and above to perform Stored Cross-Site Scripting attacks
+      published: 2023-05-08T14:15:11.677
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/d7369f1d-d1a0-4576-a676-c70525a6c743
+    - id: CVE-2023-0536
+      description: The Wp-D3 WordPress plugin through 2.4.1 does not validate and escape some of its shortcode attributes before outputting them back in a page/post where the shortcode is embed, which could allow users with the contributor role and above to perform Stored Cross-Site Scripting attacks.
+      published: 2023-05-08T14:15:11.597
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/7b19d792-8083-4c0c-a45e-a99c1f5f0df0
+    - id: CVE-2023-0526
+      description: The Post Shortcode WordPress plugin through 2.0.9 does not validate and escape some of its shortcode attributes before outputting them back in a page/post where the shortcode is embed, which could allow users with the contributor role and above to perform Stored Cross-Site Scripting attacks
+      published: 2023-05-08T14:15:11.507
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/0ec58310-243d-40c8-9fa6-8753947bfa89
+    - id: CVE-2023-0522
+      description: The Enable/Disable Auto Login when Register WordPress plugin through 1.1.0 does not have CSRF check in place when updating its settings, which could allow attackers to make a logged in admin change them via a CSRF attack
+      published: 2023-05-08T14:15:11.417
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/c7984bfb-86a3-4530-90ae-17ab39af1c54
+    - id: CVE-2023-0514
+      description: The Membership Database WordPress plugin through 1.0 does not sanitise and escape a parameter before outputting it back in the page, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin
+      published: 2023-05-08T14:15:11.330
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/c6cc400a-9bfb-417d-9206-5582a49d0f05
+    - id: CVE-2023-0421
+      description: The Cloud Manager WordPress plugin through 1.0 does not sanitise and escape the query param ricerca before outputting it in an admin panel, allowing unauthenticated attackers to trick a logged in admin to trigger a XSS payload by clicking a link.
+      published: 2023-05-08T14:15:11.233
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/a356fea0-f143-4736-b2b2-c545c525335c
+    - id: CVE-2023-0280
+      description: The Ultimate Carousel For Elementor WordPress plugin through 2.1.7 does not validate and escape some of its block options before outputting them back in a page/post where the block is embed, which could allow users with the contributor role and above to perform Stored Cross-Site Scripting attacks.
+      published: 2023-05-08T14:15:11.147
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/cb7ed9e6-0fa0-4ebb-9109-8f33defc8b32
+    - id: CVE-2023-0268
+      description: The Mega Addons For WPBakery Page Builder WordPress plugin before 4.3.0 does not validate and escape some of its shortcode attributes before outputting them back in a page/post where the shortcode is embed, which could allow users with the contributor role and above to perform Stored Cross-Site Scripting attacks.
+      published: 2023-05-08T14:15:11.057
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/99389641-ad1e-45c1-a42f-2a010ee22d76
+    - id: CVE-2023-0267
+      description: The Ultimate Carousel For WPBakery Page Builder WordPress plugin through 2.6 does not validate and escape some of its shortcode attributes before outputting them back in a page/post where the shortcode is embed, which could allow users with the contributor role and above to perform Stored Cross-Site Scripting attacks.
+      published: 2023-05-08T14:15:10.967
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/7ba7849d-e07b-465a-bfb7-10c8186be140
+    - id: CVE-2022-4118
+      description: The Bitcoin / AltCoin Payment Gateway for WooCommerce & Multivendor store / shop WordPress plugin through 1.7.1 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by authenticated users
+      published: 2023-05-08T14:15:10.883
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/2839ff82-7d37-4392-8fa3-d490680d42c4
+    - id: CVE-2021-28999
+      description: SQL Injection vulnerability in CMS Made Simple through 2.2.15 allows remote attackers to execute arbitrary commands via the m1_sortby parameter to modules/News/function.admin_articlestab.php.
+      published: 2023-05-08T14:15:10.770
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/beerpwn/CVE/blob/master/cms_made_simple_2021/sqli_order_by/CMS-MS-SQLi-report.md
+        - https://seclists.org/fulldisclosure/2021/Mar/49
+    - id: CVE-2021-28998
+      description: File upload vulnerability in CMS Made Simple through 2.2.15 allows remote authenticated attackers to gain a webshell via a crafted phar file.
+      published: 2023-05-08T14:15:10.707
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/beerpwn/CVE/blob/master/cms_made_simple_2021/file_upload_RCE/File_upload_to_RCE.md
+        - https://seclists.org/fulldisclosure/2021/Mar/50
+    - id: CVE-2021-27280
+      description: OS Command injection vulnerability in mblog 3.5.0 allows attackers to execute arbitrary code via crafted theme when it gets selected.
+      published: 2023-05-08T14:15:10.640
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/langhsu/mblog/
+        - https://github.com/langhsu/mblog/issues/44
+    - id: CVE-2020-36065
+      description: Cross Site Request Forgery (CSRF) vulnerability in FlyCms 1.0 allows attackers to add arbitrary administrator accounts via system/admin/admin_save.
+      published: 2023-05-08T14:15:10.563
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/sunkaifei/FlyCms
+        - https://github.com/sunkaifei/FlyCms/issues/8
+    - id: CVE-2020-23966
+      description: SQL Injection vulnerability in victor cms 1.0 allows attackers to execute arbitrary commands via the post parameter to /post.php in a crafted GET request.
+      published: 2023-05-08T14:15:10.493
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/VictorAlagwu/CMSsite/
+        - https://github.com/VictorAlagwu/CMSsite/issues/15
+    - id: CVE-2021-31239
+      description: An issue found in SQLite SQLite3 v.3.35.4 that allows a remote attacker to cause a denial of service via the appendvfs.c function.
+      published: 2023-05-09T02:15:08.907
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Tsiming/Vulnerabilities/blob/main/SQLite/CVE-2021-31239
+        - https://www.sqlite.org/cves.html
+        - https://www.sqlite.org/forum/forumpost/d9fce1a89b
+    - id: CVE-2022-38685
+      description: In bluetooth service, there is a possible missing permission check. This could lead to local denial of service in bluetooth service with no additional execution privileges needed.
+      published: 2023-05-09T02:15:08.973
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-39089
+      description: In mlog service, there is a possible out of bounds read due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:09.023
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-44419
+      description: In modem, there is a possible missing verification of NAS Security Mode Command Replay Attacks in LTE. This could local denial of service with no additional execution privileges.
+      published: 2023-05-09T02:15:09.073
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-44420
+      description: In modem, there is a possible missing verification of HashMME value in Security Mode Command. This could local denial of service with no additional execution privileges.
+      published: 2023-05-09T02:15:09.133
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-44433
+      description: In phoneEx service, there is a possible missing permission check. This could lead to local escalation of privilege with no additional execution privileges.
+      published: 2023-05-09T02:15:09.190
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47334
+      description: In phasecheck server, there is a possible out of bounds read due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:09.240
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47340
+      description: In h265 codec firmware, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-05-09T02:15:09.290
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47469
+      description: In ext4fsfilter driver, there is a possible out of bounds read due to a missing bounds check. This could local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:09.333
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47470
+      description: In ext4fsfilter driver, there is a possible out of bounds read due to a missing bounds check. This could local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:09.383
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47485
+      description: In modem control device, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:09.430
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47486
+      description: In ext4fsfilter driver, there is a possible out of bounds read due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:09.480
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47487
+      description: In thermal service, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service local denial of service with no additional execution privileges.
+      published: 2023-05-09T02:15:09.527
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47488
+      description: In spipe drive, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:09.567
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47489
+      description: In soter service, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:09.613
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47490
+      description: In soter service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-05-09T02:15:09.660
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47491
+      description: In soter service, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:09.707
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47492
+      description: In soter service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-05-09T02:15:09.753
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47493
+      description: In soter service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-05-09T02:15:09.797
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47494
+      description: In soter service, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:09.843
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47495
+      description: In soter service, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:09.890
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47496
+      description: In soter service, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:09.943
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47497
+      description: In soter service, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:09.987
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47498
+      description: In soter service, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:10.033
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-47499
+      description: In soter service, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:10.083
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48231
+      description: In soter service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-05-09T02:15:10.133
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48232
+      description: In FM service , there is a possible missing params check. This could lead to local denial of service in FM service .
+      published: 2023-05-09T02:15:10.187
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48233
+      description: In FM service , there is a possible missing params check. This could lead to local denial of service in FM service .
+      published: 2023-05-09T02:15:10.233
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48234
+      description: In FM service , there is a possible missing params check. This could lead to local denial of service in FM service .
+      published: 2023-05-09T02:15:10.277
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48235
+      description: In MP3 encoder, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:10.317
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48236
+      description: In MP3 encoder, there is a possible out of bounds read due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:10.360
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48237
+      description: In Image filter, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:10.403
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48238
+      description: In Image filter, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:10.447
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48239
+      description: In camera driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:10.490
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48240
+      description: In camera driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:10.540
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48241
+      description: In telephony service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-05-09T02:15:10.587
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48242
+      description: In telephony service, there is a possible missing permission check. This could lead to local information disclosure with no additional execution privileges.
+      published: 2023-05-09T02:15:10.633
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48243
+      description: In audio service, there is a possible missing permission check. This could lead to local escalation of privilege with no additional execution privileges.
+      published: 2023-05-09T02:15:10.677
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48244
+      description: In audio service, there is a possible missing permission check. This could lead to local escalation of privilege with no additional execution privileges.
+      published: 2023-05-09T02:15:10.727
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48245
+      description: In audio service, there is a possible missing permission check. This could lead to local escalation of privilege with no additional execution privileges.
+      published: 2023-05-09T02:15:10.770
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48246
+      description: In audio service, there is a possible missing permission check. This could lead to local escalation of privilege with no additional execution privileges.
+      published: 2023-05-09T02:15:10.817
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48247
+      description: In audio service, there is a possible missing permission check. This could lead to local escalation of privilege with no additional execution privileges.
+      published: 2023-05-09T02:15:10.867
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48248
+      description: In audio service, there is a possible missing permission check. This could lead to local escalation of privilege with no additional execution privileges.
+      published: 2023-05-09T02:15:10.910
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48249
+      description: In audio service, there is a possible missing permission check. This could lead to local escalation of privilege with no additional execution privileges.
+      published: 2023-05-09T02:15:10.957
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48250
+      description: In audio service, there is a possible missing permission check. This could lead to local escalation of privilege with no additional execution privileges.
+      published: 2023-05-09T02:15:10.997
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48368
+      description: In audio service, there is a possible missing permission check. This could lead to local escalation of privilege with no additional execution privileges.
+      published: 2023-05-09T02:15:11.037
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48369
+      description: In audio service, there is a possible missing permission check. This could lead to local escalation of privilege with no additional execution privileges.
+      published: 2023-05-09T02:15:11.083
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48370
+      description: In dialer service, there is a possible missing permission check. This could lead to local information disclosure with no additional execution privileges.
+      published: 2023-05-09T02:15:11.120
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48371
+      description: In dialer service, there is a possible missing permission check. This could lead to local information disclosure with no additional execution privileges.
+      published: 2023-05-09T02:15:11.163
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48372
+      description: In bootcp service, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:11.210
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48373
+      description: In tee service, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:11.253
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48374
+      description: In tee service, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:11.297
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48375
+      description: In contacts service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-05-09T02:15:11.347
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48376
+      description: In dialer service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-05-09T02:15:11.397
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48377
+      description: In dialer service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-05-09T02:15:11.457
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48378
+      description: In engineermode service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-05-09T02:15:11.500
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48379
+      description: In dialer service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-05-09T02:15:11.547
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48380
+      description: In modem control device, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:11.593
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48381
+      description: In modem control device, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:11.637
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48382
+      description: In log service, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:11.690
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48383
+      description: .In srtd service, there is a possible missing permission check. This could lead to local escalation of privilege with no additional execution privileges.
+      published: 2023-05-09T02:15:11.737
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48384
+      description: In srtd service, there is a possible missing permission check. This could lead to local escalation of privilege with no additional execution privileges.
+      published: 2023-05-09T02:15:11.787
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48385
+      description: In cp_dump driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:11.833
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48386
+      description: the apipe driver, there is a possible use after free due to a logic error. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:11.877
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48387
+      description: the apipe driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:11.920
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48388
+      description: In powerEx service, there is a possible missing permission check. This could lead to local escalation of privilege with no additional execution privileges.
+      published: 2023-05-09T02:15:11.960
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2022-48389
+      description: In modem control device, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-05-09T02:15:12.003
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1654776866982133761
+    - id: CVE-2020-22755
+      description: File upload vulnerability in MCMS 5.0 allows attackers to execute arbitrary code via a crafted thumbnail. A different vulnerability than CVE-2022-31943.
+      published: 2023-05-08T14:15:10.423
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/ming-soft/MCMS
+        - https://github.com/ming-soft/MCMS/issues/42
+    - id: CVE-2020-22334
+      description: Cross Site Request Forgery (CSRF) vulnerability in beescms v4 allows attackers to delete the administrator account via crafted request to /admin/admin_admin.php.
+      published: 2023-05-08T14:15:10.357
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/source-trace/beescms
+        - https://github.com/source-trace/beescms/issues/5
+    - id: CVE-2020-21038
+      description: Open redirect vulnerability in typecho 1.1-17.10.30-release via the referer parameter to Login.php.
+      published: 2023-05-08T14:15:10.283
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/typecho/typecho
+        - https://github.com/typecho/typecho/issues/952
+    - id: CVE-2020-19660
+      description: Cross Site Scripting (XSS) pandao editor.md 1.5.0 allows attackers to execute arbitrary code via crafted linked url values.
+      published: 2023-05-08T14:15:10.217
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/pandao/editor.md
+        - https://github.com/pandao/editor.md/issues/697
+    - id: CVE-2020-18282
+      description: Cross-site scripting (XSS) vulnerability in NoneCms 1.3.0 allows remote attackers to inject arbitrary web script or HTML via feedback feature.
+      published: 2023-05-08T14:15:10.147
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/nangge/noneCms
+        - https://github.com/nangge/noneCms/issues/23
+    - id: CVE-2020-18132
+      description: Cross Site Scripting (XSS) vulnerability in MIPCMS 3.6.0 allows attackers to execute arbitrary code via the category name field to categoryEdit.
+      published: 2023-05-08T14:15:10.067
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/sansanyun/mipcms
+        - https://github.com/sansanyun/mipcms/issues/4
+    - id: CVE-2020-18131
+      description: Cross Site Request Forgery (CSRF) vulnerability in Bluethrust Clan Scripts v4 allows attackers to escilate privledges to an arbitrary account via a crafted request to /members/console.php?cID=5.
+      published: 2023-05-08T14:15:10.000
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/bluethrust/clanscripts
+        - https://github.com/bluethrust/clanscripts/issues/27
+    - id: CVE-2023-25754
+      description: 'Privilege Context Switching Error vulnerability in Apache Software Foundation Apache Airflow.This issue affects Apache Airflow: before 2.6.0.'
+      published: 2023-05-08T12:15:09.613
+      severity: ""
+      privileges: ""
+      references:
+        - http://www.openwall.com/lists/oss-security/2023/05/08/2
+        - https://github.com/apache/airflow/pull/29506
+        - https://lists.apache.org/thread/3y83gr0qb8t49ppfk4fb2yk7md8ltq4v
+    - id: CVE-2023-29247
+      description: 'Task instance details page in the UI is vulnerable to a stored XSS.This issue affects Apache Airflow: before 2.6.0.'
+      published: 2023-05-08T10:15:09.163
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/apache/airflow/pull/30447
+        - https://github.com/apache/airflow/pull/30779
+        - https://lists.apache.org/thread/kqf5lxmko133780clsp827xfsh4xd3fl
+    - id: CVE-2023-31039
+      description: "Security vulnerability in Apache bRPC <1.5.0 on all platforms allows attackers to execute arbitrary code via ServerOptions::pid_file.\nAn attacker that can influence the ServerOptions pid_file parameter with which the bRPC server is started can execute arbitrary code with the permissions of the bRPC process.\n\nSolution:\n1. upgrade to bRPC >= 1.5.0, download link:  https://dist.apache.org/repos/dist/release/brpc/1.5.0/ https://dist.apache.org/repos/dist/release/brpc/1.5.0/ \n2. If you are using an old version of bRPC and hard to upgrade, you can apply this patch:  https://github.com/apache/brpc/pull/2218 https://github.com/apache/brpc/pull/2218 "
+      published: 2023-05-08T09:15:09.637
+      severity: ""
+      privileges: ""
+      references:
+        - http://www.openwall.com/lists/oss-security/2023/05/08/1
+        - https://lists.apache.org/thread/jqpttrqbc38yhckgp67xk399hqxnz7jn
+    - id: CVE-2023-31038
+      description: "SQL injection in Log4cxx when using the ODBC appender to send log messages to a database.  No fields sent to the database were properly escaped for SQL injection.  This has been the case since at least version 0.9.0(released 2003-08-06)\n\n\n\n\nNote that Log4cxx is a C++ framework, so only C++ applications are affected.\n\nBefore version 1.1.0, the ODBC appender was automatically part of Log4cxx if the library was found when compiling the library.  As of version 1.1.0, this must be both explicitly enabled in order to be compiled in.\n\n\n\n\nThree preconditions must be met for this vulnerability to be possible:\n\n1. Log4cxx compiled with ODBC support(before version 1.1.0, this was auto-detected at compile time)\n\n2. ODBCAppender enabled for logging messages to, generally done via a config file\n\n3. User input is logged at some point. If your application does not have user input, it is unlikely to be affected.\n\n\n\n\n\nUsers are recommended to upgrade to version 1.1.0 which properly binds the parameters to the SQL statement, or migrate to the new DBAppender class which supports an ODBC connection in addition to other databases. \nNote that this fix does require a configuration file update, as the old configuration files will not configure properly.  An example is shown below, and more information may be found in the Log4cxx documentation on the ODBCAppender.\n\n\n\n\n\nExample of old configuration snippet:\n\n<appender name=\"SqlODBCAppender\" class=\"ODBCAppender\">\n\n    <param name=\"sql\" value=\"INSERT INTO logs (message) VALUES ('%m')\" />\n\n    ... other params here ...\n\n</appender>\n\n\n\n\nThe migrated configuration snippet with new ColumnMapping parameters:\n\n\n<appender name=\"SqlODBCAppender\" class=\"ODBCAppender\">\n\n\n\n\n    <param name=\"sql\" value=\"INSERT INTO logs (message) VALUES (?)\" />\n\n    <param name=\"ColumnMapping\" value=\"message\"/>\n    ... other params here ...\n\n\n</appender>"
+      published: 2023-05-08T09:15:09.280
+      severity: ""
+      privileges: ""
+      references:
+        - https://lists.apache.org/thread/vgjlpdf353vv91gryspwxrzj6p0fbjd9
+    - id: CVE-2023-30018
+      description: Judging Management System v1.0 is vulnerable to SQL Injection. via /php-jms/review_se_result.php?mainevent_id=.
+      published: 2023-05-08T04:15:09.247
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/10F26/bug_report/blob/main/judging-management-system/SQLi-1.md
