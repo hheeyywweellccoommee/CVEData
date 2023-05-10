@@ -1,0 +1,1363 @@
+data:
+    - id: CVE-2023-24941
+      description: Windows Network File System Remote Code Execution Vulnerability
+      published: 2023-05-09T18:15:12.587
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24941
+    - id: CVE-2023-24943
+      description: Windows Pragmatic General Multicast (PGM) Remote Code Execution Vulnerability
+      published: 2023-05-09T18:15:12.720
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24943
+    - id: CVE-2023-30898
+      description: A vulnerability has been identified in Siveillance Video 2020 R2 (All versions < V20.2 HotfixRev14), Siveillance Video 2020 R3 (All versions < V20.3 HotfixRev12), Siveillance Video 2021 R1 (All versions < V21.1 HotfixRev12), Siveillance Video 2021 R2 (All versions < V21.2 HotfixRev8), Siveillance Video 2022 R1 (All versions < V22.1 HotfixRev7), Siveillance Video 2022 R2 (All versions < V22.2 HotfixRev5), Siveillance Video 2022 R3 (All versions < V22.3 HotfixRev2), Siveillance Video 2023 R1 (All versions < V23.1 HotfixRev1). The Event Server component of affected applications deserializes data without sufficient validations. This could allow an authenticated remote attacker to execute code on the affected system.
+      published: 2023-05-09T13:15:18.107
+      severity: CRITICAL
+      privileges: LOW
+      references:
+        - https://cert-portal.siemens.com/productcert/pdf/ssa-789345.pdf
+    - id: CVE-2023-30899
+      description: A vulnerability has been identified in Siveillance Video 2020 R2 (All versions < V20.2 HotfixRev14), Siveillance Video 2020 R3 (All versions < V20.3 HotfixRev12), Siveillance Video 2021 R1 (All versions < V21.1 HotfixRev12), Siveillance Video 2021 R2 (All versions < V21.2 HotfixRev8), Siveillance Video 2022 R1 (All versions < V22.1 HotfixRev7), Siveillance Video 2022 R2 (All versions < V22.2 HotfixRev5), Siveillance Video 2022 R3 (All versions < V22.3 HotfixRev2), Siveillance Video 2023 R1 (All versions < V23.1 HotfixRev1). The Management Server component of affected applications deserializes data without sufficient validations. This could allow an authenticated remote attacker to execute code on the affected system.
+      published: 2023-05-09T13:15:18.183
+      severity: CRITICAL
+      privileges: LOW
+      references:
+        - https://cert-portal.siemens.com/productcert/pdf/ssa-789345.pdf
+    - id: CVE-2023-31126
+      description: '`org.xwiki.commons:xwiki-commons-xml` is an XML library used by the open-source wiki platform XWiki. The HTML sanitizer, introduced in version 14.6-rc-1, allows the injection of arbitrary HTML code and thus cross-site scripting via invalid data attributes. This vulnerability does not affect restricted cleaning in HTMLCleaner as there attributes are cleaned and thus characters like `/` and `>` are removed in all attribute names. This problem has been patched in XWiki 14.10.4 and 15.0 RC1 by making sure that data attributes only contain allowed characters. There are no known workarounds apart from upgrading to a version including the fix.'
+      published: 2023-05-09T13:15:18.427
+      severity: CRITICAL
+      privileges: LOW
+      references:
+        - https://github.com/xwiki/xwiki-commons/commit/0b8e9c45b7e7457043938f35265b2aa5adc76a68
+        - https://github.com/xwiki/xwiki-commons/security/advisories/GHSA-pv7v-ph6g-3gxv
+        - https://jira.xwiki.org/browse/XCOMMONS-2606
+    - id: CVE-2023-32069
+      description: XWiki Platform is a generic wiki platform. Starting in version 3.3-milestone-2 and prior to versions 14.10.4 and 15.0-rc-1, it's possible for a user to execute anything with the right of the author of the XWiki.ClassSheet document. This has been patched in XWiki 15.0-rc-1 and 14.10.4. There are no known workarounds.
+      published: 2023-05-09T16:15:15.230
+      severity: CRITICAL
+      privileges: LOW
+      references:
+        - https://github.com/xwiki/xwiki-platform/commit/de72760d4a3e1e9be64a10660a0c19e9534e2ec4
+        - https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-36fm-j33w-c25f
+        - https://jira.xwiki.org/browse/XWIKI-20566
+    - id: CVE-2023-32071
+      description: XWiki Platform is a generic wiki platform. Starting in versions 2.2-milestone-1 and prior to versions 14.4.8, 14.10.4, and 15.0-rc-1, it's possible to execute javascript with the right of any user by leading him to a special URL on the wiki targeting a page which contains an attachment. This has been patched in XWiki 15.0-rc-1, 14.10.4, and 14.4.8. The easiest possible workaround is to edit file `<xwiki app>/templates/importinline.vm` and apply the modification described in commit 28905f7f518cc6f21ea61fe37e9e1ed97ef36f01.
+      published: 2023-05-09T16:15:15.297
+      severity: CRITICAL
+      privileges: LOW
+      references:
+        - https://app.intigriti.com/company/submissions/e95a7ad5-7029-4627-abf0-3e3e3ea0b4ce/XWIKI-E93DFEYK
+        - https://github.com/xwiki/xwiki-platform/commit/28905f7f518cc6f21ea61fe37e9e1ed97ef36f01
+        - https://github.com/xwiki/xwiki-platform/security/advisories/GHSA-j9h5-vcgv-2jfm
+        - https://jira.xwiki.org/browse/XWIKI-20340
+    - id: CVE-2023-27407
+      description: A vulnerability has been identified in SCALANCE LPE9403 (All versions < V2.1). The web based management of affected device does not properly validate user input, making it susceptible to command injection. This could allow an authenticated remote attacker to access the underlying operating system as the root user.
+      published: 2023-05-09T13:15:16.640
+      severity: CRITICAL
+      privileges: LOW
+      references:
+        - https://cert-portal.siemens.com/productcert/pdf/ssa-325383.pdf
+    - id: CVE-2023-2591
+      description: Code Injection in GitHub repository nilsteampassnet/teampass prior to 3.0.7.
+      published: 2023-05-09T10:15:10.683
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/nilsteampassnet/teampass/commit/57a977c6323656e5dc06ab5c227e75c3465a1a4a
+        - https://huntr.dev/bounties/705f79f4-f5e3-41d7-82a5-f00441cd984b
+    - id: CVE-2023-29335
+      description: Microsoft Word Security Feature Bypass Vulnerability
+      published: 2023-05-09T18:15:13.783
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-29335
+    - id: CVE-2023-24947
+      description: Windows Bluetooth Driver Remote Code Execution Vulnerability
+      published: 2023-05-09T18:15:12.960
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24947
+    - id: CVE-2023-28283
+      description: Windows Lightweight Directory Access Protocol (LDAP) Remote Code Execution Vulnerability
+      published: 2023-05-09T18:15:13.490
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-28283
+    - id: CVE-2023-24942
+      description: Remote Procedure Call Runtime Denial of Service Vulnerability
+      published: 2023-05-09T18:15:12.643
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24942
+    - id: CVE-2023-29325
+      description: Windows OLE Remote Code Execution Vulnerability
+      published: 2023-05-09T18:15:13.667
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-29325
+    - id: CVE-2023-24940
+      description: Windows Pragmatic General Multicast (PGM) Denial of Service Vulnerability
+      published: 2023-05-09T18:15:12.527
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24940
+    - id: CVE-2023-24939
+      description: Server for NFS Denial of Service Vulnerability
+      published: 2023-05-09T18:15:12.467
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24939
+    - id: CVE-2022-46822
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in JC Development Team WooCommerce JazzCash Gateway Plugin plugin <= 2.0 versions.
+      published: 2023-05-09T13:15:16.187
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/jazzcash-woocommerce-gateway/wordpress-woocommerce-jazzcash-gateway-plugin-plugin-2-0-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-24905
+      description: Remote Desktop Client Remote Code Execution Vulnerability
+      published: 2023-05-09T18:15:12.347
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24905
+    - id: CVE-2022-46858
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Amin A.Rezapour Product Specifications for Woocommerce plugin <= 0.6.0 versions.
+      published: 2023-05-09T13:15:16.323
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/product-specifications/wordpress-product-specifications-for-woocommerce-plugin-0-6-0-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2022-46864
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Umair Saleem Woocommerce Custom Checkout Fields Editor With Drag & Drop plugin <= 0.1 versions.
+      published: 2023-05-09T13:15:16.397
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/woo-custom-checkout-fields/wordpress-woocommerce-custom-checkout-fields-editor-with-drag-drop-plugin-0-1-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-24903
+      description: Windows Secure Socket Tunneling Protocol (SSTP) Remote Code Execution Vulnerability
+      published: 2023-05-09T18:15:12.217
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24903
+    - id: CVE-2023-24953
+      description: Microsoft Excel Remote Code Execution Vulnerability
+      published: 2023-05-09T18:15:13.203
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24953
+    - id: CVE-2023-24901
+      description: Windows NFS Portmapper Information Disclosure Vulnerability
+      published: 2023-05-09T18:15:12.097
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24901
+    - id: CVE-2023-24898
+      description: Windows SMB Denial of Service Vulnerability
+      published: 2023-05-09T18:15:11.913
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24898
+    - id: CVE-2023-29340
+      description: AV1 Video Extension Remote Code Execution Vulnerability
+      published: 2023-05-09T18:15:13.967
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-29340
+    - id: CVE-2023-29341
+      description: AV1 Video Extension Remote Code Execution Vulnerability
+      published: 2023-05-09T18:15:14.027
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-29341
+    - id: CVE-2023-31137
+      description: |-
+        MaraDNS is open-source software that implements the Domain Name System (DNS). In version 3.5.0024 and prior, a remotely exploitable integer underflow vulnerability in the DNS packet decompression function allows an attacker to cause a Denial of Service by triggering an abnormal program termination.
+
+        The vulnerability exists in the `decomp_get_rddata` function within the `Decompress.c` file. When handling a DNS packet with an Answer RR of qtype 16 (TXT record) and any qclass, if the `rdlength` is smaller than `rdata`, the result of the line `Decompress.c:886` is a negative number `len = rdlength - total;`. This value is then passed to the `decomp_append_bytes` function without proper validation, causing the program to attempt to allocate a massive chunk of memory that is impossible to allocate. Consequently, the program exits with an error code of 64, causing a Denial of Service.
+
+        One proposed fix for this vulnerability is to patch `Decompress.c:887` by breaking `if(len <= 0)`, which has been incorporated in version 3.5.0036 via commit bab062bde40b2ae8a91eecd522e84d8b993bab58.
+      published: 2023-05-09T14:15:13.607
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/samboy/MaraDNS/blob/08b21ea20d80cedcb74aa8f14979ec7c61846663/dns/Decompress.c#L886
+        - https://github.com/samboy/MaraDNS/commit/bab062bde40b2ae8a91eecd522e84d8b993bab58
+        - https://github.com/samboy/MaraDNS/security/advisories/GHSA-58m7-826v-9c3c
+    - id: CVE-2023-29462
+      description: "An arbitrary code execution vulnerability contained in Rockwell Automation's Arena Simulation software was reported that could potentially allow a malicious user to commit unauthorized arbitrary code to the software by using a memory buffer overflow in the heap. \n\n potentially resulting in a complete loss of confidentiality, integrity, and availability."
+      published: 2023-05-09T14:15:13.343
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1139391
+    - id: CVE-2023-29461
+      description: "An arbitrary code execution vulnerability contained in Rockwell Automation's Arena Simulation software was reported that could potentially allow a malicious user to commit unauthorized arbitrary code to the software by using a memory buffer overflow in the heap. \n\n potentially resulting in a complete loss of confidentiality, integrity, and availability."
+      published: 2023-05-09T14:15:13.283
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1139391
+    - id: CVE-2023-29460
+      description: An arbitrary code execution vulnerability contained in Rockwell Automation's Arena Simulation software was reported that could potentially allow a malicious user to commit unauthorized arbitrary code to the software by using a memory buffer overflow potentially resulting in a complete loss of confidentiality, integrity, and availability.
+      published: 2023-05-09T14:15:13.217
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1139391
+    - id: CVE-2023-2609
+      description: NULL Pointer Dereference in GitHub repository vim/vim prior to 9.0.1531.
+      published: 2023-05-09T18:15:14.147
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/vim/vim/commit/d1ae8366aff286d41e7f5bc513cc0a1af5130aad
+        - https://huntr.dev/bounties/1679be5a-565f-4a44-a430-836412a0b622
+    - id: CVE-2023-30986
+      description: A vulnerability has been identified in Solid Edge SE2023 (All versions < VX.223.0 Update 3), Solid Edge SE2023 (All versions < VX.223.0 Update 2). Affected applications contain a memory corruption vulnerability while parsing specially crafted STP files. This could allow an attacker to execute code in the context of the current process. (ZDI-CAN-19561)
+      published: 2023-05-09T13:15:18.350
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://cert-portal.siemens.com/productcert/pdf/ssa-932528.pdf
+    - id: CVE-2023-2594
+      description: A vulnerability, which was classified as critical, was found in SourceCodester Food Ordering Management System 1.0. Affected is an unknown function of the component Registration. The manipulation of the argument username leads to sql injection. It is possible to launch the attack remotely. The identifier of this vulnerability is VDB-228396.
+      published: 2023-05-09T13:15:17.910
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://vuldb.com/?ctiid.228396
+        - https://vuldb.com/?id.228396
+    - id: CVE-2023-2610
+      description: Integer Overflow or Wraparound in GitHub repository vim/vim prior to 9.0.1532.
+      published: 2023-05-09T22:15:10.197
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/vim/vim/commit/ab9a2d884b3a4abe319606ea95a5a6d6b01cd73a
+        - https://huntr.dev/bounties/31e67340-935b-4f6c-a923-f7246bc29c7d
+    - id: CVE-2023-29343
+      description: SysInternals Sysmon for Windows Elevation of Privilege Vulnerability
+      published: 2023-05-09T18:15:14.087
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-29343
+    - id: CVE-2023-2590
+      description: Missing Authorization in GitHub repository answerdev/answer prior to 1.0.9.
+      published: 2023-05-09T06:15:08.890
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/answerdev/answer/commit/51ac1e6b76ae9ab3ca2008ca4819c0cc3bd2fcd3
+        - https://huntr.dev/bounties/a4238a30-3ddb-4415-9055-e179c3d4dea7
+    - id: CVE-2023-24904
+      description: Windows Installer Elevation of Privilege Vulnerability
+      published: 2023-05-09T18:15:12.280
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24904
+    - id: CVE-2023-24902
+      description: Win32k Elevation of Privilege Vulnerability
+      published: 2023-05-09T18:15:12.157
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24902
+    - id: CVE-2023-24949
+      description: Windows Kernel Elevation of Privilege Vulnerability
+      published: 2023-05-09T18:15:13.080
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24949
+    - id: CVE-2023-31138
+      description: 'DHIS2 Core contains the service layer and Web API for DHIS2, an information system for data capture. Starting in the 2.36 branch and prior to versions 2.37.9.1, 2.38.3.1, and 2.39.1.2, using object model traversal in the payload of a PATCH request, authenticated users with write access to an object may be able to modify related objects that they should not have access to. DHIS2 implementers should upgrade to a supported version of DHIS2 to receive a patch: 2.37.9.1, 2.38.3.1, or 2.39.1.2. It is possible to work around this issue by blocking all PATCH requests on a reverse proxy, but this may cause some issues with the functionality of built-in applications using legacy PATCH requests.'
+      published: 2023-05-09T15:15:10.150
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/dhis2/dhis2-core/security/advisories/GHSA-pwvw-4m67-f4g2
+        - https://github.com/dhis2/dhis2-releases/blob/master/releases/2.37/ReleaseNote-2.37.9.1.md
+        - https://github.com/dhis2/dhis2-releases/blob/master/releases/2.38/ReleaseNote-2.38.3.1.md
+        - https://github.com/dhis2/dhis2-releases/blob/master/releases/2.39/ReleaseNote-2.39.1.2.md
+    - id: CVE-2023-24899
+      description: Windows Graphics Component Elevation of Privilege Vulnerability
+      published: 2023-05-09T18:15:11.970
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24899
+    - id: CVE-2023-29336
+      description: Win32k Elevation of Privilege Vulnerability
+      published: 2023-05-09T18:15:13.840
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-29336
+    - id: CVE-2023-20046
+      description: "A vulnerability in the key-based SSH authentication feature of Cisco StarOS Software could allow an authenticated, remote attacker to elevate privileges on an affected device.\r\n\r This vulnerability is due to insufficient validation of user-supplied credentials. An attacker could exploit this vulnerability by sending a valid low-privileged SSH key to an affected device from a host that has an IP address that is configured as the source for a high-privileged user account. A successful exploit could allow the attacker to log in to the affected device through SSH as a high-privileged user.\r\n\r   There are workarounds that address this vulnerability."
+      published: 2023-05-09T18:15:11.697
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/orangecertcc/security-research/security/advisories/GHSA-j7p3-gjw6-pp4r
+        - https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-staros-ssh-privesc-BmWeJC3h
+    - id: CVE-2023-24948
+      description: Windows Bluetooth Driver Elevation of Privilege Vulnerability
+      published: 2023-05-09T18:15:13.017
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24948
+    - id: CVE-2023-24946
+      description: Windows Backup Service Elevation of Privilege Vulnerability
+      published: 2023-05-09T18:15:12.900
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24946
+    - id: CVE-2023-28832
+      description: A vulnerability has been identified in SIMATIC Cloud Connect 7 CC712 (All versions >= V2.0 < V2.1), SIMATIC Cloud Connect 7 CC716 (All versions >= V2.0 < V2.1). The web based management of affected devices does not properly validate user input, making it susceptible to command injection. This could allow an authenticated privileged remote attacker to execute arbitrary code with root privileges.
+      published: 2023-05-09T13:15:17.373
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://cert-portal.siemens.com/productcert/pdf/ssa-555292.pdf
+    - id: CVE-2023-24955
+      description: Microsoft SharePoint Server Remote Code Execution Vulnerability
+      published: 2023-05-09T18:15:13.317
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24955
+    - id: CVE-2023-29106
+      description: A vulnerability has been identified in SIMATIC Cloud Connect 7 CC712 (All versions >= V2.0 < V2.1), SIMATIC Cloud Connect 7 CC716 (All versions >= V2.0 < V2.1). The export endpoint is accessible via REST API without authentication. This could allow an unauthenticated remote attacker to download the files available via the endpoint.
+      published: 2023-05-09T13:15:17.703
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://cert-portal.siemens.com/productcert/pdf/ssa-555292.pdf
+    - id: CVE-2023-24944
+      description: Windows Bluetooth Driver Information Disclosure Vulnerability
+      published: 2023-05-09T18:15:12.780
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24944
+    - id: CVE-2023-25831
+      description: There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.9.1, 10.8.1 and 10.7.1 which may allow a remote, unauthenticated attacker to create a crafted link which when clicked could potentially execute arbitrary JavaScript code in the victim’s browser.
+      published: 2023-05-09T21:15:11.513
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://support.esri.com/en-us/patches-updates/2023/portal-for-arcgis-security-2023-update-1-patch-8095
+        - https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2023-update-1-patch-is-now-available/
+    - id: CVE-2023-25830
+      description: There is a reflected XSS vulnerability in Esri Portal for ArcGIS versions 10.9.1, 10.8.1 and 10.7.1 which may allow a remote, unauthenticated attacker to create a crafted link which when clicked could potentially execute arbitrary JavaScript code in the victim’s browser.
+      published: 2023-05-09T17:15:10.567
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://support.esri.com/en-us/patches-updates/2023/portal-for-arcgis-security-2023-update-1-patch-8095
+        - https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2023-update-1-patch-is-now-available/
+    - id: CVE-2023-29105
+      description: A vulnerability has been identified in SIMATIC Cloud Connect 7 CC712 (All versions >= V2.0 < V2.1), SIMATIC Cloud Connect 7 CC712 (All versions < V2.1), SIMATIC Cloud Connect 7 CC716 (All versions >= V2.0 < V2.1), SIMATIC Cloud Connect 7 CC716 (All versions < V2.1). The affected device is vulnerable to a denial of service while parsing a random (non-JSON) MQTT payload. This could allow an attacker who can manipulate the communication between the MQTT broker and the affected device to cause a denial of service (DoS).
+      published: 2023-05-09T13:15:17.627
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://cert-portal.siemens.com/productcert/pdf/ssa-555292.pdf
+    - id: CVE-2023-25829
+      description: There is an unvalidated redirect vulnerability in Esri Portal for ArcGIS 11.0 and 10.9.1 that may allow a remote, unauthenticated attacker to craft a URL that could redirect a victim to an arbitrary website, simplifying phishing attacks.
+      published: 2023-05-09T17:15:10.387
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://support.esri.com/en-us/patches-updates/2023/portal-for-arcgis-security-2023-update-1-patch-8095
+        - https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2023-update-1-patch-is-now-available/
+    - id: CVE-2022-4537
+      description: The Hide My WP Ghost – Security Plugin plugin for WordPress is vulnerable to IP Address Spoofing in versions up to, and including, 5.0.18. This is due to insufficient restrictions on where the IP Address information is being retrieved for request logging and login restrictions. Attackers can supply the X-Forwarded-For header with with a different IP Address that will be logged and can be used to bypass settings that may have blocked out an IP address from logging in.
+      published: 2023-05-09T03:15:09.267
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://plugins.trac.wordpress.org/browser/hide-my-wp/tags/5.0.18/models/Brute.php#L131
+        - https://plugins.trac.wordpress.org/browser/hide-my-wp/trunk/models/Brute.php#L132
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/4cf89f94-587a-4fed-a6e4-3876b7dbc9ba?source=cve
+    - id: CVE-2023-29107
+      description: A vulnerability has been identified in SIMATIC Cloud Connect 7 CC712 (All versions >= V2.0 < V2.1), SIMATIC Cloud Connect 7 CC716 (All versions >= V2.0 < V2.1). The export endpoint discloses some undocumented files. This could allow an unauthenticated remote attacker to gain access to additional information resources.
+      published: 2023-05-09T13:15:17.777
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://cert-portal.siemens.com/productcert/pdf/ssa-555292.pdf
+    - id: CVE-2023-24900
+      description: Windows NTLM Security Support Provider Information Disclosure Vulnerability
+      published: 2023-05-09T18:15:12.033
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24900
+    - id: CVE-2023-31143
+      description: mage-ai is an open-source data pipeline tool for transforming and integrating data. Those who use Mage starting in version 0.8.34 and prior to 0.8.72 with user authentication enabled may be affected by a vulnerability. The terminal could be accessed by users who are not signed in or do not have editor permissions. Version 0.8.72 contains a fix for this issue.
+      published: 2023-05-09T15:15:10.303
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/mage-ai/mage-ai/commit/f63cd00f6a3be372397d37a4c9a49bfaf50d7650
+        - https://github.com/mage-ai/mage-ai/security/advisories/GHSA-c6mm-2g84-v4m7
+    - id: CVE-2023-31144
+      description: Craft CMS is a content management system. Starting in version 3.0.0 and prior to versions 3.8.4 and 4.4.4, a malformed title in the feed widget can deliver a cross-site scripting payload. This issue is fixed in version 3.8.4 and 4.4.4.
+      published: 2023-05-09T16:15:14.623
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/craftcms/cms/commit/52bd161614620edbab2d24d078ca9ebca2528442
+        - https://github.com/craftcms/cms/security/advisories/GHSA-j4mx-98hw-6rv6
+    - id: CVE-2023-29324
+      description: Windows MSHTML Platform Security Feature Bypass Vulnerability
+      published: 2023-05-09T18:15:13.607
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-29324
+    - id: CVE-2023-28290
+      description: Microsoft Remote Desktop app for Windows Information Disclosure Vulnerability
+      published: 2023-05-09T18:15:13.547
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-28290
+    - id: CVE-2023-28251
+      description: Windows Driver Revocation List Security Feature Bypass Vulnerability
+      published: 2023-05-09T18:15:13.433
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-28251
+    - id: CVE-2023-23862
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in Gopi Ramasamy Vertical scroll recent post plugin <= 14.0 versions.
+      published: 2023-05-09T11:15:09.377
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/vertical-scroll-recent-post/wordpress-vertical-scroll-recent-post-plugin-14-0-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2022-46844
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in PixelGrade PixFields plugin <= 0.7.0 versions.
+      published: 2023-05-09T13:15:16.253
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/pixfields/wordpress-pixfields-plugin-0-7-0-auth-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-25834
+      description: Changes to user permissions in Portal for ArcGIS 10.9.1 and below are incompletely applied in specific use cases. This issue may allow users to access content that they are no longer privileged to access.
+      published: 2023-05-09T16:15:14.263
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://support.esri.com/en-us/patches-updates/2023/portal-for-arcgis-security-2023-update-1-patch-8095
+        - https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2023-update-1-patch-is-now-available/
+    - id: CVE-2023-2595
+      description: A vulnerability has been found in SourceCodester Billing Management System 1.0 and classified as critical. Affected by this vulnerability is an unknown functionality of the file ajax_service.php of the component POST Parameter Handler. The manipulation of the argument drop_services leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-228397 was assigned to this vulnerability.
+      published: 2023-05-09T13:15:17.980
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/Yastar/bug_report/blob/main/SQLi-1.md
+        - https://vuldb.com/?ctiid.228397
+        - https://vuldb.com/?id.228397
+    - id: CVE-2023-31134
+      description: |-
+        Tauri is software for building applications for multi-platform deployment. The Tauri IPC is usually strictly isolated from external websites, but in versions 1.0.0 until 1.0.9, 1.1.0 until 1.1.4, and 1.2.0 until 1.2.5, the isolation can be bypassed by redirecting an existing Tauri window to an external website. This is either possible by an application implementing a feature for users to visit
+        arbitrary websites or due to a bug allowing the open redirect. This allows the external website access to the IPC layer and therefore to all configured and exposed Tauri API endpoints and application specific implemented Tauri commands. This issue has been patched in versions 1.0.9, 1.1.4, and 1.2.5. As a workaround, prevent arbitrary input in redirect features and/or only allow trusted websites access to the IPC.
+      published: 2023-05-09T14:15:13.427
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/tauri-apps/tauri/releases/tag/tauri-v1.0.9
+        - https://github.com/tauri-apps/tauri/releases/tag/tauri-v1.1.4
+        - https://github.com/tauri-apps/tauri/releases/tag/tauri-v1.2.5
+        - https://github.com/tauri-apps/tauri/security/advisories/GHSA-4wm2-cwcf-wwvp
+        - https://www.github.com/tauri-apps/tauri/commit/58ea0b45268dbd46cbac0ebb0887353d057ca767
+        - https://www.github.com/tauri-apps/tauri/commit/fa90214b052b1a5d38d54fbf1ca422b4c37cfd1f
+    - id: CVE-2022-41640
+      description: Auth. (subscriber+) Stored Cross-Site Scripting (XSS) vulnerability in Rymera Web Co Wholesale Suite plugin <= 2.1.5 versions.
+      published: 2023-05-09T10:15:10.423
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/woocommerce-wholesale-prices/wordpress-wholesale-suite-plugin-2-1-5-authenticated-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-24954
+      description: Microsoft SharePoint Server Information Disclosure Vulnerability
+      published: 2023-05-09T18:15:13.260
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24954
+    - id: CVE-2023-2596
+      description: A vulnerability was found in SourceCodester Online Reviewer System 1.0 and classified as critical. Affected by this issue is some unknown functionality of the file /reviewer/system/system/admins/manage/users/user-update.php of the component GET Parameter Handler. The manipulation of the argument user_id leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-228398 is the identifier assigned to this vulnerability.
+      published: 2023-05-09T13:15:18.043
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/rick13795/bug_report/blob/main/SQLi-1.md
+        - https://vuldb.com/?ctiid.228398
+        - https://vuldb.com/?id.228398
+    - id: CVE-2023-32066
+      description: 'Time Tracker is an open source time tracking system. The week view plugin in Time Tracker versions 1.22.11.5782 and prior was not escaping titles for notes in week view table. Because of that, it was possible for a logged in user to enter notes with elements of JavaScript. Such script could then be executed in user browser on subsequent requests to week view. This issue is fixed in version 1.22.12.5783. As a workaround, use `htmlspecialchars` when calling `$field->setTitle` on line #245 in the `week.php` file,  as happens in version 1.22.12.5783.'
+      published: 2023-05-09T16:15:15.160
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/anuko/timetracker/commit/093cfe158099704ffd4a1624be217f9935e914eb
+        - https://github.com/anuko/timetracker/security/advisories/GHSA-jw2g-8wvp-9frw
+    - id: CVE-2023-32060
+      description: DHIS2 Core contains the service layer and Web API for DHIS2, an information system for data capture. Starting in the 2.35 branch and prior to versions 2.36.13, 2.37.8, 2.38.2, and 2.39.0, when the Category Option Combination Sharing settings are configured to control access to specific tracker program events or program stages, the `/trackedEntityInstances` and `/events` API endpoints may include all events regardless of the sharing settings applied to the category option combinations. When this specific configuration is present, users may have access to events which they should not be able to see based on the sharing settings of the category options.  The events will not appear in the user interface for web-based Tracker Capture or Capture applications, but if the Android Capture App is used they will be displayed to the user. Versions 2.36.13, 2.37.8, 2.38.2, and 2.39.0 contain a fix for this issue. No workaround is known.
+      published: 2023-05-09T15:15:10.367
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/dhis2/dhis2-core/security/advisories/GHSA-7pwm-6rh2-2388
+    - id: CVE-2023-24950
+      description: Microsoft SharePoint Server Spoofing Vulnerability
+      published: 2023-05-09T18:15:13.143
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24950
+    - id: CVE-2023-31139
+      description: 'DHIS2 Core contains the service layer and Web API for DHIS2, an information system for data capture. Starting in the 2.37 branch and prior to versions 2.37.9.1, 2.38.3.1, and 2.39.1.2, Personal Access Tokens (PATs) generate unrestricted session cookies. This may lead to a bypass of other access restrictions (for example, based on allowed IP addresses or HTTP methods). DHIS2 implementers should upgrade to a supported version of DHIS2: 2.37.9.1, 2.38.3.1, or 2.39.1.2. Implementers can work around this issue by adding extra access control validations on a reverse proxy.'
+      published: 2023-05-09T15:15:10.233
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/dhis2/dhis2-core/security/advisories/GHSA-44g3-9mp4-prv3
+        - https://github.com/dhis2/dhis2-releases/blob/master/releases/2.37/ReleaseNote-2.37.9.1.md
+        - https://github.com/dhis2/dhis2-releases/blob/master/releases/2.38/ReleaseNote-2.38.3.1.md
+        - https://github.com/dhis2/dhis2-releases/blob/master/releases/2.39/ReleaseNote-2.39.1.2.md
+    - id: CVE-2023-29338
+      description: Visual Studio Code Information Disclosure Vulnerability
+      published: 2023-05-09T18:15:13.900
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-29338
+    - id: CVE-2023-23664
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in ConvertBox ConvertBox Auto Embed WordPress plugin <= 1.0.19 versions.
+      published: 2023-05-09T10:15:10.567
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/convertbox-auto-embed/wordpress-convertbox-auto-embed-wordpress-plugin-plugin-1-0-19-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-29103
+      description: A vulnerability has been identified in SIMATIC Cloud Connect 7 CC712 (All versions >= V2.0 < V2.1), SIMATIC Cloud Connect 7 CC712 (All versions < V2.1), SIMATIC Cloud Connect 7 CC716 (All versions >= V2.0 < V2.1), SIMATIC Cloud Connect 7 CC716 (All versions < V2.1). The affected device uses a hard-coded password to protect the diagnostic files. This could allow an authenticated attacker to access protected data.
+      published: 2023-05-09T13:15:17.447
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://cert-portal.siemens.com/productcert/pdf/ssa-555292.pdf
+    - id: CVE-2023-24945
+      description: Windows iSCSI Target Service Information Disclosure Vulnerability
+      published: 2023-05-09T18:15:12.840
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24945
+    - id: CVE-2023-29104
+      description: A vulnerability has been identified in SIMATIC Cloud Connect 7 CC712 (All versions >= V2.0 < V2.1), SIMATIC Cloud Connect 7 CC716 (All versions >= V2.0 < V2.1). The filename in the upload feature of the web based management of the affected device is susceptible to a path traversal vulnerability. This could allow an authenticated privileged remote attacker to overwrite any file the Linux user `ccuser` has write access to, or to download any file the Linux user `ccuser` has read-only access to.
+      published: 2023-05-09T13:15:17.547
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://cert-portal.siemens.com/productcert/pdf/ssa-555292.pdf
+    - id: CVE-2023-23884
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Kanban for WordPress Kanban Boards for WordPress plugin <= 2.5.20 versions.
+      published: 2023-05-09T11:15:09.517
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/kanban/wordpress-kanban-boards-for-wordpress-plugin-2-5-20-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-23863
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Black and White Digital Ltd TreePress – Easy Family Trees & Ancestor Profiles plugin <= 2.0.22 versions.
+      published: 2023-05-09T08:15:08.373
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/treepress/wordpress-treepress-easy-family-trees-ancestor-profiles-plugin-2-0-22-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-20098
+      description: "A vulnerability in the CLI of Cisco SDWAN vManage Software could allow an authenticated, local attacker to delete arbitrary files.\r\n\r This vulnerability is due to improper filtering of directory traversal character sequences within system commands. An attacker with administrative privileges could exploit this vulnerability by running a system command containing directory traversal character sequences to target an arbitrary file. A successful exploit could allow the attacker to delete arbitrary files from the system, including files owned by root."
+      published: 2023-05-09T18:15:11.760
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/orangecertcc/security-research/security/advisories/GHSA-5j43-q336-92ch
+        - https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-vmanage-wfnqmYhN
+    - id: CVE-2023-25832
+      description: There is a cross-site-request forgery vulnerability in Esri Portal for ArcGIS Versions 11.0 and below that may allow an attacker to trick an authorized user into executing unwanted actions. 
+      published: 2023-05-09T21:15:11.590
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://support.esri.com/en-us/patches-updates/2023/portal-for-arcgis-security-2023-update-1-patch-8095
+        - https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2023-update-1-patch-is-now-available/
+    - id: CVE-2023-24372
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in USB Memory Direct Simple Custom Author Profiles plugin <= 1.0.0 versions.
+      published: 2023-05-09T11:15:09.603
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/simple-custom-author-profiles/wordpress-simple-custom-author-profiles-plugin-1-0-0-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-23732
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Joel James Disqus Conditional Load plugin <= 11.0.6 versions.
+      published: 2023-05-09T11:15:09.193
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/disqus-conditional-load/wordpress-disqus-conditional-load-plugin-11-0-6-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-23793
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Eightweb Interactive Read More Without Refresh plugin <= 3.1 versions.
+      published: 2023-05-09T10:15:10.620
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/read-more-without-refresh/wordpress-read-more-without-refresh-plugin-3-1-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-23647
+      description: Auth. (author+) Stored Cross-Site Scripting (XSS) vulnerability in Sk. Abul Hasan Team Member – Team with Slider plugin <= 4.4 versions.
+      published: 2023-05-09T13:15:16.467
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/team-showcase-supreme/wordpress-team-member-team-with-slider-plugin-4-4-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-24932
+      description: Secure Boot Security Feature Bypass Vulnerability
+      published: 2023-05-09T18:15:12.407
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24932
+    - id: CVE-2023-23733
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Joel James Lazy Social Comments plugin <= 2.0.4 versions.
+      published: 2023-05-09T11:15:09.260
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/lazy-facebook-comments/wordpress-lazy-social-comments-plugin-2-0-4-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-23734
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in David Voswinkel Userlike – WordPress Live Chat plugin <= 2.2 versions.
+      published: 2023-05-09T11:15:09.313
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/userlike/wordpress-userlike-wordpress-live-chat-plugin-plugin-2-1-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-23883
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in David Gwyer WP Content Filter plugin <= 3.0.1 versions.
+      published: 2023-05-09T11:15:09.433
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/wp-content-filter/wordpress-wp-content-filter-censor-all-offensive-content-from-your-site-plugin-3-0-1-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-30985
+      description: A vulnerability has been identified in Solid Edge SE2023 (All versions < VX.223.0 Update 3), Solid Edge SE2023 (All versions < VX.223.0 Update 2). Affected applications contain an out of bounds read past the end of an allocated buffer while parsing a specially crafted OBJ file. This vulnerability could allow an attacker to disclose sensitive information. (ZDI-CAN-19426)
+      published: 2023-05-09T13:15:18.267
+      severity: LOW
+      privileges: NONE
+      references:
+        - https://cert-portal.siemens.com/productcert/pdf/ssa-932528.pdf
+    - id: CVE-2023-31136
+      description: PostgresNIO is a Swift client for PostgreSQL. Any user of PostgresNIO prior to version 1.14.2 connecting to servers with TLS enabled is vulnerable to a man-in-the-middle attacker injecting false responses to the client's first few queries, despite the use of TLS certificate verification and encryption. The vulnerability is addressed in PostgresNIO versions starting from 1.14.2. There are no known workarounds for unpatched users.
+      published: 2023-05-09T14:15:13.520
+      severity: LOW
+      privileges: NONE
+      references:
+        - https://github.com/advisories/GHSA-467w-rrqc-395f
+        - https://github.com/advisories/GHSA-735f-7qx4-jqq5
+        - https://github.com/apple/swift-nio/pull/2419
+        - https://github.com/vapor/postgres-nio/commit/2df54bc94607f44584ae6ffa74e3cd754fffafc7
+        - https://github.com/vapor/postgres-nio/releases/tag/1.14.2
+        - https://github.com/vapor/postgres-nio/security/advisories/GHSA-9cfh-vx93-84vv
+        - https://www.postgresql.org/support/security/CVE-2021-23214/
+        - https://www.postgresql.org/support/security/CVE-2021-23222/
+    - id: CVE-2023-27409
+      description: A vulnerability has been identified in SCALANCE LPE9403 (All versions < V2.1). A path traversal vulnerability was found in the `deviceinfo` binary via the `mac` parameter. This could allow an authenticated attacker with access to the SSH interface on the affected device to read the contents of any file named `address`.
+      published: 2023-05-09T13:15:16.800
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://cert-portal.siemens.com/productcert/pdf/ssa-325383.pdf
+    - id: CVE-2023-27408
+      description: A vulnerability has been identified in SCALANCE LPE9403 (All versions < V2.1). The `i2c` mutex file is created with the permissions bits of `-rw-rw-rw-`. This file is used as a mutex for multiple applications interacting with i2c. This could allow an authenticated attacker with access to the SSH interface on the affected device to interfere with the integrity of the mutex and the data it protects.
+      published: 2023-05-09T13:15:16.727
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://cert-portal.siemens.com/productcert/pdf/ssa-325383.pdf
+    - id: CVE-2023-29333
+      description: Microsoft Access Denial of Service Vulnerability
+      published: 2023-05-09T18:15:13.727
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-29333
+    - id: CVE-2022-36330
+      description: |-
+        A buffer overflow vulnerability was discovered on firmware version validation that could lead to an unauthenticated remote code execution in Western Digital My Cloud Home, My Cloud Home Duo and SanDisk ibi devices. An attacker would require exploitation of another vulnerability to raise their privileges in order to exploit this buffer overflow vulnerability.
+
+        This issue affects My Cloud Home and My Cloud Home Duo: through 9.4.0-191; ibi: through 9.4.0-191. 
+      published: 2023-05-10T00:15:09.467
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://www.westerndigital.com/support/product-security/wdc-23003-western-digital-my-cloud-home-my-cloud-home-duo-and-sandisk-ibi-firmware-version-9-4-0-191
+    - id: CVE-2023-29128
+      description: A vulnerability has been identified in SIMATIC Cloud Connect 7 CC712 (All versions >= V2.0 < V2.1), SIMATIC Cloud Connect 7 CC716 (All versions >= V2.0 < V2.1). The filename in the upload feature of the web based management of the affected device is susceptible to a path traversal vulnerability. This could allow an authenticated privileged remote attacker to write any file with the extension `.db`.
+      published: 2023-05-09T13:15:17.843
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://cert-portal.siemens.com/productcert/pdf/ssa-555292.pdf
+    - id: CVE-2023-27410
+      description: A vulnerability has been identified in SCALANCE LPE9403 (All versions < V2.1). A heap-based buffer overflow vulnerability was found in the `edgebox_web_app` binary. The binary will crash if supplied with a backup password longer than 255 characters. This could allow an authenticated privileged attacker to cause a denial of service.
+      published: 2023-05-09T13:15:16.873
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://cert-portal.siemens.com/productcert/pdf/ssa-325383.pdf
+    - id: CVE-2023-30087
+      description: Buffer Overflow vulnerability found in Cesanta MJS v.1.26 allows a local attacker to cause a denial of service via the mjs_mk_string function in mjs.c.
+      published: 2023-05-09T16:15:14.547
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/cesanta/mjs/issues/244
+    - id: CVE-2021-26379
+      description: |-
+        Insufficient input validation of mailbox data in the
+        SMU may allow an attacker to coerce the SMU to corrupt SMRAM, potentially
+        leading to a loss of integrity and privilege escalation.
+      published: 2023-05-09T19:15:10.863
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-3001
+    - id: CVE-2023-31806
+      description: Cross Site Scripting vulnerability found in Chamilo Lms v.1.11.18 allows a local attacker to execute arbitrary code via a crafted payload to the My Progress function.
+      published: 2023-05-09T16:15:15.077
+      severity: ""
+      privileges: ""
+      references:
+        - http://chamilo.com
+        - https://support.chamilo.org/projects/chamilo-18/wiki/Security_issues#Issue-103-2023-04-11-Low-impact-Moderate-risk-XSS-in-My-progress-tab
+    - id: CVE-2023-31805
+      description: Cross Site Scripting vulnerability found in Chamilo Lms v.1.11.18 allows a local authenticated attacker to execute arbitrary code via the homepage function.
+      published: 2023-05-09T16:15:15.033
+      severity: ""
+      privileges: ""
+      references:
+        - http://chamilo.com
+        - https://support.chamilo.org/projects/chamilo-18/wiki/Security_issues#Issue-98-2023-04-11-Low-impact-Low-risk-XSS-in-homepage-edition
+    - id: CVE-2023-31804
+      description: Cross Site Scripting vulnerability found in Chamilo Lms v.1.11.18 allows a local attacker to execute arbitrary code via the course category parameters.
+      published: 2023-05-09T16:15:14.993
+      severity: ""
+      privileges: ""
+      references:
+        - http://chamilo.com
+        - https://support.chamilo.org/projects/chamilo-18/wiki/Security_issues#Issue-96-2023-04-06-Low-impact-Moderate-risk-XSS-in-course-categories
+    - id: CVE-2023-31803
+      description: Cross Site Scripting vulnerability found in Chamilo Lms v.1.11.18 allows a local attacker to execute arbitrary code via the resource sequencing parameters.
+      published: 2023-05-09T16:15:14.953
+      severity: ""
+      privileges: ""
+      references:
+        - http://chamilo.com
+        - https://support.chamilo.org/projects/chamilo-18/wiki/Security_issues#Issue-100-2023-04-11-Low-impact-Low-risk-XSS-in-resources-sequencing
+    - id: CVE-2023-31802
+      description: Cross Site Scripting vulnerability found in Chamilo Lms v.1.11.18 allows a local attacker to execute arbitrary code via the skype and linedin_url parameters.
+      published: 2023-05-09T16:15:14.910
+      severity: ""
+      privileges: ""
+      references:
+        - http://chamilo.com
+        - https://support.chamilo.org/projects/chamilo-18/wiki/Security_issues#Issue-104-2023-04-11-Moderate-impact-High-risk-XSS-in-personal-profile
+    - id: CVE-2023-31801
+      description: Cross Site Scripting vulnerability found in Chamilo Lms v.1.11.18 allows a local attacker to execute arbitrary code via the skills wheel parameter.
+      published: 2023-05-09T16:15:14.870
+      severity: ""
+      privileges: ""
+      references:
+        - http://chamilo.com
+        - https://support.chamilo.org/projects/chamilo-18/wiki/Security_issues#Issue-97-2023-04-11-Low-impact-High-risk-XSS-in-skills-wheel
+    - id: CVE-2023-31800
+      description: Cross Site Scripting vulnerability found in Chamilo Lms v.1.11.18 allows a local attacker to execute arbitrary code via the forum title parameter.
+      published: 2023-05-09T16:15:14.830
+      severity: ""
+      privileges: ""
+      references:
+        - http://chamilo.com
+        - https://support.chamilo.org/projects/chamilo-18/wiki/Security_issues#Issue-102-2023-04-11-Low-impact-Moderate-risk-XSS-in-forum-titles
+    - id: CVE-2023-31799
+      description: Cross Site Scripting vulnerability found in Chamilo Lms v.1.11.18 allows a local attacker to execute arbitrary code via the system annnouncements parameter.
+      published: 2023-05-09T16:15:14.793
+      severity: ""
+      privileges: ""
+      references:
+        - http://chamilo.com
+        - https://support.chamilo.org/projects/chamilo-18/wiki/Security_issues#Issue-99-2023-04-11-Low-impact-Low-risk-XSS-in-system-announcements
+    - id: CVE-2023-31490
+      description: An issue found in Frrouting bgpd v.8.4.2 allows a remote attacker to cause a denial of service via the bgp_attr_psid_sub() function.
+      published: 2023-05-09T16:15:14.757
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/FRRouting/frr/issues/13099
+    - id: CVE-2023-31489
+      description: An issue found in Frrouting bgpd v.8.4.2 allows a remote attacker to cause a denial of service via the bgp_capability_llgr() function.
+      published: 2023-05-09T16:15:14.717
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/FRRouting/frr/issues/13098
+    - id: CVE-2023-31476
+      description: An issue was discovered on GL.iNet devices running firmware before 3.216. There is an arbitrary file write in which an empty file can be created almost anywhere on the filesystem, as long as the filename and path is no more than 6 characters (the working directory is /www).
+      published: 2023-05-09T16:15:14.680
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/gl-inet/CVE-issues/blob/main/3.215/GL-MV1000_Arbitrary_File_Creation.md
+        - https://www.gl-inet.com
+    - id: CVE-2023-30088
+      description: An issue found in Cesanta MJS v.1.26 allows a local attacker to cause a denial of service via the mjs_execute function in mjs.c.
+      published: 2023-05-09T16:15:14.583
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/cesanta/mjs/issues/243
+    - id: CVE-2023-30086
+      description: Buffer Overflow vulnerability found in Libtiff V.4.0.7 allows a local attacker to cause a denial of service via the tiffcp function in tiffcp.c.
+      published: 2023-05-09T16:15:14.507
+      severity: ""
+      privileges: ""
+      references:
+        - http://libtiff-release-v4-0-7.com
+        - http://tiffcp.com
+        - https://gitlab.com/libtiff/libtiff/-/issues/538
+    - id: CVE-2023-30085
+      description: Buffer Overflow vulnerability found in Libming swftophp v.0.4.8 allows a local attacker to cause a denial of service via the cws2fws function in util/decompile.c.
+      published: 2023-05-09T16:15:14.470
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/libming/libming/issues/267
+    - id: CVE-2023-30084
+      description: An issue found in libming swftophp v.0.4.8 allows a local attacker to cause a denial of service via the stackVal function in util/decompile.c.
+      published: 2023-05-09T16:15:14.423
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/libming/libming/issues/268
+    - id: CVE-2023-30083
+      description: Buffer Overflow vulnerability found in Libming swftophp v.0.4.8 allows a local attacker to cause a denial of service via the newVar_N in util/decompile.c.
+      published: 2023-05-09T16:15:14.373
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/libming/libming/issues/266
+    - id: CVE-2021-31711
+      description: Cross Site Scripting vulnerability found in Trippo ResponsiveFilemanager v.9.14.0 and before allows a remote attacker to execute arbitrary code via the sort_by parameter in the dialog.php file.
+      published: 2023-05-09T16:15:14.197
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/trippo/ResponsiveFilemanager/issues/661
+    - id: CVE-2021-31240
+      description: An issue found in libming v.0.4.8 allows a local attacker to execute arbitrary code via the parseSWF_IMPORTASSETS function in the parser.c file.
+      published: 2023-05-09T16:15:14.147
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/libming/libming/issues/218
+    - id: CVE-2020-23363
+      description: Cross Site Request Forgery (CSRF) vulnerability found in Verytops Verydows all versions that allows an attacker to execute arbitrary code via a crafted script.
+      published: 2023-05-09T16:15:14.090
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Verytops/verydows/issues/17
+    - id: CVE-2020-23362
+      description: Insecure Permissons vulnerability found in Shop_CMS YerShop all versions allows a remote attacker to escalate privileges via the cover_id parameter.
+      published: 2023-05-09T16:15:13.963
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/huyiwill/shopcms_lang/issues/1
+    - id: CVE-2020-18280
+      description: Cross Site Scripting vulnerability found in Phodal CMD v.1.0 allows a local attacker to execute arbitrary code via the EMBED SRC function.
+      published: 2023-05-09T16:15:13.690
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/phodal/md/issues/20
+    - id: CVE-2023-31982
+      description: Sngrep v1.6.0 was discovered to contain a heap buffer overflow via the function capture_packet_reasm_ip at /src/capture.c.
+      published: 2023-05-09T14:15:13.907
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/irontec/sngrep/issues/431
+    - id: CVE-2023-31981
+      description: Sngrep v1.6.0 was discovered to contain a stack buffer overflow via the function packet_set_payload at /src/packet.c.
+      published: 2023-05-09T14:15:13.863
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/irontec/sngrep/issues/430
+    - id: CVE-2023-31979
+      description: Catdoc v0.95 was discovered to contain a global buffer overflow via the function process_file at /src/reader.c.
+      published: 2023-05-09T14:15:13.820
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/petewarden/catdoc/issues/9
+    - id: CVE-2023-31976
+      description: libming v0.4.8 was discovered to contain a stack buffer overflow via the function makeswf_preprocess at /util/makeswf_utils.c.
+      published: 2023-05-09T14:15:13.780
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/libming/libming/issues/265
+    - id: CVE-2021-44283
+      description: A buffer overflow in the component /Enclave.cpp of Electronics and Telecommunications Research Institute ShieldStore commit 58d455617f99705f0ffd8a27616abdf77bdc1bdc allows attackers to cause an information leak via a crafted structure from an untrusted operating system.
+      published: 2023-05-09T03:15:09.197
+      severity: ""
+      privileges: ""
+      references:
+        - http://electronics.com
+        - http://shieldstore.com
+        - https://github.com/cocoppang/ShieldStore/blob/master/Enclave/Enclave.cpp
+        - https://github.com/cocoppang/ShieldStore/issues/19
+    - id: CVE-2023-30237
+      description: CyberGhostVPN Windows Client before v8.3.10.10015 was discovered to contain a DLL injection vulnerability via the component Dashboard.exe.
+      published: 2023-05-09T03:15:09.343
+      severity: ""
+      privileges: ""
+      references:
+        - http://cyberghostvpn.com
+        - https://cwe.mitre.org/data/definitions/77.html
+        - https://www.pentestpartners.com/security-blog/bullied-by-bugcrowd-over-kape-cyberghost-disclosure/
+    - id: CVE-2023-31472
+      description: An issue was discovered on GL.iNet devices before 3.216. There is an arbitrary file write in which an empty file can be created anywhere on the filesystem. This is caused by a command injection vulnerability with a filter applied.
+      published: 2023-05-09T18:15:14.283
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/gl-inet/CVE-issues/blob/main/3.215/Arbitrary_File_Creation.md
+        - https://www.gl-inet.com
+    - id: CVE-2023-31474
+      description: An issue was discovered on GL.iNet devices before 3.216. Through the software installation feature, it is possible to inject arbitrary parameters in a request to cause opkg to obtain a list of files in a specific directory, by using the regex feature in a package name.
+      published: 2023-05-09T18:15:14.323
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/gl-inet/CVE-issues/blob/main/3.215/Directory_Listing.md
+        - https://www.gl-inet.com
+    - id: CVE-2021-26354
+      description: |-
+        Insufficient bounds checking in ASP may allow an
+        attacker to issue a system call from a compromised ABL which may cause
+        arbitrary memory values to be initialized to zero, potentially leading to a
+        loss of integrity.
+      published: 2023-05-09T19:15:10.670
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-3001
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-4001
+    - id: CVE-2021-26356
+      description: |-
+        A TOCTOU in ASP bootloader may allow an attacker
+        to tamper with the SPI ROM following data read to memory potentially resulting
+        in S3 data corruption and information disclosure.
+      published: 2023-05-09T19:15:10.737
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-3001
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-4001
+    - id: CVE-2021-26365
+      description: |-
+        Certain size values in firmware binary headers
+        could trigger out of bounds reads during signature validation, leading to
+        denial of service or potentially limited leakage of information about
+        out-of-bounds memory contents.
+      published: 2023-05-09T19:15:10.780
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-4001
+    - id: CVE-2021-26371
+      description: |-
+        A compromised or malicious ABL or UApp could
+        send a SHA256 system call to the bootloader, which may result in exposure of
+        ASP memory to userspace, potentially leading to information disclosure.
+      published: 2023-05-09T19:15:10.820
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-3001
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-4001
+    - id: CVE-2023-31807
+      description: Cross Site Scripting vulnerability found in Chamilo Lms v.1.11.18 allows a local attacker to execute arbitrary code via a crafted payload to the personal notes function.
+      published: 2023-05-09T16:15:15.123
+      severity: ""
+      privileges: ""
+      references:
+        - http://chamilo.com
+        - https://support.chamilo.org/projects/chamilo-18/wiki/Security_issues#Issue-101-2023-04-11-Low-impact-Low-risk-XSS-in-personal-notes-and-teacher-notes
+    - id: CVE-2021-26397
+      description: |-
+        Insufficient address validation, may allow an
+        attacker with a compromised ABL and UApp to corrupt sensitive memory locations
+        potentially resulting in a loss of integrity or availability.
+      published: 2023-05-09T19:15:10.903
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-3001
+    - id: CVE-2021-26406
+      description: |-
+        Insufficient validation in parsing Owner's
+        Certificate Authority (OCA) certificates in SEV (AMD Secure Encrypted Virtualization)
+        and SEV-ES user application can lead to a host crash potentially resulting in
+        denial of service.
+      published: 2023-05-09T19:15:10.943
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-3001
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-4001
+    - id: CVE-2021-46749
+      description: |-
+        Insufficient bounds checking in ASP (AMD Secure
+        Processor) may allow for an out of bounds read in SMI (System Management
+        Interface) mailbox checksum calculation triggering a data abort, resulting in a
+        potential denial of service.
+      published: 2023-05-09T19:15:10.997
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-4001
+    - id: CVE-2021-46753
+      description: |-
+        Failure to validate the length fields of the ASP
+        (AMD Secure Processor) sensor fusion hub headers may allow an attacker with a
+        malicious Uapp or ABL to map the ASP sensor fusion hub region and overwrite
+        data structures leading to a potential loss of confidentiality and integrity.
+      published: 2023-05-09T19:15:11.040
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-4001
+    - id: CVE-2021-46762
+      description: |-
+        Insufficient input validation in the SMU may
+        allow an attacker to corrupt SMU SRAM potentially leading to a loss of
+        integrity or denial of service.
+      published: 2023-05-09T19:15:11.080
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-3001
+    - id: CVE-2021-46763
+      description: |-
+        Insufficient input validation in the SMU may
+        enable a privileged attacker to write beyond the intended bounds of a shared
+        memory buffer potentially leading to a loss of integrity.
+      published: 2023-05-09T19:15:11.123
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-3001
+    - id: CVE-2021-46764
+      description: |-
+        Improper validation of DRAM addresses in SMU may
+        allow an attacker to overwrite sensitive memory locations within the ASP
+        potentially resulting in a denial of service.
+      published: 2023-05-09T19:15:11.160
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-3001
+    - id: CVE-2021-46769
+      description: "Insufficient syscall input validation in the ASP\nBootloader may allow a privileged attacker to execute arbitrary DMA copies,\nwhich can lead to code execution. "
+      published: 2023-05-09T19:15:11.200
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-3001
+    - id: CVE-2021-46775
+      description: "Improper input validation in ABL may enable an\nattacker with physical access, to perform arbitrary memory overwrites,\npotentially leading to a loss of integrity and code execution.\n\n\n\n "
+      published: 2023-05-09T19:15:11.240
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-3001
+    - id: CVE-2022-23818
+      description: "Insufficient input validation on the model\nspecific register: VM_HSAVE_PA may potentially lead to loss of SEV-SNP guest\nmemory integrity.\n\n\n\n\n\n\n\n "
+      published: 2023-05-09T19:15:11.367
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-3001
+    - id: CVE-2023-20520
+      description: |-
+        Improper access control settings in ASP
+        Bootloader may allow an attacker to corrupt the return address causing a
+        stack-based buffer overrun potentially leading to arbitrary code execution.
+      published: 2023-05-09T19:15:11.507
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-3001
+    - id: CVE-2023-20524
+      description: |-
+        An attacker with a compromised ASP could
+        possibly send malformed commands to an ASP on another CPU, resulting in an out
+        of bounds write, potentially leading to a loss a loss of integrity.
+      published: 2023-05-09T19:15:11.550
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-3001
+    - id: CVE-2021-46754
+      description: |-
+        Insufficient input validation in the ASP (AMD
+        Secure Processor) bootloader may allow an attacker with a compromised Uapp or
+        ABL to coerce the bootloader into exposing sensitive information to the SMU
+        (System Management Unit) resulting in a potential loss of confidentiality and
+        integrity.
+      published: 2023-05-09T20:15:12.103
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-4001
+    - id: CVE-2021-46755
+      description: |-
+        Failure to unmap certain SysHub mappings in
+        error paths of the ASP (AMD Secure Processor) bootloader may allow an attacker
+        with a malicious bootloader to exhaust the SysHub resources resulting in a
+        potential denial of service.
+      published: 2023-05-09T20:15:12.157
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-4001
+    - id: CVE-2021-46756
+      description: |-
+        Insufficient validation of inputs in
+        SVC_MAP_USER_STACK in the ASP (AMD Secure Processor) bootloader may allow an
+        attacker with a malicious Uapp or ABL to send malformed or invalid syscall to
+        the bootloader resulting in a potential denial of service and loss of
+        integrity.
+      published: 2023-05-09T20:15:12.200
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-3001
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-4001
+    - id: CVE-2021-46759
+      description: |-
+        Improper syscall input validation in AMD TEE
+        (Trusted Execution Environment) may allow an attacker with physical access and
+        control of a Uapp that runs under the bootloader to reveal the contents of the
+        ASP (AMD Secure Processor) bootloader accessible memory to a serial port,
+        resulting in a potential loss of integrity.
+      published: 2023-05-09T20:15:12.240
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-4001
+    - id: CVE-2021-46760
+      description: |-
+        A malicious or compromised UApp or ABL can send
+        a malformed system call to the bootloader, which may result in an out-of-bounds
+        memory access that may potentially lead to an attacker leaking sensitive
+        information or achieving code execution.
+      published: 2023-05-09T20:15:12.283
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-4001
+    - id: CVE-2021-46765
+      description: |-
+        Insufficient input validation in ASP may allow
+        an attacker with a compromised SMM to induce out-of-bounds memory reads within
+        the ASP, potentially leading to a denial of service.
+      published: 2023-05-09T20:15:12.327
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-4001
+    - id: CVE-2021-46773
+      description: |-
+        Insufficient input validation in ABL may enable
+        a privileged attacker to corrupt ASP memory, potentially resulting in a loss of
+        integrity or code execution.
+      published: 2023-05-09T20:15:12.370
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-4001
+    - id: CVE-2021-46792
+      description: |-
+        Time-of-check Time-of-use (TOCTOU) in the
+        BIOS2PSP command may allow an attacker with a malicious BIOS to create a race
+        condition causing the ASP bootloader to perform out-of-bounds SRAM reads upon
+        an S3 resume event potentially leading to a denial of service.
+      published: 2023-05-09T20:15:12.413
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-4001
+    - id: CVE-2021-46794
+      description: |-
+        Insufficient bounds checking in ASP (AMD Secure
+        Processor) may allow for an out of bounds read in SMI (System Management
+        Interface) mailbox checksum calculation triggering a data abort, resulting in a
+        potential denial of service.
+      published: 2023-05-09T20:15:12.463
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.amd.com/en/corporate/product-security/bulletin/AMD-SB-4001
+    - id: CVE-2023-31973
+      description: yasm v1.3.0 was discovered to contain a use after free via the function expand_mmac_params at /nasm/nasm-pp.c.
+      published: 2023-05-09T14:15:13.737
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/yasm/yasm/issues/207
+    - id: CVE-2023-31975
+      description: yasm v1.3.0 was discovered to contain a memory leak via the function yasm_intnum_copy at /libyasm/intnum.c.
+      published: 2023-05-09T13:15:18.590
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/yasm/yasm/issues/210
+    - id: CVE-2023-30056
+      description: A session takeover vulnerability exists in FICO Origination Manager Decision Module 4.8.1 due to insufficient protection of the JSESSIONID cookie.
+      published: 2023-05-09T21:15:11.673
+      severity: ""
+      privileges: ""
+      references:
+        - http://fico.com
+        - http://origination.com
+        - https://packetstormsecurity.com/files/172192/FICO-Origination-Manager-Decision-Module-4.8.1-XSS-Session-Hijacking.html
+    - id: CVE-2023-30057
+      description: Multiple stored cross-site scripting (XSS) vulnerabilities in FICO Origination Manager Decision Module 4.8.1 allow attackers to execute arbitrary web scripts or HTML via a crafted payload.
+      published: 2023-05-09T21:15:11.717
+      severity: ""
+      privileges: ""
+      references:
+        - http://fico.com
+        - http://origination.com
+        - https://packetstormsecurity.com/files/172192/FICO-Origination-Manager-Decision-Module-4.8.1-XSS-Session-Hijacking.html
+    - id: CVE-2023-28125
+      description: An improper authentication vulnerability exists in Avalanche Premise versions 6.3.x and below that could allow an attacker to gain access to the server by registering to receive messages from the server and perform an authentication bypass.
+      published: 2023-05-09T22:15:09.720
+      severity: ""
+      privileges: ""
+      references:
+        - https://forums.ivanti.com/s/article/ZDI-CAN-17729-CVE-2023-28125-Bug-958437-ZDI-CAN-17729-Ivanti-Avalanche-InfoRail-Authentication-Bypass-Vulnerability?language=en_US
+    - id: CVE-2023-28126
+      description: An authentication bypass vulnerability exists in Avalanche versions 6.3.x and below that could allow an attacker to gain access by exploiting the SetUser method or can exploit the Race Condition in the authentication message.
+      published: 2023-05-09T22:15:09.813
+      severity: ""
+      privileges: ""
+      references:
+        - https://forums.ivanti.com/s/article/ZDI-CAN-17750-Ivanti-Avalanche-EnterpriseServer-GetSettings-Exposed-Dangerous-Method-Authentication-Bypass-Vulnerability?language=en_US
+    - id: CVE-2023-28127
+      description: A path traversal vulnerability exists in Avalanche version 6.3.x and below that when exploited could result in possible information disclosure.
+      published: 2023-05-09T22:15:09.870
+      severity: ""
+      privileges: ""
+      references:
+        - https://forums.ivanti.com/s/article/ZDI-CAN-17769-Ivanti-Avalanche-getLogFile-Directory-Traversal-Information-Disclosure?language=en_US
+    - id: CVE-2023-28128
+      description: An unrestricted upload of file with dangerous type vulnerability exists in Avalanche versions 6.3.x and below that could allow an attacker to achieve a remove code execution.
+      published: 2023-05-09T22:15:09.920
+      severity: ""
+      privileges: ""
+      references:
+        - https://forums.ivanti.com/s/article/ZDI-CAN-17812-Ivanti-Avalanche-FileStoreConfig-Arbitrary-File-Upload-Remote-Code-Execution-Vulnerability?language=en_US
+    - id: CVE-2023-28316
+      description: A security vulnerability has been discovered in the implementation of 2FA on the rocket.chat platform, where other active sessions are not invalidated upon activating 2FA. This could potentially allow an attacker to maintain access to a compromised account even after 2FA is enabled.
+      published: 2023-05-09T22:15:09.980
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackerone.com/reports/992280
+    - id: CVE-2023-28317
+      description: A vulnerability has been discovered in Rocket.Chat, where editing messages can change the original timestamp, causing the UI to display messages in an incorrect order.
+      published: 2023-05-09T22:15:10.027
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackerone.com/reports/1379635
+    - id: CVE-2023-28318
+      description: A vulnerability has been discovered in Rocket.Chat, where messages can be hidden regardless of the Message_KeepHistory or Message_ShowDeletedStatus server configuration. This allows users to bypass the intended message deletion behavior, hiding messages and deletion notices.
+      published: 2023-05-09T22:15:10.083
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackerone.com/reports/1379451
+    - id: CVE-2023-2156
+      description: A flaw was found in the networking subsystem of the Linux kernel within the handling of the RPL protocol. This issue results from the lack of proper handling of user-supplied data, which can lead to an assertion failure. This may allow an unauthenticated remote attacker to create a denial of service condition on the system.
+      published: 2023-05-09T22:15:10.133
+      severity: ""
+      privileges: ""
+      references:
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2196292
+        - https://www.zerodayinitiative.com/advisories/ZDI-23-547/
+    - id: CVE-2023-31974
+      description: yasm v1.3.0 was discovered to contain a use after free via the function error at /nasm/nasm-pp.c.
+      published: 2023-05-09T13:15:18.550
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/yasm/yasm/issues/208
+    - id: CVE-2023-31478
+      description: An issue was discovered on GL.iNet devices before 3.216. An API endpoint reveals information about the Wi-Fi configuration, including the SSID and key.
+      published: 2023-05-09T23:15:09.940
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/gl-inet/CVE-issues/blob/main/3.215/SSID_Key_Disclosure.md
+        - https://www.gl-inet.com
+    - id: CVE-2023-31972
+      description: yasm v1.3.0 was discovered to contain a use after free via the function pp_getline at /nasm/nasm-pp.c.
+      published: 2023-05-09T13:15:18.503
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/yasm/yasm/issues/209
