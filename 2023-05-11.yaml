@@ -1,0 +1,1677 @@
+data:
+    - id: CVE-2022-29842
+      description: 'Improper Neutralization of Special Elements used in a Command (''Command Injection'') vulnerability that could allow an attacker to execute code in the context of the root user on a vulnerable CGI file was discovered in Western Digital My Cloud OS 5 devicesThis issue affects My Cloud OS 5: before 5.26.119.'
+      published: 2023-05-10T21:15:08.867
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.westerndigital.com/support/product-security/wdc-23002-my-cloud-firmware-version-5-26-119
+    - id: CVE-2023-30194
+      description: Prestashop posstaticfooter <= 1.0.0 is vulnerable to SQL Injection via posstaticfooter::getPosCurrentHook().
+      published: 2023-05-10T20:15:09.767
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://friends-of-presta.github.io/security-advisories/modules/2023/05/09/posstaticfooter.html
+        - https://themeforest.net/user/posthemes/portfolio
+    - id: CVE-2023-32080
+      description: |-
+        Wings is the server control plane for Pterodactyl Panel. A vulnerability affecting versions prior to 1.7.5 and versions 1.11.0 prior to 1.11.6 impacts anyone running the affected versions of Wings.  This vulnerability can be used to gain access to the host system running Wings if a user is able to modify an server's install script or the install script executes code supplied by the user (either through environment variables, or commands that execute commands based off of user data). This vulnerability has been resolved in version `v1.11.6` of Wings, and has been back-ported to the 1.7 release series in `v1.7.5`. Anyone running `v1.11.x` should upgrade to `v1.11.6` and anyone running `v1.7.x` should upgrade to `v1.7.5`.
+
+        There are no workarounds aside from upgrading. Running Wings with a rootless container runtime may mitigate the severity of any attacks, however the majority of users are using container runtimes that run as root as per the Wings documentation. SELinux may prevent attackers from performing certain operations against the host system, however privileged containers have a lot of freedom even on systems with SELinux enabled.
+
+        It should be noted that this was a known attack vector, for attackers to easily exploit this attack it would require compromising an administrator account on a Panel.  However, certain eggs (the data structure that holds the install scripts that get passed to Wings) have an issue where they are unknowingly executing shell commands with escalated privileges provided by untrusted user data.
+      published: 2023-05-10T21:15:08.997
+      severity: CRITICAL
+      privileges: LOW
+      references:
+        - https://github.com/pterodactyl/wings/releases/tag/v1.11.6
+        - https://github.com/pterodactyl/wings/releases/tag/v1.17.5
+        - https://github.com/pterodactyl/wings/security/advisories/GHSA-p744-4q6p-hvc2
+    - id: CVE-2023-32070
+      description: XWiki Platform is a generic wiki platform. Prior to version 14.6-rc-1, HTML rendering didn't check for dangerous attributes/attribute values. This allowed cross-site scripting (XSS) attacks via attributes and link URLs, e.g., supported in XWiki syntax. This has been patched in XWiki 14.6-rc-1. There are no known workarounds apart from upgrading to a fixed version.
+      published: 2023-05-10T18:15:10.003
+      severity: CRITICAL
+      privileges: LOW
+      references:
+        - https://github.com/xwiki/xwiki-rendering/commit/c40e2f5f9482ec6c3e71dbf1fff5ba8a5e44cdc1
+        - https://github.com/xwiki/xwiki-rendering/security/advisories/GHSA-6gf5-c898-7rxp
+        - https://jira.xwiki.org/browse/XRENDERING-663
+    - id: CVE-2023-31149
+      description: "An Improper Input Validation vulnerability \n\nin the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to execute arbitrary code.\nSee SEL Service Bulletin dated 2022-11-15 for more details."
+      published: 2023-05-10T20:15:09.947
+      severity: CRITICAL
+      privileges: HIGH
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2023-31148
+      description: "An Improper Input Validation vulnerability \n\nin the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to execute arbitrary code.\nSee SEL Service Bulletin dated 2022-11-15 for more details."
+      published: 2023-05-10T20:15:09.847
+      severity: CRITICAL
+      privileges: HIGH
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2023-25568
+      description: 'Boxo, formerly known as go-libipfs, is a library for building IPFS applications and implementations. In versions 0.4.0 and 0.5.0, if an attacker is able allocate arbitrary many bytes in the Bitswap server, those allocations are lasting even if the connection is closed. This affects users accepting untrusted connections with the Bitswap server and also affects users using the old API stubs at `github.com/ipfs/go-libipfs/bitswap` because users then transitively import `github.com/ipfs/go-libipfs/bitswap/server`. Boxo versions 0.6.0 and 0.4.1 contain a patch for this issue. As a workaround, those who are using the stub object at `github.com/ipfs/go-libipfs/bitswap` not taking advantage of the features provided by the server can refactor their code to use the new split API that will allow them to run in a client only mode: `github.com/ipfs/go-libipfs/bitswap/client`.'
+      published: 2023-05-10T14:15:32.187
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/ipfs/boxo/commit/62cbac40b96f49e39cd7fedc77ee6b56adce4916
+        - https://github.com/ipfs/boxo/commit/9cb5cb54d40b57084d1221ba83b9e6bb3fcc3197
+        - https://github.com/ipfs/boxo/commit/baa748b682fabb21a4c1f7628a8af348d4645974
+        - https://github.com/ipfs/go-libipfs/security/advisories/GHSA-m974-xj4j-7qv5
+    - id: CVE-2022-47590
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Fugu Maintenance Switch plugin <= 1.5.2 versions.
+      published: 2023-05-10T11:15:11.337
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/maintenance-switch/wordpress-maintenance-switch-plugin-1-5-2-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-26126
+      description: "All versions of the package m.static are vulnerable to Directory Traversal due to improper input sanitization of the path being requested via the requestFile function.\r\r"
+      published: 2023-05-10T05:15:08.860
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://gist.github.com/lirantal/dcb32c11ce87f5aafd2282b90b4dc998
+        - https://security.snyk.io/vuln/SNYK-JS-MSTATIC-3244915
+    - id: CVE-2023-27298
+      description: Uncontrolled search path in the WULT software maintained by Intel(R) before version 1.0.0 (commit id 592300b) may allow an unauthenticated user to potentially enable escalation of privilege via network access.
+      published: 2023-05-10T14:15:32.563
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00853.html
+    - id: CVE-2023-24392
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in I Thirteen Web Solution Full Width Banner Slider Wp plugin <= 1.1.7 versions.
+      published: 2023-05-10T08:15:11.390
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/full-width-responsive-slider-wp/wordpress-full-width-banner-slider-wp-plugin-1-1-7-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-29101
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Muffingroup Betheme theme <= 26.7.5 versions.
+      published: 2023-05-10T09:15:14.147
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/betheme/wordpress-betheme-theme-26-7-5-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2022-43507
+      description: Improper buffer restrictions in the Intel(R) QAT Engine for OpenSSL before version 0.6.16 may allow a privileged user to potentially enable escalation of privilege via network access.
+      published: 2023-05-10T14:15:24.400
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00798.html
+    - id: CVE-2023-30777
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in WP Engine Advanced Custom Fields Pro, WP Engine Advanced Custom Fields plugins <= 6.1.5 versions.
+      published: 2023-05-10T06:15:18.520
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/articles/reflected-xss-in-advanced-custom-fields-plugins-affecting-2-million-sites?_s_id=cve
+        - https://patchstack.com/database/vulnerability/advanced-custom-fields-pro/wordpress-advanced-custom-fields-pro-plugin-6-1-5-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve
+        - https://patchstack.com/database/vulnerability/advanced-custom-fields/wordpress-advanced-custom-fields-plugin-6-1-5-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-27419
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Everest themes Viable Blog theme <= 1.1.4 versions.
+      published: 2023-05-10T09:15:13.653
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/viable-blog/wordpress-viable-blog-theme-1-1-4-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2022-41985
+      description: An authentication bypass vulnerability exists in the Authentication functionality of Weston Embedded uC-FTPs v 1.98.00. A specially crafted set of network packets can lead to authentication bypass and denial of service. An attacker can send a sequence of unauthenticated packets to trigger this vulnerability.
+      published: 2023-05-10T16:15:09.400
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/weston-embedded/uC-FTPs/pull/1
+        - https://talosintelligence.com/vulnerability_reports/TALOS-2022-1680
+    - id: CVE-2023-27455
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Maui Marketing Update Image Tag Alt Attribute plugin <= 2.4.5 versions.
+      published: 2023-05-10T09:15:13.923
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/update-alt-attribute/wordpress-update-image-tag-alt-attribute-plugin-2-4-5-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2022-47441
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Charitable Donations & Fundraising Team Donation Forms by Charitable plugin <= 1.7.0.10 versions.
+      published: 2023-05-10T11:15:10.597
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/charitable/wordpress-donation-forms-by-charitable-plugin-1-7-0-10-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2022-47600
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in I Thirteen Web Solution Mass Email To users plugin <= 1.1.4 versions.
+      published: 2023-05-10T11:15:11.667
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/mass-email-to-users/wordpress-mass-email-to-users-plugin-1-1-4-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-23569
+      description: Stack-based buffer overflow for some Intel(R) Trace Analyzer and Collector software before version 2021.8.0 published Dec 2022 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:29.507
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00805.html
+    - id: CVE-2022-44619
+      description: Insecure storage of sensitive information in the Intel(R) DCM software before version 5.1 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:25.067
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00806.html
+    - id: CVE-2022-40207
+      description: Improper access control in the Intel(R) SUR software before version 2.4.8989 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:14.133
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00785.html
+    - id: CVE-2022-41690
+      description: Improper access control in the Intel(R) Retail Edge Mobile iOS application before version 3.4.7 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:18.737
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00847.html
+    - id: CVE-2023-28410
+      description: Improper restriction of operations within the bounds of a memory buffer in some Intel(R) i915 Graphics drivers for linux before kernel version 6.2.10 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:33.037
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00886.html
+    - id: CVE-2022-21804
+      description: Out-of-bounds write in software for the Intel QAT Driver for Windows before version 1.9.0-0008 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:11.010
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00809.html
+    - id: CVE-2022-29919
+      description: Use after free in the Intel(R) VROC software before version 7.7.6.1003 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:11.480
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00692.html
+    - id: CVE-2022-41699
+      description: Incorrect permission assignment for critical resource in some Intel(R) QAT drivers for Windows before version 1.9.0 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:19.400
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00778.html
+    - id: CVE-2022-41784
+      description: Improper access control in kernel mode driver for the Intel(R) OFU software before version 14.1.30 may allow an authenticated user to potentially enable escalation of privilege via local access
+      published: 2023-05-10T14:15:20.730
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00792.html
+    - id: CVE-2022-36339
+      description: Improper input validation in firmware for Intel(R) NUC 8 Compute Element, Intel(R) NUC 11 Compute Element, Intel(R) NUC 12 Compute Element may allow a privileged user to enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:13.343
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00777.html
+    - id: CVE-2023-22661
+      description: Buffer overflow in some Intel(R) Server Board BMC firmware before version 2.90 may allow a privileged user to enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:29.207
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00839.html
+    - id: CVE-2023-32568
+      description: An issue was discovered in Veritas InfoScale Operations Manager (VIOM) before 7.4.2.800 and 8.x before 8.0.410. The VIOM web application does not validate user-supplied data and appends it to OS commands and internal binaries used by the application. An attacker with root/administrator level privileges can leverage this to read sensitive data stored on the servers, modify data or server configuration, and delete data or application configuration.
+      published: 2023-05-10T05:15:11.990
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.veritas.com/content/support/en_US/security/VTS23-007
+    - id: CVE-2023-32569
+      description: An issue was discovered in Veritas InfoScale Operations Manager (VIOM) before 7.4.2.800 and 8.x before 8.0.410. The InfoScale VIOM web application is vulnerable to SQL Injection in some of the areas of the application. This allows attackers to submit arbitrary SQL commands on the back-end database to create, read, update, or delete any sensitive data stored in the database.
+      published: 2023-05-10T05:15:12.103
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.veritas.com/content/support/en_US/security/VTS23-007
+    - id: CVE-2022-42465
+      description: Improper access control in kernel mode driver for the Intel(R) OFU software before version 14.1.30 may allow a privileged user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:22.740
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00792.html
+    - id: CVE-2022-29841
+      description: 'Improper Neutralization of Special Elements used in an OS Command (''OS Command Injection'') vulnerability that was caused by a command that read files from a privileged location and created a system command without sanitizing the read data. This command could be triggered by an attacker remotely to cause code execution and gain a reverse shell in Western Digital My Cloud OS 5 devices.This issue affects My Cloud OS 5: before 5.26.119.'
+      published: 2023-05-10T22:15:09.153
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.westerndigital.com/support/product-security/wdc-23002-my-cloud-firmware-version-5-26-119
+    - id: CVE-2022-34147
+      description: Improper input validation in BIOS firmware for some Intel(R) NUC 9 Extreme Laptop Kits, Intel(R) NUC Performance Kits, Intel(R) NUC Performance Mini PC, Intel(R) NUC 8 Compute Element, Intel(R) NUC Pro Kit, Intel(R) NUC Pro Board, and Intel(R) NUC Compute Element may allow a privileged user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:12.977
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00777.html
+    - id: CVE-2022-33894
+      description: Improper input validation in the BIOS firmware for some Intel(R) Processors may allow a privileged user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:12.630
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00807.html
+    - id: CVE-2022-32766
+      description: Improper input validation for some Intel(R) BIOS firmware may allow a privileged user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:12.440
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00777.html
+    - id: CVE-2022-28699
+      description: Improper input validation for some Intel(R) NUC BIOS firmware may allow a privileged user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:11.267
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00777.html
+    - id: CVE-2023-25545
+      description: Improper buffer restrictions in some Intel(R) Server Board BMC firmware before version 2.90 may allow a privileged user to enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:32.107
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00839.html
+    - id: CVE-2023-31150
+      description: |-
+        A Storing Passwords in a Recoverable Format vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) database system could allow an authenticated attacker to retrieve passwords.
+        See SEL Service Bulletin dated 2022-11-15 for more details.
+      published: 2023-05-10T20:15:10.043
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2023-22297
+      description: Access of memory location after end of buffer in some Intel(R) Server Board BMC firmware before version 2.90 may allow a privileged user to enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:26.607
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00839.html
+    - id: CVE-2023-22312
+      description: Improper access control for some Intel(R) NUC BIOS firmware may allow a privileged user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:26.943
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00777.html
+    - id: CVE-2023-22442
+      description: Out of bounds write in some Intel(R) Server Board BMC firmware before version 2.90 may allow a privileged user to enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:28.187
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00839.html
+    - id: CVE-2023-31151
+      description: "An Improper Certificate Validation vulnerability \n\nin the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface\n\ncould allow a remote unauthenticated attacker to conduct a man-in-the-middle (MitM) attack.\nSee SEL Service Bulletin dated 2022-11-15 for more details."
+      published: 2023-05-10T20:15:10.147
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2023-2310
+      description: |-
+        A Channel Accessible by Non-Endpoint vulnerability in the Schweitzer Engineering Laboratories SEL Real-Time Automation Controller (RTAC) could allow a remote attacker to perform a man-in-the-middle (MiTM) that could result in denial of service.
+
+        See the ACSELERATOR RTAC SEL-5033 Software instruction manual date code 20210915 for more details.
+      published: 2023-05-10T20:15:09.637
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+    - id: CVE-2022-41646
+      description: Insufficient control flow management in the Intel(R) IPP Cryptography software before version 2021.6 may allow an unauthenticated user to potentially enable information disclosure via local access.
+      published: 2023-05-10T14:15:17.533
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00788.html
+    - id: CVE-2022-29840
+      description: Server-Side Request Forgery (SSRF) vulnerability that could allow a rogue server on the local network to modify its URL to point back to the loopback adapter was addressed in Western Digital My Cloud OS 5 devices. This could allow the URL to exploit other vulnerabilities on the local server.This issue affects My Cloud OS 5 devices before 5.26.202.
+      published: 2023-05-10T23:15:09.343
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://www.westerndigital.com/support/product-security
+    - id: CVE-2023-2629
+      description: Improper Neutralization of Formula Elements in a CSV File in GitHub repository pimcore/customer-data-framework prior to 3.3.9.
+      published: 2023-05-10T16:15:10.660
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/pimcore/customer-data-framework/commit/4e0105c3a78d20686a0c010faef27d2297b98803
+        - https://huntr.dev/bounties/821ff465-4754-42d1-9376-813c17f16a01
+    - id: CVE-2023-2618
+      description: A vulnerability, which was classified as problematic, has been found in OpenCV wechat_qrcode Module up to 4.7.0. Affected by this issue is the function DecodedBitStreamParser::decodeHanziSegment of the file qrcode/decoder/decoded_bit_stream_parser.cpp. The manipulation leads to memory leak. The attack may be launched remotely. The name of the patch is 2b62ff6181163eea029ed1cab11363b4996e9cd6. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-228548.
+      published: 2023-05-10T06:15:17.577
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/opencv/opencv_contrib/pull/3484
+        - https://github.com/opencv/opencv_contrib/pull/3484/commits/2b62ff6181163eea029ed1cab11363b4996e9cd6
+        - https://vuldb.com/?ctiid.228548
+        - https://vuldb.com/?id.228548
+    - id: CVE-2023-2617
+      description: A vulnerability classified as problematic was found in OpenCV wechat_qrcode Module up to 4.7.0. Affected by this vulnerability is the function DecodedBitStreamParser::decodeByteSegment of the file qrcode/decoder/decoded_bit_stream_parser.cpp. The manipulation leads to null pointer dereference. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-228547.
+      published: 2023-05-10T06:15:16.853
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://gist.github.com/GZTimeWalker/3ca70a8af2f5830711e9cccc73fb5270
+        - https://github.com/opencv/opencv_contrib/pull/3480
+        - https://vuldb.com/?ctiid.228547
+        - https://vuldb.com/?id.228547
+    - id: CVE-2023-1732
+      description: |-
+        When sampling randomness for a shared secret, the implementation of Kyber and FrodoKEM, did not check whether crypto/rand.Read() returns an error. In rare deployment cases (error thrown by the Read() function), this could lead to a predictable shared secret.
+
+        The tkn20 and blindrsa components did not check whether enough randomness was returned from the user provided randomness source. Typically the user provides crypto/rand.Reader, which in the vast majority of cases will always return the right number random bytes. In the cases where it does not, or the user provides a source that does not, the blinding for blindrsa is weak and integrity of the plaintext is not ensured in tkn20.
+      published: 2023-05-10T12:15:10.523
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/cloudflare/circl/security/advisories/GHSA-2q89-485c-9j2x
+    - id: CVE-2022-45846
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Nickys Image Map Pro for WordPress - Interactive SVG Image Map Builder plugin < 5.6.9 versions.
+      published: 2023-05-10T12:15:09.943
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/image-map-pro-wordpress/wordpress-image-map-pro-premium-plugin-5-5-0-multiple-cross-site-request-forgery-csrf-vulnerabilities?_s_id=cve
+    - id: CVE-2023-25772
+      description: Improper input validation in the Intel(R) Retail Edge Mobile Android application before version 3.0.301126-RELEASE may allow an authenticated user to potentially enable denial of service via local access.
+      published: 2023-05-10T14:15:32.397
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00847.html
+    - id: CVE-2022-34848
+      description: Uncontrolled search path for the Intel(R) NUC Pro Software Suite before version 2.0.0.3 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:13.147
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00834.html
+    - id: CVE-2023-22696
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in Custom4Web Affiliate Links Lite plugin <= 2.5 versions.
+      published: 2023-05-10T09:15:12.717
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/affiliate-links/wordpress-affiliate-links-lite-plugin-2-4-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2022-46656
+      description: Insecure inherited permissions for the Intel(R) NUC Pro Software Suite before version 2.0.0.3 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:26.340
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00834.html
+    - id: CVE-2023-32076
+      description: in-toto is a framework to protect supply chain integrity. The in-toto configuration is read from various directories and allows users to configure the behavior of the framework. The files are from directories following the XDG base directory specification. In versions 1.4.0 and prior, among the files read is `.in_totorc` which is a hidden file in the directory in which in-toto is run. If an attacker controls the inputs to a supply chain step, they can mask their activities by also passing in an `.in_totorc` file that includes the necessary exclude patterns and settings. RC files are widely used in other systems and security issues have been discovered in their implementations as well. Maintainers found in their conversations with in-toto adopters that `in_totorc` is not their preferred way to configure in-toto. As none of the options supported in `in_totorc` is unique, and can be set elsewhere using API parameters or CLI arguments, the maintainers decided to drop support for `in_totorc`. in-toto's `user_settings` module has been dropped altogether in commit 3a21d84f40811b7d191fa7bd17265c1f99599afd. Users may also sandbox functionary code as a security measure.
+      published: 2023-05-10T18:15:10.410
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/in-toto/docs/security/advisories/GHSA-p86f-xmg6-9q4x
+        - https://github.com/in-toto/in-toto/commit/3a21d84f40811b7d191fa7bd17265c1f99599afd
+        - https://github.com/in-toto/in-toto/security/advisories/GHSA-wc64-c5rv-32pf
+        - https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
+    - id: CVE-2022-46645
+      description: Uncontrolled resource consumption in the Intel(R) Smart Campus Android application before version 9.9 may allow an authenticated user to potentially enable denial of service via local access.
+      published: 2023-05-10T14:15:26.070
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00815.html
+    - id: CVE-2022-36329
+      description: 'An improper privilege management issue that could allow an attacker to cause a denial of service over the OTA mechanism was discovered in Western Digital My Cloud Home, My Cloud Home Duo and SanDisk ibi devices.This issue affects My Cloud Home and My Cloud Home Duo: before 9.4.0-191; ibi: before 9.4.0-191.'
+      published: 2023-05-10T20:15:09.530
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.westerndigital.com/support/product-security/wdc-23003-western-digital-my-cloud-home-my-cloud-home-duo-and-sandisk-ibi-firmware-version-9-4-0-191
+    - id: CVE-2023-25179
+      description: Uncontrolled resource consumption in the Intel(R) Unite(R) android application before Release 17 may allow an authenticated user to potentially enable denial of service via local access.
+      published: 2023-05-10T14:15:31.930
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00825.html
+    - id: CVE-2022-46279
+      description: Improper access control in the Intel(R) Retail Edge android application before version 3.0.301126-RELEASE may allow an authenticated user to potentially enable information disclosure via local access.
+      published: 2023-05-10T14:15:25.710
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00847.html
+    - id: CVE-2023-22355
+      description: Uncontrolled search path in some Intel(R) oneAPI Toolkit and component software installers before version 4.3.0.251 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:27.240
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00819.html
+    - id: CVE-2023-22440
+      description: Incorrect default permissions in the Intel(R) SCS Add-on software installer for Microsoft SCCM all versions may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:27.873
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00832.html
+    - id: CVE-2022-21162
+      description: Uncontrolled search path for the Intel(R) HDMI Firmware Update tool for NUC before version 1.79.1.1 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:10.603
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00833.html
+    - id: CVE-2022-21239
+      description: Out-of-bounds read in software for the Intel QAT Driver for Windows before version 1.9.0-0008 may allow an authenticated user to potentially enable information disclosure via local access.
+      published: 2023-05-10T14:15:10.920
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00809.html
+    - id: CVE-2022-32970
+      description: Auth. (editor+) Stored Cross-Site Scripting (XSS) vulnerability in Themify Themify Portfolio Post plugin <= 1.2.4 versions.
+      published: 2023-05-10T09:15:09.950
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/themify-portfolio-post/wordpress-themify-portfolio-post-plugin-1-2-2-auth-stored-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2022-25976
+      description: Improper input validation in the Intel(R) VROC software before version 7.7.6.1003 may allow an authenticated user to potentially enable denial of service via local access.
+      published: 2023-05-10T14:15:11.097
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00692.html
+    - id: CVE-2022-27180
+      description: Uncontrolled search path in the Intel(R) MacCPUID software before version 3.2 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:11.187
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00784.html
+    - id: CVE-2023-2615
+      description: Cross-site Scripting (XSS) - Reflected in GitHub repository pimcore/pimcore prior to 10.5.21.
+      published: 2023-05-10T06:15:16.380
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/pimcore/pimcore/commit/7a799399e6843cd049e85da27ceb75b78505317f
+        - https://huntr.dev/bounties/af9c360a-87f8-4e97-a24b-6db675ee942a
+    - id: CVE-2022-29508
+      description: Null pointer dereference in the Intel(R) VROC software before version 7.7.6.1003 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:11.350
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00692.html
+    - id: CVE-2023-2619
+      description: A vulnerability, which was classified as critical, was found in SourceCodester Online Tours & Travels Management System 1.0. This affects the function exec of the file disapprove_delete.php. The manipulation of the argument id leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-228549 was assigned to this vulnerability.
+      published: 2023-05-10T06:15:17.990
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://blog.csdn.net/weixin_43864034/article/details/130596916
+        - https://vuldb.com/?ctiid.228549
+        - https://vuldb.com/?id.228549
+    - id: CVE-2022-30338
+      description: Incorrect default permissions in the Intel(R) VROC software before version 7.7.6.1003 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:11.573
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00692.html
+    - id: CVE-2022-45128
+      description: Improper authorization in the Intel(R) EMA software before version 1.9.0.0 may allow an authenticated user to potentially enable denial of service via local access.
+      published: 2023-05-10T14:15:25.387
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00797.html
+    - id: CVE-2022-32576
+      description: Uncontrolled search path in the Intel(R) Unite(R) Plugin SDK before version 4.2 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:11.760
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00723.html
+    - id: CVE-2023-31166
+      description: |-
+        An Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to create folders in arbitrary paths of the file system.
+
+        See SEL Service Bulletin dated 2022-11-15 for more details.
+      published: 2023-05-10T20:15:11.537
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2022-32578
+      description: Improper access control for the Intel(R) NUC Pro Software Suite before version 2.0.0.3 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:11.970
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00834.html
+    - id: CVE-2022-44610
+      description: Improper authentication in the Intel(R) DCM software before version 5.1 may allow an authenticated user to potentially enable escalation of privilege via network access.
+      published: 2023-05-10T14:15:24.720
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00806.html
+    - id: CVE-2023-23873
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in Flector BBSpoiler plugin <= 2.01 versions.
+      published: 2023-05-10T09:15:13.217
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/bbspoiler/wordpress-bbspoiler-plugin-2-01-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-2614
+      description: Cross-site Scripting (XSS) - DOM in GitHub repository pimcore/pimcore prior to 10.5.21.
+      published: 2023-05-10T06:15:15.007
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/pimcore/pimcore/commit/c36ef54ce33f7b5e74b7b0ab9eabfed47c018fc7
+        - https://huntr.dev/bounties/1a5e6c65-2c5e-4617-9411-5b47a7e743a6
+    - id: CVE-2022-33963
+      description: Incorrect default permissions in the software installer for Intel(R) Unite(R) Client software for Windows before version 4.2.34870 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:12.783
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00782.html
+    - id: CVE-2023-23580
+      description: Stack-based buffer overflow for some Intel(R) Trace Analyzer and Collector software before version 2021.8.0 published Dec 2022 may allow an authenticated user to potentially escalation of privilege via local access.
+      published: 2023-05-10T14:15:30.253
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00805.html
+    - id: CVE-2023-25833
+      description: There is an HTML injection vulnerability in Esri Portal for ArcGIS versions 11.0 and below that may allow a remote, authenticated attacker to create a crafted link which when clicked could render arbitrary HTML in the victim’s browser (no stateful change made or customer data rendered).
+      published: 2023-05-10T02:15:08.933
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://support.esri.com/en-us/patches-updates/2023/portal-for-arcgis-security-2023-update-1-patch-8095
+        - https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/portal-for-arcgis-security-2023-update-1-patch-is-now-available/
+    - id: CVE-2022-34855
+      description: Path traversal for the Intel(R) NUC Pro Software Suite before version 2.0.0.3 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:13.243
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00834.html
+    - id: CVE-2022-41982
+      description: Uncontrolled search path element in the Intel(R) VTune(TM) Profiler software before version 2023.0 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:22.117
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00771.html
+    - id: CVE-2022-36391
+      description: Incorrect default permissions for the Intel(R) NUC Pro Software Suite before version 2.0.0.3 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:13.440
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00834.html
+    - id: CVE-2023-27382
+      description: Incorrect default permissions in the Audio Service for some Intel(R) NUC P14E Laptop Element software for Windows 10 before version 1.0.0.156 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:32.647
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00802.html
+    - id: CVE-2022-37409
+      description: Insufficient control flow management for the Intel(R) IPP Cryptography software before version 2021.6 may allow an authenticated user to potentially enable information disclosure via local access.
+      published: 2023-05-10T14:15:13.647
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00788.html
+    - id: CVE-2022-43475
+      description: Insecure storage of sensitive information in the Intel(R) DCM software before version 5.1 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:24.070
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00806.html
+    - id: CVE-2022-38101
+      description: Uncontrolled search path in some Intel(R) NUC Chaco Canyon BIOS update software before version iFlashV Windows 5.13.00.2105 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:13.833
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00780.html
+    - id: CVE-2022-38103
+      description: Insecure inherited permissions in the Intel(R) NUC Software Studio Service installer before version 1.17.38.0 may allow an authenticated user to potentially enable escalation of privilege via local access
+      published: 2023-05-10T14:15:13.923
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00854.html
+    - id: CVE-2022-43474
+      description: Uncontrolled search path for the DSP Builder software installer before version 22.4 for Intel(R) FPGAs Pro Edition may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:23.727
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00816.html
+    - id: CVE-2022-46378
+      description: An out-of-bounds read vulnerability exists in the PORT command parameter extraction functionality of Weston Embedded uC-FTPs v 1.98.00. A specially-crafted set of network packets can lead to denial of service. An attacker can send packets to trigger this vulnerability.This vulnerability occurs when no port argument is provided to the `PORT` command.
+      published: 2023-05-10T16:15:10.413
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/weston-embedded/uC-FTPs/pull/2
+        - https://talosintelligence.com/vulnerability_reports/TALOS-2022-1681
+    - id: CVE-2022-40210
+      description: Exposure of data element to wrong session in the Intel DCM software before version 5.0.1 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:14.267
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00772.html
+    - id: CVE-2022-40685
+      description: Insufficiently protected credentials in the Intel(R) DCM software before version 5.0.1 may allow an authenticated user to potentially enable information disclosure via network access.
+      published: 2023-05-10T14:15:14.623
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00772.html
+    - id: CVE-2022-40971
+      description: Incorrect default permissions for the Intel(R) HDMI Firmware Update Tool for NUC before version 1.79.1.1 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:14.987
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00833.html
+    - id: CVE-2022-40972
+      description: Improper access control in some Intel(R) QAT drivers for Windows before version 1.9.0 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:15.373
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00778.html
+    - id: CVE-2022-43465
+      description: Improper authorization in the Intel(R) SCS software all versions may allow an authenticated user to potentially enable denial of service via local access.
+      published: 2023-05-10T14:15:23.423
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00796.html
+    - id: CVE-2022-41610
+      description: Improper authorization in Intel(R) EMA Configuration Tool before version 1.0.4 and Intel(R) MC before version 2.4 software may allow an authenticated user to potentially enable denial of service via local access.
+      published: 2023-05-10T14:15:16.370
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00808.html
+    - id: CVE-2023-27386
+      description: Uncontrolled search path in some Intel(R) Pathfinder for RISC-V software may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:32.740
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00855.html
+    - id: CVE-2022-41628
+      description: Uncontrolled search path element in the HotKey Services for some Intel(R) NUC P14E Laptop Element software for Windows 10 before version 1.1.44 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:17.127
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00802.html
+    - id: CVE-2022-46377
+      description: An out-of-bounds read vulnerability exists in the PORT command parameter extraction functionality of Weston Embedded uC-FTPs v 1.98.00. A specially-crafted set of network packets can lead to denial of service. An attacker can send packets to trigger this vulnerability.This vulnerability occurs when no IP address argument is provided to the `PORT` command.
+      published: 2023-05-10T16:15:10.153
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/weston-embedded/uC-FTPs/pull/2
+        - https://talosintelligence.com/vulnerability_reports/TALOS-2022-1681
+    - id: CVE-2022-41658
+      description: Insecure inherited permissions in the Intel(R) VTune(TM) Profiler software before version 2023.0 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:18.097
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00771.html
+    - id: CVE-2022-41687
+      description: Insecure inherited permissions in the HotKey Services for some Intel(R) NUC P14E Laptop Element software for Windows 10 before version 1.1.44 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:18.417
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00802.html
+    - id: CVE-2023-23701
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in Andrew @ Geeenville Web Design Easy Sign Up plugin <= 3.4.1 versions.
+      published: 2023-05-10T08:15:10.980
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/easy-sign-up/wordpress-easy-sign-up-plugin-3-4-1-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2022-41693
+      description: Uncontrolled search path in the Intel(R) Quartus(R) Prime Pro edition software before version 22.3 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:19.067
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00799.html
+    - id: CVE-2023-22711
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in Agent Evolution IMPress Listings plugin <= 2.6.2 versions.
+      published: 2023-05-10T08:15:09.767
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/wp-listings/wordpress-impress-listings-plugin-2-6-2-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2022-41769
+      description: Improper access control in the Intel(R) Connect M Android application before version 1.82 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:19.750
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00779.html
+    - id: CVE-2022-41771
+      description: Incorrect permission assignment for critical resource in some Intel(R) QAT drivers for Windows before version 1.9.0 may allow an authenticated user to potentially enable information disclosure via local access.
+      published: 2023-05-10T14:15:20.247
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00778.html
+    - id: CVE-2023-2616
+      description: Cross-site Scripting (XSS) - Generic in GitHub repository pimcore/pimcore prior to 10.5.21.
+      published: 2023-05-10T05:15:11.877
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/pimcore/pimcore/commit/07a2c95be524c7e20105cef58c5767d4ebb06091
+        - https://huntr.dev/bounties/564cb512-2bcc-4458-8c20-88110ab45801
+    - id: CVE-2022-41801
+      description: Uncontrolled resource consumption in the Intel(R) Connect M Android application before version 1.82 may allow an authenticated user to potentially enable denial of service via local access.
+      published: 2023-05-10T14:15:21.153
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00779.html
+    - id: CVE-2022-41998
+      description: Uncontrolled search path in the Intel(R) DCM software before version 5.1 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:22.430
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00806.html
+    - id: CVE-2022-41979
+      description: Protection mechanism failure in the Intel(R) DCM software before version 5.1 may allow an authenticated user to potentially enable escalation of privilege via network access.
+      published: 2023-05-10T14:15:21.800
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00806.html
+    - id: CVE-2022-47137
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in WPManageNinja LLC Ninja Tables plugin <= 4.3.4 versions.
+      published: 2023-05-10T11:15:09.967
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/ninja-tables/wordpress-ninja-tables-best-data-table-plugin-for-wordpress-plugin-4-3-4-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-31162
+      description: |-
+        An Improper Input Validation vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to arbitrarily alter the content of a configuration file.
+
+        See SEL Service Bulletin dated 2022-11-15 for more details.
+      published: 2023-05-10T20:15:11.170
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2022-38087
+      description: Exposure of resource to wrong sphere in BIOS firmware for some Intel(R) Processors may allow a privileged user to potentially enable information disclosure via local access.
+      published: 2023-05-10T14:15:13.740
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00807.html
+    - id: CVE-2022-37327
+      description: Improper input validation in BIOS firmware for Intel(R) NUC, Intel(R) NUC Performance Kit, Intel(R) NUC Performance Mini PC, Intel(R) NUC 8 Compute Element, Intel(R) NUC Pro Kit, Intel(R) NUC Pro Board, Intel(R) NUC 11 Compute Element, Intel(R) NUC 12 Compute Element, Intel(R) NUC Extreme, Intel(R) NUC 12 Extreme Compute Element, Intel(R) NUC Laptop Kit, Intel(R) NUC Enthusiast, Intel(R) NUC Essential, Intel(R) NUC Laptop Kit, Intel(R) NUC Extreme Compute Element, Intel(R) NUC Boards, Intel(R) NUC Pro Compute Element, Intel(R) NUC Rugged may allow a privileged user to enable information disclosure via local access.
+      published: 2023-05-10T14:15:13.553
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00777.html
+    - id: CVE-2022-32582
+      description: Improper access control in firmware for some Intel(R) NUC Boards, Intel(R) NUC 11 Performance Kit, Intel(R) NUC 11 Performance Mini PC, Intel(R) NUC Pro Compute Element may allow a privileged user to potentially enable denial of service via local access.
+      published: 2023-05-10T14:15:12.113
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00777.html
+    - id: CVE-2022-31477
+      description: Improper initialization for some Intel(R) NUC BIOS firmware may allow a privileged user to potentially enable information disclosure via local access.
+      published: 2023-05-10T14:15:11.667
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00777.html
+    - id: CVE-2023-0008
+      description: A file disclosure vulnerability in Palo Alto Networks PAN-OS software enables an authenticated administrator with access to the web interface to export local files from the firewall through a race condition.
+      published: 2023-05-10T17:15:09.040
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://security.paloaltonetworks.com/CVE-2023-0008
+    - id: CVE-2023-31152
+      description: "An Authentication Bypass Using an Alternate Path or Channel vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface allows Authentication Bypass. \nSee SEL Service Bulletin dated 2022-11-15 for more details."
+      published: 2023-05-10T20:15:10.247
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2023-2630
+      description: Cross-site Scripting (XSS) - Stored in GitHub repository pimcore/pimcore prior to 10.5.21.
+      published: 2023-05-10T16:15:11.157
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/pimcore/pimcore/commit/7e32cc28145274ddfc30fb791012d26c1278bd38
+        - https://huntr.dev/bounties/e1001870-b8d8-4921-8b9c-bbdfb1a1491e
+    - id: CVE-2023-31153
+      description: An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to inject and execute arbitrary script code.See SEL Service Bulletin dated 2022-11-15 for more details.
+      published: 2023-05-10T20:15:10.343
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2022-47606
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Tim Stephenson WP-CORS plugin <= 0.2.1 versions.
+      published: 2023-05-10T11:15:12.100
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/wp-cors/wordpress-wp-cors-plugin-0-2-1-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2022-47587
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Cornel Raiu WP Search Analytics plugin <= 1.4.5 versions.
+      published: 2023-05-10T11:15:11.027
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/search-analytics/wordpress-wp-search-analytics-plugin-1-4-5-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2022-47436
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in MantraBrain Yatra plugin <= 2.1.14 versions.
+      published: 2023-05-10T11:15:10.307
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/yatra/wordpress-best-travel-booking-wordpress-plugin-tour-booking-system-trip-booking-wordpress-plugin-yatra-plugin-2-1-13-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2022-47423
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Ulf Benjaminsson WP-dTree plugin <= 4.4.5 versions.
+      published: 2023-05-10T11:15:10.157
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/wp-dtree-30/wordpress-wp-dtree-plugin-4-4-5-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-31154
+      description: |-
+        An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to inject and execute arbitrary script code.
+
+
+
+
+
+        See SEL Service Bulletin dated 2022-11-15 for more details.
+      published: 2023-05-10T20:15:10.443
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2023-31155
+      description: |-
+        An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to inject and execute arbitrary script code.
+
+
+
+
+
+        See SEL Service Bulletin dated 2022-11-15 for more details.
+      published: 2023-05-10T20:15:10.543
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2022-46861
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Zia Imtiaz Custom Login Page Styler for WordPress plugin <= 6.2 versions.
+      published: 2023-05-10T10:15:10.537
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/login-page-styler/wordpress-login-page-styler-plugin-6-2-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-22379
+      description: Improper input validation in some Intel(R) Server Board BMC firmware before version 2.90 may allow a privileged user to enable information disclosure via local access.
+      published: 2023-05-10T14:15:27.557
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00839.html
+    - id: CVE-2022-46819
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Gopi Ramasamy Continuous announcement scroller plugin <= 13.0 versions.
+      published: 2023-05-10T10:15:10.437
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/continuous-announcement-scroller/wordpress-continuous-announcement-scroller-plugin-13-0-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2022-46817
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Flyzoo Flyzoo Chat plugin <= 2.3.3 versions.
+      published: 2023-05-10T10:15:10.223
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/flyzoo/wordpress-flyzoo-chat-plugin-2-3-3-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-22443
+      description: Integer overflow in some Intel(R) Server Board BMC firmware before version 2.90 may allow a privileged user to enable denial of service via local access.
+      published: 2023-05-10T14:15:28.600
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00839.html
+    - id: CVE-2023-31156
+      description: |-
+        An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to inject and execute arbitrary script code.
+
+
+
+
+
+        See SEL Service Bulletin dated 2022-11-15 for more details.
+      published: 2023-05-10T20:15:10.633
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2022-33961
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in WaspThemes Visual CSS Style Editor plugin <= 7.5.8 versions.
+      published: 2023-05-10T10:15:09.490
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/yellow-pencil-visual-theme-customizer/wordpress-visual-css-style-editor-plugin-7-5-8-auth-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-30746
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Booqable Rental Software Booqable Rental plugin <= 2.4.15 versions.
+      published: 2023-05-10T09:15:14.360
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/booqable-rental-reservations/wordpress-booqable-rental-plugin-plugin-2-4-12-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-23573
+      description: Improper access control in the Intel(R) Unite(R) android application before Release 17 may allow a privileged user to potentially enable information disclosure via local access.
+      published: 2023-05-10T14:15:29.840
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00825.html
+    - id: CVE-2023-24406
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Muneeb ur Rehman Simple PopUp plugin <= 1.8.6 versions.
+      published: 2023-05-10T09:15:13.417
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/simple-popup/wordpress-simple-popup-plugin-1-8-6-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2022-38787
+      description: Improper input validation in firmware for some Intel(R) FPGA products before version 2.7.0 Hotfix may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-10T14:15:14.017
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00824.html
+    - id: CVE-2023-31157
+      description: |-
+        An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to inject and execute arbitrary script code.
+
+
+
+
+
+        See SEL Service Bulletin dated 2022-11-15 for more details.
+      published: 2023-05-10T20:15:10.730
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2023-24475
+      description: Out of bounds read in some Intel(R) Server Board BMC firmware before version 2.90 may allow a privileged user to enable information disclosure via local access.
+      published: 2023-05-10T14:15:31.273
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00839.html
+    - id: CVE-2023-25175
+      description: Improper input validation in some Intel(R) Server Board BMC firmware before version 2.90 may allow a privileged user to enable information disclosure via local access.
+      published: 2023-05-10T14:15:31.587
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00839.html
+    - id: CVE-2023-23794
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Alex Moss Semalt Blocker plugin <= 1.1.3 versions.
+      published: 2023-05-10T09:15:12.997
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/semalt/wordpress-semalt-blocker-plugin-1-1-3-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-28932
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in WPMobile.App WPMobile.App — Android and iOS Mobile Application plugin <= 11.20 versions.
+      published: 2023-05-10T08:15:11.553
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/wpappninja/wordpress-wpmobile-app-plugin-11-20-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-24418
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Gopi Ramasamy Tiny carousel horizontal slider plus plugin <= 3.2 versions.
+      published: 2023-05-10T08:15:11.470
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/tiny-carousel-horizontal-slider-plus/wordpress-tiny-carousel-horizontal-slider-plus-plugin-3-2-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-25771
+      description: Improper access control for some Intel(R) NUC BIOS firmware may allow a privileged user to potentially enable denial of service via local access.
+      published: 2023-05-10T14:15:32.310
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00777.html
+    - id: CVE-2023-23812
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Joost de Valk Enhanced WP Contact Form plugin <= 2.2.3 versions.
+      published: 2023-05-10T08:15:11.310
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/enhanced-wordpress-contactform/wordpress-enhanced-wp-contact-form-plugin-2-2-3-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-25776
+      description: Improper input validation in some Intel(R) Server Board BMC firmware before version 2.90 may allow a privileged user to enable information disclosure via local access.
+      published: 2023-05-10T14:15:32.490
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00839.html
+    - id: CVE-2023-23789
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Premmerce Premmerce Redirect Manager plugin <= 1.0.9 versions.
+      published: 2023-05-10T08:15:11.230
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/premmerce-redirect-manager/wordpress-premmerce-redirect-manager-plugin-1-0-9-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-23788
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Florin Arjocu Custom More Link Complete plugin <= 1.4.1 versions.
+      published: 2023-05-10T08:15:11.163
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/custom-more-link-complete/wordpress-custom-more-link-complete-plugin-1-4-1-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-23786
+      description: Auth. (editor+) Stored Cross-Site Scripting (XSS) vulnerability in Christof Servit affiliate-toolkit plugin <= 3.3.3 versions.
+      published: 2023-05-10T08:15:11.087
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/affiliate-toolkit-starter/wordpress-affiliate-toolkit-plugin-3-3-3-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-31165
+      description: |-
+        An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to inject and execute arbitrary script code.
+
+
+        See SEL Service Bulletin dated 2022-11-15 for more details.
+      published: 2023-05-10T20:15:11.440
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2023-28411
+      description: Double free in some Intel(R) Server Board BMC firmware before version 2.90 may allow a privileged user to enable information disclosure via local access.
+      published: 2023-05-10T14:15:33.343
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00839.html
+    - id: CVE-2023-31164
+      description: |-
+        An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to inject and execute arbitrary script code.
+
+
+        See SEL Service Bulletin dated 2022-11-15 for more details.
+      published: 2023-05-10T20:15:11.360
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2023-31163
+      description: |-
+        An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to inject and execute arbitrary script code.
+
+
+        See SEL Service Bulletin dated 2022-11-15 for more details.
+      published: 2023-05-10T20:15:11.263
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2023-0007
+      description: A cross-site scripting (XSS) vulnerability in Palo Alto Networks PAN-OS software on Panorama appliances enables an authenticated read-write administrator to store a JavaScript payload in the web interface that will execute in the context of another administrator’s browser when viewed.
+      published: 2023-05-10T17:15:08.910
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://security.paloaltonetworks.com/CVE-2023-0007
+    - id: CVE-2023-31161
+      description: |-
+        An Improper Input Validation vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow an authenticated remote attacker to use internal resources, allowing a variety of potential effects.
+
+        See SEL Service Bulletin dated 2022-11-15 for more details.
+      published: 2023-05-10T20:15:11.080
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2023-31160
+      description: |-
+        An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to inject and execute arbitrary script code.
+
+
+
+
+
+        See SEL Service Bulletin dated 2022-11-15 for more details.
+      published: 2023-05-10T20:15:11.003
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2023-31159
+      description: |-
+        An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to inject and execute arbitrary script code.
+
+
+
+
+
+        See SEL Service Bulletin dated 2022-11-15 for more details.
+      published: 2023-05-10T20:15:10.910
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2023-31158
+      description: |-
+        An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in the Schweitzer Engineering Laboratories Real-Time Automation Controller (SEL RTAC) Web Interface could allow a remote authenticated attacker to inject and execute arbitrary script code.
+
+
+
+
+
+        See SEL Service Bulletin dated 2022-11-15 for more details.
+      published: 2023-05-10T20:15:10.823
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://selinc.com/support/security-notifications/external-reports/
+        - https://www.nozominetworks.com/blog/
+    - id: CVE-2023-23910
+      description: Out-of-bounds write for some Intel(R) Trace Analyzer and Collector software before version 2021.8.0 published Dec 2022 may allow an authenticated user to potentially escalation of privilege via local access.
+      published: 2023-05-10T14:15:30.950
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00805.html
+    - id: CVE-2023-23909
+      description: Out-of-bounds read for some Intel(R) Trace Analyzer and Collector software before version 2021.8.0 published Dec 2022 may allow an authenticated user to potentially enable information disclosure via local access.
+      published: 2023-05-10T14:15:30.667
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00805.html
+    - id: CVE-2022-42878
+      description: Null pointer dereference for some Intel(R) Trace Analyzer and Collector software before version 2021.8.0 published Dec 2022 may allow an authenticated user to potentially enable information disclosure via local access.
+      published: 2023-05-10T14:15:23.103
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00805.html
+    - id: CVE-2022-41621
+      description: Improper access control in some Intel(R) QAT drivers for Windows before version 1.9.0 may allow an authenticated user to potentially enable information disclosure via local access.
+      published: 2023-05-10T14:15:16.763
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00778.html
+    - id: CVE-2022-41808
+      description: Improper buffer restriction in software for the Intel QAT Driver for Linux before version 1.7.l.4.12 may allow an authenticated user to potentially enable denial of service via local access.
+      published: 2023-05-10T14:15:21.477
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00809.html
+    - id: CVE-2023-22447
+      description: Insertion of sensitive information into log file in the Open CAS software for Linux maintained by Intel before version 22.6.2 may allow a privileged user to potentially enable information disclosure via local access.
+      published: 2023-05-10T14:15:28.900
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00827.html
+    - id: CVE-2022-27856
+      description: Auth. (editor+) Stored Cross-Site Scripting (XSS) vulnerability in Atlas Gondal Export All URLs plugin <= 4.1 versions.
+      published: 2023-05-10T11:15:09.587
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/export-all-urls/wordpress-export-all-urls-plugin-4-1-authenticated-stored-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2022-32577
+      description: Improper input validation in BIOS Firmware for some Intel(R) NUC Kits before version PY0081 may allow a privileged user to potentially enable information disclosure or denial of service via local access
+      published: 2023-05-10T14:15:11.837
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00777.html
+    - id: CVE-2022-40974
+      description: Incomplete cleanup in the Intel(R) IPP Cryptography software before version 2021.6 may allow a privileged user to potentially enable information disclosure via local access.
+      published: 2023-05-10T14:15:15.933
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00788.html
+    - id: CVE-2023-31910
+      description: Jerryscript 3.0 (commit 05dbbd1) was discovered to contain a heap-buffer-overflow via the component parser_parse_function_statement at /jerry-core/parser/js/js-parser-statm.c.
+      published: 2023-05-10T15:15:10.697
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/jerryscript-project/jerryscript/issues/5076
+    - id: CVE-2023-30354
+      description: 'Shenzen Tenda Technology IP Camera CP3 V11.10.00.2211041355 does not defend against physical access to U-Boot via the UART: the Wi-Fi password is shown, and the hardcoded boot password can be inserted for console access.'
+      published: 2023-05-10T16:15:12.017
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/SECloudUNIMORE/ACES/blob/master/Tenda/CP3/tmp_NCD.md
+        - https://github.com/SECloudUNIMORE/ACES/blob/master/Tenda/CP3/tmp_PBA.md
+    - id: CVE-2023-30356
+      description: Missing Support for an Integrity Check in Shenzen Tenda Technology IP Camera CP3 V11.10.00.2211041355 allows attackers to update the device with crafted firmware
+      published: 2023-05-10T16:15:12.187
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/SECloudUNIMORE/ACES/blob/master/Tenda/CP3/tmp_MU.md
+    - id: CVE-2023-31554
+      description: xpdf pdfimages v4.04 was discovered to contain a stack overflow in the component Catalog::readPageLabelTree2(Object*). This vulnerability allows attackers to cause a Denial of Service (DoS).
+      published: 2023-05-10T16:15:12.263
+      severity: ""
+      privileges: ""
+      references:
+        - https://forum.xpdfreader.com/viewtopic.php?t=42421
+    - id: CVE-2023-31555
+      description: podofoinfo 0.10.0 was discovered to contain a segmentation violation via the function PoDoFo::PdfObject::DelayedLoad.
+      published: 2023-05-10T16:15:12.317
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/podofo/podofo/issues/67
+    - id: CVE-2023-31556
+      description: podofoinfo 0.10.0 was discovered to contain a segmentation violation via the function PoDoFo::PdfDictionary::findKeyParent.
+      published: 2023-05-10T16:15:12.367
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/podofo/podofo/issues/66
+    - id: CVE-2023-31557
+      description: xpdf pdfimages v4.04 was discovered to contain a stack overflow in the component Catalog::readEmbeddedFileTree(Object*). This vulnerability allows attackers to cause a Denial of Service (DoS).
+      published: 2023-05-10T16:15:12.427
+      severity: ""
+      privileges: ""
+      references:
+        - https://forum.xpdfreader.com/viewtopic.php?t=42422&sid=acb8ed31bbd74223e3c4d0fb2552c748
+    - id: CVE-2023-31566
+      description: Podofo v0.10.0 was discovered to contain a heap-use-after-free via the component PoDoFo::PdfEncrypt::IsMetadataEncrypted().
+      published: 2023-05-10T16:15:12.567
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/podofo/podofo/issues/70
+    - id: CVE-2023-31567
+      description: Podofo v0.10.0 was discovered to contain a heap buffer overflow via the component PoDoFo::PdfEncryptAESV3::PdfEncryptAESV3.
+      published: 2023-05-10T16:15:12.720
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/podofo/podofo/issues/71
+    - id: CVE-2023-31568
+      description: Podofo v0.10.0 was discovered to contain a heap buffer overflow via the component PoDoFo::PdfEncryptRC4::PdfEncryptRC4.
+      published: 2023-05-10T16:15:12.810
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/podofo/podofo/issues/72
+    - id: CVE-2023-30353
+      description: Shenzen Tenda Technology IP Camera CP3 V11.10.00.2211041355 allows unauthenticated remote code execution via an XML document.
+      published: 2023-05-10T16:15:11.860
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/SECloudUNIMORE/ACES/blob/master/Tenda/CP3/tmp_uRCE.md
+    - id: CVE-2023-30352
+      description: Shenzen Tenda Technology IP Camera CP3 V11.10.00.2211041355 was discovered to contain a hard-coded default password for the RTSP feed.
+      published: 2023-05-10T16:15:11.690
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/SECloudUNIMORE/ACES/blob/master/Tenda/CP3/tmp_RTSPa.md
+    - id: CVE-2023-27527
+      description: Shinseiyo Sogo Soft (7.9A) and earlier improperly restricts XML external entity references (XXE). By processing a specially crafted XML file, arbitrary files on the PC may be accessed by an attacker.
+      published: 2023-05-10T06:15:13.953
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN73178249/
+        - https://www.touki-kyoutaku-online.moj.go.jp/
+    - id: CVE-2023-27510
+      description: 'JB Inquiry form contains an exposure of private personal information to an unauthorized actor vulnerability, which may allow a remote unauthenticated attacker to obtain information entered from forms created using the affected product. The affected products and versions are as follows: JB Inquiry form versions 0.6.1 and 0.6.0, JB Inquiry form versions 0.5.2, 0.5.1 and 0.5.0, and JB Inquiry form version 0.40.'
+      published: 2023-05-10T06:15:13.807
+      severity: ""
+      privileges: ""
+      references:
+        - https://jubei.co.jp/formmail/info20230414.html
+        - https://jvn.jp/en/jp/JVN36340790/
+    - id: CVE-2022-36937
+      description: |-
+        HHVM 4.172.0 and all prior versions use TLS 1.0 for secure connections when handling tls:// URLs in the stream extension. TLS1.0 has numerous published vulnerabilities and is deprecated. HHVM 4.153.4, 4.168.2, 4.169.2, 4.170.2, 4.171.1, 4.172.1, 4.173.0 replaces TLS1.0 with TLS1.3.
+
+        Applications that call stream_socket_server or stream_socket_client functions with a URL starting with tls:// are affected.
+      published: 2023-05-10T19:15:08.627
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/facebook/hhvm/commit/083f5ffdee661f61512909d16f9a5b98cff3cf0b
+        - https://hhvm.com/blog/2023/01/20/security-update.html
+    - id: CVE-2021-45345
+      description: Buffer Overflow vulnerability found in En3rgy WebcamServer v.0.5.2 allows a remote attacker to cause a denial of service via the WebcamServer.exe file.
+      published: 2023-05-10T20:15:09.427
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/0xHop/0d065694d56ac3943d8e8c239d80c63f
+        - https://gist.github.com/0xHop/337e65ec684b8866e86f4b25b8f1dbc7
+        - https://sourceforge.net/projects/webcamserv/
+    - id: CVE-2023-27385
+      description: Heap-based buffer overflow vulnerability exists in CX-Drive All models V3.01 and earlier. By having a user open a specially crafted SDD file, arbitrary code may be executed and/or information may be disclosed.
+      published: 2023-05-10T06:15:13.680
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/vu/JVNVU97372625/
+        - https://www.ia.omron.com/product/vulnerability/OMSR-2023-004_en.pdf
+    - id: CVE-2023-25184
+      description: 'Use of weak credentials exists in Seiko Solutions SkyBridge and SkySpider series, which may allow a remote unauthenticated attacker to decrypt password for the WebUI of the product. Affected products and versions are as follows: SkyBridge MB-A200 firmware Ver. 01.00.05 and earlier, SkyBridge BASIC MB-A130 firmware Ver. 1.4.1 and earlier, and SkySpider MB-R210 firmware Ver. 1.01.00 and earlier.'
+      published: 2023-05-10T06:15:13.427
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN40604023/
+        - https://www.seiko-sol.co.jp/archives/73969/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a100/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a130/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a200/
+        - https://www.seiko-sol.co.jp/products/skyspider/skyspider_download/mb-r210/
+    - id: CVE-2023-25072
+      description: Use of weak credentials exists in SkyBridge MB-A100/110 firmware Ver. 4.2.0 and earlier, which may allow a remote unauthenticated attacker to decrypt password for the WebUI of the product.
+      published: 2023-05-10T06:15:13.030
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN40604023/
+        - https://www.seiko-sol.co.jp/archives/73969/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a100/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a130/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a200/
+        - https://www.seiko-sol.co.jp/products/skyspider/skyspider_download/mb-r210/
+    - id: CVE-2023-25070
+      description: Cleartext transmission of sensitive information exists in SkyBridge MB-A100/110 firmware Ver. 4.2.0 and earlier. If the telnet connection is enabled, a remote unauthenticated attacker may eavesdrop on or alter the administrator's communication to the product.
+      published: 2023-05-10T06:15:12.497
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN40604023/
+        - https://www.seiko-sol.co.jp/archives/73969/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a100/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a130/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a200/
+        - https://www.seiko-sol.co.jp/products/skyspider/skyspider_download/mb-r210/
+    - id: CVE-2023-24586
+      description: Cleartext storage of sensitive information exists in SkyBridge MB-A100/110 firmware Ver. 4.2.0 and earlier, which may allow a remote authenticated attacker to obtain an APN credential for the product.
+      published: 2023-05-10T06:15:12.310
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN40604023/
+        - https://www.seiko-sol.co.jp/archives/73969/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a100/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a130/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a200/
+        - https://www.seiko-sol.co.jp/products/skyspider/skyspider_download/mb-r210/
+    - id: CVE-2023-23906
+      description: Missing authentication for critical function exists in SkyBridge MB-A100/110 firmware Ver. 4.2.0 and earlier, which may allow a remote unauthenticated attacker to execute some critical functions without authentication, e.g., rebooting the product.
+      published: 2023-05-10T06:15:12.007
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN40604023/
+        - https://www.seiko-sol.co.jp/archives/73969/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a100/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a130/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a200/
+        - https://www.seiko-sol.co.jp/products/skyspider/skyspider_download/mb-r210/
+    - id: CVE-2023-23901
+      description: Improper following of a certificate's chain of trust exists in SkyBridge MB-A200 firmware Ver. 01.00.05 and earlier, and SkyBridge BASIC MB-A130 firmware Ver. 1.4.1 and earlier, which may allow a remote unauthenticated attacker to eavesdrop on or alter the communication sent to the WebUI of the product.
+      published: 2023-05-10T06:15:11.727
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN40604023/
+        - https://www.seiko-sol.co.jp/archives/73969/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a100/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a130/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a200/
+        - https://www.seiko-sol.co.jp/products/skyspider/skyspider_download/mb-r210/
+    - id: CVE-2023-30351
+      description: Shenzen Tenda Technology IP Camera CP3 V11.10.00.2211041355 was discovered to contain a hard-coded default password for root which is stored using weak encryption. This vulnerability allows attackers to connect to the TELNET service (or UART) by using the exposed credentials.
+      published: 2023-05-10T16:15:11.497
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/SECloudUNIMORE/ACES/blob/master/Tenda/CP3/tmp_PRA.md
+        - https://github.com/SECloudUNIMORE/ACES/blob/master/Tenda/CP3/tmp_RRA.md
+    - id: CVE-2023-27888
+      description: Cross-site scripting vulnerability in Joruri Gw Ver 3.2.5 and earlier allows a remote authenticated attacker to inject an arbitrary script via Message Memo function of the affected product.
+      published: 2023-05-10T06:15:14.077
+      severity: ""
+      privileges: ""
+      references:
+        - https://joruri-pwm.jp/org/docs/2022093000017/
+        - https://jvn.jp/en/jp/JVN87559956/
+    - id: CVE-2023-27889
+      description: Cross-site request forgery (CSRF) vulnerability in LIQUID SPEECH BALLOON versions prior to 1.2 allows a remote unauthenticated attacker to hijack the authentication of a user and to perform unintended operations by having a user view a malicious page.
+      published: 2023-05-10T06:15:14.280
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN99657911/
+        - https://wordpress.org/plugins/liquid-speech-balloon/#developers
+    - id: CVE-2023-27918
+      description: Cross-site scripting vulnerability in Appointment and Event Booking Calendar for WordPress - Amelia versions prior to 1.0.76 allows a remote unauthenticated attacker to inject an arbitrary script by having a user who is logging in the WordPress where the product is installed visit a malicious URL.
+      published: 2023-05-10T06:15:14.547
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN00971105/
+        - https://wordpress.org/plugins/ameliabooking/#developers
+    - id: CVE-2023-27919
+      description: Authentication bypass vulnerability in NEXT ENGINE Integration Plugin (for EC-CUBE 2.0 series) all versions allows a remote unauthenticated attacker to alter the information stored in the system.
+      published: 2023-05-10T06:15:14.753
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN50862842/
+        - https://main.next-engine.com/Usernotice/detail?id=1054
+    - id: CVE-2023-31908
+      description: Jerryscript 3.0 (commit 05dbbd1) was discovered to contain a heap-buffer-overflow via the component ecma_builtin_typedarray_prototype_sort.
+      published: 2023-05-10T15:15:10.533
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/jerryscript-project/jerryscript/issues/5067
+    - id: CVE-2023-31907
+      description: Jerryscript 3.0.0 was discovered to contain a heap-buffer-overflow via the component scanner_literal_is_created at /jerry-core/parser/js/js-scanner-util.c.
+      published: 2023-05-10T15:15:10.353
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/jerryscript-project/jerryscript/issues/5073
+    - id: CVE-2023-31906
+      description: Jerryscript 3.0.0(commit 1a2c047) was discovered to contain a heap-buffer-overflow via the component lexer_compare_identifier_to_chars at /jerry-core/parser/js/js-lexer.c.
+      published: 2023-05-10T15:15:10.187
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/jerryscript-project/jerryscript/issues/5066
+    - id: CVE-2023-31471
+      description: An issue was discovered on GL.iNet devices before 3.216. Through the software installation feature, it is possible to install arbitrary software, such as a reverse shell, because the restrictions on the available package list are limited to client-side verification. It is possible to install software from the filesystem, the package list, or a URL.
+      published: 2023-05-10T15:15:10.017
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/gl-inet/CVE-issues/blob/main/3.215/Abuse_of_Functionality_leads_to_RCE.md
+        - https://www.gl-inet.com
+    - id: CVE-2023-29930
+      description: An issue was found in Genesys CIC Polycom phone provisioning TFTP Server all version allows a remote attacker to execute arbitrary code via the login crednetials to the TFTP server configuration page.
+      published: 2023-05-10T15:15:09.803
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/YSaxon/TFTPlunder
+        - https://help.genesys.com/pureconnect/mergedprojects/wh_tr/mergedprojects/wh_tr_polycom_phones/desktop/configuring_the_tftp_server1.htm
+    - id: CVE-2023-27564
+      description: The n8n package 0.218.0 for Node.js allows Information Disclosure.
+      published: 2023-05-10T15:15:09.660
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/n8n-io/n8n/releases
+        - https://www.synacktiv.com/sites/default/files/2023-05/Synacktiv-N8N-Multiple-Vulnerabilities_0.pdf
+    - id: CVE-2023-27563
+      description: The n8n package 0.218.0 for Node.js allows Escalation of Privileges.
+      published: 2023-05-10T15:15:09.483
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/n8n-io/n8n/releases
+        - https://www.synacktiv.com/sites/default/files/2023-05/Synacktiv-N8N-Multiple-Vulnerabilities_0.pdf
+    - id: CVE-2023-27562
+      description: The n8n package 0.218.0 for Node.js allows Directory Traversal.
+      published: 2023-05-10T15:15:08.817
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/n8n-io/n8n/releases
+        - https://www.synacktiv.com/sites/default/files/2023-05/Synacktiv-N8N-Multiple-Vulnerabilities_0.pdf
+    - id: CVE-2023-32573
+      description: In Qt before 5.15.14, 6.0.x through 6.2.x before 6.2.9, and 6.3.x through 6.5.x before 6.5.1, QtSvg QSvgFont m_unitsPerEm initialization is mishandled.
+      published: 2023-05-10T06:15:19.070
+      severity: ""
+      privileges: ""
+      references:
+        - https://codereview.qt-project.org/c/qt/qtsvg/+/474093
+    - id: CVE-2023-23578
+      description: Improper access control vulnerability in SkyBridge MB-A200 firmware Ver. 01.00.05 and earlier allows a remote unauthenticated attacker to connect to the product's ADB port.
+      published: 2023-05-10T06:15:11.430
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN40604023/
+        - https://www.seiko-sol.co.jp/archives/73969/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a100/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a130/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a200/
+        - https://www.seiko-sol.co.jp/products/skyspider/skyspider_download/mb-r210/
+    - id: CVE-2023-22441
+      description: 'Missing authentication for critical function exists in Seiko Solutions SkyBridge series, which may allow a remote attacker to obtain or alter the setting information of the product or execute some critical functions without authentication, e.g., rebooting the product. Affected products and versions are as follows: SkyBridge MB-A200 firmware Ver. 01.00.05 and earlier, and SkyBridge BASIC MB-A130 firmware Ver. 1.4.1 and earlier'
+      published: 2023-05-10T06:15:11.160
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN40604023/
+        - https://www.seiko-sol.co.jp/archives/73969/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a100/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a130/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a200/
+        - https://www.seiko-sol.co.jp/products/skyspider/skyspider_download/mb-r210/
+    - id: CVE-2023-22361
+      description: Improper privilege management vulnerability in SkyBridge MB-A100/110 firmware Ver. 4.2.0 and earlier allows a remote authenticated attacker to alter a WebUI password of the product.
+      published: 2023-05-10T06:15:10.800
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN40604023/
+        - https://www.seiko-sol.co.jp/archives/73969/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a100/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a130/
+        - https://www.seiko-sol.co.jp/products/skybridge/skybridge_download/mb-a200/
+        - https://www.seiko-sol.co.jp/products/skyspider/skyspider_download/mb-r210/
+    - id: CVE-2022-4008
+      description: In affected versions of Octopus Deploy it is possible to upload a zipbomb file as a task which results in Denial of Service
+      published: 2023-05-10T06:15:09.000
+      severity: ""
+      privileges: ""
+      references:
+        - https://advisories.octopus.com/post/2023/sa2023-08/
+    - id: CVE-2023-32570
+      description: VideoLAN dav1d before 1.2.0 has a thread_task.c race condition that can lead to an application crash, related to dav1d_decode_frame_exit.
+      published: 2023-05-10T05:15:12.190
+      severity: ""
+      privileges: ""
+      references:
+        - https://code.videolan.org/videolan/dav1d/-/commit/cf617fdae0b9bfabd27282854c8e81450d955efa
+        - https://code.videolan.org/videolan/dav1d/-/tags/1.2.0
