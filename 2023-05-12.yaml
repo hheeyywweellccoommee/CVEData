@@ -1,0 +1,807 @@
+data:
+    - id: CVE-2023-0852
+      description: Buffer overflow in the Address Book of Mobile Device function of Office / Small Office Multifunction Printers and Laser Printers(*) which may allow an attacker on the network segment to trigger the affected product being unresponsive or to execute arbitrary code. *:Satera LBP660C Series/LBP620C Series/MF740C Series/MF640C Series firmware Ver.11.04 and earlier sold in Japan. Color imageCLASS LBP660C Series/LBP 620C Series/X LBP1127C/MF740C Series/MF640C Series/X MF1127C firmware Ver.11.04 and earlier sold in US. i-SENSYS LBP660C Series/LBP620C Series/MF740C Series/MF640C Series, C1127P, C1127iF, C1127i firmware Ver.11.04 and earlier sold in Europe.
+      published: 2023-05-11T13:15:11.727
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://canon.jp/support/support-info/230414vulnerability-response
+        - https://psirt.canon/advisory-information/cp2023-001/
+        - https://www.canon-europe.com/support/product-security-latest-news/
+        - https://www.usa.canon.com/support/canon-product-advisories/Service-Notice-Vulnerabilities-Remediation-Against-Buffer-Overflow
+    - id: CVE-2023-30192
+      description: Prestashop possearchproducts 1.7 is vulnerable to SQL Injection via PosSearch::find().
+      published: 2023-05-12T00:15:06.447
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://friends-of-presta.github.io/security-advisories/modules/2023/05/11/possearchproducts.html
+        - https://themeforest.net/user/posthemes/portfolio
+    - id: CVE-2023-2645
+      description: 'A vulnerability, which was classified as critical, was found in USR USR-G806 1.0.41. Affected is an unknown function of the component Web Management Page. The manipulation of the argument username/password with the input root leads to use of hard-coded password. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. It is recommended to change the configuration settings. VDB-228774 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-11T07:15:08.567
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://github.com/wswokao/testrouter/blob/main/README.md
+        - https://vuldb.com/?ctiid.228774
+        - https://vuldb.com/?id.228774
+    - id: CVE-2023-0856
+      description: Buffer overflow in IPP sides attribute process of Office / Small Office Multifunction Printers and Laser Printers(*) which may allow an attacker on the network segment to trigger the affected product being unresponsive or to execute arbitrary code. *:Satera LBP660C Series/LBP620C Series/MF740C Series/MF640C Series firmware Ver.11.04 and earlier sold in Japan. Color imageCLASS LBP660C Series/LBP 620C Series/X LBP1127C/MF740C Series/MF640C Series/X MF1127C firmware Ver.11.04 and earlier sold in US. i-SENSYS LBP660C Series/LBP620C Series/MF740C Series/MF640C Series, C1127P, C1127iF, C1127i firmware Ver.11.04 and earlier sold in Europe.
+      published: 2023-05-11T13:15:12.713
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://canon.jp/support/support-info/230414vulnerability-response
+        - https://psirt.canon/advisory-information/cp2023-001/
+        - https://www.canon-europe.com/support/product-security-latest-news/
+        - https://www.usa.canon.com/support/canon-product-advisories/Service-Notice-Vulnerabilities-Remediation-Against-Buffer-Overflow
+    - id: CVE-2023-0855
+      description: Buffer overflow in IPP number-up attribute process of Office / Small Office Multifunction Printers and Laser Printers(*) which may allow an attacker on the network segment to trigger the affected product being unresponsive or to execute arbitrary code. *:Satera LBP660C Series/LBP620C Series/MF740C Series/MF640C Series firmware Ver.11.04 and earlier sold in Japan. Color imageCLASS LBP660C Series/LBP 620C Series/X LBP1127C/MF740C Series/MF640C Series/X MF1127C firmware Ver.11.04 and earlier sold in US. i-SENSYS LBP660C Series/LBP620C Series/MF740C Series/MF640C Series, C1127P, C1127iF, C1127i firmware Ver.11.04 and earlier sold in Europe.
+      published: 2023-05-11T13:15:12.487
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://canon.jp/support/support-info/230414vulnerability-response
+        - https://psirt.canon/advisory-information/cp2023-001/
+        - https://www.canon-europe.com/support/product-security-latest-news/
+        - https://www.usa.canon.com/support/canon-product-advisories/Service-Notice-Vulnerabilities-Remediation-Against-Buffer-Overflow
+    - id: CVE-2023-0854
+      description: Buffer overflow in NetBIOS QNAME registering and communication process of Office / Small Office Multifunction Printers and Laser Printers(*) which may allow an attacker on the network segment to trigger the affected product being unresponsive or to execute arbitrary code. *:Satera LBP660C Series/LBP620C Series/MF740C Series/MF640C Series firmware Ver.11.04 and earlier sold in Japan. Color imageCLASS LBP660C Series/LBP 620C Series/X LBP1127C/MF740C Series/MF640C Series/X MF1127C firmware Ver.11.04 and earlier sold in US. i-SENSYS LBP660C Series/LBP620C Series/MF740C Series/MF640C Series, C1127P, C1127iF, C1127i firmware Ver.11.04 and earlier sold in Europe.
+      published: 2023-05-11T13:15:12.207
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://canon.jp/support/support-info/230414vulnerability-response
+        - https://psirt.canon/advisory-information/cp2023-001/
+        - https://www.canon-europe.com/support/product-security-latest-news/
+        - https://www.usa.canon.com/support/canon-product-advisories/Service-Notice-Vulnerabilities-Remediation-Against-Buffer-Overflow
+    - id: CVE-2023-0853
+      description: Buffer overflow in mDNS NSEC record registering process of Office / Small Office Multifunction Printers and Laser Printers(*) which may allow an attacker on the network segment to trigger the affected product being unresponsive or to execute arbitrary code. *:Satera LBP660C Series/LBP620C Series/MF740C Series/MF640C Series firmware Ver.11.04 and earlier sold in Japan. Color imageCLASS LBP660C Series/LBP 620C Series/X LBP1127C/MF740C Series/MF640C Series/X MF1127C firmware Ver.11.04 and earlier sold in US. i-SENSYS LBP660C Series/LBP620C Series/MF740C Series/MF640C Series, C1127P, C1127iF, C1127i firmware Ver.11.04 and earlier sold in Europe.
+      published: 2023-05-11T13:15:11.960
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://canon.jp/support/support-info/230414vulnerability-response
+        - https://psirt.canon/advisory-information/cp2023-001/
+        - https://www.canon-europe.com/support/product-security-latest-news/
+        - https://www.usa.canon.com/support/canon-product-advisories/Service-Notice-Vulnerabilities-Remediation-Against-Buffer-Overflow
+    - id: CVE-2023-0851
+      description: Buffer overflow in CPCA Resource Download process of Office / Small Office Multifunction Printers and Laser Printers(*) which may allow an attacker on the network segment to trigger the affected product being unresponsive or to execute arbitrary code. *:Satera LBP660C Series/LBP620C Series/MF740C Series/MF640C Series firmware Ver.11.04 and earlier sold in Japan. Color imageCLASS LBP660C Series/LBP 620C Series/X LBP1127C/MF740C Series/MF640C Series/X MF1127C firmware Ver.11.04 and earlier sold in US. i-SENSYS LBP660C Series/LBP620C Series/MF740C Series/MF640C Series, C1127P, C1127iF, C1127i firmware Ver.11.04 and earlier sold in Europe.
+      published: 2023-05-11T13:15:11.437
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://canon.jp/support/support-info/230414vulnerability-response
+        - https://psirt.canon/advisory-information/cp2023-001/
+        - https://www.canon-europe.com/support/product-security-latest-news/
+        - https://www.usa.canon.com/support/canon-product-advisories/Service-Notice-Vulnerabilities-Remediation-Against-Buffer-Overflow
+    - id: CVE-2023-1834
+      description: Rockwell Automation was made aware that Kinetix 5500 drives, manufactured between May 2022 and January 2023, and are running v7.13 may have the telnet and FTP ports open by default.  This could potentially allow attackers unauthorized access to the device through the open ports.
+      published: 2023-05-11T19:15:09.283
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1139441
+    - id: CVE-2023-2443
+      description: Rockwell Automation ThinManager product allows the use of medium strength ciphers.  If the client requests an insecure cipher, a malicious actor could potentially decrypt traffic sent between the client and server API.
+      published: 2023-05-11T19:15:09.377
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1139442
+    - id: CVE-2023-29281
+      description: Adobe Substance 3D Painter versions 8.3.0 (and earlier) is affected by an out-of-bounds read vulnerability when parsing a crafted file, which could result in a read past the end of an allocated memory structure. An attacker could leverage this vulnerability to execute code in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.
+      published: 2023-05-11T22:15:10.893
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://helpx.adobe.com/security/products/substance3d_painter/apsb23-29.html
+    - id: CVE-2023-29030
+      description: A cross site scripting vulnerability was discovered in Rockwell Automation's ArmorStart ST product that could potentially allow a malicious user to view and modify sensitive data or make the web page unavailable. User interaction, such as a phishing attack, is required for successful exploitation of this vulnerability.
+      published: 2023-05-11T18:15:13.770
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1139438
+    - id: CVE-2023-2444
+      description: A cross site request forgery vulnerability exists in Rockwell Automation's FactoryTalk Vantagepoint. This vulnerability can be exploited in two ways. If an attacker sends a malicious link to a computer that is on the same domain as the FactoryTalk Vantagepoint server and a user clicks the link, the attacker could impersonate the legitimate user and send requests to the affected product.  Additionally, if an attacker sends an untrusted link to a computer that is not on the same domain as the server and a user opens the FactoryTalk Vantagepoint website, enters credentials for the FactoryTalk Vantagepoint server, and clicks on the malicious link a cross site request forgery attack would be successful as well.
+      published: 2023-05-11T19:15:09.437
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1139443
+    - id: CVE-2023-29285
+      description: Adobe Substance 3D Painter versions 8.3.0 (and earlier) is affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.
+      published: 2023-05-11T22:15:11.287
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://helpx.adobe.com/security/products/substance3d_painter/apsb23-29.html
+    - id: CVE-2023-29284
+      description: Adobe Substance 3D Painter versions 8.3.0 (and earlier) is affected by a Stack-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.
+      published: 2023-05-11T22:15:11.197
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://helpx.adobe.com/security/products/substance3d_painter/apsb23-29.html
+    - id: CVE-2023-29283
+      description: Adobe Substance 3D Painter versions 8.3.0 (and earlier) is affected by a Heap-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.
+      published: 2023-05-11T22:15:11.077
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://helpx.adobe.com/security/products/substance3d_painter/apsb23-29.html
+    - id: CVE-2023-32058
+      description: Vyper is a Pythonic smart contract language for the Ethereum virtual machine. Prior to version 0.3.8, due to missing overflow check for loop variables, by assigning the iterator of a loop to a variable, it is possible to overflow the type of the latter. The issue seems to happen only in loops of type `for i in range(a, a + N)` as in loops of type `for i in range(start, stop)` and `for i in range(stop)`, the compiler is able to raise a `TypeMismatch` when trying to overflow the variable. The problem has been patched in version 0.3.8.
+      published: 2023-05-11T21:15:10.397
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/vyperlang/vyper/commit/3de1415ee77a9244eb04bdb695e249d3ec9ed868
+        - https://github.com/vyperlang/vyper/security/advisories/GHSA-6r8q-pfpv-7cgj
+    - id: CVE-2023-29031
+      description: A cross site scripting vulnerability was discovered in Rockwell Automation's ArmorStart ST product that could potentially allow a malicious user to view and modify sensitive data or make the web page unavailable. User interaction, such as a phishing attack, is required for successful exploitation of this vulnerability.
+      published: 2023-05-11T18:15:13.843
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1139438
+    - id: CVE-2023-2641
+      description: A vulnerability was found in SourceCodester Online Internship Management System 1.0. It has been rated as critical. Affected by this issue is some unknown functionality of the file admin/login.php of the component POST Parameter Handler. The manipulation of the argument email leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-228770 is the identifier assigned to this vulnerability.
+      published: 2023-05-11T06:15:09.317
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/csbsong/bug_report/blob/main/SQLi-1.md
+        - https://vuldb.com/?ctiid.228770
+        - https://vuldb.com/?id.228770
+    - id: CVE-2023-29282
+      description: Adobe Substance 3D Painter versions 8.3.0 (and earlier) is affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.
+      published: 2023-05-11T22:15:10.970
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://helpx.adobe.com/security/products/substance3d_painter/apsb23-29.html
+    - id: CVE-2023-29278
+      description: Adobe Substance 3D Painter versions 8.3.0 (and earlier) is affected by an Access of Uninitialized Pointer vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.
+      published: 2023-05-11T22:15:10.670
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://helpx.adobe.com/security/products/substance3d_painter/apsb23-29.html
+    - id: CVE-2023-29273
+      description: Adobe Substance 3D Painter versions 8.3.0 (and earlier) is affected by an out-of-bounds read vulnerability when parsing a crafted file, which could result in a read past the end of an allocated memory structure. An attacker could leverage this vulnerability to execute code in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.
+      published: 2023-05-11T22:15:10.243
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://helpx.adobe.com/security/products/substance3d_painter/apsb23-29.html
+    - id: CVE-2023-29276
+      description: Adobe Substance 3D Painter versions 8.3.0 (and earlier) is affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.
+      published: 2023-05-11T22:15:10.507
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://helpx.adobe.com/security/products/substance3d_painter/apsb23-29.html
+    - id: CVE-2023-29274
+      description: Adobe Substance 3D Painter versions 8.3.0 (and earlier) is affected by an out-of-bounds read vulnerability when parsing a crafted file, which could result in a read past the end of an allocated memory structure. An attacker could leverage this vulnerability to execute code in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.
+      published: 2023-05-11T22:15:10.337
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://helpx.adobe.com/security/products/substance3d_painter/apsb23-29.html
+    - id: CVE-2023-31146
+      description: Vyper is a Pythonic smart contract language for the Ethereum virtual machine. Prior to version 0.3.8, during codegen, the length word of a dynarray is written before the data, which can result in out-of-bounds array access in the case where the dynarray is on both the lhs and rhs of an assignment. The issue can cause data corruption across call frames. The expected behavior is to revert due to out-of-bounds array access. Version 0.3.8 contains a patch for this issue.
+      published: 2023-05-11T21:15:10.240
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/vyperlang/vyper/commit/4f8289a81206f767df1900ac48f485d90fc87edb
+        - https://github.com/vyperlang/vyper/security/advisories/GHSA-3p37-3636-q8wv
+    - id: CVE-2023-32059
+      description: Vyper is a Pythonic smart contract language for the Ethereum virtual machine. Prior to version 0.3.8, internal calls with default arguments are compiled incorrectly. Depending on the number of arguments provided in the call, the defaults are added not right-to-left, but left-to-right. If the types are incompatible, typechecking is bypassed. The ability to pass kwargs to internal functions is an undocumented feature that is not well known about. The issue is patched in version 0.3.8.
+      published: 2023-05-11T22:15:11.803
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/vyperlang/vyper/commit/c3e68c302aa6e1429946473769dd1232145822ac
+        - https://github.com/vyperlang/vyper/security/advisories/GHSA-ph9x-4vc9-m39g
+    - id: CVE-2023-29280
+      description: Adobe Substance 3D Painter versions 8.3.0 (and earlier) is affected by an out-of-bounds read vulnerability when parsing a crafted file, which could result in a read past the end of an allocated memory structure. An attacker could leverage this vulnerability to execute code in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.
+      published: 2023-05-11T22:15:10.817
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://helpx.adobe.com/security/products/substance3d_painter/apsb23-29.html
+    - id: CVE-2023-29023
+      description: A cross site scripting vulnerability was discovered in Rockwell Automation's ArmorStart ST product that could potentially allow a malicious user to view and modify sensitive data or make the web page unavailable. User interaction, such as a phishing attack, is required for successful exploitation of this vulnerability.
+      published: 2023-05-11T18:15:13.163
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1139438
+    - id: CVE-2023-29275
+      description: Adobe Substance 3D Painter versions 8.3.0 (and earlier) is affected by an out-of-bounds read vulnerability when parsing a crafted file, which could result in a read past the end of an allocated memory structure. An attacker could leverage this vulnerability to execute code in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.
+      published: 2023-05-11T22:15:10.427
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://helpx.adobe.com/security/products/substance3d_painter/apsb23-29.html
+    - id: CVE-2023-2649
+      description: 'A vulnerability was found in Tenda AC23 16.03.07.45_cn. It has been declared as critical. This vulnerability affects unknown code of the file /bin/ate of the component Service Port 7329. The manipulation of the argument v2 leads to command injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-228778 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-11T08:15:08.843
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://github.com/xinzhihen06/ac23tenda/blob/main/tendaAC23.md
+        - https://vuldb.com/?ctiid.228778
+        - https://vuldb.com/?id.228778
+    - id: CVE-2023-0857
+      description: Unintentional change of settings during initial registration of system administrators which uses control protocols. The affected Office / Small Office Multifunction Printers and Laser Printers(*) may allow an attacker on the network segment to trigger unauthorized access to the product. *:Satera LBP660C Series/LBP620C Series/MF740C Series/MF640C Series firmware Ver.11.04 and earlier sold in Japan. Color imageCLASS LBP660C Series/LBP 620C Series/X LBP1127C/MF740C Series/MF640C Series/X MF1127C firmware Ver.11.04 and earlier sold in US. i-SENSYS LBP660C Series/LBP620C Series/MF740C Series/MF640C Series, C1127P, C1127iF, C1127i firmware Ver.11.04 and earlier sold in Europe.
+      published: 2023-05-11T13:15:12.937
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://canon.jp/support/support-info/230414vulnerability-response
+        - https://psirt.canon/advisory-information/cp2023-001/
+        - https://www.canon-europe.com/support/product-security-latest-news/
+        - https://www.usa.canon.com/support/canon-product-advisories/Service-Notice-Vulnerabilities-Remediation-Against-Buffer-Overflow
+    - id: CVE-2023-29286
+      description: Adobe Substance 3D Painter versions 8.3.0 (and earlier) is affected by an Access of Uninitialized Pointer vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.
+      published: 2023-05-11T22:15:11.377
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://helpx.adobe.com/security/products/substance3d_painter/apsb23-29.html
+    - id: CVE-2023-29277
+      description: Adobe Substance 3D Painter versions 8.3.0 (and earlier) is affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.
+      published: 2023-05-11T22:15:10.587
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://helpx.adobe.com/security/products/substance3d_painter/apsb23-29.html
+    - id: CVE-2023-29279
+      description: Adobe Substance 3D Painter versions 8.3.0 (and earlier) is affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.
+      published: 2023-05-11T22:15:10.743
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://helpx.adobe.com/security/products/substance3d_painter/apsb23-29.html
+    - id: CVE-2023-27870
+      description: 'IBM Spectrum Virtualize 8.5, under certain circumstances, could disclose sensitive credential information while a download from Fix Central is in progress. IBM X-Force ID: 249518.'
+      published: 2023-05-11T20:15:09.327
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://https://exchange.xforce.ibmcloud.com/vulnerabilities/249518
+        - https://www.ibm.com/support/pages/node/6985697
+    - id: CVE-2023-2652
+      description: A vulnerability classified as critical has been found in SourceCodester Lost and Found Information System 1.0. Affected is an unknown function of the file /classes/Master.php?f=delete_item. The manipulation leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-228780.
+      published: 2023-05-11T09:15:09.313
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/xiahao90/CVEproject/blob/main/xiahao.webray.com.cn/Lost-and-Found-Information-System---Multiple-SQL-injections.md#2classesmasterphpfdelete_item
+        - https://vuldb.com/?ctiid.228780
+        - https://vuldb.com/?id.228780
+    - id: CVE-2023-2658
+      description: A vulnerability, which was classified as critical, has been found in SourceCodester Online Computer and Laptop Store 1.0. Affected by this issue is some unknown functionality of the file products.php. The manipulation of the argument c leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-228800.
+      published: 2023-05-11T14:15:20.653
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/xiahao90/CVEproject/blob/main/xiahao.webray.com.cn/Online-Computer-and-Laptop-Store---Multiple-vulnerabilities.md#2sql-injection-vulnerability-in-productsphp
+        - https://vuldb.com/?ctiid.228800
+        - https://vuldb.com/?id.228800
+    - id: CVE-2023-22720
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in Robert Macchi WP Links Page plugin <= 4.9.3 versions.
+      published: 2023-05-11T15:15:10.613
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/wp-links-page/wordpress-wp-links-page-plugin-4-9-1-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-2659
+      description: A vulnerability, which was classified as critical, was found in SourceCodester Online Computer and Laptop Store 1.0. This affects an unknown part of the file view_product.php. The manipulation of the argument id leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-228801 was assigned to this vulnerability.
+      published: 2023-05-11T15:15:11.730
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/xiahao90/CVEproject/blob/main/xiahao.webray.com.cn/Online-Computer-and-Laptop-Store---Multiple-vulnerabilities.md#3sql-injection-vulnerability-in-view_productphp
+        - https://vuldb.com/?ctiid.228801
+        - https://vuldb.com/?id.228801
+    - id: CVE-2023-2660
+      description: A vulnerability has been found in SourceCodester Online Computer and Laptop Store 1.0 and classified as critical. This vulnerability affects unknown code of the file view_categories.php. The manipulation of the argument c leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-228802 is the identifier assigned to this vulnerability.
+      published: 2023-05-11T15:15:11.830
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/xiahao90/CVEproject/blob/main/xiahao.webray.com.cn/Online-Computer-and-Laptop-Store---Multiple-vulnerabilities.md#4sql-injection-vulnerability-in-view_categoriesphp
+        - https://vuldb.com/?ctiid.228802
+        - https://vuldb.com/?id.228802
+    - id: CVE-2023-2661
+      description: A vulnerability was found in SourceCodester Online Computer and Laptop Store 1.0 and classified as critical. This issue affects some unknown processing of the file /classes/Master.php. The manipulation of the argument id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-228803.
+      published: 2023-05-11T15:15:11.917
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/xiahao90/CVEproject/blob/main/xiahao.webray.com.cn/Online-Computer-and-Laptop-Store---Multiple-vulnerabilities.md#5sql-injection-vulnerability-in-classesmasterphp
+        - https://vuldb.com/?ctiid.228803
+        - https://vuldb.com/?id.228803
+    - id: CVE-2023-2656
+      description: A vulnerability classified as critical has been found in SourceCodester AC Repair and Services System 1.0. Affected is an unknown function of the file /classes/Master.php?f=delete_service. The manipulation of the argument id leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-228798 is the identifier assigned to this vulnerability.
+      published: 2023-05-11T13:15:13.850
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/xiahao90/CVEproject/blob/main/xiahao.webray.com.cn/AC-Repair-and-Services-System---SQL-injections.md
+        - https://vuldb.com/?ctiid.228798
+        - https://vuldb.com/?id.228798
+    - id: CVE-2023-27554
+      description: 'IBM WebSphere Application Server 8.5 and 9.0 is vulnerable to an XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources. IBM X-Force ID: 249185.'
+      published: 2023-05-11T20:15:09.227
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/249185
+        - https://www.ibm.com/support/pages/node/6989451
+    - id: CVE-2023-2653
+      description: A vulnerability classified as critical was found in SourceCodester Lost and Found Information System 1.0. Affected by this vulnerability is an unknown functionality of the file items/index.php. The manipulation of the argument cid leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-228781 was assigned to this vulnerability.
+      published: 2023-05-11T09:15:09.723
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/xiahao90/CVEproject/blob/main/xiahao.webray.com.cn/Lost-and-Found-Information-System---Multiple-SQL-injections.md
+        - https://vuldb.com/?ctiid.228781
+        - https://vuldb.com/?id.228781
+    - id: CVE-2023-32075
+      description: The Customer Management Framework (CMF) for Pimcore adds functionality for customer data management. In `pimcore/customer-management-framework-bundle` prior to version 3.3.9, business logic errors are possible in the `Conditions` tab since the counter can be a negative number. This vulnerability is capable of the unlogic in the counter value in the Conditions tab. Users should update to version 3.3.9 to receive a patch or, as a workaround, or apply the patch manually.
+      published: 2023-05-11T17:15:09.357
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/pimcore/customer-data-framework/commit/e3f333391582d9309115e6b94e875367d0ea7163.patch
+        - https://github.com/pimcore/customer-data-framework/releases/tag/v3.3.9
+        - https://github.com/pimcore/customer-data-framework/security/advisories/GHSA-x99j-r8vv-gwwj
+        - https://huntr.dev/bounties/cecd7800-a996-4f3a-8689-e1c2a1e0248a/
+    - id: CVE-2023-2648
+      description: 'A vulnerability was found in Weaver E-Office 9.5. It has been classified as critical. This affects an unknown part of the file /inc/jquery/uploadify/uploadify.php. The manipulation of the argument Filedata leads to unrestricted upload. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-228777 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-11T08:15:08.773
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/sunyixuan1228/cve/blob/main/weaver.md
+        - https://vuldb.com/?ctiid.228777
+        - https://vuldb.com/?id.228777
+    - id: CVE-2023-2647
+      description: 'A vulnerability was found in Weaver E-Office 9.5 and classified as critical. Affected by this issue is some unknown functionality of the file /webroot/inc/utility_all.php of the component File Upload Handler. The manipulation leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-228776. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-11T08:15:08.700
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/sunyixuan1228/cve/blob/main/weaver%20exec.md
+        - https://vuldb.com/?ctiid.228776
+        - https://vuldb.com/?id.228776
+    - id: CVE-2023-2644
+      description: A vulnerability, which was classified as problematic, has been found in DigitalPersona FPSensor 1.0.0.1. This issue affects some unknown processing of the file C:\Program Files (x86)\FPSensor\bin\DpHost.exe. The manipulation leads to unquoted search path. Attacking locally is a requirement. The identifier VDB-228773 was assigned to this vulnerability.
+      published: 2023-05-11T07:15:08.480
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://vuldb.com/?ctiid.228773
+        - https://vuldb.com/?id.228773
+    - id: CVE-2023-29024
+      description: "A cross site scripting vulnerability was discovered in Rockwell Automation's ArmorStart ST product \n\nA cross site scripting vulnerability was discovered that could potentially allow a malicious user to view and modify sensitive data or make the web page unavailable. User interaction, such as a phishing attack, is required for successful exploitation of this vulnerability."
+      published: 2023-05-11T18:15:13.240
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1139438
+    - id: CVE-2023-2643
+      description: A vulnerability classified as critical was found in SourceCodester File Tracker Manager System 1.0. This vulnerability affects unknown code of the file register/update_password.php of the component POST Parameter Handler. The manipulation of the argument new_password leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-228772.
+      published: 2023-05-11T07:15:08.370
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/GZRsecurity/cve/blob/main/SQLi.md
+        - https://vuldb.com/?ctiid.228772
+        - https://vuldb.com/?id.228772
+    - id: CVE-2023-2642
+      description: A vulnerability classified as critical has been found in SourceCodester Online Exam System 1.0. This affects an unknown part of the file adminpanel/admin/facebox_modal/updateCourse.php of the component GET Parameter Handler. The manipulation of the argument id leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-228771.
+      published: 2023-05-11T06:15:09.657
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/sushanburanxisha/cve/blob/main/SQLi-1.md
+        - https://vuldb.com/?ctiid.228771
+        - https://vuldb.com/?id.228771
+    - id: CVE-2023-29026
+      description: "A cross site scripting vulnerability was discovered in Rockwell Automation's ArmorStart ST product \n\nthat could potentially allow a malicious user with admin privileges and network access to view user data and modify the web interface. Additionally, a malicious user could potentially cause interruptions to the availability of the web page."
+      published: 2023-05-11T18:15:13.420
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1139438
+    - id: CVE-2023-2490
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Fernando Briano UserAgent-Spy plugin <= 1.3.1 versions.
+      published: 2023-05-11T10:15:09.080
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/useragent-spy/wordpress-useragent-spy-plugin-1-3-1-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-29029
+      description: "A cross site scripting vulnerability was discovered in Rockwell Automation's ArmorStart ST product \n\nthat could potentially allow a malicious user with admin privileges and network access to view user data and modify the web interface. Additionally, a malicious user could potentially cause interruptions to the availability of the web page."
+      published: 2023-05-11T18:15:13.677
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1139438
+    - id: CVE-2023-29027
+      description: "A cross site scripting vulnerability was discovered in Rockwell Automation's ArmorStart ST product \n\nthat could potentially allow a malicious user with admin privileges and network access to view user data and modify the web interface. Additionally, a malicious user could potentially cause interruptions to the availability of the web page."
+      published: 2023-05-11T18:15:13.517
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1139438
+    - id: CVE-2023-29025
+      description: "A cross site scripting vulnerability was discovered in Rockwell Automation's ArmorStart ST product \n\nthat could potentially allow a malicious user with admin privileges and network access to view user data and modify the web interface. Additionally, a malicious user could potentially cause interruptions to the availability of the web page."
+      published: 2023-05-11T18:15:13.323
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1139438
+    - id: CVE-2023-29022
+      description: "A cross site scripting vulnerability was discovered in Rockwell Automation's ArmorStart ST product \n\nthat could potentially allow a malicious user with admin privileges and network access to view user data and modify the web interface. Additionally, a malicious user could potentially cause interruptions to the availability of the web page."
+      published: 2023-05-11T18:15:13.023
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1139438
+    - id: CVE-2023-2646
+      description: 'A vulnerability has been found in TP-Link Archer C7v2 v2_en_us_180114 and classified as problematic. Affected by this vulnerability is an unknown functionality of the component GET Request Parameter Handler. The manipulation leads to denial of service. The attack can only be done within the local network. The associated identifier of this vulnerability is VDB-228775. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-11T08:15:08.620
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://vuldb.com/?ctiid.228775
+        - https://vuldb.com/?id.228775
+    - id: CVE-2023-29195
+      description: Vitess is a database clustering system for horizontal scaling of MySQL through generalized sharding. Prior to version 16.0.2, users can either intentionally or inadvertently create a shard containing `/` characters from VTAdmin such that from that point on, anyone who tries to create a new shard from VTAdmin will receive an error. Attempting to view the keyspace(s) will also no longer work. Creating a shard using `vtctldclient` does not have the same problem because the CLI validates the input correctly. Version 16.0.2, corresponding to version 0.16.2 of the `go` module, contains a patch for this issue. Some workarounds are available. Always use `vtctldclient` to create shards, instead of using VTAdmin; disable creating shards from VTAdmin using RBAC; and/or delete the topology record for the offending shard using the client for your topology server.
+      published: 2023-05-11T20:15:09.403
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/vitessio/vitess/commit/9dcbd7de3180f47e94f54989fb5c66daea00c920
+        - https://github.com/vitessio/vitess/issues/12842
+        - https://github.com/vitessio/vitess/pull/12843
+        - https://github.com/vitessio/vitess/releases/tag/v16.0.2
+        - https://github.com/vitessio/vitess/security/advisories/GHSA-pqj7-jx24-wj7w
+        - https://pkg.go.dev/vitess.io/vitess@v0.16.2
+    - id: CVE-2023-29028
+      description: "A cross site scripting vulnerability was discovered in Rockwell Automation's ArmorStart ST product \n\nthat could potentially allow a malicious user with admin privileges and network access to view user data and modify the web interface. Additionally, a malicious user could potentially cause interruptions to the availability of the web page."
+      published: 2023-05-11T18:15:13.610
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1139438
+    - id: CVE-2023-0858
+      description: Improper Authentication of RemoteUI of Office / Small Office Multifunction Printers and Laser Printers(*) which may allow an attacker on the network segment to trigger unauthorized access to the product. *:Satera LBP660C Series/LBP620C Series/MF740C Series/MF640C Series firmware Ver.11.04 and earlier sold in Japan. Color imageCLASS LBP660C Series/LBP 620C Series/X LBP1127C/MF740C Series/MF640C Series/X MF1127C firmware Ver.11.04 and earlier sold in US. i-SENSYS LBP660C Series/LBP620C Series/MF740C Series/MF640C Series, C1127P, C1127iF, C1127i firmware Ver.11.04 and earlier sold in Europe.
+      published: 2023-05-11T13:15:13.177
+      severity: LOW
+      privileges: NONE
+      references:
+        - https://canon.jp/support/support-info/230414vulnerability-response
+        - https://psirt.canon/advisory-information/cp2023-001/
+        - https://www.canon-europe.com/support/product-security-latest-news/
+        - https://www.usa.canon.com/support/canon-product-advisories/Service-Notice-Vulnerabilities-Remediation-Against-Buffer-Overflow
+    - id: CVE-2023-2664
+      description:  In Xpdf 4.04 (and earlier), a PDF object loop in the embedded file tree leads to infinite recursion and a stack overflow.
+      published: 2023-05-11T21:15:10.137
+      severity: LOW
+      privileges: NONE
+      references:
+        - https://forum.xpdfreader.com/viewtopic.php?t=42422
+    - id: CVE-2023-2662
+      description: In Xpdf 4.04 (and earlier), a bad color space object in the input PDF file can cause a divide-by-zero.
+      published: 2023-05-11T21:15:09.873
+      severity: LOW
+      privileges: NONE
+      references:
+        - https://forum.xpdfreader.com/viewtopic.php?t=42505
+    - id: CVE-2023-2663
+      description:  In Xpdf 4.04 (and earlier), a PDF object loop in the page label tree leads to infinite recursion and a stack overflow.
+      published: 2023-05-11T21:15:10.043
+      severity: LOW
+      privileges: NONE
+      references:
+        - https://forum.xpdfreader.com/viewtopic.php?t=42421
+    - id: CVE-2023-32082
+      description: etcd is a distributed key-value store for the data of a distributed system. Prior to versions 3.4.26 and 3.5.9, the LeaseTimeToLive API allows access to key names (not value) associated to a lease when `Keys` parameter is true, even a user doesn't have read permission to the keys. The impact is limited to a cluster which enables auth (RBAC). Versions 3.4.26 and 3.5.9 fix this issue. There are no known workarounds.
+      published: 2023-05-11T20:15:09.500
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/etcd-io/etcd/blob/main/CHANGELOG/CHANGELOG-3.4.md
+        - https://github.com/etcd-io/etcd/blob/main/CHANGELOG/CHANGELOG-3.5.md
+        - https://github.com/etcd-io/etcd/pull/15656
+        - https://github.com/etcd-io/etcd/security/advisories/GHSA-3p4g-rcw5-8298
+    - id: CVE-2023-2657
+      description: A vulnerability classified as problematic was found in SourceCodester Online Computer and Laptop Store 1.0. Affected by this vulnerability is an unknown functionality of the file products.php. The manipulation of the argument search leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-228799.
+      published: 2023-05-11T14:15:20.217
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/xiahao90/CVEproject/blob/main/xiahao.webray.com.cn/Online-Computer-and-Laptop-Store---Multiple-vulnerabilities.md#1xss-vulnerability-in-productsphp
+        - https://vuldb.com/?ctiid.228799
+        - https://vuldb.com/?id.228799
+    - id: CVE-2023-0859
+      description: Arbitrary Files can be installed in the Setting Data Import function of Office / Small Office Multifunction Printers and Laser Printers(*). *:Satera LBP660C Series/LBP620C Series/MF740C Series/MF640C Series firmware Ver.11.04 and earlier sold in Japan. Color imageCLASS LBP660C Series/LBP 620C Series/X LBP1127C/MF740C Series/MF640C Series/X MF1127C firmware Ver.11.04 and earlier sold in US. i-SENSYS LBP660C Series/LBP620C Series/MF740C Series/MF640C Series, C1127P, C1127iF, C1127i firmware Ver.11.04 and earlier sold in Europe.
+      published: 2023-05-11T13:15:13.427
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://canon.jp/support/support-info/230414vulnerability-response
+        - https://psirt.canon/advisory-information/cp2023-001/
+        - https://www.canon-europe.com/support/product-security-latest-news/
+        - https://www.usa.canon.com/support/canon-product-advisories/Service-Notice-Vulnerabilities-Remediation-Against-Buffer-Overflow
+    - id: CVE-2023-28360
+      description: An omission of security-relevant information vulnerability exists in Brave desktop prior to version 1.48.171 when a user was saving a file there was no download safety check dialog presented to the user.
+      published: 2023-05-11T22:15:10.120
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackerone.com/reports/1848062
+    - id: CVE-2023-31475
+      description: An issue was discovered on GL.iNet devices before 3.216. The function guci2_get() found in libglutil.so has a buffer overflow when an item is requested from a UCI context, and the value is pasted into a char pointer to a buffer without checking the size of the buffer.
+      published: 2023-05-11T11:15:09.147
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/gl-inet/CVE-issues/blob/main/3.215/Buffer_Overflow.md
+        - https://www.gl-inet.com
+    - id: CVE-2023-31497
+      description: Incorrect access control in Quick Heal Technologies Limited Seqrite Endpoint Security (EPS) all versions prior to v8.0 allows attackers to escalate privileges to root via supplying a crafted binary to the target system.
+      published: 2023-05-11T21:15:10.340
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/0xInfection/EPScalate
+    - id: CVE-2022-47129
+      description: PHPOK v6.3 was discovered to contain a remote code execution (RCE) vulnerability.
+      published: 2023-05-11T14:15:19.623
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/Omoredream/43f60004665e9d9d8c71f7e976261387
+        - https://www.yuque.com/g/alipayyz9csdbcdz/zytgq2/vz8ktghkcgvhsdzn/collaborator/join?token=R5phxzuV3w99ndZD
+    - id: CVE-2023-28325
+      description: An improper authorization vulnerability exists in Rocket.Chat <6.0 that could allow a hacker to manipulate the rid parameter and change the updateMessage method that only checks whether the user is allowed to edit message in the target room.
+      published: 2023-05-11T22:15:09.830
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackerone.com/reports/1406479
+    - id: CVE-2023-28356
+      description: A vulnerability has been identified where a maliciously crafted message containing a specific chain of characters can cause the chat to enter a hot loop on one of the processes, consuming ~120% CPU and rendering the service unresponsive.
+      published: 2023-05-11T22:15:09.887
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackerone.com/reports/1461340
+    - id: CVE-2023-28357
+      description: A vulnerability has been identified in Rocket.Chat, where the ACL checks in the Slash Command /mute occur after checking whether a user is a member of a given channel, leaking private channel members to unauthorized users. This allows authenticated users to enumerate whether a username is a member of a channel that they do not have access to.
+      published: 2023-05-11T22:15:09.940
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackerone.com/reports/1445810
+    - id: CVE-2023-28358
+      description: A vulnerability has been discovered in Rocket.Chat where a markdown parsing issue in the "Search Messages" feature allows the insertion of malicious tags. This can be exploited on servers with content security policy disabled possible leading to some issues attacks like account takeover.
+      published: 2023-05-11T22:15:09.993
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackerone.com/reports/1781131
+    - id: CVE-2023-28359
+      description: A NoSQL injection vulnerability has been identified in the listEmojiCustom method call within Rocket.Chat. This can be exploited by unauthenticated users when there is at least one custom emoji uploaded to the Rocket.Chat instance. The vulnerability causes a delay in the server response, with the potential for limited impact.
+      published: 2023-05-11T22:15:10.057
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackerone.com/reports/1757676
+    - id: CVE-2023-24539
+      description: Angle brackets (<>) are not considered dangerous characters when inserted into CSS contexts. Templates containing multiple actions separated by a '/' character can result in unexpectedly closing the CSS context and allowing for injection of unexpected HTML, if executed with untrusted input.
+      published: 2023-05-11T16:15:09.600
+      severity: ""
+      privileges: ""
+      references:
+        - https://go.dev/cl/491615
+        - https://go.dev/issue/59720
+        - https://groups.google.com/g/golang-announce/c/MEb0UyuSMsU
+        - https://pkg.go.dev/vuln/GO-2023-1751
+    - id: CVE-2023-28361
+      description: A Cross-site WebSocket Hijacking (CSWSH) vulnerability found in UniFi OS 2.5 and earlier allows a malicious actor to access certain confidential information by persuading a UniFi OS user to visit a malicious webpage.Affected Products:Cloud Key Gen2Cloud Key Gen2 PlusUNVRUNVR ProfessionalUDMUDM ProfessionalUDM SEUDRMitigation:Update affected products to UniFi OS 3.0.13 or later.
+      published: 2023-05-11T22:15:10.187
+      severity: ""
+      privileges: ""
+      references:
+        - https://community.ui.com/releases/Security-Advisory-Bulletin-030-030/f9de9e65-585f-4c66-81e9-5d8f54ba66dd
+    - id: CVE-2023-29863
+      description: Medical Systems Co. Medisys Weblab Products v19.4.03 was discovered to contain a SQL injection vulnerability via the tem:statement parameter in the WSDL files.
+      published: 2023-05-11T13:15:13.670
+      severity: ""
+      privileges: ""
+      references:
+        - http://medical.com
+        - http://weblab.com
+        - https://medium.com/@waadalbyalii5/sql-injection-in-wsdl-file-c66fa00042f5
+    - id: CVE-2023-24540
+      description: Not all valid JavaScript whitespace characters are considered to be whitespace. Templates containing whitespace characters outside of the character set "\t\n\f\r\u0020\u2028\u2029" in JavaScript contexts that also contain actions may not be properly sanitized during execution.
+      published: 2023-05-11T16:15:09.687
+      severity: ""
+      privileges: ""
+      references:
+        - https://go.dev/cl/491616
+        - https://go.dev/issue/59721
+        - https://groups.google.com/g/golang-announce/c/MEb0UyuSMsU
+        - https://pkg.go.dev/vuln/GO-2023-1752
+    - id: CVE-2023-30394
+      description: MoveIT v1.1.11 was discovered to contain a cross-site scripting (XSS) vulenrability via the API authentication function.
+      published: 2023-05-11T19:15:09.497
+      severity: ""
+      privileges: ""
+      references:
+        - http://moveit.com
+        - https://github.com/M19O/Security-Advisories/tree/main/CVE-2023-30394
+        - https://github.com/ros-planning/moveit
+        - https://i.ibb.co/R2JSPV5/2022-10-02-12-39-57-Window.png
+        - https://i.ibb.co/RyRSzpN/Response-Manipulation.png
+    - id: CVE-2023-31445
+      description: Cassia Access controller before 2.1.1.2203171453, was discovered to have a unprivileged -information disclosure vulnerability that allows read-only users have the ability to enumerate all other users and discover e-mail addresses, phone numbers, and privileges of all other users.
+      published: 2023-05-11T12:15:09.450
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Dodge-MPTC/CVE-2023-31445-Unprivileged-Information-Disclosure
+        - https://www.cassianetworks.com
+    - id: CVE-2021-34076
+      description: File Upload vulnerability in PHPOK 5.7.140 allows remote attackers to run arbitrary code and gain escalated privileges via crafted zip file upload.
+      published: 2023-05-11T12:15:09.070
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/HolaAsuka/CVE/issues/1
+    - id: CVE-2023-31498
+      description: A privilege escalation issue was found in PHP Gurukul Hospital Management System In v.4.0 allows a remote attacker to execute arbitrary code and access sensitive information via the session token parameter.
+      published: 2023-05-11T11:15:09.193
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/captain-noob/aff11542477ddd0a92ad8b94ec75f832
+        - https://github.com/captain-noob
+        - https://twitter.com/captain__noob
+    - id: CVE-2023-29791
+      description: kodbox <= 1.37 is vulnerable to Cross Site Scripting (XSS) via the debug information.
+      published: 2023-05-11T21:15:09.807
+      severity: ""
+      privileges: ""
+      references:
+        - https://blog.mo60.cn/index.php/archives/kodbox-xss.html
+    - id: CVE-2023-31473
+      description: An issue was discovered on GL.iNet devices before 3.216. There is an arbitrary file write in which an empty file can be created anywhere on the filesystem. This is caused by a command injection vulnerability with a filter applied. Through the software installation feature, it is possible to inject arbitrary parameters in a request to cause opkg to read an arbitrary file name while using root privileges. The -f option can be used with a configuration file.
+      published: 2023-05-11T11:15:09.100
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/gl-inet/CVE-issues/blob/main/3.215/Arbitrary_File_Read.md
+        - https://www.gl-inet.com
+    - id: CVE-2023-30256
+      description: Cross Site Scripting vulnerability found in Webkil QloApps v.1.5.2 allows a remote attacker to obtain sensitive information via the back and email_create parameters in the AuthController.php file.
+      published: 2023-05-11T11:15:09.047
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/ahrixia/CVE-2023-30256
+        - https://github.com/webkul/hotelcommerce
+        - https://qloapps.com/
+    - id: CVE-2023-32668
+      description: LuaTeX before 1.17.0 enables the socket library by default.
+      published: 2023-05-11T06:15:10.000
+      severity: ""
+      privileges: ""
+      references:
+        - https://gitlab.lisn.upsaclay.fr/texlive/luatex/-/blob/b266ef076c96b382cd23a4c93204e247bb98626a/source/texk/web2c/luatexdir/ChangeLog#L1-L3
+        - https://gitlab.lisn.upsaclay.fr/texlive/luatex/-/tags/1.17.0
+        - https://tug.org/pipermail/tex-live/2023-May/049188.html
+    - id: CVE-2023-31477
+      description: A path traversal issue was discovered on GL.iNet devices before 3.216. Through the file sharing feature, it is possible to share an arbitrary directory, such as /tmp or /etc, because there is no server-side restriction to limit sharing to the USB path.
+      published: 2023-05-11T02:15:09.103
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/gl-inet/CVE-issues/blob/main/3.215/Path_Traversal.md
+        - https://www.gl-inet.com
+    - id: CVE-2023-31442
+      description: In Lightbend Akka before 2.8.1, the async-dns resolver (used by Discovery in DNS mode and transitively by Cluster Bootstrap) uses predictable DNS transaction IDs when resolving DNS records, making DNS resolution subject to poisoning by an attacker. If the application performing discovery does not validate (e.g., via TLS) the authenticity of the discovered service, this may result in exfiltration of application data (e.g., persistence events may be published to an unintended Kafka broker). If such validation is performed, then the poisoning constitutes a denial of access to the intended service. This affects Akka 2.5.14 through 2.8.0, and Akka Discovery through 2.8.0.
+      published: 2023-05-11T02:15:09.060
+      severity: ""
+      privileges: ""
+      references:
+        - https://akka.io/security/akka-async-dns-2023-31442.html
+        - https://lightbend.com
+    - id: CVE-2023-29400
+      description: Templates containing actions in unquoted HTML attributes (e.g. "attr={{.}}") executed with empty input can result in output with unexpected results when parsed due to HTML normalization rules. This may allow injection of arbitrary attributes into tags.
+      published: 2023-05-11T16:15:09.850
+      severity: ""
+      privileges: ""
+      references:
+        - https://go.dev/cl/491617
+        - https://go.dev/issue/59722
+        - https://groups.google.com/g/golang-announce/c/MEb0UyuSMsU
+        - https://pkg.go.dev/vuln/GO-2023-1753
+    - id: CVE-2023-25309
+      description: Cross Site Scripting (XSS) Vulnerability in Fetlife rollout-ui version 0.5, allows attackers to execute arbitrary code via a crafted url to the delete a feature functionality.
+      published: 2023-05-11T18:15:12.360
+      severity: ""
+      privileges: ""
+      references:
+        - http://fetlife.com
+        - http://rollout-ui.com
+        - https://packetstormsecurity.com/files/172185/Rollout-UI-0.5-Cross-Site-Scripting.html
+    - id: CVE-2023-31502
+      description: Altenergy Power Control Software C1.2.5 was discovered to contain a remote code execution (RCE) vulnerability via the component /models/management_model.php.
+      published: 2023-05-11T22:15:11.457
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/ahmedalroky/Disclosures/blob/main/apesystems/Insufficient_Verification_of_Data_Authenticity.MD
+    - id: CVE-2023-31508
+      description: A cross-site scripting (XSS) vulnerability in PrestaShop v1.7.7.4 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the message parameter in /contactform/contactform.php.
+      published: 2023-05-11T22:15:11.517
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/mustgundogdu/Research/blob/main/PrestaShop/ReflectedXSS_1.7.7.4.md
+    - id: CVE-2023-31528
+      description: Motorola CX2L Router 1.0.1 was discovered to contain a command injection vulnerability via the staticroute_list parameter.
+      published: 2023-05-11T22:15:11.573
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Motorola-CX2L/CI2
+    - id: CVE-2023-31529
+      description: Motorola CX2L Router 1.0.1 was discovered to contain a command injection vulnerability via the system_time_timezone parameter.
+      published: 2023-05-11T22:15:11.630
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Motorola-CX2L/CI1
+    - id: CVE-2023-31530
+      description: Motorola CX2L Router 1.0.1 was discovered to contain a command injection vulnerability via the smartqos_priority_devices parameter.
+      published: 2023-05-11T22:15:11.687
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Motorola-CX2L/CI4
+    - id: CVE-2023-31531
+      description: Motorola CX2L Router 1.0.1 was discovered to contain a command injection vulnerability via the tomography_ping_number parameter.
+      published: 2023-05-11T22:15:11.740
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/leetsun/IoT/tree/main/Motorola-CX2L/CI3
+    - id: CVE-2023-30172
+      description: A directory traversal vulnerability in the /get-artifact API method of the mlflow platform up to v2.0.1 allows attackers to read arbitrary files on the server via the path parameter.
+      published: 2023-05-11T02:15:08.880
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/mlflow/mlflow/issues/7166
+        - https://github.com/mlflow/mlflow/issues/7166#issuecomment-1541543234
+    - id: CVE-2023-29986
+      description: spring-boot-actuator-logview 0.2.13 allows Directory Traversal to sibling directories via LogViewEndpoint.view.
+      published: 2023-05-11T02:15:08.780
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/lukashinsch/spring-boot-actuator-logview/issues/33
