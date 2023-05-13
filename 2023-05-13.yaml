@@ -1,0 +1,1408 @@
+data:
+    - id: CVE-2023-1934
+      description: The PnPSCADA system, a product of SDG Technologies CC, is afflicted by a critical unauthenticated error-based PostgreSQL Injection vulnerability. Present within the hitlogcsv.jsp endpoint, this security flaw permits unauthenticated attackers to engage with the underlying database seamlessly and passively. Consequently, malicious actors could gain access to vital information, such as Industrial Control System (ICS) and OT data, alongside other sensitive records like SMS and SMS Logs. The unauthorized database access exposes compromised systems to potential manipulation or breach of essential infrastructure data, highlighting the severity of this vulnerability.
+      published: 2023-05-12T14:15:09.653
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-131-12
+    - id: CVE-2023-32243
+      description: 'Improper Authentication vulnerability in WPDeveloper Essential Addons for Elementor allows Privilege Escalation. This issue affects Essential Addons for Elementor: from 5.4.0 through 5.7.1.'
+      published: 2023-05-12T08:15:09.280
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://patchstack.com/articles/critical-privilege-escalation-in-essential-addons-for-elementor-plugin-affecting-1-million-sites?_s_id=cve
+        - https://patchstack.com/database/vulnerability/essential-addons-for-elementor-lite/wordpress-essential-addons-for-elementor-plugin-5-4-0-5-7-1-unauthenticated-privilege-escalation-vulnerability?_s_id=cve
+    - id: CVE-2023-2665
+      description: Storage of Sensitive Data in a Mechanism without Access Control in GitHub repository francoisjacquet/rosariosis prior to 11.0.
+      published: 2023-05-12T01:15:09.783
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/francoisjacquet/rosariosis/commit/09d5afaa6be07688ca1a7ac3b755b5438109e986
+        - https://huntr.dev/bounties/42f38a84-8954-484d-b5ff-706ca0918194
+    - id: CVE-2023-23444
+      description: Missing Authentication for Critical Function in SICK Flexi Classic and Flexi Soft Gateways with Partnumbers 1042193, 1042964, 1044078, 1044072, 1044073, 1044074, 1099830, 1099832, 1127717, 1069070, 1112296, 1051432, 1102420, 1127487, 1121596, 1121597 allows an unauthenticated remote attacker to influence the availability of the device by changing the IP settings of the device via broadcasted UDP packets.
+      published: 2023-05-12T13:15:09.350
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://sick.com/.well-known/csaf/white/2023/sca-2023-0003.json
+        - https://sick.com/.well-known/csaf/white/2023/sca-2023-0003.pdf
+        - https://sick.com/psirt
+    - id: CVE-2023-32073
+      description: WWBN AVideo is an open source video platform. In versions 12.4 and prior, a command injection vulnerability exists at `plugin/CloneSite/cloneClient.json.php` which allows Remote Code Execution if you CloneSite Plugin. This is a bypass to the fix for CVE-2023-30854, which affects WWBN AVideo up to version 12.3. This issue is patched in commit 1df4af01f80d56ff2c4c43b89d0bac151e7fb6e3.
+      published: 2023-05-12T14:15:10.083
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/WWBN/AVideo/commit/1df4af01f80d56ff2c4c43b89d0bac151e7fb6e3
+        - https://github.com/WWBN/AVideo/security/advisories/GHSA-2mhh-27v7-3vcx
+    - id: CVE-2023-2674
+      description: Improper Access Control in GitHub repository openemr/openemr prior to 7.0.1.
+      published: 2023-05-12T08:15:09.200
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/openemr/openemr/commit/bb4244c83a74628faafabc0598366f49863914a9
+        - https://huntr.dev/bounties/af73e913-730c-4245-88ce-26fc908d3644
+    - id: CVE-2023-32305
+      description: aiven-extras is a PostgreSQL extension. Versions prior to 1.1.9 contain a privilege escalation vulnerability, allowing elevation to superuser inside PostgreSQL databases that use the aiven-extras package. The vulnerability leverages missing schema qualifiers on privileged functions called by the aiven-extras extension. A low privileged user can create objects that collide with existing function names, which will then be executed instead. Exploiting this vulnerability could allow a low privileged user to acquire `superuser` privileges, which would allow full, unrestricted access to all data and database functions. And could lead to arbitrary code execution or data access on the underlying host as the `postgres` user. The issue has been patched as of version 1.1.9.
+      published: 2023-05-12T19:15:08.953
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/aiven/aiven-extras/commit/8682ae01bec0791708bf25791786d776e2fb0250
+        - https://github.com/aiven/aiven-extras/security/advisories/GHSA-7r4w-fw4h-67gp
+    - id: CVE-2023-32306
+      description: Time Tracker is an open source time tracking system. A time-based blind injection vulnerability existed in Time Tracker reports in versions prior to 1.22.13.5792. This was happening because the `reports.php` page was not validating all parameters in POST requests. Because some parameters were not checked, it was possible to craft POST requests with malicious SQL for Time Tracker database. This issue is fixed in version 1.22.13.5792. As a workaround, use the fixed code in `ttReportHelper.class.php` from version 1.22.13.5792.
+      published: 2023-05-12T19:15:09.023
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/anuko/timetracker/security/advisories/GHSA-758x-vg7g-j9j3
+    - id: CVE-2023-31199
+      description: Improper access control in the Intel(R) Solid State Drive Toolbox(TM) before version 3.4.5 may allow a privileged user to potentially enable escalation of privilege via local access.
+      published: 2023-05-12T15:15:09.527
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00074.html
+    - id: CVE-2023-30763
+      description: Heap-based overflow in Intel(R) SoC Watch based software before version 2021.1 may allow a privileged user to potentially enable escalation of privilege via local access.
+      published: 2023-05-12T15:15:09.367
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00547.html
+    - id: CVE-2023-30768
+      description: Improper access control in the Intel(R) Server Board S2600WTT belonging to the Intel(R) Server Board S2600WT Family with the BIOS version 0016 may allow a privileged user to potentially enable escalation of privilege via local access.
+      published: 2023-05-12T15:15:09.420
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00056.html
+    - id: CVE-2023-32081
+      description: Vert.x STOMP is a vert.x implementation of the STOMP specification that provides a STOMP server and client. From versions 3.1.0 until 3.9.16 and 4.0.0 until 4.4.2, a Vert.x STOMP server processes client STOMP frames without checking that the client send an initial CONNECT frame replied with a successful CONNECTED frame. The client can subscribe to a destination or publish message without prior authentication. Any Vert.x STOMP server configured with an authentication handler is impacted. The issue is patched in Vert.x 3.9.16 and 4.4.2. There are no trivial workarounds.
+      published: 2023-05-12T14:15:10.140
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/vert-x3/vertx-stomp/commit/0de4bc5a44ddb57e74d92c445f16456fa03f265b
+        - https://github.com/vert-x3/vertx-stomp/security/advisories/GHSA-gvrq-cg5r-7chp
+    - id: CVE-2021-39036
+      description: 'IBM Cognos Analytics 11.1 and 11.2 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session.  IBM X-Force ID:  213966.'
+      published: 2023-05-12T01:15:09.537
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/213966
+        - https://https://www.ibm.com/support/pages/node/6986505
+    - id: CVE-2023-2512
+      description: |-
+        Prior to version v1.20230419.0, the FormData API implementation was subject to an integer overflow. If a FormData instance contained more than 2^31 elements, the forEach() method could end up reading from the wrong location in memory while iterating over elements. This would most likely lead to a segmentation fault, but could theoretically allow arbitrary undefined behavior.
+
+
+        In order for the bug to be exploitable, the process would need to be able to allocate 160GB of RAM. Due to this, the bug was never exploitable on the Cloudflare Workers platform, but could theoretically be exploitable on deployments of workerd running on machines with a huge amount of memory. Moreover, in order to be remotely exploited, an attacker would have to upload a single form-encoded HTTP request of at least tens of gigabytes in size. The application code would then have to use request.formData() to parse the request and formData.forEach() to iterate over this data. Due to these limitations, the exploitation likelihood was considered Low.
+
+        A fix that addresses this vulnerability has been released in version v1.20230419.0 and users are encouraged to update to the latest version available.
+      published: 2023-05-12T11:15:13.033
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/cloudflare/workerd/releases/tag/v1.20230419.0
+        - https://github.com/cloudflare/workerd/security/advisories/GHSA-8vx6-69vg-c46f
+    - id: CVE-2023-29242
+      description: Improper access control for Intel(R) oneAPI Toolkits before version 2021.1 Beta 10 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-12T15:15:09.313
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00551.html
+    - id: CVE-2023-28522
+      description: 'IBM API Connect V10 could allow an authenticated user to perform actions that they should not have access to.  IBM X-Force ID:  250585.'
+      published: 2023-05-12T02:15:09.393
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/250585
+        - https://www.ibm.com/support/pages/node/6965612
+    - id: CVE-2023-2668
+      description: A vulnerability was found in SourceCodester Lost and Found Information System 1.0 and classified as critical. Affected by this issue is the function manager_category of the file admin/?page=categories/manage_category of the component GET Parameter Handler. The manipulation of the argument id leads to sql injection. The attack may be launched remotely. The identifier of this vulnerability is VDB-228884.
+      published: 2023-05-12T07:15:08.733
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://vuldb.com/?ctiid.228884
+        - https://vuldb.com/?id.228884
+    - id: CVE-2023-31197
+      description: Uncontrolled search path in the Intel(R) Trace Analyzer and Collector before version 2020 update 3 may allow an authenticated user to potentially enable escalation of privilege via local access.
+      published: 2023-05-12T15:15:09.470
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00475.html
+    - id: CVE-2023-2669
+      description: A vulnerability was found in SourceCodester Lost and Found Information System 1.0. It has been classified as critical. This affects an unknown part of the file admin/?page=categories/view_category of the component GET Parameter Handler. The manipulation of the argument id leads to sql injection. It is possible to initiate the attack remotely. The identifier VDB-228885 was assigned to this vulnerability.
+      published: 2023-05-12T08:15:09.063
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://vuldb.com/?ctiid.228885
+        - https://vuldb.com/?id.228885
+    - id: CVE-2023-2670
+      description: A vulnerability was found in SourceCodester Lost and Found Information System 1.0. It has been declared as critical. This vulnerability affects unknown code of the file admin/?page=user/manage_user. The manipulation leads to improper access controls. The attack can be initiated remotely. VDB-228886 is the identifier assigned to this vulnerability.
+      published: 2023-05-12T08:15:09.130
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://vuldb.com/?ctiid.228886
+        - https://vuldb.com/?id.228886
+    - id: CVE-2023-2666
+      description: Allocation of Resources Without Limits or Throttling in GitHub repository froxlor/froxlor prior to 2.0.16.
+      published: 2023-05-12T01:15:09.847
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/froxlor/froxlor/commit/1679675aa1c29d24344dd2e091ff252accb111d6
+        - https://huntr.dev/bounties/0bbdc9d4-d9dc-4490-93ef-0a83b451a20f
+    - id: CVE-2023-23867
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in Gautam Thapar Button Builder – Buttons X plugin <= 0.8.6 versions.
+      published: 2023-05-12T15:15:09.227
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/buttons-x/wordpress-button-builder-buttons-x-plugin-0-8-6-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-25927
+      description: 'IBM Security Verify Access 10.0.0, 10.0.1, 10.0.2, 10.0.3, 10.0.4, and 10.0.5 could allow an attacker to crash the webseald process using specially crafted HTTP requests resulting in loss of access to the system.  IBM X-Force ID:  247635.'
+      published: 2023-05-12T18:15:09.450
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/247635
+        - https://https://www.ibm.com/support/pages/node/6989653
+    - id: CVE-2023-28520
+      description: 'IBM Planning Analytics Local 2.0 is vulnerable to stored cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session.  IBM X-Force ID:  250454.'
+      published: 2023-05-12T02:15:09.233
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://https://exchange.xforce.ibmcloud.com/vulnerabilities/250454
+        - https://www.ibm.com/support/pages/node/6986639
+    - id: CVE-2023-2181
+      description: An issue has been discovered in GitLab affecting all versions before 15.9.8, 15.10.0 before 15.10.7, and 15.11.0 before 15.11.3. A malicious developer could use a git feature called refs/replace to smuggle content into a merge request which would not be visible during review in the UI.
+      published: 2023-05-12T21:15:09.490
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://gitlab.com/gitlab-org/cves/-/blob/master/2023/CVE-2023-2181.json
+        - https://gitlab.com/gitlab-org/gitlab/-/issues/407859
+        - https://hackerone.com/reports/1938185
+    - id: CVE-2023-2682
+      description: 'A vulnerability was found in Caton Live up to 2023-04-26 and classified as critical. This issue affects some unknown processing of the file /cgi-bin/ping.cgi of the component Mini_HTTPD. The manipulation of the argument address with the input ;id;uname${IFS}-a leads to command injection. The attack may be initiated remotely. The associated identifier of this vulnerability is VDB-228911. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-12T13:15:09.477
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://vuldb.com/?ctiid.228911
+        - https://vuldb.com/?id.228911
+    - id: CVE-2023-32303
+      description: Planet is software that provides satellite data. The secret file stores the user's Planet API authentication information. It should only be accessible by the user, but before version 2.0.1, its permissions allowed the user's group and non-group to read the file as well. This issue was patched in version 2.0.1. As a workaround, set the secret file permissions to only user read/write by hand.
+      published: 2023-05-12T21:15:09.560
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/planetlabs/planet-client-python/commit/d71415a83119c5e89d7b80d5f940d162376ee3b7
+        - https://github.com/planetlabs/planet-client-python/releases/tag/2.0.1
+        - https://github.com/planetlabs/planet-client-python/security/advisories/GHSA-j5fj-rfh6-qj85
+    - id: CVE-2023-2672
+      description: A vulnerability classified as critical has been found in SourceCodester Lost and Found Information System 1.0. Affected is an unknown function of the file items/view.php of the component GET Parameter Handler. The manipulation of the argument id leads to sql injection. It is possible to launch the attack remotely. The identifier of this vulnerability is VDB-228888.
+      published: 2023-05-12T09:15:10.520
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://vuldb.com/?ctiid.228888
+        - https://vuldb.com/?id.228888
+    - id: CVE-2023-2676
+      description: A vulnerability, which was classified as critical, has been found in H3C R160 V1004004. Affected by this issue is some unknown functionality of the file /goForm/aspForm. The manipulation of the argument go leads to stack-based buffer overflow. The exploit has been disclosed to the public and may be used. VDB-228890 is the identifier assigned to this vulnerability.
+      published: 2023-05-12T09:15:10.610
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/xinzhihen06/dxq-cve/blob/main/h3cr160.md
+        - https://vuldb.com/?ctiid.228890
+        - https://vuldb.com/?id.228890
+    - id: CVE-2023-2677
+      description: A vulnerability, which was classified as critical, was found in SourceCodester Covid-19 Contact Tracing System 1.0. This affects an unknown part of the file admin/establishment/manage.php. The manipulation of the argument id leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-228891.
+      published: 2023-05-12T10:15:09.073
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/BacteriaJun/cve/blob/main/SQL.md
+        - https://vuldb.com/?ctiid.228891
+        - https://vuldb.com/?id.228891
+    - id: CVE-2023-22685
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Tips and Tricks HQ, Ruhul Amin Category Specific RSS feed Subscription plugin <= v2.2 versions.
+      published: 2023-05-12T16:15:09.393
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/category-specific-rss-feed-menu/wordpress-category-specific-rss-feed-subscription-plugin-v2-2-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-2515
+      description: Mattermost fails to restrict a user with permissions to edit other users and to create personal access tokens from elevating their privileges to system admin
+      published: 2023-05-12T09:15:10.373
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://mattermost.com/security-updates
+    - id: CVE-2023-2514
+      description: Mattermost Sever fails to redact the DB username and password before emitting an application log during server initialization. 
+      published: 2023-05-12T09:15:10.267
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://mattermost.com/security-updates
+    - id: CVE-2023-27863
+      description: 'IBM Spectrum Protect Plus Server 10.1.13, under specific configurations, could allow an elevated user to obtain SMB credentials that may be used to access vSnap data stores.  IBM X-Force ID:  249325.'
+      published: 2023-05-12T19:15:08.827
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/249325
+        - https://www.ibm.com/support/pages/node/6965812
+    - id: CVE-2023-28414
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in ApexChat plugin <= 1.3.1 versions.
+      published: 2023-05-12T16:15:09.743
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/apexchat/wordpress-apexchat-plugin-1-3-1-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-25958
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Justin Saad Simple Tooltips plugin <= 2.1.4 versions.
+      published: 2023-05-12T16:15:09.610
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/simple-tooltips/wordpress-simple-tooltips-plugin-2-1-4-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-25460
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in CodeSolz Easy Ad Manager plugin <= 1.0.0 versions.
+      published: 2023-05-12T16:15:09.550
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/easy-ad-manager/wordpress-easy-ad-manager-plugin-1-0-0-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-23810
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in SnapOrbital Panorama plugin <= 1.5 versions.
+      published: 2023-05-12T16:15:09.453
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/project-panorama-lite/wordpress-panorama-wordpress-project-management-plugin-plugin-1-5-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-2678
+      description: A vulnerability has been found in SourceCodester File Tracker Manager System 1.0 and classified as problematic. This vulnerability affects unknown code of the file /file_manager/admin/save_user.php of the component POST Parameter Handler. The manipulation of the argument firstname leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-228892.
+      published: 2023-05-12T10:15:09.140
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/csbsong/bug_report/blob/main/XSS.md
+        - https://vuldb.com/?ctiid.228892
+        - https://vuldb.com/?id.228892
+    - id: CVE-2023-2671
+      description: A vulnerability was found in SourceCodester Lost and Found Information System 1.0. It has been rated as problematic. This issue affects some unknown processing of the file classes/Master.php?f=save_inquiry of the component Contact Form. The manipulation of the argument fullname/contact/message leads to cross site scripting. The attack may be initiated remotely. The associated identifier of this vulnerability is VDB-228887.
+      published: 2023-05-12T09:15:10.447
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://vuldb.com/?ctiid.228887
+        - https://vuldb.com/?id.228887
+    - id: CVE-2023-2667
+      description: A vulnerability has been found in SourceCodester Lost and Found Information System 1.0 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file admin/. The manipulation of the argument page leads to cross site scripting. The attack can be launched remotely. The associated identifier of this vulnerability is VDB-228883.
+      published: 2023-05-12T07:15:08.627
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://vuldb.com/?ctiid.228883
+        - https://vuldb.com/?id.228883
+    - id: CVE-2022-32495
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:15.473
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-2501
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:18.260
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2019-11804
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:12.680
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2019-6141
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:12.807
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2019-6148
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:12.913
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-29397
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.047
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-29398
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.087
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-29399
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.130
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-29400
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.170
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-29401
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.213
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-29402
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.263
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-29403
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.317
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-29404
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.417
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-29405
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.480
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-29406
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.527
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-29407
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.580
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-29408
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.630
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-29410
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.667
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6589
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.707
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6591
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.743
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6592
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.777
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6593
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.817
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6594
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.853
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6595
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.890
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6596
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.933
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6597
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:13.973
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6598
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.007
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6599
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.043
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6600
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.080
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6601
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.127
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6602
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.163
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6603
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.203
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6604
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.240
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6605
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.280
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6606
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.327
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6607
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.367
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-6608
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.407
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2021-26673
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.450
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2021-26674
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.493
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-0094
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.540
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-0095
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.580
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-23162
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.617
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-23164
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.653
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-24425
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.690
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-24427
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.727
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-24940
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.770
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-24941
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.813
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-24943
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.853
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-24944
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.893
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-26853
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.943
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-29086
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:14.993
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-29087
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:15.040
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-29088
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:15.083
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-29099
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:15.133
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-29100
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:15.187
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-29101
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:15.230
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-2331
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:15.270
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-31227
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:15.313
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-31242
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:15.357
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32479
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:15.397
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32494
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:15.437
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2019-11802
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:12.523
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32496
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:15.513
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32497
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:15.553
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-33933
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:15.590
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-34395
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:15.630
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-34461
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:15.673
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-37303
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:15.713
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-37304
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:15.753
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-46681
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:16.030
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-46753
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:16.080
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-46787
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:16.150
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-46788
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:16.200
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-46789
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:16.253
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-46790
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:16.300
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-46791
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:16.337
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-48187
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:16.373
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-4852
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:16.410
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-4853
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:16.453
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-0387
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:16.490
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-2185
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:18.210
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2019-11803
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:12.573
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-2502
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:18.303
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-2510
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:18.347
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-2511
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:18.390
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2019-11801
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:12.473
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2019-11800
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:12.427
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-28936
+      description: |-
+        Attacker can access arbitrary recording/room
+
+        Vendor: The Apache Software Foundation
+
+        Versions Affected: Apache OpenMeetings from 2.0.0 before 7.1.0
+      published: 2023-05-12T08:15:08.857
+      severity: ""
+      privileges: ""
+      references:
+        - https://lists.apache.org/thread/y6vng44c22ll221rtvsv208x1pbjmdoc
+    - id: CVE-2023-29032
+      description: |-
+        An attacker that has gained access to certain private information can use this to act as other user.
+
+        Vendor: The Apache Software Foundation
+
+        Versions Affected: Apache OpenMeetings from 3.1.3 before 7.1.0
+      published: 2023-05-12T08:15:08.930
+      severity: ""
+      privileges: ""
+      references:
+        - https://lists.apache.org/thread/j2d6mg3rzcphfd8vvvk09d8p4o9lvnqp
+    - id: CVE-2023-29246
+      description: |-
+        An attacker who has gained access to an admin account can perform RCE via null-byte injection
+
+        Vendor: The Apache Software Foundation
+
+        Versions Affected: Apache OpenMeetings from 2.0.0 before 7.1.0
+      published: 2023-05-12T08:15:08.997
+      severity: ""
+      privileges: ""
+      references:
+        - https://lists.apache.org/thread/230plvhbdx26m43b0sy942wlwt6kkmmr
+    - id: CVE-2019-11799
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:12.297
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2019-11798
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:12.230
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2019-11797
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:12.190
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2019-11796
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:12.147
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2019-11795
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:12.100
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2019-11794
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:12.053
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2019-11793
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:11.970
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2019-11792
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:11.897
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2019-11791
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:11.843
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2019-11790
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:11.790
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2019-11789
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:11.690
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2020-13377
+      description: The web-services interface of Loadbalancer.org Enterprise VA MAX through 8.3.8 could allow an authenticated, remote, low-privileged attacker to conduct directory traversal attacks and obtain read and write access to sensitive files.
+      published: 2023-05-12T11:15:12.560
+      severity: ""
+      privileges: ""
+      references:
+        - https://inf0seq.github.io/cve/2020/04/21/Path-Traversal-in-Enterprise-loadbalancer-VA-MAX-v8.3.8-and-earlier.html
+        - https://www.loadbalancer.org/products/virtual/enterprise-va-max/
+    - id: CVE-2023-23169
+      description: Synapsoft pdfocus 1.17 is vulnerable to local file inclusion and server-side request forgery Directory Traversal.
+      published: 2023-05-12T11:15:12.727
+      severity: ""
+      privileges: ""
+      references:
+        - http://support.synapsoft.co.kr:50000/skin/try_pdfocus/index.html
+        - https://github.com/S4nshine/CVE-2023-23169
+    - id: CVE-2023-27237
+      description: LavaLite CMS v 9.0.0 was discovered to be vulnerable to a host header injection attack.
+      published: 2023-05-12T11:15:12.773
+      severity: ""
+      privileges: ""
+      references:
+        - http://lavalite.com
+        - https://github.com/M19O/Security-Advisories/tree/main/CVE-2023-27237
+        - https://i.ibb.co/34DSW7B/1.png
+        - https://i.ibb.co/kSkqPhQ/3.png
+        - https://i.ibb.co/mJq9CH8/2.png
+    - id: CVE-2023-27238
+      description: LavaLite CMS v 9.0.0 was discovered to be vulnerable to web cache poisoning.
+      published: 2023-05-12T11:15:12.810
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/LavaLite/cms/blob/c0a36dd748c8f7ff53eb16eb572bdeebe72eb420/app/Http/Controllers/ResourceController.php#L8
+        - https://github.com/M19O/Security-Advisories/tree/main/CVE-2023-27238
+    - id: CVE-2023-29657
+      description: eXtplorer 2.1.15 is vulnerable to Insecure Permissions. File upload in file manager allows uploading zip file containing php pages with arbitrary code executions.
+      published: 2023-05-12T11:15:12.850
+      severity: ""
+      privileges: ""
+      references:
+        - http://blog.tristaomarinho.com/extplorer-2-1-15-arbitrary-file-upload/
+        - http://extplorer.net/
+    - id: CVE-2023-29818
+      description: An issue found in Webroot SecureAnywhere Endpoint Protection CE 23.1 v.9.0.33.39 and before allows a local attacker to bypass protections via the default allowlist feature being stored as non-admin.
+      published: 2023-05-12T11:15:12.887
+      severity: ""
+      privileges: ""
+      references:
+        - http://secureanywhere.com
+        - http://webroot.com
+        - https://www.spenceralessi.com/CVEs/2023-05-10-Webroot-SecureAnywhere/
+    - id: CVE-2023-29819
+      description: An issue found in Webroot SecureAnywhere Endpoint Protection CE 23.1 v.9.0.33.39 and before allows a local attacker to bypass protections via a crafted payload.
+      published: 2023-05-12T11:15:12.923
+      severity: ""
+      privileges: ""
+      references:
+        - http://secureanywhere.com
+        - http://webroot.com
+        - https://www.spenceralessi.com/CVEs/2023-05-10-Webroot-SecureAnywhere/
+    - id: CVE-2023-29820
+      description: An issue found in Webroot SecureAnywhere Endpoint Protection CE 23.1 v.9.0.33.39 and before allows a local attacker to access sensitive information via the EXE installer.
+      published: 2023-05-12T11:15:12.960
+      severity: ""
+      privileges: ""
+      references:
+        - http://secureanywhere.com
+        - http://webroot.com
+        - https://www.spenceralessi.com/CVEs/2023-05-10-Webroot-SecureAnywhere/
+    - id: CVE-2023-29983
+      description: Cross Site Scripting vulnerability found in Maximilian Vogt cmaps v.8.0 allows a remote attacker to execute arbitrary code via the auditlog tab in the admin panel.
+      published: 2023-05-12T11:15:12.997
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/vogtmh/cmaps
+        - https://github.com/zPrototype/CVE-2023-29983
+        - https://packetstormsecurity.com/files/172075/CompanyMaps-8.0-Cross-Site-Scripting.html
+        - https://www.exploit-db.com/exploits/51417
+    - id: CVE-2019-11788
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:11.613
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-30130
+      description: An issue found in CraftCMS v.3.8.1 allows a remote attacker to execute arbitrary code via a crafted script to the Section parameter.
+      published: 2023-05-12T11:15:13.097
+      severity: ""
+      privileges: ""
+      references:
+        - https://craftcms.com/
+        - https://tf1t.gitbook.io/mycve/craftcms/server-site-template-injection-on-craftcms-3.8.1
+    - id: CVE-2023-30246
+      description: SQL injection vulnerability found in Judging Management System v.1.0 allows a remote attacker to execute arbitrary code via the contestant_id parameter.
+      published: 2023-05-12T11:15:13.133
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/qingning988/cve_report/blob/main/judging-management-system/SQLi-2.md
+        - https://www.github.com
+    - id: CVE-2023-31985
+      description: A Command Injection vulnerability in Edimax Wireless Router N300 Firmware BR-6428NS_v4 allows attacker to execute arbitrary code via the formAccept function in /bin/webs without any limitations.
+      published: 2023-05-12T12:15:09.800
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Erebua/CVE/blob/main/N300_BR-6428nS%20V4/3/Readme.md
+    - id: CVE-2019-11787
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:11.573
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2018-15654
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:11.177
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-47879
+      description: A Remote Code Execution (RCE) vulnerability in /be/rpc.php in Jedox 2020.2.5 allows remote authenticated users to load arbitrary PHP classes from the 'rtn' directory and execute its methods.
+      published: 2023-05-12T14:15:09.567
+      severity: ""
+      privileges: ""
+      references:
+        - http://jedox.com
+        - https://docs.syslifters.com/assets/vulnerability-disclosure/Vulnerability-Disclosure-Jedox-Jedox-04-2023.pdf
+    - id: CVE-2022-47880
+      description: An Information disclosure vulnerability in /be/rpc.php in Jedox GmbH Jedox 2020.2.5 allow remote, authenticated users with permissions to modify database connections to disclose a connections' cleartext password via the 'test connection' function.
+      published: 2023-05-12T14:15:09.613
+      severity: ""
+      privileges: ""
+      references:
+        - http://jedox.com
+        - https://docs.syslifters.com/assets/vulnerability-disclosure/Vulnerability-Disclosure-Jedox-Jedox-04-2023.pdf
+    - id: CVE-2018-15653
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:11.137
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-27823
+      description: An authentication bypass in Optoma 1080PSTX C02 allows an attacker to access the administration console without valid credentials.
+      published: 2023-05-12T14:15:09.727
+      severity: ""
+      privileges: ""
+      references:
+        - http://optoma.com
+        - https://packetstormsecurity.com/files/172276/Optoma-1080PSTX-Firmware-C02-Authentication-Bypass.html
+    - id: CVE-2023-31913
+      description: Jerryscript 3.0 *commit 1a2c047) was discovered to contain an Assertion Failure via the component parser_parse_class at jerry-core/parser/js/js-parser-expr.c.
+      published: 2023-05-12T14:15:09.773
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/jerryscript-project/jerryscript/issues/5061
+    - id: CVE-2023-31914
+      description: Jerryscript 3.0 (commit 05dbbd1) was discovered to contain out-of-memory issue in malloc.
+      published: 2023-05-12T14:15:09.807
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/jerryscript-project/jerryscript/issues/5071
+    - id: CVE-2023-31916
+      description: Jerryscript 3.0 (commit 1a2c047) was discovered to contain an Assertion Failure via the jmem_heap_finalize at jerry-core/jmem/jmem-heap.c.
+      published: 2023-05-12T14:15:09.847
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/jerryscript-project/jerryscript/issues/5062
+    - id: CVE-2023-31918
+      description: Jerryscript 3.0 (commit 1a2c047) was discovered to contain an Assertion Failure via the parser_parse_function_arguments at jerry-core/parser/js/js-parser.c.
+      published: 2023-05-12T14:15:09.890
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/jerryscript-project/jerryscript/issues/5064
+    - id: CVE-2023-31919
+      description: Jerryscript 3.0 (commit 05dbbd1) was discovered to contain an Assertion Failure via the jcontext_raise_exception at jerry-core/jcontext/jcontext.c.
+      published: 2023-05-12T14:15:09.927
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/jerryscript-project/jerryscript/issues/5069
+    - id: CVE-2023-31920
+      description: Jerryscript 3.0 (commit 05dbbd1) was discovered to contain an Assertion Failure via the vm_loop at jerry-core/vm/vm.c.
+      published: 2023-05-12T14:15:09.963
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/jerryscript-project/jerryscript/issues/5070
+    - id: CVE-2023-31921
+      description: Jerryscript 3.0 (commit 05dbbd1) was discovered to contain an Assertion Failure via the ecma_big_uint_div_mod at jerry-core/ecma/operations/ecma-big-uint.c.
+      published: 2023-05-12T14:15:10.007
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/jerryscript-project/jerryscript/issues/5068
+    - id: CVE-2023-31922
+      description: QuickJS commit 2788d71 was discovered to contain a stack-overflow via the component js_proxy_isArray at quickjs.c.
+      published: 2023-05-12T14:15:10.043
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/bellard/quickjs/issues/178
+    - id: CVE-2018-15652
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:11.093
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2018-15651
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:11.057
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2018-15650
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:11.017
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2018-15649
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:10.977
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2018-15648
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:10.937
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2018-15647
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:10.890
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2018-15646
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:10.850
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2018-15644
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:10.807
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-48020
+      description: Vinteo VCC v2.36.4 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the conference parameter. This vulnerability allows attackers to inject arbitrary code which will be executed by the victim user's browser.
+      published: 2023-05-12T16:15:09.340
+      severity: ""
+      privileges: ""
+      references:
+        - https://seq.team/en/
+        - https://seq.team/en/blog/reflected-cross-site-scripting-xss-in-vinteo-vcc/
+        - https://www.linkedin.com/in/dmitry-kiryukhin-b5741421b/
+    - id: CVE-2018-15643
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:10.770
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2018-15642
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:10.730
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-25428
+      description: A DLL Hijacking issue discovered in Soft-o Free Password Manager 1.1.20 allows attackers to create arbitrary DLLs leading to code execution.
+      published: 2023-05-12T16:15:09.513
+      severity: ""
+      privileges: ""
+      references:
+        - https://packetstormsecurity.com/files/172259/Soft-o-Free-Password-Manager-1.1.20-DLL-Hijacking.html
+        - https://www.soft-o.com/products/free-password-manager.html
+    - id: CVE-2018-15639
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:10.683
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2018-15637
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:10.633
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2018-15636
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:10.580
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-31983
+      description: A Command Injection vulnerability in Edimax Wireless Router N300 Firmware BR-6428NS_v4 allows attacker to execute arbitrary code via the mp function in /bin/webs without any limitations.
+      published: 2023-05-12T16:15:09.820
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Erebua/CVE/blob/main/N300_BR-6428nS%20V4/2/Readme.md
+    - id: CVE-2018-15630
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.'
+      published: 2023-05-12T05:15:10.053
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-2457
+      description: 'Out of bounds write in ChromeOS Audio Server in Google Chrome on ChromeOS prior to 113.0.5672.114 allowed a remote attacker to potentially exploit heap corruption via crafted audio file. (Chromium security severity: High)'
+      published: 2023-05-12T18:15:09.530
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-chromeos.html
+        - https://crbug.com/1420790
+    - id: CVE-2023-2458
+      description: 'Use after free in ChromeOS Camera in Google Chrome on ChromeOS prior to 113.0.5672.114 allowed a remote attacker who convinced a user to engage in specific UI interaction to potentially exploit heap corruption via UI interaction. (Chromium security severity: High)'
+      published: 2023-05-12T18:15:09.573
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-chromeos.html
+        - https://crbug.com/1430692
+    - id: CVE-2023-30330
+      description: SoftExpert (SE) Excellence Suite 2.x versions before 2.1.3 is vulnerable to Local File Inclusion in the function /se/v42300/generic/gn_defaultframe/2.0/defaultframe_filter.php.
+      published: 2023-05-12T01:15:09.903
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Filiplain/LFI-to-RCE-SE-Suite-2.0
+        - https://www.exploit-db.com/exploits/51404
+    - id: CVE-2023-30247
+      description: File Upload vulnerability found in Oretnom23 Storage Unit Rental Management System v.1.0 allows a remote attacker to execute arbitrary code via the update_settings parameter.
+      published: 2023-05-12T19:15:08.907
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/qingning988/cve_report/blob/main/storage-unit-rental-management-system/RCE-1.md
+        - https://www.github.com
+    - id: CVE-2023-29809
+      description: SQL injection vulnerability found in Maximilian Vogt companymaps (cmaps) v.8.0 allows a remote attacker to execute arbitrary code via a crafted script in the request.
+      published: 2023-05-12T01:15:09.743
+      severity: ""
+      privileges: ""
+      references:
+        - http://companymaps.com
+        - http://maximilian.com
+        - https://packetstormsecurity.com/files/172146/Companymaps-8.0-SQL-Injection.html
+        - https://www.exploit-db.com/exploits/51422
+    - id: CVE-2023-29808
+      description: Cross Site Scripting (XSS) vulnerability in vogtmh cmaps (companymaps) 8.0 allows attackers to execute arbitrary code.
+      published: 2023-05-12T01:15:09.707
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/vogtmh/cmaps
+        - https://github.com/zPrototype/CVE-2023-29808
+        - https://packetstormsecurity.com/files/172145/Companymaps-8.0-Cross-Site-Scripting.html
+    - id: CVE-2023-1096
+      description: SnapCenter versions 4.7 prior to 4.7P2 and 4.8 prior to 4.8P1 are susceptible to a vulnerability which could allow a remote unauthenticated attacker to gain access as an admin user.
+      published: 2023-05-12T21:15:08.990
+      severity: ""
+      privileges: ""
+      references:
+        - https://security.netapp.com/advisory/ntap-20230511-0011/
+    - id: CVE-2023-20877
+      description: VMware Aria Operations contains a privilege escalation vulnerability. An authenticated malicious user with ReadOnly privileges can perform code execution leading to privilege escalation.
+      published: 2023-05-12T21:15:09.043
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.vmware.com/security/advisories/VMSA-2023-0009.html
+    - id: CVE-2023-20878
+      description: VMware Aria Operations contains a deserialization vulnerability. A malicious actor with administrative privileges can execute arbitrary commands and disrupt the system.
+      published: 2023-05-12T21:15:09.093
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.vmware.com/security/advisories/VMSA-2023-0009.html
+    - id: CVE-2023-20879
+      description: VMware Aria Operations contains a Local privilege escalation vulnerability. A malicious actor with administrative privileges in the Aria Operations application can gain root access to the underlying operating system.
+      published: 2023-05-12T21:15:09.133
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.vmware.com/security/advisories/VMSA-2023-0009.html
+    - id: CVE-2023-20880
+      description: VMware Aria Operations contains a privilege escalation vulnerability. A malicious actor with administrative access to the local system can escalate privileges to 'root'.
+      published: 2023-05-12T21:15:09.173
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.vmware.com/security/advisories/VMSA-2023-0009.html
+    - id: CVE-2023-25005
+      description: A maliciously crafted DLL file can be forced to read beyond allocated boundaries in Autodesk InfraWorks 2023, and 2021 when parsing the DLL files could lead to a resource injection vulnerability.
+      published: 2023-05-12T21:15:09.220
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.autodesk.com/trust/security-advisories/adsk-sa-2023-0006
+    - id: CVE-2023-25006
+      description: A malicious actor may convince a user to open a malicious USD file that may trigger a use-after-free vulnerability which could result in code execution.
+      published: 2023-05-12T21:15:09.267
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.autodesk.com/trust/security-advisories/adsk-sa-2023-0008
+    - id: CVE-2023-25007
+      description: A malicious actor may convince a user to open a malicious USD file that may trigger an uninitialized pointer which could result in code execution.
+      published: 2023-05-12T21:15:09.307
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.autodesk.com/trust/security-advisories/adsk-sa-2023-0008
+    - id: CVE-2023-25008
+      description: A malicious actor may convince a user to open a malicious USD file that may trigger an out-of-bounds read vulnerability which could result in code execution.
+      published: 2023-05-12T21:15:09.343
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.autodesk.com/trust/security-advisories/adsk-sa-2023-0008
+    - id: CVE-2023-25009
+      description: A malicious actor may convince a user to open a malicious USD file that may trigger an out-of-bounds write vulnerability which could result in code execution.
+      published: 2023-05-12T21:15:09.383
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.autodesk.com/trust/security-advisories/adsk-sa-2023-0008
+    - id: CVE-2023-2088
+      description: A flaw was found in OpenStack due to an inconsistency between Cinder and Nova. This issue can be triggered intentionally or by accident. A remote, authenticated attacker could exploit this vulnerability by detaching one of their volumes from Cinder. The highest impact is to confidentiality.
+      published: 2023-05-12T21:15:09.430
+      severity: ""
+      privileges: ""
+      references:
+        - https://bugs.launchpad.net/bugs/2004555
+    - id: CVE-2023-29790
+      description: kodbox 1.2.x through 1.3.7 has a Sensitive Information Leakage issue.
+      published: 2023-05-12T01:15:09.667
+      severity: ""
+      privileges: ""
+      references:
+        - https://blog.mo60.cn/index.php/archives/kodbox.html
+    - id: CVE-2020-13378
+      description: Loadbalancer.org Enterprise VA MAX through 8.3.8 has an OS Command Injection vulnerability that allows a remote authenticated attacker to execute arbitrary code.
+      published: 2023-05-12T01:15:09.023
+      severity: ""
+      privileges: ""
+      references:
+        - https://inf0seq.github.io/cve/2020/04/21/OS.html
+        - https://www.loadbalancer.org/products/virtual/enterprise-va-max/
