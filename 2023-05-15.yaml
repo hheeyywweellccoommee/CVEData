@@ -1,0 +1,100 @@
+data:
+    - id: CVE-2023-2689
+      description: A vulnerability classified as critical was found in SourceCodester Billing Management System 1.0. This vulnerability affects unknown code of the file editproduct.php of the component GET Parameter Handler. The manipulation of the argument id leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-228970 is the identifier assigned to this vulnerability.
+      published: 2023-05-14T08:15:18.897
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/niyuchunqiu/cve/blob/main/SQL.md
+        - https://vuldb.com/?ctiid.228970
+        - https://vuldb.com/?id.228970
+    - id: CVE-2023-2690
+      description: A vulnerability, which was classified as critical, has been found in SourceCodester Personnel Property Equipment System 1.0. This issue affects some unknown processing of the file admin/returned_reuse_form.php of the component GET Parameter Handler. The manipulation of the argument client_id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-228971.
+      published: 2023-05-14T08:15:19.170
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/LeozhangCA/CVEReport/blob/main/SQL.md
+        - https://vuldb.com/?ctiid.228971
+        - https://vuldb.com/?id.228971
+    - id: CVE-2023-2693
+      description: A vulnerability was found in SourceCodester Online Exam System 1.0 and classified as critical. Affected by this issue is some unknown functionality of the file /mahasiswa/data of the component POST Parameter Handler. The manipulation of the argument columns[1][data] leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-228974 is the identifier assigned to this vulnerability.
+      published: 2023-05-14T09:15:09.753
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/tht1997/CVE_2023/blob/main/Lost%20and%20Found%20Information%20System/img/mahasiswa_data.png
+        - https://vuldb.com/?ctiid.228974
+        - https://vuldb.com/?id.228974
+    - id: CVE-2023-2694
+      description: A vulnerability was found in SourceCodester Online Exam System 1.0. It has been classified as critical. This affects an unknown part of the file /dosen/data of the component POST Parameter Handler. The manipulation of the argument columns[1][data] leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-228975.
+      published: 2023-05-14T10:15:08.720
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/tht1997/CVE_2023/blob/main/Lost%20and%20Found%20Information%20System/img/dosen_data.png
+        - https://vuldb.com/?ctiid.228975
+        - https://vuldb.com/?id.228975
+    - id: CVE-2023-2695
+      description: A vulnerability was found in SourceCodester Online Exam System 1.0. It has been declared as critical. This vulnerability affects unknown code of the file /kelas/data of the component POST Parameter Handler. The manipulation of the argument columns[1][data] leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-228976.
+      published: 2023-05-14T11:15:08.763
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/tht1997/CVE_2023/blob/main/Lost%20and%20Found%20Information%20System/img/kelas_data.png
+        - https://vuldb.com/?ctiid.228976
+        - https://vuldb.com/?id.228976
+    - id: CVE-2023-2696
+      description: A vulnerability was found in SourceCodester Online Exam System 1.0. It has been rated as critical. This issue affects some unknown processing of the file /matkul/data of the component POST Parameter Handler. The manipulation of the argument columns[1][data] leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-228977 was assigned to this vulnerability.
+      published: 2023-05-14T11:15:08.837
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/tht1997/CVE_2023/blob/main/Lost%20and%20Found%20Information%20System/img/matkul_data.png
+        - https://vuldb.com/?ctiid.228977
+        - https://vuldb.com/?id.228977
+    - id: CVE-2023-2697
+      description: A vulnerability classified as critical has been found in SourceCodester Online Exam System 1.0. Affected is an unknown function of the file /jurusan/data of the component POST Parameter Handler. The manipulation of the argument columns[1][data] leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-228978 is the identifier assigned to this vulnerability.
+      published: 2023-05-14T12:15:09.127
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/tht1997/CVE_2023/blob/main/Lost%20and%20Found%20Information%20System/img/jurusan_data.png
+        - https://vuldb.com/?ctiid.228978
+        - https://vuldb.com/?id.228978
+    - id: CVE-2023-2698
+      description: A vulnerability classified as critical was found in SourceCodester Lost and Found Information System 1.0. Affected by this vulnerability is an unknown functionality of the file admin/?page=items/manage_item of the component GET Parameter Handler. The manipulation of the argument id leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-228979.
+      published: 2023-05-14T12:15:09.207
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/tht1997/CVE_2023/blob/main/Lost%20and%20Found%20Information%20System/img/edit_item.png
+        - https://vuldb.com/?ctiid.228979
+        - https://vuldb.com/?id.228979
+    - id: CVE-2023-2699
+      description: A vulnerability, which was classified as critical, has been found in SourceCodester Lost and Found Information System 1.0. Affected by this issue is some unknown functionality of the file admin/?page=items/view_item of the component GET Parameter Handler. The manipulation of the argument id leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-228980.
+      published: 2023-05-14T12:15:09.267
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/tht1997/CVE_2023/blob/main/Lost%20and%20Found%20Information%20System/img/view_item.png
+        - https://vuldb.com/?ctiid.228980
+        - https://vuldb.com/?id.228980
+    - id: CVE-2023-2691
+      description: A vulnerability, which was classified as problematic, was found in SourceCodester Personnel Property Equipment System 1.0. Affected is an unknown function of the file admin/add_item.php of the component POST Parameter Handler. The manipulation of the argument item_name leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-228972.
+      published: 2023-05-14T09:15:09.270
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/LeozhangCA/CVEReport/blob/main/StoredXSS.md
+        - https://vuldb.com/?ctiid.228972
+        - https://vuldb.com/?id.228972
+    - id: CVE-2023-2692
+      description: A vulnerability has been found in SourceCodester ICT Laboratory Management System 1.0 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file views/room_info.php of the component GET Parameter Handler. The manipulation of the argument name leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-228973 was assigned to this vulnerability.
+      published: 2023-05-14T09:15:09.677
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/LeozhangCA/CVEReport/blob/main/XSS.md
+        - https://vuldb.com/?ctiid.228973
+        - https://vuldb.com/?id.228973
