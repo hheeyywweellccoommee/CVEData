@@ -1,0 +1,478 @@
+data:
+    - id: CVE-2023-30191
+      description: PrestaShop cdesigner < 3.1.9 is vulnerable to SQL Injection via CdesignerTraitementModuleFrontController::initContent().
+      published: 2023-05-17T20:15:10.680
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://friends-of-presta.github.io/security-advisories/modules/2023/05/17/cdesigner-89.html
+    - id: CVE-2023-2780
+      description: 'Path Traversal: ''\..\filename'' in GitHub repository mlflow/mlflow prior to 2.3.1.'
+      published: 2023-05-17T21:15:09.470
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://github.com/mlflow/mlflow/commit/fae77a525dd908c56d6204a4cef1c1c75b4e9857
+        - https://huntr.dev/bounties/b12b0073-0bb0-4bd1-8fc2-ec7f17fd7689
+    - id: CVE-2023-30438
+      description: 'An internally discovered vulnerability in PowerVM on IBM Power9 and Power10 systems could allow an attacker with privileged user access to a logical partition to perform an undetected violation of the isolation between logical partitions which could lead to data leakage or the execution of arbitrary code in other logical partitions on the same physical server.  IBM X-Force ID:  252706.'
+      published: 2023-05-17T13:15:09.380
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/252706
+        - https://www.ibm.com/support/pages/node/6993021
+    - id: CVE-2023-0863
+      description: 'Improper Authentication vulnerability in ABB Terra AC wallbox (UL40/80A), ABB Terra AC wallbox (UL32A), ABB Terra AC wallbox (CE) (Terra AC MID), ABB Terra AC wallbox (CE) Terra AC Juno CE, ABB Terra AC wallbox (CE) Terra AC PTB, ABB Terra AC wallbox (CE) Symbiosis, ABB Terra AC wallbox (JP).This issue affects Terra AC wallbox (UL40/80A): from 1.0;0 through 1.5.5; Terra AC wallbox (UL32A) : from 1.0;0 through 1.6.5; Terra AC wallbox (CE) (Terra AC MID): from 1.0;0 through 1.6.5; Terra AC wallbox (CE) Terra AC Juno CE: from 1.0;0 through 1.6.5; Terra AC wallbox (CE) Terra AC PTB : from 1.0;0 through 1.5.25; Terra AC wallbox (CE) Symbiosis: from 1.0;0 through 1.2.7; Terra AC wallbox (JP): from 1.0;0 through 1.6.5.'
+      published: 2023-05-17T08:15:08.510
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://search.abb.com/library/Download.aspx?DocumentID=9AKK108468A1415&LanguageCode=en&DocumentPartId=&Action=Launch
+    - id: CVE-2023-2706
+      description: The OTP Login Woocommerce & Gravity Forms plugin for WordPress is vulnerable to authentication bypass. This is due to the fact that when generating OTP codes for users to use in order to login via phone number, the plugin returns these codes in an AJAX response. This makes it possible for unauthenticated attackers to obtain login codes for administrators. This does require an attacker have access to the phone number configured for an account, which can be obtained via social engineering or reconnaissance.
+      published: 2023-05-17T02:15:11.953
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://plugins.trac.wordpress.org/browser/mobile-login-woocommerce/tags/2.2/includes/class-xoo-ml-verification.php#L362
+        - https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2912731%40mobile-login-woocommerce&new=2912731%40mobile-login-woocommerce&sfp_email=&sfph_mail=
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/b1b7b653-496f-467a-9513-4be1891f38ae?source=cve
+    - id: CVE-2023-0864
+      description: 'Cleartext Transmission of Sensitive Information vulnerability in ABB Terra AC wallbox (UL40/80A), ABB Terra AC wallbox (UL32A), ABB Terra AC wallbox (CE) (Terra AC MID), ABB Terra AC wallbox (CE) Terra AC Juno CE, ABB Terra AC wallbox (CE) Terra AC PTB, ABB Terra AC wallbox (CE) Symbiosis, ABB Terra AC wallbox (JP).This issue affects Terra AC wallbox (UL40/80A): from 1.0;0 through 1.5.5; Terra AC wallbox (UL32A) : from 1.0;0 through 1.6.5; Terra AC wallbox (CE) (Terra AC MID): from 1.0;0 through 1.6.5; Terra AC wallbox (CE) Terra AC Juno CE: from 1.0;0 through 1.6.5; Terra AC wallbox (CE) Terra AC PTB : from 1.0;0 through 1.5.25; Terra AC wallbox (CE) Symbiosis: from 1.0;0 through 1.2.7; Terra AC wallbox (JP): from 1.0;0 through 1.6.5.'
+      published: 2023-05-17T08:15:08.610
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://search.abb.com/library/Download.aspx?DocumentID=9AKK108468A1415&LanguageCode=en&DocumentPartId=&Action=Launch
+    - id: CVE-2023-2509
+      description: 'A Cross-Site Scripting(XSS) vulnerability was found on ADM, LooksGood and SoundsGood Apps. An attacker can exploit this vulnerability to inject malicious scripts into the target applications to access any cookies or sensitive information retained by the browser and used with that application. Affected products and versions include: ADM 4.0.6.REG2, 4.1.0 and below as well as ADM 4.2.1.RGE2 and below, LooksGood 2.0.0.R129 and below and SoundsGood 2.3.0.r1027 and below.'
+      published: 2023-05-17T07:15:08.567
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://https://www.asustor.com/security/security_advisory_detail?id=22
+    - id: CVE-2023-24805
+      description: cups-filters contains backends, filters, and other software required to get the cups printing service working on operating systems other than macos. If you use the Backend Error Handler (beh) to create an accessible network printer, this security vulnerability can cause remote code execution. `beh.c` contains the line `retval = system(cmdline) >> 8;` which calls the `system` command with the operand `cmdline`. `cmdline` contains multiple user controlled, unsanitized values. As a result an attacker with network access to the hosted print server can exploit this vulnerability to inject system commands which are executed in the context of the running server. This issue has been addressed in commit `8f2740357` and is expected to be bundled in the next release. Users are advised to upgrade when possible and to restrict access to network printers in the meantime.
+      published: 2023-05-17T18:15:09.177
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/OpenPrinting/cups-filters/commit/8f274035756c04efeb77eb654e9d4c4447287d65
+        - https://github.com/OpenPrinting/cups-filters/security/advisories/GHSA-gpxc-v2m8-fr3x
+    - id: CVE-2023-31208
+      description: Improper neutralization of livestatus command delimiters in the RestAPI in Checkmk < 2.0.0p36, < 2.1.0p28, and < 2.2.0b8 (beta) allows arbitrary livestatus command execution for authorized users.
+      published: 2023-05-17T09:15:10.473
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://checkmk.com/werk/15191
+    - id: CVE-2023-2752
+      description: Cross-site Scripting (XSS) - Stored in GitHub repository thorsten/phpmyfaq prior to 3.2.0-beta.
+      published: 2023-05-17T08:15:08.757
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://github.com/thorsten/phpmyfaq/commit/e7599d49b0ece7ceef3a4e8d334782cc3df98be8
+        - https://huntr.dev/bounties/efdf5b24-6d30-4d57-a5b0-13b253ba3ea4
+    - id: CVE-2023-2753
+      description: Cross-site Scripting (XSS) - Stored in GitHub repository thorsten/phpmyfaq prior to 3.2.0-beta.
+      published: 2023-05-17T08:15:08.837
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://github.com/thorsten/phpmyfaq/commit/5401ab75d022932b8d5d7adaa771acf44fed18ba
+        - https://huntr.dev/bounties/eca2284d-e81a-4ab8-91bb-7afeca557628
+    - id: CVE-2023-1764
+      description: 'Canon IJ Network Tool/Ver.4.7.5 and earlier (supported OS: OS X 10.9.5-macOS 13),IJ Network Tool/Ver.4.7.3 and earlier (supported OS: OS X 10.7.5-OS X 10.8) allows an attacker to acquire sensitive information on the Wi-Fi connection setup of the printer from the communication of the software.'
+      published: 2023-05-17T01:15:09.920
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://psirt.canon/advisory-information/cp2023-002/
+        - https://psirt.canon/hardening/
+    - id: CVE-2023-26044
+      description: react/http is an event-driven, streaming HTTP client and server implementation for ReactPHP.  Previous versions of ReactPHP's HTTP server component contain a potential DoS vulnerability that can cause high CPU load when processing large HTTP request bodies. This vulnerability has little to no impact on the default configuration, but can be exploited when explicitly using the RequestBodyBufferMiddleware with very large settings. This might lead to consuming large amounts of CPU time for processing requests and significantly delay or slow down the processing of legitimate user requests. This issue has been addressed in release 1.9.0. Users are advised to upgrade. Users unable to upgrade may keep the request body limited using RequestBodyBufferMiddleware with a sensible value which should mitigate the issue. An infrastructure or DevOps workaround could be to place a reverse proxy in front of the ReactPHP HTTP server to filter out any excessive HTTP request bodies.
+      published: 2023-05-17T18:15:09.247
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/reactphp/http/commit/9681f764b80c45ebfb5fe2ea7da5bd3babfcdcfd
+        - https://github.com/reactphp/http/security/advisories/GHSA-95x4-j7vc-h8mf
+    - id: CVE-2023-1763
+      description: 'Canon IJ Network Tool/Ver.4.7.5 and earlier (supported OS: OS X 10.9.5-macOS 13),IJ Network Tool/Ver.4.7.3 and earlier (supported OS: OS X 10.7.5-OS X 10.8) allows an attacker to acquire sensitive information on the Wi-Fi connection setup of the printer from the software.'
+      published: 2023-05-17T01:15:09.833
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://psirt.canon/advisory-information/cp2023-002/
+        - https://psirt.canon/hardening/
+    - id: CVE-2023-2745
+      description: WordPress Core is vulnerable to Directory Traversal in versions up to, and including, 6.2, via the ‘wp_lang’ parameter. This allows unauthenticated attackers to access and load arbitrary translation files. In cases where an attacker is able to upload a crafted translation file onto the site, such as via an upload form, this could be also used to perform a Cross-Site Scripting attack.
+      published: 2023-05-17T09:15:10.303
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - http://packetstormsecurity.com/files/172426/WordPress-Core-6.2-XSS-CSRF-Directory-Traversal.html
+        - https://core.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=55765%40%2F&new=55765%40%2F&sfp_email=&sfph_mail=
+        - https://wordpress.org/news/2023/05/wordpress-6-2-1-maintenance-security-release/
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/edcf46b6-368e-49c0-b2c3-99bf6e2d358f?source=cve
+    - id: CVE-2023-2766
+      description: 'A vulnerability was found in Weaver OA 9.5 and classified as problematic. This issue affects some unknown processing of the file /building/backmgr/urlpage/mobileurl/configfile/jx2_config.ini. The manipulation leads to files or directories accessible. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-229271. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-17T17:15:17.443
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/8079048q/cve/blob/main/weaveroa.md
+        - https://vuldb.com/?ctiid.229271
+        - https://vuldb.com/?id.229271
+    - id: CVE-2023-2773
+      description: A vulnerability has been found in code-projects Bus Dispatch and Information System 1.0 and classified as critical. Affected by this vulnerability is an unknown functionality of the file view_admin.php. The manipulation of the argument adminid leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-229279.
+      published: 2023-05-17T19:15:09.340
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://gitee.com/zyz0103/system-vul/blob/master/Bus%20Dispatch%20and%20Information%20System%20in%20adminid%20has%20Sql%20injection%20vulnerabilities.pdf
+        - https://vuldb.com/?ctiid.229279
+        - https://vuldb.com/?id.229279
+    - id: CVE-2023-2776
+      description: A vulnerability was found in code-projects Simple Photo Gallery 1.0. It has been declared as critical. This vulnerability affects unknown code. The manipulation leads to unrestricted upload. The attack can be initiated remotely. VDB-229282 is the identifier assigned to this vulnerability.
+      published: 2023-05-17T20:15:10.597
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://gitee.com/zyz0103/system-vul/blob/master/Simple%20Photo%20Gallery%20In%20PHP%20With%20Source%20Code%20has%20file%20upload%20vulnerability.pdf
+        - https://vuldb.com/?ctiid.229282
+        - https://vuldb.com/?id.229282
+    - id: CVE-2023-2775
+      description: A vulnerability was found in code-projects Bus Dispatch and Information System 1.0. It has been classified as critical. This affects an unknown part of the file adminHome.php. The manipulation of the argument reach_city leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-229281 was assigned to this vulnerability.
+      published: 2023-05-17T20:15:10.513
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/mrwwrrhh/Bus_Dispatch_and_Information_System/blob/main/Bus%20Dispatch%20and%20Information%20System%20in%20login_info%20has%20Sql%20injection%20vulnerabilities.pdf
+        - https://vuldb.com/?ctiid.229281
+        - https://vuldb.com/?id.229281
+    - id: CVE-2023-2774
+      description: A vulnerability was found in code-projects Bus Dispatch and Information System 1.0 and classified as critical. Affected by this issue is some unknown functionality of the file view_branch.php. The manipulation of the argument branchid leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-229280.
+      published: 2023-05-17T20:15:10.427
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/mrwwrrhh/Bus_Dispatch_and_Information_System/blob/main/Bus%20Dispatch%20and%20Information%20System%20in%20view_branch%20%20has%20Sql%20injection%20vulnerabilities.pdf
+        - https://vuldb.com/?ctiid.229280
+        - https://vuldb.com/?id.229280
+    - id: CVE-2023-2772
+      description: A vulnerability, which was classified as critical, was found in SourceCodester Budget and Expense Tracker System 1.0. Affected is an unknown function of the file /admin/budget/manage_budget.php of the component GET Parameter Handler. The manipulation of the argument id leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-229278 is the identifier assigned to this vulnerability.
+      published: 2023-05-17T19:15:09.277
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/wucwu1/CVEApplication/blob/main/SQL.md
+        - https://vuldb.com/?ctiid.229278
+        - https://vuldb.com/?id.229278
+    - id: CVE-2023-2771
+      description: A vulnerability, which was classified as critical, has been found in SourceCodester Online Exam System 1.0. This issue affects some unknown processing of the file /jurusanmatkul/data. The manipulation of the argument columns[1][data] leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-229277 was assigned to this vulnerability.
+      published: 2023-05-17T19:15:09.210
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/tht1997/CVE_2023/blob/main/online_exam/kelasdosen.md
+        - https://vuldb.com/?ctiid.229277
+        - https://vuldb.com/?id.229277
+    - id: CVE-2023-2770
+      description: A vulnerability classified as critical was found in SourceCodester Online Exam System 1.0. This vulnerability affects unknown code of the file /kelasdosen/data. The manipulation of the argument columns[1][data] leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-229276.
+      published: 2023-05-17T18:15:09.377
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/tht1997/CVE_2023/blob/main/online_exam/kelasdosen.md
+        - https://vuldb.com/?ctiid.229276
+        - https://vuldb.com/?id.229276
+    - id: CVE-2023-2769
+      description: A vulnerability classified as critical has been found in SourceCodester Service Provider Management System 1.0. This affects an unknown part of the file /classes/Master.php?f=delete_service. The manipulation of the argument id leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-229275.
+      published: 2023-05-17T18:15:09.317
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/xiahao90/CVEproject/blob/main/xiahao.webray.com.cn/Serviced-Providerd-Managementd-Systemd--d-SQLd-injections.md
+        - https://vuldb.com/?ctiid.229275
+        - https://vuldb.com/?id.229275
+    - id: CVE-2023-2765
+      description: 'A vulnerability has been found in Weaver OA up to 9.5 and classified as problematic. This vulnerability affects unknown code of the file /E-mobile/App/System/File/downfile.php. The manipulation of the argument url leads to absolute path traversal. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-229270 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-17T17:15:17.363
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/eckert-lcc/cve/blob/main/Weaver%20oa.md
+        - https://vuldb.com/?ctiid.229270
+        - https://vuldb.com/?id.229270
+    - id: CVE-2023-22348
+      description: Improper Authorization in RestAPI in Checkmk GmbH's Checkmk versions <2.1.0p28 and <2.2.0b8 allows remote authenticated users to read arbitrary host_configs.
+      published: 2023-05-17T16:15:09.110
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://checkmk.com/werk/13982
+    - id: CVE-2023-2756
+      description: SQL Injection in GitHub repository pimcore/customer-data-framework prior to 3.3.10.
+      published: 2023-05-17T11:15:09.113
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/pimcore/customer-data-framework/commit/76df151737b7964ce5169fdf9e27a0ad801757fe
+        - https://huntr.dev/bounties/cf398528-819f-456e-88e7-c06d268d3f44
+    - id: CVE-2023-2679
+      description: Data leakage in Adobe connector in Snow Software SPE 9.27.0 on Windows allows privileged user to observe other users data.
+      published: 2023-05-17T13:15:09.283
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://community.snowsoftware.com/s/feed/0D56M00009Ex9dySAB
+    - id: CVE-2023-2608
+      description: The Multiple Page Generator Plugin for WordPress is vulnerable to Cross-Site Request Forgery leading to time-based SQL Injection via the orderby and order parameters in versions up to, and including, 3.3.17 due to missing nonce verification on the projects_list function and insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries leading to resource exhaustion via a forged request granted they can trick an administrator into performing an action such as clicking on a link. Version 3.3.18 addresses the SQL Injection, which drastically reduced the severity.
+      published: 2023-05-17T02:15:10.997
+      severity: LOW
+      privileges: NONE
+      references:
+        - https://plugins.trac.wordpress.org/browser/multiple-pages-generator-by-porthas/trunk/controllers/ProjectsListManage.php#L40
+        - https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2910686%40multiple-pages-generator-by-porthas%2Ftrunk&old=2905353%40multiple-pages-generator-by-porthas%2Ftrunk&sfp_email=&sfph_mail=
+        - https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&old=2912909%40multiple-pages-generator-by-porthas&new=2912909%40multiple-pages-generator-by-porthas&sfp_email=&sfph_mail=
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/d900584c-0f58-4abc-92ff-841f898d02fc?source=cve
+    - id: CVE-2023-31135
+      description: Dgraph is an open source distributed GraphQL database. Existing Dgraph audit logs are vulnerable to brute force attacks due to nonce collisions. The first 12 bytes come from a baseIv which is initialized when an audit log is created. The last 4 bytes come from the length of the log line being encrypted. This is problematic because two log lines will often have the same length, so due to these collisions we are reusing the same nonce many times. All audit logs generated by versions of Dgraph <v23.0.0 are affected. Attackers must have access to the system the logs are stored on. Dgraph users should upgrade to v23.0.0. Users unable to upgrade should store existing audit logs in a secure location and for extra security, encrypt using an external tool like `gpg`.
+      published: 2023-05-17T18:15:09.437
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://en.wikipedia.org/wiki/Cryptographic_nonce
+        - https://github.com/dgraph-io/dgraph/pull/8323
+        - https://github.com/dgraph-io/dgraph/security/advisories/GHSA-92wq-q9pq-gw47
+    - id: CVE-2023-2768
+      description: A vulnerability was found in Sucms 1.0. It has been rated as problematic. Affected by this issue is some unknown functionality of the file admin_ads.php?action=add. The manipulation of the argument intro leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-229274 is the identifier assigned to this vulnerability.
+      published: 2023-05-17T17:15:17.523
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/Upgradeextension/Sucms-v1.0/blob/main/README.md
+        - https://vuldb.com/?ctiid.229274
+        - https://vuldb.com/?id.229274
+    - id: CVE-2022-42336
+      description: Mishandling of guest SSBD selection on AMD hardware The current logic to set SSBD on AMD Family 17h and Hygon Family 18h processors requires that the setting of SSBD is coordinated at a core level, as the setting is shared between threads. Logic was introduced to keep track of how many threads require SSBD active in order to coordinate it, such logic relies on using a per-core counter of threads that have SSBD active. When running on the mentioned hardware, it's possible for a guest to under or overflow the thread counter, because each write to VIRT_SPEC_CTRL.SSBD by the guest gets propagated to the helper that does the per-core active accounting. Underflowing the counter causes the value to get saturated, and thus attempts for guests running on the same core to set SSBD won't have effect because the hypervisor assumes it's already active.
+      published: 2023-05-17T01:15:09.480
+      severity: ""
+      privileges: ""
+      references:
+        - https://xenbits.xenproject.org/xsa/advisory-431.txt
+    - id: CVE-2023-29837
+      description: Cross Site Scripting vulnerability found in Exelysis Unified Communication Solution (EUCS) v.1.0 allows a remote attacker to gain privileges via the URL path of the eucsAdmin login web page.
+      published: 2023-05-17T20:15:10.280
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/IthacaLabs/Exelysis
+        - https://github.com/IthacaLabs/Exelysis/blob/main/EUCS%20Admin%20Login%20XSS_CVE-2023-29836_CVE-2023-29837.txt
+    - id: CVE-2023-31700
+      description: TP-Link TL-WPA4530 KIT V2 (EU)_170406 and V2 (EU)_161115 is vulnerable to Command Injection via _httpRpmPlcDeviceAdd.
+      published: 2023-05-17T14:15:09.323
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/FirmRec/IoT-Vulns/blob/main/tp-link/postPlcJson/report.md
+    - id: CVE-2023-31725
+      description: yasm 1.3.0.55.g101bc was discovered to contain a heap-use-after-free via the function expand_mmac_params at yasm/modules/preprocs/nasm/nasm-pp.c.
+      published: 2023-05-17T15:15:08.957
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/DaisyPo/fuzzing-vulncollect/tree/main/yasm/heap-use-after-free/nasm-pp.c:3878%20in%20expand_mmac_params
+        - https://github.com/yasm/yasm/issues/221
+    - id: CVE-2023-2469
+      description: '** REJECT ** This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.'
+      published: 2023-05-17T08:15:08.697
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-31724
+      description: yasm 1.3.0.55.g101bc was discovered to contain a segmentation violation via the function do_directive at /nasm/nasm-pp.c.
+      published: 2023-05-17T15:15:08.917
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/DaisyPo/fuzzing-vulncollect/tree/main/yasm/SEGV/nasm-pp.c:3570%20in%20do_directive
+        - https://github.com/yasm/yasm/issues/222
+    - id: CVE-2023-31903
+      description: GuppY CMS 6.00.10 is vulnerable to Unrestricted File Upload which allows remote attackers to execute arbitrary code by uploading a php file.
+      published: 2023-05-17T13:15:09.720
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/blue0x1/GuppY-exploit-rce
+        - https://www.exploit-db.com/exploits/51052
+    - id: CVE-2023-31902
+      description: RPA Technology Mobile Mouse 3.6.0.4 is vulnerable to Remote Code Execution (RCE).
+      published: 2023-05-17T13:15:09.667
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.exploit-db.com/exploits/51010
+        - https://www.redpacketsecurity.com/mobile-mouse-code-execution/
+    - id: CVE-2023-31723
+      description: yasm 1.3.0.55.g101bc was discovered to contain a segmentation violation via the function expand_mmac_params at /nasm/nasm-pp.c.
+      published: 2023-05-17T15:15:08.873
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/DaisyPo/fuzzing-vulncollect/blob/main/yasm/SEGV/nasm-pp.c:4008%20in%20expand_mmac_params/README.md
+        - https://github.com/yasm/yasm/issues/220
+    - id: CVE-2023-31703
+      description: Cross Site Scripting (XSS) in the edit user form in Microworld Technologies eScan management console 14.0.1400.2281 allows remote attacker to inject arbitrary code via the from parameter.
+      published: 2023-05-17T13:15:09.617
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/sahiloj/CVE-2023-31703/blob/main/README.md
+    - id: CVE-2023-31702
+      description: SQL injection in the View User Profile in MicroWorld eScan Management Console 14.0.1400.2281 allows remote attacker to dump entire database and gain windows XP command shell to perform code execution on database server via GetUserCurrentPwd?UsrId=1.
+      published: 2023-05-17T13:15:09.567
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/sahiloj/CVE-2023-31702/blob/main/README.md
+    - id: CVE-2023-31701
+      description: TP-Link TL-WPA4530 KIT V2 (EU)_170406 and V2 (EU)_161115 is vulnerable to Command Injection via _httpRpmPlcDeviceRemove.
+      published: 2023-05-17T14:15:09.383
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/FirmRec/IoT-Vulns/blob/main/tp-link/postPlcJson/report.md
+    - id: CVE-2023-27233
+      description: Piwigo v13.5.0 was discovered to contain a SQL injection vulnerability via the order[0][dir] parameter at user_list_backend.php.
+      published: 2023-05-17T20:15:09.933
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/renanavs/dcb13bb1cd618ce7eb0c80290b837245
+    - id: CVE-2023-31904
+      description: savysoda Wifi HD Wireless Disk Drive 11 is vulnerable to Local File Inclusion.
+      published: 2023-05-17T13:15:09.777
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.exploit-db.com/exploits/51015
+    - id: CVE-2023-31699
+      description: ChurchCRM v4.5.4 is vulnerable to Reflected Cross-Site Scripting (XSS) via image file.
+      published: 2023-05-17T13:15:09.517
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/ChurchCRM/CRM/issues/6471
+    - id: CVE-2023-31698
+      description: Bludit v3.14.1 is vulnerable to Stored Cross Site Scripting (XSS) via SVG file on site logo.
+      published: 2023-05-17T13:15:09.463
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/bludit/bludit/issues/1509
+    - id: CVE-2023-31722
+      description: 'There exists a heap buffer overflow in nasm 2.16.02rc1 (GitHub commit: b952891).'
+      published: 2023-05-17T14:15:09.423
+      severity: ""
+      privileges: ""
+      references:
+        - https://bugzilla.nasm.us/show_bug.cgi?id=3392857#c1
+    - id: CVE-2023-31847
+      description: In davinci 0.3.0-rc after logging in, the user can connect to the mysql malicious server by controlling the data source to read arbitrary files on the client side.
+      published: 2023-05-17T01:15:10.013
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/edp963/davinci/issues/2326
+    - id: CVE-2023-32767
+      description: The web interface of Symcon IP-Symcon before 6.3 (i.e., before 2023-05-12) allows a remote attacker to read sensitive files via .. directory-traversal sequences in the URL.
+      published: 2023-05-17T20:15:10.757
+      severity: ""
+      privileges: ""
+      references:
+        - https://community.symcon.de/t/ip-symcon-6-3-stable-changelog/40276/87
+        - https://www.syss.de/fileadmin/dokumente/Publikationen/Advisories/SYSS-2023-014.txt
+    - id: CVE-2022-45144
+      description: Algoo Tracim before 4.4.2 allows XSS via HTML file upload.
+      published: 2023-05-17T01:15:09.660
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/tracim/tracim/compare/release_04.04.01...release_04.04.02
+        - https://herolab.usd.de/security-advisories/usd-2022-0048/
+        - https://hub.docker.com/r/algoo/tracim
+    - id: CVE-2023-1972
+      description: A potential heap based buffer overflow was found in _bfd_elf_slurp_version_tables() in bfd/elf.c. This may lead to loss of availability.
+      published: 2023-05-17T22:15:10.827
+      severity: ""
+      privileges: ""
+      references:
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2185646
+        - https://sourceware.org/bugzilla/show_bug.cgi?id=30285
+    - id: CVE-2023-2203
+      description: A flaw was found in the WebKitGTK package. An improper input validation issue may lead to a use-after-free vulnerability. This flaw allows attackers with network access to pass specially crafted web content files, causing a denial of service or arbitrary code execution. This CVE exists because of a CVE-2023-28205 security regression for the WebKitGTK package in Red Hat Enterprise Linux 8.8 and Red Hat Enterprise Linux 9.2.
+      published: 2023-05-17T22:15:10.943
+      severity: ""
+      privileges: ""
+      references:
+        - https://access.redhat.com/errata/RHSA-2023:2653
+        - https://access.redhat.com/errata/RHSA-2023:3108
+        - https://access.redhat.com/security/cve/CVE-2023-2203
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2188543
+    - id: CVE-2023-2491
+      description: A flaw was found in the Emacs text editor. Processing a specially crafted org-mode code with the "org-babel-execute:latex" function in ob-latex.el can result in arbitrary command execution. This CVE exists because of a CVE-2023-28617 security regression for the emacs package in Red Hat Enterprise Linux 8.8 and Red Hat Enterprise Linux 9.2.
+      published: 2023-05-17T22:15:10.997
+      severity: ""
+      privileges: ""
+      references:
+        - https://access.redhat.com/errata/RHSA-2023:2626
+        - https://access.redhat.com/errata/RHSA-2023:3104
+        - https://access.redhat.com/security/cve/CVE-2023-2491
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2192873
+    - id: CVE-2023-2731
+      description: A NULL pointer dereference flaw was found in Libtiff's LZWDecode() function in the libtiff/tif_lzw.c file. This flaw allows a local attacker to craft specific input data that can cause the program to dereference a NULL pointer when decompressing a TIFF format file, resulting in a program crash or denial of service.
+      published: 2023-05-17T22:15:11.047
+      severity: ""
+      privileges: ""
+      references:
+        - https://access.redhat.com/security/cve/CVE-2023-2731
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2207635
+        - https://github.com/libsdl-org/libtiff/commit/9be22b639ea69e102d3847dca4c53ef025e9527b
+        - https://gitlab.com/libtiff/libtiff/-/issues/548
+    - id: CVE-2023-1859
+      description: A use-after-free flaw was found in xen_9pfs_front_removet in net/9p/trans_xen.c in Xen transport for 9pfs in the Linux Kernel. This flaw could allow a local attacker to crash the system due to a race problem, possibly leading to a kernel information leak.
+      published: 2023-05-17T23:15:09.100
+      severity: ""
+      privileges: ""
+      references:
+        - https://lore.kernel.org/all/20230313090002.3308025-1-zyytlz.wz@163.com/
+    - id: CVE-2023-2295
+      description: A vulnerability was found in the libreswan library. This security issue occurs when an IKEv1 Aggressive Mode packet is received with only unacceptable crypto algorithms, and the response packet is not sent with a zero responder SPI. When a subsequent packet is received where the sender reuses the libreswan responder SPI as its own initiator SPI, the pluto daemon state machine crashes. No remote code execution is possible. This CVE exists because of a CVE-2023-30570 security regression for libreswan package in Red Hat Enterprise Linux 8.8 and Red Hat Enterprise Linux 9.2.
+      published: 2023-05-17T23:15:09.250
+      severity: ""
+      privileges: ""
+      references:
+        - https://access.redhat.com/errata/RHSA-2023:3107
+        - https://access.redhat.com/errata/RHSA-2023:3148
+        - https://access.redhat.com/security/cve/CVE-2023-2295
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2189777
+    - id: CVE-2023-2319
+      description: It was discovered that an update for PCS package in RHBA-2023:2151 erratum released as part of Red Hat Enterprise Linux 9.2 failed to include the fix for the Webpack issue CVE-2023-28154 (for PCS package), which was previously addressed in Red Hat Enterprise Linux 9.1 via erratum RHSA-2023:1591. The CVE-2023-2319 was assigned to that Red Hat specific security regression in Red Hat Enterprise Linux 9.2.
+      published: 2023-05-17T23:15:09.313
+      severity: ""
+      privileges: ""
+      references:
+        - https://access.redhat.com/errata/RHSA-2023:2652
+        - https://access.redhat.com/security/cve/CVE-2023-2319
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2190092
+    - id: CVE-2022-4870
+      description: In affected versions of Octopus Deploy it is possible to discover network details via error message
+      published: 2023-05-18T00:15:09.103
+      severity: ""
+      privileges: ""
+      references:
+        - https://advisories.octopus.com/post/2023/sa2023-09/
