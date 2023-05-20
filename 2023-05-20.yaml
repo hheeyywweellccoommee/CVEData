@@ -1,0 +1,219 @@
+data:
+    - id: CVE-2023-2704
+      description: The BP Social Connect plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.5. This is due to insufficient verification on the user being supplied during a Facebook login through the plugin. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.
+      published: 2023-05-19T03:15:08.840
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://plugins.trac.wordpress.org/browser/bp-social-connect/tags/1.5/includes/social/facebook/class.facebook.php#L138
+        - https://plugins.trac.wordpress.org/browser/bp-social-connect/tags/1.5/includes/social/facebook/class.facebook.php#L188
+        - https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2914042%40bp-social-connect%2Ftrunk&old=1904372%40bp-social-connect%2Ftrunk&sfp_email=&sfph_mail=#file6
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/44c96df2-530a-4ebe-b722-c606a7b135f9?source=cve
+    - id: CVE-2023-1618
+      description: Active Debug Code vulnerability in Mitsubishi Electric Corporation MELSEC WS Series WS0-GETH00200 all versions allows a remote unauthenticated attacker to bypass authentication and illegally log into the affected module by connecting to it via telnet which is hidden function and is enabled by default when shipped from the factory. As a result, a remote attacker with unauthorized login can reset the module, and if certain conditions are met, he/she can disclose or tamper with the module's configuration or rewrite the firmware.
+      published: 2023-05-19T05:15:20.350
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://jvn.jp/vu/JVNVU96063959
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-138-02
+        - https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2023-002_en.pdf
+    - id: CVE-2023-30199
+      description: Prestashop customexporter <= 1.7.20 is vulnerable to Incorrect Access Control via modules/customexporter/downloads/download.php.
+      published: 2023-05-19T14:15:09.683
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://friends-of-presta.github.io/security-advisories/modules/2023/05/16/customexporter.html
+        - https://github.com/PrestaShop/PrestaShop/blob/6c05518b807d014ee8edb811041e3de232520c28/classes/Tools.php#L1247
+    - id: CVE-2023-32679
+      description: Craft CMS is an open source content management system. In affected versions of Craft CMS an unrestricted file extension may lead to Remote Code Execution. If the name parameter value is not empty string('') in the View.php's doesTemplateExist() -> resolveTemplate() -> _resolveTemplateInternal() -> _resolveTemplate() function, it returns directly without extension verification, so that arbitrary extension files are rendered as twig templates. When attacker with admin privileges on a DEV or an improperly configured STG or PROD environment, they can exploit this vulnerability to remote code execution. Code execution may grant the attacker access to the host operating system. This issue has been addressed in version 4.4.6. Users are advised to upgrade. There are no known workarounds for this vulnerability.
+      published: 2023-05-19T20:15:09.310
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://github.com/craftcms/cms/security/advisories/GHSA-vqxf-r9ph-cc9c
+    - id: CVE-2023-1996
+      description: A reflected Cross-site Scripting (XSS) vulnerability in 3DEXPERIENCE R2018x through R2023x allows an attacker to execute arbitrary script code.
+      published: 2023-05-19T17:15:09.097
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://www.3ds.com/vulnerability/advisories
+    - id: CVE-2023-28623
+      description: 'Zulip is an open-source team collaboration tool with unique topic-based threading. In the event that 1: `ZulipLDAPAuthBackend` and an external authentication backend (any aside of `ZulipLDAPAuthBackend` and `EmailAuthBackend`) are the only ones enabled in `AUTHENTICATION_BACKENDS` in `/etc/zulip/settings.py` and 2: The organization permissions don''t require invitations to join. An attacker can create a new account in the organization with an arbitrary email address in their control that''s not in the organization''s LDAP directory. The impact is limited to installations which have this specific combination of authentication backends as described above in addition to having `Invitations are required for joining this organization` organization permission disabled. This issue has been addressed in version 6.2. Users are advised to upgrade. Users unable to upgrade may enable the `Invitations are required for joining this organization` organization permission to prevent this issue.'
+      published: 2023-05-19T22:15:09.217
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/zulip/zulip/commit/3df1b4dd7c210c21deb6f829df19412b74573f8d
+        - https://github.com/zulip/zulip/security/advisories/GHSA-7p62-pjwg-56rv
+    - id: CVE-2022-47984
+      description: 'IBM InfoSphere Information Server 11.7 is vulnerable to SQL injection. A remote attacker could send specially crafted SQL statements, which could allow the attacker to view, add, modify or delete information in the back-end database.  IBM X-Force ID:  243163.'
+      published: 2023-05-19T16:15:10.800
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/243163
+        - https://https://www.ibm.com/support/pages/node/6988153
+    - id: CVE-2023-22878
+      description: 'IBM InfoSphere Information Server 11.7 stores user credentials in plain clear text which can be read by a local user.  IBM X-Force ID:  244373.'
+      published: 2023-05-19T16:15:10.887
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/244373
+        - https://https://www.ibm.com/support/pages/node/6988155
+    - id: CVE-2023-28950
+      description: 'IBM MQ 8.0, 9.0, 9.1, 9.2, and 9.3 could disclose sensitive user information from a trace file if that functionality has been enabled.  IBM X-Force ID:  251358.'
+      published: 2023-05-19T16:15:14.163
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/251358
+        - https://https://www.ibm.com/support/pages/node/6985837
+    - id: CVE-2023-28514
+      description: 'IBM MQ 8.0, 9.0, and 9.1 could allow a local user to obtain sensitive credential information when a detailed technical error message is returned in a stack trace.  IBM X-Force ID:  250398.'
+      published: 2023-05-19T15:15:08.750
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/250398
+        - https://www.ibm.com/support/pages/node/6985835
+    - id: CVE-2023-2806
+      description: 'A vulnerability classified as problematic was found in Weaver e-cology up to 9.0. Affected by this vulnerability is the function RequestInfoByXml of the component API. The manipulation leads to xml external entity reference. The associated identifier of this vulnerability is VDB-229411. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-19T09:15:09.840
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/Strangenees/e-cology/blob/main/main.md
+        - https://vuldb.com/?ctiid.229411
+        - https://vuldb.com/?id.229411
+    - id: CVE-2023-2815
+      description: A vulnerability classified as critical was found in SourceCodester Online Jewelry Store 1.0. Affected by this vulnerability is an unknown functionality of the file supplier.php of the component POST Parameter Handler. The manipulation of the argument suppid leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-229429 was assigned to this vulnerability.
+      published: 2023-05-19T17:15:09.233
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/raozhir/CVERequest/blob/main/SQL.md
+        - https://vuldb.com/?ctiid.229429
+        - https://vuldb.com/?id.229429
+    - id: CVE-2023-28045
+      description: Dell CloudIQ Collector version 1.10.2 contains a missing encryption of sensitive data vulnerability. An attacker with low privileges could potentially exploit this vulnerability, leading to gain access to unauthorized data.
+      published: 2023-05-19T09:15:09.140
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.dell.com/support/kbdoc/en-us/000213696/dsa-2023-165-dell-cloudiq-collector-security-update-for-missing-encryption-of-sensitive-data-vulnerability
+    - id: CVE-2023-28529
+      description: 'IBM InfoSphere Information Server 11.7 is vulnerable to stored cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session.  IBM X-Force ID:  251213.'
+      published: 2023-05-19T16:15:14.057
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://https://exchange.xforce.ibmcloud.com/vulnerabilities/251213
+        - https://www.ibm.com/support/pages/node/6988675
+    - id: CVE-2023-32675
+      description: Vyper is a pythonic Smart Contract Language for the ethereum virtual machine. In contracts with more than one regular nonpayable function, it is possible to send funds to the default function, even if the default function is marked `nonpayable`. This applies to contracts compiled with vyper versions prior to 0.3.8. This issue was fixed by the removal of the global `calldatasize` check in commit `02339dfda`. Users are advised to upgrade to version 0.3.8. Users unable to upgrade should avoid use of nonpayable default functions.
+      published: 2023-05-19T20:15:09.230
+      severity: LOW
+      privileges: NONE
+      references:
+        - https://github.com/vyperlang/vyper/commit/02339dfda0f3caabad142060d511d10bfe93c520.
+        - https://github.com/vyperlang/vyper/security/advisories/GHSA-vxmm-cwh2-q762
+    - id: CVE-2023-2814
+      description: A vulnerability classified as problematic has been found in SourceCodester Class Scheduling System 1.0. Affected is an unknown function of the file /admin/save_teacher.php of the component POST Parameter Handler. The manipulation of the argument Academic_Rank leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-229428.
+      published: 2023-05-19T17:15:09.163
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/jiy2020/bugReport/blob/main/XSS.md
+        - https://vuldb.com/?ctiid.229428
+        - https://vuldb.com/?id.229428
+    - id: CVE-2023-32677
+      description: Zulip is an open-source team collaboration tool with unique topic-based threading. Zulip administrators can configure Zulip to limit who can add users to streams, and separately to limit who can invite users to the organization. In Zulip Server 6.1 and below, the UI which allows a user to invite a new user also allows them to set the streams that the new user is invited to -- even if the inviting user would not have permissions to add an existing user to streams. While such a configuration is likely rare in practice, the behavior does violate security-related controls. This does not let a user invite new users to streams they cannot see, or would not be able to add users to if they had that general permission. This issue has been addressed in version 6.2. Users are advised to upgrade. Users unable to upgrade may limit sending of invitations down to users who also have the permission to add users to streams.
+      published: 2023-05-19T21:15:08.740
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/zulip/zulip/commit/7c2693a2c64904d1d0af8503b57763943648cbe5
+        - https://github.com/zulip/zulip/security/advisories/GHSA-mrvp-96q6-jpvc
+        - https://zulip.com/help/configure-who-can-invite-to-streams
+        - https://zulip.com/help/restrict-account-creation#change-who-can-send-invitations
+    - id: CVE-2023-26818
+      description: Telegram 9.3.1 and 9.4.0 allows attackers to access restricted files, microphone ,or video recording via the DYLD_INSERT_LIBRARIES flag.
+      published: 2023-05-19T12:15:09.407
+      severity: ""
+      privileges: ""
+      references:
+        - http://telegram.com
+        - https://danrevah.github.io/2023/05/15/CVE-2023-26818-Bypass-TCC-with-Telegram/
+    - id: CVE-2023-30775
+      description: A vulnerability was found in the libtiff library. This security flaw causes a heap buffer overflow in extractContigSamples32bits, tiffcrop.c.
+      published: 2023-05-19T15:15:08.980
+      severity: ""
+      privileges: ""
+      references:
+        - https://access.redhat.com/security/cve/CVE-2023-30775
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2187141
+        - https://gitlab.com/libtiff/libtiff/-/issues/464
+    - id: CVE-2023-30774
+      description: A vulnerability was found in the libtiff library. This flaw causes a heap buffer overflow issue via the TIFFTAG_INKNAMES and TIFFTAG_NUMBEROFINKS values.
+      published: 2023-05-19T15:15:08.923
+      severity: ""
+      privileges: ""
+      references:
+        - https://access.redhat.com/security/cve/CVE-2023-30774
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2187139
+        - https://gitlab.com/libtiff/libtiff/-/issues/463
+    - id: CVE-2023-20881
+      description: Cloud foundry instances having CAPI version between 1.140 and 1.152.0 along with loggregator-agent v7+ may override other users syslog drain credentials if they're aware of the client certificate used for that syslog drain. This applies even if the drain has zero certs. This would allow the user to override the private key and add or modify a certificate authority used for the connection.
+      published: 2023-05-19T15:15:08.673
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.cloudfoundry.org/blog/cve-2023-20881-cas-for-syslog-drain-mtls-feature-can-be-overwritten/
+    - id: CVE-2023-31757
+      description: DedeCMS up to v5.7.108 is vulnerable to XSS in sys_info.php via parameters 'edit___cfg_powerby' and 'edit___cfg_beian'
+      published: 2023-05-19T14:15:09.780
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/sleepyvv/vul_report/blob/main/DedeCMS/XSS.md
+    - id: CVE-2023-31707
+      description: SEMCMS 1.5 is vulnerable to SQL Injection via Ant_Rponse.php.
+      published: 2023-05-19T14:15:09.743
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/fnylad/SCSHOP/blob/main/semcms-1.md
+    - id: CVE-2023-31862
+      description: jizhicms v2.4.6 is vulnerable to Cross Site Scripting (XSS). The content of the article published in the front end is only filtered in the front end, without being filtered in the background, which allows attackers to publish an article containing malicious JavaScript scripts by modifying the request package.
+      published: 2023-05-19T13:15:08.920
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Cherry-toto/jizhicms/issues/86
+    - id: CVE-2023-31756
+      description: A command injection vulnerability exists in the administrative web portal in TP-Link Archer VR1600V devices running firmware Versions <= 0.1.0. 0.9.1 v5006.0 Build 220518 Rel.32480n which allows remote attackers, authenticated to the administrative web portal as an administrator user to open an operating system level shell via the 'X_TP_IfName' parameter.
+      published: 2023-05-19T13:15:08.877
+      severity: ""
+      privileges: ""
+      references:
+        - https://stanleyjobsonau.github.io/tp-link-advisory.html
+    - id: CVE-2022-30114
+      description: A heap-based buffer overflow in a network service in Fastweb FASTGate MediaAccess FGA2130FWB, firmware version 18.3.n.0482_FW_230_FGA2130, and DGA4131FWB, firmware version up to 18.3.n.0462_FW_261_DGA4131, allows a remote attacker to reboot the device through a crafted HTTP request, causing DoS.
+      published: 2023-05-19T12:15:09.340
+      severity: ""
+      privileges: ""
+      references:
+        - http://fastgate.com
+        - http://fastweb.com
+        - https://str0ng4le.github.io/jekyll/update/2023/05/12/fastgate-bof-cve-2022-30114/
+    - id: CVE-2023-33240
+      description: Foxit PDF Reader (12.1.1.15289 and earlier) and Foxit PDF Editor (12.1.1.15289 and all previous 12.x versions, 11.2.5.53785 and all previous 11.x versions, and 10.1.11.37866 and earlier) on Windows allows Local Privilege Escalation when installed to a non-default directory because unprivileged users have access to an executable file of a system service. This is fixed in 12.1.2.
+      published: 2023-05-19T06:15:08.467
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.foxit.com/support/security-bulletins.html
