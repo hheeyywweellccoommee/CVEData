@@ -1,0 +1,194 @@
+data:
+    - id: CVE-2023-2276
+      description: The WCFM Membership – WooCommerce Memberships for Multivendor Marketplace plugin for WordPress is vulnerable to Insecure Direct Object References in versions up to, and including, 2.10.7. This is due to the plugin providing user-controlled access to objects, letting a user bypass authorization and access system resources. This makes it possible for unauthenticated attackers to change user passwords and potentially take over administrator accounts.
+      published: 2023-05-20T04:15:09.413
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://plugins.trac.wordpress.org/browser/wc-multivendor-membership/tags/2.10.7/controllers/wcfmvm-controller-memberships-registration.php#L124
+        - https://plugins.trac.wordpress.org/changeset/2907455/
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/42222c64-6492-4774-b5bc-8e62a1a328cf?source=cve
+    - id: CVE-2023-2712
+      description: 'Unrestricted Upload of File with Dangerous Type vulnerability  in "Rental Module" developed by third-party for Ideasoft''s E-commerce Platform allows Command Injection, Using Malicious Files, Upload a Web Shell to a Web Server.This issue affects Rental Module: before 23.05.15.'
+      published: 2023-05-20T10:15:09.203
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.usom.gov.tr/bildirim/tr-23-0276
+    - id: CVE-2023-2736
+      description: The Groundhogg plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 2.7.9.8. This is due to missing nonce validation in the 'ajax_edit_contact' function. This makes it possible for authenticated attackers to receive the auto login link via shortcode and then modify the assigned user to the auto login link to elevate verified user privileges via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.
+      published: 2023-05-20T03:15:09.397
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://plugins.trac.wordpress.org/browser/groundhogg/tags/2.7.9.8/admin/contacts/contacts-page.php#L542
+        - https://plugins.trac.wordpress.org/browser/groundhogg/tags/2.7.9.8/includes/shortcodes.php#L99
+        - https://plugins.trac.wordpress.org/changeset/2914493/groundhogg/tags/2.7.10/admin/contacts/contacts-page.php
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/9bf472f1-5980-48ee-aa10-aad19b6f2456?source=cve
+    - id: CVE-2023-23890
+      description: Cross-Site Request Forgery (CSRF) vulnerability in LJ Apps WP Airbnb Review Slider plugin <= 3.2 versions.
+      published: 2023-05-20T23:15:09.160
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/wp-airbnb-review-slider/wordpress-wp-airbnb-review-slider-plugin-3-2-cross-site-request-forgery-csrf-leading-to-reviews-removal-vulnerability?_s_id=cve
+    - id: CVE-2023-2713
+      description: 'Authorization Bypass Through User-Controlled Key vulnerability  in "Rental Module" developed by third-party for Ideasoft''s E-commerce Platform allows Authentication Abuse, Authentication Bypass.This issue affects Rental Module: before 23.05.15.'
+      published: 2023-05-20T10:15:09.583
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.usom.gov.tr/bildirim/tr-23-0276
+    - id: CVE-2023-32589
+      description: Cross-Site Request Forgery (CSRF) vulnerability in PingOnline Dyslexiefont Free plugin <= 1.0.0 versions.
+      published: 2023-05-20T23:15:09.287
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/dyslexiefont/wordpress-dyslexiefont-free-plugin-1-0-0-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-24414
+      description: Cross-Site Request Forgery (CSRF) vulnerability in RoboSoft Photo Gallery, Images, Slider in Rbs Image Gallery plugin <= 3.2.11 versions.
+      published: 2023-05-20T23:15:09.227
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/robo-gallery/wordpress-photo-gallery-images-slider-in-rbs-image-gallery-plugin-3-2-11-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-2822
+      description: A vulnerability was found in Ellucian Ethos Identity up to 5.10.5. It has been classified as problematic. Affected is an unknown function of the file /cas/logout. The manipulation of the argument url leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 5.10.6 is able to address this issue. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-229596.
+      published: 2023-05-20T07:15:43.913
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://medium.com/@cyberninja717/685bb1675dfb
+        - https://medium.com/@cyberninja717/reflected-cross-site-scripting-vulnerability-in-ellucian-ethos-identity-cas-logout-page-685bb1675dfb
+        - https://vuldb.com/?ctiid.229596
+        - https://vuldb.com/?id.229596
+    - id: CVE-2023-2717
+      description: The Groundhogg plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 2.7.9.8. This is due to missing nonce validation on the 'enable_safe_mode' function. This makes it possible for unauthenticated attackers to enable safe mode, which disables all other plugins, via a forged request if they can successfully trick an administrator into performing an action such as clicking on a link. A warning message about safe mode is displayed to the admin, which can be easily disabled.
+      published: 2023-05-20T03:15:09.233
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://plugins.trac.wordpress.org/browser/groundhogg/tags/2.7.9.8/admin/help/help-page.php#L67
+        - https://plugins.trac.wordpress.org/changeset/2914493/groundhogg/tags/2.7.10/admin/help/help-page.php
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/af73240c-b711-4e91-9998-5f7e6a9a4fb9?source=cve
+    - id: CVE-2023-22689
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Lucian Apostol Auto Affiliate Links plugin <= 6.3 versions.
+      published: 2023-05-20T23:15:09.097
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/wp-auto-affiliate-links/wordpress-auto-affiliate-links-plugin-6-3-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2022-47134
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Bill Erickson Gallery Metabox plugin <= 1.5 versions.
+      published: 2023-05-20T23:15:09.017
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/gallery-metabox/wordpress-gallery-metabox-plugin-1-5-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2023-2823
+      description: A vulnerability was found in SourceCodester Class Scheduling System 1.0. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file /admin/edit_subject.php of the component GET Parameter Handler. The manipulation of the argument id leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-229597 was assigned to this vulnerability.
+      published: 2023-05-20T08:15:08.680
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/zhulielie/CVEReport/blob/main/SQL.md
+        - https://vuldb.com/?ctiid.229597
+        - https://vuldb.com/?id.229597
+    - id: CVE-2023-2715
+      description: The Groundhogg plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'submit_ticket' function in versions up to, and including, 2.7.9.8. This makes it possible for authenticated attackers to create a support ticket that sends the website's data to the plugin developer, and it is also possible to create an admin access with an auto login link that is also sent to the plugin developer with the ticket. It only works if the plugin is activated with a valid license.
+      published: 2023-05-20T03:15:09.077
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://plugins.trac.wordpress.org/browser/groundhogg/tags/2.7.9.8/admin/help/help-page.php#L220
+        - https://plugins.trac.wordpress.org/changeset/2914493/groundhogg/tags/2.7.10/admin/help/help-page.php
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/24747507-8f24-499e-a257-d379dc171e18?source=cve
+    - id: CVE-2023-2716
+      description: The Groundhogg plugin for WordPress is vulnerable to unauthorized access of data and modification of data due to a missing capability check on the 'ajax_upload_file' function in versions up to, and including, 2.7.9.8. This makes it possible for authenticated attackers, with subscriber-level access and above, to upload a file to the contact, and then lists all the other uploaded files related to the contact.
+      published: 2023-05-20T03:15:09.157
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://plugins.trac.wordpress.org/browser/groundhogg/tags/2.7.9.8/admin/contacts/contacts-page.php#L458
+        - https://plugins.trac.wordpress.org/changeset/2914493/groundhogg/tags/2.7.10/admin/contacts/contacts-page.php
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/3c5bde0e-3138-4995-92ae-6deaf6b7be5b?source=cve
+    - id: CVE-2023-2714
+      description: The Groundhogg plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'check_license' functions in versions up to, and including, 2.7.9.8. This makes it possible for authenticated attackers, with subscriber-level permissions and above, to change the license key and support license key, but it can only be changed to a valid license key.
+      published: 2023-05-20T03:15:08.987
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://plugins.trac.wordpress.org/browser/groundhogg/tags/2.7.9.8/admin/guided-setup/guided-setup.php#L111
+        - https://plugins.trac.wordpress.org/browser/groundhogg/tags/2.7.9.8/admin/help/help-page.php#L41
+        - https://plugins.trac.wordpress.org/changeset/2914493/groundhogg/tags/2.7.10/admin/help/help-page.php
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/29700844-b41d-4f10-90a7-06c8574d8d2a?source=cve
+    - id: CVE-2023-2735
+      description: The Groundhogg plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'gh_form' shortcode in versions up to, and including, 2.7.9.8 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. Please note this only works with legacy contact forms.
+      published: 2023-05-20T03:15:09.313
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://plugins.trac.wordpress.org/browser/groundhogg/tags/2.7.9.8/includes/form/form.php#L187
+        - https://plugins.trac.wordpress.org/browser/groundhogg/tags/2.7.9.8/includes/shortcodes.php#L51
+        - https://plugins.trac.wordpress.org/changeset/2914493/groundhogg/trunk/includes/better-meta-compat.php
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/4938206e-2ea4-47ed-a307-87cf67dd74a4?source=cve
+    - id: CVE-2023-2824
+      description: A vulnerability was found in SourceCodester Dental Clinic Appointment Reservation System 1.0. It has been rated as problematic. Affected by this issue is some unknown functionality of the file /admin/service.php of the component POST Parameter Handler. The manipulation of the argument service leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-229598 is the identifier assigned to this vulnerability.
+      published: 2023-05-20T08:15:08.763
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/daxian2022/CVE/blob/main/XSS.md
+        - https://vuldb.com/?ctiid.229598
+        - https://vuldb.com/?id.229598
+    - id: CVE-2023-1692
+      description: The window management module lacks permission verification.Successful exploitation of this vulnerability may affect confidentiality.
+      published: 2023-05-20T15:15:08.717
+      severity: ""
+      privileges: ""
+      references:
+        - https://consumer.huawei.com/en/support/bulletin/2023/4/
+        - https://device.harmonyos.com/en/docs/security/update/security-bulletins-202304-0000001506528486
+    - id: CVE-2023-1693
+      description: The Settings module has the file privilege escalation vulnerability.Successful exploitation of this vulnerability may affect confidentiality.
+      published: 2023-05-20T15:15:08.767
+      severity: ""
+      privileges: ""
+      references:
+        - https://consumer.huawei.com/en/support/bulletin/2023/4/
+        - https://device.harmonyos.com/en/docs/security/update/security-bulletins-202304-0000001506528486
+    - id: CVE-2023-1694
+      description: The Settings module has the file privilege escalation vulnerability.Successful exploitation of this vulnerability may affect confidentiality.
+      published: 2023-05-20T15:15:08.810
+      severity: ""
+      privileges: ""
+      references:
+        - https://consumer.huawei.com/en/support/bulletin/2023/4/
+        - https://device.harmonyos.com/en/docs/security/update/security-bulletins-202304-0000001506528486
+    - id: CVE-2023-1696
+      description: The multimedia video module has a vulnerability in data processing.Successful exploitation of this vulnerability may affect availability.
+      published: 2023-05-20T15:15:08.847
+      severity: ""
+      privileges: ""
+      references:
+        - https://consumer.huawei.com/en/support/bulletin/2023/4/
+        - https://device.harmonyos.com/en/docs/security/update/security-bulletins-202304-0000001506528486
+    - id: CVE-2023-32700
+      description: LuaTeX before 1.17.0 allows execution of arbitrary shell commands when compiling a TeX file obtained from an untrusted source. This occurs because luatex-core.lua lets the original io.popen be accessed. This also affects TeX Live before 2023 r66984 and MiKTeX before 23.5.
+      published: 2023-05-20T18:15:09.370
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/TeX-Live/texlive-source/releases/tag/build-svn66984
+        - https://gitlab.lisn.upsaclay.fr/texlive/luatex/-/tags/1.17.0
+        - https://tug.org/pipermail/tex-live/2023-May/049188.html
+        - https://tug.org/~mseven/luatex.html
+    - id: CVE-2023-33244
+      description: Obsidian before 1.2.2 allows calls to unintended APIs (for microphone access, camera access, and desktop notification) via an embedded web page.
+      published: 2023-05-20T19:15:08.817
+      severity: ""
+      privileges: ""
+      references:
+        - https://forum.obsidian.md/t/obsidian-release-v1-2-2-insider-build/57488
+        - https://vuln.ryotak.net/advisories/66
