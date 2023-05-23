@@ -1,0 +1,651 @@
+data:
+    - id: CVE-2023-33236
+      description: MXsecurity version 1.0 is vulnearble to hardcoded credential vulnerability. This vulnerability has been reported that can be exploited to craft arbitrary JWT tokens and subsequently bypass authentication for web-based APIs.
+      published: 2023-05-22T07:15:09.257
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.moxa.com/en/support/product-support/security-advisory/mxsecurity-command-injection-and-hardcoded-credential-vulnerabilities
+    - id: CVE-2023-2586
+      description: Teltonika’s Remote Management System versions 4.14.0 is vulnerable to an unauthorized attacker registering previously unregistered devices through the RMS platform. If the user has not disabled the "RMS management feature" enabled by default, then an attacker could register that device to themselves. This could enable the attacker to perform different operations on the user's devices, including remote code execution with 'root' privileges (using the 'Task Manager' feature on RMS).
+      published: 2023-05-22T16:15:09.597
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-131-08
+    - id: CVE-2023-2588
+      description: Teltonika’s Remote Management System versions prior to 4.10.0 have a feature allowing users to access managed devices’ local secure shell (SSH)/web management services over the cloud proxy. A user can request a web proxy and obtain a URL in the Remote Management System cloud subdomain. This URL could be shared with others without Remote Management System authentication . An attacker could exploit this vulnerability to create a malicious webpage that uses a trusted and certified domain. An attacker could initiate a reverse shell when a victim connects to the malicious webpage, achieving remote code execution on the victim device.
+      published: 2023-05-22T16:15:09.760
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-131-08
+    - id: CVE-2023-25183
+      description: In Snap One OvrC Pro versions prior to 7.2, when logged into the superuser account, a new functionality appears that could allow users to execute arbitrary commands on the hub device.
+      published: 2023-05-22T21:15:13.633
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-136-01
+        - https://www.control4.com/docs/product/ovrc-software/release-notes/english/latest/ovrc-software-release-notes-rev-r.pdf
+    - id: CVE-2023-31240
+      description: Snap One OvrC Pro versions prior to 7.2 have their own locally running web server accessible both from the local network and remotely. OvrC cloud contains a hidden superuser account accessible through hard-coded credentials.
+      published: 2023-05-22T20:15:10.633
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-136-01
+        - https://www.control4.com/docs/product/ovrc-software/release-notes/english/latest/ovrc-software-release-notes-rev-r.pdf
+    - id: CVE-2023-2504
+      description: Files present on firmware images could allow an attacker to gain unauthorized access as a root user using hard-coded credentials.
+      published: 2023-05-22T22:15:10.277
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://birddog.tv/downloads/
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-131-11
+    - id: CVE-2023-31193
+      description: Snap One OvrC Pro versions prior to 7.3 use HTTP connections when downloading a program from their servers. Because they do not use HTTPS, OvrC Pro devices are susceptible to exploitation.
+      published: 2023-05-22T20:15:10.550
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-136-01
+        - https://www.control4.com/docs/product/ovrc-software/release-notes/english/latest/ovrc-software-release-notes-rev-p.pdf
+    - id: CVE-2022-46680
+      description: "A CWE-319: Cleartext transmission of sensitive information vulnerability exists that could\ncause disclosure of sensitive information, denial of service, or modification of data if an attacker\nis able to intercept network traffic. "
+      published: 2023-05-22T14:15:09.433
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2023-129-03&p_enDocType=Security+and+Safety+Notice&p_File_Name=SEVD-2023-129-03.pdf
+    - id: CVE-2023-32347
+      description: Teltonika’s Remote Management System versions prior to 4.10.0 use device serial numbers and MAC addresses to identify devices from the user perspective for device claiming and from the device perspective for authentication. If an attacker obtained the serial number and MAC address of a device, they could authenticate as that device and steal communication credentials of the device. This could allow an attacker to enable arbitrary command execution as root by utilizing management options within the newly registered devices.
+      published: 2023-05-22T15:15:09.723
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-131-08
+    - id: CVE-2023-2587
+      description: Teltonika’s Remote Management System versions prior to 4.10.0 contain a cross-site scripting (XSS) vulnerability in the main page of the web interface. An attacker with the MAC address and serial number of a connected device could send a maliciously crafted JSON file with an HTML object to trigger the vulnerability. This could allow the attacker to execute scripts in the account context and obtain remote code execution on managed devices.
+      published: 2023-05-22T16:15:09.677
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-131-08
+    - id: CVE-2023-31245
+      description: Devices using Snap One OvrC cloud are sent to a web address when accessing a web management interface using a HTTP connection. Attackers could impersonate a device and supply malicious information about the device’s web server interface. By supplying malicious parameters, an attacker could redirect the user to arbitrary and dangerous locations on the web.
+      published: 2023-05-22T20:15:10.807
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-136-01
+        - https://www.control4.com/docs/product/ovrc-software/release-notes/english/latest/ovrc-software-release-notes-rev-p.pdf
+    - id: CVE-2023-28649
+      description: The Hub in the Snap One OvrC cloud platform is a device used to centralize and manage nested devices connected to it. A vulnerability exists in which an attacker could impersonate a hub and send device requests to claim already claimed devices. The OvrC cloud platform receives the requests but does not validate if the found devices are already managed by another user.
+      published: 2023-05-22T20:15:10.417
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-136-01
+        - https://www.control4.com/docs/product/ovrc-software/release-notes/english/latest/ovrc-software-release-notes-rev-p.pdf
+    - id: CVE-2023-32336
+      description: 'IBM InfoSphere Information Server 11.7 is affected by a remote code execution vulnerability due to insecure deserialization in an RMI service.  IBM X-Force ID:  255285.'
+      published: 2023-05-22T01:15:42.787
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/255285
+        - https://www.ibm.com/support/pages/node/6995879
+    - id: CVE-2022-46738
+      description: The affected product exposes multiple sensitive data fields of the affected product. An attacker can use the SNMP command to get device mac address and login as admin.
+      published: 2023-05-22T23:15:09.350
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://dataprobe.com/support/iboot-pdu/local_upgrade_pdu_procedure.pdf
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-22-263-03
+    - id: CVE-2023-31241
+      description: Snap One OvrC cloud servers contain a route an attacker can use to bypass requirements and claim devices outright.
+      published: 2023-05-22T20:15:10.720
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-136-01
+    - id: CVE-2023-28386
+      description: Snap One OvrC Pro devices versions 7.2 and prior do not validate firmware updates correctly. The device only calculates the MD5 hash of the firmware and does not check using a private-public key mechanism. The lack of complete PKI system firmware signature could allow attackers to upload arbitrary firmware updates, resulting in code execution.
+      published: 2023-05-22T20:15:10.250
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-136-01
+        - https://www.control4.com/docs/product/ovrc-software/release-notes/english/latest/ovrc-software-release-notes-rev-p.pdf
+    - id: CVE-2023-2597
+      description: In Eclipse Openj9 before version 0.38.0, in the implementation of the shared cache (which is enabled by default in OpenJ9 builds) the size of a string is not properly checked against the size of the buffer.
+      published: 2023-05-22T12:15:09.760
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/eclipse-openj9/openj9/pull/17259
+    - id: CVE-2023-32349
+      description: Versions 00.07.00 through 00.07.03.4 of Teltonika’s RUT router firmware contain a packet dump utility that contains proper validation for filter parameters. However, variables for validation checks are stored in an external configuration file. An authenticated attacker could use an exposed UCI configuration utility to change these variables and enable malicious parameters in the dump utility, which could result in arbitrary code execution.
+      published: 2023-05-22T16:15:10.420
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-131-08
+    - id: CVE-2023-32350
+      description: Versions 00.07.00 through 00.07.03 of Teltonika’s RUT router firmware contain an operating system (OS) command injection vulnerability in a Lua service. An attacker could exploit a parameter in the vulnerable function that calls a user-provided package name by instead providing a package with a malicious name that contains an OS command injection payload.
+      published: 2023-05-22T16:15:10.497
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-131-08
+    - id: CVE-2022-47320
+      description: The iBoot device’s basic discovery protocol assists in initial device configuration. The discovery protocol shows basic information about devices on the network and allows users to perform configuration changes.
+      published: 2023-05-22T23:15:09.493
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://dataprobe.com/support/iboot-pdu/local_upgrade_pdu_procedure.pdf
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-22-263-03
+    - id: CVE-2023-2505
+      description: The affected products have a CSRF vulnerability that could allow an attacker to execute code and upload malicious files.
+      published: 2023-05-22T22:15:10.350
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://birddog.tv/downloads/
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-131-11
+    - id: CVE-2022-0010
+      description: "Insertion of Sensitive Information into Log File vulnerability in ABB QCS 800xA, ABB QCS AC450, ABB Platform Engineering Tools.\n\n\nAn attacker, who already has local access to the QCS nodes, could successfully obtain the password for a system user account. Using this information, the attacker could have the potential to exploit this vulnerability to gain control of system nodes. \n\nThis issue affects QCS 800xA: from 1.0;0 through 6.1SP2; QCS AC450: from 1.0;0 through 5.1SP2; Platform Engineering Tools: from 1.0:0 through 2.3.0."
+      published: 2023-05-22T08:15:08.920
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://search.abb.com/library/Download.aspx?DocumentID=3BUS221709&LanguageCode=en&DocumentPartId=&Action=Launch&_ga=2.108646530.1437951308.1684739395-1142547495.1678209228
+    - id: CVE-2022-47311
+      description: A proprietary protocol for iBoot devices is used for control and keepalive commands. The function compares the username and password; it also contains the configuration data for the user specified. If the user does not exist, then it sends a value for username and password, which allows successful authentication for a connection.
+      published: 2023-05-22T23:15:09.423
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://dataprobe.com/support/iboot-pdu/local_upgrade_pdu_procedure.pdf
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-22-263-03
+    - id: CVE-2023-2832
+      description: ' SQL Injection in GitHub repository unilogies/bumsys prior to 2.2.0.'
+      published: 2023-05-22T11:15:09.493
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://github.com/unilogies/bumsys/commit/1b426f58a513194206d0ea8ab58baf1461e54978
+        - https://huntr.dev/bounties/37b80402-0edf-4f26-a668-b6f8b48dcdfb
+    - id: CVE-2023-33235
+      description: MXsecurity version 1.0 is vulnearble to command injection vulnerability. This vulnerability has been reported in the SSH CLI program, which can be exploited by attackers who have gained authorization privileges. The attackers can break out of the restricted shell and subsequently execute arbitrary code.
+      published: 2023-05-22T06:15:11.020
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.moxa.com/en/support/product-support/security-advisory/mxsecurity-command-injection-and-hardcoded-credential-vulnerabilities
+    - id: CVE-2022-45079
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Softaculous Loginizer plugin <= 1.7.5 versions.
+      published: 2023-05-22T10:15:11.203
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/loginizer/wordpress-loginizer-plugin-1-7-5-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-23712
+      description: Cross-Site Request Forgery (CSRF) vulnerability in User Meta Manager plugin <= 3.4.9 versions.
+      published: 2023-05-22T09:15:10.903
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/user-meta-manager/wordpress-user-meta-manager-plugin-3-4-9-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-33285
+      description: An issue was discovered in Qt 5.x before 5.15.14, 6.x before 6.2.9, and 6.3.x through 6.5.x before 6.5.1. QDnsLookup has a buffer over-read via a crafted reply from a DNS server.
+      published: 2023-05-22T03:15:09.720
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://codereview.qt-project.org/c/qt/qtbase/+/477644
+    - id: CVE-2022-47142
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Plugincraft Mediamatic – Media Library Folders plugin <= 2.8.1 versions.
+      published: 2023-05-22T09:15:09.830
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/mediamatic/wordpress-mediamatic-media-library-folders-plugin-2-8-1-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-47611
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Julian Weinert // cs&m Hover Image plugin <= 1.4.1 versions.
+      published: 2023-05-22T10:15:12.683
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/hover-image/wordpress-hover-image-plugin-1-4-1-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-47183
+      description: Cross-Site Request Forgery (CSRF) vulnerability in StylistWP Extra Block Design, Style, CSS for ANY Gutenberg Blocks plugin <= 0.2.6 versions.
+      published: 2023-05-22T10:15:12.310
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/stylist/wordpress-extra-block-design-style-css-for-any-gutenberg-blocks-plugin-0-2-6-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-47609
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Nicearma DNUI plugin <= 2.8.1 versions.
+      published: 2023-05-22T09:15:10.457
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/dnui-delete-not-used-image-wordpress/wordpress-dnui-plugin-2-8-1-multiple-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2023-22688
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Abdul Ibad WP Tabs Slides plugin <= 2.0.3 versions.
+      published: 2023-05-22T09:15:10.540
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/wordpress-tabs-slides/wordpress-wp-tabs-slides-plugin-2-0-3-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2022-47167
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Aram Kocharyan Crayon Syntax Highlighter plugin <= 2.8.4 versions.
+      published: 2023-05-22T10:15:11.957
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/crayon-syntax-highlighter/wordpress-crayon-syntax-highlighter-plugin-2-8-4-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2023-22692
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Jeroen Peters Name Directory plugin <= 1.27.1 versions.
+      published: 2023-05-22T09:15:10.623
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/name-directory/wordpress-name-directory-plugin-1-27-1-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-22709
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Atif N SRS Simple Hits Counter plugin <= 1.1.0 versions.
+      published: 2023-05-22T09:15:10.693
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/srs-simple-hits-counter/wordpress-srs-simple-hits-counter-plugin-1-1-0-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-22714
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Supsystic Coming Soon by Supsystic plugin <= 1.7.10 versions.
+      published: 2023-05-22T09:15:10.767
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/coming-soon-by-supsystic/wordpress-coming-soon-by-supsystic-plugin-1-7-10-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-25447
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Inkthemescom ColorWay theme <= 4.2.3 versions.
+      published: 2023-05-22T15:15:09.373
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/colorway/wordpress-colorway-theme-4-2-3-csrf-leading-to-arbitrary-plugin-activation?_s_id=cve
+    - id: CVE-2023-25448
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Eric Teubert Archivist – Custom Archive Templates plugin <= 1.7.4 versions.
+      published: 2023-05-22T15:15:09.460
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/archivist-custom-archive-templates/wordpress-archivist-custom-archive-templates-plugin-1-7-4-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-28412
+      description: When supplied with a random MAC address, Snap One OvrC cloud servers will return information about the device. The MAC address of devices can be enumerated in an attack and the OvrC cloud will disclose their information.
+      published: 2023-05-22T20:15:10.330
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-136-01
+        - https://www.control4.com/docs/product/ovrc-software/release-notes/english/latest/ovrc-software-release-notes-rev-r.pdf
+    - id: CVE-2023-32346
+      description: Teltonika’s Remote Management System versions prior to 4.10.0 contain a function that allows users to claim their devices. This function returns information based on whether the serial number of a device has already been claimed, the MAC address of a device has already been claimed, or whether the attempt to claim a device was successful. An attacker could exploit this to create a list of the serial numbers and MAC addresses of all devices cloud-connected to the Remote Management System.
+      published: 2023-05-22T15:15:09.647
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-131-08
+    - id: CVE-2022-45376
+      description: Cross-Site Request Forgery (CSRF) vulnerability in XootiX Side Cart Woocommerce (Ajax) < 2.1 versions.
+      published: 2023-05-22T10:15:11.587
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/side-cart-woocommerce/wordpress-side-cart-woocommerce-ajax-plugin-2-1-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2022-45076
+      description: Cross-Site Request Forgery (CSRF) vulnerability in WebMat Flexible Elementor Panel plugin <= 2.3.8 versions.
+      published: 2023-05-22T10:15:10.823
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/flexible-elementor-panel/wordpress-flexible-elementor-panel-plugin-2-3-8-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2022-44739
+      description: Cross-Site Request Forgery (CSRF) vulnerability in ThingsForRestaurants Quick Restaurant Reservations plugin <= 1.5.4 versions.
+      published: 2023-05-22T10:15:10.337
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/quick-restaurant-reservations/wordpress-quick-restaurant-reservations-plugin-1-5-4-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2022-41608
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Thomas Belser Asgaros Forum plugin <= 2.2.0 versions.
+      published: 2023-05-22T10:15:09.920
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/asgaros-forum/wordpress-asgaros-forum-plugin-2-1-0-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-23680
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Bob Goetz WP-TopBar plugin <= 5.36 versions.
+      published: 2023-05-22T09:15:10.837
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/wp-topbar/wordpress-wp-topbar-plugin-5-36-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-2839
+      description: Divide By Zero in GitHub repository gpac/gpac prior to 2.2.2.
+      published: 2023-05-22T18:15:09.360
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/gpac/gpac/commit/047f96fb39e6bf70cb9f344093f5886e51dce0ac
+        - https://huntr.dev/bounties/42dce889-f63d-4ea9-970f-1f20fc573d5f
+    - id: CVE-2023-2837
+      description: Stack-based Buffer Overflow in GitHub repository gpac/gpac prior to 2.2.2.
+      published: 2023-05-22T18:15:09.163
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/gpac/gpac/commit/6f28c4cd607d83ce381f9b4a9f8101ca1e79c611
+        - https://huntr.dev/bounties/a6bfd1b2-aba8-4c6f-90c4-e95b1831cb17
+    - id: CVE-2023-23797
+      description: Cross-Site Request Forgery (CSRF) vulnerability in SecondLineThemes Auto YouTube Importer plugin <= 1.0.3 versions.
+      published: 2023-05-22T11:15:09.237
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/auto-youtube-importer/wordpress-auto-youtube-importer-plugin-1-0-3-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-23813
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Joseph C Dolson My Calendar plugin <= 3.4.3 versions.
+      published: 2023-05-22T09:15:10.973
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/my-calendar/wordpress-my-calendar-plugin-3-4-3-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-32348
+      description: Teltonika’s Remote Management System versions prior to 4.10.0 contain a virtual private network (VPN) hub feature for cross-device communication that uses OpenVPN. It connects new devices in a manner that allows the new device to communicate with all Teltonika devices connected to the VPN. The OpenVPN server also allows users to route through it. An attacker could route a connection to a remote server through the OpenVPN server, enabling them to scan and access data from other Teltonika devices connected to the VPN.
+      published: 2023-05-22T16:15:10.340
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-131-08
+    - id: CVE-2023-2838
+      description: Out-of-bounds Read in GitHub repository gpac/gpac prior to 2.2.2.
+      published: 2023-05-22T18:15:09.293
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/gpac/gpac/commit/c88df2e202efad214c25b4e586f243b2038779ba
+        - https://huntr.dev/bounties/711e0988-5345-4c01-a2fe-1179604dd07f
+    - id: CVE-2023-25537
+      description: Dell PowerEdge 14G server BIOS versions prior to 2.18.1 and Dell Precision BIOS versions prior to 2.18.2, contain an Out of Bounds write vulnerability. A local attacker with low privileges could potentially exploit this vulnerability leading to exposure of some SMRAM stack/data/code in System Management Mode, leading to arbitrary code execution or escalation of privilege.
+      published: 2023-05-22T11:15:09.333
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.dell.com/support/kbdoc/en-us/000213550/dsa-2023-098-security-update-for-dell-poweredge-14g-server-bios-for-an-out-of-bounds-write-vulnerability
+    - id: CVE-2022-46658
+      description: The affected product is vulnerable to a stack-based buffer overflow which could lead to a denial of service or remote code execution.
+      published: 2023-05-22T23:15:09.270
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://dataprobe.com/support/iboot-pdu/local_upgrade_pdu_procedure.pdf
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-22-263-03
+    - id: CVE-2022-4945
+      description: The Dataprobe cloud usernames and passwords are stored in plain text in a specific file. Any user able to read this specific file from the device could compromise other devices connected to the user's cloud.
+      published: 2023-05-22T22:15:09.870
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://dataprobe.com/support/iboot-pdu/local_upgrade_pdu_procedure.pdf
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-22-263-03
+    - id: CVE-2023-2840
+      description: NULL Pointer Dereference in GitHub repository gpac/gpac prior to 2.2.2.
+      published: 2023-05-22T18:15:09.423
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/gpac/gpac/commit/ba59206b3225f0e8e95a27eff41cb1c49ddf9a37
+        - https://huntr.dev/bounties/21926fc2-6eb1-4e24-8a36-e60f487d0257
+    - id: CVE-2023-31923
+      description: Suprema BioStar 2 before 2022 Q4, v2.9.1 has Insecure Permissions. A vulnerability in the web application allows an authenticated attacker with "User Operator" privileges to create a highly privileged user account. The vulnerability is caused by missing server-side validation, which can be exploited to gain full administrator privileges on the system.
+      published: 2023-05-22T15:15:09.597
+      severity: ""
+      privileges: ""
+      references:
+        - https://nobugescapes.com/blog/creating-a-new-user-with-admin-privilege/
+    - id: CVE-2023-29838
+      description: Insecure Permission vulnerability found in Botkind/Siber Systems SyncApp v.19.0.3.0 allows a local attacker toe escalate privileges via the SyncService.exe file.
+      published: 2023-05-22T20:15:10.493
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/IthacaLabs/Botkind/blob/main/Botkind_SyncApp/WeakServicePermissions_InsecureServiceExecutable_CVE-2023-29838.txt
+        - https://github.com/IthacaLabs/Botkind/tree/main/Botkind_SyncApp
+    - id: CVE-2023-31742
+      description: There is a command injection vulnerability in the Linksys WRT54GL router with firmware version 4.30.18.006. If an attacker gains web management privileges, they can inject commands into the post request parameters wl_ant, wl_rate, WL_atten_ctl, ttcp_num, ttcp_size in the httpd s Start_EPI() function, thereby gaining shell privileges.
+      published: 2023-05-22T17:15:09.477
+      severity: ""
+      privileges: ""
+      references:
+        - http://linksys.com
+        - https://github.com/D2y6p/CVE/blob/main/Linksys/CVE-2023-31742/Linksys_WRT54GL_RCE.pdf
+    - id: CVE-2023-31065
+      description: |-
+        Insufficient Session Expiration vulnerability in Apache Software Foundation Apache InLong.This issue affects Apache InLong: from 1.4.0 through 1.6.0. 
+
+
+        An old session can be used by an attacker even after the user has been deleted or the password has been changed.
+
+
+        Users are advised to upgrade to Apache InLong's 1.7.0 or cherry-pick  https://github.com/apache/inlong/pull/7836 https://github.com/apache/inlong/pull/7836 ,  https://github.com/apache/inlong/pull/7884 https://github.com/apache/inlong/pull/7884  to solve it.
+      published: 2023-05-22T16:15:10.027
+      severity: ""
+      privileges: ""
+      references:
+        - https://lists.apache.org/thread/to7o0n2cks0omtwo6mhh5cs2vfdbplqf
+    - id: CVE-2023-33294
+      description: An issue was discovered in KaiOS 3.0 before 3.1. The /system/bin/tctweb_server binary exposes a local web server that responds to GET and POST requests on port 2929. The server accepts arbitrary Bash commands and executes them as root. Because it is not permission or context restricted and returns proper CORS headers, it's accessible to all websites via the browser. At a bare minimum, this allows an attacker to retrieve a list of the user's installed apps, notifications, and downloads. It also allows an attacker to delete local files and modify system properties including the boolean persist.moz.killswitch property (which would render the device inoperable). This vulnerability is partially mitigated by SELinux which prevents reads, writes, or modifications to files or permissions within protected partitions.
+      published: 2023-05-22T16:15:10.630
+      severity: ""
+      privileges: ""
+      references:
+        - https://kaios.dev/cve/1411380
+    - id: CVE-2023-31064
+      description: 'Files or Directories Accessible to External Parties vulnerability in Apache Software Foundation Apache InLong.This issue affects Apache InLong: from 1.2.0 through 1.6.0. the user in InLong could cancel an application that doesn''t belongs to it. Users are advised to upgrade to Apache InLong''s 1.7.0 or cherry-pick  https://github.com/apache/inlong/pull/7799 https://github.com/apache/inlong/pull/7799  to solve it.'
+      published: 2023-05-22T16:15:09.963
+      severity: ""
+      privileges: ""
+      references:
+        - https://lists.apache.org/thread/1osd2k3t3qol2wdsswqtr9gxdkf78n00
+    - id: CVE-2023-33293
+      description: An issue was discovered in KaiOS 3.0 and 3.1. The binary /system/kaios/api-daemon exposes a local web server on *.localhost with subdomains for each installed applications, e.g., myapp.localhost. An attacker can make fetch requests to api-deamon to determine if a given app is installed and read the manifest.webmanifest contents, including the app version.
+      published: 2023-05-22T16:15:10.567
+      severity: ""
+      privileges: ""
+      references:
+        - https://kaios.dev/cve/1410290
+    - id: CVE-2023-27067
+      description: Directory Traversal vulnerability in Sitecore Experience Platform through 10.2 allows remote attackers to download arbitrary files via crafted command to download.aspx
+      published: 2023-05-22T19:15:09.960
+      severity: ""
+      privileges: ""
+      references:
+        - https://blogs.night-wolf.io/0-day-vulnerabilities-at-sitecore-pagedesigner
+        - https://dev.sitecore.net/Downloads/Sitecore%20Experience%20Platform/103/Sitecore%20Experience%20Platform%20103/Release%20Notes
+    - id: CVE-2023-28467
+      description: In MyBB before 1.8.34, there is XSS in the User CP module via the user email field.
+      published: 2023-05-22T19:15:10.017
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/mybb/mybb/security/advisories/GHSA-3q8x-9fh2-v646
+        - https://mybb.com
+    - id: CVE-2023-31584
+      description: GitHub repository cu/silicon commit a9ef36 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the User Input field.
+      published: 2023-05-22T19:15:10.090
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/cu/silicon
+        - https://github.com/rootd4ddy/CVE-2023-31584
+    - id: CVE-2023-31062
+      description: |-
+        Improper Privilege Management Vulnerabilities in Apache Software Foundation Apache InLong.This issue affects Apache InLong: from 1.2.0 through 1.6.0.  When the attacker has access to a valid (but unprivileged) account, the exploit can be executed using Burp Suite by sending a login
+        request and following it with a subsequent HTTP request
+        using the returned cookie.
+
+        Users are advised to upgrade to Apache InLong's 1.7.0 or cherry-pick  https://github.com/apache/inlong/pull/7836 https://github.com/apache/inlong/pull/7836  to solve it.
+      published: 2023-05-22T16:15:09.900
+      severity: ""
+      privileges: ""
+      references:
+        - https://lists.apache.org/thread/btorjbo9o71h22tcvxzy076022hjdzq0
+    - id: CVE-2023-31103
+      description: |-
+        Exposure of Resource to Wrong Sphere Vulnerability in Apache Software Foundation Apache InLong.This issue affects Apache InLong: from 1.4.0 through 1.6.0. 
+        Attackers can change the immutable name and type of cluster of InLong. Users are advised to upgrade to Apache InLong's 1.7.0 or cherry-pick  https://github.com/apache/inlong/pull/7891 https://github.com/apache/inlong/pull/7891  to solve it.
+      published: 2023-05-22T16:15:10.277
+      severity: ""
+      privileges: ""
+      references:
+        - https://lists.apache.org/thread/bv51zhjookcnfbz8b0xsl9wv78sn0j1p
+    - id: CVE-2023-31454
+      description: "Incorrect Permission Assignment for Critical Resource Vulnerability in Apache Software Foundation Apache InLong.This issue affects Apache InLong: from 1.2.0 through 1.6.0. \n\nThe attacker can bind any cluster, even if he is not the cluster owner. Users are advised to upgrade to Apache InLong's 1.7.0 or cherry-pick [1] to solve it.[1]\n\n https://github.com/apache/inlong/pull/7947 https://github.com/apache/inlong/pull/7947 "
+      published: 2023-05-22T14:15:09.697
+      severity: ""
+      privileges: ""
+      references:
+        - https://lists.apache.org/thread/nqt1tr6pbq8q4b033d7sg5gltx5pmjgl
+    - id: CVE-2023-27066
+      description: Directory Traversal vulnerability in Site Core Experience Platform 10.2 and earlier allows authenticated remote attackers to download arbitrary files via Urlhandle.
+      published: 2023-05-22T17:15:09.347
+      severity: ""
+      privileges: ""
+      references:
+        - https://blogs.night-wolf.io/0-day-vulnerabilities-at-sitecore-pagedesigner
+        - https://dev.sitecore.net/Downloads/Sitecore%20Experience%20Platform/103/Sitecore%20Experience%20Platform%20103/Release%20Notes
+    - id: CVE-2023-31453
+      description: "Incorrect Permission Assignment for Critical Resource Vulnerability in Apache Software Foundation Apache InLong.This issue affects Apache InLong: from 1.2.0 through 1.6.0. The attacker can delete others' subscriptions, even if they are not the owner\nof the deleted subscription. Users are advised to upgrade to Apache InLong's 1.7.0 or cherry-pick [1] to solve it.\n\n[1] \n\n https://github.com/apache/inlong/pull/7949 https://github.com/apache/inlong/pull/7949 "
+      published: 2023-05-22T14:15:09.643
+      severity: ""
+      privileges: ""
+      references:
+        - https://lists.apache.org/thread/9nz8o2skgc5230w276h4w92j0zstnl06
+    - id: CVE-2023-31206
+      description: "Exposure of Resource to Wrong Sphere Vulnerability in Apache Software Foundation Apache InLong.This issue affects Apache InLong: from 1.4.0 through 1.6.0. Attackers can change the immutable name and type of nodes of InLong. Users are advised to upgrade to Apache InLong's 1.7.0 or cherry-pick [1] to solve it.\n\n [1]  https://cveprocess.apache.org/cve5/[1]%C2%A0https://github.com/apache/inlong/pull/7891  https://github.com/apache/inlong/pull/7891 https://github.com/apache/inlong/pull/7891 "
+      published: 2023-05-22T14:15:09.583
+      severity: ""
+      privileges: ""
+      references:
+        - https://lists.apache.org/thread/qb7zffo785wzpmsobjqcypodngw6kg6x
+    - id: CVE-2023-31779
+      description: Wekan v6.84 and earlier is vulnerable to Cross Site Scripting (XSS). An attacker with user privilege on kanban board can insert JavaScript code in in "Reaction to comment" feature.
+      published: 2023-05-22T13:15:09.913
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/wekan/wekan/blob/master/CHANGELOG.md
+        - https://github.com/wekan/wekan/commit/47ac33d6c234359c31d9b5eae49ed3e793907279
+    - id: CVE-2023-31058
+      description: |-
+        Deserialization of Untrusted Data Vulnerability in Apache Software Foundation Apache InLong.This issue affects Apache InLong: from 1.4.0 through 1.6.0. Attackers would bypass the
+        'autoDeserialize' option filtering by adding blanks.  Users are advised to upgrade to Apache InLong's 1.7.0 or cherry-pick 
+
+         https://github.com/apache/inlong/pull/7674 https://github.com/apache/inlong/pull/7674  to solve it.
+      published: 2023-05-22T13:15:09.843
+      severity: ""
+      privileges: ""
+      references:
+        - https://lists.apache.org/thread/bkcgbn9l61croxfyspf7xd42qb189s3z
+    - id: CVE-2023-31689
+      description: In Wcms 0.3.2, an attacker can send a crafted request from a vulnerable web application backend server /wcms/wex/html.php via the finish parameter and the textAreaCode parameter. It can write arbitrary strings into custom file names and upload any files, and write malicious code to execute scripts to trigger command execution.
+      published: 2023-05-22T20:15:10.887
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/vedees/wcms/issues/15
+    - id: CVE-2023-28709
+      description: The fix for CVE-2023-24998 was incomplete for Apache Tomcat 11.0.0-M2 to 11.0.0-M4, 10.1.5 to 10.1.7, 9.0.71 to 9.0.73 and 8.5.85 to 8.5.87. If non-default HTTP       connector settings were used such that the maxParameterCount could be reached using query string parameters and a request was       submitted that supplied exactly maxParameterCount parameters in the query string, the limit for uploaded request parts could be bypassed with the potential for a denial of service to occur.
+      published: 2023-05-22T11:15:09.423
+      severity: ""
+      privileges: ""
+      references:
+        - http://www.openwall.com/lists/oss-security/2023/05/22/1
+        - https://lists.apache.org/thread/7wvxonzwb7k9hx9jt3q33cmy7j97jo3j
+    - id: CVE-2023-31816
+      description: IT Sourcecode Content Management System Project In PHP and MySQL With Source Code 1.0.0 is vulnerable to Cross Site Scripting (XSS) via /ecodesource/search_list.php.
+      published: 2023-05-22T21:15:13.830
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/TzssZ/Content-Management-System-v1.0-has-Cross-site-Scripting-XSS-
+    - id: CVE-2023-31066
+      description: 'Files or Directories Accessible to External Parties vulnerability in Apache Software Foundation Apache InLong.This issue affects Apache InLong: from 1.4.0 through 1.6.0. Different users in InLong could delete, edit, stop, and start others'' sources! Users are advised to upgrade to Apache InLong''s 1.7.0 or cherry-pick  https://github.com/apache/inlong/pull/7775 https://github.com/apache/inlong/pull/7775  to solve it.'
+      published: 2023-05-22T16:15:10.090
+      severity: ""
+      privileges: ""
+      references:
+        - https://lists.apache.org/thread/x7y05wo37sq5l9fnmmsjh2dr9kcjrcxf
+    - id: CVE-2023-33297
+      description: Bitcoin Core before 24.1, when debug mode is not used, allows attackers to cause a denial of service (CPU consumption) because draining the inventory-to-send queue is inefficient, as exploited in the wild in May 2023.
+      published: 2023-05-22T05:15:09.460
+      severity: ""
+      privileges: ""
+      references:
+        - https://en.bitcoin.it/wiki/Common_Vulnerabilities_and_Exposures
+        - https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-24.1.md
+        - https://github.com/bitcoin/bitcoin/issues/27586
+        - https://github.com/bitcoin/bitcoin/issues/27623
+        - https://github.com/bitcoin/bitcoin/pull/27610
+    - id: CVE-2023-33288
+      description: An issue was discovered in the Linux kernel before 6.2.9. A use-after-free was found in bq24190_remove in drivers/power/supply/bq24190_charger.c. It could allow a local attacker to crash the system due to a race condition.
+      published: 2023-05-22T03:15:09.797
+      severity: ""
+      privileges: ""
+      references:
+        - https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.2.9
+        - https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=47c29d69212911f50bdcdd0564b5999a559010d4
+        - https://github.com/torvalds/linux/commit/47c29d69212911f50bdcdd0564b5999a559010d4
+        - https://lore.kernel.org/all/CAHk-=whcaHLNpb7Mu_QX7ABwPgyRyfW-V8=v4Mv0S22fpjY4JQ@mail.gmail.com/
+        - https://lore.kernel.org/lkml/20230309174728.233732-1-zyytlz.wz@163.com/
+    - id: CVE-2023-31098
+      description: |-
+        Weak Password Requirements vulnerability in Apache Software Foundation Apache InLong.This issue affects Apache InLong: from 1.1.0 through 1.6.0. 
+
+        When users change their password to a simple password (with any character or
+        symbol), attackers can easily guess the user's password and access the account.
+
+        Users are advised to upgrade to Apache InLong's 1.7.0 or cherry-pick  https://github.com/apache/inlong/pull/7805 https://github.com/apache/inlong/pull/7805  to solve it.
+      published: 2023-05-22T16:15:10.150
+      severity: ""
+      privileges: ""
+      references:
+        - https://lists.apache.org/thread/1fvloc3no1gbffzrcsx9ltsg08wr2d1w
+    - id: CVE-2023-31101
+      description: 'Insecure Default Initialization of Resource Vulnerability in Apache Software Foundation Apache InLong.This issue affects Apache InLong: from 1.5.0 through 1.6.0.  Users registered in InLong who joined later can see deleted users'' data. Users are advised to upgrade to Apache InLong''s 1.7.0 or cherry-pick  https://github.com/apache/inlong/pull/7836 https://github.com/apache/inlong/pull/7836  to solve it.'
+      published: 2023-05-22T16:15:10.210
+      severity: ""
+      privileges: ""
+      references:
+        - https://lists.apache.org/thread/shvwwr6toqz5rr39rwh4k03z08sh9jmr
+    - id: CVE-2023-33281
+      description: The remote keyfob system on Nissan Sylphy Classic 2021 sends the same RF signal for each door-open request, which allows for a replay attack.
+      published: 2023-05-22T02:15:11.837
+      severity: ""
+      privileges: ""
+      references:
+        - https://chaos-lab.blogspot.com/2023/05/nissan-sylphy-classic-2021-fixed-code.html
+        - https://twitter.com/Kevin2600/status/1658059570806415365
+        - https://www.youtube.com/watch?v=GG1utSdYG1k
+    - id: CVE-2023-33264
+      description: In Hazelcast through 5.0.4, 5.1 through 5.1.6, and 5.2 through 5.2.3, configuration routines don't mask passwords in the member configuration properly. This allows Hazelcast Management Center users to view some of the secrets.
+      published: 2023-05-22T01:15:44.333
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/hazelcast/hazelcast/pull/24266
