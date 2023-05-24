@@ -1,0 +1,773 @@
+data:
+    - id: CVE-2023-1508
+      description: 'Improper Neutralization of Special Elements used in an SQL Command (''SQL Injection'') vulnerability in Adam Retail Automation Systems Mobilmen Terminal Software allows SQL Injection.This issue affects Mobilmen Terminal Software: before 3.'
+      published: 2023-05-23T21:15:08.967
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.usom.gov.tr/bildirim/tr-23-0284
+    - id: CVE-2023-1837
+      description: 'Missing Authentication for critical function vulnerability in HYPR Server allows Authentication Bypass when using Legacy APIs.This issue affects HYPR Server: before 8.0 (with enabled Legacy APIs)'
+      published: 2023-05-23T19:15:09.237
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.hypr.com/security-advisories
+    - id: CVE-2023-2496
+      description: The Go Pricing - WordPress Responsive Pricing Tables plugin for WordPress is vulnerable to unauthorized arbitrary file uploads due to an improper capability check on the 'validate_upload' function in versions up to, and including, 3.3.19. This makes it possible for authenticated attackers with a role that the administrator previously granted access to the plugin to upload arbitrary files on the affected site's server which may make remote code execution possible.
+      published: 2023-05-24T00:15:09.317
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://codecanyon.net/item/go-pricing-wordpress-responsive-pricing-tables/3725820
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/477c6fa2-16a8-4461-b4d4-d087e13e3ca7?source=cve
+    - id: CVE-2023-2845
+      description: Improper Access Control in GitHub repository cloudexplorer-dev/cloudexplorer-lite prior to v1.1.0.
+      published: 2023-05-23T05:15:08.827
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/cloudexplorer-dev/cloudexplorer-lite/commit/d9f55a44e579d312977b02317b2020de758b763a
+        - https://huntr.dev/bounties/ac10e81c-998e-4425-9d74-b985d9b0254c
+    - id: CVE-2023-32697
+      description: SQLite JDBC is a library for accessing and creating SQLite database files in Java. Sqlite-jdbc addresses a remote code execution vulnerability via JDBC URL. This issue impacting versions 3.6.14.1 through 3.41.2.1 and has been fixed in version 3.41.2.2.
+      published: 2023-05-23T23:15:09.337
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/xerial/sqlite-jdbc/releases/tag/3.41.2.2
+        - https://github.com/xerial/sqlite-jdbc/security/advisories/GHSA-6phf-6h5g-97j2
+    - id: CVE-2023-30469
+      description: 'Cross-site Scripting vulnerability in Hitachi Ops Center Analyzer (Hitachi Ops Center Analyzer detail view component) allows Reflected XSS.This issue affects Hitachi Ops Center Analyzer: from 10.9.1-00 before 10.9.2-00.'
+      published: 2023-05-23T02:15:10.333
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.hitachi.com/products/it/software/security/info/vuls/hitachi-sec-2023-115/index.html
+    - id: CVE-2023-2703
+      description: 'Exposure of Private Personal Information to an Unauthorized Actor vulnerability in Finex Media Competition Management System allows Retrieve Embedded Sensitive Data, Collect Data as Provided by Users.This issue affects Competition Management System: before 23.07.'
+      published: 2023-05-23T20:15:09.817
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.usom.gov.tr/bildirim/tr-23-0283
+    - id: CVE-2023-2702
+      description: 'Authorization Bypass Through User-Controlled Key vulnerability in Finex Media Competition Management System allows Authentication Abuse, Authentication Bypass.This issue affects Competition Management System: before 23.07.'
+      published: 2023-05-23T20:15:09.730
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.usom.gov.tr/bildirim/tr-23-0283
+    - id: CVE-2023-2844
+      description: Missing Authorization in GitHub repository cloudexplorer-dev/cloudexplorer-lite prior to v1.1.0.
+      published: 2023-05-23T04:15:09.497
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://github.com/cloudexplorer-dev/cloudexplorer-lite/commit/d9f55a44e579d312977b02317b2020de758b763a
+        - https://huntr.dev/bounties/6644b36e-603d-4dbe-8ee2-5df8b8fb2e22
+    - id: CVE-2022-46813
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Younes JFR. Advanced Database Cleaner plugin <= 3.1.1 versions.
+      published: 2023-05-23T15:15:09.107
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/advanced-database-cleaner/wordpress-advanced-database-cleaner-plugin-3-1-1-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-46851
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Brainstorm Force Starter Templates plugin <= 3.1.20 versions.
+      published: 2023-05-23T14:15:09.277
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/astra-sites/wordpress-starter-templates-elementor-wordpress-beaver-builder-templates-plugin-3-1-20-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2023-25474
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Csaba Kissi About Me 3000 widget plugin <= 2.2.6 versions.
+      published: 2023-05-23T16:15:21.577
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/about-me-3000/wordpress-about-me-3000-widget-plugin-2-2-6-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-26014
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Tim Eckel Minify HTML plugin <= 2.1.7 vulnerability.
+      published: 2023-05-23T15:15:09.263
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/minify-html-markup/wordpress-minify-html-plugin-2-02-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-26011
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Tim Eckel Read More Excerpt Link plugin <= 1.6 versions.
+      published: 2023-05-23T15:15:09.190
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/read-more-excerpt-link/wordpress-read-more-excerpt-link-plugin-1-5-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-28015
+      description: The HCL Domino AppDev Pack IAM service is susceptible to a User Account Enumeration vulnerability.   During a failed login attempt a difference in messages could allow an attacker to determine if the user is valid or not.  The attacker could use this information to focus a brute force attack on valid users.
+      published: 2023-05-23T22:15:09.120
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0105093
+    - id: CVE-2023-30440
+      description: 'IBM PowerVM Hypervisor FW860.00 through FW860.B3, FW950.00 through FW950.70, FW1010.00 through FW1010.50, FW1020.00 through FW1020.30, and FW1030.00 through FW1030.10 could allow a local attacker with control a partition that has been assigned SRIOV virtual function (VF) to cause a denial of service to a peer partition or arbitrary data corruption.  IBM X-Force ID:  253175.'
+      published: 2023-05-23T14:15:09.733
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/253175
+        - https://www.ibm.com/support/pages/node/6997133
+    - id: CVE-2023-25056
+      description: Cross-Site Request Forgery (CSRF) vulnerability in SlickRemix Feed Them Social plugin <= 3.0.2 versions.
+      published: 2023-05-23T14:15:09.657
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/feed-them-social/wordpress-feed-them-social-for-twitter-feed-youtube-and-more-plugin-3-0-2-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-23713
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Manoj Thulasidas Theme Tweaker plugin <= 5.20 versions.
+      published: 2023-05-23T14:15:09.577
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/theme-tweaker-lite/wordpress-theme-tweaker-plugin-5-20-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-23705
+      description: Cross-Site Request Forgery (CSRF) vulnerability in HM Plugin WordPress Books Gallery plugin <= 4.4.8 versions.
+      published: 2023-05-23T14:15:09.507
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/wp-books-gallery/wordpress-wordpress-books-gallery-plugin-4-4-8-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2022-46853
+      description: Cross-Site Request Forgery (CSRF) vulnerability in RadiusTheme The Post Grid plugin <= 5.0.4 versions.
+      published: 2023-05-23T14:15:09.410
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/the-post-grid/wordpress-the-post-grid-shortcode-gutenberg-blocks-and-elementor-addon-for-post-grid-plugin-5-0-4-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2023-1209
+      description: Cross-Site Scripting (XSS) vulnerabilities exist in ServiceNow records allowing an authenticated attacker to inject arbitrary scripts.
+      published: 2023-05-23T17:15:08.950
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB1262967
+        - https://www.linkedin.com/in/osamay/
+    - id: CVE-2023-25707
+      description: Cross-Site Request Forgery (CSRF) vulnerability in E4J s.R.L. VikBooking Hotel Booking Engine & PMS plugin <= 1.5.12 versions.
+      published: 2023-05-23T13:15:09.707
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/vikbooking/wordpress-vikbooking-hotel-booking-engine-pms-plugin-1-5-12-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-25481
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Podlove Podlove Subscribe button plugin <= 1.3.7 versions.
+      published: 2023-05-23T13:15:09.637
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/podlove-subscribe-button/wordpress-podlove-subscribe-button-plugin-1-3-7-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-25472
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Podlove Podlove Podcast Publisher plugin <= 3.8.3 versions.
+      published: 2023-05-23T13:15:09.563
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/podlove-podcasting-plugin-for-wordpress/wordpress-podlove-podcast-publisher-plugin-3-8-3-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-23724
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Winwar Media WP Email Capture plugin <= 3.9.3 versions.
+      published: 2023-05-23T13:15:09.487
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/wp-email-capture/wordpress-wordpress-email-marketing-plugin-wp-email-capture-plugin-3-9-3-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-23706
+      description: Cross-Site Request Forgery (CSRF) vulnerability in miniOrange WordPress Social Login and Register (Discord, Google, Twitter, LinkedIn) plugin <= 7.5.14 versions.
+      published: 2023-05-23T13:15:09.410
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/miniorange-login-openid/wordpress-wordpress-social-login-and-register-discord-google-twitter-linkedin-plugin-7-5-14-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-2494
+      description: The Go Pricing - WordPress Responsive Pricing Tables plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'process_postdata' function in versions up to, and including, 3.3.19. This makes it possible for authenticated attackers with a role that the administrator previously granted access to the plugin to modify access to the plugin when it should only be the administrator's privilege.
+      published: 2023-05-24T00:15:09.243
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://codecanyon.net/item/go-pricing-wordpress-responsive-pricing-tables/3725820
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/5779914a-a168-4835-8aea-e0ab2b3be4f6?source=cve
+    - id: CVE-2023-2498
+      description: The Go Pricing - WordPress Responsive Pricing Tables plugin for WordPress is vulnerable to Stored Cross-Site Scripting via shortcodes in versions up to, and including, 3.3.19 due to insufficient input sanitization and output escaping. This makes it possible for contributor-level attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+      published: 2023-05-24T00:15:09.387
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://codecanyon.net/item/go-pricing-wordpress-responsive-pricing-tables/3725820
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/1c3d4c96-63a7-4f3b-a9ac-095be241f840?source=cve
+    - id: CVE-2023-23694
+      description: Dell VxRail versions earlier than 7.0.450, contain(s) an OS command injection vulnerability in VxRail Manager. A local authenticated attacker could potentially exploit this vulnerability, leading to the execution of arbitrary OS commands on the application's underlying OS, with the privileges of the vulnerable application. Exploitation may lead to a system take over by an attacker.
+      published: 2023-05-23T07:15:10.317
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.dell.com/support/kbdoc/en-us/000213011/dsa-2023-071-dell-vxrail-security-update-for-multiple-third-party-component-vulnerabilities-7-0-450
+    - id: CVE-2023-23693
+      description: Dell VxRail, versions prior to 7.0.450, contains an OS command injection Vulnerability in DCManager command-line utility. A local high privileged attacker could potentially exploit this vulnerability, leading to the execution of arbitrary OS commands on the application's underlying OS, with the privileges of the vulnerable application. Exploitation may lead to a system take over by an attacker.
+      published: 2023-05-23T07:15:10.163
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.dell.com/support/kbdoc/en-us/000213011/dsa-2023-071-dell-vxrail-security-update-for-multiple-third-party-component-vulnerabilities-7-0-450
+    - id: CVE-2023-27512
+      description: Use of hard-coded credentials exists in SolarView Compact SV-CPT-MC310 versions prior to Ver.8.10, and SV-CPT-MC310F versions prior to Ver.8.10, which may allow a remote authenticated attacker to login the affected product with an administrative privilege and perform an unintended operation.
+      published: 2023-05-23T02:15:09.653
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/vu/JVNVU92106300/
+        - https://www.contec.com/jp/api/downloadlogger?download=/-/media/Contec/jp/support/security-info/contec_security_solarview_230508.pdf
+        - https://www.contec.com/jp/download/donwload-list/?itemid=b28c8b7c-9f40-40b2-843c-b5b04c035b0e#firmware
+    - id: CVE-2023-31996
+      description: Hanwha IP Camera ANE-L7012R 1.41.01 is vulnerable to Command Injection due to improper sanitization of special characters for the NAS storage test function.
+      published: 2023-05-23T01:15:10.247
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.hanwhavision.com/wp-content/uploads/2023/04/Camera-Vulnerability-Report.pdf
+    - id: CVE-2023-27923
+      description: Cross-site scripting vulnerability in Tag edit function of VK Blocks 1.53.0.1 and earlier and VK Blocks Pro 1.53.0.1 and earlier allows a remote authenticated attacker to inject an arbitrary script.
+      published: 2023-05-23T02:15:09.943
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN95792402/
+        - https://www.vektor-inc.co.jp/product-update/vk-blocks-exunit-xss/
+    - id: CVE-2023-27925
+      description: Cross-site scripting vulnerability in Post function of VK Blocks 1.53.0.1 and earlier and VK Blocks Pro 1.53.0.1 and earlier allows a remote authenticated attacker to inject an arbitrary script.
+      published: 2023-05-23T02:15:09.983
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN95792402/
+        - https://www.vektor-inc.co.jp/product-update/vk-blocks-exunit-xss/
+    - id: CVE-2023-27926
+      description: Cross-site scripting vulnerability in Profile setting function of VK All in One Expansion Unit 9.88.1.0 and earlier allows a remote authenticated attacker to inject an arbitrary script.
+      published: 2023-05-23T02:15:10.023
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN95792402/
+        - https://www.vektor-inc.co.jp/product-update/vk-blocks-exunit-xss/
+    - id: CVE-2023-28367
+      description: Cross-site scripting vulnerability in CTA post function of VK All in One Expansion Unit 9.88.1.0 and earlier allows a remote authenticated attacker to inject an arbitrary script.
+      published: 2023-05-23T02:15:10.067
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN95792402/
+        - https://www.vektor-inc.co.jp/product-update/vk-blocks-exunit-xss/
+    - id: CVE-2023-28390
+      description: 'Privilege escalation vulnerability in SR-7100VN firmware Ver.1.38(N) and earlier and SR-7100VN #31 firmware Ver.1.21 and earlier allows a network-adjacent attacker with administrative privilege of the affected product to obtain an administrative privilege of the OS (Operating System). As a result, an arbitrary OS command may be executed.'
+      published: 2023-05-23T02:15:10.107
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN80476232/
+        - https://www.icom.co.jp/news/7239/
+    - id: CVE-2023-28392
+      description: Wi-Fi AP UNIT AC-WAPU-300 v1.00_B07 and earlier, AC-WAPU-300-P v1.00_B08P and earlier, AC-WAPUM-300 v1.00_B07 and earlier, and AC-WAPUM-300-P v1.00_B08P and earlier allow a remote authenticated attacker with an administrative privilege to execute an arbitrary OS command.
+      published: 2023-05-23T02:15:10.140
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/vu/JVNVU98968780/
+        - https://www.inaba.co.jp/abaniact/news/Wi-Fi%20AP%20UNIT%E3%80%8CAC-WAPU-300%E3%80%8D%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8BOS%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%82%A4%E3%83%B3%E3%82%B8%E3%82%A7%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E8%84%86%E5%BC%B1%E6%80%A7%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6.pdf
+    - id: CVE-2023-28394
+      description: Beekeeper Studio versions prior to 3.9.9 allows a remote authenticated attacker to execute arbitrary JavaScript code with the privilege of the application on the PC where the affected product is installed. As a result, an arbitrary OS command may be executed as well.
+      published: 2023-05-23T02:15:10.180
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/beekeeper-studio/beekeeper-studio
+        - https://jvn.jp/en/jp/JVN11705010/
+        - https://www.beekeeperstudio.io/
+    - id: CVE-2023-28408
+      description: Directory traversal vulnerability in MW WP Form versions v4.4.2 and earlier allows a remote unauthenticated attacker to alter the website or cause a denial-of-service (DoS) condition, and obtain sensitive information depending on settings.
+      published: 2023-05-23T02:15:10.220
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN01093915/
+        - https://plugins.2inc.org/mw-wp-form/blog/2023/05/08/752/
+    - id: CVE-2023-28409
+      description: Unrestricted upload of file with dangerous type exists in MW WP Form versions v4.4.2 and earlier, which may allow a remote unauthenticated attacker to upload an arbitrary file.
+      published: 2023-05-23T02:15:10.257
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN01093915/
+        - https://plugins.2inc.org/mw-wp-form/blog/2023/05/08/752/
+    - id: CVE-2023-28413
+      description: Directory traversal vulnerability in Snow Monkey Forms versions v5.0.6 and earlier allows a remote unauthenticated attacker to obtain sensitive information, alter the website, or cause a denial-of-service (DoS) condition.
+      published: 2023-05-23T02:15:10.293
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN01093915/
+        - https://snow-monkey.2inc.org/2023/04/28/snow-monkey-forms-v5-0-7/
+    - id: CVE-2023-27921
+      description: JINS MEME CORE Firmware version 2.2.0 and earlier uses a hard-coded cryptographic key, which may lead to data acquired by a sensor of the affected product being decrypted by a network-adjacent attacker.
+      published: 2023-05-23T02:15:09.867
+      severity: ""
+      privileges: ""
+      references:
+        - https://jinsmeme.com/media/2023-04-fwapp2
+        - https://jvn.jp/en/jp/JVN13306058/
+    - id: CVE-2023-27920
+      description: Improper access control vulnerability in the system date/time setting page of SolarView Compact SV-CPT-MC310 versions prior to Ver.8.10 and SV-CPT-MC310F versions prior to Ver.8.10 allows a remote authenticated attacker to alter system date/time of the affected product.
+      published: 2023-05-23T02:15:09.827
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/vu/JVNVU92106300/
+        - https://www.contec.com/jp/api/downloadlogger?download=/-/media/Contec/jp/support/security-info/contec_security_solarview_230508.pdf
+        - https://www.contec.com/jp/download/donwload-list/?itemid=b28c8b7c-9f40-40b2-843c-b5b04c035b0e#firmware
+    - id: CVE-2023-27521
+      description: OS command injection vulnerability in the mail setting page of SolarView Compact SV-CPT-MC310 versions prior to Ver.8.10 and SV-CPT-MC310F versions prior to Ver.8.10 allows remote authenticated attackers to execute an arbitrary OS command.
+      published: 2023-05-23T02:15:09.787
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/vu/JVNVU92106300/
+        - https://www.contec.com/jp/api/downloadlogger?download=/-/media/Contec/jp/support/security-info/contec_security_solarview_230508.pdf
+        - https://www.contec.com/jp/download/donwload-list/?itemid=b28c8b7c-9f40-40b2-843c-b5b04c035b0e#firmware
+    - id: CVE-2023-27518
+      description: Buffer overflow vulnerability in the multiple setting pages of SolarView Compact SV-CPT-MC310 versions prior to Ver.8.10 and SV-CPT-MC310F versions prior to Ver.8.10 allows a remote authenticated attacker to execute arbitrary code.
+      published: 2023-05-23T02:15:09.743
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/vu/JVNVU92106300/
+        - https://www.contec.com/jp/api/downloadlogger?download=/-/media/Contec/jp/support/security-info/contec_security_solarview_230508.pdf
+        - https://www.contec.com/jp/download/donwload-list/?itemid=b28c8b7c-9f40-40b2-843c-b5b04c035b0e#firmware
+    - id: CVE-2023-27514
+      description: OS command injection vulnerability in the download page of SolarView Compact SV-CPT-MC310 versions prior to Ver.8.10 and SV-CPT-MC310F versions prior to Ver.8.10 allows a remote authenticated attacker to execute an arbitrary OS command.
+      published: 2023-05-23T02:15:09.700
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/vu/JVNVU92106300/
+        - https://www.contec.com/jp/api/downloadlogger?download=/-/media/Contec/jp/support/security-info/contec_security_solarview_230508.pdf
+        - https://www.contec.com/jp/download/donwload-list/?itemid=b28c8b7c-9f40-40b2-843c-b5b04c035b0e#firmware
+    - id: CVE-2023-31669
+      description: WebAssembly wat2wasm v1.0.32 allows attackers to cause a libc++abi.dylib crash by putting '@' before a quote (").
+      published: 2023-05-23T12:15:09.173
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/WebAssembly/wabt/issues/2165
+    - id: CVE-2020-20012
+      description: WebPlus Pro v1.4.7.8.4-01 is vulnerable to Incorrect Access Control.
+      published: 2023-05-23T01:15:09.627
+      severity: ""
+      privileges: ""
+      references:
+        - http://wzqpt.hfut.edu.cn/login.jsp?_p=YXM9MSZwPTEmbT1OJg__
+        - https://gist.github.com/1915504804/9503198d3cbd5bc7db47625ac0caaade
+    - id: CVE-2023-27507
+      description: MicroEngine Mailform version 1.1.0 to 1.1.8 contains a path traversal vulnerability. If the product's file upload function and server save option are enabled, a remote attacker may save an arbitrary file on the server and execute it.
+      published: 2023-05-23T02:15:09.610
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN31701509/
+        - https://microengine.jp/information/security_2023_05.html
+    - id: CVE-2023-27397
+      description: Unrestricted upload of file with dangerous type exists in MicroEngine Mailform version 1.1.0 to 1.1.8. If the product's file upload function and server save option are enabled, a remote attacker may save an arbitrary file on the server and execute it.
+      published: 2023-05-23T02:15:09.570
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN31701509/
+        - https://microengine.jp/information/security_2023_05.html
+    - id: CVE-2023-27388
+      description: 'Improper authentication vulnerability in T&D Corporation and ESPEC MIC CORP. data logger products allows a remote unauthenticated attacker to login to the product as a registered user. Affected products and versions are as follows: T&D Corporation data logger products (TR-71W/72W all firmware versions, RTR-5W all firmware versions, WDR-7 all firmware versions, WDR-3 all firmware versions, and WS-2 all firmware versions), and ESPEC MIC CORP. data logger products (RT-12N/RS-12N all firmware versions, RT-22BN all firmware versions, and TEU-12N all firmware versions).'
+      published: 2023-05-23T02:15:09.527
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN14778242/
+        - https://www.monitoring.especmic.co.jp/post/VulnerabilityInRT-12N_RS-12N_RT-22BNandTEU-12N
+        - https://www.tandd.com/news/detail.html?id=780
+    - id: CVE-2023-27387
+      description: 'Cross-site request forgery (CSRF) in T&D Corporation and ESPEC MIC CORP. data logger products allows a remote unauthenticated attacker to conduct an arbitrary operation by having a logged-in user view a malicious page. Affected products and versions are as follows: T&D Corporation data logger products (TR-71W/72W all firmware versions, RTR-5W all firmware versions, WDR-7 all firmware versions, WDR-3 all firmware versions, and WS-2 all firmware versions), and ESPEC MIC CORP. data logger products (RT-12N/RS-12N all firmware versions, RT-22BN all firmware versions, and TEU-12N all firmware versions).'
+      published: 2023-05-23T02:15:09.480
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN14778242/
+        - https://www.monitoring.especmic.co.jp/post/VulnerabilityInRT-12N_RS-12N_RT-22BNandTEU-12N
+        - https://www.tandd.com/news/detail.html?id=780
+    - id: CVE-2023-2483
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2023-33203. Reason: This candidate is a reservation duplicate of CVE-2023-33203. Notes: All CVE users should reference CVE-2023-33203 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.'
+      published: 2023-05-23T13:15:09.783
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-33338
+      description: Old Age Home Management 1.0 is vulnerable to SQL Injection via the username parameter.
+      published: 2023-05-23T13:15:09.887
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/nu11secur1ty/CVE-nu11secur1ty/tree/main/vendors/ANUJ-KUMAR/Old-Age-Home-Management-2022-2023-1.0
+    - id: CVE-2023-27384
+      description: Operation restriction bypass vulnerability in MultiReport of Cybozu Garoon 5.15.0 allows a remote authenticated attacker to alter the data of MultiReport.
+      published: 2023-05-23T02:15:09.437
+      severity: ""
+      privileges: ""
+      references:
+        - https://cs.cybozu.co.jp/2023/007698.html
+        - https://jvn.jp/en/jp/JVN41694426/
+    - id: CVE-2023-27304
+      description: Operation restriction bypass vulnerability in Message and Bulletin of Cybozu Garoon 4.6.0 to 5.9.2 allows a remote authenticated attacker to alter the data of Message and/or Bulletin.
+      published: 2023-05-23T02:15:09.397
+      severity: ""
+      privileges: ""
+      references:
+        - https://cs.cybozu.co.jp/2023/007698.html
+        - https://jvn.jp/en/jp/JVN41694426/
+    - id: CVE-2023-26595
+      description: Denial-of-service (DoS) vulnerability in Message of Cybozu Garoon 4.10.0 to 5.9.2 allows a remote authenticated attacker to cause a denial of service condition.
+      published: 2023-05-23T02:15:09.353
+      severity: ""
+      privileges: ""
+      references:
+        - https://cs.cybozu.co.jp/2023/007698.html
+        - https://jvn.jp/en/jp/JVN41694426/
+    - id: CVE-2023-25953
+      description: Code injection vulnerability in Drive Explorer for macOS versions 3.5.4 and earlier allows an attacker who can login to the client where the affected product is installed to inject arbitrary code while processing the product execution. Since a full disk access privilege is required to execute LINE WORKS Drive Explorer, the attacker may be able to read and/or write to arbitrary files without the access privileges.
+      published: 2023-05-23T02:15:09.317
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN01937209/
+        - https://line.worksmobile.com/jp/release-notes/20230216/
+    - id: CVE-2023-25946
+      description: Authentication bypass vulnerability in Qrio Lock (Q-SL2) firmware version 2.0.9 and earlier allows a network-adjacent attacker to analyze the product's communication data and conduct an arbitrary operation under certain conditions.
+      published: 2023-05-23T02:15:09.273
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN48687031/
+        - https://qrio.me/article/announce/2023/4140/
+    - id: CVE-2023-23545
+      description: 'Missing authentication for critical function exists in T&D Corporation and ESPEC MIC CORP. data logger products, which may allow a remote unauthenticated attacker to alter the product settings without authentication. Affected products and versions are as follows: T&D Corporation data logger products (TR-71W/72W all firmware versions, RTR-5W all firmware versions, WDR-7 all firmware versions, WDR-3 all firmware versions, and WS-2 all firmware versions), and ESPEC MIC CORP. data logger products (RT-12N/RS-12N all firmware versions, RT-22BN all firmware versions, and TEU-12N all firmware versions).'
+      published: 2023-05-23T02:15:09.230
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN14778242/
+        - https://www.monitoring.especmic.co.jp/post/VulnerabilityInRT-12N_RS-12N_RT-22BNandTEU-12N
+        - https://www.tandd.com/news/detail.html?id=780
+    - id: CVE-2023-33359
+      description: Piwigo 13.6.0 is vulnerable to Cross Site Request Forgery (CSRF) in the "add tags" function.
+      published: 2023-05-23T14:15:09.813
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Piwigo/Piwigo/issues/1908
+    - id: CVE-2023-33361
+      description: Piwigo 13.6.0 is vulnerable to SQL Injection via /admin/permalinks.php.
+      published: 2023-05-23T14:15:09.863
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Piwigo/Piwigo/issues/1910
+    - id: CVE-2023-33362
+      description: Piwigo 13.6.0 is vulnerable to SQL Injection via in the "profile" function.
+      published: 2023-05-23T14:15:09.917
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Piwigo/Piwigo/issues/1911
+    - id: CVE-2023-22654
+      description: 'Client-side enforcement of server-side security issue exists in T&D Corporation and ESPEC MIC CORP. data logger products, which may lead to an arbitrary script execution on a logged-in user''s web browser. Affected products and versions are as follows: T&D Corporation data logger products (TR-71W/72W all firmware versions, RTR-5W all firmware versions, WDR-7 all firmware versions, WDR-3 all firmware versions, and WS-2 all firmware versions), and ESPEC MIC CORP. data logger products (RT-12N/RS-12N all firmware versions, RT-22BN all firmware versions, and TEU-12N all firmware versions).'
+      published: 2023-05-23T02:15:09.173
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN14778242/
+        - https://www.monitoring.especmic.co.jp/post/VulnerabilityInRT-12N_RS-12N_RT-22BNandTEU-12N
+        - https://www.tandd.com/news/detail.html?id=780
+    - id: CVE-2023-27922
+      description: Cross-site scripting vulnerability in Newsletter versions prior to 7.6.9 allows a remote unauthenticated attacker to inject an arbitrary script.
+      published: 2023-05-23T02:15:09.907
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN59341308/
+        - https://wordpress.org/plugins/newsletter/
+    - id: CVE-2023-31995
+      description: Hanwha IP Camera ANE-L7012R 1.41.01 is vulnerable to Cross Site Scripting (XSS).
+      published: 2023-05-23T01:15:10.207
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.hanwhavision.com/wp-content/uploads/2023/04/Camera-Vulnerability-Report.pdf
+    - id: CVE-2023-33599
+      description: EasyImages2.0 ? 2.8.1 is vulnerable to Cross Site Scripting (XSS) via viewlog.php.
+      published: 2023-05-23T15:15:09.343
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/icret/EasyImages2.0/issues/115
+    - id: CVE-2023-33617
+      description: An OS Command Injection vulnerability in Parks Fiberlink 210 firmware version V2.1.14_X000 was found via the /boaform/admin/formPing target_addr parameter.
+      published: 2023-05-23T15:15:09.403
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/gbrls/58a5032bc58510abb908386124d1b4d2
+    - id: CVE-2023-31994
+      description: 'Certain Hanwha products are vulnerable to Denial of Service (DoS). ck vector is: When an empty UDP packet is sent to the listening service, the service thread results in a non-functional service (DoS) via WS Discovery and Hanwha proprietary discovery services. This affects IP Camera ANE-L7012R 1.41.01 and IP Camera XNV-9082R 2.10.02.'
+      published: 2023-05-23T01:15:10.170
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.hanwhavision.com/wp-content/uploads/2023/04/Camera-Vulnerability-Report.pdf
+    - id: CVE-2023-31826
+      description: Skyscreamer Open Source Nevado JMS v1.3.2 does not perform security checks when receiving messages. This allows attackers to execute arbitrary commands via supplying crafted data.
+      published: 2023-05-23T01:15:10.127
+      severity: ""
+      privileges: ""
+      references:
+        - http://nevado.skyscreamer.org/
+        - https://github.com/skyscreamer/nevado/issues/121
+        - https://github.com/skyscreamer/nevado/releases
+        - https://novysodope.github.io/2023/04/01/95/
+    - id: CVE-2023-31814
+      description: D-Link DIR-300 firmware <=REVA1.06 and <=REVB2.06 is vulnerable to File inclusion via /model/__lang_msg.php.
+      published: 2023-05-23T01:15:10.087
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/1915504804/9503198d3cbd5bc7db47625ac0caaade
+        - https://www.dlink.com/en/security-bulletin/
+    - id: CVE-2023-23298
+      description: The `Toybox.Graphics.BufferedBitmap.initialize` API method in CIQ API version 2.3.0 through 4.1.7 does not validate its parameters, which can result in integer overflows when allocating the underlying bitmap buffer. A malicious application could call the API method with specially crafted parameters and hijack the execution of the device's firmware.
+      published: 2023-05-23T20:15:09.213
+      severity: ""
+      privileges: ""
+      references:
+        - https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap.html#initialize-instance_function
+        - https://developer.garmin.com/connect-iq/compatible-devices/
+        - https://github.com/anvilsecure/garmin-ciq-app-research/blob/main/advisories/CVE-2023-23298.md
+    - id: CVE-2023-23299
+      description: The permission system implemented and enforced by the GarminOS TVM component in CIQ API version 1.0.0 through 4.1.7 can be bypassed entirely. A malicious application with specially crafted code and data sections could access restricted CIQ modules, call their functions and disclose sensitive data such as user profile information and GPS coordinates, among others.
+      published: 2023-05-23T20:15:09.330
+      severity: ""
+      privileges: ""
+      references:
+        - https://developer.garmin.com/connect-iq/core-topics/manifest-and-permissions/
+        - https://github.com/anvilsecure/garmin-ciq-app-research/blob/main/advisories/CVE-2023-23299.md
+    - id: CVE-2023-23300
+      description: The `Toybox.Cryptography.Cipher.initialize` API method in CIQ API version 3.0.0 through 4.1.7 does not validate its parameters, which can result in buffer overflows when copying data. A malicious application could call the API method with specially crafted parameters and hijack the execution of the device's firmware.
+      published: 2023-05-23T20:15:09.380
+      severity: ""
+      privileges: ""
+      references:
+        - https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/Cipher.html#initialize-instance_function
+        - https://github.com/anvilsecure/garmin-ciq-app-research/blob/main/advisories/CVE-2023-23300.md
+    - id: CVE-2023-23301
+      description: The `news` MonkeyC operation code in CIQ API version 1.0.0 through 4.1.7 fails to check that string resources are not extending past the end of the expected sections. A malicious CIQ application could craft a string that starts near the end of a section, and whose length extends past its end. Upon loading the string, the GarminOS TVM component may read out-of-bounds memory.
+      published: 2023-05-23T20:15:09.427
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/anvilsecure/garmin-ciq-app-research/blob/main/advisories/CVE-2023-23301.md
+    - id: CVE-2023-23302
+      description: The `Toybox.GenericChannel.setDeviceConfig` API method in CIQ API version 1.2.0 through 4.1.7 does not validate its parameter, which can result in buffer overflows when copying various attributes. A malicious application could call the API method with specially crafted object and hijack the execution of the device's firmware.
+      published: 2023-05-23T20:15:09.473
+      severity: ""
+      privileges: ""
+      references:
+        - https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/GenericChannel.html#setDeviceConfig-instance_function
+        - https://github.com/anvilsecure/garmin-ciq-app-research/blob/main/advisories/CVE-2023-23302.md
+    - id: CVE-2023-23303
+      description: The `Toybox.Ant.GenericChannel.enableEncryption` API method in CIQ API version 3.2.0 through 4.1.7 does not validate its parameter, which can result in buffer overflows when copying various attributes. A malicious application could call the API method with specially crafted object and hijack the execution of the device's firmware.
+      published: 2023-05-23T20:15:09.523
+      severity: ""
+      privileges: ""
+      references:
+        - https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/GenericChannel.html#enableEncryption-instance_function
+        - https://github.com/anvilsecure/garmin-ciq-app-research/blob/main/advisories/CVE-2023-23303.md
+    - id: CVE-2023-23304
+      description: The GarminOS TVM component in CIQ API version 2.1.0 through 4.1.7 allows applications with a specially crafted head section to use the `Toybox.SensorHistory` module without permission. A malicious application could call any functions from the `Toybox.SensorHistory` module without the user's consent and disclose potentially private or sensitive information.
+      published: 2023-05-23T20:15:09.573
+      severity: ""
+      privileges: ""
+      references:
+        - https://developer.garmin.com/connect-iq/api-docs/Toybox/SensorHistory.html
+        - https://github.com/anvilsecure/garmin-ciq-app-research/blob/main/advisories/CVE-2023-23304.md
+    - id: CVE-2023-23305
+      description: The GarminOS TVM component in CIQ API version 1.0.0 through 4.1.7 is vulnerable to various buffer overflows when loading binary resources. A malicious application embedding specially crafted resources could hijack the execution of the device's firmware.
+      published: 2023-05-23T20:15:09.627
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/anvilsecure/garmin-ciq-app-research/blob/main/advisories/CVE-2023-23305.md
+    - id: CVE-2023-23306
+      description: The `Toybox.Ant.BurstPayload.add` API method in CIQ API version 2.2.0 through 4.1.7 suffers from a type confusion vulnreability, which can result in an out-of-bounds write operation. A malicious application could create a specially crafted `Toybox.Ant.BurstPayload` object, call its `add` method, override arbitrary memory and hijack the execution of the device's firmware.
+      published: 2023-05-23T20:15:09.677
+      severity: ""
+      privileges: ""
+      references:
+        - https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/BurstPayload.html#add-instance_function
+        - https://github.com/anvilsecure/garmin-ciq-app-research/blob/main/advisories/CVE-2023-23306.md
+    - id: CVE-2023-31741
+      description: There is a command injection vulnerability in the Linksys E2000 router with firmware version 1.0.06. If an attacker gains web management privileges, they can inject commands into the post request parameters wl_ssid, wl_ant, wl_rate, WL_atten_ctl, ttcp_num, ttcp_size in the httpd s Start_EPI() function, thereby gaining shell privileges.
+      published: 2023-05-23T01:15:10.047
+      severity: ""
+      privileges: ""
+      references:
+        - http://linksys.com
+        - https://github.com/D2y6p/CVE/blob/main/Linksys/CVE-2023-31741/Linksys_E2000_RCE_2.pdf
+    - id: CVE-2023-31740
+      description: There is a command injection vulnerability in the Linksys E2000 router with firmware version 1.0.06. If an attacker gains web management privileges, they can inject commands into the post request parameters WL_atten_bb, WL_atten_radio, and WL_atten_ctl in the apply.cgi interface, thereby gaining shell privileges.
+      published: 2023-05-23T01:15:10.003
+      severity: ""
+      privileges: ""
+      references:
+        - http://linksys.com
+        - https://github.com/D2y6p/CVE/blob/main/Linksys/CVE-2023-31740/Linksys_E2000_RCE.pdf
+    - id: CVE-2023-31517
+      description: Teeworlds v0.7.5 was discovered to contain memory leaks.
+      published: 2023-05-23T20:15:09.897
+      severity: ""
+      privileges: ""
+      references:
+        - http://teeworlds.com
+        - https://gist.github.com/manba-bryant/9ca95d69c65f4d2c55946932c946fb9b
+    - id: CVE-2023-31518
+      description: A heap use-after-free in the component CDataFileReader::GetItem of teeworlds v0.7.5 allows attackers to cause a Denial of Service (DoS) via a crafted map file.
+      published: 2023-05-23T20:15:09.947
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/manba-bryant/9ca95d69c65f4d2c55946932c946fb9b
+        - https://github.com/teeworlds/teeworlds/issues/2970
+        - https://mmmds.pl/fuzzing-map-parser-part-1-teeworlds/
+    - id: CVE-2023-31752
+      description: SourceCodester Employee and Visitor Gate Pass Logging System v1.0 is vulnerable to SQL Injection via /employee_gatepass/classes/Login.php.
+      published: 2023-05-23T20:15:09.993
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/4O4NtFd/bug_report/blob/main/SQLI2/SQLi-2.md
+    - id: CVE-2023-31860
+      description: Wuzhi CMS v3.1.2 has a storage type XSS vulnerability in the backend of the Five Finger CMS b2b system.
+      published: 2023-05-23T20:15:10.040
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/wuzhicms/b2b/issues/3
+    - id: CVE-2023-31708
+      description: A Cross-Site Request Forgery (CSRF) in EyouCMS v1.6.2 allows attackers to execute arbitrary commands via a supplying a crafted HTML file to the Upload software format function.
+      published: 2023-05-23T01:15:09.960
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/weng-xianhu/eyoucms/issues/41
+    - id: CVE-2023-30382
+      description: A buffer overflow in the component hl.exe of Valve Half-Life up to 5433873 allows attackers to execute arbitrary code and escalate privileges by supplying crafted parameters.
+      published: 2023-05-23T21:15:09.073
+      severity: ""
+      privileges: ""
+      references:
+        - https://labs.jumpsec.com/advisory-cve-2023-30382-half-life-local-privilege-escalation/
+    - id: CVE-2023-31670
+      description: An issue in wasm2c 1.0.32, wasm2wat 1.0.32, wasm-decompile 1.0.32, and wasm-validate 1.0.32 allows attackers to cause a Denial of Service (DoS) via running a crafted binary.
+      published: 2023-05-23T01:15:09.917
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/WebAssembly/wabt/issues/2199
+    - id: CVE-2023-31726
+      description: AList 3.15.1 is vulnerable to Incorrect Access Control, which can be exploited by attackers to obtain sensitive information.
+      published: 2023-05-23T22:15:09.643
+      severity: ""
+      privileges: ""
+      references:
+        - https://alist.nn.ci/zh/
+        - https://github.com/J6451/CVE-2023-31726
+    - id: CVE-2023-31747
+      description: Wondershare Filmora 12 (Build 12.2.1.2088) was discovered to contain an unquoted service path vulnerability via the component NativePushService. This vulnerability allows attackers to launch processes with elevated privileges.
+      published: 2023-05-23T23:15:09.270
+      severity: ""
+      privileges: ""
+      references:
+        - http://filmora.com
+        - http://wondershare.com
+        - https://packetstormsecurity.com/files/172464/Filmora-12-Build-1.0.0.7-Unquoted-Service-Path.html
+    - id: CVE-2023-31664
+      description: A reflected cross-site scripting (XSS) vulnerability in /authenticationendpoint/login.do of WSO2 API Manager before 4.2.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the tenantDomain parameter.
+      published: 2023-05-23T01:15:09.867
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/adilkhan7/CVE-2023-31664
+        - https://github.com/wso2/api-manager/issues?q=is%3Aissue+is%3Aclosed+label%3AComponent%2FAPIM+closed%3A2022-04-05..2023-03-11
+        - https://github.com/wso2/product-apim/releases/tag/v4.2.0
+    - id: CVE-2023-29919
+      description: SolarView Compact <= 6.0 is vulnerable to Insecure Permissions. Any file on the server can be read or modified because texteditor.php is not restricted.
+      published: 2023-05-23T01:15:09.820
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/xiaosed/CVE-2023-29919/
+        - https://www.solarview.io/
+    - id: CVE-2023-27068
+      description: Deserialization of Untrusted Data in Sitecore Experience Platform through 10.2 allows remote attackers to run arbitrary code via ValidationResult.aspx.
+      published: 2023-05-23T01:15:09.773
+      severity: ""
+      privileges: ""
+      references:
+        - https://blogs.night-wolf.io/0-day-vulnerabilities-at-sitecore-pagedesigner
+        - https://dev.sitecore.net/Downloads/Sitecore%20Experience%20Platform/103/Sitecore%20Experience%20Platform%20103/Release%20Notes
+        - https://www.sitecore.com/products/sitecore-experience-platform
+    - id: CVE-2023-25440
+      description: Stored Cross Site Scripting (XSS) vulnerability in the add contact function CiviCRM 5.59.alpha1, allows attackers to execute arbitrary code in first/second name field.
+      published: 2023-05-23T01:15:09.727
+      severity: ""
+      privileges: ""
+      references:
+        - https://civicrm.org/
+        - https://packetstormsecurity.com/files/172470/CiviCRM-5.59.alpha1-Cross-Site-Scripting.html
+    - id: CVE-2023-31759
+      description: Weak Security in the 433MHz keyfob of Kerui W18 Alarm System v1.0 allows attackers to gain full access via a code replay attack.
+      published: 2023-05-24T00:15:09.450
+      severity: ""
+      privileges: ""
+      references:
+        - https://ashallen.net/wireless-alarm-system-vulnerability-disclosure
+    - id: CVE-2023-31761
+      description: Weak security in the transmitter of Blitzwolf BW-IS22 Smart Home Security Alarm v1.0 allows attackers to gain full access to the system via a code replay attack.
+      published: 2023-05-24T00:15:09.497
+      severity: ""
+      privileges: ""
+      references:
+        - https://ashallen.net/wireless-alarm-system-vulnerability-disclosure
+    - id: CVE-2023-31762
+      description: Weak security in the transmitter of Digoo DG-HAMB Smart Home Security System v1.0 allows attackers to gain full access to the system via a code replay attack.
+      published: 2023-05-24T00:15:09.543
+      severity: ""
+      privileges: ""
+      references:
+        - https://ashallen.net/wireless-alarm-system-vulnerability-disclosure
+    - id: CVE-2023-31763
+      description: Weak security in the transmitter of AGShome Smart Alarm v1.0 allows attackers to gain full access to the system via a code replay attack.
+      published: 2023-05-24T00:15:09.583
+      severity: ""
+      privileges: ""
+      references:
+        - https://ashallen.net/wireless-alarm-system-vulnerability-disclosure
