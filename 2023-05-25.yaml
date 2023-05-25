@@ -1,0 +1,670 @@
+data:
+    - id: CVE-2023-33009
+      description: A buffer overflow vulnerability in the notification function in Zyxel ATP series firmware versions 4.32 through 5.36 Patch 1, USG FLEX series firmware versions 4.50 through 5.36 Patch 1, USG FLEX 50(W) firmware versions 4.25 through 5.36 Patch 1, USG20(W)-VPN firmware versions 4.25 through 5.36 Patch 1, VPN series firmware versions 4.30 through 5.36 Patch 1, ZyWALL/USG series firmware versions 4.25 through 4.73 Patch 1, could allow an unauthenticated attacker to cause denial-of-service (DoS) conditions and even a remote code execution on an affected device.
+      published: 2023-05-24T13:15:09.560
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-multiple-buffer-overflow-vulnerabilities-of-firewalls
+    - id: CVE-2023-1424
+      description: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') vulnerability in Mitsubishi Electric Corporation MELSEC iQ-F Series CPU modules allows a remote unauthenticated attacker to cause a denial of service (DoS) condition or execute malicious code on a target product by sending specially crafted packets. A system reset of the product is required for recovery from a denial of service (DoS) condition and malicious code execution.
+      published: 2023-05-24T05:15:08.780
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://jvn.jp/vu/JVNVU94650413
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-143-03
+        - https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2023-003_en.pdf
+    - id: CVE-2023-2868
+      description: A remote command injection vulnerability exists in the Barracuda Email Security Gateway (appliance form factor only) product effecting versions 5.1.3.001-9.2.0.006. The vulnerability arises out of a failure to comprehensively sanitize the processing of .tar file (tape archives). The vulnerability stems from incomplete input validation of a user-supplied .tar file as it pertains to the names of the files contained within the archive. As a consequence, a remote attacker can specifically format these file names in a particular manner that will result in remotely executing a system command through Perl's qx operator with the privileges of the Email Security Gateway product. This issue was fixed as part of BNSF-36456 patch. This patch was automatically applied to all customer appliances.
+      published: 2023-05-24T19:15:09.363
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://status.barracuda.com/incidents/34kx82j5n4q9
+        - https://www.barracuda.com/company/legal/esg-vulnerability
+    - id: CVE-2023-2064
+      description: 'Improper Neutralization of Special Elements used in an SQL Command (''SQL Injection'') vulnerability in Minova Technology eTrace allows SQL Injection.This issue affects eTrace: before 23.05.20.'
+      published: 2023-05-24T14:15:09.473
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.usom.gov.tr/bildirim/tr-23-0288
+    - id: CVE-2023-2045
+      description: 'Improper Neutralization of Special Elements used in an SQL Command (''SQL Injection'') vulnerability in Ipekyolu Software Auto Damage Tracking Software allows SQL Injection.This issue affects Auto Damage Tracking Software: before 4.'
+      published: 2023-05-24T14:15:09.397
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.usom.gov.tr/bildirim/tr-23-0289
+    - id: CVE-2023-1174
+      description: This vulnerability exposes a network port in minikube running on macOS with Docker driver that could enable unexpected remote access to the minikube container.
+      published: 2023-05-24T17:15:09.733
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://groups.google.com/g/kubernetes-security-announce/c/2ZkJFMDTKbM
+    - id: CVE-2023-33010
+      description: A buffer overflow vulnerability in the ID processing function in Zyxel ATP series firmware versions 4.32 through 5.36 Patch 1, USG FLEX series firmware versions 4.50 through 5.36 Patch 1, USG FLEX 50(W) firmware versions 4.25 through 5.36 Patch 1, USG20(W)-VPN firmware versions 4.25 through 5.36 Patch 1, VPN series firmware versions 4.30 through 5.36 Patch 1, ZyWALL/USG series firmware versions 4.25 through 4.73 Patch 1, could allow an unauthenticated attacker to cause denial-of-service (DoS) conditions and even a remote code execution on an affected device.
+      published: 2023-05-24T13:15:09.640
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-multiple-buffer-overflow-vulnerabilities-of-firewalls
+    - id: CVE-2023-2750
+      description: 'Improper Neutralization of Special Elements used in an SQL Command (''SQL Injection'') vulnerability in Cityboss E-municipality allows SQL Injection.This issue affects E-municipality: before 6.05.'
+      published: 2023-05-24T12:15:09.337
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.usom.gov.tr/bildirim/tr-23-0286
+    - id: CVE-2023-1944
+      description: This vulnerability enables ssh access to minikube container using a default password.
+      published: 2023-05-24T17:15:09.797
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/kubernetes/minikube
+    - id: CVE-2023-2859
+      description: Code Injection in GitHub repository nilsteampassnet/teampass prior to 3.0.9.
+      published: 2023-05-24T08:15:09.713
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/nilsteampassnet/teampass/commit/1f51482a0c4d152ca876844212b0f8f3cb9387af
+        - https://huntr.dev/bounties/d7b8ea75-c74a-4721-89bb-12e5c80fb0ba
+    - id: CVE-2023-2500
+      description: The Go Pricing - WordPress Responsive Pricing Tables plugin for WordPress is vulnerable to PHP Object Injection in versions up to, and including, 3.3.19 via deserialization of untrusted input from the 'go_pricing' shortcode 'data' parameter. This allows authenticated attackers, with subscriber-level permissions and above, to inject a PHP Object. No POP chain is present in the vulnerable plugin. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code.
+      published: 2023-05-25T00:15:09.230
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://codecanyon.net/item/go-pricing-wordpress-responsive-pricing-tables/3725820
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/f7686b11-97a8-4f09-bbfa-d77120cc35b7?source=cve
+    - id: CVE-2022-4815
+      description: Hitachi Vantara Pentaho Business Analytics Server versions before 9.4.0.1 and 9.3.0.3, including 8.3.x deserialize untrusted JSON data without constraining the parser to approved classes and methods. 
+      published: 2023-05-24T22:15:09.000
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://support.pentaho.com/hc/en-us/articles/14455879270285-IMPORTANT-Resolved-Pentaho-BA-Server-Deserialization-of-Untrusted-Data-Versions-before-9-4-0-1-and-9-3-0-3-including-8-3-x-Impacted-CVE-2022-4815-
+    - id: CVE-2021-25749
+      description: Windows workloads can run as ContainerAdministrator even when those workloads set the runAsNonRoot option to true.
+      published: 2023-05-24T17:15:09.413
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://groups.google.com/g/kubernetes-security-announce/c/qqTZgulISzA
+    - id: CVE-2023-2065
+      description: 'Authorization Bypass Through User-Controlled Key vulnerability in Armoli Technology Cargo Tracking System allows Authentication Abuse, Authentication Bypass.This issue affects Cargo Tracking System: before 3558f28 .'
+      published: 2023-05-24T13:15:09.457
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://https://www.usom.gov.tr/bildirim/tr-23-0287
+    - id: CVE-2021-25748
+      description: A security issue was discovered in ingress-nginx where a user that can create or update ingress objects can use a newline character to bypass the sanitization of the `spec.rules[].http.paths[].path` field of an Ingress object (in the `networking.k8s.io` or `extensions` API group) to obtain the credentials of the ingress-nginx controller. In the default configuration, that credential has access to all secrets in the cluster.
+      published: 2023-05-24T17:15:09.253
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/kubernetes/ingress-nginx/issues/8686
+        - https://groups.google.com/g/kubernetes-security-announce/c/avaRYa9c7I8
+    - id: CVE-2022-47446
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Viadat Creations Store Locator for WordPress with Google Maps – LotsOfLocales plugin <= 3.98.7 versions.
+      published: 2023-05-24T17:15:09.507
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/store-locator/wordpress-store-locator-for-wordpress-with-google-maps-lotsoflocales-plugin-3-98-7-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-47447
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Mathieu Chartier WordPress WP-Advanced-Search plugin <= 3.3.8 versions.
+      published: 2023-05-24T17:15:09.580
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/wp-advanced-search/wordpress-wp-advanced-search-plugin-3-3-8-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2023-33949
+      description: In Liferay Portal 7.3.0 and earlier, and Liferay DXP 7.2 and earlier the default configuration does not require users to verify their email address, which allows remote attackers to create accounts using fake email addresses or email addresses which they don't control. The portal property `company.security.strangers.verify` should be set to true.
+      published: 2023-05-24T17:15:09.933
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://liferay.dev/portal/security/known-vulnerabilities/-/asset_publisher/jekt/content/cve-2023-33949
+    - id: CVE-2022-47448
+      description: Cross-Site Request Forgery (CSRF) vulnerability in dev.Xiligroup.Com - MS plugin <= 1.12.03 versions.
+      published: 2023-05-24T17:15:09.657
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/xili-tidy-tags/wordpress-xili-tidy-tags-plugin-1-12-03-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2023-33941
+      description: Multiple cross-site scripting (XSS) vulnerabilities in the Plugin for OAuth 2.0 module's OAuth2ProviderApplicationRedirect class in Liferay Portal 7.4.3.41 through 7.4.3.52, and Liferay DXP 7.4 update 41 through 52 allow remote attackers to inject arbitrary web script or HTML via the (1) code, or (2) error parameter.
+      published: 2023-05-24T15:15:09.697
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://liferay.dev/portal/security/known-vulnerabilities/-/asset_publisher/jekt/content/cve-2023-33941
+    - id: CVE-2023-33948
+      description: The Dynamic Data Mapping module in Liferay Portal 7.4.3.67, and Liferay DXP 7.4 update 67 does not limit Document and Media files which can be downloaded from a Form, which allows remote attackers to download any file from Document and Media via a crafted URL.
+      published: 2023-05-24T16:15:10.007
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://liferay.dev/portal/security/known-vulnerabilities/-/asset_publisher/jekt/content/cve-2023-33948
+    - id: CVE-2022-47180
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Kopa Theme Kopa Framework plugin <= 1.3.5 versions.
+      published: 2023-05-24T16:15:09.607
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/kopatheme/wordpress-kopa-framework-plugin-1-3-5-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-45364
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Glen Don L. Mongaya Drag and Drop Multiple File Upload – Contact Form 7 plugin <= 1.3.6.5 versions.
+      published: 2023-05-24T16:15:09.307
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/drag-and-drop-multiple-file-upload-contact-form-7/wordpress-drag-and-drop-multiple-file-upload-contact-form-7-plugin-1-3-6-5-multiple-csrf-vulnerabilities?_s_id=cve
+    - id: CVE-2022-46794
+      description: Cross-Site Request Forgery (CSRF) vulnerability in weightbasedshipping.Com WooCommerce Weight Based Shipping plugin <= 5.4.1 versions.
+      published: 2023-05-24T16:15:09.380
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/weight-based-shipping-for-woocommerce/wordpress-woocommerce-weight-based-shipping-plugin-5-4-1-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2022-46816
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Booking Ultra Pro Appointments Booking Calendar Plugin plugin <= 1.1.4 versions.
+      published: 2023-05-24T16:15:09.457
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/booking-ultra-pro/wordpress-booking-ultra-pro-appointments-booking-calendar-plugin-plugin-1-1-4-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-47152
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Etison, LLC ClickFunnels plugin <= 3.1.1 versions.
+      published: 2023-05-24T16:15:09.530
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/clickfunnels/wordpress-clickfunnels-plugin-3-1-1-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2023-33942
+      description: Cross-site scripting (XSS) vulnerability in the Web Content Display widget's article selector in Liferay Liferay Portal 7.4.3.50, and Liferay DXP 7.4 update 50 allows remote attackers to inject arbitrary web script or HTML via a crafted payload injected into a web content article's `Title` field.
+      published: 2023-05-24T15:15:09.807
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://liferay.dev/portal/security/known-vulnerabilities/-/asset_publisher/jekt/content/cve-2023-33942
+    - id: CVE-2023-33939
+      description: Cross-site scripting (XSS) vulnerability in the Modified Facet widget in Liferay Portal 7.1.0 through 7.4.3.12, and Liferay DXP 7.1 before fix pack 27, 7.2 before fix pack 18, 7.3 before update 4, and 7.4 before update 9 allows remote attackers to inject arbitrary web script or HTML via a crafted payload injected into a facet label.
+      published: 2023-05-24T14:15:09.623
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://liferay.dev/portal/security/known-vulnerabilities/-/asset_publisher/jekt/content/cve-2023-33939
+    - id: CVE-2023-33950
+      description: Pattern Redirects in Liferay Portal 7.4.3.48 through 7.4.3.76, and Liferay DXP 7.4 update 48 through 76 allows regular expressions that are vulnerable to ReDoS attacks to be used as patterns, which allows remote attackers to consume an excessive amount of server resources via crafted request URLs.
+      published: 2023-05-24T17:15:10.007
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://liferay.dev/portal/security/known-vulnerabilities/-/asset_publisher/jekt/content/cve-2023-33950
+    - id: CVE-2023-33943
+      description: Cross-site scripting (XSS) vulnerability in the Account module in Liferay Portal 7.4.3.21 through 7.4.3.62, and Liferay DXP 7.4 update 21 through 62 allows remote attackers to inject arbitrary web script or HTML via a crafted payload injected into a user's (1) First Name, (2) Middle Name, (3) Last Name, or (4) Job Title text field.
+      published: 2023-05-24T15:15:09.897
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://liferay.dev/portal/security/known-vulnerabilities/-/asset_publisher/jekt/content/cve-2023-33943
+    - id: CVE-2023-2873
+      description: 'A vulnerability classified as critical was found in Twister Antivirus 8. This vulnerability affects the function 0x804f2143/0x804f217f/0x804f214b/0x80800043 in the library filppd.sys of the component IoControlCode Handler. The manipulation leads to memory corruption. Local access is required to approach this attack. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-229852. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-24T18:15:10.493
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://drive.google.com/file/d/1ABRMxr6Ek02P_WAXjyYLGQ4sHYMVQTka/view?usp=sharing
+        - https://github.com/zeze-zeze/WindowsKernelVuln/tree/master/unassigned44
+        - https://vuldb.com/?ctiid.229852
+        - https://vuldb.com/?id.229852
+    - id: CVE-2023-2872
+      description: 'A vulnerability classified as problematic has been found in FlexiHub 5.5.14691.0. This affects the function 0x220088 in the library fusbhub.sys of the component IoControlCode Handler. The manipulation leads to null pointer dereference. An attack has to be approached locally. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-229851. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-24T18:15:10.413
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://drive.google.com/file/d/1h-7fnmb31bkEW4FoLNDlneftDqS4TQHT/view?usp=sharing
+        - https://github.com/zeze-zeze/WindowsKernelVuln/tree/master/unassigned45
+        - https://vuldb.com/?ctiid.229851
+        - https://vuldb.com/?id.229851
+    - id: CVE-2023-2874
+      description: 'A vulnerability, which was classified as problematic, has been found in Twister Antivirus 8. This issue affects the function 0x804f2158/0x804f2154/0x804f2150/0x804f215c/0x804f2160/0x80800040/0x804f214c/0x804f2148/0x804f2144/0x801120e4/0x804f213c/0x804f2140 in the library filppd.sys of the component IoControlCode Handler. The manipulation leads to denial of service. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used. The identifier VDB-229853 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-24T19:15:09.443
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://drive.google.com/file/d/1hcj4tdRveydUv84J5IEQFmjF1XxUvxGy/view?usp=sharing
+        - https://github.com/zeze-zeze/WindowsKernelVuln/tree/master/unassigned43
+        - https://vuldb.com/?ctiid.229853
+        - https://vuldb.com/?id.229853
+    - id: CVE-2023-2875
+      description: 'A vulnerability, which was classified as problematic, was found in eScan Antivirus 22.0.1400.2443. Affected is the function 0x22E008u in the library PROCOBSRVESX.SYS of the component IoControlCode Handler. The manipulation leads to null pointer dereference. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used. VDB-229854 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-24T19:15:09.517
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://drive.google.com/file/d/1fvlP0d9HmApjWhYDjgsdco7g7FPsbn0V/view?usp=sharing
+        - https://github.com/zeze-zeze/WindowsKernelVuln/tree/master/unassigned48
+        - https://vuldb.com/?ctiid.229854
+        - https://vuldb.com/?id.229854
+    - id: CVE-2023-1158
+      description: Hitachi Vantara Pentaho Business Analytics Server versions before 9.4.0.1 and 9.3.0.3, including 8.3.x expose dashboard prompts to users who are not part of the authorization list. 
+      published: 2023-05-24T22:15:09.123
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://support.pentaho.com/hc/en-us/articles/14456024873741-IMPORTANT-Resolved-Pentaho-BA-Server-Incorrect-Authorization-Versions-before-9-4-0-1-and-9-3-0-3-including-8-3-x-Impacted-CVE-2023-1158-
+    - id: CVE-2023-2865
+      description: A vulnerability was found in SourceCodester Theme Park Ticketing System 1.0. It has been classified as critical. This affects an unknown part of the file print_ticket.php of the component GET Parameter Handler. The manipulation of the argument id leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-229821 was assigned to this vulnerability.
+      published: 2023-05-24T11:15:09.317
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/XIAONIGM/CVEReport/blob/main/SQL.md
+        - https://vuldb.com/?ctiid.229821
+        - https://vuldb.com/?id.229821
+    - id: CVE-2023-33937
+      description: Stored cross-site scripting (XSS) vulnerability in Form widget configuration in Liferay Portal 7.1.0 through 7.3.0, and Liferay DXP 7.1 before fix pack 18, and 7.2 before fix pack 5 allows remote attackers to inject arbitrary web script or HTML via a crafted payload injected into a form's `name` field.
+      published: 2023-05-24T13:15:09.707
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://liferay.dev/portal/security/known-vulnerabilities/-/asset_publisher/jekt/content/cve-2023-33937
+    - id: CVE-2023-33938
+      description: Cross-site scripting (XSS) vulnerability in the App Builder module's custom object details page in Liferay Portal 7.3.0 through 7.4.0, and Liferay DXP 7.3 before update 14 allows remote attackers to inject arbitrary web script or HTML via a crafted payload injected into an App Builder custom object's `Name` field.
+      published: 2023-05-24T14:15:09.550
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://liferay.dev/portal/security/known-vulnerabilities/-/asset_publisher/jekt/content/cve-2023-33938
+    - id: CVE-2023-33944
+      description: Cross-site scripting (XSS) vulnerability in Layout module in Liferay Portal 7.3.4 through 7.4.3.68, and Liferay DXP 7.3 before update 24, and 7.4 before update 69 allows remote attackers to inject arbitrary web script or HTML via a crafted payload injected into a container type layout fragment's `URL` text field.
+      published: 2023-05-24T16:15:09.693
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://liferay.dev/portal/security/known-vulnerabilities/-/asset_publisher/jekt/content/cve-2023-33944
+    - id: CVE-2023-25028
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in chuyencode CC Custom Taxonomy plugin <= 1.0.1 versions.
+      published: 2023-05-24T17:15:09.857
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/cc-custom-taxonmy/wordpress-cc-custom-taxonomy-plugin-1-0-1-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-33940
+      description: Cross-site scripting (XSS) vulnerability in IFrame type Remote Apps in Liferay Portal 7.4.0 through 7.4.3.30, and Liferay DXP 7.4 before update 31 allows remote attackers to inject arbitrary web script or HTML via the Remote App's IFrame URL.
+      published: 2023-05-24T14:15:09.697
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://liferay.dev/portal/security/known-vulnerabilities/-/asset_publisher/jekt/content/cve-2023-33940
+    - id: CVE-2023-33945
+      description: SQL injection vulnerability in the upgrade process for SQL Server in Liferay Portal 7.3.1 through 7.4.3.17, and Liferay DXP 7.3 before update 6, and 7.4 before update 18 allows attackers to execute arbitrary SQL commands via the name of a database table's primary key index. This vulnerability is only exploitable when chained with other attacks. To exploit this vulnerability, the attacker must modify the database and wait for the application to be upgraded.
+      published: 2023-05-24T16:15:09.760
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://liferay.dev/portal/security/known-vulnerabilities/-/asset_publisher/jekt/content/cve-2023-33945
+    - id: CVE-2022-0357
+      description: |-
+        Unquoted Search Path or Element vulnerability in the Vulnerability Scan component of Bitdefender Total Security, Bitdefender Internet Security, and Bitdefender Antivirus Plus allows an attacker to elevate privileges to SYSTEM.
+
+        This issue affects:
+
+        Bitdefender Total Security
+        versions prior to 26.0.10.45.
+        Bitdefender Internet Security
+        versions prior to 26.0.10.45.
+        Bitdefender Antivirus Plus
+        versions prior to 26.0.10.45.
+      published: 2023-05-24T08:15:08.957
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.bitdefender.com/support/security-advisories/improper-quoting-path-issue-in-bitdefender-total-security
+    - id: CVE-2023-2870
+      description: 'A vulnerability was found in EnTech Monitor Asset Manager 2.9. It has been declared as problematic. Affected by this vulnerability is the function 0x80002014 of the component IoControlCode Handler. The manipulation leads to denial of service. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used. The identifier VDB-229849 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-24T18:15:10.217
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://drive.google.com/file/d/1ehTYhcdeTiB4rQ38n5FqhQZgVqcvvPE_/view?usp=sharing
+        - https://github.com/zeze-zeze/WindowsKernelVuln/tree/master/unassigned47
+        - https://vuldb.com/?ctiid.229849
+        - https://vuldb.com/?id.229849
+    - id: CVE-2023-2862
+      description: A vulnerability, which was classified as problematic, was found in SiteServer CMS up to 7.2.1. Affected is an unknown function of the file /api/stl/actions/search. The manipulation of the argument ajaxDivId leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. VDB-229818 is the identifier assigned to this vulnerability.
+      published: 2023-05-24T10:15:09.283
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://gitee.com/siteserver/cms/issues/I71WJ4
+        - https://vuldb.com/?ctiid.229818
+        - https://vuldb.com/?id.229818
+    - id: CVE-2023-2864
+      description: A vulnerability was found in SourceCodester Online Jewelry Store 1.0 and classified as problematic. Affected by this issue is some unknown functionality of the file customer.php of the component POST Parameter Handler. The manipulation of the argument Custid leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-229820.
+      published: 2023-05-24T11:15:09.237
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/XIAONIGM/CVEReport/blob/main/XSS.md
+        - https://vuldb.com/?ctiid.229820
+        - https://vuldb.com/?id.229820
+    - id: CVE-2023-2871
+      description: 'A vulnerability was found in FabulaTech USB for Remote Desktop 6.1.0.0. It has been rated as problematic. Affected by this issue is the function 0x220448/0x220420/0x22040c/0x220408 of the component IoControlCode Handler. The manipulation leads to null pointer dereference. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used. VDB-229850 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-24T18:15:10.337
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://drive.google.com/file/d/1Y8e5f0AjddrozLv155r9cNhkXwwwZbYE/view?usp=sharing
+        - https://github.com/zeze-zeze/WindowsKernelVuln/tree/master/unassigned46
+        - https://vuldb.com/?ctiid.229850
+        - https://vuldb.com/?id.229850
+    - id: CVE-2023-33946
+      description: The Object module in Liferay Portal 7.4.3.4 through 7.4.3.48, and Liferay DXP 7.4 before update 49 does properly isolate objects in difference virtual instances, which allows remote authenticated users in one virtual instance to view objects in a different virtual instance via OAuth 2 scope administration page.
+      published: 2023-05-24T16:15:09.837
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://liferay.dev/portal/security/known-vulnerabilities/-/asset_publisher/jekt/content/cve-2023-33946
+    - id: CVE-2023-33947
+      description: The Object module in Liferay Portal 7.4.3.4 through 7.4.3.60, and Liferay DXP 7.4 before update 61 does not segment object definition by virtual instance in search which allows remote authenticated users in one virtual instance to view object definition from a second virtual instance by searching for the object definition.
+      published: 2023-05-24T16:15:09.927
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://liferay.dev/portal/security/known-vulnerabilities/-/asset_publisher/jekt/content/cve-2023-33947
+    - id: CVE-2023-2863
+      description: A vulnerability has been found in Simple Design Daily Journal 1.012.GP.B on Android and classified as problematic. Affected by this vulnerability is an unknown functionality of the component SQLite Database. The manipulation leads to cleartext storage in a file or on disk. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-229819.
+      published: 2023-05-24T10:15:09.407
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://vuldb.com/?ctiid.229819
+        - https://vuldb.com/?id.229819
+        - https://www.youtube.com/watch?v=V0u9C5RVSic
+    - id: CVE-2023-33790
+      description: A stored cross-site scripting (XSS) vulnerability in the Create Locations (/dcim/locations/) function of Netbox v3.5.1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field.
+      published: 2023-05-24T20:15:10.487
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/anhdq201/netbox/issues/9
+    - id: CVE-2023-33793
+      description: A stored cross-site scripting (XSS) vulnerability in the Create Power Panels (/dcim/power-panels/) function of Netbox v3.5.1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field.
+      published: 2023-05-24T20:15:10.663
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/anhdq201/netbox/issues/1
+    - id: CVE-2023-31748
+      description: Insecure permissions in MobileTrans v4.0.11 allows attackers to escalate privileges to local admin via replacing the executable file.
+      published: 2023-05-24T15:15:09.490
+      severity: ""
+      privileges: ""
+      references:
+        - http://mobiletrans.com
+        - https://packetstormsecurity.com/files/172466/MobileTrans-4.0.11-Weak-Service-Permissions.html
+    - id: CVE-2022-42225
+      description: Jumpserver 2.10.0 <= version <= 2.26.0 contains multiple stored XSS vulnerabilities because of improper filtering of user input, which can execute any javascript under admin's permission.
+      published: 2023-05-24T20:15:09.763
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/bybit-sec/eb750c1d906c89e97092b29015472738
+        - https://github.com/jumpserver/lina/blob/v2.10.0/src/views/settings/SystemMessageSubscription/SelectDialog.vue#L43
+        - https://github.com/jumpserver/lina/blob/v2.11.0/src/layout/components/NavHeader/SiteMessages.vue#L40
+        - https://github.com/jumpserver/lina/blob/v2.26.0/src/views/tickets/components/Comments.vue#L16
+    - id: CVE-2023-25598
+      description: A vulnerability in the conferencing component of Mitel MiVoice Connect through 19.3 SP2 and 20.x, 21.x, and 22.x through 22.24.1500.0 could allow an unauthenticated attacker to conduct a reflected cross-site scripting (XSS) attack due to insufficient validation for the home.php page. A successful exploit could allow an attacker to execute arbitrary scripts.
+      published: 2023-05-24T20:15:09.913
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.mitel.com/support/security-advisories
+        - https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-23-0003
+    - id: CVE-2023-31457
+      description: A vulnerability in the Headquarters server component of Mitel MiVoice Connect versions 19.3 SP2 (22.24.1500.0) and earlier could allow an unauthenticated attacker with internal network access to execute arbitrary scripts due to improper access control.
+      published: 2023-05-24T20:15:09.977
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.mitel.com/support/security-advisories
+        - https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-23-0004
+    - id: CVE-2023-31459
+      description: A vulnerability in the Connect Mobility Router component of Mitel MiVoice Connect versions 9.6.2208.101 and earlier could allow an unauthenticated attacker with internal network access to authenticate with administrative privileges, because the initial installation does not enforce a password change. A successful exploit could allow an attacker to make arbitrary configuration changes and execute arbitrary commands.
+      published: 2023-05-24T20:15:10.033
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.mitel.com/support/security-advisories
+        - https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-23-0006
+    - id: CVE-2023-31460
+      description: A vulnerability in the Connect Mobility Router component of MiVoice Connect versions 9.6.2208.101 and earlier could allow an authenticated attacker with internal network access to conduct a command injection attack due to insufficient restriction on URL parameters.
+      published: 2023-05-24T20:15:10.093
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.mitel.com/support/security-advisories
+        - https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-23-0007
+    - id: CVE-2023-31595
+      description: IC Realtime ICIP-P2012T 2.420 is vulnerable to Incorrect Access Control via unauthenticated port access.
+      published: 2023-05-24T20:15:10.150
+      severity: ""
+      privileges: ""
+      references:
+        - http://ic.com
+        - https://github.com/Yozarseef95/CVE-2023-31595
+    - id: CVE-2023-33785
+      description: A stored cross-site scripting (XSS) vulnerability in the Create Rack Roles (/dcim/rack-roles/) function of Netbox v3.5.1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field.
+      published: 2023-05-24T20:15:10.210
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/anhdq201/netbox/issues/8
+    - id: CVE-2023-33786
+      description: A stored cross-site scripting (XSS) vulnerability in the Create Circuit Types (/circuits/circuit-types/) function of Netbox v3.5.1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field.
+      published: 2023-05-24T20:15:10.263
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/anhdq201/netbox/issues/2
+    - id: CVE-2023-33787
+      description: A stored cross-site scripting (XSS) vulnerability in the Create Tenant Groups (/tenancy/tenant-groups/) function of Netbox v3.5.1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field.
+      published: 2023-05-24T20:15:10.317
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/anhdq201/netbox/issues/6
+    - id: CVE-2023-33788
+      description: A stored cross-site scripting (XSS) vulnerability in the Create Providers (/circuits/providers/) function of Netbox v3.5.1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field.
+      published: 2023-05-24T20:15:10.373
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/anhdq201/netbox/issues/3
+    - id: CVE-2023-33789
+      description: A stored cross-site scripting (XSS) vulnerability in the Create Contact Groups (/tenancy/contact-groups/) function of Netbox v3.5.1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field.
+      published: 2023-05-24T20:15:10.430
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/anhdq201/netbox/issues/7
+    - id: CVE-2023-33983
+      description: The Introduction Client in Briar through 1.5.3 does not implement out-of-band verification for the public keys of introducees. An introducer can launch man-in-the-middle attacks against later private communication between two introduced parties.
+      published: 2023-05-24T18:15:10.983
+      severity: ""
+      privileges: ""
+      references:
+        - https://ethz.ch/content/dam/ethz/special-interest/infk/inst-infsec/appliedcrypto/education/theses/report_YuanmingSong.pdf
+    - id: CVE-2023-33791
+      description: A stored cross-site scripting (XSS) vulnerability in the Create Provider Accounts (/circuits/provider-accounts/) function of Netbox v3.5.1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field.
+      published: 2023-05-24T20:15:10.543
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/anhdq201/netbox/issues/4
+    - id: CVE-2023-33792
+      description: A stored cross-site scripting (XSS) vulnerability in the Create Site Groups (/dcim/site-groups/) function of Netbox v3.5.1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field.
+      published: 2023-05-24T20:15:10.607
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/anhdq201/netbox/issues/10
+    - id: CVE-2023-33246
+      description: |-
+        For RocketMQ versions 5.1.0 and below, under certain conditions, there is a risk of remote command execution. 
+
+        Several components of RocketMQ, including NameServer, Broker, and Controller, are leaked on the extranet and lack permission verification, an attacker can exploit this vulnerability by using the update configuration function to execute commands as the system users that RocketMQ is running as. Additionally, an attacker can achieve the same effect by forging the RocketMQ protocol content. 
+
+        To prevent these attacks, users are recommended to upgrade to version 5.1.1 or above for using RocketMQ 5.x or 4.9.6 or above for using RocketMQ 4.x .
+      published: 2023-05-24T15:15:09.553
+      severity: ""
+      privileges: ""
+      references:
+        - https://lists.apache.org/thread/1s8j2c8kogthtpv3060yddk03zq0pxyp
+    - id: CVE-2023-33794
+      description: A stored cross-site scripting (XSS) vulnerability in the Create Tenants (/tenancy/tenants/) function of Netbox v3.5.1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field.
+      published: 2023-05-24T20:15:10.717
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/anhdq201/netbox/issues/5
+    - id: CVE-2023-33795
+      description: A stored cross-site scripting (XSS) vulnerability in the Create Contact Roles (/tenancy/contact-roles/) function of Netbox v3.5.1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field.
+      published: 2023-05-24T20:15:10.773
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/anhdq201/netbox/issues/15
+    - id: CVE-2023-33796
+      description: A vulnerability in Netbox v3.5.1 allows unauthenticated attackers to execute queries against the GraphQL database, granting them access to sensitive data stored in the database.
+      published: 2023-05-24T20:15:10.827
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/anhdq201/netbox/issues/16
+    - id: CVE-2023-33797
+      description: A stored cross-site scripting (XSS) vulnerability in the Create Sites (/dcim/sites/) function of Netbox v3.5.1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field.
+      published: 2023-05-24T20:15:10.893
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/anhdq201/netbox/issues/12
+    - id: CVE-2023-33798
+      description: A stored cross-site scripting (XSS) vulnerability in the Create Rack (/dcim/rack/) function of Netbox v3.5.1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field.
+      published: 2023-05-24T20:15:10.947
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/anhdq201/netbox/issues/13
+    - id: CVE-2023-33799
+      description: A stored cross-site scripting (XSS) vulnerability in the Create Contacts (/tenancy/contacts/) function of Netbox v3.5.1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field.
+      published: 2023-05-24T20:15:11.003
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/anhdq201/netbox/issues/14
+    - id: CVE-2023-33800
+      description: A stored cross-site scripting (XSS) vulnerability in the Create Regions (/dcim/regions/) function of Netbox v3.5.1 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Name field.
+      published: 2023-05-24T20:15:11.060
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/anhdq201/netbox/issues/11
+    - id: CVE-2022-30025
+      description: SQL injection in "/Framewrk/Home.jsp" file (POST method) in tCredence Analytics iDEAL Wealth and Funds - 1.0 iallows authenticated remote attackers to inject payload via "v" parameter.
+      published: 2023-05-24T21:15:10.450
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/fir3storm/c8a013d1231c22e22835566609620afd
+    - id: CVE-2022-41221
+      description: The client in OpenText Archive Center Administration through 21.2 allows XXE attacks. Authenticated users of the OpenText Archive Center Administration client (Versions 16.2.3, 21.2, and older versions) could upload XML files to the application that it did not sufficiently validate. As a result, attackers could craft XML files that, when processed by the application, would cause a negative security impact such as data exfiltration or localized denial of service against the application instance and system of the user running it.
+      published: 2023-05-24T21:15:10.870
+      severity: ""
+      privileges: ""
+      references:
+        - https://labs.withsecure.com/advisories/opentext-archive-center-administration-client-xxe-vulnerability
+    - id: CVE-2023-25599
+      description: A vulnerability in the conferencing component of Mitel MiVoice Connect through 19.3 SP2 and 20.x, 21.x, and 22.x through 22.24.1500.0 could allow an unauthenticated attacker to conduct a reflected cross-site scripting (XSS) attack due to insufficient validation for the test_presenter.php page. A successful exploit could allow an attacker to execute arbitrary scripts.
+      published: 2023-05-24T21:15:11.380
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.mitel.com/support/security-advisories
+        - https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-23-0003
+    - id: CVE-2023-29721
+      description: SofaWiki <= 3.8.9 has a file upload vulnerability that leads to command execution.
+      published: 2023-05-24T21:15:11.470
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/bellenuit/sofawiki/issues/27
+        - https://github.com/xul18/Showcase/issues/2
+    - id: CVE-2023-31458
+      description: A vulnerability in the Edge Gateway component of Mitel MiVoice Connect versions 19.3 SP2 (22.24.1500.0) and earlier could allow an unauthenticated attacker with internal network access to authenticate with administrative privileges, because initial installation does not enforce a password change. A successful exploit could allow an attacker to make arbitrary configuration changes and execute arbitrary commands.
+      published: 2023-05-24T21:15:11.520
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.mitel.com/support/security-advisories
+        - https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-23-0005
+    - id: CVE-2023-33829
+      description: A stored cross-site scripting (XSS) vulnerability in Cloudogu GmbH SCM Manager v1.2 to v1.60 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Description text field.
+      published: 2023-05-24T21:15:11.567
+      severity: ""
+      privileges: ""
+      references:
+        - https://bitbucket.org/sdorra/docker-scm-manager/src/master/
+        - https://github.com/n3gox/Stored-XSS-on-SCM-Manager-1.60
+    - id: CVE-2023-33982
+      description: 'Bramble Handshake Protocol (BHP) in Briar before 1.5.3 is not forward secure: eavesdroppers can decrypt network traffic between two accounts if they later compromise both accounts. NOTE: the eavesdropping is typically impractical because BHP runs over an encrypted session that uses the Tor hidden service protocol.'
+      published: 2023-05-24T18:15:10.927
+      severity: ""
+      privileges: ""
+      references:
+        - https://briarproject.org/news/2023-three-security-issues-found-and-fixed/
+        - https://ethz.ch/content/dam/ethz/special-interest/infk/inst-infsec/appliedcrypto/education/theses/report_YuanmingSong.pdf
+    - id: CVE-2023-33981
+      description: Briar before 1.4.22 allows attackers to spoof other users' messages in a blog, forum, or private group, but each spoofed message would need to be an exact duplicate of a legitimate message displayed alongside the spoofed one.
+      published: 2023-05-24T18:15:10.877
+      severity: ""
+      privileges: ""
+      references:
+        - https://briarproject.org/news/2023-three-security-issues-found-and-fixed/
+        - https://ethz.ch/content/dam/ethz/special-interest/infk/inst-infsec/appliedcrypto/education/theses/report_YuanmingSong.pdf
+    - id: CVE-2023-33248
+      description: Amazon Alexa software version 8960323972 on Echo Dot 2nd generation and 3rd generation devices potentially allows attackers to deliver security-relevant commands via an audio signal between 16 and 22 kHz (often outside the range of human adult hearing). Commands at these frequencies are essentially never spoken by authorized actors, but a substantial fraction of the commands are successful.
+      published: 2023-05-24T22:15:09.207
+      severity: ""
+      privileges: ""
+      references:
+        - https://arxiv.org/abs/2305.10358
+        - https://cios2023.org/papers
+        - https://github.com/reveondivad/nuance
+        - https://sites.google.com/view/nuitattack/home
+        - https://www.usenix.org/system/files/sec23fall-prepub-261-xia-qi.pdf
+        - https://youtu.be/3gEc5ZFWIWo
+    - id: CVE-2023-1601
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none.'
+      published: 2023-05-24T23:15:09.070
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-33980
+      description: Bramble Synchronisation Protocol (BSP) in Briar before 1.4.22 allows attackers to cause a denial of service (repeated application crashes) via a series of long messages to a contact.
+      published: 2023-05-24T18:15:10.827
+      severity: ""
+      privileges: ""
+      references:
+        - https://briarproject.org/news/2023-three-security-issues-found-and-fixed/
+        - https://ethz.ch/content/dam/ethz/special-interest/infk/inst-infsec/appliedcrypto/education/theses/report_YuanmingSong.pdf
