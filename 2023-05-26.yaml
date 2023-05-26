@@ -1,0 +1,599 @@
+data:
+    - id: CVE-2023-2851
+      description: '** UNSUPPPORTED WHEN ASSIGNED ** Improper Neutralization of Special Elements used in an SQL Command (''SQL Injection'') vulnerability in AGT Tech Ceppatron allows Command Line Execution through SQL Injection, SQL Injection.This issue affects all versions of the sofware also EOS when CVE-ID assigned.'
+      published: 2023-05-25T14:15:10.557
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.usom.gov.tr/bildirim/tr-23-0294
+    - id: CVE-2023-2734
+      description: The MStore API plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 3.9.1. This is due to insufficient verification on the user being supplied during the cart sync from mobile REST API request through the plugin. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the user id.
+      published: 2023-05-25T03:15:08.870
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://plugins.trac.wordpress.org/browser/mstore-api/tags/3.9.0/controllers/flutter-woo.php#L911
+        - https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2915729%40mstore-api&old=2913397%40mstore-api&sfp_email=&sfph_mail=#file59
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/5881d16c-84e8-4610-8233-cfa5a94fe3f9?source=cve
+    - id: CVE-2023-2732
+      description: The MStore API plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 3.9.2. This is due to insufficient verification on the user being supplied during the add listing REST API request through the plugin. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the user id.
+      published: 2023-05-25T03:15:08.630
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://plugins.trac.wordpress.org/browser/mstore-api/tags/3.9.0/controllers/listing-rest-api/class.api.fields.php#L1079
+        - https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2916124%40mstore-api&old=2915729%40mstore-api&sfp_email=&sfph_mail=#file58
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/f00761a7-fe24-49a3-b3e3-a471e05815c1?source=cve
+    - id: CVE-2023-2733
+      description: The MStore API plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 3.9.0. This is due to insufficient verification on the user being supplied during the coupon redemption REST API request through the plugin. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the user id.
+      published: 2023-05-25T03:15:08.797
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://plugins.trac.wordpress.org/browser/mstore-api/tags/3.9.0/controllers/flutter-woo.php#L734
+        - https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2913397%40mstore-api&old=2910707%40mstore-api&sfp_email=&sfph_mail=#file60
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/c726d8f0-7f2a-414b-9d73-a053921074d9?source=cve
+    - id: CVE-2023-2885
+      description: 'Channel Accessible by Non-Endpoint vulnerability in CBOT Chatbot allows Adversary in the Middle (AiTM).This issue affects Chatbot: before Core: v4.0.3.4 Panel: v4.0.3.7.'
+      published: 2023-05-25T09:15:12.237
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.usom.gov.tr/bildirim/tr-23-0293
+    - id: CVE-2023-2887
+      description: 'Authentication Bypass by Spoofing vulnerability in CBOT Chatbot allows Authentication Bypass.This issue affects Chatbot: before Core: v4.0.3.4 Panel: v4.0.3.7.'
+      published: 2023-05-25T09:15:12.377
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.usom.gov.tr/bildirim/tr-23-0293
+    - id: CVE-2023-2882
+      description: 'Generation of Incorrect Security Tokens vulnerability in CBOT Chatbot allows Token Impersonation, Privilege Abuse.This issue affects Chatbot: before Core: v4.0.3.4 Panel: v4.0.3.7.'
+      published: 2023-05-25T09:15:12.010
+      severity: CRITICAL
+      privileges: LOW
+      references:
+        - https://www.usom.gov.tr/bildirim/tr-23-0293
+    - id: CVE-2023-26216
+      description: 'The server component of TIBCO Software Inc.''s TIBCO EBX Add-ons contains an exploitable vulnerability that allows an attacker to upload files to a directory accessible by the web server. Affected releases are TIBCO Software Inc.''s TIBCO EBX Add-ons: versions 4.5.16 and below.'
+      published: 2023-05-25T19:15:14.157
+      severity: CRITICAL
+      privileges: HIGH
+      references:
+        - https://www.tibco.com/services/support/advisories
+    - id: CVE-2023-2798
+      description: Those using HtmlUnit to browse untrusted webpages may be vulnerable to Denial of service attacks (DoS). If HtmlUnit is running on user supplied web pages, an attacker may supply content that causes HtmlUnit to crash by a stack overflow. This effect may support a denial of service attack.This issue affects htmlunit before 2.70.0.
+      published: 2023-05-25T14:15:10.320
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=54613
+        - https://github.com/HtmlUnit/htmlunit/commit/940dc7fd
+    - id: CVE-2022-45366
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Jason Crouse, VeronaLabs Slimstat Analytics plugin <= 5.0.4 versions.
+      published: 2023-05-25T13:15:09.153
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/wp-slimstat/wordpress-slimstat-analytics-plugin-5-0-4-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-2886
+      description: 'Missing Origin Validation in WebSockets vulnerability in CBOT Chatbot allows Content Spoofing Via Application API Manipulation.This issue affects Chatbot: before Core: v4.0.3.4 Panel: v4.0.3.7.'
+      published: 2023-05-25T09:15:12.303
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.usom.gov.tr/bildirim/tr-23-0293
+    - id: CVE-2023-32067
+      description: c-ares is an asynchronous resolver library. c-ares is vulnerable to denial of service. If a target resolver sends a query, the attacker forges a malformed UDP packet with a length of 0 and returns them to the target resolver. The target resolver erroneously interprets the 0 length as a graceful shutdown of the connection. This issue has been patched in version 1.19.1.
+      published: 2023-05-25T23:15:09.380
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/c-ares/c-ares/releases/tag/cares-1_19_1
+        - https://github.com/c-ares/c-ares/security/advisories/GHSA-9g78-jv2r-p7vc
+    - id: CVE-2023-26215
+      description: 'The server component of TIBCO Software Inc.''s TIBCO EBX Add-ons contains a vulnerability that allows an attacker with low-privileged application  access to read system files that are accessible to the web server. Affected releases are TIBCO Software Inc.''s TIBCO EBX Add-ons: versions 4.5.16 and below.'
+      published: 2023-05-25T19:15:14.067
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.tibco.com/services/support/advisories
+    - id: CVE-2023-2480
+      description: Missing access permissions checks in M-Files Client before 23.5.12598.0 allows elevation of privilege via UI extension applications
+      published: 2023-05-25T14:15:10.120
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://https://www.m-files.com/about/trust-center/security-advisories/cve-2023-2480/
+    - id: CVE-2023-32074
+      description: user_oidc app is an OpenID Connect user backend for Nextcloud. Authentication can be broken/bypassed in user_oidc app. It is recommended that the Nextcloud user_oidc app is upgraded to 1.3.2
+      published: 2023-05-25T23:15:09.447
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/nextcloud/security-advisories/security/advisories/GHSA-x8mc-84wj-rf34
+        - https://github.com/nextcloud/user_oidc/pull/615
+        - https://hackerone.com/reports/1954711
+    - id: CVE-2023-2883
+      description: 'Authorization Bypass Through User-Controlled Key vulnerability in CBOT Chatbot allows Authentication Abuse, Authentication Bypass.This issue affects Chatbot: before Core: v4.0.3.4 Panel: v4.0.3.7.'
+      published: 2023-05-25T09:15:12.093
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.usom.gov.tr/bildirim/tr-23-0293
+    - id: CVE-2022-46810
+      description: Cross-Site Request Forgery (CSRF) vulnerability in VillaTheme Thank You Page Customizer for WooCommerce – Increase Your Sales plugin <= 1.0.13 versions.
+      published: 2023-05-25T12:15:09.820
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/woo-thank-you-page-customizer/wordpress-thank-you-page-customizer-for-woocommerce-increase-your-sales-plugin-1-0-13-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2023-30484
+      description: Cross-Site Request Forgery (CSRF) vulnerability in uPress Enable Accessibility plugin <= 1.4 versions.
+      published: 2023-05-25T10:15:09.797
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/enable-accessibility/wordpress-enable-accessibility-plugin-1-4-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2022-47164
+      description: Cross-Site Request Forgery (CSRF) vulnerability in MagePeople Team Event Manager and Tickets Selling Plugin for WooCommerce plugin <= 3.7.7 versions.
+      published: 2023-05-25T09:15:11.870
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/mage-eventpress/wordpress-event-manager-and-tickets-selling-plugin-for-woocommerce-plugin-3-7-7-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-47159
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Logaster Logaster Logo Generator plugin <= 1.3 versions.
+      published: 2023-05-25T09:15:11.797
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/logaster-logo-generator/wordpress-logaster-logo-generator-plugin-1-3-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2023-31147
+      description: c-ares is an asynchronous resolver library. When /dev/urandom or RtlGenRandom() are unavailable, c-ares uses rand() to generate random numbers used for DNS query ids. This is not a CSPRNG, and it is also not seeded by srand() so will generate predictable output. Input from the random number generator is fed into a non-compilant RC4 implementation and may not be as strong as the original RC4 implementation. No attempt is made to look for modern OS-provided CSPRNGs like arc4random() that is widely available. This issue has been fixed in version 1.19.1.
+      published: 2023-05-25T22:15:09.833
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/c-ares/c-ares/releases/tag/cares-1_19_1
+        - https://github.com/c-ares/c-ares/security/advisories/GHSA-8r8p-23f3-64c2
+    - id: CVE-2022-47139
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Damir Calusic WP Basic Elements plugin <= 5.2.15 versions.
+      published: 2023-05-25T09:15:11.733
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/wp-basic-elements/wordpress-wp-basic-elements-plugin-5-2-15-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-47138
+      description: Cross-Site Request Forgery (CSRF) vulnerability in German Krutov LOGIN AND REGISTRATION ATTEMPTS LIMIT plugin <= 2.1 versions.
+      published: 2023-05-25T09:15:11.660
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/login-attempts-limit-wp/wordpress-login-and-registration-attempts-limit-plugin-2-1-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-47135
+      description: Cross-Site Request Forgery (CSRF) vulnerability in chronoengine.Com Chronoforms plugin <= 7.0.9 versions.
+      published: 2023-05-25T09:15:11.590
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/chronoforms/wordpress-chronoforms-plugin-7-0-9-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-45367
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Tyche Softwares Custom Order Numbers for WooCommerce plugin <= 1.4.0 versions.
+      published: 2023-05-25T10:15:09.337
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/custom-order-numbers-for-woocommerce/wordpress-custom-order-numbers-for-woocommerce-plugin-1-4-0-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2022-47149
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Pretty Links plugin <= 1.4 versions.
+      published: 2023-05-25T10:15:09.420
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/enable-accessibility/wordpress-enable-accessibility-plugin-1-4-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2022-47161
+      description: Cross-Site Request Forgery (CSRF) vulnerability in The WordPress.Org community Health Check & Troubleshooting plugin <= 1.5.1 versions.
+      published: 2023-05-25T10:15:09.490
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/health-check/wordpress-health-check-troubleshooting-plugin-1-5-1-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-47165
+      description: Cross-Site Request Forgery (CSRF) vulnerability in CoSchedule plugin <= 3.3.8 versions.
+      published: 2023-05-25T10:15:09.560
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/coschedule-by-todaymade/wordpress-coschedule-plugin-3-3-8-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-47177
+      description: Cross-Site Request Forgery (CSRF) vulnerability in WP Easy Pay WP EasyPay – Square for WordPress plugin <= 4.1 versions.
+      published: 2023-05-25T10:15:09.630
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/wp-easy-pay/wordpress-wp-easypay-square-for-wordpress-plugin-4-0-4-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-41635
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Zorem Advanced Shipment Tracking for WooCommerce plugin <= 3.5.2 versions.
+      published: 2023-05-25T09:15:10.907
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/woo-advanced-shipment-tracking/wordpress-advanced-shipment-tracking-for-woocommerce-plugin-3-5-2-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-32694
+      description: Saleor Core is a composable, headless commerce API. Saleor's `validate_hmac_signature` function is vulnerable to timing attacks. Malicious users could abuse this vulnerability on Saleor deployments having the Adyen plugin enabled in order to determine the secret key and forge fake events, this could affect the database integrity such as marking an order as paid when it is not. This issue has been patched in versions 3.7.68, 3.8.40, 3.9.49, 3.10.36, 3.11.35, 3.12.25, and 3.13.16.
+      published: 2023-05-25T15:15:09.027
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/saleor/saleor/commit/1328274e1a3d04ab87d7daee90229ff47b3bc35e
+        - https://github.com/saleor/saleor/security/advisories/GHSA-3rqj-9v87-2x3f
+    - id: CVE-2022-46865
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Marty Thornley Bulk Resize Media plugin <= 1.1 versions.
+      published: 2023-05-25T09:15:11.457
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/bulk-resize-media/wordpress-bulk-resize-media-plugin-1-1-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-38356
+      description: Cross-Site Request Forgery (CSRF) vulnerability in StylemixThemes WordPress Header Builder Plugin – Pearl plugin <= 1.3.4 versions.
+      published: 2023-05-25T11:15:09.077
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/pearl-header-builder/wordpress-pearl-plugin-1-3-4-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2022-38716
+      description: Cross-Site Request Forgery (CSRF) vulnerability in StylemixThemes Motors – Car Dealer, Classifieds & Listing plugin <= 1.4.4 versions.
+      published: 2023-05-25T11:15:09.150
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/motors-car-dealership-classified-listings/wordpress-motors-plugin-1-4-4-multiple-cross-site-request-forgery-csrf-vulnerabilities?_s_id=cve
+    - id: CVE-2022-41987
+      description: Cross-Site Request Forgery (CSRF) vulnerability in LearningTimes BadgeOS plugin <= 3.7.1.6 versions.
+      published: 2023-05-25T11:15:09.223
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/badgeos/wordpress-badgeos-plugin-3-7-1-6-multiple-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2022-43490
+      description: Cross-Site Request Forgery (CSRF) vulnerability in XWP Stream plugin <= 3.9.2 versions.
+      published: 2023-05-25T11:15:09.287
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/stream/wordpress-stream-plugin-3-9-2-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2022-45371
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Wpmet ShopEngine plugin <= 4.1.1 versions.
+      published: 2023-05-25T11:15:09.353
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/shopengine/wordpress-shopengine-plugin-4-1-1-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2022-45815
+      description: Cross-Site Request Forgery (CSRF) vulnerability in StylemixThemes GDPR Compliance & Cookie Consent plugin <= 1.2 versions.
+      published: 2023-05-25T11:15:09.417
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/gdpr-compliance-cookie-consent/wordpress-gdpr-compliance-cookie-consent-plugin-1-2-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2022-46800
+      description: Cross-Site Request Forgery (CSRF) vulnerability in LiteSpeed Technologies LiteSpeed Cache plugin <= 5.3 versions.
+      published: 2023-05-25T09:15:11.290
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/litespeed-cache/wordpress-litespeed-cache-plugin-5-3-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2022-46814
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Pierre Lebedel Kodex Posts likes plugin <= 2.4.3 versions.
+      published: 2023-05-25T12:15:09.893
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/kodex-posts-likes/wordpress-kodex-posts-likes-plugin-2-4-3-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-46820
+      description: Cross-Site Request Forgery (CSRF) vulnerability in WPJoli Joli Table Of Contents plugin <= 1.3.9 versions.
+      published: 2023-05-25T12:15:09.957
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/joli-table-of-contents/wordpress-joli-table-of-contents-plugin-1-3-9-cross-site-request-forgery-csrf-on-reset-settings?_s_id=cve
+    - id: CVE-2022-46856
+      description: Cross-Site Request Forgery (CSRF) vulnerability in ORION Woocommerce Products Designer plugin <= 4.3.3 versions.
+      published: 2023-05-25T12:15:10.023
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/woocommerce-products-designer/wordpress-woocommerce-products-designer-by-orion-online-product-customizer-for-t-shirts-print-cards-phone-cases-lettering-decals-plugin-4-3-3-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-47136
+      description: Cross-Site Request Forgery (CSRF) vulnerability in WPManageNinja LLC Ninja Tables – Best Data Table Plugin for WordPress plugin <= 4.3.4 versions.
+      published: 2023-05-25T12:15:10.157
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/ninja-tables/wordpress-ninja-tables-best-data-table-plugin-for-wordpress-plugin-4-3-4-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-47144
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Plugincraft Mediamatic – Media Library Folders plugin <= 2.8.1 versions.
+      published: 2023-05-25T12:15:10.227
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/mediamatic/wordpress-mediamatic-media-library-folders-plugin-2-8-1-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-47178
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Simple Share Buttons Simple Share Buttons Adder plugin <= 8.4.7 versions.
+      published: 2023-05-25T12:15:10.297
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/simple-share-buttons-adder/wordpress-simple-share-buttons-adder-plugin-8-4-6-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-46866
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Marty Thornley Import External Images plugin <= 1.4 versions.
+      published: 2023-05-25T09:15:11.523
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/import-external-images/wordpress-import-external-images-plugin-1-4-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-47174
+      description: Cross-Site Request Forgery (CSRF) vulnerability in WordPress Performance Team Performance Lab plugin <= 2.2.0 versions.
+      published: 2023-05-25T13:15:09.230
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/performance-lab/wordpress-performance-lab-plugin-2-2-0-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2022-46812
+      description: Cross-Site Request Forgery (CSRF) vulnerability in VillaTheme Thank You Page Customizer for WooCommerce – Increase Your Sales plugin <= 1.0.13 versions.
+      published: 2023-05-25T09:15:11.380
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/woo-thank-you-page-customizer/wordpress-thank-you-page-customizer-for-woocommerce-increase-your-sales-plugin-1-0-13-cross-site-request-forgery-csrf?_s_id=cve
+    - id: CVE-2023-0459
+      description: Copy_from_user on 64-bit versions of the Linux kernel does not implement the __uaccess_begin_nospec allowing a user to bypass the "access_ok" check and pass a kernel pointer to copy_from_user(). This would allow an attacker to leak information. We recommend upgrading beyond commit 74e19ef0ff8061ef55957c3abd71614ef0f42f47
+      published: 2023-05-25T14:15:09.603
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/torvalds/linux/commit/4b842e4e25b12951fa10dedb4bc16bc47e3b850c
+        - https://github.com/torvalds/linux/commit/74e19ef0ff8061ef55957c3abd71614ef0f42f47
+    - id: CVE-2023-22504
+      description: |-
+        Affected versions of Atlassian Confluence Server allow remote attackers who have read permissions to a page, but not write permissions, to upload attachments via a Broken Access Control vulnerability in the attachments feature.
+
+        The affected versions are before version 7.19.9.
+
+        This vulnerability was discovered by Rojan Rijal of the Tinder Security Engineering Team.
+      published: 2023-05-25T14:15:09.877
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://jira.atlassian.com/browse/CONFSERVER-83218
+    - id: CVE-2023-2903
+      description: 'A vulnerability classified as problematic has been found in NFine Rapid Development Platform 20230511. This affects an unknown part of the file /SystemManage/Role/GetGridJson?keyword=&page=1&rows=20. The manipulation leads to improper access controls. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-229977 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-25T23:15:09.293
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/Peanut886/Vulnerability/blob/main/webray.com.cn/NFine%20rapid%20development%20platform%20Role-GetGridJson%20has%20unauthorized%20access%20vulnerability.md
+        - https://vuldb.com/?ctiid.229977
+        - https://vuldb.com/?id.229977
+    - id: CVE-2023-2884
+      description: 'Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG), Use of Insufficiently Random Values vulnerability in CBOT Chatbot allows Signature Spoofing by Key Recreation.This issue affects Chatbot: before Core: v4.0.3.4 Panel: v4.0.3.7.'
+      published: 2023-05-25T09:15:12.163
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.usom.gov.tr/bildirim/tr-23-0293
+    - id: CVE-2023-2902
+      description: 'A vulnerability was found in NFine Rapid Development Platform 20230511. It has been rated as problematic. Affected by this issue is some unknown functionality of the file /SystemManage/Organize/GetTreeGridJson?_search=false&nd=1681813520783&rows=10000&page=1&sidx=&sord=asc. The manipulation leads to improper access controls. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-229976. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-25T22:15:09.600
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/Peanut886/Vulnerability/blob/main/webray.com.cn/The%20NFine%20rapid%20development%20platform%20Organize-GetTreeGridJson%20has%20unauthorized%20access%20vulnerability.md
+        - https://vuldb.com/?ctiid.229976
+        - https://vuldb.com/?id.229976
+    - id: CVE-2023-2901
+      description: 'A vulnerability was found in NFine Rapid Development Platform 20230511. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the file /SystemManage/User/GetGridJson?_search=false&nd=1680855479750&rows=50&page=1&sidx=F_CreatorTime+desc&sord=asc. The manipulation leads to improper access controls. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-229975. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-25T22:15:09.517
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/Peanut886/Vulnerability/blob/main/webray.com.cn/NFine%20rapid%20development%20platform%20User-GetGridJson%20has%20unauthorized%20access%20vulnerability.md
+        - https://vuldb.com/?ctiid.229975
+        - https://vuldb.com/?id.229975
+    - id: CVE-2023-30615
+      description: 'Iris is a web collaborative platform aiming to help incident responders sharing technical details during investigations. A stored Cross-Site Scripting (XSS) vulnerability has been identified in iris-web, affecting multiple locations . The vulnerability in allows an attacker to inject malicious scripts into the application, which are then executed when a user visits the affected locations. This can lead to unauthorized access, data theft, or other malicious activities. An attacker need to be authenticated on the application to exploit this vulnerability. The issue was patched in version 2.2.1 of iris-web. '
+      published: 2023-05-25T18:15:10.150
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/dfir-iris/iris-web/releases/tag/v2.2.1
+        - https://github.com/dfir-iris/iris-web/security/advisories/GHSA-gc6j-6276-2m49
+    - id: CVE-2023-2881
+      description: Storing Passwords in a Recoverable Format in GitHub repository pimcore/customer-data-framework prior to 3.3.10.
+      published: 2023-05-25T09:15:11.943
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/pimcore/customer-data-framework/commit/d1d58c10313f080737dc1e71fab3beb12488a1e6
+        - https://huntr.dev/bounties/db6c32f4-742e-4262-8fd5-cefd0f133416
+    - id: CVE-2023-2888
+      description: A vulnerability, which was classified as problematic, was found in PHPOK 6.4.100. This affects an unknown part of the file /admin.php?c=upload&f=zip&_noCache=0.1683794968. The manipulation leads to unrestricted upload. It is possible to initiate the attack remotely. The identifier VDB-229953 was assigned to this vulnerability.
+      published: 2023-05-25T13:15:09.310
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://gitee.com/phpok/phpok/issues/I72D24
+        - https://vuldb.com/?ctiid.229953
+        - https://vuldb.com/?id.229953
+    - id: CVE-2023-31130
+      description: c-ares is an asynchronous resolver library. ares_inet_net_pton() is vulnerable to a buffer underflow for certain ipv6 addresses, in particular "0::00:00:00/2" was found to cause an issue.  C-ares only uses this function internally for configuration purposes which would require an administrator to configure such an address via ares_set_sortlist(). However, users may externally use ares_inet_net_pton() for other purposes and thus be vulnerable to more severe issues. This issue has been fixed in 1.19.1.
+      published: 2023-05-25T22:15:09.760
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/c-ares/c-ares/releases/tag/cares-1_19_1
+        - https://github.com/c-ares/c-ares/security/advisories/GHSA-x6mf-cxr9-8q6v
+    - id: CVE-2023-31124
+      description: c-ares is an asynchronous resolver library. When cross-compiling c-ares and using the autotools build system, CARES_RANDOM_FILE will not be set, as seen when cross compiling aarch64 android.  This will downgrade to using rand() as a fallback which could allow an attacker to take advantage of the lack of entropy by not using a CSPRNG. This issue was patched in version 1.19.1.
+      published: 2023-05-25T22:15:09.680
+      severity: LOW
+      privileges: NONE
+      references:
+        - https://github.com/c-ares/c-ares/releases/tag/cares-1_19_1
+        - https://github.com/c-ares/c-ares/security/advisories/GHSA-54xr-f67r-4pc4
+    - id: CVE-2023-2900
+      description: 'A vulnerability was found in NFine Rapid Development Platform 20230511. It has been classified as problematic. Affected is an unknown function of the file /Login/CheckLogin. The manipulation leads to use of weak hash. It is possible to launch the attack remotely. The complexity of an attack is rather high. The exploitability is told to be difficult. The exploit has been disclosed to the public and may be used. VDB-229974 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-05-25T21:15:09.157
+      severity: LOW
+      privileges: NONE
+      references:
+        - https://github.com/Peanut886/Vulnerability/blob/main/webray.com.cn/NFine-Rapid-development-platform-has-weak-password-vulnerability.md
+        - https://vuldb.com/?ctiid.229974
+        - https://vuldb.com/?id.229974
+    - id: CVE-2023-30851
+      description: Cilium is a networking, observability, and security solution with an eBPF-based dataplane. This issue only impacts users who have a HTTP policy that applies to multiple `toEndpoints` AND have an allow-all rule in place that affects only one of those endpoints. In such cases, a wildcard rule will be appended to the set of HTTP rules, which could cause bypass of HTTP policies. This issue has been patched in Cilium 1.11.16, 1.12.9, and 1.13.2.
+      published: 2023-05-25T18:15:10.240
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/cilium/cilium/releases/tag/v1.11.16
+        - https://github.com/cilium/cilium/releases/tag/v1.12.9
+        - https://github.com/cilium/cilium/releases/tag/v1.13.2
+        - https://github.com/cilium/cilium/security/advisories/GHSA-2h44-x2wx-49f4
+    - id: CVE-2023-25439
+      description: Stored Cross Site Scripting (XSS) vulnerability in Square Pig FusionInvoice 2023-1.0, allows attackers to execute arbitrary code via the description or content fields to the expenses, tasks, and customer details.
+      published: 2023-05-25T20:15:09.280
+      severity: ""
+      privileges: ""
+      references:
+        - https://packetstormsecurity.com/files/172556/FusionInvoice-2023-1.0-Cross-Site-Scripting.html
+    - id: CVE-2023-2804
+      description: A heap-based buffer overflow issue was discovered in libjpeg-turbo in h2v2_merged_upsample_internal() function of jdmrgext.c file. The vulnerability can only be exploited with 12-bit data precision for which the range of the sample data type exceeds the valid sample range, hence, an attacker could craft a 12-bit lossless JPEG image that contains out-of-range 12-bit samples. An application attempting to decompress such image using merged upsampling would lead to segmentation fault or buffer overflows, causing an application to crash.
+      published: 2023-05-25T22:15:09.443
+      severity: ""
+      privileges: ""
+      references:
+        - https://access.redhat.com/security/cve/CVE-2023-2804
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2208447
+        - https://github.com/libjpeg-turbo/libjpeg-turbo/commit/9f756bc67a84d4566bf74a0c2432aa55da404021
+        - https://github.com/libjpeg-turbo/libjpeg-turbo/issues/668#issuecomment-1492586118
+        - https://github.com/libjpeg-turbo/libjpeg-turbo/issues/675
+    - id: CVE-2023-1588
+      description: '** REJECT ** This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.'
+      published: 2023-05-25T08:15:09.963
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-2255
+      description: 'Improper access control in editor components of The Document Foundation LibreOffice allowed an attacker to craft a document that would cause external links to be loaded without prompt. In the affected versions of LibreOffice documents that used "floating frames" linked to external files, would load the contents of those frames without prompting the user for permission to do so. This was inconsistent with the treatment of other linked content in LibreOffice. This issue affects: The Document Foundation LibreOffice 7.4 versions prior to 7.4.7; 7.5 versions prior to 7.5.3.'
+      published: 2023-05-25T20:15:09.350
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.libreoffice.org/about-us/security/advisories/CVE-2023-2255
+    - id: CVE-2023-33263
+      description: 'In WFTPD 3.25, usernames and password hashes are stored in an openly viewable wftpd.ini configuration file within the WFTPD directory. NOTE: this is a product from 2006.'
+      published: 2023-05-25T20:15:09.447
+      severity: ""
+      privileges: ""
+      references:
+        - https://packetstormsecurity.com/files/172560/WFTPD-3.25-Credential-Disclosure.html
+    - id: CVE-2023-33278
+      description: In the Store Commander scexportcustomers module for PrestaShop through 3.6.1, sensitive SQL calls can be executed with a trivial HTTP request and exploited to forge a blind SQL injection.
+      published: 2023-05-25T20:15:09.500
+      severity: ""
+      privileges: ""
+      references:
+        - https://friends-of-presta.github.io/security-advisories/modules/2023/05/25/scexportcustomers.html
+        - https://www.storecommander.com/en/addons/480-customer-export-pro.html
+    - id: CVE-2023-33279
+      description: In the Store Commander scfixmyprestashop module through 2023-05-09 for PrestaShop, sensitive SQL calls can be executed with a trivial HTTP request and exploited to forge a blind SQL injection.
+      published: 2023-05-25T20:15:09.570
+      severity: ""
+      privileges: ""
+      references:
+        - https://friends-of-presta.github.io/security-advisories/modules/2023/05/25/scfixmyprestashop.html
+    - id: CVE-2023-33280
+      description: In the Store Commander scquickaccounting module for PrestaShop through 3.7.3, multiple sensitive SQL calls can be executed with a trivial HTTP request and exploited to forge a blind SQL injection.
+      published: 2023-05-25T20:15:09.633
+      severity: ""
+      privileges: ""
+      references:
+        - https://friends-of-presta.github.io/security-advisories/modules/2023/05/25/scquickaccounting.html
+        - https://www.storecommander.com/en/addons/440-order-export-pro.html
+    - id: CVE-2023-27529
+      description: Wacom Tablet Driver installer prior to 6.4.2-1 (for macOS) contains an improper link resolution before file access vulnerability. When a user is tricked to execute a small malicious script before executing the affected version of the installer, arbitrary code may be executed with the root privilege.
+      published: 2023-05-25T10:15:09.703
+      severity: ""
+      privileges: ""
+      references:
+        - https://jvn.jp/en/jp/JVN90278893/
+        - https://www.wacom.com/en-us/support/product-support/drivers
+    - id: CVE-2023-0950
+      description: 'Improper Validation of Array Index vulnerability in the spreadsheet component of The Document Foundation LibreOffice allows an attacker to craft a spreadsheet document that will cause an array index underflow when loaded. In the affected versions of LibreOffice certain malformed spreadsheet formulas, such as AGGREGATE, could be created with less parameters passed to the formula interpreter than it expected, leading to an array index underflow, in which case there is a risk that arbitrary code could be executed. This issue affects: The Document Foundation LibreOffice 7.4 versions prior to 7.4.6; 7.5 versions prior to 7.5.1.'
+      published: 2023-05-25T20:15:09.207
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.libreoffice.org/about-us/security/advisories/CVE-2023-0950
+    - id: CVE-2023-33751
+      description: A stored cross-site scripting (XSS) vulnerability in mipjz v5.0.5 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the name parameter at /app/tag/controller/ApiAdminTagCategory.php.
+      published: 2023-05-25T17:15:12.263
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/sansanyun/mipjz/issues/14
+    - id: CVE-2023-33750
+      description: A stored cross-site scripting (XSS) vulnerability in mipjz v5.0.5 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Description parameter at /index.php?s=/article/ApiAdminArticle/itemAdd.
+      published: 2023-05-25T17:15:12.110
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/sansanyun/mipjz/issues/15
+    - id: CVE-2023-28370
+      description: Open redirect vulnerability in Tornado versions 6.3.1 and earlier allows a remote unauthenticated attacker to redirect a user to an arbitrary web site and conduct a phishing attack by having user access a specially crafted URL.
+      published: 2023-05-25T10:15:09.750
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/tornadoweb/tornado/releases/tag/v6.3.2
+        - https://jvn.jp/en/jp/JVN45127776/
+    - id: CVE-2023-33356
+      description: IceCMS v1.0.0 is vulnerable to Cross Site Scripting (XSS).
+      published: 2023-05-25T14:15:11.030
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Thecosy/IceCMS/issues/8
+    - id: CVE-2023-33355
+      description: IceCMS v1.0.0 has Insecure Permissions. There is unauthorized access to the API, resulting in the disclosure of sensitive information.
+      published: 2023-05-25T14:15:10.850
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Thecosy/IceCMS/issues/7
+    - id: CVE-2023-31594
+      description: IC Realtime ICIP-P2012T 2.420 is vulnerable to Incorrect Access Control via an exposed HTTP channel using VLC network.
+      published: 2023-05-25T01:15:41.833
+      severity: ""
+      privileges: ""
+      references:
+        - http://ic.com
+        - https://github.com/Yozarseef95/CVE-2023-31594
+    - id: CVE-2022-46907
+      description: A carefully crafted request on several JSPWiki plugins could trigger an XSS vulnerability on Apache JSPWiki, which could allow the attacker to execute javascript in the victim's browser and get some sensitive information about the victim.  Apache JSPWiki users should upgrade to 2.12.0 or later.
+      published: 2023-05-25T07:15:08.620
+      severity: ""
+      privileges: ""
+      references:
+        - http://www.openwall.com/lists/oss-security/2023/05/25/1
+        - https://lists.apache.org/thread/1m0mkq2nttx8tn94m11mytn4f0tv1504
+    - id: CVE-2023-31861
+      description: ZLMediaKit 4.0 is vulnerable to Directory Traversal.
+      published: 2023-05-25T02:15:08.820
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/nbb651/5aa72867fc1df3ef52e690b293964aac
+        - https://github.com/nbb651/CVE-ZLMediaKit/blob/main/README.md
