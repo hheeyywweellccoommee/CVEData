@@ -1,0 +1,258 @@
+data:
+    - id: CVE-2023-33926
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Supsystic Easy Google Maps plugin <= 1.11.7 versions.
+      published: 2023-05-28T20:15:09.337
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/google-maps-easy/wordpress-easy-google-maps-plugin-1-11-7-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-33319
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in WooCommerce WooCommerce Follow-Up Emails (AutomateWoo) plugin <= 4.9.40 versions.
+      published: 2023-05-28T19:15:09.643
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/woocommerce-follow-up-emails/wordpress-woocommerce-follow-up-emails-plugin-4-9-40-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-2949
+      description: Cross-site Scripting (XSS) - Reflected in GitHub repository openemr/openemr prior to 7.0.1.
+      published: 2023-05-28T04:15:13.143
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/openemr/openemr/commit/af1ecf78d1342519791bda9d3079e88f7d859015
+        - https://huntr.dev/bounties/3842486f-38b1-4150-9f78-b81d0ae580c4
+    - id: CVE-2023-2948
+      description: Cross-site Scripting (XSS) - Generic in GitHub repository openemr/openemr prior to 7.0.1.
+      published: 2023-05-28T04:15:12.117
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/openemr/openemr/commit/af1ecf78d1342519791bda9d3079e88f7d859015
+        - https://huntr.dev/bounties/2393e4d9-9e9f-455f-bf50-f20f77b0a64d
+    - id: CVE-2023-32800
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in One Rank Math SEO PRO plugin <= 3.0.35 versions.
+      published: 2023-05-28T19:15:09.290
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/seo-by-rank-math-pro/wordpress-rank-math-seo-pro-plugin-3-0-35-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-33326
+      description: Unauth. Reflected (XSS) Cross-Site Scripting (XSS) vulnerability in EventPrime plugin <= 2.8.6 versions.
+      published: 2023-05-28T18:15:09.847
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/eventprime-event-calendar-management/wordpress-eventprime-plugin-2-8-6-reflected-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-33332
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in WooCommerce Product Vendors plugin <= 2.1.76 versions.
+      published: 2023-05-28T19:15:09.717
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/woocommerce-product-vendors/wordpress-woocommerce-product-vendors-plugin-2-1-76-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-33309
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Awesome Motive Duplicator Pro plugin <= 4.5.11 versions.
+      published: 2023-05-28T18:15:09.640
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/duplicator-pro/wordpress-duplicator-pro-plugin-4-5-11-reflected-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-33212
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Crocoblock JetFormBuilder — Dynamic Blocks Form Builder plugin <= 3.0.6 versions.
+      published: 2023-05-28T18:15:09.560
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/jetformbuilder/wordpress-jetformbuilder-plugin-3-0-6-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-33316
+      description: Cross-Site Request Forgery (CSRF) vulnerability in WooCommerce WooCommerce Follow-Up Emails (AutomateWoo) plugin <= 4.9.40 versions.
+      published: 2023-05-28T19:15:09.573
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/woocommerce-follow-up-emails/wordpress-woocommerce-follow-up-emails-plugin-4-9-40-multiple-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-33314
+      description: Cross-Site Request Forgery (CSRF) vulnerability in realmag777 BEAR plugin <= 1.1.3.1 versions.
+      published: 2023-05-28T18:15:09.710
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/woo-bulk-editor/wordpress-bear-plugin-1-1-3-1-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-33315
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Stephen Darlington, Wandle Software Limited Smart App Banner plugin <= 1.1.2 versions.
+      published: 2023-05-28T18:15:09.783
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/smart-app-banner/wordpress-smart-app-banner-plugin-1-1-2-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2022-36345
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Metagauss Download Plugin <= 2.0.4 versions.
+      published: 2023-05-28T20:15:09.240
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/download-plugin/wordpress-download-plugin-2-0-4-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-33313
+      description: Cross-Site Request Forgery (CSRF) vulnerability in ThemeinProgress WIP Custom Login plugin <= 1.2.9 versions.
+      published: 2023-05-28T19:15:09.503
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/wip-custom-login/wordpress-wip-custom-login-plugin-1-2-9-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-33931
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Ciprian Popescu YouTube Playlist Player plugin <= 4.6.4 versions.
+      published: 2023-05-28T18:15:09.997
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/youtube-playlist-player/wordpress-youtube-playlist-player-plugin-4-6-4-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2021-4336
+      description: A vulnerability was found in ITRS Group monitor-ninja up to 2021.11.1. It has been rated as critical. Affected by this issue is some unknown functionality of the file modules/reports/models/scheduled_reports.php. The manipulation leads to sql injection. Upgrading to version 2021.11.30 is able to address this issue. The name of the patch is 6da9080faec9bca1ca5342386c0421dca0a6c0cc. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-230084.
+      published: 2023-05-28T22:15:09.337
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/ITRS-Group/monitor-ninja/commit/6da9080faec9bca1ca5342386c0421dca0a6c0cc
+        - https://github.com/ITRS-Group/monitor-ninja/releases/tag/v2021.11.30
+        - https://vuldb.com/?ctiid.230084
+        - https://vuldb.com/?id.230084
+    - id: CVE-2023-2951
+      description: A vulnerability classified as critical has been found in code-projects Bus Dispatch and Information System 1.0. Affected is an unknown function of the file delete_bus.php. The manipulation of the argument busid leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-230112.
+      published: 2023-05-28T06:15:13.013
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/F1owerSugarzzz/Commit-Vulnerability-Cve/blob/main/Bus%20Dispatch%20and%20Information%20System%20in%20delete_bus%20has%20Sql%20injection%20vulnerabilities.pdf
+        - https://vuldb.com/?ctiid.230112
+        - https://vuldb.com/?id.230112
+    - id: CVE-2023-2950
+      description: Improper Authorization in GitHub repository openemr/openemr prior to 7.0.1.
+      published: 2023-05-28T04:15:14.513
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/openemr/openemr/commit/abee8d2606c706176818de25eb88a2d08b8f7fa4
+        - https://huntr.dev/bounties/612d13cf-2ef9-44ea-b8fb-e797948a9a86
+    - id: CVE-2023-28785
+      description: 'Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in Yoast Yoast SEO: Local plugin <= 14.9 versions.'
+      published: 2023-05-28T19:15:09.207
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/wpseo-local/wordpress-yoast-seo-local-plugin-14-9-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2014-125101
+      description: A vulnerability classified as critical has been found in Portfolio Gallery Plugin up to 1.1.8 on WordPress. This affects an unknown part. The manipulation leads to sql injection. It is possible to initiate the attack remotely. Upgrading to version 1.1.9 is able to address this issue. The name of the patch is 58ed88243e17df766036f4857041edaf358076d3. It is recommended to upgrade the affected component. The identifier VDB-230085 was assigned to this vulnerability.
+      published: 2023-05-28T13:15:09.347
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/wp-plugins/portfolio-gallery/commit/58ed88243e17df766036f4857041edaf358076d3
+        - https://vuldb.com/?ctiid.230085
+        - https://vuldb.com/?id.230085
+    - id: CVE-2023-33311
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in CRM Perks Contact Form Entries plugin <= 1.3.0 versions.
+      published: 2023-05-28T19:15:09.427
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/contact-form-entries/wordpress-contact-form-entries-plugin-1-3-0-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2015-10106
+      description: A vulnerability classified as critical was found in mback2k mh_httpbl Extension up to 1.1.7 on TYPO3. This vulnerability affects the function moduleContent of the file mod1/index.php. The manipulation leads to sql injection. The attack can be initiated remotely. Upgrading to version 1.1.8 is able to address this issue. The name of the patch is 429f50f4e4795b20dae06735b41fb94f010722bf. It is recommended to upgrade the affected component. VDB-230086 is the identifier assigned to this vulnerability.
+      published: 2023-05-28T13:15:09.850
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/mback2k/mh_httpbl/commit/429f50f4e4795b20dae06735b41fb94f010722bf
+        - https://github.com/mback2k/mh_httpbl/releases/tag/mh_httpbl_1.1.8_security
+        - https://typo3.org/article/typo3-ext-sa-2015-021
+        - https://vuldb.com/?ctiid.230086
+        - https://vuldb.com/?id.230086
+    - id: CVE-2023-33216
+      description: 'Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in gVectors Team WooDiscuz – WooCommerce Comments woodiscuz-woocommerce-comments allows Stored XSS.This issue affects WooDiscuz – WooCommerce Comments: from n/a through 2.2.9.'
+      published: 2023-05-28T17:15:09.020
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/woodiscuz-woocommerce-comments/wordpress-woodiscuz-woocommerce-comments-plugin-2-2-9-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-33211
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in André Bräkling WP-Matomo Integration (WP-Piwik) plugin <= 1.0.27 versions.
+      published: 2023-05-28T19:15:09.357
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/wp-piwik/wordpress-wp-matomo-integration-wp-piwik-plugin-1-0-27-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-33328
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in PluginOps MailChimp Subscribe Form plugin <= 4.0.9.1 versions.
+      published: 2023-05-28T18:15:09.920
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/mailchimp-subscribe-sm/wordpress-pluginops-optin-builder-plugin-4-0-9-1-cross-site-scripting-xss?_s_id=cve
+    - id: CVE-2023-32958
+      description: Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Nose Graze Novelist plugin <= 1.2.0 versions.
+      published: 2023-05-28T18:15:09.477
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://patchstack.com/database/vulnerability/novelist/wordpress-novelist-plugin-1-2-0-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-33291
+      description: In ebankIT 6, the public endpoints /public/token/Email/generate and /public/token/SMS/generate allow generation of OTP messages to any e-mail address or phone number without validation. (It cannot be exploited with e-mail addresses or phone numbers that are registered in the application.)
+      published: 2023-05-28T22:15:09.453
+      severity: ""
+      privileges: ""
+      references:
+        - http://packetstormsecurity.com/files/172476/eBankIT-6-Arbitrary-OTP-Generation.html
+        - https://www.ebankit.com/digital-banking-platform
+    - id: CVE-2023-31873
+      description: Gin 0.7.4 allows execution of arbitrary code when a crafted file is opened, e.g., via require('child_process').
+      published: 2023-05-28T23:15:09.517
+      severity: ""
+      privileges: ""
+      references:
+        - http://packetstormsecurity.com/files/172530/Gin-Markdown-Editor-0.7.4-Arbitrary-Code-Execution.html
+    - id: CVE-2023-32762
+      description: An issue was discovered in Qt before 5.15.14, 6.x before 6.2.9, and 6.3.x through 6.5.x before 6.5.1. Qt Network incorrectly parses the strict-transport-security (HSTS) header, allowing unencrypted connections to be established, even when explicitly prohibited by the server. This happens if the case used for this header does not exactly match.
+      published: 2023-05-28T23:15:09.570
+      severity: ""
+      privileges: ""
+      references:
+        - https://codereview.qt-project.org/c/qt/qtbase/+/476140
+        - https://github.com/qt/qtbase/commit/1b736a815be0222f4b24289cf17575fc15707305
+        - https://lists.qt-project.org/pipermail/announce/2023-May/000414.html
+    - id: CVE-2023-32763
+      description: An issue was discovered in Qt before 5.15.15, 6.x before 6.2.9, and 6.3.x through 6.5.x before 6.5.1. When a SVG file with an image inside it is rendered, a QTextLayout buffer overflow can be triggered.
+      published: 2023-05-28T23:15:09.620
+      severity: ""
+      privileges: ""
+      references:
+        - https://codereview.qt-project.org/c/qt/qtbase/+/476125
+        - https://lists.qt-project.org/pipermail/announce/2023-May/000413.html
+    - id: CVE-2023-29380
+      description: Warpinator before 1.6.0 allows remote file deletion via directory traversal in top_dir_basenames.
+      published: 2023-05-29T00:15:09.520
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/linuxmint/warpinator/compare/1.4.5...1.6.0
+        - https://www.openwall.com/lists/oss-security/2023/04/26/1
+    - id: CVE-2023-30350
+      description: FS S3900-24T4S devices allow authenticated attackers with guest access to escalate their privileges and reset the admin password.
+      published: 2023-05-29T00:15:09.773
+      severity: ""
+      privileges: ""
+      references:
+        - http://packetstormsecurity.com/files/172124/FS-S3900-24T4S-Privilege-Escalation.html
+    - id: CVE-2023-30570
+      description: pluto in Libreswan before 4.11 allows a denial of service (responder SPI mishandling and daemon crash) via unauthenticated IKEv1 Aggressive Mode packets. The earliest affected version is 3.28.
+      published: 2023-05-29T00:15:09.820
+      severity: ""
+      privileges: ""
+      references:
+        - https://libreswan.org/security/CVE-2023-30570/CVE-2023-30570.txt
+    - id: CVE-2023-31874
+      description: Yank Note (YN) 3.52.1 allows execution of arbitrary code when a crafted file is opened, e.g., via nodeRequire('child_process').
+      published: 2023-05-29T00:15:09.867
+      severity: ""
+      privileges: ""
+      references:
+        - http://packetstormsecurity.com/files/172535/Yank-Note-3.52.1-Arbitrary-Code-Execution.html
