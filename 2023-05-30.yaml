@@ -1,0 +1,718 @@
+data:
+    - id: CVE-2023-27613
+      description: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in MonitorClick Forms Ada – Form Builder plugin <= 1.0 versions.
+      published: 2023-05-29T15:15:09.493
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/forms-ada-form-builder/wordpress-forms-ada-plugin-1-0-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2023-32687
+      description: tgstation-server is a toolset to manage production BYOND servers. Starting in version 4.7.0 and prior to 5.12.1, instance users with the list chat bots permission can read chat bot connections strings without the associated permission. This issue is patched in version 5.12.1. As a workaround, remove the list chat bots permission from users that should not have the ability to view connection strings. Invalidate any credentials previously stored for safety.
+      published: 2023-05-29T21:15:10.053
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/tgstation/tgstation-server/pull/1487
+        - https://github.com/tgstation/tgstation-server/releases/tag/tgstation-server-v5.12.1
+        - https://github.com/tgstation/tgstation-server/security/advisories/GHSA-rv76-495p-g7cp
+    - id: CVE-2022-45372
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Codeixer Product Gallery Slider for WooCommerce plugin <= 2.2.8 versions.
+      published: 2023-05-29T01:15:11.800
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/woo-product-gallery-slider/wordpress-product-gallery-slider-for-woocommerce-plugin-2-2-8-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2022-33974
+      description: Cross-Site Request Forgery (CSRF) vulnerability in Smash Balloon Custom Twitter Feeds (Tweets Widget) plugin <= 1.8.4 versions.
+      published: 2023-05-29T01:15:11.597
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://patchstack.com/database/vulnerability/custom-twitter-feeds/wordpress-custom-twitter-feeds-plugin-1-8-4-cross-site-request-forgery-csrf-vulnerability?_s_id=cve
+    - id: CVE-2023-2954
+      description: Cross-site Scripting (XSS) - Stored in GitHub repository liangliangyy/djangoblog prior to master.
+      published: 2023-05-29T07:15:08.710
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/liangliangyy/djangoblog/commit/c2bfdb18c5f32b13ea4b50aa689b8ea4beb38719
+        - https://huntr.dev/bounties/47f08086-aaae-4ca7-b0ca-24c616d3ad7d
+    - id: CVE-2023-2955
+      description: A vulnerability, which was classified as critical, was found in SourceCodester Students Online Internship Timesheet System 1.0. Affected is an unknown function of the file rendered_report.php of the component GET Parameter Handler. The manipulation of the argument sid leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-230142 is the identifier assigned to this vulnerability.
+      published: 2023-05-29T07:15:09.820
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/MiserablefaithL/CVERequestReport/blob/main/SQL.md
+        - https://vuldb.com/?ctiid.230142
+        - https://vuldb.com/?id.230142
+    - id: CVE-2023-2808
+      description: Mattermost fails to normalize UTF confusable characters when determining if a preview should be generated for a hyperlink, allowing an attacker to trigger link preview on a disallowed domain using a specially crafted link.
+      published: 2023-05-29T10:15:10.083
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://mattermost.com/security-updates/
+    - id: CVE-2023-23699
+      description: Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in Chris Reynolds Progress Bar plugin <= 2.2.1 versions.
+      published: 2023-05-29T15:15:09.393
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://patchstack.com/database/vulnerability/progress-bar/wordpress-progress-bar-plugin-2-1-6-cross-site-scripting-xss-vulnerability?_s_id=cve
+    - id: CVE-2014-125102
+      description: A vulnerability classified as problematic was found in Bestwebsoft Relevant Plugin up to 1.0.7 on WordPress. Affected by this vulnerability is an unknown functionality of the component Thumbnail Handler. The manipulation leads to information disclosure. The attack can be launched remotely. Upgrading to version 1.0.8 is able to address this issue. The name of the patch is 860d1891025548cf0f5f97364c1f51a888f523c3. It is recommended to upgrade the affected component. The identifier VDB-230113 was assigned to this vulnerability.
+      published: 2023-05-29T23:15:09.367
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/wp-plugins/relevant/commit/860d1891025548cf0f5f97364c1f51a888f523c3
+        - https://vuldb.com/?ctiid.230113
+        - https://vuldb.com/?id.230113
+    - id: CVE-2023-2962
+      description: A vulnerability, which was classified as critical, has been found in SourceCodester Faculty Evaluation System 1.0. Affected by this issue is some unknown functionality of the file index.php?page=edit_user. The manipulation of the argument id leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-230150 is the identifier assigned to this vulnerability.
+      published: 2023-05-29T14:15:09.790
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/JinYunlei/bug_report/blob/main/vendors/oretnom23/faculty-evaluation-system/SQLi-1.md
+        - https://vuldb.com/?ctiid.230150
+        - https://vuldb.com/?id.230150
+    - id: CVE-2023-32072
+      description: Tuleap is an open source tool for end to end traceability of application and system developments. Tuleap Community Edition prior to version 14.8.99.60 and Tuleap Enterprise edition prior to 14.8-3 and 14.7-7, the logs of the triggered Jenkins job URLs are not properly escaped. A malicious Git administrator can setup a malicious Jenkins hook to make a victim, also a Git administrator, execute uncontrolled code. Tuleap Community Edition 14.8.99.60, Tuleap Enterprise Edition 14.8-3, and Tuleap Enterprise Edition 14.7-7 contain a patch for this issue.
+      published: 2023-05-29T21:15:09.893
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/Enalean/tuleap/commit/6840529def97f564844e810e5a7c5bf837cf58d5
+        - https://github.com/Enalean/tuleap/security/advisories/GHSA-6prc-j58r-fmjq
+        - https://tuleap.net/plugins/git/tuleap/tuleap/stable?a=commit&h=6840529def97f564844e810e5a7c5bf837cf58d5
+        - https://tuleap.net/plugins/tracker/?aid=31929
+    - id: CVE-2023-30571
+      description: Libarchive through 3.6.2 can cause directories to have world-writable permissions. The umask() call inside archive_write_disk_posix.c changes the umask of the whole process for a very short period of time; a race condition with another thread can lead to a permanent umask 0 setting. Such a race condition could lead to implicit directory creation with permissions 0777 (without the sticky bit), which means that any low-privileged local user can delete and rename files inside those directories.
+      published: 2023-05-29T20:15:09.513
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/libarchive/libarchive/issues/1876
+        - https://groups.google.com/g/libarchive-announce
+    - id: CVE-2022-32701
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.233
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32670
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:10.843
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-24599
+      description: OX App Suite before backend 7.10.6-rev37 allows authenticated users to change the appointments of arbitrary users via conflicting ID numbers, aka "ID confusion."
+      published: 2023-05-29T03:15:09.543
+      severity: ""
+      privileges: ""
+      references:
+        - http://seclists.org/fulldisclosure/2023/May/3
+        - https://open-xchange.com
+    - id: CVE-2023-24601
+      description: OX App Suite before frontend 7.10.6-rev24 allows XSS via a non-app deeplink such as the jslob API's registry sub-tree.
+      published: 2023-05-29T03:15:09.663
+      severity: ""
+      privileges: ""
+      references:
+        - http://seclists.org/fulldisclosure/2023/May/3
+        - https://open-xchange.com
+    - id: CVE-2023-24602
+      description: OX App Suite before frontend 7.10.6-rev24 allows XSS via data to the Tumblr portal widget, such as a post title.
+      published: 2023-05-29T03:15:09.717
+      severity: ""
+      privileges: ""
+      references:
+        - http://seclists.org/fulldisclosure/2023/May/3
+        - https://open-xchange.com
+    - id: CVE-2023-24603
+      description: OX App Suite before backend 7.10.6-rev37 does not check size limits when downloading, e.g., potentially allowing a crafted iCal feed to provide an unlimited amount of data.
+      published: 2023-05-29T03:15:09.773
+      severity: ""
+      privileges: ""
+      references:
+        - http://seclists.org/fulldisclosure/2023/May/3
+        - https://open-xchange.com
+    - id: CVE-2023-24604
+      description: OX App Suite before backend 7.10.6-rev37 does not check HTTP header lengths when downloading, e.g., potentially allowing a crafted iCal feed to provide an unlimited amount of header data.
+      published: 2023-05-29T03:15:09.833
+      severity: ""
+      privileges: ""
+      references:
+        - http://seclists.org/fulldisclosure/2023/May/3
+        - https://open-xchange.com
+    - id: CVE-2023-24605
+      description: OX App Suite before backend 7.10.6-rev37 does not enforce 2FA for all endpoints, e.g., reading from a drive, reading contact data, and renaming tokens.
+      published: 2023-05-29T03:15:09.890
+      severity: ""
+      privileges: ""
+      references:
+        - http://seclists.org/fulldisclosure/2023/May/3
+        - https://open-xchange.com
+    - id: CVE-2022-32667
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:10.693
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32668
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:10.757
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32669
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:10.800
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32708
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.553
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32671
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:10.890
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32672
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:10.937
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32673
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:10.983
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32674
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.027
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32675
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.070
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32676
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.117
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32677
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.163
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32678
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.210
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32679
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.253
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32709
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.600
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32681
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.343
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32682
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.387
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32683
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.430
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32684
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.473
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32685
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.517
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32686
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.567
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32687
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.617
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32688
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.670
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32689
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.717
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32690
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.760
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32691
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.803
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32692
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.847
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32693
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.890
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32694
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.930
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32695
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.970
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32696
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.013
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32697
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.053
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32707
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.500
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32699
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.140
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32700
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.190
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-24598
+      description: OX App Suite before backend 7.10.6-rev37 has an information leak in the handling of distribution lists, e.g., partial disclosure of the private contacts of another user.
+      published: 2023-05-29T03:15:09.483
+      severity: ""
+      privileges: ""
+      references:
+        - http://seclists.org/fulldisclosure/2023/May/3
+        - https://open-xchange.com
+    - id: CVE-2022-32702
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.283
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32703
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.327
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32704
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.373
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32705
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.417
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32706
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.457
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32698
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.097
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-24600
+      description: OX App Suite before backend 7.10.6-rev37 allows authenticated users to bypass access controls (for reading contacts) via a move to their own address book.
+      published: 2023-05-29T03:15:09.603
+      severity: ""
+      privileges: ""
+      references:
+        - http://seclists.org/fulldisclosure/2023/May/3
+        - https://open-xchange.com
+    - id: CVE-2022-32680
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:11.300
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32710
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.647
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32711
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.693
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32712
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.737
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32713
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.783
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32714
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.823
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32715
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.863
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32716
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.907
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32717
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.953
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32718
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:12.993
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32719
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.033
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32720
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.077
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32721
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.117
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32722
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.157
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32723
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.200
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32724
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.243
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32725
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.287
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32726
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.330
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32727
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.377
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32728
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.417
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32729
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.463
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32730
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.507
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32731
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.547
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32732
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.587
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32733
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.630
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32734
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.673
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32735
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.713
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32736
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.753
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32737
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.793
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-32738
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2022. Notes: none.'
+      published: 2023-05-29T18:15:13.830
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2019-19791
+      description: In LemonLDAP::NG (aka lemonldap-ng) before 2.0.7, the default Apache HTTP Server configuration does not properly restrict access to SOAP/REST endpoints (when some LemonLDAP::NG setup options are used). For example, an attacker can insert index.fcgi/index.fcgi into a URL to bypass a Require directive.
+      published: 2023-05-29T19:15:09.347
+      severity: ""
+      privileges: ""
+      references:
+        - https://gitlab.ow2.org/lemonldap-ng/lemonldap-ng/issues/1943
+        - https://projects.ow2.org/view/lemonldap-ng/lemonldap-ng-2-0-7-is-out
+    - id: CVE-2020-29547
+      description: An issue was discovered in Citadel through webcit-926. Meddler-in-the-middle attackers can pipeline commands after POP3 STLS, IMAP STARTTLS, or SMTP STARTTLS commands, injecting cleartext commands into an encrypted user session. This can lead to credential disclosure.
+      published: 2023-05-29T19:15:09.413
+      severity: ""
+      privileges: ""
+      references:
+        - http://uncensored.citadel.org/dotgoto?room=Citadel%20Security
+        - http://uncensored.citadel.org/msg/4576039
+    - id: CVE-2021-27825
+      description: A directory traversal vulnerability on Mercury MAC1200R devices allows attackers to read arbitrary files via a web-static/ URL.
+      published: 2023-05-29T19:15:09.477
+      severity: ""
+      privileges: ""
+      references:
+        - http://packetstormsecurity.com/files/171771/MAC-1200R-Directory-Traversal.html
+        - https://www.mercurycom.com.cn/product-1-1.html
+    - id: CVE-2021-37845
+      description: An issue was discovered in Citadel through webcit-932. A meddler-in-the-middle attacker can fixate their own session during the cleartext phase before a STARTTLS command (a violation of "The STARTTLS command is only valid in non-authenticated state." in RFC2595). This potentially allows an attacker to cause a victim's e-mail messages to be stored into an attacker's IMAP mailbox, but depends on details of the victim's client behavior.
+      published: 2023-05-29T19:15:09.527
+      severity: ""
+      privileges: ""
+      references:
+        - http://uncensored.citadel.org/dotgoto?room=Citadel%20Security
+        - https://nostarttls.secvuln.info/
+        - https://uncensored.citadel.org/msg/2099264259
+    - id: CVE-2022-24580
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2023-24580. Reason: This candidate is a duplicate of CVE-2023-24580. A typo caused the wrong ID to be used. Notes: All CVE users should reference CVE-2023-24580 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.'
+      published: 2023-05-29T20:15:09.413
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-24597
+      description: OX App Suite before frontend 7.10.6-rev24 allows the loading (without user consent) of an e-mail message's remote resources during printing.
+      published: 2023-05-29T02:15:09.233
+      severity: ""
+      privileges: ""
+      references:
+        - http://seclists.org/fulldisclosure/2023/May/3
+        - https://open-xchange.com
+    - id: CVE-2022-24627
+      description: An issue was discovered in AudioCodes Device Manager Express through 7.8.20002.47752. It is an unauthenticated SQL injection in the p parameter of the process_login.php login form.
+      published: 2023-05-29T21:15:09.423
+      severity: ""
+      privileges: ""
+      references:
+        - http://seclists.org/fulldisclosure/2023/Feb/12
+    - id: CVE-2022-24628
+      description: An issue was discovered in AudioCodes Device Manager Express through 7.8.20002.47752. It is authenticated SQL injection in the id parameter of IPPhoneFirmwareEdit.php.
+      published: 2023-05-29T21:15:09.477
+      severity: ""
+      privileges: ""
+      references:
+        - http://seclists.org/fulldisclosure/2023/Feb/12
+    - id: CVE-2022-24629
+      description: An issue was discovered in AudioCodes Device Manager Express through 7.8.20002.47752. Remote code execution can be achieved via directory traversal in the dir parameter of the file upload functionality of BrowseFiles.php. An attacker can upload a .php file to WebAdmin/admin/AudioCodes_files/ajax/.
+      published: 2023-05-29T21:15:09.523
+      severity: ""
+      privileges: ""
+      references:
+        - http://seclists.org/fulldisclosure/2023/Feb/12
+    - id: CVE-2022-24630
+      description: An issue was discovered in AudioCodes Device Manager Express through 7.8.20002.47752. BrowseFiles.php allows a ?cmd=ssh POST request with an ssh_command field that is executed.
+      published: 2023-05-29T21:15:09.573
+      severity: ""
+      privileges: ""
+      references:
+        - http://seclists.org/fulldisclosure/2023/Feb/12
+    - id: CVE-2022-24631
+      description: An issue was discovered in AudioCodes Device Manager Express through 7.8.20002.47752. It is stored XSS via the ajaxTenants.php desc parameter.
+      published: 2023-05-29T21:15:09.630
+      severity: ""
+      privileges: ""
+      references:
+        - http://seclists.org/fulldisclosure/2023/Feb/12
+    - id: CVE-2022-24632
+      description: An issue was discovered in AudioCodes Device Manager Express through 7.8.20002.47752. It is directory traversal during file download via the BrowseFiles.php view parameter.
+      published: 2023-05-29T21:15:09.697
+      severity: ""
+      privileges: ""
+      references:
+        - http://seclists.org/fulldisclosure/2023/Feb/12
+    - id: CVE-2022-41766
+      description: An issue was discovered in MediaWiki before 1.35.8, 1.36.x and 1.37.x before 1.37.5, and 1.38.x before 1.38.3. Upon an action=rollback operation, the alreadyrolled message can leak a user name (when the user has been revision deleted/suppressed).
+      published: 2023-05-29T21:15:09.757
+      severity: ""
+      privileges: ""
+      references:
+        - https://phabricator.wikimedia.org/T307278
+    - id: CVE-2023-30253
+      description: 'Dolibarr before 17.0.1 allows remote code execution by an authenticated user via an uppercase manipulation: <?PHP instead of <?php in injected data.'
+      published: 2023-05-29T21:15:09.813
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Dolibarr/dolibarr
+        - https://www.swascan.com/blog/
+        - https://www.swascan.com/security-advisory-dolibarr-17-0-0/
+    - id: CVE-2023-29079
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue in a customer-controlled product. Notes: none.'
+      published: 2023-05-29T01:15:12.027
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-29078
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue in a customer-controlled product. Notes: none.'
+      published: 2023-05-29T01:15:11.967
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-28153
+      description: An issue was discovered in the Kiddoware Kids Place Parental Control application before 3.8.50 for Android. The child can remove all restrictions temporarily without the parents noticing by rebooting into Android Safe Mode and disabling the "Display over other apps" permission.
+      published: 2023-05-29T01:15:11.907
+      severity: ""
+      privileges: ""
+      references:
+        - https://sec-consult.com/vulnerability-lab/advisory/multiple-vulnerabilities-in-kiddoware-kids-place-parental-control-android-app/
