@@ -1,0 +1,1321 @@
+data:
+    - id: CVE-2023-33189
+      description: Pomerium is an identity and context-aware access proxy. With specially crafted requests, incorrect authorization decisions may be made by Pomerium. This issue has been patched in versions 0.17.4, 0.18.1, 0.19.2, 0.20.1, 0.21.4 and 0.22.2.
+      published: 2023-05-30T06:16:37.937
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://github.com/pomerium/pomerium/commit/d315e683357a9b587ba9ef399a8813bcc52fdebb
+        - https://github.com/pomerium/pomerium/releases/tag/v0.17.4
+        - https://github.com/pomerium/pomerium/releases/tag/v0.18.1
+        - https://github.com/pomerium/pomerium/releases/tag/v0.19.2
+        - https://github.com/pomerium/pomerium/releases/tag/v0.20.1
+        - https://github.com/pomerium/pomerium/releases/tag/v0.21.4
+        - https://github.com/pomerium/pomerium/releases/tag/v0.22.2
+        - https://github.com/pomerium/pomerium/security/advisories/GHSA-pvrc-wvj2-f59p
+    - id: CVE-2023-33193
+      description: Emby Server is a user-installable home media server which stores and organizes a user's media files of virtually any format and makes them available for viewing at home and abroad on a broad range of client devices. This vulnerability may allow administrative access to an Emby Server system, depending on certain user account settings. By spoofing certain headers which are intended for interoperation with reverse proxy servers, it may be possible to affect the local/non-local network determination to allow logging in without password or to view a list of user accounts which may have no password configured. Impacted are all Emby Server system which are publicly accessible and where the administrator hasn't tightened the account login configuration for administrative users. This issue has been patched in Emby Server Beta version 4.8.31 and Emby Server version 4.7.12.
+      published: 2023-05-30T06:16:42.767
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://github.com/EmbySupport/security/security/advisories/GHSA-fffj-6fr6-3fgf
+    - id: CVE-2023-32692
+      description: CodeIgniter is a PHP full-stack web framework. This vulnerability allows attackers to execute arbitrary code when you use Validation Placeholders. The vulnerability exists in the Validation library, and validation methods in the controller and in-model validation are also vulnerable because they use the Validation library internally. This issue is patched in version 4.3.5.
+      published: 2023-05-30T04:15:10.097
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md
+        - https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-m6m8-6gq8-c9fj
+    - id: CVE-2023-33975
+      description: RIOT-OS, an operating system for Internet of Things (IoT) devices, contains a network stack with the ability to process 6LoWPAN frames. In version 2023.01 and prior, an attacker can send a crafted frame to the device resulting in an out of bounds write in the packet buffer. The overflow can be used to corrupt other packets and the allocator metadata. Corrupting a pointer will easily lead to denial of service. While carefully manipulating the allocator metadata gives an attacker the possibility to write data to arbitrary locations and thus execute arbitrary code. This issue is fixed in pull request 19680. As a workaround, disable support for fragmented IP datagrams.
+      published: 2023-05-30T18:15:10.433
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://github.com/RIOT-OS/RIOT/blob/f41b4b67b6affca0a8b32edced7f51088696869a/sys/net/gnrc/network_layer/sixlowpan/frag/rb/gnrc_sixlowpan_frag_rb.c#L320
+        - https://github.com/RIOT-OS/RIOT/blob/f41b4b67b6affca0a8b32edced7f51088696869a/sys/net/gnrc/network_layer/sixlowpan/frag/rb/gnrc_sixlowpan_frag_rb.c#L388
+        - https://github.com/RIOT-OS/RIOT/blob/f41b4b67b6affca0a8b32edced7f51088696869a/sys/net/gnrc/network_layer/sixlowpan/frag/rb/gnrc_sixlowpan_frag_rb.c#L463
+        - https://github.com/RIOT-OS/RIOT/blob/f41b4b67b6affca0a8b32edced7f51088696869a/sys/net/gnrc/network_layer/sixlowpan/frag/rb/gnrc_sixlowpan_frag_rb.c#L467
+        - https://github.com/RIOT-OS/RIOT/blob/f41b4b67b6affca0a8b32edced7f51088696869a/sys/net/gnrc/network_layer/sixlowpan/frag/rb/gnrc_sixlowpan_frag_rb.c#L480
+        - https://github.com/RIOT-OS/RIOT/commit/1aeb90ee5555ae78b567a6365ae4ab71bfd1404b
+        - https://github.com/RIOT-OS/RIOT/pull/19680
+        - https://github.com/RIOT-OS/RIOT/security/advisories/GHSA-f6ff-g7mh-58q4
+    - id: CVE-2023-33175
+      description: ToUI is a Python package for creating user interfaces (websites and desktop apps) from HTML. ToUI is using Flask-Caching (SimpleCache) to store user variables. Websites that use `Website.user_vars` property. It affects versions 2.0.1 to 2.4.0. This issue has been patched in version 2.4.1.
+      published: 2023-05-30T05:15:11.877
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://github.com/mubarakalmehairbi/ToUI/releases/tag/v2.4.1
+        - https://github.com/mubarakalmehairbi/ToUI/security/advisories/GHSA-hh7j-pg39-q563
+    - id: CVE-2023-26130
+      description: "Versions of the package yhirose/cpp-httplib before 0.12.4 are vulnerable to CRLF Injection when untrusted user input is used to set the content-type header in the HTTP .Patch, .Post, .Put and .Delete requests. This can lead to logical errors and other misbehaviors.\r\r**Note:** This issue is present due to an incomplete fix for [CVE-2020-11709](https://security.snyk.io/vuln/SNYK-UNMANAGED-YHIROSECPPHTTPLIB-2366507)."
+      published: 2023-05-30T05:15:10.640
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://gist.github.com/dellalibera/094aece17a86069a7d27f93c8aba2280
+        - https://github.com/yhirose/cpp-httplib/commit/5b397d455d25a391ba346863830c1949627b4d08
+        - https://github.com/yhirose/cpp-httplib/releases/tag/v0.12.4
+        - https://security.snyk.io/vuln/SNYK-UNMANAGED-YHIROSECPPHTTPLIB-5591194
+    - id: CVE-2023-32342
+      description: 'IBM GSKit could allow a remote attacker to obtain sensitive information, caused by a timing-based side channel in the RSA Decryption implementation. By sending an overly large number of trial messages for decryption, an attacker could exploit this vulnerability to obtain sensitive information.  IBM X-Force ID:  255828.'
+      published: 2023-05-30T22:15:10.677
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/255828
+    - id: CVE-2023-24825
+      description: RIOT-OS, an operating system for Internet of Things (IoT) devices, contains a network stack with the ability to process 6LoWPAN frames. Prior to version 2023.04, an attacker can send a crafted frame to the device to trigger a NULL pointer dereference leading to denial of service. This issue is fixed in version 2023.04. There are no known workarounds.
+      published: 2023-05-30T16:15:09.687
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/RIOT-OS/RIOT/blob/2022.10-branch/sys/net/gnrc/network_layer/sixlowpan/frag/rb/gnrc_sixlowpan_frag_rb.c#L416
+        - https://github.com/RIOT-OS/RIOT/blob/2022.10-branch/sys/net/gnrc/network_layer/sixlowpan/frag/rb/gnrc_sixlowpan_frag_rb.c#L429
+        - https://github.com/RIOT-OS/RIOT/blob/2022.10-branch/sys/net/gnrc/network_layer/sixlowpan/iphc/gnrc_sixlowpan_iphc.c#L729
+        - https://github.com/RIOT-OS/RIOT/blob/2022.10-branch/sys/net/gnrc/network_layer/sixlowpan/iphc/gnrc_sixlowpan_iphc.c#L761
+        - https://github.com/RIOT-OS/RIOT/blob/ccbb304eae7b59e8aca24a6ffd095b5b3f7720ee/sys/net/gnrc/pktbuf_static/gnrc_pktbuf_static.c#L169
+        - https://github.com/RIOT-OS/RIOT/commit/0c522075445a62ce3102e141573ecc2788521897
+        - https://github.com/RIOT-OS/RIOT/security/advisories/GHSA-xqm8-xj74-fjw2
+    - id: CVE-2023-2968
+      description: A remote attacker can trigger a denial of service in the socket.remoteAddress variable, by sending a crafted HTTP request. Usage of the undefined variable raises a TypeError exception.
+      published: 2023-05-30T18:15:09.997
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://research.jfrog.com/vulnerabilities/undefined-variable-usage-in-proxy-leads-to-remote-denial-of-service-xray-520917
+    - id: CVE-2023-24817
+      description: RIOT-OS, an operating system for Internet of Things (IoT) devices, contains a network stack with the ability to process 6LoWPAN frames. Prior to version 2023.04, an attacker can send a crafted frame to the device resulting in an integer underflow and out of bounds access in the packet buffer. Triggering the access at the right time will corrupt other packets or the allocator metadata. Corrupting a pointer will lead to denial of service. This issue is fixed in version 2023.04. As a workaround, disable SRH in the network stack.
+      published: 2023-05-30T16:15:09.607
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/RIOT-OS/RIOT/commit/34dc1757f5621be48e226cfebb2f4c63505b5360
+        - https://github.com/RIOT-OS/RIOT/security/advisories/GHSA-xjgw-7638-29g5
+    - id: CVE-2023-31185
+      description: ROZCOM server framework - Misconfiguration may allow information disclosure via an unspecified request.
+      published: 2023-05-30T20:15:10.533
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.gov.il/en/Departments/faq/cve_advisories
+    - id: CVE-2023-30196
+      description: Prestashop salesbooster <= 1.10.4 is vulnerable to Incorrect Access Control via modules/salesbooster/downloads/download.php.
+      published: 2023-05-30T12:15:09.677
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://friends-of-presta.github.io/security-advisories/modules/2023/05/22/salesbooster.html
+        - https://github.com/PrestaShop/PrestaShop/blob/6c05518b807d014ee8edb811041e3de232520c28/classes/Tools.php#L1247
+    - id: CVE-2023-33973
+      description: RIOT-OS, an operating system for Internet of Things (IoT) devices, contains a network stack with the ability to process 6LoWPAN frames. In versions 2023.01 and prior, an attacker can send a crafted frame which is forwarded by the device. During encoding of the packet a NULL pointer dereference occurs. This crashes the device leading to denial of service. A patch is available at pull request 19678. There are no known workarounds.
+      published: 2023-05-30T17:15:10.127
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/RIOT-OS/RIOT/blob/f41b4b67b6affca0a8b32edced7f51088696869a/sys/net/gnrc/network_layer/sixlowpan/iphc/gnrc_sixlowpan_iphc.c#L1067
+        - https://github.com/RIOT-OS/RIOT/blob/f41b4b67b6affca0a8b32edced7f51088696869a/sys/net/gnrc/network_layer/sixlowpan/iphc/gnrc_sixlowpan_iphc.c#L1495
+        - https://github.com/RIOT-OS/RIOT/blob/f41b4b67b6affca0a8b32edced7f51088696869a/sys/net/gnrc/network_layer/sixlowpan/iphc/gnrc_sixlowpan_iphc.c#L1511
+        - https://github.com/RIOT-OS/RIOT/blob/f41b4b67b6affca0a8b32edced7f51088696869a/sys/net/gnrc/network_layer/sixlowpan/iphc/gnrc_sixlowpan_iphc.c#L1644
+        - https://github.com/RIOT-OS/RIOT/blob/f41b4b67b6affca0a8b32edced7f51088696869a/sys/net/gnrc/network_layer/sixlowpan/iphc/gnrc_sixlowpan_iphc.c#L1655
+        - https://github.com/RIOT-OS/RIOT/commit/c9d7863e5664a169035038628029bb07e090c5ff
+        - https://github.com/RIOT-OS/RIOT/pull/19678
+        - https://github.com/RIOT-OS/RIOT/security/advisories/GHSA-r2pv-3jqc-vh7w
+    - id: CVE-2023-33974
+      description: RIOT-OS, an operating system for Internet of Things (IoT) devices, contains a network stack with the ability to process 6LoWPAN frames. In versions 2023.01 and prior, an attacker can send multiple crafted frames to the device to trigger a race condition. The race condition invalidates assumptions about the program state and leads to an invalid memory access resulting in denial of service. This issue is patched in pull request 19679. There are no known workarounds.
+      published: 2023-05-30T17:15:10.200
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/RIOT-OS/RIOT/blob/f41b4b67b6affca0a8b32edced7f51088696869a/sys/net/gnrc/network_layer/sixlowpan/frag/sfr/gnrc_sixlowpan_frag_sfr.c#L1717
+        - https://github.com/RIOT-OS/RIOT/blob/f41b4b67b6affca0a8b32edced7f51088696869a/sys/net/gnrc/network_layer/sixlowpan/frag/sfr/gnrc_sixlowpan_frag_sfr.c#L509
+        - https://github.com/RIOT-OS/RIOT/blob/f41b4b67b6affca0a8b32edced7f51088696869a/sys/net/gnrc/network_layer/sixlowpan/frag/sfr/gnrc_sixlowpan_frag_sfr.c#L617
+        - https://github.com/RIOT-OS/RIOT/blob/master/sys/net/gnrc/network_layer/sixlowpan/frag/sfr/gnrc_sixlowpan_frag_sfr.c#L1586
+        - https://github.com/RIOT-OS/RIOT/blob/master/sys/net/gnrc/network_layer/sixlowpan/frag/sfr/gnrc_sixlowpan_frag_sfr.c#L404
+        - https://github.com/RIOT-OS/RIOT/commit/31c6191f6196f1a05c9765cffeadba868e3b0723
+        - https://github.com/RIOT-OS/RIOT/pull/19679
+        - https://github.com/RIOT-OS/RIOT/security/advisories/GHSA-8m3w-mphf-wxm8
+    - id: CVE-2023-28079
+      description: PowerPath for Windows, versions 7.0, 7.1 & 7.2 contains Insecure File and Folder Permissions vulnerability. A regular user (non-admin) can exploit the weak folder and file permissions to escalate privileges and execute arbitrary code in the context of NT AUTHORITY\SYSTEM.
+      published: 2023-05-30T16:15:09.763
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.dell.com/support/kbdoc/en-us/000214248/dsa-2023-154-powerpath-windows-security-update-for-security-update-for-multiple-vulnerabilities
+    - id: CVE-2023-33186
+      description: Zulip is an open-source team collaboration tool with unique topic-based threading that combines the best of email and chat to make remote work productive and delightful. The main development branch of Zulip Server from May 2, 2023 and later, including beta versions 7.0-beta1 and 7.0-beta2, is vulnerable to a cross-site scripting vulnerability in tooltips on the message feed. An attacker who can send messages could maliciously craft a topic for the message, such that a victim who hovers the tooltip for that topic in their message feed triggers execution of JavaScript code controlled by the attacker.
+      published: 2023-05-30T06:16:36.237
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/zulip/zulip/commit/3ca131743b00f42bad8edbac4ef92656d954c629
+        - https://github.com/zulip/zulip/commit/903dbda79bd176702d3175a7c8a5450a64b6eccb
+        - https://github.com/zulip/zulip/pull/25370
+        - https://github.com/zulip/zulip/security/advisories/GHSA-4r83-8f94-hrph
+    - id: CVE-2023-30601
+      description: |-
+        Privilege escalation when enabling FQL/Audit logs allows user with JMX access to run arbitrary commands as the user running Apache Cassandra
+        This issue affects Apache Cassandra: from 4.0.0 through 4.0.9, from 4.1.0 through 4.1.1.
+
+        WORKAROUND
+        The vulnerability requires nodetool/JMX access to be exploitable, disable access for any non-trusted users.
+
+        MITIGATION
+        Upgrade to 4.0.10 or 4.1.2 and leave the new FQL/Auditlog configuration property allow_nodetool_archive_command as false.
+      published: 2023-05-30T08:15:10.450
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://lists.apache.org/thread/f74p9jdhmmp7vtrqd8lgm8bq3dhxl8vn
+    - id: CVE-2023-32696
+      description: CKAN is an open-source data management system for powering data hubs and data portals. Prior to versions 2.9.9 and 2.10.1, the `ckan` user (equivalent to www-data) owned code and configuration files in the docker container and the `ckan` user had the permissions to use sudo. These issues allowed for code execution or privilege escalation if an arbitrary file write bug was available. Versions 2.9.9, 2.9.9-dev, 2.10.1, and 2.10.1-dev contain a patch.
+      published: 2023-05-30T19:15:10.023
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/ckan/ckan-docker-base/commit/5483c46ce9b518a4e1b626ef7032cce2c1d75c7d
+        - https://github.com/ckan/ckan-docker-base/security/advisories/GHSA-c74x-xfvr-x5wg
+    - id: CVE-2023-24568
+      description: Dell NetWorker, contains an Improper Validation of Certificate with Host Mismatch vulnerability in Rabbitmq port which could disallow replacing CA signed certificates.
+      published: 2023-05-30T16:15:09.533
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.dell.com/support/kbdoc/en-us/000210963/dsa-2023-059-dell-networker-security-update-for-a-rabbitmq-vulnerability-related-to-improper-validation-of-hostname-in-rabbitmq-startup-script-which-fails-to-replace-ca-signed-certificates
+    - id: CVE-2023-33961
+      description: Leantime is a lean open source project management system. Starting in version 2.3.21, an authenticated user with commenting privileges can inject malicious Javascript into a comment. Once the malicious comment is loaded in the browser by a user, the malicious Javascript code executes. As of time of publication, a patch does not exist.
+      published: 2023-05-30T22:15:10.863
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/Leantime/leantime/security/advisories/GHSA-359m-fp6q-65r7
+    - id: CVE-2023-33177
+      description: Xibo is a content management system (CMS). A path traversal vulnerability exists in the Xibo CMS whereby a specially crafted zip file can be uploaded to the CMS via the layout import function by an authenticated user which would allow creation of files outside of the CMS library directory as the webserver user. This can be used to upload a PHP webshell inside the web root directory and achieve remote code execution as the webserver user. Users should upgrade to version 2.3.17 or 3.3.5, which fix this issue. Customers who host their CMS with Xibo Signage have already received an upgrade or patch to resolve this issue regardless of the CMS version that they are running.
+      published: 2023-05-30T20:15:10.837
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://claroty.com/team82/disclosure-dashboard
+        - https://github.com/xibosignage/xibo-cms/commit/1cbba380fa751a00756e70d7b08b5c6646092658
+        - https://github.com/xibosignage/xibo-cms/commit/45c6b53c3978639db03b63270a56f4397f49b2c9
+        - https://github.com/xibosignage/xibo-cms/security/advisories/GHSA-jj27-x85q-crqv
+        - https://xibosignage.com/blog/security-advisory-2023-05/
+    - id: CVE-2023-32698
+      description: "nFPM is an alternative to fpm. The file permissions on the checked-in files were not maintained. Hence, when nfpm packaged \nthe files (without extra config for enforcing it’s own permissions) files could go out with bad permissions (chmod 666 or 777). Anyone using nfpm for creating packages without checking/setting file permissions before packaging could result in bad permissions for files/folders."
+      published: 2023-05-30T04:15:10.187
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/goreleaser/nfpm/commit/ed9abdf63d5012cc884f2a83b4ab2b42b3680d30
+        - https://github.com/goreleaser/nfpm/releases/tag/v2.29.0
+        - https://github.com/goreleaser/nfpm/security/advisories/GHSA-w7jw-q4fg-qc4c
+    - id: CVE-2023-27988
+      description: The post-authentication command injection vulnerability in the Zyxel NAS326 firmware versions prior to V5.21(AAZF.13)C0 could allow an authenticated attacker with administrator privileges to execute some operating system (OS) commands on an affected device remotely.
+      published: 2023-05-30T02:15:33.533
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.zyxel.com/global/en/support/security-advisories/zyxel-security-advisory-for-post-authentication-command-injection-vulnerability-in-nas-products
+    - id: CVE-2023-31186
+      description: Avaya IX Workforce Engagement v15.2.7.1195 - User Enumeration - Observable Response Discrepancy
+      published: 2023-05-30T20:15:10.610
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://www.gov.il/en/Departments/faq/cve_advisories
+    - id: CVE-2023-33198
+      description: tgstation-server is a production scale tool for BYOND server management. The DreamMaker API (DMAPI) chat channel cache can possibly be poisoned by a tgstation-server (TGS) restart and reattach. This can result in sending chat messages to one of any of the configured IRC or Discord channels for the instance on enabled chat bots. This lasts until the instance's chat channels are updated in TGS or DreamDaemon is restarted. TGS chat commands are unaffected, custom or otherwise.
+      published: 2023-05-30T05:15:12.033
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/tgstation/tgstation-server/pull/1493
+        - https://github.com/tgstation/tgstation-server/releases/tag/tgstation-server-v5.12.2
+        - https://github.com/tgstation/tgstation-server/security/advisories/GHSA-p2xj-w57r-6f5m
+    - id: CVE-2023-24826
+      description: RIOT-OS, an operating system for Internet of Things (IoT) devices, contains a network stack with the ability to process 6LoWPAN frames. Prior to version 2023.04, an attacker can send crafted frames to the device to trigger the usage of an uninitialized object leading to denial of service. This issue is fixed in version 2023.04. As a workaround, disable fragment forwarding or SFR.
+      published: 2023-05-30T17:15:09.983
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/RIOT-OS/RIOT/blob/ccbb304eae7b59e8aca24a6ffd095b5b3f7720ee/sys/net/gnrc/network_layer/sixlowpan/frag/sfr/gnrc_sixlowpan_frag_sfr.c#L402
+        - https://github.com/RIOT-OS/RIOT/blob/ccbb304eae7b59e8aca24a6ffd095b5b3f7720ee/sys/net/gnrc/network_layer/sixlowpan/frag/sfr/gnrc_sixlowpan_frag_sfr.c#L420
+        - https://github.com/RIOT-OS/RIOT/commit/287f030af20e829469cdf740606148018a5a220d
+        - https://github.com/RIOT-OS/RIOT/security/advisories/GHSA-xfj4-9g7w-f4gh
+    - id: CVE-2022-4240
+      description: Missing Authentication for Critical Function vulnerability in Honeywell OneWireless allows Authentication Bypass. This issue affects OneWireless version 322.1
+      published: 2023-05-30T17:15:09.810
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://process.honeywell.com/
+    - id: CVE-2012-10015
+      description: A vulnerability was found in BestWebSoft Twitter Plugin up to 2.14 on WordPress. It has been classified as problematic. Affected is the function twttr_settings_page of the file twitter.php of the component Settings Page. The manipulation leads to cross-site request forgery. It is possible to launch the attack remotely. Upgrading to version 2.15 is able to address this issue. The name of the patch is a6d4659cbb2cbf18ccb0fb43549d5113d74e0146. It is recommended to upgrade the affected component. VDB-230154 is the identifier assigned to this vulnerability.
+      published: 2023-05-31T00:15:09.417
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/wp-plugins/twitter-plugin/commit/a6d4659cbb2cbf18ccb0fb43549d5113d74e0146
+        - https://vuldb.com/?ctiid.230154
+        - https://vuldb.com/?id.230154
+    - id: CVE-2023-32218
+      description: 'Avaya IX Workforce Engagement v15.2.7.1195 - CWE-601: URL Redirection to Untrusted Site (''Open Redirect'')'
+      published: 2023-05-30T20:15:10.767
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://www.gov.il/en/Departments/faq/cve_advisories
+    - id: CVE-2023-20884
+      description: VMware Workspace ONE Access and VMware Identity Manager contain an insecure redirect vulnerability. An unauthenticated malicious actor may be able to redirect a victim to an attacker controlled domain due to improper path handling leading to sensitive information disclosure.
+      published: 2023-05-30T16:15:09.390
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://www.vmware.com/security/advisories/VMSA-2023-0011.html
+    - id: CVE-2023-2952
+      description: XRA dissector infinite loop in Wireshark 4.0.0 to 4.0.5 and 3.6.0 to 3.6.13 allows denial of service via packet injection or crafted capture file
+      published: 2023-05-30T23:15:09.887
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://gitlab.com/gitlab-org/cves/-/blob/master/2023/CVE-2023-2952.json
+        - https://gitlab.com/wireshark/wireshark/-/issues/19100
+        - https://www.wireshark.org/security/wnpa-sec-2023-20.html
+    - id: CVE-2023-31184
+      description: 'ROZCOM client CWE-798: Use of Hard-coded Credentials'
+      published: 2023-05-30T20:15:10.470
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://www.gov.il/en/Departments/faq/cve_advisories
+    - id: CVE-2023-2980
+      description: A vulnerability classified as critical was found in Abstrium Pydio Cells 4.2.0. This vulnerability affects unknown code of the component User Creation Handler. The manipulation leads to improper control of resource identifiers. The attack can be initiated remotely. Upgrading to version 4.2.1 is able to address this issue. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-230212.
+      published: 2023-05-30T15:15:09.467
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://pydio.com/en/community/releases/pydio-cells/pydio-cells-enterprise-421
+        - https://vuldb.com/?ctiid.230212
+        - https://vuldb.com/?id.230212
+    - id: CVE-2023-33180
+      description: Xibo is a content management system (CMS). An SQL injection vulnerability was discovered starting in version 3.2.0 and prior to version 3.3.2 in the `/display/map` API route inside the CMS. This allows an authenticated user to exfiltrate data from the Xibo database by injecting specially crafted values in to the `bounds` parameter. Users should upgrade to version 3.3.5, which fixes this issue. There are no known workarounds aside from upgrading.
+      published: 2023-05-30T21:15:09.147
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://claroty.com/team82/disclosure-dashboard
+        - https://github.com/xibosignage/xibo-cms/security/advisories/GHSA-7ww5-x9rm-qm89
+        - https://xibosignage.com/blog/security-advisory-2023-05/
+    - id: CVE-2023-33962
+      description: |-
+        JStachio is a  type-safe Java Mustache templating engine. Prior to version 1.0.1, JStachio fails to escape single quotes `'` in HTML, allowing an attacker to inject malicious code. This vulnerability can be exploited by an attacker to execute arbitrary JavaScript code in the context of other users visiting pages that use this template engine. This can lead to various consequences, including session hijacking, defacement of web pages, theft of sensitive information, or even the propagation of malware.
+
+        Version 1.0.1 contains a patch for this issue. To mitigate this vulnerability, the template engine should properly escape special characters, including single quotes. Common practice is to escape `'` as `&#39`. As a workaround, users can avoid this issue by using only double quotes `"` for HTML attributes.
+      published: 2023-05-30T22:15:10.933
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/jstachio/jstachio/commit/7b2f78377d1284df14c580be762a25af5f8dcd66
+        - https://github.com/jstachio/jstachio/issues/157
+        - https://github.com/jstachio/jstachio/pull/158
+        - https://github.com/jstachio/jstachio/releases/tag/v1.0.1
+        - https://github.com/jstachio/jstachio/security/advisories/GHSA-gwxv-jv83-6qjr
+    - id: CVE-2023-33191
+      description: Kyverno is a policy engine designed for Kubernetes. Kyverno seccomp control can be circumvented. Users of the podSecurity `validate.podSecurity` subrule in Kyverno 1.9.2 and 1.9.3 are vulnerable. This issue was patched in version 1.9.4.
+      published: 2023-05-30T07:15:09.997
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/kyverno/kyverno/pull/7263
+        - https://github.com/kyverno/kyverno/releases/tag/v1.9.4
+        - https://github.com/kyverno/kyverno/security/advisories/GHSA-33hq-f2mf-jm3c
+    - id: CVE-2023-32691
+      description: 'gost (GO Simple Tunnel) is a simple tunnel written in golang. Sensitive secrets such as passwords, token and API keys should be compared only using a constant-time comparison function. Untrusted input, sourced from a HTTP header, is compared directly with a secret. Since this comparison is not secure, an attacker can mount a side-channel timing attack to guess the password. As a workaround, this can be easily fixed using a constant time comparing function such as `crypto/subtle`''s `ConstantTimeCompare`. '
+      published: 2023-05-30T04:15:09.980
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/ginuerzh/gost/blob/1c62376e0880e4094bd3731e06bd4f7842638f6a/auth.go#L46
+        - https://github.com/ginuerzh/gost/security/advisories/GHSA-qjrq-hm79-49ww
+    - id: CVE-2023-33178
+      description: Xibo is a content management system (CMS). An SQL injection vulnerability was discovered in the `/dataset/data/{id}` API route inside the CMS starting in version 1.4.0 and prior to versions 2.3.17 and 3.3.5. This allows an authenticated user to exfiltrate data from the Xibo database by injecting specially crafted values in to the `filter` parameter. Values allowed in the filter parameter are checked against a deny list of commands that should not be allowed, however this checking was done in a case sensitive manor and so it is possible to bypass these checks by using unusual case combinations. Users should upgrade to version 2.3.17 or 3.3.5, which fix this issue. There are no workarounds aside from upgrading.
+      published: 2023-05-30T20:15:10.907
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://claroty.com/team82/disclosure-dashboard
+        - https://github.com/xibosignage/xibo-cms/security/advisories/GHSA-g9x2-757j-hmhh
+        - https://xibosignage.com/blog/security-advisory-2023-05/
+    - id: CVE-2023-32448
+      description: PowerPath for Windows, versions 7.0, 7.1 & 7.2 contains License Key Stored in Cleartext vulnerability. A local user with access to the installation directory can retrieve the license key of the product and use it to install and license PowerPath on different systems.
+      published: 2023-05-30T16:15:09.937
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.dell.com/support/kbdoc/en-us/000214248/dsa-2023-154-powerpath-windows-security-update-for-security-update-for-multiple-vulnerabilities
+    - id: CVE-2023-2972
+      description: Prototype Pollution in GitHub repository antfu/utils prior to 0.7.3.
+      published: 2023-05-30T11:15:09.373
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/antfu/utils/commit/7f8b16c6181c988bdb96613fbb2533b345f68682
+        - https://huntr.dev/bounties/009f1cd9-401c-49a7-bd08-be35cff6faef
+    - id: CVE-2023-28080
+      description: PowerPath for Windows, versions 7.0, 7.1 & 7.2 contains DLL Hijacking Vulnerabilities. A regular user (non-admin) can exploit these issues to potentially escalate privileges and execute arbitrary code in the context of NT AUTHORITY\SYSTEM.
+      published: 2023-05-30T16:15:09.837
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.dell.com/support/kbdoc/en-us/000214248/dsa-2023-154-powerpath-windows-security-update-for-security-update-for-multiple-vulnerabilities
+    - id: CVE-2023-32689
+      description: |-
+        Parse Server is an open source backend that can be deployed to any infrastructure that can run Node.js. Versions prior to 5.4.4 and 6.1.1 are vulnerable to a phishing attack vulnerability that involves a user uploading malicious files. A malicious user could upload an HTML file to Parse Server via its public API. That HTML file would then be accessible at the internet domain at which Parse Server is hosted. The URL of the the uploaded HTML could be shared for phishing attacks. The HTML page may seem legitimate because it is served under the internet domain where Parse Server is hosted, which may be the same as a company's official website domain.
+
+        An additional security issue arises when the Parse JavaScript SDK is used. The SDK stores sessions in the internet browser's local storage, which usually restricts data access depending on the internet domain. A malicious HTML file could contain a script that retrieves the user's session token from local storage and then share it with the attacker.
+
+        The fix included in versions 5.4.4 and 6.1.1 adds a new Parse Server option `fileUpload.fileExtensions` to restrict file upload on Parse Server by file extension. It is recommended to restrict file upload for HTML file extensions, which this fix disables by default. If an app requires upload of files with HTML file extensions, the option can be set to `['.*']` or another custom value to override the default.
+      published: 2023-05-30T18:15:10.227
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/parse-community/parse-server/pull/8537
+        - https://github.com/parse-community/parse-server/pull/8538
+        - https://github.com/parse-community/parse-server/security/advisories/GHSA-9prm-jqwx-45x9
+    - id: CVE-2023-33181
+      description: Xibo is a content management system (CMS). Starting in version 3.0.0 and prior to version 3.3.5, some API routes will print a stack trace when called with missing or invalid parameters revealing sensitive information about the locations of paths that the server is using. Users should upgrade to version 3.3.5, which fixes this issue. There are no known workarounds aside from upgrading.
+      published: 2023-05-30T21:15:09.207
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://claroty.com/team82/disclosure-dashboard
+        - https://github.com/xibosignage/xibo-cms/security/advisories/GHSA-c9cx-ghwr-x58m
+        - https://xibosignage.com/blog/security-advisory-2023-05/
+    - id: CVE-2023-32685
+      description: Kanboard is project management software that focuses on the Kanban methodology. Due to improper handling of elements under the `contentEditable` element, maliciously crafted clipboard content can inject arbitrary HTML tags into the DOM. A low-privileged attacker with permission to attach a document on a vulnerable Kanboard instance can trick the victim into pasting malicious screenshot data and achieve cross-site scripting if CSP is improperly configured. This issue has been patched in version 1.2.29.
+      published: 2023-05-30T05:15:11.770
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/kanboard/kanboard/commit/26b6eebb78d4306e48b836a58f7c386251aa2bc7
+        - https://github.com/kanboard/kanboard/commit/c9c187206700030c43493b80fd599b4d096cb713
+        - https://github.com/kanboard/kanboard/security/advisories/GHSA-hjmw-gm82-r4gv
+    - id: CVE-2023-2978
+      description: A vulnerability was found in Abstrium Pydio Cells 4.2.0. It has been rated as problematic. Affected by this issue is some unknown functionality of the component Change Subscription Handler. The manipulation leads to authorization bypass. Upgrading to version 4.2.1 is able to address this issue. It is recommended to upgrade the affected component. VDB-230210 is the identifier assigned to this vulnerability.
+      published: 2023-05-30T14:15:09.763
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://pydio.com/en/community/releases/pydio-cells/pydio-cells-enterprise-421
+        - https://vuldb.com/?ctiid.230210
+        - https://vuldb.com/?id.230210
+    - id: CVE-2023-33179
+      description: Xibo is a content management system (CMS). An SQL injection vulnerability was discovered starting in version 3.2.0 and prior to version 3.3.5 in the `nameFilter` function used throughout the CMS. This allows an authenticated user to exfiltrate data from the Xibo database by injecting specially crafted values for logical operators. Users should upgrade to version 3.3.5 which fixes this issue. There are no known workarounds aside from upgrading.
+      published: 2023-05-30T21:15:09.077
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://claroty.com/team82/disclosure-dashboard
+        - https://github.com/xibosignage/xibo-cms/security/advisories/GHSA-jmx8-cgm4-7mf5
+        - https://xibosignage.com/blog/security-advisory-2023-05/
+    - id: CVE-2023-32699
+      description: MeterSphere is an open source continuous testing platform. Version 2.9.1 and prior are vulnerable to denial of service. ?The `checkUserPassword` method is used to check whether the password provided by the user matches the password saved in the database, and the `CodingUtil.md5` method is used to encrypt the original password with MD5 to ensure that the password will not be saved in plain text when it is stored. If a user submits a very long password when logging in, the system will be forced to execute the long password MD5 encryption process, causing the server CPU and memory to be exhausted, thereby causing a denial of service attack on the server. This issue is fixed in version 2.10.0-lts with a maximum password length.
+      published: 2023-05-30T19:15:10.103
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/metersphere/metersphere/commit/c59e381d368990214813085a1a4877c5ef865411
+        - https://github.com/metersphere/metersphere/security/advisories/GHSA-qffq-8gf8-mhq7
+    - id: CVE-2023-0779
+      description: At the most basic level, an invalid pointer can be input that crashes the device, but with more knowledge of the device’s memory layout, further exploitation is possible.
+      published: 2023-05-30T21:15:08.987
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-9xj8-6989-r549
+    - id: CVE-2023-33955
+      description: Minio Console is the UI for MinIO Object Storage. Unicode RIGHT-TO-LEFT OVERRIDE characters can be used to mask the original filename. This issue has been patched in version 0.28.0.
+      published: 2023-05-30T07:15:10.850
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/minio/console/commit/17e791afb90c9ad27c65f63c6be14f2f6a3a9d60
+        - https://github.com/minio/console/releases/tag/v0.28.0
+        - https://github.com/minio/console/security/advisories/GHSA-jv3f-7m33-qp65
+    - id: CVE-2023-2984
+      description: 'Path Traversal: ''\..\filename'' in GitHub repository pimcore/pimcore prior to 10.5.22.'
+      published: 2023-05-30T15:15:09.700
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/pimcore/pimcore/commit/e8dbc4da58ae86618bceb67ed35ce23e5e54d2ed
+        - https://huntr.dev/bounties/5df8b951-e2f1-4548-a7e3-601186e1b191
+    - id: CVE-2023-31187
+      description: 'Avaya IX Workforce Engagement v15.2.7.1195 - CWE-522: Insufficiently Protected Credentials'
+      published: 2023-05-30T20:15:10.687
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.gov.il/en/Departments/faq/cve_advisories
+    - id: CVE-2023-2979
+      description: A vulnerability classified as critical has been found in Abstrium Pydio Cells 4.2.0. This affects an unknown part of the component User Creation Handler. The manipulation leads to improper access controls. It is possible to initiate the attack remotely. Upgrading to version 4.2.1 is able to address this issue. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-230211.
+      published: 2023-05-30T14:15:09.843
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://pydio.com/en/community/releases/pydio-cells/pydio-cells-enterprise-421
+        - https://vuldb.com/?ctiid.230211
+        - https://vuldb.com/?id.230211
+    - id: CVE-2023-2983
+      description: Privilege Defined With Unsafe Actions in GitHub repository pimcore/pimcore prior to 10.5.23.
+      published: 2023-05-30T15:15:09.630
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/pimcore/pimcore/commit/c8f37b19c99cd82e4e558857d3e4d5476ea7228a
+        - https://huntr.dev/bounties/6b2f33d3-2fd0-4d2d-ad7b-2c1e2417eeb1
+    - id: CVE-2022-43485
+      description: Use of Insufficiently Random Values in Honeywell OneWireless. This vulnerability may allow attacker to manipulate claims in client's JWT token. This issue affects OneWireless version 322.1
+      published: 2023-05-30T17:15:09.573
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://process.honeywell.com/
+    - id: CVE-2022-46361
+      description: An attacker having physical access to WDM can plug USB device to gain access and execute unwanted commands. A malicious user could enter a system command along with a backup configuration, which could result in the execution of unwanted commands. This issue affects OneWireless all versions up to 322.1 and fixed in version 322.2.
+      published: 2023-05-30T17:15:09.737
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://process.honeywell.com/
+    - id: CVE-2023-2612
+      description: Jean-Baptiste Cayrou discovered that the shiftfs file system in the Ubuntu Linux kernel contained a race condition when handling inode locking in some situations. A local attacker could use this to cause a denial of service (kernel deadlock).
+      published: 2023-05-31T00:15:10.257
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux/+git/kinetic/commit/?id=02b47547824b1cd0d55c6744f91886f04de8947e
+        - https://ubuntu.com/security/CVE-2023-2612
+    - id: CVE-2023-1711
+      description: "A vulnerability exists in a FOXMAN-UN and UNEM logging component, it only affects systems that use remote authentication to the network elements. \nIf exploited an attacker could obtain confidential information.\n\n\n\nList of CPEs:\n  *  cpe:2.3:a:hitachienergy:foxman_un:R9C:*:*:*:*:*:*:*\n  *  cpe:2.3:a:hitachienergy:foxman_un:R10C:*:*:*:*:*:*:*\n\n  *  cpe:2.3:a:hitachienergy:foxman_un:R11A:*:*:*:*:*:*:*\n\n  *  cpe:2.3:a:hitachienergy:foxman_un:R11B:*:*:*:*:*:*:*\n\n  *  cpe:2.3:a:hitachienergy:foxman_un:R14A:*:*:*:*:*:*:*\n\n  *  cpe:2.3:a:hitachienergy:foxman_un:R14B:*:*:*:*:*:*:*\n\n  *  cpe:2.3:a:hitachienergy:foxman_un:R15A:*:*:*:*:*:*:*\n\n  *  cpe:2.3:a:hitachienergy:foxman_un:R15B:*:*:*:*:*:*:*\n\n  *  cpe:2.3:a:hitachienergy:foxman_un:R16A:*:*:*:*:*:*:*\n\n  *  \n  *  cpe:2.3:a:hitachienergy:unem:R9C:*:*:*:*:*:*:*\n  *  cpe:2.3:a:hitachienergy: unem :R10C:*:*:*:*:*:*:*\n\n  *  cpe:2.3:a:hitachienergy: unem :R11A:*:*:*:*:*:*:*\n\n  *  cpe:2.3:a:hitachienergy: unem :R11B:*:*:*:*:*:*:*\n\n  *  cpe:2.3:a:hitachienergy: unem :R14A:*:*:*:*:*:*:*\n\n  *  cpe:2.3:a:hitachienergy: unem :R14B:*:*:*:*:*:*:*\n\n  *  cpe:2.3:a:hitachienergy: unem :R15A:*:*:*:*:*:*:*\n\n  *  cpe:2.3:a:hitachienergy: unem :R15B:*:*:*:*:*:*:*\n\n  *  cpe:2.3:a:hitachienergy: unem :R16A:*:*:*:*:*:*:*"
+      published: 2023-05-30T19:15:09.753
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://search.abb.com/library/Download.aspx?DocumentID=8DBD000155&LanguageCode=en&DocumentPartId=&Action=Launch
+        - https://search.abb.com/library/Download.aspx?DocumentID=8DBD000166&LanguageCode=en&DocumentPartId=&Action=Launch
+    - id: CVE-2023-32684
+      description: Lima launches Linux virtual machines, typically on macOS, for running containerd. Prior to version 0.16.0, a virtual machine instance with a malicious disk image could read a single file on the host filesystem, even when no filesystem is mounted from the host. The official templates of Lima and the well-known third party products (Colima, Rancher Desktop, and Finch) are unlikely to be affected by this issue. To exploit this issue, the attacker has to embed the target file path (an absolute or a relative path from the instance directory) in a malicious disk image, as the qcow2 (or vmdk) backing file path string. As Lima refuses to run as the root, it is practically impossible for the attacker to read the entire host disk via `/dev/rdiskN`. Also, practically, the attacker cannot read at least the first 512 bytes (MBR) of the target file. The issue has been patched in Lima in version 0.16.0 by prohibiting using a backing file path in the VM base image.
+      published: 2023-05-30T18:15:10.137
+      severity: LOW
+      privileges: NONE
+      references:
+        - https://github.com/lima-vm/lima/commit/01dbd4d9cabe692afa4517be3995771f0ebb38a5
+        - https://github.com/lima-vm/lima/releases/tag/v0.16.0
+        - https://github.com/lima-vm/lima/security/advisories/GHSA-f7qw-jj9c-rpq9
+    - id: CVE-2023-2970
+      description: A vulnerability classified as problematic was found in MindSpore 2.0.0-alpha/2.0.0-rc1. This vulnerability affects the function JsonHelper::UpdateArray of the file mindspore/ccsrc/minddata/dataset/util/json_helper.cc. The manipulation leads to memory corruption. The name of the patch is 30f4729ea2c01e1ed437ba92a81e2fc098d608a9. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-230176.
+      published: 2023-05-30T06:16:30.853
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://gitee.com/mindspore/mindspore/commit/30f4729ea2c01e1ed437ba92a81e2fc098d608a9
+        - https://gitee.com/mindspore/mindspore/issues/I73DOS
+        - https://vuldb.com/?ctiid.230176
+        - https://vuldb.com/?id.230176
+    - id: CVE-2023-33183
+      description: Calendar app for Nextcloud easily sync events from various devices with your Nextcloud. Some internal paths of the website are disclosed when the SMTP server is unavailable. It is recommended that the Calendar app is updated to 3.5.5 or 4.2.3
+      published: 2023-05-30T06:16:35.080
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/nextcloud/calendar/pull/4938
+        - https://github.com/nextcloud/security-advisories/security/advisories/GHSA-2792-2734-hr7j
+    - id: CVE-2023-2981
+      description: A vulnerability, which was classified as problematic, has been found in Abstrium Pydio Cells 4.2.0. This issue affects some unknown processing of the component Chat. The manipulation leads to basic cross site scripting. The attack may be initiated remotely. Upgrading to version 4.2.1 is able to address this issue. It is recommended to upgrade the affected component. The identifier VDB-230213 was assigned to this vulnerability.
+      published: 2023-05-30T15:15:09.553
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://pydio.com/en/community/releases/pydio-cells/pydio-cells-enterprise-421
+        - https://vuldb.com/?ctiid.230213
+        - https://vuldb.com/?id.230213
+    - id: CVE-2023-2973
+      description: A vulnerability, which was classified as problematic, has been found in SourceCodester Students Online Internship Timesheet Syste 1.0. Affected by this issue is some unknown functionality of the file /ajax.php?action=save_company. The manipulation of the argument name with the input <script>alert(document.cookie)</script> leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-230204.
+      published: 2023-05-30T11:15:09.457
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/ShallowDream888/VulnerabilityReport/blob/main/XSS.md
+        - https://vuldb.com/?ctiid.230204
+        - https://vuldb.com/?id.230204
+    - id: CVE-2023-33182
+      description: Contacts app for Nextcloud easily syncs contacts from various devices with your Nextcloud and allows editing. The unsanitized SVG is converted to a JavaScript blob (in memory data) that the Avatar can't render. Due to this constellation the missing sanitization does not seem to be exploitable. It is recommended that the Contacts app is upgraded to 5.0.3 or 4.2.4
+      published: 2023-05-30T05:15:11.957
+      severity: NONE
+      privileges: LOW
+      references:
+        - https://github.com/nextcloud/contacts/pull/3199
+        - https://github.com/nextcloud/security-advisories/security/advisories/GHSA-hxr6-cx85-gcjx
+        - https://hackerone.com/reports/1789602
+    - id: CVE-2022-36243
+      description: 'Shop Beat Solutions (pty) LTD Shop Beat Media Player 2.5.95 up to 3.2.57 is vulnerable to Directory Traversal via server.shopbeat.co.za. Information Exposure Through Directory Listing vulnerability in "studio" software of Shop Beat. This issue affects: Shop Beat studio studio versions prior to 3.2.57 on arm.'
+      published: 2023-05-30T20:15:09.587
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.shopbeat.co.za
+    - id: CVE-2023-2933
+      description: 'Use after free in PDF in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file. (Chromium security severity: High)'
+      published: 2023-05-30T22:15:10.210
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop_30.html
+        - https://crbug.com/1445426
+    - id: CVE-2023-23755
+      description: An issue was discovered in Joomla! 4.2.0 through 4.3.1. The lack of rate limiting allowed brute force attacks against MFA methods.
+      published: 2023-05-30T17:15:09.937
+      severity: ""
+      privileges: ""
+      references:
+        - https://developer.joomla.org/security-centre/900-20230502-core-bruteforce-prevention-within-the-mfa-screen.html
+    - id: CVE-2018-8661
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was in a CNA pool that was not assigned to any issues during 2018. Notes: none.'
+      published: 2023-05-30T18:15:09.797
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-23754
+      description: An issue was discovered in Joomla! 4.2.0 through 4.3.1. Lack of input validation caused an open redirect and XSS issue within the new mfa selection screen.
+      published: 2023-05-30T17:15:09.887
+      severity: ""
+      privileges: ""
+      references:
+        - https://developer.joomla.org/security-centre/899-20230501-core-open-redirects-and-xss-within-the-mfa-selection.html
+    - id: CVE-2023-2994
+      description: '** REJECT ** This 2023 CVE was incorrectly assigned instead of a 2022 CVE.'
+      published: 2023-05-30T18:15:10.077
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-2650
+      description: |-
+        Issue summary: Processing some specially crafted ASN.1 object identifiers or
+        data containing them may be very slow.
+
+        Impact summary: Applications that use OBJ_obj2txt() directly, or use any of
+        the OpenSSL subsystems OCSP, PKCS7/SMIME, CMS, CMP/CRMF or TS with no message
+        size limit may experience notable to very long delays when processing those
+        messages, which may lead to a Denial of Service.
+
+        An OBJECT IDENTIFIER is composed of a series of numbers - sub-identifiers -
+        most of which have no size limit.  OBJ_obj2txt() may be used to translate
+        an ASN.1 OBJECT IDENTIFIER given in DER encoding form (using the OpenSSL
+        type ASN1_OBJECT) to its canonical numeric text form, which are the
+        sub-identifiers of the OBJECT IDENTIFIER in decimal form, separated by
+        periods.
+
+        When one of the sub-identifiers in the OBJECT IDENTIFIER is very large
+        (these are sizes that are seen as absurdly large, taking up tens or hundreds
+        of KiBs), the translation to a decimal number in text may take a very long
+        time.  The time complexity is O(n^2) with 'n' being the size of the
+        sub-identifiers in bytes (*).
+
+        With OpenSSL 3.0, support to fetch cryptographic algorithms using names /
+        identifiers in string form was introduced.  This includes using OBJECT
+        IDENTIFIERs in canonical numeric text form as identifiers for fetching
+        algorithms.
+
+        Such OBJECT IDENTIFIERs may be received through the ASN.1 structure
+        AlgorithmIdentifier, which is commonly used in multiple protocols to specify
+        what cryptographic algorithm should be used to sign or verify, encrypt or
+        decrypt, or digest passed data.
+
+        Applications that call OBJ_obj2txt() directly with untrusted data are
+        affected, with any version of OpenSSL.  If the use is for the mere purpose
+        of display, the severity is considered low.
+
+        In OpenSSL 3.0 and newer, this affects the subsystems OCSP, PKCS7/SMIME,
+        CMS, CMP/CRMF or TS.  It also impacts anything that processes X.509
+        certificates, including simple things like verifying its signature.
+
+        The impact on TLS is relatively low, because all versions of OpenSSL have a
+        100KiB limit on the peer's certificate chain.  Additionally, this only
+        impacts clients, or servers that have explicitly enabled client
+        authentication.
+
+        In OpenSSL 1.1.1 and 1.0.2, this only affects displaying diverse objects,
+        such as X.509 certificates.  This is assumed to not happen in such a way
+        that it would cause a Denial of Service, so these versions are considered
+        not affected by this issue in such a way that it would be cause for concern,
+        and the severity is therefore considered low.
+      published: 2023-05-30T14:15:09.683
+      severity: ""
+      privileges: ""
+      references:
+        - http://www.openwall.com/lists/oss-security/2023/05/30/1
+        - https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=423a2bc737a908ad0c77bda470b2b59dc879936b
+        - https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=853c5e56ee0b8650c73140816bb8b91d6163422c
+        - https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=9e209944b35cf82368071f160a744b6178f9b098
+        - https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=db779b0e10b047f2585615e0b8f2acdf21f8544a
+        - https://www.openssl.org/news/secadv/20230530.txt
+    - id: CVE-2023-33234
+      description: |-
+        Arbitrary code execution in Apache Airflow CNCF Kubernetes provider version 5.0.0 allows user to change xcom sidecar image and resources via Airflow connection.
+
+        In order to exploit this weakness, a user would already need elevated permissions (Op or Admin) to change the connection object in this manner.  Operators should upgrade to provider version 7.0.0 which has removed the vulnerability.
+      published: 2023-05-30T11:15:09.553
+      severity: ""
+      privileges: ""
+      references:
+        - https://lists.apache.org/thread/n1vpgl6h2qsdm52o9m2tx1oo86tl4gnq
+    - id: CVE-2023-33656
+      description: A memory leak vulnerability exists in NanoMQ 0.17.2. The vulnerability is located in the file message.c. An attacker could exploit this vulnerability to cause a denial of service attack by causing the program to consume all available memory resources.
+      published: 2023-05-30T18:15:10.383
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/emqx/nanomq
+        - https://github.com/emqx/nanomq/issues/1164
+        - https://github.com/emqx/nanomq/issues/1165#issuecomment-1515667127
+    - id: CVE-2022-45853
+      description: '** REJECT ** This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.'
+      published: 2023-05-30T11:15:09.237
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-2518
+      description: The Easy Forms for Mailchimp WordPress plugin through 6.8.8 does not sanitise and escape a parameter before outputting it back in the page when the debug option is enabled, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin.
+      published: 2023-05-30T08:15:10.390
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/ca120255-2c50-4906-97f3-ea660486db4c
+    - id: CVE-2023-2470
+      description: The Add to Feedly WordPress plugin through 1.2.11 does not sanitize and escape its settings, allowing high-privilege users such as admin to perform Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed.
+      published: 2023-05-30T08:15:10.337
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/de0adf26-8a0b-4b90-96d5-4bec6e770e04
+    - id: CVE-2023-2296
+      description: The Loginizer WordPress plugin before 1.7.9 does not escape a parameter before outputting it back in the page, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin
+      published: 2023-05-30T08:15:10.280
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/8126ff73-c0e5-4c1b-ba10-2e51f690521e
+    - id: CVE-2023-2288
+      description: The Otter WordPress plugin before 2.2.6 does not sanitize some user-controlled file paths before performing file operations on them. This leads to a PHAR deserialization vulnerability on PHP < 8.0 using the phar:// stream wrapper.
+      published: 2023-05-30T08:15:10.217
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/93acb4ee-1053-48e1-8b69-c09dc3b2f302
+    - id: CVE-2022-36244
+      description: Shop Beat Solutions (Pty) LTD Shop Beat Media Player 2.5.95 up to 3.2.57 suffers from Multiple Stored Cross-Site Scripting (XSS) vulnerabilities via Shop Beat Control Panel found at www.shopbeat.co.za controlpanel.shopbeat.co.za.
+      published: 2023-05-30T20:15:09.660
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.shopbeat.co.za
+    - id: CVE-2022-36246
+      description: Shop Beat Solutions (Pty) LTD Shop Beat Media Player 2.5.95 up to 3.2.57 is vulnerable to Insecure Permissions.
+      published: 2023-05-30T20:15:09.720
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.shopbeat.co.za
+    - id: CVE-2022-36247
+      description: Shop Beat Solutions (Pty) LTD Shop Beat Media Player 2.5.95 up to 3.2.57 is vulnerable to IDOR via controlpanel.shopbeat.co.za.
+      published: 2023-05-30T20:15:09.780
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.shopbeat.co.za
+    - id: CVE-2022-36249
+      description: Shop Beat Solutions (Pty) LTD Shop Beat Media Player 2.5.95 up to 3.2.57 is vulnerable to Bypass 2FA via APIs. For Controlpanel Lite. "After login we are directly able to use the bearer token or jsession ID to access the apis instead of entering the 2FA code. Thus, leading to bypass of 2FA on API level.
+      published: 2023-05-30T20:15:09.823
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.shopbeat.co.za
+    - id: CVE-2022-36250
+      description: Shop Beat Solutions (Pty) LTD Shop Beat Media Player 2.5.95 up to 3.2.57 is vulnerable to Cross Site Request Forgery (CSRF).
+      published: 2023-05-30T20:15:09.880
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.shopbeat.co.za
+    - id: CVE-2022-47028
+      description: An issue discovered in Action Launcher for Android v50.5 allows an attacker to cause a denial of service via arbitary data injection to function insert.
+      published: 2023-05-30T20:15:09.947
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2022-47028/CVE%20detailed.md
+    - id: CVE-2022-47029
+      description: An issue was found in Action Launcher v50.5 allows an attacker to escalate privilege via modification of the intent string to function update.
+      published: 2023-05-30T20:15:09.993
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2022-47029/CVE%20detailed.md
+    - id: CVE-2022-48137
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2023-26830. Reason: This candidate is a reservation duplicate of CVE-2023-26830. Notes: All CVE users should reference CVE-2023-26830 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.'
+      published: 2023-05-30T20:15:10.040
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2022-48138
+      description: '** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2023-26829. Reason: This candidate is a reservation duplicate of CVE-2023-26829. Notes: All CVE users should reference CVE-2023-26829 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.'
+      published: 2023-05-30T20:15:10.083
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-23561
+      description: 'Stormshield Endpoint Security 2.3.0 through 2.3.2 has Incorrect Access Control: authenticated users can read sensitive information.'
+      published: 2023-05-30T20:15:10.130
+      severity: ""
+      privileges: ""
+      references:
+        - https://advisories.stormshield.eu
+        - https://advisories.stormshield.eu/2023-001/
+    - id: CVE-2023-23956
+      description: A user can supply malicious HTML and JavaScript code that will be executed in the client browser
+      published: 2023-05-30T20:15:10.173
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.broadcom.com/external/content/SecurityAdvisories/0/22221
+    - id: CVE-2023-29731
+      description: SoLive 1.6.14 thru 1.6.20 for Android has an exposed component that provides a method to modify the SharedPreference file. An attacker can leverage this method to inject a large amount of data into any SharedPreference file, which will be loaded into memory when the application is opened. When an attacker injects too much data, the application will trigger an OOM error and crash at startup, resulting in a persistent denial of service.
+      published: 2023-05-30T20:15:10.227
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2023-29731/CVE%20detail.md
+    - id: CVE-2023-29732
+      description: SoLive 1.6.14 thru 1.6.20 for Android exists exposed component, the component provides the method to modify the SharedPreference file. The attacker can use the method to modify the data in any SharedPreference file, these data will be loaded into the memory when the application is opened. Depending on how the data is used, this can result in various attack consequences, such as ad display exceptions.
+      published: 2023-05-30T20:15:10.273
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2023-29732/CVE%20detail.md
+    - id: CVE-2023-29733
+      description: The Lock Master app 2.2.4 for Android allows unauthorized apps to modify the values in its SharedPreference files. These files hold data that affects many app functions. Malicious modifications by unauthorized apps can cause security issues, such as functionality manipulation, resulting in a severe escalation of privilege attack.
+      published: 2023-05-30T20:15:10.327
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2023-29733/CVE%20detail.md
+    - id: CVE-2023-29734
+      description: An issue found in edjing Mix v.7.09.01 for Android allows unauthorized apps to cause escalation of privilege attacks by manipulating the database.
+      published: 2023-05-30T20:15:10.373
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2023-29734/CVE%20detail.md
+    - id: CVE-2023-29735
+      description: An issue found in edjing Mix v.7.09.01 for Android allows a local attacker to cause a denial of service via the database files.
+      published: 2023-05-30T20:15:10.420
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2023-29735/CVE%20detail.md
+    - id: CVE-2023-2287
+      description: The Orbit Fox by ThemeIsle WordPress plugin before 2.10.24 does not limit URLs which may be used for the stock photo import feature, allowing the user to specify arbitrary URLs. This leads to a server-side request forgery as the user may force the server to access any URL of their choosing.
+      published: 2023-05-30T08:15:10.157
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/1b36a184-2138-4a65-8940-07e7764669bb
+    - id: CVE-2023-2256
+      description: The Product Addons & Fields for WooCommerce WordPress plugin before 32.0.7 does not sanitize and escape some URL parameters, leading to Reflected Cross-Site Scripting.
+      published: 2023-05-30T08:15:10.097
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/1187e041-3be2-4613-8d56-c2394fcc75fb
+    - id: CVE-2023-2223
+      description: The Login rebuilder WordPress plugin before 2.8.1 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup).
+      published: 2023-05-30T08:15:10.030
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/7b356b82-5d03-4f70-b4ce-f1405304bb52
+    - id: CVE-2023-2117
+      description: The Image Optimizer by 10web WordPress plugin before 1.0.27 does not sanitize the dir parameter when handling the get_subdirs ajax action, allowing a high privileged users such as admins to inspect names of files and directories outside of the sites root.
+      published: 2023-05-30T08:15:09.963
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/44024299-ba40-4da7-81e1-bd44d10846f3
+    - id: CVE-2023-2113
+      description: The Autoptimize WordPress plugin before 3.1.7 does not sanitise and escape the settings imported from a previous export, allowing high privileged users (such as an administrator) to inject arbitrary javascript into the admin panel, even when the unfiltered_html capability is disabled, such as in a multisite setup.
+      published: 2023-05-30T08:15:09.900
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/ddb4c95d-bbee-4095-aed6-25f6b8e63011
+    - id: CVE-2023-2111
+      description: The Fast & Effective Popups & Lead-Generation for WordPress plugin before 2.1.4 concatenates user input into an SQL query without escaping it first in the plugin's report API endpoint, which could allow administrators in multi-site configuration to leak sensitive information from the site's database.
+      published: 2023-05-30T08:15:09.837
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/7a0bdd47-c339-489d-9443-f173a83447f2
+    - id: CVE-2023-2023
+      description: The Custom 404 Pro WordPress plugin before 3.7.3 does not escape some URLs before outputting them in attributes, leading to Reflected Cross-Site Scripting.
+      published: 2023-05-30T08:15:09.787
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/8859843a-a8c2-4f7a-8372-67049d6ea317
+    - id: CVE-2023-1938
+      description: The WP Fastest Cache WordPress plugin before 1.1.5 does not have CSRF check in an AJAX action, and does not validate user input before using it in the wp_remote_get() function, leading to a Blind SSRF issue
+      published: 2023-05-30T08:15:09.713
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/92b1c6d8-51db-46aa-bde6-abdfb091aab5
+    - id: CVE-2023-1524
+      description: The Download Manager WordPress plugin before 3.2.71 does not adequately validate passwords for password-protected files. Upon validation, a master key is generated and exposed to the user, which may be used to download any password-protected file on the server, allowing a user to download any file with the knowledge of any one file's password.
+      published: 2023-05-30T08:15:09.657
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/3802d15d-9bfd-4762-ab8a-04475451868e
+    - id: CVE-2023-0766
+      description: The Newsletter Popup WordPress plugin through 1.2 does not have CSRF checks in some places, which could allow attackers to make logged in users perform unwanted actions via CSRF attacks as the wp_newsletter_show_localrecord page is not protected with a nonce.
+      published: 2023-05-30T08:15:09.590
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/90a1976c-0348-41ea-90b4-f7a5d9306c88
+    - id: CVE-2023-0733
+      description: The Newsletter Popup WordPress plugin through 1.2 does not sanitise and escape some of its settings, which could allow unauthenticated users to perform Stored Cross-Site Scripting attacks
+      published: 2023-05-30T08:15:09.523
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/fed1e184-ff56-44fe-9876-d17c0156447a
+    - id: CVE-2023-2929
+      description: 'Out of bounds write in Swiftshader in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)'
+      published: 2023-05-30T22:15:09.997
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop_30.html
+        - https://crbug.com/1410191
+    - id: CVE-2023-2930
+      description: 'Use after free in Extensions in Google Chrome prior to 114.0.5735.90 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)'
+      published: 2023-05-30T22:15:10.067
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop_30.html
+        - https://crbug.com/1443401
+    - id: CVE-2023-2931
+      description: 'Use after free in PDF in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file. (Chromium security severity: High)'
+      published: 2023-05-30T22:15:10.117
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop_30.html
+        - https://crbug.com/1444238
+    - id: CVE-2023-2932
+      description: 'Use after free in PDF in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file. (Chromium security severity: High)'
+      published: 2023-05-30T22:15:10.167
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop_30.html
+        - https://crbug.com/1444581
+    - id: CVE-2023-29737
+      description: An issue found in Wave Animated Keyboard Emoji v.1.70.7 for Android allows a local attacker to cause a denial of service via the database files.
+      published: 2023-05-30T17:15:10.067
+      severity: ""
+      privileges: ""
+      references:
+        - http://www.wavekeyboard.com/
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2023-29737/CVE%20detail.md
+        - https://play.google.com/store/apps/details?id=com.wave.keyboard
+    - id: CVE-2023-2934
+      description: 'Out of bounds memory access in Mojo in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)'
+      published: 2023-05-30T22:15:10.257
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop_30.html
+        - https://crbug.com/1429720
+    - id: CVE-2023-2935
+      description: 'Type Confusion in V8 in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)'
+      published: 2023-05-30T22:15:10.307
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop_30.html
+        - https://crbug.com/1440695
+    - id: CVE-2023-2936
+      description: 'Type Confusion in V8 in Google Chrome prior to 114.0.5735.90 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)'
+      published: 2023-05-30T22:15:10.350
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop_30.html
+        - https://crbug.com/1443452
+    - id: CVE-2023-2937
+      description: 'Inappropriate implementation in Picture In Picture in Google Chrome prior to 114.0.5735.90 allowed a remote attacker who had compromised the renderer process to spoof the contents of the Omnibox (URL bar) via a crafted HTML page. (Chromium security severity: Medium)'
+      published: 2023-05-30T22:15:10.393
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop_30.html
+        - https://crbug.com/1413813
+    - id: CVE-2023-2938
+      description: 'Inappropriate implementation in Picture In Picture in Google Chrome prior to 114.0.5735.90 allowed a remote attacker who had compromised the renderer process to spoof the contents of the Omnibox (URL bar) via a crafted HTML page. (Chromium security severity: Medium)'
+      published: 2023-05-30T22:15:10.433
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop_30.html
+        - https://crbug.com/1416350
+    - id: CVE-2023-2939
+      description: 'Insufficient data validation in Installer in Google Chrome on Windows prior to 114.0.5735.90 allowed a local attacker to perform privilege escalation via crafted symbolic link. (Chromium security severity: Medium)'
+      published: 2023-05-30T22:15:10.477
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop_30.html
+        - https://crbug.com/1427431
+    - id: CVE-2023-2940
+      description: 'Inappropriate implementation in Downloads in Google Chrome prior to 114.0.5735.90 allowed an attacker who convinced a user to install a malicious extension to bypass file access restrictions via a crafted HTML page. (Chromium security severity: Medium)'
+      published: 2023-05-30T22:15:10.527
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop_30.html
+        - https://crbug.com/1426807
+    - id: CVE-2023-2941
+      description: 'Inappropriate implementation in Extensions API in Google Chrome prior to 114.0.5735.90 allowed an attacker who convinced a user to install a malicious extension to spoof the contents of the UI via a crafted Chrome Extension. (Chromium security severity: Low)'
+      published: 2023-05-30T22:15:10.570
+      severity: ""
+      privileges: ""
+      references:
+        - https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop_30.html
+        - https://crbug.com/1430269
+    - id: CVE-2023-2953
+      description: A vulnerability was found in openldap. This security flaw causes a null pointer dereference in ber_memalloc_x() function.
+      published: 2023-05-30T22:15:10.613
+      severity: ""
+      privileges: ""
+      references:
+        - https://access.redhat.com/security/cve/CVE-2023-2953
+        - https://bugs.openldap.org/show_bug.cgi?id=9904
+    - id: CVE-2023-0443
+      description: The AnyWhere Elementor WordPress plugin before 1.2.8 discloses a Freemius Secret Key which could be used by an attacker to purchase the pro subscription using test credit card numbers without actually paying the amount. Such key has been revoked.
+      published: 2023-05-30T08:15:09.460
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/471f3226-8f90-43d1-b826-f11ef4bbd602
+    - id: CVE-2023-33734
+      description: BlueCMS v1.6 was discovered to contain a SQL injection vulnerability via the keywords parameter at search.php.
+      published: 2023-05-30T22:15:10.737
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Peanuts-s/BlueCms
+    - id: CVE-2023-33740
+      description: Incorrect access control in luowice v3.5.18 allows attackers to access cloud source code information via modification fo the Verify parameter in a warning message.
+      published: 2023-05-30T22:15:10.777
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/zzh-newlearner/record/blob/main/luowice_warning.md
+    - id: CVE-2023-33741
+      description: Macrovideo v380pro v1.4.97 shares the device id and password when sharing the device.
+      published: 2023-05-30T22:15:10.820
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/zzh-newlearner/record/blob/main/macrovideo_share.md
+    - id: CVE-2023-0329
+      description: The Elementor Website Builder WordPress plugin before 3.12.2 does not properly sanitize and escape the Replace URL parameter in the Tools module before using it in a SQL statement, leading to a SQL injection exploitable by users with the Administrator role.
+      published: 2023-05-30T08:15:09.397
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/a875836d-77f4-4306-b275-2b60efff1493
+    - id: CVE-2022-4676
+      description: The OSM WordPress plugin through 6.01 does not validate and escape some of its shortcode attributes, which could allow users with a role as low as contributor to perform Stored Cross-Site Scripting attack.
+      published: 2023-05-30T08:15:09.307
+      severity: ""
+      privileges: ""
+      references:
+        - https://wpscan.com/vulnerability/1df3c17c-990d-4074-b1d5-b26da880d88e
+    - id: CVE-2023-34151
+      description: A vulnerability was found in ImageMagick. This security flaw ouccers as an undefined behaviors of casting double to size_t in svg, mvg and other coders (recurring bugs of CVE-2022-32546).
+      published: 2023-05-30T22:15:11.000
+      severity: ""
+      privileges: ""
+      references:
+        - https://access.redhat.com/security/cve/CVE-2023-34151
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2210657
+        - https://github.com/ImageMagick/ImageMagick/issues/6341
+    - id: CVE-2023-34152
+      description: A vulnerability was found in ImageMagick. This security flaw cause a remote code execution vulnerability in OpenBlob with --enable-pipes configured.
+      published: 2023-05-30T22:15:11.070
+      severity: ""
+      privileges: ""
+      references:
+        - https://access.redhat.com/security/cve/CVE-2023-34152
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2210659
+        - https://github.com/ImageMagick/ImageMagick/issues/6339
+    - id: CVE-2023-34153
+      description: A vulnerability was found in ImageMagick. This security flaw causes a shell command injection vulnerability via video:vsync or video:pixel-format options in VIDEO encoding/decoding.
+      published: 2023-05-30T22:15:11.143
+      severity: ""
+      privileges: ""
+      references:
+        - https://access.redhat.com/security/cve/CVE-2023-34153
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2210660
+        - https://github.com/ImageMagick/ImageMagick/issues/6338
+    - id: CVE-2022-39071
+      description: There is an unauthorized access vulnerability in some ZTE mobile phones. If a malicious application is installed on the phone, it could overwrite some system configuration files and user installers without user permission.
+      published: 2023-05-30T23:15:09.273
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.zte.com.cn/support/news/LoopholeInfoDetail.aspx?newsId=1030664
+    - id: CVE-2022-39074
+      description: There is an unauthorized access vulnerability in some ZTE mobile phones. If a malicious application is installed on the phone, it could start a non-public interface of an application without user permission.
+      published: 2023-05-30T23:15:09.393
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.zte.com.cn/support/news/LoopholeInfoDetail.aspx?newsId=1030664
+    - id: CVE-2022-39075
+      description: There is an unauthorized access vulnerability in some ZTE mobile phones. If a malicious application is installed on the phone, it could delete some system files without user permission.
+      published: 2023-05-30T23:15:09.447
+      severity: ""
+      privileges: ""
+      references:
+        - https://support.zte.com.cn/support/news/LoopholeInfoDetail.aspx?newsId=1030664
+    - id: CVE-2023-29726
+      description: The Call Blocker application 6.6.3 for Android incorrectly opens a key component that an attacker can use to inject large amounts of dirty data into the application's database. When the application starts, it loads the data from the database into memory. Once the attacker injects too much data, the application triggers an OOM error and crashes, resulting in a persistent denial of service.
+      published: 2023-05-30T23:15:09.513
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2023-29726/CVE%20detail.md
+        - https://play.google.com/store/apps/details?id=com.cuiet.blockCalls
+        - https://www.call-blocker.info/
+    - id: CVE-2023-29727
+      description: The Call Blocker application 6.6.3 for Android allows unauthorized applications to use exposed components to delete data stored in its database that is related to user privacy settings and affects the implementation of the normal functionality of the application. An attacker can use this to cause an escalation of privilege attack.
+      published: 2023-05-30T23:15:09.563
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2023-29727/CVE%20detail.md
+        - https://play.google.com/store/apps/details?id=com.cuiet.blockCalls
+        - https://www.call-blocker.info/
+    - id: CVE-2023-29728
+      description: The Call Blocker application 6.6.3 for Android allows attackers to tamper with feature-related data, resulting in a severe elevation of privilege attack.
+      published: 2023-05-30T23:15:09.607
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2023-29728/CVE%20detail.md
+        - https://play.google.com/store/apps/details?id=com.cuiet.blockCalls
+        - https://www.call-blocker.info/
+    - id: CVE-2023-29738
+      description: An issue found in Wave Animated Keyboard Emoji v.1.70.7 for Android allows a local attacker to cause code execution and escalation of Privileges via the database files.
+      published: 2023-05-30T23:15:09.653
+      severity: ""
+      privileges: ""
+      references:
+        - http://www.wavekeyboard.com/
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2023-29738/CVE%20detail.md
+        - https://play.google.com/store/apps/details?id=com.amdroidalarmclock.amdroid
+        - https://play.google.com/store/apps/details?id=com.wave.keyboard
+    - id: CVE-2023-29739
+      description: An issue found in Alarm Clock for Heavy Sleepers v.5.3.2 for Android allows unauthorized apps to cause escalation of privilege attacks by manipulating the component.
+      published: 2023-05-30T23:15:09.700
+      severity: ""
+      privileges: ""
+      references:
+        - http://amdroidapp.com/
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2023-29739/CVE%20detail.md
+        - https://play.google.com/store/apps/details?id=com.amdroidalarmclock.amdroid
+    - id: CVE-2023-29740
+      description: An issue found in Alarm Clock for Heavy Sleepers v.5.3.2 for Android allows unauthorized apps to cause a denial of service attack by manipulating the database.
+      published: 2023-05-30T23:15:09.750
+      severity: ""
+      privileges: ""
+      references:
+        - http://amdroidapp.com/
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2023-29740/CVE%20detail.md
+        - https://play.google.com/store/apps/details?id=com.amdroidalarmclock.amdroid
+        - https://play.google.com/store/apps/details?id=com.icoolme.android.weather
+    - id: CVE-2023-29741
+      description: An issue found in BestWeather v.7.3.1 for Android allows unauthorized apps to cause an escalation of privileges attack by manipulating the database.
+      published: 2023-05-30T23:15:09.793
+      severity: ""
+      privileges: ""
+      references:
+        - http://www.zmtqsh.com/
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2023-29741/CVE%20detail.md
+        - https://play.google.com/store/apps/details?id=com.icoolme.android.weather
+    - id: CVE-2023-29743
+      description: An issue found in BestWeather v.7.3.1 for Android allows unauthorized apps to cause a persistent denial of service attack by manipulating the database.
+      published: 2023-05-30T23:15:09.840
+      severity: ""
+      privileges: ""
+      references:
+        - http://www.zmtqsh.com/
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2023-29743/CVE%20detail.md
+        - https://play.google.com/store/apps/details?id=com.icoolme.android.weather
+    - id: CVE-2023-33245
+      description: Minecraft through 1.19 and 1.20 pre-releases before 7 (Java) allow arbitrary file overwrite, and possibly code execution, via crafted world data that contains a symlink.
+      published: 2023-05-30T05:15:12.120
+      severity: ""
+      privileges: ""
+      references:
+        - https://help.minecraft.net/hc/en-us/articles/16165590199181
+        - https://vuln.ryotak.net/advisories/67
+        - https://www.minecraft.net/ja-jp/article/minecraft-1-20-pre-release-7
+    - id: CVE-2023-34205
+      description: In Moov signedxml through 1.0.0, parsing the raw XML (as received) can result in different output than parsing the canonicalized XML. Thus, signature validation can be bypassed via a Signature Wrapping attack (aka XSW).
+      published: 2023-05-30T04:15:10.377
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/moov-io/signedxml/issues/23
+    - id: CVE-2022-47525
+      description: Fox-IT DataDiode (aka Fox DataDiode) 3.4.3 suffers from a Divide-by-Zero vulnerability in the packet parser. A remote attacker could leverage this vulnerability to cause a denial-of-service. Exploitation of this issue does not require user interaction.
+      published: 2023-05-31T00:15:09.600
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.fox-it.com/nl-en/fox-crypto/fox-datadiode/
+        - https://www.fox-it.com/nl-en/software-vulnerability-report/
+    - id: CVE-2022-47526
+      description: Fox-IT DataDiode (aka Fox DataDiode) 3.4.3 suffers from a path traversal vulnerability with resultant arbitrary writing of files. A remote attacker could leverage this vulnerability to achieve arbitrary code execution in the context of the downstream node user. Exploitation of this issue does not require user interaction.
+      published: 2023-05-31T00:15:09.647
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.fox-it.com/nl-en/fox-crypto/fox-datadiode/
+        - https://www.fox-it.com/nl-en/software-vulnerability-report/
+    - id: CVE-2023-28344
+      description: An issue was discovered in Faronics Insight 10.0.19045 on Windows. The Insight Teacher Console application allows unauthenticated attackers to view constantly updated screenshots of student desktops and to submit falsified screenshots on behalf of students. Attackers are able to view screenshots of student desktops without their consent. These screenshots may potentially contain sensitive/personal data. Attackers can also rapidly submit falsified images, hiding the actual contents of student desktops from the Teacher Console.
+      published: 2023-05-31T00:15:09.697
+      severity: ""
+      privileges: ""
+      references:
+        - https://research.nccgroup.com/2023/05/30/technical-advisory-multiple-vulnerabilities-in-faronics-insight/
+        - https://research.nccgroup.com/?research=Technical%20advisories
+    - id: CVE-2023-28345
+      description: An issue was discovered in Faronics Insight 10.0.19045 on Windows. The Insight Teacher Console application exposes the teacher's Console password in cleartext via an API endpoint accessible from localhost. Attackers with physical access to the Teacher Console can open a web browser, navigate to the affected endpoint and obtain the teacher's password. This enables them to log into the Teacher Console and begin trivially attacking student machines.
+      published: 2023-05-31T00:15:09.747
+      severity: ""
+      privileges: ""
+      references:
+        - https://research.nccgroup.com/2023/05/30/technical-advisory-multiple-vulnerabilities-in-faronics-insight/
+        - https://research.nccgroup.com/?research=Technical%20advisories
+    - id: CVE-2023-28346
+      description: An issue was discovered in Faronics Insight 10.0.19045 on Windows. It is possible for a remote attacker to communicate with the private API endpoints exposed at /login, /consoleSettings, /console, etc. despite Virtual Host Routing being used to block this access. Remote attackers can interact with private pages on the web server, enabling them to perform privileged actions such as logging into the console and changing console settings if they have valid credentials.
+      published: 2023-05-31T00:15:09.793
+      severity: ""
+      privileges: ""
+      references:
+        - https://research.nccgroup.com/2023/05/30/technical-advisory-multiple-vulnerabilities-in-faronics-insight/
+        - https://research.nccgroup.com/?research=Technical%20advisories
+    - id: CVE-2023-28347
+      description: An issue was discovered in Faronics Insight 10.0.19045 on Windows. It is possible for an attacker to create a proof-of-concept script that functions similarly to a Student Console, providing unauthenticated attackers with the ability to exploit XSS vulnerabilities within the Teacher Console application and achieve remote code execution as NT AUTHORITY/SYSTEM on all connected Student Consoles and the Teacher Console in a Zero Click manner.
+      published: 2023-05-31T00:15:09.840
+      severity: ""
+      privileges: ""
+      references:
+        - https://research.nccgroup.com/2023/05/30/technical-advisory-multiple-vulnerabilities-in-faronics-insight/
+        - https://research.nccgroup.com/?research=Technical%20advisories
+    - id: CVE-2023-28348
+      description: An issue was discovered in Faronics Insight 10.0.19045 on Windows. A suitably positioned attacker could perform a man-in-the-middle attack on either a connected student or teacher, enabling them to intercept student keystrokes or modify executable files being sent from teachers to students.
+      published: 2023-05-31T00:15:09.887
+      severity: ""
+      privileges: ""
+      references:
+        - https://research.nccgroup.com/2023/05/30/technical-advisory-multiple-vulnerabilities-in-faronics-insight/
+        - https://research.nccgroup.com/?research=Technical%20advisories
+    - id: CVE-2023-28349
+      description: An issue was discovered in Faronics Insight 10.0.19045 on Windows. It is possible for an attacker to create a crafted program that functions similarly to the Teacher Console. This can compel Student Consoles to connect and put themselves at risk automatically. Connected Student Consoles can be compelled to write arbitrary files to arbitrary locations on disk with NT AUTHORITY/SYSTEM level permissions, enabling remote code execution.
+      published: 2023-05-31T00:15:09.933
+      severity: ""
+      privileges: ""
+      references:
+        - https://research.nccgroup.com/2023/05/30/technical-advisory-multiple-vulnerabilities-in-faronics-insight/
+        - https://research.nccgroup.com/?research=Technical%20advisories
+    - id: CVE-2023-28350
+      description: An issue was discovered in Faronics Insight 10.0.19045 on Windows. Attacker-supplied input is not validated/sanitized before being rendered in both the Teacher and Student Console applications, enabling an attacker to execute JavaScript in these applications. Due to the rich and highly privileged functionality offered by the Teacher Console, the ability to silently exploit Cross Site Scripting (XSS) on the Teacher Machine enables remote code execution on any connected student machine (and the teacher's machine).
+      published: 2023-05-31T00:15:09.980
+      severity: ""
+      privileges: ""
+      references:
+        - https://research.nccgroup.com/2023/05/30/technical-advisory-multiple-vulnerabilities-in-faronics-insight/
+        - https://research.nccgroup.com/?research=Technical%20advisories
+    - id: CVE-2023-28351
+      description: An issue was discovered in Faronics Insight 10.0.19045 on Windows. Every keystroke made by any user on a computer with the Student application installed is logged to a world-readable directory. A local attacker can trivially extract these cleartext keystrokes, potentially enabling them to obtain PII and/or to compromise personal accounts owned by the victim.
+      published: 2023-05-31T00:15:10.023
+      severity: ""
+      privileges: ""
+      references:
+        - https://research.nccgroup.com/2023/05/30/technical-advisory-multiple-vulnerabilities-in-faronics-insight/
+        - https://research.nccgroup.com/?research=Technical%20advisories
+    - id: CVE-2023-28352
+      description: An issue was discovered in Faronics Insight 10.0.19045 on Windows. By abusing the Insight UDP broadcast discovery system, an attacker-controlled artificial Student Console can connect to and attack a Teacher Console even after Enhanced Security Mode has been enabled.
+      published: 2023-05-31T00:15:10.063
+      severity: ""
+      privileges: ""
+      references:
+        - https://research.nccgroup.com/2023/05/30/technical-advisory-multiple-vulnerabilities-in-faronics-insight/
+        - https://research.nccgroup.com/?research=Technical%20advisories
+    - id: CVE-2023-28353
+      description: An issue was discovered in Faronics Insight 10.0.19045 on Windows. An unauthenticated attacker is able to upload any type of file to any location on the Teacher Console's computer, enabling a variety of different exploitation paths including code execution. It is also possible for the attacker to chain this vulnerability with others to cause a deployed DLL file to immediately execute as NT AUTHORITY/SYSTEM.
+      published: 2023-05-31T00:15:10.107
+      severity: ""
+      privileges: ""
+      references:
+        - https://research.nccgroup.com/2023/05/30/technical-advisory-multiple-vulnerabilities-in-faronics-insight/
+        - https://research.nccgroup.com/?research=Technical%20advisories
+    - id: CVE-2023-29742
+      description: An issue found in BestWeather v.7.3.1 for Android allows unauthorized apps to cause a code execution attack by manipulating the database.
+      published: 2023-05-31T00:15:10.153
+      severity: ""
+      privileges: ""
+      references:
+        - http://www.zmtqsh.com/
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2023-29742/CVE%20detail.md
+        - https://play.google.com/store/apps/details?id=com.icoolme.android.weather
+    - id: CVE-2023-29745
+      description: An issue found in BestWeather v.7.3.1 for Android allows unauthorized apps to cause a persistent denial of service attack by manipulating the database.
+      published: 2023-05-31T00:15:10.200
+      severity: ""
+      privileges: ""
+      references:
+        - http://www.zmtqsh.com/
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2023-29745/CVE%20detail.md
+        - https://play.google.com/store/apps/details?id=com.TheThaiger.android
+        - https://play.google.com/store/apps/details?id=com.icoolme.android.weather
+    - id: CVE-2023-34204
+      description: imapsync through 2.229 uses predictable paths under /tmp and /var/tmp in its default mode of operation. Both of these are typically world-writable, and thus (for example) an attacker can modify imapsync's cache and overwrite files belonging to the user who runs it.
+      published: 2023-05-30T04:15:10.317
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/imapsync/imapsync/issues/399
