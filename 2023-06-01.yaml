@@ -1,0 +1,895 @@
+data:
+    - id: CVE-2022-35744
+      description: Windows Point-to-Point Protocol (PPP) Remote Code Execution Vulnerability
+      published: 2023-05-31T19:15:16.273
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-35744
+    - id: CVE-2023-34218
+      description: In JetBrains TeamCity before 2023.05 bypass of permission checks allowing to perform admin actions was possible
+      published: 2023-05-31T14:15:10.230
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://www.jetbrains.com/privacy-security/issues-fixed/
+    - id: CVE-2023-2987
+      description: The Wordapp plugin for WordPress is vulnerable to authorization bypass due to an use of insufficiently unique cryptographic signature on the 'wa_pdx_op_config_set' function in versions up to, and including, 1.5.0. This makes it possible for unauthenticated attackers to the plugin to change the 'validation_token' in the plugin config, providing access to the plugin's remote control functionalities, such as creating an admin access URL, which can be used for privilege escalation.
+      published: 2023-05-31T03:15:09.643
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://plugins.trac.wordpress.org/browser/wordapp/trunk/includes/access.php#L28
+        - https://plugins.trac.wordpress.org/browser/wordapp/trunk/includes/config.php#L59
+        - https://plugins.trac.wordpress.org/browser/wordapp/trunk/includes/pdx.php#L64
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/80440bfa-4a02-4441-bbdb-52d7dd065a9d?source=cve
+    - id: CVE-2023-3020
+      description: Cross-site Scripting (XSS) - Reflected in GitHub repository mkucej/i-librarian-free prior to 5.10.4.
+      published: 2023-05-31T17:15:09.567
+      severity: CRITICAL
+      privileges: LOW
+      references:
+        - https://github.com/mkucej/i-librarian-free/commit/3f2c64768a70fc0d529bc29d47bc706ecf26314e
+        - https://huntr.dev/bounties/92cbe37c-33fa-43bf-8d5b-69aebf51d32c
+    - id: CVE-2023-33964
+      description: mx-chain-go is an implementation of the MultiversX blockchain protocol written in the Go language. Metachain cannot process a cross-shard miniblock. Prior to version 1.4.16, an invalid transaction with the wrong username on metachain is not treated correctly on the metachain transaction processor. This is strictly a processing issue that could have happened on MultiversX chain. If an error like this had occurred, the metachain would have stopped notarizing blocks from the shard chains. The resuming of notarization is possible only after applying a patched binary version. A patch in version 1.4.16 introduces `processIfTxErrorCrossShard` for the metachain transaction processor. There are no known workarounds for this issue.
+      published: 2023-05-31T18:15:09.437
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/multiversx/mx-chain-go/commit/97295471465f4b5f79e51b32f8b7111f8d921606
+        - https://github.com/multiversx/mx-chain-go/security/advisories/GHSA-7xpv-4pm9-xch2
+    - id: CVE-2023-33966
+      description: Deno is a runtime for JavaScript and TypeScript. In deno 1.34.0 and deno_runtime 0.114.0, outbound HTTP requests made using the built-in `node:http` or `node:https` modules are incorrectly not checked against the network permission allow list (`--allow-net`). Dependencies relying on these built-in modules are subject to the vulnerability too. Users of Deno versions prior to 1.34.0 are unaffected. Deno Deploy users are unaffected. This problem has been patched in Deno v1.34.1 and deno_runtime 0.114.1 and all users are recommended to update to this version. No workaround is available for this issue.
+      published: 2023-05-31T18:15:09.527
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/denoland/deno/releases/tag/v1.34.1
+        - https://github.com/denoland/deno/security/advisories/GHSA-vc52-gwm3-8v2f
+    - id: CVE-2023-3008
+      description: A vulnerability classified as critical has been found in ningzichun Student Management System 1.0. This affects an unknown part of the file login.php. The manipulation of the argument user/pass leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-230355.
+      published: 2023-05-31T12:15:09.640
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/Xor-Gerke/webray.com.cn/blob/main/cve/student-management-system/sql_inject.md
+        - https://vuldb.com/?ctiid.230355
+        - https://vuldb.com/?id.230355
+    - id: CVE-2023-3009
+      description: Cross-site Scripting (XSS) - Stored in GitHub repository nilsteampassnet/teampass prior to 3.0.9.
+      published: 2023-05-31T13:15:10.367
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/nilsteampassnet/teampass/commit/6ba8cf1f4b89d62a08d122d533ccf4cb4e26a4ee
+        - https://huntr.dev/bounties/2929faca-5822-4636-8f04-ca5e0001361f
+    - id: CVE-2022-35745
+      description: Windows Secure Socket Tunneling Protocol (SSTP) Remote Code Execution Vulnerability
+      published: 2023-05-31T19:15:16.367
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-35745
+    - id: CVE-2022-35753
+      description: Windows Secure Socket Tunneling Protocol (SSTP) Remote Code Execution Vulnerability
+      published: 2023-05-31T19:15:16.877
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-35753
+    - id: CVE-2023-30197
+      description: Incorrect Access Control in the module "My inventory" (myinventory) <= 1.6.6 from Webbax for PrestaShop, allows a guest to download personal information without restriction by performing a path traversal attack.
+      published: 2023-05-31T01:15:43.223
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://friends-of-presta.github.io/security-advisories/modules/2023/05/30/myinventory.html
+        - https://github.com/PrestaShop/PrestaShop/blob/6c05518b807d014ee8edb811041e3de232520c28/classes/Tools.php#L1247
+    - id: CVE-2023-2549
+      description: The Feather Login Page plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions starting from 1.0.7 up to, and including, 1.1.1. This is due to missing nonce validation in the 'createTempAccountLink' function. This makes it possible for unauthenticated attackers to create a new user with administrator role via a forged request granted they can trick a site administrator into performing an action such as clicking on a link. An attacker can leverage CVE-2023-2545 to get the login link or request a password reset to the new user's email address.
+      published: 2023-05-31T03:15:09.577
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://plugins.trac.wordpress.org/browser/feather-login-page/trunk/features/inc/admin/expirable-login-link.php?rev=2612332#L206
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/12560b8e-9c47-4f7f-ac9c-d86f17914ba3?source=cve
+    - id: CVE-2022-35752
+      description: Windows Secure Socket Tunneling Protocol (SSTP) Remote Code Execution Vulnerability
+      published: 2023-05-31T19:15:16.813
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-35752
+    - id: CVE-2022-35743
+      description: Microsoft Windows Support Diagnostic Tool (MSDT) Remote Code Execution Vulnerability
+      published: 2023-05-31T19:15:16.203
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-35743
+    - id: CVE-2022-35756
+      description: Windows Kerberos Elevation of Privilege Vulnerability
+      published: 2023-05-31T19:15:17.063
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-35756
+    - id: CVE-2022-35748
+      description: HTTP.sys Denial of Service Vulnerability
+      published: 2023-05-31T19:15:16.550
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-35748
+    - id: CVE-2023-2749
+      description: 'Download Center fails to properly validate the file path submitted by a user, An attacker can exploit this vulnerability to gain unauthorized access to sensitive files or directories without appropriate permission restrictions. Download Center on ADM 4.0 and above will be affected. Affected products and versions include: Download Center 1.1.5.r1280 and below. '
+      published: 2023-05-31T09:15:10.490
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.asustor.com/security/security_advisory_detail?id=24
+    - id: CVE-2022-35751
+      description: Windows Hyper-V Elevation of Privilege Vulnerability
+      published: 2023-05-31T19:15:16.747
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-35751
+    - id: CVE-2022-35755
+      description: Windows Print Spooler Elevation of Privilege Vulnerability
+      published: 2023-05-31T19:15:17.000
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-35755
+    - id: CVE-2023-26277
+      description: 'IBM QRadar WinCollect Agent 10.0 though 10.1.3 could allow a local user to execute commands on the system due to execution with unnecessary privileges.  IBM X-Force ID:  248156.'
+      published: 2023-05-31T19:15:26.677
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://https://exchange.xforce.ibmcloud.com/vulnerabilities/248156
+        - https://www.ibm.com/support/pages/node/6999343
+    - id: CVE-2022-35750
+      description: Win32k Elevation of Privilege Vulnerability
+      published: 2023-05-31T19:15:16.677
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-35750
+    - id: CVE-2022-35749
+      description: Windows Digital Media Receiver Elevation of Privilege Vulnerability
+      published: 2023-05-31T19:15:16.610
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-35749
+    - id: CVE-2023-26278
+      description: 'IBM QRadar WinCollect Agent 10.0 through 10.1.3 could allow a local authenticated attacker to gain elevated privileges on the system.  IBM X-Force ID:  248158.'
+      published: 2023-05-31T20:15:10.427
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://exchange.xforce.ibmcloud.com/vulnerabilities/248158
+        - https://www.ibm.com/support/pages/node/6999341
+    - id: CVE-2023-2545
+      description: The Feather Login Page plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the 'getListOfUsers' function in versions starting from 1.0.7 up to, and including, 1.1.1. This makes it possible for authenticated attackers, with subscriber-level permissions and above, to access the login links, which can be used for privilege escalation.
+      published: 2023-05-31T03:15:09.443
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://plugins.trac.wordpress.org/browser/feather-login-page/trunk/features/inc/admin/expirable-login-link.php?rev=2612332#L85
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/b2ab2178-7438-43ef-961e-b54d0d230f4a?source=cve
+    - id: CVE-2023-34088
+      description: Collabora Online is a collaborative online office suite. A stored cross-site scripting (XSS) vulnerability was found in Collabora Online prior to versions 22.05.13, 21.11.9.1, and 6.4.27. An attacker could create a document with an XSS payload as a document name. Later, if an administrator opened the admin console and navigated to the history page, the document name was injected as unescaped HTML and executed as a script inside the context of the admin console. The administrator JSON web token (JWT) used for the websocket connection could be leaked through this flaw. Users should upgrade to Collabora Online 22.05.13 or higher; Collabora Online 21.11.9.1 or higher; Collabora Online 6.4.27 or higher to receive a patch.
+      published: 2023-05-31T19:15:27.290
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/CollaboraOnline/online/security/advisories/GHSA-7582-pwfh-3pwr
+    - id: CVE-2022-35757
+      description: Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability
+      published: 2023-05-31T19:15:17.123
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-35757
+    - id: CVE-2022-35746
+      description: Windows Digital Media Receiver Elevation of Privilege Vulnerability
+      published: 2023-05-31T19:15:16.427
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-35746
+    - id: CVE-2023-2435
+      description: The Blog-in-Blog plugin for WordPress is vulnerable to Local File Inclusion in versions up to, and including, 1.1.1 via a shortcode attribute. This allows editor-level, and above, attackers to include and execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.
+      published: 2023-05-31T03:15:09.313
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://plugins.trac.wordpress.org/browser/blog-in-blog/tags/1.1.1/blog-in-blog.php#L153
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/d53161ad-cc5f-4433-b288-a8095cdfd7db?source=cve
+    - id: CVE-2023-25539
+      description: Dell NetWorker 19.6.1.2, contains an OS command injection Vulnerability in the NetWorker client. A remote unauthenticated attacker could potentially exploit this vulnerability, leading to the execution of arbitrary OS commands on the application's underlying OS, with the privileges of the vulnerable application. This is a high severity vulnerability as the exploitation allows an attacker to take complete control of a system, so Dell recommends customers to upgrade at the earliest opportunity.
+      published: 2023-05-31T05:15:09.537
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://www.dell.com/support/kbdoc/en-us/000211267/dsa-2023-060-dell-networker-security-update-for-an-nsrcapinfo-vulnerability
+    - id: CVE-2023-33967
+      description: EaseProbe is a tool that can do health/status checking. An SQL injection issue was discovered in EaseProbe before 2.1.0 when using MySQL/PostgreSQL data checking. This problem has been fixed in v2.1.0.
+      published: 2023-05-31T18:15:09.603
+      severity: HIGH
+      privileges: HIGH
+      references:
+        - https://github.com/megaease/easeprobe/commit/caaf5860df2aaa76acd29bc40ec9a578d0b1d6e1
+        - https://github.com/megaease/easeprobe/pull/330
+        - https://github.com/megaease/easeprobe/releases/tag/v2.1.0
+        - https://github.com/megaease/easeprobe/security/advisories/GHSA-4c32-w6c7-77x4
+    - id: CVE-2023-26131
+      description: "All versions of the package github.com/xyproto/algernon/engine; all versions of the package github.com/xyproto/algernon/themes are vulnerable to Cross-site Scripting (XSS) via the themes.NoPage(filename, theme) function due to improper user input sanitization. Exploiting this vulnerability is possible when a file/resource is not found.\r\r"
+      published: 2023-05-31T05:15:10.180
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/xyproto/algernon/blob/aab484608651852d02a8a93f40baf53ed93e639a/engine/handlers.go%23L512
+        - https://github.com/xyproto/algernon/blob/aab484608651852d02a8a93f40baf53ed93e639a/engine/handlers.go%23L514
+        - https://github.com/xyproto/algernon/blob/aab484608651852d02a8a93f40baf53ed93e639a/themes/html.go%23L145
+        - https://security.snyk.io/vuln/SNYK-GOLANG-GITHUBCOMXYPROTOALGERNONENGINE-3312111
+        - https://security.snyk.io/vuln/SNYK-GOLANG-GITHUBCOMXYPROTOALGERNONTHEMES-3312112
+    - id: CVE-2023-34227
+      description: In JetBrains TeamCity before 2023.05 a specific endpoint was vulnerable to brute force attacks
+      published: 2023-05-31T14:15:10.823
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://www.jetbrains.com/privacy-security/issues-fixed/
+    - id: CVE-2023-33971
+      description: Formcreator is a GLPI plugin which allow creation of custom forms and the creation of one or more tickets when the form is filled. A probable stored cross-site scripting vulnerability is present in Formcreator 2.13.5 and prior via the use of the use of `##FULLFORM##` for rendering. This could result in arbitrary javascript code execution in an admin/tech context. A patch is unavailable as of time of publication. As a workaround, one may use a regular expression to remove `< > "` in all fields.
+      published: 2023-05-31T18:15:09.683
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/pluginsGLPI/formcreator/security/advisories/GHSA-777g-3848-8r3g
+    - id: CVE-2015-10108
+      description: A vulnerability was found in meitar Inline Google Spreadsheet Viewer Plugin up to 0.9.6 on WordPress and classified as problematic. Affected by this issue is the function displayShortcode of the file inline-gdocs-viewer.php. The manipulation leads to cross-site request forgery. The attack may be launched remotely. Upgrading to version 0.9.6.1 is able to address this issue. The name of the patch is 2a8057df8ca30adc859cecbe5cad21ac28c5b747. It is recommended to upgrade the affected component. VDB-230234 is the identifier assigned to this vulnerability.
+      published: 2023-05-31T19:15:11.720
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/wp-plugins/inline-google-spreadsheet-viewer/commit/2a8057df8ca30adc859cecbe5cad21ac28c5b747
+        - https://github.com/wp-plugins/inline-google-spreadsheet-viewer/releases/tag/0.9.6.1
+        - https://vuldb.com/?ctiid.230234
+        - https://vuldb.com/?id.230234
+    - id: CVE-2023-3007
+      description: A vulnerability was found in ningzichun Student Management System 1.0. It has been rated as critical. Affected by this issue is some unknown functionality of the file resetPassword.php of the component Password Reset Handler. The manipulation of the argument sid leads to weak password recovery. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-230354 is the identifier assigned to this vulnerability.
+      published: 2023-05-31T12:15:09.550
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/Xor-Gerke/webray.com.cn/blob/main/cve/student-management-system/password_reset.md
+        - https://vuldb.com/?ctiid.230354
+        - https://vuldb.com/?id.230354
+    - id: CVE-2022-35747
+      description: Windows Point-to-Point Protocol (PPP) Denial of Service Vulnerability
+      published: 2023-05-31T19:15:16.490
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-35747
+    - id: CVE-2023-1661
+      description: The Display post meta, term meta, comment meta, and user meta plugin for WordPress is vulnerable to Stored Cross-Site Scripting via post metadata in versions up to, and including, 0.4.1 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+      published: 2023-05-31T04:15:09.893
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://wordpress.org/plugins/display-metadata/#developers
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/6f90c0d8-ede6-4f24-870f-19e888238e93?source=cve
+    - id: CVE-2023-34228
+      description: In JetBrains TeamCity before 2023.05 authentication checks were missing – 2FA was not checked for some sensitive account actions
+      published: 2023-05-31T14:15:10.887
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.jetbrains.com/privacy-security/issues-fixed/
+    - id: CVE-2023-34219
+      description: In JetBrains TeamCity before 2023.05 improper permission checks allowed users without appropriate permissions to edit Build Configuration settings via REST API
+      published: 2023-05-31T14:15:10.300
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.jetbrains.com/privacy-security/issues-fixed/
+    - id: CVE-2023-34220
+      description: In JetBrains TeamCity before 2023.05 stored XSS in the Commit Status Publisher window was possible
+      published: 2023-05-31T14:15:10.367
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.jetbrains.com/privacy-security/issues-fixed/
+    - id: CVE-2023-34221
+      description: In JetBrains TeamCity before 2023.05 stored XSS in the Show Connection page was possible
+      published: 2023-05-31T14:15:10.427
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.jetbrains.com/privacy-security/issues-fixed/
+    - id: CVE-2023-34222
+      description: In JetBrains TeamCity before 2023.05 possible XSS in the Plugin Vendor URL was possible
+      published: 2023-05-31T14:15:10.487
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.jetbrains.com/privacy-security/issues-fixed/
+    - id: CVE-2023-34223
+      description: In JetBrains TeamCity before 2023.05 parameters of the "password" type from build dependencies could be logged in some cases
+      published: 2023-05-31T14:15:10.557
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.jetbrains.com/privacy-security/issues-fixed/
+    - id: CVE-2023-3003
+      description: A vulnerability classified as critical was found in SourceCodester Train Station Ticketing System 1.0. Affected by this vulnerability is an unknown functionality of the file manage_prices.php of the component GET Parameter Handler. The manipulation of the argument id leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-230347.
+      published: 2023-05-31T09:15:10.600
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/shiyur14/bugReport/blob/main/SQL.md
+        - https://vuldb.com/?ctiid.230347
+        - https://vuldb.com/?id.230347
+    - id: CVE-2023-34225
+      description: In JetBrains TeamCity before 2023.05 stored XSS in the NuGet feed page was possible
+      published: 2023-05-31T14:15:10.697
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.jetbrains.com/privacy-security/issues-fixed/
+    - id: CVE-2023-34226
+      description: In JetBrains TeamCity before 2023.05 reflected XSS in the Subscriptions page was possible
+      published: 2023-05-31T14:15:10.763
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.jetbrains.com/privacy-security/issues-fixed/
+    - id: CVE-2023-2909
+      description: 'EZ Sync service fails to adequately handle user input, allowing an attacker to navigate beyond the intended directory structure and delete files. Affected products and versions include: ADM 4.0.6.REG2, 4.1.0 and below as well as ADM 4.2.1.RGE2 and below.'
+      published: 2023-05-31T10:15:09.577
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.asustor.com/security/security_advisory_detail?id=25
+    - id: CVE-2023-2547
+      description: The Feather Login Page plugin for WordPress is vulnerable to unauthorized loss of data due to a missing capability check on the 'deleteUser' function in versions starting from 1.0.7 up to, and including, 1.1.1. This makes it possible for authenticated attackers, with subscriber-level permissions and above, to delete the temp user generated by the plugin.
+      published: 2023-05-31T03:15:09.510
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://plugins.trac.wordpress.org/browser/feather-login-page/trunk/features/inc/admin/expirable-login-link.php?rev=2612332#L71
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/5d58a6a4-de2c-485f-a8b0-7a7d144fbf3c?source=cve
+    - id: CVE-2023-34229
+      description: In JetBrains TeamCity before 2023.05 stored XSS in GitLab Connection page was possible
+      published: 2023-05-31T14:15:10.957
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.jetbrains.com/privacy-security/issues-fixed/
+    - id: CVE-2023-3012
+      description: NULL Pointer Dereference in GitHub repository gpac/gpac prior to 2.2.2.
+      published: 2023-05-31T14:15:11.097
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/gpac/gpac/commit/53387aa86c1af1228d0fa57c67f9c7330716d5a7
+        - https://huntr.dev/bounties/916b787a-c603-409d-afc6-25bb02070e69
+    - id: CVE-2023-33979
+      description: gpt_academic provides a graphical interface for ChatGPT/GLM. A vulnerability was found in gpt_academic 3.37 and prior. This issue affects some unknown processing of the component Configuration File Handler. The manipulation of the argument file leads to information disclosure. Since no sensitive files are configured to be off-limits, sensitive information files in some working directories can be read through the `/file` route, leading to sensitive information leakage. This affects users that uses file configurations via `config.py`, `config_private.py`, `Dockerfile`. A patch is available at commit 1dcc2873d2168ad2d3d70afcb453ac1695fbdf02. As a workaround, one may use environment variables instead of `config*.py` files to configure this project, or use docker-compose installation to configure this project.
+      published: 2023-05-31T19:15:27.163
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/binary-husky/gpt_academic/commit/1dcc2873d2168ad2d3d70afcb453ac1695fbdf02
+        - https://github.com/binary-husky/gpt_academic/security/advisories/GHSA-pg65-p24m-wf5g
+    - id: CVE-2022-35759
+      description: Windows Local Security Authority (LSA) Denial of Service Vulnerability
+      published: 2023-05-31T19:15:17.253
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-35759
+    - id: CVE-2023-3015
+      description: A vulnerability has been found in yiwent Vip Video Analysis 1.0 and classified as critical. Affected by this vulnerability is an unknown functionality of the file data/title.php. The manipulation of the argument titurl leads to server-side request forgery. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-230359.
+      published: 2023-05-31T14:15:11.290
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/Xor-Gerke/webray.com.cn/blob/main/cve/VIP-video-analysis/SSRF.md
+        - https://vuldb.com/?ctiid.230359
+        - https://vuldb.com/?id.230359
+    - id: CVE-2022-35758
+      description: Windows Kernel Memory Information Disclosure Vulnerability
+      published: 2023-05-31T19:15:17.190
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-35758
+    - id: CVE-2023-2304
+      description: The Favorites plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'user_favorites' shortcode in versions up to, and including, 2.3.2 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+      published: 2023-05-31T05:15:10.260
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://plugins.trac.wordpress.org/browser/favorites/tags/2.3.2/app/API/Shortcodes/UserFavoritesShortcode.php#L57
+        - https://plugins.trac.wordpress.org/browser/favorites/tags/2.3.2/assets/js/favorites.js#L421
+        - https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2919192%40favorites&old=2805323%40favorites&sfp_email=&sfph_mail=
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/5bd03cd0-34f0-491c-8247-79656eba32a8?source=cve
+    - id: CVE-2023-3021
+      description: Cross-site Scripting (XSS) - Stored in GitHub repository mkucej/i-librarian-free prior to 5.10.4.
+      published: 2023-05-31T17:15:09.637
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/mkucej/i-librarian-free/commit/187e5ff4f413047fb522a9ab24c3c42555d7cfe7
+        - https://huntr.dev/bounties/9d289d3a-2931-4e94-b61c-449581736eff
+    - id: CVE-2023-3018
+      description: A vulnerability was found in SourceCodester Lost and Found Information System 1.0. It has been declared as critical. This vulnerability affects unknown code of the file /admin/?page=user/list. The manipulation leads to improper access controls. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-230362 is the identifier assigned to this vulnerability.
+      published: 2023-05-31T15:15:09.713
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - http://packetstormsecurity.com/files/172653/Lost-And-Found-Information-System-1.0-Broken-Access-Control-Privilege-Escalation.html
+        - https://medium.com/@akashpandey380/lost-and-found-information-system-v1-0-idor-cve-2023-977966c4450d
+        - https://vuldb.com/?ctiid.230362
+        - https://vuldb.com/?id.230362
+    - id: CVE-2023-3004
+      description: A vulnerability, which was classified as critical, has been found in SourceCodester Simple Chat System 1.0. Affected by this issue is some unknown functionality of the file /ajax.php?action=read_msg of the component POST Parameter Handler. The manipulation of the argument convo_id leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-230348.
+      published: 2023-05-31T09:15:10.677
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/sikii7/CVE/blob/main/SQL.md
+        - https://vuldb.com/?ctiid.230348
+        - https://vuldb.com/?id.230348
+    - id: CVE-2023-2836
+      description: The CRM Perks Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via form settings in versions up to, and including, 1.1.1 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.
+      published: 2023-05-31T04:15:10.200
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/Don-H50/wp-vul/blob/main/CPF-xss-exploit.md
+        - https://plugins.trac.wordpress.org/changeset/2917582/
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/de11636b-a051-4e76-bc26-ed76f66fe0df?source=cve
+    - id: CVE-2023-2436
+      description: The Blog-in-Blog plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'blog_in_blog' shortcode in versions up to, and including, 1.1.1 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers with editor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.
+      published: 2023-05-31T03:15:09.380
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://plugins.trac.wordpress.org/browser/blog-in-blog/tags/1.1.1/blog-in-blog.php#L257
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/5c6a88c3-18b7-470f-8014-373ead66dcfa?source=cve
+    - id: CVE-2023-2998
+      description: Cross-site Scripting (XSS) - Stored in GitHub repository thorsten/phpmyfaq prior to 3.1.14.
+      published: 2023-05-31T01:15:43.103
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/thorsten/phpmyfaq/commit/c120070a66e6c497c328d3b6b067eebcd8ea8493
+        - https://huntr.dev/bounties/8282d78e-f399-4bf4-8403-f39103a31e78
+    - id: CVE-2023-2999
+      description: Cross-site Scripting (XSS) - Stored in GitHub repository thorsten/phpmyfaq prior to 3.1.14.
+      published: 2023-05-31T01:15:43.163
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/thorsten/phpmyfaq/commit/937913948cab382a38f681e0bd29c152e2f383cd
+        - https://huntr.dev/bounties/4d89c7cc-fb4c-4b64-9b67-f0189f70a620
+    - id: CVE-2022-35754
+      description: Unified Write Filter Elevation of Privilege Vulnerability
+      published: 2023-05-31T19:15:16.937
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-35754
+    - id: CVE-2023-3013
+      description: Unchecked Return Value in GitHub repository gpac/gpac prior to 2.2.2.
+      published: 2023-05-31T14:15:11.157
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://github.com/gpac/gpac/commit/78e539b43293829a14a32e821f5267e3b7417594
+        - https://huntr.dev/bounties/52f95edc-cc03-4a9f-9bf8-74f641260073
+    - id: CVE-2023-34224
+      description: In JetBrains TeamCity before 2023.05 open redirect during oAuth configuration was possible
+      published: 2023-05-31T14:15:10.630
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.jetbrains.com/privacy-security/issues-fixed/
+    - id: CVE-2023-2758
+      description: A denial of service vulnerability exists in Contec CONPROSYS HMI System versions 3.5.2 and prior. When there is a time-zone mismatch in certain configuration files, a remote, unauthenticated attacker may deny logins for an extended period of time.
+      published: 2023-05-31T15:15:09.473
+      severity: LOW
+      privileges: NONE
+      references:
+        - https://jvn.jp/en/vu/JVNVU93372935/index.html
+        - https://www.tenable.com/security/research/tra-2023-21
+    - id: CVE-2015-10107
+      description: A vulnerability was found in Simplr Registration Form Plus+ Plugin up to 2.3.4 on WordPress and classified as problematic. This issue affects some unknown processing. The manipulation leads to cross site scripting. The attack may be initiated remotely. Upgrading to version 2.3.5 is able to address this issue. The name of the patch is d588446844dd49232ab400ef213ff5b92121c33e. It is recommended to upgrade the affected component. The identifier VDB-230153 was assigned to this vulnerability.
+      published: 2023-05-31T03:15:09.157
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/wp-plugins/simplr-registration-form/commit/d588446844dd49232ab400ef213ff5b92121c33e
+        - https://vuldb.com/?ctiid.230153
+        - https://vuldb.com/?id.230153
+    - id: CVE-2023-3005
+      description: A vulnerability, which was classified as problematic, was found in SourceCodester Local Service Search Engine Management System 1.0. This affects an unknown part of the file /admin/ajax.php?action=save_area of the component POST Parameter Handler. The manipulation of the argument area with the input <script>alert(document.cookie)</script> leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-230349 was assigned to this vulnerability.
+      published: 2023-05-31T09:15:10.743
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/sikii7/CVE/blob/main/XSS.md
+        - https://vuldb.com/?ctiid.230349
+        - https://vuldb.com/?id.230349
+    - id: CVE-2023-3014
+      description: A vulnerability, which was classified as problematic, was found in BeipyVideoResolution up to 2.6. Affected is an unknown function of the file admin/admincore.php. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-230358 is the identifier assigned to this vulnerability.
+      published: 2023-05-31T14:15:11.223
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/Xor-Gerke/webray.com.cn/blob/main/cve/BeipyVideoResolution/xss.md
+        - https://vuldb.com/?ctiid.230358
+        - https://vuldb.com/?id.230358
+    - id: CVE-2023-3016
+      description: A vulnerability was found in yiwent Vip Video Analysis 1.0 and classified as problematic. Affected by this issue is some unknown functionality of the file admin/admincore.php. The manipulation leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-230360.
+      published: 2023-05-31T14:15:11.353
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/Xor-Gerke/webray.com.cn/blob/main/cve/VIP-video-analysis/XSS.md
+        - https://vuldb.com/?ctiid.230360
+        - https://vuldb.com/?id.230360
+    - id: CVE-2023-3017
+      description: A vulnerability was found in SourceCodester Lost and Found Information System 1.0. It has been classified as problematic. This affects an unknown part of the file admin/?page=user/manage_user of the component Manage User Page. The manipulation of the argument First Name/Middle Name/Last Name leads to basic cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-230361 was assigned to this vulnerability.
+      published: 2023-05-31T15:15:09.627
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://medium.com/@akashpandey380/lost-and-found-information-system-v1-0-html-injection-3596f2b856c0
+        - https://vuldb.com/?ctiid.230361
+        - https://vuldb.com/?id.230361
+    - id: CVE-2014-125103
+      description: A vulnerability was found in BestWebSoft Twitter Plugin up to 1.3.2 on WordPress. It has been declared as problematic. Affected by this vulnerability is the function twttr_settings_page of the file twitter.php. The manipulation of the argument twttr_url_twitter/bws_license_key/bws_license_plugin leads to cross site scripting. The attack can be launched remotely. Upgrading to version 1.3.7 is able to address this issue. The name of the patch is e04d59ab578316ffeb204cf32dc71c0d0e1ff77c. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-230155.
+      published: 2023-05-31T03:15:09.077
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/wp-plugins/twitter-plugin/commit/e04d59ab578316ffeb204cf32dc71c0d0e1ff77c
+        - https://vuldb.com/?ctiid.230155
+        - https://vuldb.com/?id.230155
+    - id: CVE-2023-2434
+      description: The Nested Pages plugin for WordPress is vulnerable to unauthorized loss of data due to a missing capability check on the 'reset' function in versions up to, and including, 3.2.3. This makes it possible for authenticated attackers, with editor-level permissions and above, to reset plugin settings.
+      published: 2023-05-31T04:15:10.070
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://plugins.trac.wordpress.org/browser/wp-nested-pages/tags/3.2.3/app/Form/Listeners/ResetSettings.php#L12
+        - https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2919175%40wp-nested-pages&old=2814681%40wp-nested-pages&sfp_email=&sfph_mail=
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/8c3e61e9-3610-41b5-9820-28012dc657fd?source=cve
+    - id: CVE-2023-33487
+      description: TOTOLINK X5000R V9.1.0u.6118_B20201102 and V9.1.0u.6369_B20230113 contains a command insertion vulnerability in setDiagnosisCfg.This vulnerability allows an attacker to execute arbitrary commands through the "ip" parameter.
+      published: 2023-05-31T13:15:09.753
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Kazamayc/vuln/tree/main/TOTOLINK/X5000R/4
+    - id: CVE-2023-29747
+      description: Story Saver for Instragram - Video Downloader 1.0.6 for Android exists exposed component, the component provides the method to modify the SharedPreference file. The attacker can use the method to modify the data in any SharedPreference file, these data will be loaded into the memory when the application is opened. Depending on how the data is used, this can result in various attack consequences, such as ad display exceptions.
+      published: 2023-05-31T16:15:09.573
+      severity: ""
+      privileges: ""
+      references:
+        - https://apksos.com/app/story.saver.downloader.photo.video.repost.byrk
+        - https://github.com/LianKee/SO-CVEs/blob/main/CVEs/CVE-2023-29747/CVE%20detail.md
+        - https://www.instagram.com/nihans_macrame/
+    - id: CVE-2023-31548
+      description: A stored Cross-site scripting (XSS) vulnerability in the FundRaiserEditor.php component of ChurchCRM v4.5.3 allows attackers to execute arbitrary web scripts or HTML via a crafted payload.
+      published: 2023-05-31T14:15:10.187
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/10splayaSec/CVE-Disclosures/tree/main/ChurchCRM/CVE-2023-31548
+    - id: CVE-2023-26842
+      description: A stored Cross-site scripting (XSS) vulnerability in ChurchCRM 4.5.3 allows remote attackers to inject arbitrary web script or HTML via the OptionManager.php.
+      published: 2023-05-31T14:15:10.067
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/10splayaSec/CVE-Disclosures/tree/main/ChurchCRM/CVE-2023-26842
+    - id: CVE-2023-33736
+      description: A stored cross-site scripting (XSS) vulnerability in Dcat-Admin v2.1.3-beta allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the URL parameter.
+      published: 2023-05-31T13:15:10.270
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/jqhph/dcat-admin/issues/2027
+    - id: CVE-2023-33509
+      description: KramerAV VIA GO² < 4.0.1.1326 is vulnerable to SQL Injection.
+      published: 2023-05-31T13:15:10.220
+      severity: ""
+      privileges: ""
+      references:
+        - https://zxsecurity.co.nz/research/advisories/kramer-via-go-2-rce-and-other-vulns/
+    - id: CVE-2023-33508
+      description: KramerAV VIA GO² < 4.0.1.1326 is vulnerable to unauthenticated file upload resulting in Remote Code Execution (RCE).
+      published: 2023-05-31T13:15:09.960
+      severity: ""
+      privileges: ""
+      references:
+        - https://zxsecurity.co.nz/research/advisories/kramer-via-go-2-rce-and-other-vulns/
+    - id: CVE-2023-33507
+      description: KramerAV VIA GO² < 4.0.1.1326 is vulnerable to Unauthenticated arbitrary file read.
+      published: 2023-05-31T13:15:09.880
+      severity: ""
+      privileges: ""
+      references:
+        - https://zxsecurity.co.nz/research/advisories/kramer-via-go-2-rce-and-other-vulns/
+    - id: CVE-2021-31233
+      description: SQL Injection vulnerability found in Fighting Cock Information System v.1.0 allows a remote attacker to obtain sensitive information via the edit_breed.php parameter.
+      published: 2023-05-31T01:15:42.983
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/gabesolomon/CVE-2021-31233
+        - https://www.sourcecodester.com/php/12824/fighting-cock-information-system.html
+    - id: CVE-2023-33486
+      description: TOTOLINK X5000R V9.1.0u.6118_B20201102 and V9.1.0u.6369_B20230113 contain a command insertion vulnerability in setOpModeCfg. This vulnerability allows an attacker to execute arbitrary commands through the "hostName" parameter.
+      published: 2023-05-31T13:15:09.697
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Kazamayc/vuln/tree/main/TOTOLINK/X5000R/3
+    - id: CVE-2023-33718
+      description: mp4v2 v2.1.3 was discovered to contain a memory leak via MP4File::ReadString() at mp4file_io.cpp
+      published: 2023-05-31T19:15:26.997
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/enzo1982/mp4v2/issues/37
+    - id: CVE-2023-33722
+      description: EDIMAX BR-6288ACL v1.12 was discovered to contain an authenticated remote code execution (RCE) vulnerability via the pppUserName parameter.
+      published: 2023-05-31T19:15:27.090
+      severity: ""
+      privileges: ""
+      references:
+        - https://docs.google.com/document/d/1KNuU0nVd4oHMZiKgfs45wK2yA4N6K7q4/edit?usp=sharing&ouid=108638774561085298954&rtpof=true&sd=true
+        - https://shimo.im/docs/pmkxQ1GQ4DTowANr
+    - id: CVE-2023-33485
+      description: TOTOLINK X5000R V9.1.0u.6118_B20201102 and V9.1.0u.6369_B20230113 contains a post-authentication buffer overflow via parameter sPort/ePort in the addEffect function.
+      published: 2023-05-31T13:15:09.637
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Kazamayc/vuln/tree/main/TOTOLINK/X5000R/5
+    - id: CVE-2023-30285
+      description: An issue in Deviniti Issue Sync Synchronization v3.5.2 for Jira allows attackers to obtain the login credentials of a user via a crafted request sent to /rest/synchronizer/1.0/technicalUser.
+      published: 2023-05-31T12:15:09.410
+      severity: ""
+      privileges: ""
+      references:
+        - http://deviniti.com
+        - http://issue.com
+        - https://github.com/D23K4N/CVE/blob/main/CVE-2023-30285.md
+    - id: CVE-2021-45039
+      description: Multiple models of the Uniview IP Camera (e.g., IPC_G6103 B6103.16.10.B25.201218, IPC_G61, IPC21, IPC23, IPC32, IPC36, IPC62, and IPC_HCMN) offer an undocumented UDP service on port 7788 that allows a remote unauthenticated attacker to overflow an internal buffer and achieve code execution. By using this buffer overflow, a remote attacker can start the telnetd service. This service has a hardcoded default username and password (root/123456). Although it has a restrictive shell, this can be easily bypassed via the built-in ECHO shell command.
+      published: 2023-05-31T20:15:10.210
+      severity: ""
+      privileges: ""
+      references:
+        - https://ssd-disclosure.com/ssd-advisory--uniview-preauth-rce/
+        - https://www.uniview.com/About_Us/Security/Notice/202112/920471_140493_0.htm
+    - id: CVE-2022-48502
+      description: An issue was discovered in the Linux kernel before 6.2. The ntfs3 subsystem does not properly check for correctness during disk reads, leading to an out-of-bounds read in ntfs_set_ea in fs/ntfs3/xattr.c.
+      published: 2023-05-31T20:15:10.303
+      severity: ""
+      privileges: ""
+      references:
+        - https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.2
+        - https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=0e8235d28f3a0e9eda9f02ff67ee566d5f42b66b
+        - https://syzkaller.appspot.com/bug?extid=8778f030156c6cd16d72
+    - id: CVE-2023-23562
+      description: Stormshield Endpoint Security 2.3.0 through 2.3.2 has Incorrect Access Control that allows an authenticated user can update global parameters.
+      published: 2023-05-31T01:15:43.057
+      severity: ""
+      privileges: ""
+      references:
+        - https://advisories.stormshield.eu
+        - https://advisories.stormshield.eu/2023-002/
+    - id: CVE-2023-33287
+      description: A stored cross-site scripting (XSS) vulnerability in the Inline Table Editing application before 3.8.0 for Confluence allows attackers to store and execute arbitrary JavaScript via a crafted payload injected into the tables.
+      published: 2023-05-31T20:15:10.583
+      severity: ""
+      privileges: ""
+      references:
+        - https://actonic.de/produkte/inline-table-editing/
+        - https://marketplace.atlassian.com/apps/1217271/inline-table-editing/version-history
+        - https://marketplace.atlassian.com/apps/1217271/inline-table-editing?hosting=server&tab=versions
+    - id: CVE-2023-33730
+      description: Privilege Escalation in the "GetUserCurrentPwd" function in Microworld Technologies eScan Management Console 14.0.1400.2281 allows any remote attacker to retrieve password of any admin or normal user in plain text format.
+      published: 2023-05-31T20:15:10.630
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/sahiloj/CVE-2023-33730/blob/main/CVE-2023-33730.md
+    - id: CVE-2023-33732
+      description: Cross Site Scripting (XSS) in the New Policy form in Microworld Technologies eScan management console 14.0.1400.2281 allows a remote attacker to inject arbitrary code via the vulnerable parameters type, txtPolicyType, and Deletefileval.
+      published: 2023-05-31T20:15:10.677
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/sahiloj/CVE-2023-33733/blob/main/CVE-2023-33733.md
+    - id: CVE-2023-33735
+      description: D-Link DIR-846 v1.00A52 was discovered to contain a remote command execution (RCE) vulnerability via the tomography_ping_address parameter in the /HNAP1 interface.
+      published: 2023-05-31T20:15:10.720
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Tyaoo/IoT-Vuls/blob/main/dlink/DIR-846/vul.md
+        - https://www.dlink.com/en/security-bulletin/
+    - id: CVE-2023-34255
+      description: An issue was discovered in the Linux kernel through 6.3.5. There is a use-after-free in xfs_btree_lookup_get_block in fs/xfs/libxfs/xfs_btree.c because fs/xfs/xfs_buf_item_recover.c does not perform buffer content verification when log replay is skipped.
+      published: 2023-05-31T20:15:10.767
+      severity: ""
+      privileges: ""
+      references:
+        - https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=22ed903eee23a5b174e240f1cdfa9acf393a5210
+        - https://syzkaller.appspot.com/bug?extid=7e9494b8b399902e994e
+    - id: CVE-2023-34256
+      description: An issue was discovered in the Linux kernel before 6.3.3. There is an out-of-bounds read in crc16 in lib/crc16.c when called from fs/ext4/super.c because ext4_group_desc_csum does not properly check an offset.
+      published: 2023-05-31T20:15:10.817
+      severity: ""
+      privileges: ""
+      references:
+        - https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.3.3
+        - https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=4f04351888a83e595571de672e0a4a8b74f4fb31
+        - https://syzkaller.appspot.com/bug?extid=8785e41224a3afd04321
+    - id: CVE-2023-34257
+      description: '** DISPUTED ** An issue was discovered in BMC Patrol through 23.1.00. The agent''s configuration can be remotely modified (and, by default, authentication is not required). Some configuration fields related to SNMP (e.g., masterAgentName or masterAgentStartLine) result in code execution when the agent is restarted. NOTE: the vendor''s perspective is "These are not vulnerabilities for us as we have provided the option to implement the authentication."'
+      published: 2023-05-31T20:15:10.860
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.errno.fr/PatrolAdvisory.html#remote-code-excution-using-patrols-pconfig
+    - id: CVE-2023-34258
+      description: An issue was discovered in BMC Patrol before 22.1.00. The agent's configuration can be remotely queried. This configuration contains the Patrol account password, encrypted with a default AES key. This account can then be used to achieve remote code execution.
+      published: 2023-05-31T20:15:10.903
+      severity: ""
+      privileges: ""
+      references:
+        - https://gist.github.com/gquere/045638b9959f4b3e119ea01d8d6ff856
+        - https://www.errno.fr/PatrolAdvisory.html#remote-secrets-leak-using-patrols-pconfig-22100
+    - id: CVE-2023-3006
+      description: A known cache speculation vulnerability, known as Branch History Injection (BHI) or Spectre-BHB, becomes actual again for the new hw AmpereOne. Spectre-BHB is similar to Spectre v2, except that malicious code uses the shared branch history (stored in the CPU Branch History Buffer, or BHB) to influence mispredicted branches within the victim's hardware context. Once that occurs, speculation caused by the mispredicted branches can cause cache allocation. This issue leads to obtaining information that should not be accessible.
+      published: 2023-05-31T20:15:11.127
+      severity: ""
+      privileges: ""
+      references:
+        - https://git.kernel.org/pub/scm/linux/kernel/git/arm64/linux.git/commit/?id=0e5d5ae837c8
+    - id: CVE-2023-33627
+      description: H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the UpdateSnat interface at /goform/aspForm.
+      published: 2023-05-31T21:15:09.423
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackmd.io/@0dayResearch/UpdateSnat
+    - id: CVE-2023-33628
+      description: H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the DelvsList interface at /goform/aspForm.
+      published: 2023-05-31T21:15:09.470
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackmd.io/@0dayResearch/DelvsList_R300
+    - id: CVE-2023-33629
+      description: H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the DeltriggerList interface at /goform/aspForm.
+      published: 2023-05-31T21:15:09.520
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackmd.io/@0dayResearch/r1UjggZfh
+    - id: CVE-2023-33630
+      description: H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the EditvsList interface at /goform/aspForm.
+      published: 2023-05-31T21:15:09.563
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackmd.io/@0dayResearch/HkUA31-Mh
+    - id: CVE-2023-33631
+      description: H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the DelSTList interface at /goform/aspForm.
+      published: 2023-05-31T21:15:09.607
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackmd.io/@0dayResearch/DelSTList
+    - id: CVE-2023-33632
+      description: H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the ipqos_lanip_dellist interface at /goform/aspForm.
+      published: 2023-05-31T21:15:09.650
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackmd.io/@0dayResearch/r1N7fg-fn
+    - id: CVE-2023-33633
+      description: H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the UpdateWanParams interface at /goform/aspForm.
+      published: 2023-05-31T21:15:09.690
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackmd.io/@0dayResearch/UpdateWanParams
+    - id: CVE-2023-33634
+      description: H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the EdittriggerList interface at /goform/aspForm.
+      published: 2023-05-31T21:15:09.733
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackmd.io/@0dayResearch/r1g5bl-Mn
+    - id: CVE-2023-33635
+      description: H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the UpdateMacClone interface at /goform/aspForm.
+      published: 2023-05-31T21:15:09.780
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackmd.io/@0dayResearch/UpdateMacClone
+    - id: CVE-2023-33636
+      description: H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the ipqos_lanip_editlist interface at /goform/aspForm.
+      published: 2023-05-31T21:15:09.820
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackmd.io/@0dayResearch/HyX6mgWz2
+    - id: CVE-2023-33637
+      description: H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the DelDNSHnList interface at /goform/aspForm.
+      published: 2023-05-31T21:15:09.877
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackmd.io/@0dayResearch/r1azLeWz3
+    - id: CVE-2023-33638
+      description: H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the Edit_BasicSSID_5G interface at /goform/aspForm.
+      published: 2023-05-31T21:15:09.923
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackmd.io/@0dayResearch/ryyALdiV3
+    - id: CVE-2023-33639
+      description: H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the SetMobileAPInfoById interface at /goform/aspForm.
+      published: 2023-05-31T21:15:09.967
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackmd.io/@0dayResearch/Bk2hvYkH3
+    - id: CVE-2023-33640
+      description: H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the SetAPWifiorLedInfoById interface at /goform/aspForm.
+      published: 2023-05-31T21:15:10.010
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackmd.io/@0dayResearch/S1twOtyrh
+    - id: CVE-2023-33641
+      description: H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the AddMacList interface at /goform/aspForm.
+      published: 2023-05-31T21:15:10.050
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackmd.io/@0dayResearch/SycYkOj42
+    - id: CVE-2023-33642
+      description: H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the Edit_BasicSSID interface at /goform/aspForm.
+      published: 2023-05-31T21:15:10.097
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackmd.io/@0dayResearch/Skg0zOsVh
+    - id: CVE-2023-33643
+      description: H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the AddWlanMacList interface at /goform/aspForm.
+      published: 2023-05-31T21:15:10.137
+      severity: ""
+      privileges: ""
+      references:
+        - https://hackmd.io/@0dayResearch/S1N5bdsE2
