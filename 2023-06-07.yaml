@@ -1,0 +1,1112 @@
+data:
+    - id: CVE-2023-32550
+      description: Landscape's server-status page exposed sensitive system information. This data leak included GET requests which contain information to attack and leak further information from the Landscape API.
+      published: 2023-06-06T16:15:10.687
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://bugs.launchpad.net/landscape/+bug/1929037
+    - id: CVE-2023-29632
+      description: PrestaShop jmspagebuilder 3.x is vulnerable to SQL Injection via ajax_jmspagebuilder.php.
+      published: 2023-06-06T20:15:11.683
+      severity: CRITICAL
+      privileges: NONE
+      references:
+        - https://friends-of-presta.github.io/security-advisories/modules/2023/03/13/jmspagebuilder.html
+    - id: CVE-2022-40523
+      description: Information disclosure in Kernel due to indirect branch misprediction.
+      published: 2023-06-06T08:15:11.357
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2023-32203
+      description: "The affected application lacks proper validation of user-supplied data when parsing project files (e.g., HMI). This could lead to an out-of-bounds write at CScape_EnvisionRV+0x2e374b. An attacker could leverage this vulnerability to execute arbitrary code in the context of the current process. \n\n \n\n \n\n \n\n \n\n \n\n\n\n "
+      published: 2023-06-06T17:15:15.023
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-143-04
+    - id: CVE-2023-33959
+      description: notation is a CLI tool to sign and verify OCI artifacts and container images. An attacker who has compromised a registry can cause users to verify the wrong artifact. The problem has been fixed in the release v1.0.0-rc.6. Users should upgrade their notation-go library to v1.0.0-rc.6 or above. Users unable to upgrade may restrict container registries to a set of secure and trusted container registries.
+      published: 2023-06-06T19:15:12.637
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/notaryproject/notation-go/security/advisories/GHSA-xhg5-42rf-296r
+    - id: CVE-2023-32289
+      description: "The affected application lacks proper validation of user-supplied data when parsing project files (e.g.., CSP). This could lead to an out-of-bounds read in IO_CFG. An attacker could leverage this vulnerability to execute arbitrary code in the context of the current process. \n\n\n\n "
+      published: 2023-06-06T16:15:10.073
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-143-04
+    - id: CVE-2022-40525
+      description: Information disclosure in Linux Networking Firmware due to unauthorized information leak during side channel analysis.
+      published: 2023-06-06T08:15:11.447
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2023-34104
+      description: 'fast-xml-parser is an open source, pure javascript xml parser. fast-xml-parser allows special characters in entity names, which are not escaped or sanitized. Since the entity name is used for creating a regex for searching and replacing entities in the XML body, an attacker can abuse it for denial of service (DoS) attacks. By crafting an entity name that results in an intentionally bad performing regex and utilizing it in the entity replacement step of the parser, this can cause the parser to stall for an indefinite amount of time. This problem has been resolved in v4.2.4. Users are advised to upgrade. Users unable to upgrade should avoid using DOCTYPE parsing by setting the `processEntities: false` option.'
+      published: 2023-06-06T18:15:11.643
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/NaturalIntelligence/fast-xml-parser/commit/39b0e050bb909e8499478657f84a3076e39ce76c
+        - https://github.com/NaturalIntelligence/fast-xml-parser/security/advisories/GHSA-6w63-h3fj-q4vw
+    - id: CVE-2023-21632
+      description: Memory corruption in Automotive GPU while querying a gsl memory node.
+      published: 2023-06-06T08:15:12.037
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2023-32281
+      description: "The affected application lacks proper validation of user-supplied data when parsing project files (e.g., CSP). This could lead to an out-of-bounds read in the FontManager. An attacker could leverage this vulnerability to execute arbitrary code in the context of the current process.\n\n "
+      published: 2023-06-06T16:15:09.603
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-143-04
+    - id: CVE-2023-31278
+      description: "The affected application lacks proper validation of user-supplied data when parsing project files (e.g., HMI). This could lead to an out-of-bounds read. An attacker could leverage this vulnerability to potentially execute arbitrary code in the context of the current process. \n\n\n\n \n\n \n\n \n\n \n\n \n\n \n\n\n\n "
+      published: 2023-06-06T17:15:14.573
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-143-04
+    - id: CVE-2023-31244
+      description: "The affected product does not properly validate user-supplied data. If a user opens a maliciously formed CSP file, then an attacker could execute arbitrary code within the current process by accessing an uninitialized pointer. \n\n \n\n \n\n \n\n \n\n\n\n "
+      published: 2023-06-06T17:15:14.360
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-143-04
+    - id: CVE-2023-2132
+      description: An issue has been discovered in GitLab CE/EE affecting all versions starting from 15.4 before 15.10.8, all versions starting from 15.11 before 15.11.7, all versions starting from 16.0 before 16.0.2. A DollarMathPostFilter Regular Expression Denial of Service in was possible by sending crafted payloads to the preview_markdown endpoint.
+      published: 2023-06-06T17:15:14.090
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://gitlab.com/gitlab-org/cves/-/blob/master/2023/CVE-2023-2132.json
+        - https://gitlab.com/gitlab-org/gitlab/-/issues/407586
+        - https://hackerone.com/reports/1934711
+    - id: CVE-2023-29503
+      description: 'The affected application lacks proper validation of user-supplied data when parsing project files (e.g., CSP). This could lead to a stack-based buffer overflow. An attacker could leverage this vulnerability to execute arbitrary code in the context of the current process. '
+      published: 2023-06-06T17:15:13.777
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-143-04
+    - id: CVE-2023-28653
+      description: "The affected application lacks proper validation of user-supplied data when parsing project files (e.g., CSP). This could lead to a use-after-free vulnerability. An attacker could leverage this vulnerability to execute arbitrary code in the context of the current process. \n\n \n\n \n\n \n\n\n\n "
+      published: 2023-06-06T17:15:13.543
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-143-04
+    - id: CVE-2023-32545
+      description: "The affected application lacks proper validation of user-supplied data when parsing project files (e.g., CSP). This could lead to an out-of-bounds read in Cscape!CANPortMigration. An attacker could leverage this vulnerability to execute arbitrary code in the context of the current process. \n\n \n\n\n\n "
+      published: 2023-06-06T15:15:09.867
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-143-04
+    - id: CVE-2023-33977
+      description: Kiwi TCMS is an open source test management system for both manual and automated testing. Kiwi TCMS allows users to upload attachments to test plans, test cases, etc. Earlier versions of Kiwi TCMS had introduced upload validators in order to prevent potentially dangerous files from being uploaded and Content-Security-Policy definition to prevent cross-site-scripting attacks. The upload validation checks were not 100% robust which left the possibility to circumvent them and upload a potentially dangerous file which allows execution of arbitrary JavaScript in the browser. Additionally we've discovered that Nginx's `proxy_pass` directive will strip some headers negating protections built into Kiwi TCMS when served behind a reverse proxy. This issue has been addressed in version 12.4. Users are advised to upgrade. Users unable to upgrade who are serving Kiwi TCMS behind a reverse proxy should make sure that additional header values are still passed to the client browser. If they aren't redefining them inside the proxy configuration.
+      published: 2023-06-06T19:15:12.800
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://github.com/kiwitcms/Kiwi/blob/master/etc/nginx.conf#L66-L68
+        - https://github.com/kiwitcms/Kiwi/blob/master/etc/nginx.conf#L87
+        - https://github.com/kiwitcms/Kiwi/commit/d789f4b51025de4f8c747c037d02e1b0da80b034
+        - https://github.com/kiwitcms/Kiwi/security/advisories/GHSA-2fqm-m4r2-fh98
+        - https://huntr.dev/bounties/6aea9a26-e29a-467b-aa5a-f767f0c2ec96/
+    - id: CVE-2023-32539
+      description: "The affected application lacks proper validation of user-supplied data when parsing project files (e.g., HMI). This could lead to an out-of-bounds write at CScape_EnvisionRV+0x2e3c04. An attacker could leverage this vulnerability to potentially execute arbitrary code in the context of the current process.\n\n \n\n \n\n \n\n \n\n \n\n \n\n\n\n "
+      published: 2023-06-06T16:15:10.297
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-143-04
+    - id: CVE-2023-2801
+      description: "Grafana is an open-source platform for monitoring and observability. \n\nUsing public dashboards users can query multiple distinct data sources using mixed queries. However such query has a possibility of crashing a Grafana instance.\n\nThe only feature that uses mixed queries at the moment is public dashboards, but it's also possible to cause this by calling the query API directly.\n\nThis might enable malicious users to crash Grafana instances through that endpoint.\n\nUsers may upgrade to version 9.4.12 and 9.5.3 to receive a fix."
+      published: 2023-06-06T19:15:11.413
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://grafana.com/security/security-advisories/cve-2023-2801/
+    - id: CVE-2022-40538
+      description: Transient DOS due to reachable assertion in modem while processing sib with incorrect values from network.
+      published: 2023-06-06T08:15:11.850
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2023-27916
+      description: "The affected application lacks proper validation of user-supplied data when parsing font files (e.g., FNT). This could lead to an out-of-bounds read. An attacker could leverage this vulnerability to potentially execute arbitrary code in the context of the current process. \n\n \n\n \n\n\n\n "
+      published: 2023-06-06T17:15:13.200
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.cisa.gov/news-events/ics-advisories/icsa-23-143-04
+    - id: CVE-2022-40522
+      description: Memory corruption in Linux Networking due to double free while handling a hyp-assign.
+      published: 2023-06-06T08:15:11.270
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2022-40536
+      description: Transient DOS due to improper authentication in modem while receiving plain TLB OTA request message from network.
+      published: 2023-06-06T08:15:11.680
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2022-40521
+      description: Transient DOS due to improper authorization in Modem
+      published: 2023-06-06T08:15:11.180
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2023-21669
+      description: Information Disclosure in WLAN HOST while sending DPP action frame to peer with an invalid source address.
+      published: 2023-06-06T08:15:12.590
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2022-22060
+      description: Assertion occurs while processing Reconfiguration message due to improper validation
+      published: 2023-06-06T08:15:09.193
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2022-22076
+      description: information disclosure due to cryptographic issue in Core during RPMB read request.
+      published: 2023-06-06T08:15:09.717
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2023-21661
+      description: Transient DOS while parsing WLAN beacon or probe-response frame.
+      published: 2023-06-06T08:15:12.507
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2023-21660
+      description: Transient DOS in WLAN Firmware while parsing FT Information Elements.
+      published: 2023-06-06T08:15:12.413
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2023-21659
+      description: Transient DOS in WLAN Firmware while processing frames with missing header fields.
+      published: 2023-06-06T08:15:12.333
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2023-21658
+      description: Transient DOS in WLAN Firmware while processing the received beacon or probe response frame.
+      published: 2023-06-06T08:15:12.253
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2022-40507
+      description: Memory corruption due to double free in Core while mapping HLOS address to the list.
+      published: 2023-06-06T08:15:11.097
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2022-33251
+      description: Transient DOS due to reachable assertion in Modem because of invalid network configuration.
+      published: 2023-06-06T08:15:10.560
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2022-33307
+      description: Memory Corruption due to double free in automotive when a bad HLOS address for one of the lists to be mapped is passed.
+      published: 2023-06-06T08:15:10.993
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2023-21628
+      description: Memory corruption in WLAN HAL while processing WMI-UTF command or FTM TLV1 command.
+      published: 2023-06-06T08:15:11.963
+      severity: HIGH
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2023-2833
+      description: The ReviewX plugin for WordPress is vulnerable to privilege escalation in versions up to, and including, 1.6.13 due to insufficient restriction on the 'rx_set_screen_options' function. This makes it possible for authenticated attackers, with minimal permissions such as a subscriber, to modify their user role by supplying the 'wp_screen_options[option]' and 'wp_screen_options[value]' parameters during a screen option update.
+      published: 2023-06-06T10:15:09.953
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://lana.codes/lanavdb/a889c3ff-5df0-4d7e-951f-0b0406468efa/
+        - https://plugins.trac.wordpress.org/browser/reviewx/tags/1.6.13/includes/rx-functions.php#L972
+        - https://plugins.trac.wordpress.org/changeset?sfp_email=&sfph_mail=&reponame=&new=2916148%40reviewx&old=2912114%40reviewx&sfp_email=&sfph_mail=#file472
+        - https://www.wordfence.com/blog/2023/05/wpdeveloper-addresses-privilege-escalation-vulnerability-in-reviewx-wordpress-plugin/
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/70e1d701-2cff-4793-9e4c-5b16a4038e8d?source=cve
+    - id: CVE-2022-33264
+      description: Memory corruption in modem due to stack based buffer overflow while parsing OTASP Key Generation Request Message.
+      published: 2023-06-06T08:15:10.740
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2023-21656
+      description: Memory corruption in WLAN HOST while receiving an WMI event from firmware.
+      published: 2023-06-06T08:15:12.103
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2023-21657
+      description: Memoru corruption in Audio when ADSP sends input during record use case.
+      published: 2023-06-06T08:15:12.180
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2023-21670
+      description: Memory Corruption in GPU Subsystem due to arbitrary command execution from GPU in privileged mode.
+      published: 2023-06-06T08:15:12.663
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2023-0985
+      description: An Authorization Bypass vulnerability was found in MB Connect Lines mbCONNECT24, mymbCONNECT24 and Helmholz' myREX24 and myREX24.virtual version <= 2.13.3. An authenticated remote user with low privileges can change the password of any user in the same account. This allows to take over the admin user and therefore fully compromise the account.
+      published: 2023-06-06T11:15:09.093
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://cert.vde.com/en/advisories/VDE-2023-002/
+    - id: CVE-2023-34111
+      description: The `Release PR Merged` workflow in the github repo taosdata/grafanaplugin is subject to a command injection vulnerability which allows for arbitrary code execution within the github action context due to the insecure usage of `${{ github.event.pull_request.title }}` in a bash command within the GitHub workflow. Attackers can inject malicious commands which will be executed by the workflow. This happens because `${{ github.event.pull_request.title }}` is directly passed to bash command on like 25 of the workflow. This may allow an attacker to gain access to secrets which the github action has access to or to otherwise make use of the compute resources.
+      published: 2023-06-06T17:15:15.210
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://github.com/taosdata/grafanaplugin/blob/master/.github/workflows/release-pr-merged.yaml#L25
+        - https://github.com/taosdata/grafanaplugin/security/advisories/GHSA-23wp-p848-hcgr
+        - https://securitylab.github.com/research/github-actions-untrusted-input/
+    - id: CVE-2023-22833
+      description: Palantir discovered a software bug in a recently released version of Foundry’s Lime2 service, one of the services backing the Ontology. The software bug has been fixed and the fix has been deployed to your hosted Foundry environment. The vulnerability allowed authenticated users within a Foundry organization to potentially bypass discretionary or mandatory access controls under certain circumstances.
+      published: 2023-06-06T19:15:10.213
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://palantir.safebase.us/?tcuUid=7f1fd834-805d-4679-85d0-9d779fa064ae
+    - id: CVE-2022-40529
+      description: Memory corruption due to improper access control in kernel while processing a mapping request from root process.
+      published: 2023-06-06T08:15:11.520
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2023-2546
+      description: The WP User Switch plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.0.2. This is due to incorrect authentication checking in the 'wpus_allow_user_to_admin_bar_menu' function with the 'wpus_who_switch' cookie value. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the username.
+      published: 2023-06-06T02:15:09.943
+      severity: HIGH
+      privileges: LOW
+      references:
+        - https://plugins.trac.wordpress.org/browser/wp-user-switch/trunk/inc/functions.php?rev=2237142#L33
+        - https://plugins.trac.wordpress.org/changeset/2921182/wp-user-switch/trunk/inc/functions.php
+        - https://www.wordfence.com/threat-intel/vulnerabilities/id/e89d912d-fa7a-4fb1-8872-95fa861c21ca?source=cve
+    - id: CVE-2023-32551
+      description: Landscape allowed URLs which caused open redirection.
+      published: 2023-06-06T16:15:10.813
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://bugs.launchpad.net/landscape/+bug/1929620
+    - id: CVE-2023-32549
+      description: Landscape cryptographic keys were insecurely generated with a weak pseudo-random generator.
+      published: 2023-06-06T16:15:10.447
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://bugs.launchpad.net/landscape/+bug/1929034
+    - id: CVE-2015-10116
+      description: A vulnerability classified as problematic has been found in RealFaviconGenerator Favicon Plugin up to 1.2.12 on WordPress. This affects the function install_new_favicon of the file admin/class-favicon-by-realfavicongenerator-admin.php. The manipulation leads to cross-site request forgery. It is possible to initiate the attack remotely. Upgrading to version 1.2.13 is able to address this issue. The identifier of the patch is 949a1ae7216216350458844f50a72f100b56d4e7. It is recommended to upgrade the affected component. The identifier VDB-230661 was assigned to this vulnerability.
+      published: 2023-06-06T01:15:40.430
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/wp-plugins/favicon-by-realfavicongenerator/commit/949a1ae7216216350458844f50a72f100b56d4e7
+        - https://vuldb.com/?ctiid.230661
+        - https://vuldb.com/?id.230661
+    - id: CVE-2023-33958
+      description: notation is a CLI tool to sign and verify OCI artifacts and container images. An attacker who has compromised a registry and added a high number of signatures to an artifact can cause denial of service of services on the machine, if a user runs notation verify command on the same machine. The problem has been fixed in the release v1.0.0-rc.6. Users should upgrade their notation packages to v1.0.0-rc.6 or above. Users unable to upgrade may restrict container registries to a set of secure and trusted container registries.
+      published: 2023-06-06T19:15:12.510
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://github.com/notaryproject/notation/releases/tag/v1.0.0-rc.6
+        - https://github.com/notaryproject/notation/security/advisories/GHSA-rvrx-rrwh-r9p6
+    - id: CVE-2022-40533
+      description: Transient DOS due to untrusted Pointer Dereference in core while sending USB QMI request.
+      published: 2023-06-06T08:15:11.603
+      severity: MEDIUM
+      privileges: NONE
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2023-3119
+      description: A vulnerability, which was classified as critical, has been found in SourceCodester Service Provider Management System 1.0. Affected by this issue is some unknown functionality of the file view.php. The manipulation of the argument id leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-230798 is the identifier assigned to this vulnerability.
+      published: 2023-06-06T11:15:10.063
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/Peanut886/Vulnerability/blob/main/webray.com.cn/Service%20Provider%20Management%20System%20-%20multiple%20vulnerabilities.md
+        - https://vuldb.com/?ctiid.230798
+        - https://vuldb.com/?id.230798
+    - id: CVE-2022-33303
+      description: Transient DOS due to uncontrolled resource consumption in Linux kernel when malformed messages are sent from the Gunyah Resource Manager message queue.
+      published: 2023-06-06T08:15:10.903
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2023-32682
+      description: 'Synapse is a Matrix protocol homeserver written in Python with the Twisted framework. In affected versions it may be possible for a deactivated user to login when using uncommon configurations. This only applies if any of the following are true: 1. JSON Web Tokens are enabled for login via the `jwt_config.enabled` configuration setting. 2. The local password database is enabled via the `password_config.enabled` and `password_config.localdb_enabled` configuration settings *and* a user''s password is updated via an admin API after a user is deactivated. Note that the local password database is enabled by default, but it is uncommon to set a user''s password after they''ve been deactivated. Installations that are configured to only allow login via Single Sign-On (SSO) via CAS, SAML or OpenID Connect (OIDC); or via an external password provider (e.g. LDAP) are not affected. If not using JSON Web Tokens, ensure that deactivated users do not have a password set. This issue has been addressed in version 1.85.0. Users are advised to upgrade.'
+      published: 2023-06-06T19:15:11.743
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/matrix-org/synapse/pull/15624
+        - https://github.com/matrix-org/synapse/pull/15634
+        - https://github.com/matrix-org/synapse/security/advisories/GHSA-26c5-ppr8-f33p
+        - https://matrix-org.github.io/synapse/latest/admin_api/user_admin_api.html#create-or-modify-account
+        - https://matrix-org.github.io/synapse/latest/jwt.html
+        - https://matrix-org.github.io/synapse/latest/usage/configuration/config_documentation.html#password_config
+    - id: CVE-2022-46165
+      description: Syncthing is an open source, continuous file synchronization program. In versions prior to 1.23.5 a compromised instance with shared folders could sync malicious files which contain arbitrary HTML and JavaScript in the name. If the owner of another device looks over the shared folder settings and moves the mouse over the latest sync, a script could be executed to change settings for shared folders or add devices automatically. Additionally adding a new device with a malicious name could embed HTML or JavaScript inside parts of the page. As a result the webUI may be subject to a stored cross site scripting attack. This issue has been addressed in version 1.23.5. Users are advised to upgrade. Users unable to upgrade should avoid sharing folders with untrusted users.
+      published: 2023-06-06T18:15:10.100
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/syncthing/syncthing/commit/73c52eafb6566435dffd979c3c49562b6d5a4238
+        - https://github.com/syncthing/syncthing/security/advisories/GHSA-9rp6-23gf-4c3h
+    - id: CVE-2023-0921
+      description: A lack of length validation in GitLab CE/EE affecting all versions from 8.3 before 15.10.8, 15.11 before 15.11.7, and 16.0 before 16.0.2 allows an authenticated attacker to create a large Issue description via GraphQL which, when repeatedly requested, saturates CPU usage.
+      published: 2023-06-06T17:15:12.747
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://gitlab.com/gitlab-org/cves/-/blob/master/2023/CVE-2023-0921.json
+        - https://gitlab.com/gitlab-org/gitlab/-/issues/392433
+        - https://hackerone.com/reports/1869839
+    - id: CVE-2023-30948
+      description: |-
+        A security defect in Foundry's Comments functionality resulted in the retrieval of attachments to comments not being gated by additional authorization checks. This could enable an authenticated user to inject a prior discovered attachment UUID into other arbitrary comments to discover it's content.
+
+        This defect was fixed in Foundry Comments 2.249.0, and a patch was rolled out to affected Foundry environments. No further intervention is required at this time.
+      published: 2023-06-06T15:15:09.350
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://palantir.safebase.us/?tcuUid=101b083b-6389-4261-98f8-23448e133a62
+    - id: CVE-2023-1621
+      description: An issue has been discovered in GitLab EE affecting all versions starting from 12.0 before 15.10.5, all versions starting from 15.11 before 15.11.1. A malicious group member may continue to commit to projects even from a restricted IP address.
+      published: 2023-06-06T20:15:10.227
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://gitlab.com/gitlab-org/cves/-/blob/master/2023/CVE-2023-1621.json
+        - https://gitlab.com/gitlab-org/gitlab/-/issues/399774
+        - https://hackerone.com/reports/1914049
+    - id: CVE-2023-3120
+      description: A vulnerability, which was classified as critical, was found in SourceCodester Service Provider Management System 1.0. This affects an unknown part of the file view_service.php. The manipulation of the argument id leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-230799.
+      published: 2023-06-06T11:15:10.223
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/Peanut886/Vulnerability/blob/main/webray.com.cn/Service%20Provider%20Management%20System%20-%20multiple%20vulnerabilities.md
+        - https://vuldb.com/?ctiid.230799
+        - https://vuldb.com/?id.230799
+    - id: CVE-2023-2183
+      description: "Grafana is an open-source platform for monitoring and observability. \n\nThe option to send a test alert is not available from the user panel UI for users having the Viewer role. It is still possible for a user with the Viewer role to send a test alert using the API as the API does not check access to this function.\n\nThis might enable malicious users to abuse the functionality by sending multiple alert messages to e-mail and Slack, spamming users, prepare Phishing attack or block SMTP server.\n\nUsers may upgrade to version 9.5.3, 9.4.12, 9.3.15, 9.2.19 and 8.5.26 to receive a fix."
+      published: 2023-06-06T19:15:11.277
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://github.com/grafana/bugbounty/security/advisories/GHSA-cvm3-pp2j-chr3
+        - https://grafana.com/security/security-advisories/cve-2023-2183/
+    - id: CVE-2023-1779
+      description: Exposure of Sensitive Information to an unauthorized actor vulnerability in MB Connect Lines mbCONNECT24, mymbCONNECT24 and Helmholz' myREX24 and myREX24.virtual in versions <=2.13.3 allow an authorized remote attacker with low privileges to view a limited amount of another accounts contact information.
+      published: 2023-06-06T11:15:09.913
+      severity: MEDIUM
+      privileges: LOW
+      references:
+        - https://cert.vde.com/en/advisories/VDE-2023-008/
+    - id: CVE-2022-33267
+      description: Memory corruption in Linux while sending DRM request.
+      published: 2023-06-06T08:15:10.817
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2022-33263
+      description: Memory corruption due to use after free in Core when multiple DCI clients register and deregister.
+      published: 2023-06-06T08:15:10.653
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2022-33240
+      description: Memory corruption in Audio due to incorrect type cast during audio use-cases.
+      published: 2023-06-06T08:15:10.437
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2022-33230
+      description: Memory corruption in FM Host due to buffer copy without checking the size of input in FM Host
+      published: 2023-06-06T08:15:10.320
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2022-33224
+      description: Memory corruption in core due to buffer copy without check9ing the size of input while processing ioctl queries.
+      published: 2023-06-06T08:15:09.850
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2022-33226
+      description: Memory corruption due to buffer copy without checking the size of input in Core while processing ioctl commands from diag client applications.
+      published: 2023-06-06T08:15:10.000
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2022-33227
+      description: Memory corruption in Linux android due to double free while calling unregister provider after register call.
+      published: 2023-06-06T08:15:10.163
+      severity: MEDIUM
+      privileges: HIGH
+      references:
+        - https://www.qualcomm.com/company/product-security/bulletins/june-2023-bulletin
+    - id: CVE-2018-25087
+      description: A vulnerability classified as problematic was found in Arborator Server. This vulnerability affects the function start of the file project.cgi. The manipulation of the argument project leads to denial of service. Continious delivery with rolling releases is used by this product. Therefore, no version details of affected nor updated releases are available. The patch is identified as cdbdbcbd491db65e9d697ab4365605fdfab1a604. It is recommended to apply a patch to fix this issue. VDB-230662 is the identifier assigned to this vulnerability.
+      published: 2023-06-06T03:15:08.947
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/Arborator/arborator-server/commit/cdbdbcbd491db65e9d697ab4365605fdfab1a604
+        - https://vuldb.com/?ctiid.230662
+        - https://vuldb.com/?id.230662
+    - id: CVE-2023-32683
+      description: 'Synapse is a Matrix protocol homeserver written in Python with the Twisted framework. A discovered oEmbed or image URL can bypass the `url_preview_url_blacklist` setting potentially allowing server side request forgery or bypassing network policies. Impact is limited to IP addresses allowed by the `url_preview_ip_range_blacklist` setting (by default this only allows public IPs) and by the limited information returned to the client: 1. For discovered oEmbed URLs, any non-JSON response or a JSON response which includes non-oEmbed information is discarded. 2. For discovered image URLs, any non-image response is discarded. Systems which have URL preview disabled (via the `url_preview_enabled` setting) or have not configured a `url_preview_url_blacklist` are not affected. This issue has been addressed in version 1.85.0. Users are advised to upgrade. User unable to upgrade may also disable URL previews.'
+      published: 2023-06-06T19:15:11.963
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/matrix-org/synapse/pull/15601
+        - https://github.com/matrix-org/synapse/security/advisories/GHSA-98px-6486-j7qc
+    - id: CVE-2023-3121
+      description: 'A vulnerability has been found in Dahua Smart Parking Management up to 20230528 and classified as problematic. This vulnerability affects unknown code of the file /ipms/imageConvert/image. The manipulation of the argument fileUrl leads to server-side request forgery. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-230800. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.'
+      published: 2023-06-06T11:15:10.337
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/RCEraser/cve/blob/main/DaHua..md
+        - https://vuldb.com/?ctiid.230800
+        - https://vuldb.com/?id.230800
+    - id: CVE-2017-20185
+      description: '** UNSUPPPORTED WHEN ASSIGNED ** ** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in Fuzzy SWMP. It has been rated as problematic. This issue affects some unknown processing of the file swmp.php of the component GET Parameter Handler. The manipulation of the argument theme leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. This product takes the approach of rolling releases to provide continious delivery. Therefore, version details for affected and updated releases are not available. The identifier of the patch is 792bcab637cb8c3bd251d8fc8771512c5329a93e. It is recommended to apply a patch to fix this issue. The identifier VDB-230669 was assigned to this vulnerability. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.'
+      published: 2023-06-06T02:15:09.473
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/fuzzymannerz/swmp/commit/792bcab637cb8c3bd251d8fc8771512c5329a93e
+        - https://github.com/fuzzymannerz/swmp/pull/12
+        - https://vuldb.com/?ctiid.230669
+        - https://vuldb.com/?id.230669
+    - id: CVE-2015-10117
+      description: A vulnerability, which was classified as problematic, was found in Gravity Forms DPS PxPay Plugin up to 1.4.2 on WordPress. Affected is an unknown function. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. Upgrading to version 1.4.3 is able to address this issue. The name of the patch is 5966a5e6343e3d5610bdfa126a5cfbae95e629b6. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-230664.
+      published: 2023-06-06T02:15:08.830
+      severity: LOW
+      privileges: LOW
+      references:
+        - https://github.com/wp-plugins/gravity-forms-dps-pxpay/commit/5966a5e6343e3d5610bdfa126a5cfbae95e629b6
+        - https://github.com/wp-plugins/gravity-forms-dps-pxpay/releases/tag/1.4.3
+        - https://vuldb.com/?ctiid.230664
+        - https://vuldb.com/?id.230664
+    - id: CVE-2023-33957
+      description: notation is a CLI tool to sign and verify OCI artifacts and container images. An attacker who has compromised a registry and added a high number of signatures to an artifact can cause denial of service of services on the machine, if a user runs notation inspect command on the same machine. The problem has been fixed in the release v1.0.0-rc.6. Users should upgrade their notation packages to v1.0.0-rc.6 or above. Users are advised to upgrade. Users unable to upgrade may restrict container registries to a set of secure and trusted container registries.
+      published: 2023-06-06T19:15:12.363
+      severity: LOW
+      privileges: HIGH
+      references:
+        - https://github.com/notaryproject/notation/commit/ed22fde52f6d70ae0b53521bd28c9ccafa868c24
+        - https://github.com/notaryproject/notation/security/advisories/GHSA-9m3v-v4r5-ppx7
+    - id: CVE-2023-20752
+      description: 'In keymange, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07826586; Issue ID: ALPS07826586.'
+      published: 2023-06-06T13:15:15.653
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20723
+      description: 'In Bluetooth, there is a possible out of bounds read due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07843845; Issue ID: ALPS07843845.'
+      published: 2023-06-06T13:15:11.703
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20730
+      description: 'In wlan, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07573552; Issue ID: ALPS07573552.'
+      published: 2023-06-06T13:15:12.307
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20731
+      description: 'In wlan, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07573495; Issue ID: ALPS07573495.'
+      published: 2023-06-06T13:15:12.413
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20732
+      description: 'In wlan, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07573480; Issue ID: ALPS07573480.'
+      published: 2023-06-06T13:15:12.563
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20733
+      description: 'In vcu, there is a possible use after free due to improper locking. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07645149; Issue ID: ALPS07645149.'
+      published: 2023-06-06T13:15:12.680
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20734
+      description: 'In vcu, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07645149; Issue ID: ALPS07645184.'
+      published: 2023-06-06T13:15:12.800
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20735
+      description: 'In vcu, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07645149; Issue ID: ALPS07645178.'
+      published: 2023-06-06T13:15:12.910
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20736
+      description: 'In vcu, there is a possible out of bounds write due to a race condition. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07645149; Issue ID: ALPS07645189.'
+      published: 2023-06-06T13:15:13.083
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20737
+      description: 'In vcu, there is a possible use after free due to improper locking. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07645149; Issue ID: ALPS07645167.'
+      published: 2023-06-06T13:15:13.230
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20738
+      description: 'In vcu, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07645149; Issue ID: ALPS07645173.'
+      published: 2023-06-06T13:15:13.430
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20739
+      description: 'In vcu, there is a possible memory corruption due to a logic error. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07559819; Issue ID: ALPS07559819.'
+      published: 2023-06-06T13:15:13.590
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20740
+      description: 'In vcu, there is a possible memory corruption due to a logic error. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07559819; Issue ID: ALPS07559840.'
+      published: 2023-06-06T13:15:13.727
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20741
+      description: 'In ril, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07628591; Issue ID: ALPS07628606.'
+      published: 2023-06-06T13:15:13.873
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20742
+      description: 'In ril, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07628591; Issue ID: ALPS07628540.'
+      published: 2023-06-06T13:15:14.033
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20743
+      description: 'In vcu, there is a possible out of bounds write due to improper locking. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07519142; Issue ID: ALPS07519142.'
+      published: 2023-06-06T13:15:14.163
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20744
+      description: 'In vcu, there is a possible use after free due to a logic error. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07519142; Issue ID: ALPS07519200.'
+      published: 2023-06-06T13:15:14.370
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20745
+      description: 'In vcu, there is a possible out of bounds write due to improper locking. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07519142; Issue ID: ALPS07560694.'
+      published: 2023-06-06T13:15:14.563
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20746
+      description: 'In vcu, there is a possible out of bounds write due to improper locking. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07519142; Issue ID: ALPS07519217.'
+      published: 2023-06-06T13:15:14.723
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20747
+      description: 'In vcu, there is a possible memory corruption due to type confusion. This could lead to local denial of service with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07519103; Issue ID: ALPS07519121.'
+      published: 2023-06-06T13:15:14.887
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20749
+      description: 'In swpm, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07780926; Issue ID: ALPS07780926.'
+      published: 2023-06-06T13:15:15.023
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20750
+      description: 'In swpm, there is a possible out of bounds write due to a race condition. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07780926; Issue ID: ALPS07780928.'
+      published: 2023-06-06T13:15:15.233
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20751
+      description: 'In keymange, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07825502; Issue ID: ALPS07825502.'
+      published: 2023-06-06T13:15:15.433
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20728
+      description: 'In wlan, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07573603; Issue ID: ALPS07573603.'
+      published: 2023-06-06T13:15:12.070
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-33530
+      description: There is a command injection vulnerability in the Tenda G103 Gigabit GPON Terminal with firmware version V1.0.0.5. If an attacker gains web management privileges, they can inject commands gaining shell privileges.
+      published: 2023-06-06T13:15:15.900
+      severity: ""
+      privileges: ""
+      references:
+        - http://tenda.com
+        - https://github.com/D2y6p/CVE/blob/main/tenda/CVE-2023-33530/RCE2/tenda_G103_RCE_2.pdf
+    - id: CVE-2023-31569
+      description: TOTOLINK X5000R V9.1.0cu.2350_B20230313 was discovered to contain a command injection via the setWanCfg function.
+      published: 2023-06-06T14:15:12.427
+      severity: ""
+      privileges: ""
+      references:
+        - http://totolink.com
+        - https://github.com/JeeseenSec/Report/tree/main/TOTOLINK,Thanks
+        - https://github.com/JeeseenSec/Report/tree/main/TOTOLINK/CVE-2023-31569
+        - https://www.totolink.net/home/menu/newstpl/menu_newstpl/products/id/218.html
+    - id: CVE-2023-33457
+      description: In Sogou Workflow v0.10.6, memcpy a negtive size in URIParser::parse , may cause buffer-overflow and crash.
+      published: 2023-06-06T14:15:12.673
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/sogou/workflow/issues/1272
+    - id: CVE-2023-33532
+      description: There is a command injection vulnerability in the Netgear R6250 router with Firmware Version 1.0.4.48. If an attacker gains web management privileges, they can inject commands into the post request parameters, thereby gaining shell privileges.
+      published: 2023-06-06T14:15:12.740
+      severity: ""
+      privileges: ""
+      references:
+        - http://netgear.com
+        - https://github.com/D2y6p/CVE/blob/main/Netgear/CVE-2023-33532/Netgear_R6250_RCE.pdf
+    - id: CVE-2023-33533
+      description: Netgear D6220 with Firmware Version 1.0.0.80, D8500 with Firmware Version 1.0.3.60, R6700 with Firmware Version 1.0.2.26, and R6900 with Firmware Version 1.0.2.26 are vulnerable to Command Injection. If an attacker gains web management privileges, they can inject commands into the post request parameters, gaining shell privileges.
+      published: 2023-06-06T14:15:12.817
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/D2y6p/CVE/blob/main/Netgear/CVE-2023-33533/Netgear_RCE.pdf
+        - https://www.netgear.com/about/security/
+    - id: CVE-2023-3123
+      description: '** REJECT ** Duplicate Assignment.'
+      published: 2023-06-06T14:15:12.877
+      severity: ""
+      privileges: ""
+      references: []
+    - id: CVE-2023-20725
+      description: 'In preloader, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07734004 / ALPS07874358 (For MT6880, MT6890, MT6980, MT6990 only); Issue ID: ALPS07734004 / ALPS07874358 (For MT6880, MT6890, MT6980, MT6990 only).'
+      published: 2023-06-06T13:15:11.937
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-30864
+      description: In Connectivity Service, there is a possible missing permission check. This could lead to local escalation of privilege with no additional execution privileges.
+      published: 2023-06-06T06:15:51.437
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2023-30863
+      description: In Connectivity Service, there is a possible missing permission check. This could lead to local escalation of privilege with no additional execution privileges.
+      published: 2023-06-06T06:15:51.317
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2022-48448
+      description: In telephony service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-06-06T06:15:51.200
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2022-48447
+      description: In telephony service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-06-06T06:15:51.080
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2023-20724
+      description: 'In Bluetooth, there is a possible out of bounds read due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07843845; Issue ID: ALPS07843841.'
+      published: 2023-06-06T13:15:11.823
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2022-48446
+      description: In telephony service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-06-06T06:15:50.943
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2023-20729
+      description: 'In wlan, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07573552; Issue ID: ALPS07573575.'
+      published: 2023-06-06T13:15:12.193
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-20716
+      description: 'In wlan, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07796883; Issue ID: ALPS07796883.'
+      published: 2023-06-06T13:15:11.557
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2022-48445
+      description: In telephony service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-06-06T06:15:50.853
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2022-48444
+      description: In telephony service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-06-06T06:15:50.703
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2022-48443
+      description: In telephony service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-06-06T06:15:50.607
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2022-48442
+      description: In dialer service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-06-06T06:15:50.410
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2022-48441
+      description: In dialer service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-06-06T06:15:50.247
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2022-48440
+      description: In dialer service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-06-06T06:15:50.140
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2023-31606
+      description: A Regular Expression Denial of Service (ReDoS) issue was discovered in the sanitize_html function of redcloth gem v4.0.0. This vulnerability allows attackers to cause a Denial of Service (DoS) via supplying a crafted payload.
+      published: 2023-06-06T17:15:14.843
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/e23e/CVE-2023-31606#readme
+        - https://github.com/jgarber/redcloth
+        - https://github.com/jgarber/redcloth/issues/73
+    - id: CVE-2022-48439
+      description: In cp_dump driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-06-06T06:15:49.933
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2022-48438
+      description: In cp_dump driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local denial of service with System execution privileges needed.
+      published: 2023-06-06T06:15:49.810
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2023-20715
+      description: 'In wlan, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07796900; Issue ID: ALPS07796900.'
+      published: 2023-06-06T13:15:11.397
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-27126
+      description: The AES Key-IV pair used by the TP-Link TAPO C200 camera V3 (EU) on firmware version 1.1.22 Build 220725 is reused across all cameras. An attacker with physical access to a camera is able to extract and decrypt sensitive data containing the Wifi password and the TP-LINK account credential of the victim.
+      published: 2023-06-06T18:15:10.343
+      severity: ""
+      privileges: ""
+      references:
+        - http://tapo.com
+        - http://tp-link.com
+        - https://www.claranet.fr/blog/dans-les-entrailles-dune-camera-connectee-tp-link-14
+    - id: CVE-2023-33613
+      description: axTLS v2.1.5 was discovered to contain a heap buffer overflow in the bi_import function in axtls-code/crypto/bigint.c. This vulnerability allows attackers to cause a Denial of Service (DoS) when parsing a private key.
+      published: 2023-06-06T18:15:11.357
+      severity: ""
+      privileges: ""
+      references:
+        - https://sourceforge.net/p/axtls/mailman/message/37843071/
+    - id: CVE-2023-33747
+      description: CloudPanel v2.2.2 allows attackers to execute a path traversal.
+      published: 2023-06-06T18:15:11.497
+      severity: ""
+      privileges: ""
+      references:
+        - https://cwe.mitre.org/data/definitions/264.html
+        - https://cwe.mitre.org/data/definitions/269.html
+        - https://cwe.mitre.org/data/definitions/35.html
+        - https://github.com/EagleTube/CloudPanel
+        - https://www.cloudpanel.io/docs/v2/changelog/
+    - id: CVE-2022-48392
+      description: In dialer service, there is a possible missing permission check. This could lead to local escalation of privilege with no additional execution privileges.
+      published: 2023-06-06T06:15:49.687
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2022-48391
+      description: In telephony service, there is a possible missing permission check. This could lead to local denial of service with no additional execution privileges.
+      published: 2023-06-06T06:15:49.483
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2023-20712
+      description: 'In wlan, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07796914; Issue ID: ALPS07796914.'
+      published: 2023-06-06T13:15:10.897
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2022-48390
+      description: In telephony service, there is a possible missing permission check. This could lead to local escalation of privilege with no additional execution privileges.
+      published: 2023-06-06T06:15:48.860
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2023-33659
+      description: A heap buffer overflow vulnerability exists in NanoMQ 0.17.2. The vulnerability can be triggered by calling the function nmq_subinfo_decode() in the file mqtt_parser.c. An attacker could exploit this vulnerability to cause a denial of service attack.
+      published: 2023-06-06T12:15:09.503
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/emqx/nanomq
+        - https://github.com/emqx/nanomq/issues/1154
+        - https://github.com/nanomq/NanoNNG/pull/509/commits/6815c4036a2344865da393803ecdb7af27d8bde1
+    - id: CVE-2023-33460
+      description: There's a memory leak in yajl 2.1.0 with use of yajl_tree_parse function. which will cause out-of-memory in server and cause crash.
+      published: 2023-06-06T12:15:09.447
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/lloyd/yajl/issues/250
+    - id: CVE-2023-33651
+      description: An issue in the MVC Device Simulator of Sitecore Experience Platform (XP), Experience Manager (XM), and Experience Commerce (XC) v9.0 Initial Release to v13.0 Initial Release allows attackers to bypass authorization rules.
+      published: 2023-06-06T19:15:12.103
+      severity: ""
+      privileges: ""
+      references:
+        - https://blog.assetnote.io/2023/05/10/sitecore-round-two/
+        - https://support.sitecore.com/kb?id=kb_article_view&sysparm_article=KB1002925
+    - id: CVE-2023-33652
+      description: Sitecore Experience Platform (XP) v9.3 was discovered to contain an authenticated remote code execution (RCE) vulnerability via the component /sitecore/shell/Invoke.aspx.
+      published: 2023-06-06T19:15:12.217
+      severity: ""
+      privileges: ""
+      references:
+        - https://blog.assetnote.io/2023/05/10/sitecore-round-two/
+    - id: CVE-2023-33653
+      description: Sitecore Experience Platform (XP) v9.3 was discovered to contain an authenticated remote code execution (RCE) vulnerability via the component /Applications/Content%20Manager/Execute.aspx?cmd=convert&mode=HTML.
+      published: 2023-06-06T19:15:12.287
+      severity: ""
+      privileges: ""
+      references:
+        - https://blog.assetnote.io/2023/05/10/sitecore-round-two/
+    - id: CVE-2023-33381
+      description: A command injection vulnerability was found in the ping functionality of the MitraStar GPT-2741GNAC router (firmware version AR_g5.8_110WVN0b7_2). The vulnerability allows an authenticated user to execute arbitrary OS commands by sending specially crafted input to the router via the ping function.
+      published: 2023-06-06T12:15:09.250
+      severity: ""
+      privileges: ""
+      references:
+        - http://gpt-2741gnac.com
+        - http://mitrastar.com
+        - https://github.com/duality084/CVE-2023-33381-MitraStar-GPT-2741GNAC/blob/main/README.md
+    - id: CVE-2023-30865
+      description: In dialer service, there is a missing permission check. This could lead to local information disclosure with no additional execution privileges needed.
+      published: 2023-06-06T06:15:51.607
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2023-30866
+      description: In telephony service, there is a missing permission check. This could lead to local information disclosure with no additional execution privileges needed.
+      published: 2023-06-06T06:15:51.800
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2023-20727
+      description: 'In wlan, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07588531; Issue ID: ALPS07588531.'
+      published: 2023-06-06T09:15:11.160
+      severity: ""
+      privileges: ""
+      references:
+        - https://corp.mediatek.com/product-security-bulletin/June-2023
+    - id: CVE-2023-30914
+      description: In email service, there is a missing permission check. This could lead to local information disclosure with no additional execution privileges needed.
+      published: 2023-06-06T06:15:51.977
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2023-30915
+      description: In email service, there is a missing permission check. This could lead to local information disclosure with no additional execution privileges needed.
+      published: 2023-06-06T06:15:52.080
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.unisoc.com/en_us/secy/announcementDetail/1664822361414762498
+    - id: CVE-2023-2157
+      description: A heap-based buffer overflow vulnerability was found in the ImageMagick package that can lead to the application crashing.
+      published: 2023-06-06T20:15:12.120
+      severity: ""
+      privileges: ""
+      references:
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2208537
+    - id: CVE-2023-2253
+      description: 'A flaw was found in the `/v2/_catalog` endpoint in distribution/distribution, which accepts a parameter to control the maximum number of records returned (query string: `n`). This vulnerability allows a malicious user to submit an unreasonably large value for `n,` causing the allocation of a massive string array, possibly causing a denial of service through excessive use of memory.'
+      published: 2023-06-06T20:15:12.493
+      severity: ""
+      privileges: ""
+      references:
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2189886
+    - id: CVE-2023-2602
+      description: A vulnerability was found in the pthread_create() function in libcap. This issue may allow a malicious actor to use cause __real_pthread_create() to return an error, which can exhaust the process memory.
+      published: 2023-06-06T20:15:12.760
+      severity: ""
+      privileges: ""
+      references:
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2209114
+        - https://www.x41-dsec.de/static/reports/X41-libcap-Code-Review-2023-OSTIF-Final-Report.pdf
+    - id: CVE-2023-2603
+      description: A vulnerability was found in libcap. This issue occurs in the _libcap_strdup() function and can lead to an integer overflow if the input string is close to 4GiB.
+      published: 2023-06-06T20:15:13.187
+      severity: ""
+      privileges: ""
+      references:
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2209113
+        - https://www.x41-dsec.de/static/reports/X41-libcap-Code-Review-2023-OSTIF-Final-Report.pdf
+    - id: CVE-2023-2961
+      description: A segmentation fault flaw was found in the Advancecomp package. This may lead to decreased availability.
+      published: 2023-06-06T20:15:13.523
+      severity: ""
+      privileges: ""
+      references:
+        - https://bugzilla.redhat.com/show_bug.cgi?id=2210768
+    - id: CVE-2023-33477
+      description: In Harmonic NSG 9000-6G devices, an authenticated remote user can obtain source code by directly requesting a special path.
+      published: 2023-06-06T20:15:13.857
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Skr11lex/CVE-2023-33477
+    - id: CVE-2023-33569
+      description: Sourcecodester Faculty Evaluation System v1.0 is vulnerable to arbitrary code execution via ip/eval/ajax.php?action=update_user.
+      published: 2023-06-06T20:15:14.050
+      severity: ""
+      privileges: ""
+      references:
+        - https://github.com/Cr4at0r/bug_report/blob/main/vendors/oretnom23/faculty-evaluation-system/RCE-1.md
+    - id: CVE-2023-33684
+      description: 'Weak session management in DB Elettronica Telecomunicazioni SpA SFT DAB 600/C Firmware: 1.9.3 Bios firmware: 7.1 (Apr 19 2021) Gui: 2.46 FPGA: 169.55 uc: 6.15 allows attackers on the same network to bypass authentication by re-using the IP address assigned to the device by the NAT protocol.'
+      published: 2023-06-06T20:15:14.217
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.zeroscience.mk/en/vulnerabilities/ZSL-2023-5771.php
+    - id: CVE-2023-34409
+      description: In Percona Monitoring and Management (PMM) server 2.x before 2.37.1, the authenticate function in auth_server.go does not properly formalize and sanitize URL paths to reject path traversal attempts. This allows an unauthenticated remote user, when a crafted POST request is made against unauthenticated API routes, to access otherwise protected API routes leading to escalation of privileges and information disclosure.
+      published: 2023-06-06T20:15:14.333
+      severity: ""
+      privileges: ""
+      references:
+        - https://www.percona.com/blog/pmm-authentication-bypass-vulnerability-fixed-in-2-37-1/
